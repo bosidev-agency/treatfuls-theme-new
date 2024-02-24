@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-terms",
+      "settings": {
+        "title": "Allgemeine <span><span>Geschäftsbedingungen<\/span><\/span>",
+        "title_mobile": "Allgemeine <span><span>Geschäftsbedi-<\/span><\/span> <span><span>ngungen<\/span><\/span>",
+        "subtitle": "Das musst du beachten wenn du bei treatfuls Produkte bestellst.",
+        "img_right": "shopify:\/\/shop_images\/terms-4x.png"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

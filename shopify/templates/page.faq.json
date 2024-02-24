@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-faq",
+      "blocks": {
+        "88bfeb12-e232-45e0-a79a-5ecaf80568b5": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "title": "Woher bezieht ihr euren Kakao?",
+            "content": "Aus Fair Trade Produktionen"
+          }
+        },
+        "9df1bced-8623-4ef2-8cbc-8d188c99f220": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "title": "Woher bezieht ihr euren Kakao?",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          }
+        },
+        "e4d77e9c-63cb-47d0-bcbc-3294423a1eea": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "title": "Woher bezieht ihr euren Kakao?",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          }
+        },
+        "918472f0-71b3-4d88-a0db-89aa6d2be2a9": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "title": "Woher bezieht ihr euren Kakao?",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+          }
+        }
+      },
+      "block_order": [
+        "88bfeb12-e232-45e0-a79a-5ecaf80568b5",
+        "9df1bced-8623-4ef2-8cbc-8d188c99f220",
+        "e4d77e9c-63cb-47d0-bcbc-3294423a1eea",
+        "918472f0-71b3-4d88-a0db-89aa6d2be2a9"
+      ],
+      "settings": {
+        "title": "Häufig gestellte <span><span>Fragen<\/span><\/span>",
+        "subtitle": "Wir sammeln aktuell Fragen, die wir euch hier erklären werden."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

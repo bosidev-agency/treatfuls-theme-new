@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-community",
+      "settings": {
+        "title": "Werde Teil und fange an zu <span><span>gestalten<\/span><\/span>",
+        "subtitle": "Denk dir einen Text aus, der später auf die Riegel gedruckt wird.",
+        "contact_form": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"jv4gccjJJDBpSILAg54CGw\"><\/div>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

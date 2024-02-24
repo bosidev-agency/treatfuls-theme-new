@@ -1,0 +1,45 @@
+{%- assign product_fields = product.metafields.my_fields -%}
+
+{%- capture product_reviews -%}
+	<div class="product-info__rating product-rating">
+		{%- if product_fields.average_rating_reviews != blank -%}
+			<span class="product-rating__average">{{ product_fields.average_rating_reviews }}</span>
+		{%- endif -%}
+
+		{%- for num in (1..5) -%}
+			<span class="product-rating__star">
+				{%- render 'icon-star' -%}
+			</span>
+		{%- endfor -%}
+
+		{%- if product_fields.quantity_of_reviews != blank -%}
+			<span class="product-rating__total">{{ product_fields.quantity_of_reviews }}</span>
+		{%- endif -%}
+	</div>
+{%- endcapture -%}
+
+<section class="product-info">
+	<div class="product-info__container">
+		<div class="product-info__row">
+			<div class="product-info__col">
+				<div class="product-info__main">
+					{%- if product_fields.pdp_title != blank -%}
+						<h1 class="product-info__title title-bg title-bg--sm">{{ product_fields.pdp_title }}</h1>
+					{%- else -%}
+						<h1 class="product-info__title h2">{{ product.title }}</h1>
+					{% endif %}
+
+					{%- render 'main-product-form', product: product -%}
+				</div>
+			</div>
+			<div class="product-info__col">
+				<div class="product-info__content">
+					{{- product_reviews -}}
+					{%- if product.description != blank -%}
+						<div class="product-info__description text">{{ product.description }}</div>
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

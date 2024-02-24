@@ -1,0 +1,17 @@
+{% comment %} [ Teal, Berry, Green, Blue, Purple, Red ] {% endcomment %}
+{%- assign global_pdp_bg_color = product.metafields.my_fields.product_background_color -%}
+
+{%- assign pdp_bg_color = '' -%}
+{%- if global_pdp_bg_color == 'Green' -%}
+	{%- assign pdp_bg_color = 'tertiary' -%}
+{%- elsif global_pdp_bg_color == 'Blue' -%}
+	{%- assign pdp_bg_color = 'secondary' -%}
+{%- elsif global_pdp_bg_color == 'Teal' -%}
+	{%- assign pdp_bg_color = 'quinary' -%}
+{%- elsif global_pdp_bg_color == 'Berry' -%}
+	{%- assign pdp_bg_color = 'senary' -%}
+{%- elsif global_pdp_bg_color == 'Purple' -%}
+	{%- assign pdp_bg_color = 'primary' -%}
+{%- elsif global_pdp_bg_color contains 'Red' -%}
+	{%- assign pdp_bg_color = 'quaternary' -%}
+{%- endif -%}

@@ -1,0 +1,97 @@
+{% assign sec_sett = section.settings %}
+
+{%- capture slider -%}
+	{%- if section.blocks.size > 0 -%}
+		<div class="advantages__gallery">
+			<div class="swiper" data-advantages-slider>
+				<div class="swiper-wrapper">
+					{%- for block in section.blocks -%}
+						{%- assign image = block.settings.image -%}
+						{%- assign text = block.settings.text -%}
+
+						<div class="swiper-slide advantages__slide">
+							<div class="advantage-item">
+								{%- if image != blank -%}
+									<img class="advantage-item__img"
+											 src="{{- image | img_url: '100x' -}}"
+											 srcset="{{ image | img_url: '100x' }} 1x, {{ image | img_url: '200x' }} 2x, {{ image | img_url: '300x' }} 3x"
+											 alt="{{- text -}}"
+									>
+								{%- endif -%}
+								{%- if text != blank -%}
+									<h3 class="advantage-item__title">{{- text -}}</h3>
+								{%- endif -%}
+							</div>
+						</div>
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	{%- endif -%}
+{%- endcapture -%}
+
+<section
+	class="advantages"
+	data-section-id="{{- section.id -}}"
+	data-section-type="advantages"
+>
+	<div class="container advantages__container">
+		{%- if sec_sett.title != blank or sec_sett.subtitle != blank -%}
+			<section class="advantages__header">
+				{%- if sec_sett.title != blank -%}
+					<h2 class="advantages__title title-bg title-bg--tertiary">{{- sec_sett.title -}}</h2>
+				{%- endif -%}
+				{%- if sec_sett.subtitle != blank -%}
+					<p class="advantages__subtitle subtitle">{{- sec_sett.subtitle -}}</p>
+				{%- endif -%}
+			</section>
+		{%- endif -%}
+
+		{{ slider }}
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Home advantages",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title",
+			"info": "Need wrap words to see background, <span><span>example</span></span>",
+			"default": "Unsere Riegel bieten <span><span>viele Vorteile</span></span>"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitle",
+			"default": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile."
+		}
+	],
+	"blocks": [
+		{
+			"type": "advantage_item",
+			"name": "Advantage item",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "text",
+					"label": "Text"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Home advantages",
+			"category": "Homepage"
+		}
+	]
+}
+{% endschema %}

@@ -1,10 +1,15 @@
 {
   "sections": {
-    "main": {
-      "type": "main-404"
+    "404": {
+      "type": "404",
+      "settings": {
+        "title": "<span><span>Ups,<\/span><\/span> da ist etwas schief gelaufen",
+        "subtitle": "Hier gibt es nichts zu sehen, gehen Sie bitte weiter",
+        "image": "shopify:\/\/shop_images\/404-img.png"
+      }
     }
   },
   "order": [
-    "main"
+    "404"
   ]
 }

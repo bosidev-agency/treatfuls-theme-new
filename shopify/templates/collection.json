@@ -1,10 +1,79 @@
 {
   "sections": {
-    "main": {
-      "type": "main-collection"
+    "product-grid": {
+      "type": "collection-template",
+      "blocks": {
+        "f16bc2c9-88df-4955-b92b-46df3f6f9a0e": {
+          "type": "product_item",
+          "settings": {
+            "product": "gemischtes-paket-mit-allen-4-riegeln",
+            "color": "quaternary"
+          }
+        },
+        "1e294529-e6e5-444d-985d-43e21f996427": {
+          "type": "product_item",
+          "settings": {
+            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
+            "color": "primary"
+          }
+        },
+        "8ceb7af8-58f9-46b1-be66-a106726b5fd9": {
+          "type": "product_item",
+          "settings": {
+            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship",
+            "color": "tertiary"
+          }
+        },
+        "6b771efc-3c14-4405-af1a-ae7e6f6b7d6f": {
+          "type": "product_item",
+          "settings": {
+            "product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
+            "color": "secondary"
+          }
+        },
+        "e24554bf-a6d7-447c-b6b1-12d40f7694a1": {
+          "type": "product_item",
+          "settings": {
+            "product": "probierbox-alle-sorten-16-stuck-bio-vegan",
+            "color": "quaternary"
+          }
+        },
+        "8bfcb7b5-517a-4f4c-abf8-66426bd41a69": {
+          "type": "product_item",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "color": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "f16bc2c9-88df-4955-b92b-46df3f6f9a0e",
+        "1e294529-e6e5-444d-985d-43e21f996427",
+        "8ceb7af8-58f9-46b1-be66-a106726b5fd9",
+        "6b771efc-3c14-4405-af1a-ae7e6f6b7d6f",
+        "e24554bf-a6d7-447c-b6b1-12d40f7694a1",
+        "8bfcb7b5-517a-4f4c-abf8-66426bd41a69"
+      ],
+      "disabled": true,
+      "settings": {
+        "link_text": "Jetzt kaufen"
+      }
+    },
+    "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
+      "type": "collection",
+      "settings": {
+        "title": "Vorgestellte Kategorie",
+        "collection": "produkte",
+        "grid": 3,
+        "rows": 4,
+        "show_vendor": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
-    "main"
+    "product-grid",
+    "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee"
   ]
 }

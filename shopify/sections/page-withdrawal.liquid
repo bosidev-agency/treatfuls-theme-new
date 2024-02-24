@@ -1,0 +1,49 @@
+{%- assign title = section.settings.title -%}
+{%- assign subtitle = section.settings.subtitle -%}
+
+<section
+	class="withdrawal"
+	data-section-id="{{- section.id -}}"
+	data-section-type="withdrawal"
+>
+	<div class="content-wrapper">
+		{%- if title or subtitle -%}
+			<div class="title-wrapper">
+				{%- if title -%}
+					<h1 class="title-wrapper__title title-bg title-bg--quaternary">{{ title }}</h1>
+				{%- endif -%}
+
+				{%- if subtitle -%}
+					<p class="title-wrapper__subtitle">{{ subtitle }}</p>
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+
+		<div class="container container--sm">
+			<div class="rte rte--pages">
+				{{ page.content }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+	{
+		"name": "Withdrawal",
+		"settings": [
+			{
+				"type": "textarea",
+				"id": "title",
+				"info": "Need wrap words to see background, <span><span>example</span></span>",
+				"label": "Title",
+				"default": "Ja du hast auch ein <span><span>Widerrufsrecht</span></span>"
+			},
+			{
+				"type": "textarea",
+				"id": "subtitle",
+				"label": "Subtitle",
+				"default": "Willst du etwa ein Produkt wieder zurück schicken? 😢"
+			}
+		]
+	}
+{% endschema %}

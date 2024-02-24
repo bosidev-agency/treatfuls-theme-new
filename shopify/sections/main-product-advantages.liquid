@@ -1,0 +1,132 @@
+{% assign sec_sett = section.settings %}
+
+{%- capture slider -%}
+	{%- if section.blocks.size > 0 -%}
+		<div class="AAAXX advantages__gallery">
+			<div class="swiper" data-advantages-slider>
+				<div class="swiper-wrapper">
+					{%- for block in section.blocks -%}
+						{%- assign image = block.settings.image -%}
+						{%- assign text = block.settings.text -%}
+
+						<div class="swiper-slide advantages__slide">
+							<div class="advantage-item">
+								{%- if image != blank -%}
+									<img class="advantage-item__img"
+											 src="{{- image | img_url: '100x' -}}"
+											 srcset="{{ image | img_url: '100x' }} 1x, {{ image | img_url: '200x' }} 2x, {{ image | img_url: '300x' }} 3x"
+											 alt="{{- text -}}"
+									>
+								{%- endif -%}
+								{%- if text != blank -%}
+									<h3 class="advantage-item__title">{{- text -}}</h3>
+								{%- endif -%}
+							</div>
+						</div>
+					{%- endfor -%}
+				</div>
+			</div>
+		</div>
+	{%- endif -%}
+{%- endcapture -%}
+
+
+
+<section
+	class="advantages advantages--product"
+	data-section-id="{{- section.id -}}"
+	data-section-type="advantages"
+>
+	<div class="container advantages__container">
+		{%- if sec_sett.title != blank or sec_sett.subtitle != blank -%}
+			<section class="advantages__header {% if product.id == 7154928255170 %} full_width_div {% endif %}">
+
+                <div class="slider_images comparision_slider_wrapping">
+
+{% comment %}
+                  {% if product.id == 7154928255170 %}
+                    <div class="slider_wrapping">
+                      <div class="slider_wrap1">
+                     {% render 'comparison-slider1' %}
+                      </div>
+                      <div class="slider_wrap2">
+                    {% render 'comparison-slider2' %}
+                      </div>
+                      <div class="slider_wrap3">
+                    {% render 'comparison-slider3' %}
+                      </div>
+                     
+                    </div>
+                    {% else %}
+                    
+                      
+                    {% endif %}
+{% endcomment %}
+       {% render 'comparison-slider' %}
+               
+
+                  {% comment %}
+                  <img src="{{ section.settings.main_image | img_url: 'master' }}">
+                {% endcomment %}
+                </div>
+              
+				{%- if sec_sett.title != blank -%}
+					<h2 class="advantages__title title-bg title-bg--tertiary">{{- sec_sett.title -}}</h2>
+				{%- endif -%}
+				{%- if sec_sett.subtitle != blank -%}
+					<p class="advantages__subtitle subtitle">{{- sec_sett.subtitle -}}</p>
+				{%- endif -%}
+			</section>
+		{%- endif -%}
+
+		{{ slider }}
+	</div>
+
+  	<div class="ingredients__bg-line base-triangular-line">
+		{%- render 'icon-triangular-line' -%}
+	</div>
+</section>
+
+{% schema %}
+{
+	"name": "Product advantages",
+	"settings": [
+      	{
+					"type": "image_picker",
+					"id": "main_image",
+					"label": "Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title",
+			"info": "Need wrap words to see background, <span><span>example</span></span>",
+			"default": "Unsere Riegel bieten <span><span>viele Vorteile</span></span>"
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "Subtitle",
+			"default": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile."
+		}
+	],
+	"blocks": [
+		{
+			"type": "advantage_item",
+			"name": "Advantage item",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "text",
+					"label": "Text"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

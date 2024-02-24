@@ -1,7 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "main-page-contact"
+      "type": "page-contact",
+      "settings": {
+        "title": "hey, du hast Fragen, Ideen oder willst einfach was los werden?",
+        "subtitle": "Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns."
+      }
     }
   },
   "order": [

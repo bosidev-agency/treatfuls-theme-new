@@ -1,0 +1,61 @@
+{% comment %}
+** Cart page - main content area **
+- Template section
+{% endcomment %}
+
+{% comment %} CSS {% endcomment %}
+{%- capture section_data -%}
+	{%- include 'object-section-json' with section: section, type: 'cart' -%}
+{%- endcapture -%}
+
+<section
+	id="cart-{{- section.id -}}"
+	data-section-id="{{- section.id -}}"
+	data-section-type="cart"
+>
+	<script type="application/json" data-section-data>{{- section_data -}}</script>
+</section>
+
+{% schema %}
+
+{
+  "name": "Cart",
+  "class": "cart-section jsCart jsShippingCalculator",
+  "settings": [
+		{
+			"type": "text",
+			"id": "cart_title",
+			"label": "Cart title",
+			"info": "Need wrap words to see background, <span><span>example</span></span>",
+			"default": "<span><span>Warenkorb</span></span>"
+		},
+		{
+			"type": "text",
+			"id": "cart_subtitle",
+			"label": "Cart subtitle",
+			"default": "Die folgenden Waren befinden sich momentan in deinem Warenkorb."
+		},
+		{
+			"type": "image_picker",
+			"id": "image_left",
+			"label": "Image left background"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_right",
+			"label": "Image right background"
+		},
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+		{
+			"type": "url",
+			"id": "continue_shopping_url",
+			"label": "Сontinue Shopping url",
+			"default": "/collections/all"
+		}
+  ]
+}
+
+{% endschema %}

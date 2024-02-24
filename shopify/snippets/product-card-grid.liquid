@@ -1,0 +1,128 @@
+{%- assign field_product_bg_color = product.metafields.my_fields.product_background_color -%}
+
+{%- assign product_bg_color = '' -%}
+  {%- if field_product_bg_color == 'Berry' -%}
+    {%- assign product_bg_color = 'senary' -%}
+  {%- elsif field_product_bg_color == 'Teal' -%}
+    {%- assign product_bg_color = 'quinary' -%}
+{%- elsif field_product_bg_color == 'Green' -%}
+  {%- assign product_bg_color = 'tertiary' -%}
+{%- elsif field_product_bg_color == 'Blue' -%}
+  {%- assign product_bg_color = 'secondary' -%}
+{%- elsif field_product_bg_color == 'Purple' -%}
+  {%- assign product_bg_color = 'primary' -%}
+{%- elsif field_product_bg_color contains 'Red' -%}
+  {%- assign product_bg_color = 'quaternary' -%}
+{%- endif -%}
+
+<div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
+	{% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
+	{% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+	{%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+	{% unless product.featured_image == blank %}
+		{% include 'image-style' with image: product.featured_image, width: max_height, height: max_height, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
+	{% endunless %}
+  <div class="custom_data_wrapping">
+    <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
+      <div style="padding-top:{% unless product.featured_image == blank %}{{ 1 | divided_by: product.featured_image.aspect_ratio | times: 100}}%{% else %}100%{% endunless %};">
+        <a href="{{ product.url }}">
+          <img id="{{ img_id }}"
+            class="grid-view-item__image lazyload hover_image_hide"
+            src="{{ product.featured_image | img_url: 'master' }}"
+            data-src="{{ img_url }}"
+            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+            data-aspectratio="{{ product.featured_image.aspect_ratio }}"
+            data-sizes="auto"
+            alt=""
+          >
+          {% for image in product.images %}
+            {% if forloop.index == 3 %}
+              <img style="display:none;" class="hover_image_show" data-src="{{ image | img_url: 'master' }}" src="{{ image | img_url: 'master' }}" alt="{{ image.alt | escape }}" />
+            {% endif %}
+          {% endfor %}
+        </a>
+      </div>
+    </div>
+
+    <div class="product_content_wrapping">
+      <a href="{{ product.url }}">
+        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
+      </a>
+      <div class="size_price_wrapper">
+        <div class="size_wrapper">
+          {% if product.metafields.custom.custom_variant_name != blank %}
+            <p>{{ product.metafields.custom.custom_variant_name }}</p>
+          {% else %}
+            <p>20 x 40g Riegel</p>
+          {% endif %}
+        </div>
+      <div class="price_wrapper">
+        {% include 'product-price', variant: product %}
+      </div>
+    </div>
+
+    <div class="product_content-buttons">
+
+      {%- form 'product', product,
+        class: '',
+        data-product-form: '',
+        data-product-form-color: product_bg_color,
+        data-product-handle: product.handle,
+        data-enable-history-state: 'true',
+        data-productid: product.id
+      -%}
+        <select
+          name="id"
+          class="no-js visually-hidden"
+          data-productid="{{- product.id -}}"
+          data-original-product-select
+        >
+          {%- for variant in product.variants -%}
+            <option
+              {% if variant == current_variant %}selected="selected"{% endif %}
+              {% unless variant.available %}disabled="disabled"{% endunless %}
+              value="{{ variant.id }}"
+            >
+              {{ variant.title }}
+            </option>
+          {%- endfor -%}
+        </select>
+
+        <label class="quantity-element__label">
+          <input
+            class="quantity-element__input"
+            type="hidden"
+            id="Quantity"
+            name="quantity"
+            value="1"
+            min="1"
+            max="99"
+            maxlength="2"
+            data-quantity="input"
+          />
+        </label>
+
+        <button
+          class="button product-form__button"
+          type="submit"
+          name="add"
+          data-submit-button
+          data-button-color="tertiary"
+        >
+          <span
+            class="product-form__button-text product-form__button-text--add-to-card"
+            data-submit-button-text
+          >
+            {%- if product.variants.first.available == true -%}
+              {{ "products.product.add_to_cart" | t }}
+            {%- else -%}
+              {{ "products.product.sold_out" | t }}
+            {%- endif -%}
+          </span>
+        </button>
+      {%- endform -%}
+    </div>
+    </div>
+  </div>
+</div>

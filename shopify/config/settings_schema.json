@@ -1,33 +1,59 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Shopify Theme Lab",
+    "theme_name": "Buildify",
+    "theme_author": "UTD",
     "theme_version": "1.0.0",
-    "theme_author": "THEME_AUTHOR",
-    "theme_documentation_url": "https://THEME_DOCUMENTATION_URL.com",
-    "theme_support_url": "https://THEME_SUPPORT_URL.com"
+    "theme_support_url": "https:\/\/www.google.com\/",
+    "theme_documentation_url": "https:\/\/www.google.com\/"
   },
   {
-    "name": "t:settings_schema.custom_settings.name",
+    "name": "Social media",
     "settings": [
       {
         "type": "header",
-        "content": "t:settings_schema.custom_settings.settings.header"
+        "content": "Social accounts"
       },
       {
-        "type": "paragraph",
-        "content": "t:settings_schema.custom_settings.settings.paragraph"
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "YouTube"
       }
     ]
   },
   {
-    "name": "t:settings_schema.favicon.name",
+    "name": "Favicon",
     "settings": [
       {
         "type": "image_picker",
         "id": "favicon",
-        "label": "t:settings_schema.favicon.settings.label",
-        "info": "t:settings_schema.favicon.settings.info"
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32 x 32px"
       }
     ]
   }

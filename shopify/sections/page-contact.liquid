@@ -1,0 +1,103 @@
+{%- assign title = section.settings.title -%}
+{%- assign subtitle = section.settings.subtitle -%}
+
+{%- capture form -%}
+	{%- assign formId = 'ContactForm' -%}
+	{% form 'contact', id: formId %}
+		{% include 'form-status', form_id: formId %}
+
+		<label class="label">
+			<span class="sr-only">{{ 'contact.form.name' | t }}</span>
+			<input type="text"
+						 name="contact[name]"
+						 placeholder="{{ 'contact.form.name' | t }} *"
+						 id="{{ formId }}-name"
+						 class="input input--blue"
+						 required
+						 value="{% if form['name'] %}{{ form['name'] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+		</label>
+
+		<label class="label">
+			<span class="sr-only">{{ 'contact.form.email' | t }} <span aria-hidden="true">*</span></span>
+			<input
+				type="email"
+				name="contact[email]"
+				placeholder="{{ 'contact.form.email' | t }} *"
+				id="{{ formId }}-email"
+				class="input input--blue"
+				required
+				autocorrect="off"
+				autocapitalize="off"
+				value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+				aria-required="true"
+				{%- if form.errors contains 'email' -%}
+					class="input--error"
+					aria-invalid="true"
+					aria-describedby="{{ formId }}-email-error"
+				{%- endif -%}
+			>
+		</label>
+
+		<label class="label">
+			<span class="sr-only">{{ 'contact.form.message' | t }}</span>
+			<textarea
+				rows="10"
+				name="contact[body]"
+				placeholder="{{ 'contact.form.message' | t }} *"
+				id="{{ formId }}-message"
+				class="textarea"
+				required
+			>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+		</label>
+		<button type="submit" class="button contact-form__button" data-button-color="secondary">{{ 'contact.form.submit' | t }}</button>
+
+	{% endform %}
+{%- endcapture -%}
+<section
+	class="contact"
+	data-section-id="{{- section.id -}}"
+	data-section-type="contact"
+>
+	<div class="content-wrapper">
+		<div class="contact__container">
+			{%- if title or subtitle -%}
+				<div class="title-wrapper">
+					{%- if title -%}
+						<h1 class="contact__title title-wrapper__title title-bg title-bg--tertiary">{{ title }}</h1>
+					{%- endif -%}
+
+					{%- if subtitle -%}
+						<p class="contact__subtitle title-wrapper__subtitle">{{ subtitle }}</p>
+					{%- endif -%}
+				</div>
+			{%- endif -%}
+
+			{%- if form -%}
+				<div class="contact__form">
+					{{ form }}
+				</div>
+			{%- endif -%}
+		</div>
+	</div>
+</section>
+
+{% schema %}
+	{
+		"name": "Contact",
+		"settings": [
+			{
+				"type": "text",
+				"id": "title",
+				"label": "Title",
+				"info": "Need wrap words to see background, <span><span>example</span></span>",
+				"default": "Hier kannst du treatfuls <span><span>kontaktieren</span></span>"
+			},
+			{
+				"type": "text",
+				"id": "subtitle",
+				"label": "Subtitle",
+				"default": "Wir freuen uns von dir zu hören! Egal ob Feedback oder Kooperation, melde dich."
+			}
+		]
+	}
+{% endschema %}

@@ -1,7 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "main-cart"
+      "type": "main-cart",
+      "settings": {
+        "cart_title": "<span><span>Warenkorb<\/span><\/span>",
+        "cart_subtitle": "yay, das ist in deinem Warenkorb:",
+        "image_left": "shopify:\/\/shop_images\/cart-img-left.png",
+        "image_right": "shopify:\/\/shop_images\/cart-img-right.png",
+        "continue_shopping_url": "shopify:\/\/collections\/all"
+      }
     }
   },
   "order": [
