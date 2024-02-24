@@ -1,0 +1,35 @@
+<template>
+	<div class="minicart__section minicart__section--empty js-minicart-items">
+		<section class="minicart-empty">
+			<h2 class="minicart-empty__title">
+				{{ 'cart.general.mini_cart_empty_title' | t }}
+			</h2>
+			<p class="minicart-empty__subtitle text">
+				{{ 'cart.general.mini_cart_empty_subtitle' | t }}
+			</p>
+			<a v-if="emptyButtonText && emptyButtonUrl"
+				 :href="emptyButtonUrl"
+				 class="minicart-empty__button button button--tertiary"
+			>
+				{{ emptyButtonText }}
+			</a>
+		</section>
+	</div>
+</template>
+
+<script>
+
+export default {
+	name: 'EmptyMinicart',
+	props: {
+		emptyButtonText: {
+			type: String,
+			required: false
+		},
+		emptyButtonUrl: {
+			type: String,
+			required: false
+		}
+	}
+};
+</script>

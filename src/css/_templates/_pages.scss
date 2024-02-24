@@ -1,0 +1,82 @@
+.template-page {
+	&.template-page--jobs,
+	&.template-page--terms,
+	&.template-page--community {
+		background-color: $brand-primary;
+
+		.header {
+			background-color: $brand-primary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				z-index: 1;
+				width: 100%;
+				height: 2px;
+				background-color: $brand-tertiary;
+			}
+		}
+
+		.footer__logo {
+			color: $brand-primary;
+		}
+	}
+
+	&.template-page--withdrawal {
+		background-color: $brand-tertiary;
+
+		.header__logo-wrapper {
+			color: $brand-quaternary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-tertiary;
+			color: $brand-primary;
+		}
+
+		.footer__logo {
+			color: $brand-tertiary;
+		}
+
+		.footer__wrap {
+			background-color: $brand-primary;
+		}
+	}
+
+	&.template-page--guidelines,
+	&.template-page--methods,
+	&.template-page--faq,
+	&.template-page--about-us,
+	&.template-page--contact {
+		background-color: $brand-secondary;
+
+		.header {
+			background-color: $brand-secondary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-secondary;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				z-index: 1;
+				width: 100%;
+				height: 2px;
+				background-color: $brand-tertiary;
+			}
+		}
+
+		.footer__logo {
+			color: $brand-secondary;
+		}
+	}
+}

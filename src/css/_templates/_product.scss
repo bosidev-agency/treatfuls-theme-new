@@ -1,0 +1,102 @@
+.template-product {
+	&[data-pdp-bg="primary"] {
+		.main-product {
+			background-color: $brand-primary;
+
+			.title-bg {
+				> span {
+					&::before {
+						background-color: $brand-tertiary;
+					}
+				}
+			}
+		}
+
+		.footer__wrap {
+			background-color: $brand-secondary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+			color: $brand-secondary;
+		}
+	}
+
+	&[data-pdp-bg="secondary"] {
+		.main-product {
+			background-color: $brand-secondary;
+		}
+
+		.footer__wrap {
+			background-color: $brand-tertiary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+			color: $brand-tertiary;
+		}
+
+		.footer__logo {
+			color: $brand-primary;
+		}
+	}
+
+	&[data-pdp-bg="tertiary"] {
+		.main-product {
+			background-color: $brand-tertiary;
+		}
+
+		.main-product__bg-line {
+			color: $brand-secondary;
+
+			&::after {
+				background-color: $brand-secondary;
+			}
+		}
+
+		.ingredients,
+		.footer__wrap {
+			background-color: $brand-secondary;
+		}
+
+		/* stylelint-disable no-descending-specificity */
+		.ingredients__title {
+			> span {
+				&::before {
+					background-color: $brand-tertiary;
+				}
+			}
+		}
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+			color: $brand-secondary;
+		}
+	}
+
+	&[data-pdp-bg="quaternary"] {
+		.main-product {
+			background-color: $brand-quaternary;
+		}
+
+		.footer__wrap {
+			background-color: $brand-tertiary;
+		}
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+			color: $brand-tertiary;
+		}
+
+		.footer__logo {
+			color: $brand-primary;
+		}
+	}
+
+	@include breakpoint(m-xxl) {
+		padding-bottom: 168px;
+	}
+	@include breakpoint(m-xl) {
+		padding-bottom: 136px;
+	}
+}

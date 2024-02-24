@@ -1,0 +1,41 @@
+/*
+EXAMPLES:
+@include font-face("Open Sans", "OpenSans");
+@include font-face("Open Sans", "OpenSans-Bold", bold);
+@include font-face("Open Sans", "OpenSans-SemiBold", 600);
+@include font-face("Open Sans", "OpenSans-Light", 200);
+ */
+
+ @font-face {
+	font-family: "Founders Grotesk";
+	src: url("FoundersGrotesk-Regular.eot");
+	src: local("Founders Grotesk Regular"), local("FoundersGrotesk-Regular"),
+		url("FoundersGrotesk-Regular.eot?#iefix") format("embedded-opentype"),
+		url("FoundersGrotesk-Regular.woff") format("woff"),
+		url("FoundersGrotesk-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Founders Grotesk";
+	src: url("FoundersGroteskMono-Medium.eot");
+	src: local("Founders Grotesk Mono Medium"),
+		local("FoundersGroteskMono-Medium"),
+		url("FoundersGroteskMono-Medium.eot?#iefix") format("embedded-opentype"),
+		url("FoundersGroteskMono-Medium.woff") format("woff"),
+		url("FoundersGroteskMono-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Founders Grotesk";
+	src: url("FoundersGrotesk-Bold.eot");
+	src: local("Founders Grotesk Bold"), local("FoundersGrotesk-Bold"),
+		url("FoundersGrotesk-Bold.eot?#iefix") format("embedded-opentype"),
+		url("FoundersGrotesk-Bold.woff") format("woff"),
+		url("FoundersGrotesk-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}

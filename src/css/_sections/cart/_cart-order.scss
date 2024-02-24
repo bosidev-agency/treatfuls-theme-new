@@ -1,0 +1,36 @@
+.cart-order {
+	padding-top: 60px;
+
+	&.cart-order--mini {
+		padding-top: 20px;
+	}
+}
+
+.cart-order__heading {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #ffffff;
+
+	@include breakpoint(no-fw) {
+		font-size: 1.3vw;
+	}
+}
+
+.cart-order__button {
+	width: 100%;
+	text-align: center;
+}
+
+.cart-order__link {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	text-align: center;
+	text-decoration: underline;
+	color: #fff;
+}

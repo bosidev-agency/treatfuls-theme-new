@@ -1,0 +1,62 @@
+.product-form {
+	@include breakpoint(m-xxl) {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 99;
+		width: 100%;
+		padding: 32px;
+
+		&[data-product-form-color="primary"] {
+			background-color: $brand-primary;
+		}
+
+		&[data-product-form-color="secondary"] {
+			background-color: $brand-secondary;
+		}
+		&[data-product-form-color="tertiary"] {
+			background-color: $brand-tertiary;
+		}
+		&[data-product-form-color="quaternary"] {
+			background-color: $brand-quaternary;
+		}
+	}
+
+	@include breakpoint(m-xl) {
+		padding: 16px;
+	}
+}
+
+.product-form__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+	@include breakpoint(no-m) {
+		margin-bottom: 40px;
+	}
+}
+
+.product-form__price {
+	color: #ffffff;
+
+	&.product-form__price--old {
+		text-decoration: line-through;
+	}
+
+	&.product-form__price__price--new {
+		margin-left: 25px;
+	}
+}
+
+.product-form__quantity-wrapper {
+	display: inline-block;
+
+	&.product-form__quantity-wrapper--hidden {
+		pointer-events: none;
+	}
+}
+
+.product-form__button {
+	width: 100%;
+}

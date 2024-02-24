@@ -1,0 +1,62 @@
+.home-ticker {
+	background-color: $brand-tertiary;
+}
+
+.home-ticker__container {
+	position: relative;
+	overflow: hidden;
+
+	@include breakpoint(no-m) {
+		padding-top: 65px;
+		padding-bottom: 120px;
+	}
+
+	@include breakpoint(m-xxl) {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+}
+
+.home-ticker__bg-line {
+	background-color: $brand-tertiary;
+	color: $brand-secondary;
+}
+
+.ticker {
+	display: inline-block;
+	padding-right: 90%;
+	white-space: nowrap;
+
+	@include breakpoint(m-xl) {
+		padding-right: 80%;
+	}
+}
+
+.ticker-wrap {
+	width: 100%;
+	padding-left: 90%;
+	box-sizing: content-box;
+
+	&.ticker-wrap--revert {
+		padding-left: 0;
+	}
+
+	@include breakpoint(m-xl) {
+		padding-left: 80%;
+	}
+}
+
+.ticker__item {
+	font-size: 200px;
+	font-weight: 700;
+	line-height: 1.1;
+	color: #fff;
+
+	@include breakpoint(m-xxl) {
+		font-size: 150px;
+	}
+
+	@include breakpoint(m-xl) {
+		font-size: 64px;
+	}
+}

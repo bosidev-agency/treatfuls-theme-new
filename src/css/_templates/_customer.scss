@@ -1,0 +1,35 @@
+.template-login,
+.template-reset_password,
+.template-register,
+.template-addresses,
+.template-order,
+.template-account {
+	background-color: $brand-secondary;
+
+	.header {
+		background-color: $brand-secondary;
+	}
+
+	.footer__bg-line {
+		background-color: $brand-secondary;
+	}
+
+	.footer__logo {
+		color: $brand-secondary;
+	}
+
+	&[data-site-bg="primary"] {
+		background-color: $brand-primary;
+
+		.footer__bg-line {
+			background-color: $brand-primary;
+		}
+	}
+}
+.template-addresses {
+	@include breakpoint(no-fw) {
+		.title-wrapper {
+			max-width: 30.65vw;
+		}
+	}
+}

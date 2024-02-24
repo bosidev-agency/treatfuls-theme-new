@@ -1,0 +1,285 @@
+//typography: base styles for fonts, p, a, standard h1, h2 ...
+
+body {
+	font-size: 16px;
+
+	@include breakpoint(no-fw) {
+		font-size: 1.3vw;
+	}
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	line-height: 1;
+	text-decoration: none;
+
+	&.mb-15 {
+		margin-bottom: 15px;
+	}
+}
+
+h1,
+.h1 {
+	font-size: 64px;
+
+	@include breakpoint(no-fw) {
+		font-size: 3vw;
+	}
+
+	@include breakpoint(m-l) {
+		font-size: 40px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 40px;
+}
+
+h3,
+.h3 {
+	font-size: 24px;
+
+	@include breakpoint(no-fw) {
+		font-size: 1.5vw;
+	}
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 670px;
+	margin: 0 auto;
+	padding-bottom: 120px;
+	text-align: center;
+
+	.title-wrapper__title {
+		padding-bottom: 24px;
+	}
+
+	.title-wrapper__subtitle {
+		max-width: 438px;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		color: #ffffff;
+
+		&.title-wrapper__subtitle--sm {
+			max-width: none;
+			font-size: 16px;
+			line-height: 1.5;
+
+			br {
+				content: "";
+				display: block !important;
+				margin-bottom: 25px !important;
+			}
+		}
+	}
+
+	@include breakpoint(m-xxl) {
+		max-width: 60vw;
+		padding-bottom: 60px;
+	}
+
+	@include breakpoint(m-xl) {
+		max-width: 70vw;
+	}
+
+	@include breakpoint(m-l) {
+		max-width: none;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	@include breakpoint(no-fw) {
+		max-width: 32vw;
+		padding-bottom: 5vw;
+
+		.title-wrapper__title {
+			padding-bottom: 2vw;
+		}
+
+		.title-wrapper__subtitle {
+			max-width: 70%;
+			font-size: 1.5vw;
+			line-height: 1.3;
+
+			&.title-wrapper__subtitle--sm {
+				font-size: 1vw;
+			}
+		}
+	}
+}
+
+.title-bg {
+	font-size: 64px;
+	line-height: 1;
+	color: #ffffff;
+
+	> span {
+		position: relative;
+		display: inline-block;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 22px;
+			left: -5px;
+			z-index: 0;
+			display: block;
+			width: 104%;
+			height: 72%;
+			background-color: $brand-primary;
+			transition: background-color 0.25s ease-in;
+		}
+
+		> span {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&.title-bg--primary {
+		> span {
+			&::before {
+				background-color: $brand-primary;
+			}
+		}
+	}
+
+	&.title-bg--tertiary {
+		> span {
+			&::before {
+				background-color: $brand-tertiary;
+			}
+		}
+	}
+
+	&.title-bg--quaternary {
+		> span {
+			&::before {
+				background-color: $brand-quaternary;
+			}
+		}
+	}
+
+	&.title-bg--sm {
+		font-size: 40px;
+
+		> span {
+			&::before {
+				top: 13px;
+				left: -3px;
+			}
+		}
+	}
+
+	@include breakpoint(no-fw) {
+		font-size: 3vw;
+
+		> span {
+			&::before {
+				top: 1.1vw;
+				left: -0.2vw;
+			}
+		}
+
+		&.title-bg--sm {
+			font-size: 2.2vw;
+
+			> span {
+				&::before {
+					top: 0.8vw;
+					left: -0.4vw;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(m-xxl) {
+		> span {
+			&::before {
+				top: 13px;
+				left: -2px;
+			}
+		}
+
+		&.title-bg--sm {
+			font-size: 64px;
+
+			> span {
+				&::before {
+					top: 22px;
+					left: -5px;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(m-xl) {
+		font-size: 40px;
+
+		&.title-bg--sm {
+			font-size: 40px;
+
+			> span {
+				&::before {
+					top: 13px;
+					left: -2px;
+				}
+			}
+		}
+	}
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+
+	@include breakpoint(no-fw) {
+		font-size: 1.5vw;
+		line-height: 1.3;
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: 1.5;
+
+	&.text--sm {
+		font-size: 14px;
+	}
+
+	@include breakpoint(no-fw) {
+		font-size: 1vw;
+
+		&.text--sm {
+			font-size: 1vw;
+		}
+	}
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.color-white {
+	color: #fff;
+}

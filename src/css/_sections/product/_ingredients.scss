@@ -1,0 +1,160 @@
+.ingredients {
+	background-color: $brand-tertiary;
+	transition: all 0.25s ease-in-out;
+}
+
+.ingredients__container {
+	padding-top: 105px;
+
+	@include breakpoint(m-xxl) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@include breakpoint(no-m) {
+		padding-bottom: 119px;
+	}
+
+	@include breakpoint(no-fw) {
+		padding-top: 7vw;
+		padding-bottom: 7vw;
+	}
+}
+
+.ingredients__bg-line {
+	color: $brand-primary;
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 3px;
+		background-color: $brand-primary;
+	}
+}
+
+.ingredients__title {
+	max-width: 672px;
+	margin: 0 auto;
+	padding-bottom: 120px;
+	text-align: center;
+
+	> span {
+		&::before {
+			background-color: $brand-primary;
+		}
+	}
+
+	@include breakpoint(no-fw) {
+		max-width: 39.65vw;
+	}
+
+	@include breakpoint(l) {
+		max-width: 39.65vw;
+	}
+
+	@include breakpoint(m-xxl) {
+		padding-bottom: 60px;
+	}
+
+	@include breakpoint(m-xl) {
+		max-width: 85%;
+	}
+
+	@include breakpoint(m-l) {
+		max-width: none;
+	}
+}
+
+.ingredients__gallery {
+	position: relative;
+	overflow: hidden;
+
+	@include breakpoint(no-m) {
+		max-width: 939px;
+		margin: 0 auto;
+	}
+
+	@include breakpoint(no-m-xl) {
+		.swiper-wrapper {
+			flex-wrap: wrap;
+		}
+
+		.ingredients__slide {
+			width: 33.3333%;
+		}
+	}
+
+	@include breakpoint(no-fw) {
+		max-width: 45vw;
+	}
+
+	@include breakpoint(m-xl) {
+		margin-left: -32px;
+		margin-right: -32px;
+	}
+
+	@include breakpoint(m-l) {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+}
+
+.ingredients-item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 202px;
+	margin: 10px 0;
+	text-align: center;
+
+	.icon {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		color: #ffffff;
+	}
+
+	@include breakpoint(m-l) {
+		min-height: 180px;
+	}
+
+	@include breakpoint(no-m) {
+		.icon {
+			animation-name: spin;
+			animation-duration: 23s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+	}
+
+	@include breakpoint(no-fw) {
+		min-height: 260px;
+	}
+
+	@include breakpoint(no-qhd) {
+		min-height: 320px;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+}
+
+//.ingredients-item__img {
+//	width: 100px;
+//	height: 100px;
+//}

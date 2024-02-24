@@ -1,0 +1,59 @@
+@mixin breakpoint($point) {
+	//===== Desktop size
+	@if $point == no-qhd {
+		@media (min-width: 2560px) {
+			@content;
+		}
+	} @else if $point == no-fw {
+		@media (min-width: 1920px) {
+			@content;
+		}
+	} @else if $point == xxl {
+		@media (max-width: 1700px) {
+			@content;
+		}
+	} @else if $point == xl {
+		@media (max-width: 1549px) {
+			@content;
+		}
+	} @else if $point == no-xl {
+		@media (min-width: 1550px) {
+			@content;
+		}
+	} @else if $point == l {
+		@media (max-width: 1249px) {
+			@content;
+		}
+	} @else if $point == no-l {
+		@media (min-width: 1250px) {
+			@content;
+		}
+	} @else if $point == no-m {
+		@media (min-width: 992px) {
+			@content;
+		}
+	} @else if $point == no-m-xl {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+
+	//===== Mobile size
+	@else if $point == m-xxl {
+		@media (max-width: 991px) {
+			@content;
+		}
+	} @else if $point == m-xl {
+		@media (max-width: 767px) {
+			@content;
+		}
+	} @else if $point == m-l {
+		@media (max-width: 575px) {
+			@content;
+		}
+	} @else if $point == m {
+		@media (max-width: 480px) {
+			@content;
+		}
+	}
+}

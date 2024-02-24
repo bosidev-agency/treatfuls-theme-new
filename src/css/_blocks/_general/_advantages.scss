@@ -1,0 +1,122 @@
+.advantages__container {
+	background-color: $brand-secondary;
+
+	@include breakpoint(m-xxl) {
+		padding-bottom: 40px;
+	}
+
+	@include breakpoint(no-m) {
+		padding-bottom: 119px;
+	}
+}
+
+.advantages__bg-line {
+	background-color: $brand-tertiary;
+	color: $brand-secondary;
+}
+
+.advantages__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 672px;
+	margin: 0 auto;
+	padding-top: 105px;
+	padding-bottom: 98px;
+	text-align: center;
+
+	@include breakpoint(no-fw) {
+		max-width: 39.65vw;
+	}
+}
+
+.advantages__title {
+	margin-bottom: 32px;
+
+	@include breakpoint(m-xl) {
+		max-width: 85%;
+	}
+
+	@include breakpoint(m-l) {
+		max-width: none;
+	}
+}
+
+.advantages__subtitle {
+	max-width: 430px;
+	color: #ffffff;
+
+	@include breakpoint(no-fw) {
+		max-width: 27vw;
+	}
+}
+
+.advantages__gallery {
+	position: relative;
+	overflow: hidden;
+
+	@include breakpoint(no-m) {
+		max-width: 939px;
+		margin: 0 auto;
+	}
+
+	@include breakpoint(no-m-xl) {
+		.swiper-wrapper {
+			flex-wrap: wrap;
+		}
+
+		.advantages__slide {
+			width: 50%;
+		}
+	}
+
+	@include breakpoint(no-m) {
+		.advantages__slide {
+			width: 25%;
+		}
+	}
+
+	@include breakpoint(no-fw) {
+		max-width: 45vw;
+	}
+
+	@include breakpoint(m-xl) {
+		margin-left: -32px;
+		margin-right: -32px;
+	}
+
+	@include breakpoint(m-l) {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+}
+
+.advantage-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 28px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.advantage-item__img {
+	width: 100px;
+	height: 100px;
+}
+
+.advantage-item__title {
+	max-width: 205px;
+	padding-top: 27px;
+	color: #ffffff;
+
+	@include breakpoint(no-fw) {
+		max-width: none;
+	}
+}
+
+.advantages--product {
+	.advantages__container {
+		background-color: $brand-primary;
+	}
+}

@@ -1,0 +1,20 @@
+.template-404 {
+	.header {
+		background-color: $brand-tertiary;
+	}
+
+	.header__logo-wrapper {
+		color: $brand-quaternary;
+	}
+
+	.footer {
+		.footer__bg-line {
+			background-color: $brand-tertiary;
+			color: $brand-primary;
+		}
+	}
+
+	.footer__wrap {
+		background-color: $brand-primary;
+	}
+}

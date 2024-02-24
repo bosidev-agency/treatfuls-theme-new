@@ -1,0 +1,47 @@
+// Header
+@import "header/header";
+@import "header/hamburger";
+@import "header/header-nav";
+
+// Footer
+@import "footer/footer";
+
+// Cart
+@import "cart/minicart";
+@import "cart/cart";
+@import "cart/cart-product";
+@import "cart/cart-order";
+
+// Home
+@import "home/home-products";
+@import "home/home-richtext";
+@import "home/home-ticker";
+
+// Collections
+@import "collections/collections";
+
+// Product
+@import "product/main-product";
+@import "product/product-gallery";
+@import "product/product-info";
+@import "product/product-form";
+@import "product/ingredients";
+
+// Customers
+@import "customers/customer";
+@import "customers/login";
+
+// Careers section
+
+// Pages
+@import "pages/404/index";
+@import "pages/community/index";
+@import "pages/guidelines/index";
+@import "pages/methods/index";
+@import "pages/contact/index";
+@import "pages/contact/contact-form";
+@import "pages/about-us/index";
+@import "pages/jobs/index";
+@import "pages/terms/terms";
+
+// Blog

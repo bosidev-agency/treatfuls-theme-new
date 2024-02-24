@@ -4,6 +4,9 @@
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
 import './main.scss'
+import './js/main'
+import './js/password'
+import './js/gift-cart'
 
 /**
  * vuex

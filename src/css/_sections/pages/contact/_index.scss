@@ -1,0 +1,14 @@
+.contact {
+	background-color: $brand-secondary;
+}
+
+.contact__form {
+	max-width: 470px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@include breakpoint(no-fw) {
+		max-width: 28vw;
+	}
+}

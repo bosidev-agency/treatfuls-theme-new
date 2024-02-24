@@ -1,0 +1,22 @@
+.community {
+	background-color: $brand-primary;
+}
+
+.community__form {
+	@include breakpoint(m-xl) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	@include breakpoint(no-qhd) {
+		iframe {
+			min-height: 920px;
+		}
+	}
+
+	@media (min-width: 2816px) {
+		iframe {
+			min-height: 1210px;
+		}
+	}
+}

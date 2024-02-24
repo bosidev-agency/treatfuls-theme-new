@@ -1,0 +1,18 @@
+export const cartGetters = {
+	CART: "CART",
+	SETTINGS: "SETTINGS"
+};
+
+export const cartActions = {
+	INIT_CART: "INIT_CART",
+	GET_CART: "GET_CART",
+	ADD_TO_CART: "ADD_TO_CART",
+	REMOVE_ITEM: "REMOVE_ITEM",
+	CHANGE_QUANTITY: "CHANGE_QUANTITY"
+};
+
+export const cartMutations = {
+	UPDATE_LOADING: "UPDATE_LOADING",
+	UPDATE_CART: "UPDATE_CART",
+	UPDATE_SETTINGS: "UPDATE_SETTINGS"
+};
