@@ -12,7 +12,7 @@ import { formatMoney } from "@shopify/theme-currency";
 import { getUrlWithVariant } from "@shopify/theme-product-form";
 import translations from "@savchukoleksii/shopify-theme-translations-tool";
 import Swiper, { Thumbs } from "swiper";
-import CustomProductForm from "../core/ProductFrom";
+import CustomProductForm from "../../js/core/ProductForm";
 import { addToCartSubmit } from "../core/helpers/addToCartSubmit";
 import objects from "../core/objects";
 

@@ -22,7 +22,7 @@
 
 		{%- render 'head-theme-meta' with layout: 'gift_cart' -%}
 
-		<link rel="stylesheet" href="{{- 'main.build.min.static.css' | asset_url -}}">
+		<link rel="stylesheet" href="{{- 'bundle.css' | asset_url -}}">
 
 		{{ content_for_header }}
 	</head>
@@ -31,6 +31,6 @@
 		{{ content_for_layout }}
 
 		<script src="{{- 'vendor/qrcode.js' | shopify_asset_url -}}" defer></script>
-		<script src="{{- 'gift-card.build.static.js' | asset_url -}}" defer></script>
+		<script src="{{- 'bundle.js' | asset_url -}}" defer></script>
 	</body>
 </html>

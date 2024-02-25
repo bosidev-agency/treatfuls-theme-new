@@ -60,7 +60,7 @@
 
 		{% include 'social-meta-tags' %}
 
-		<link rel="stylesheet" href="{{ 'main.build.static.css' | asset_url }}">
+		<link rel="stylesheet" href="{{ 'bundle.css' | asset_url }}">
       <link rel="stylesheet" href="{{ 'custom.static.css' | asset_url }}">
 
 		{%- if template.directory == 'customers' -%}
@@ -128,7 +128,7 @@
 			<script src="{{- 'shopify_common.js' | shopify_asset_url -}}" defer></script>
 		{%- endif -%}
 
-		<script src="{{- 'main.build.min.static.js' | asset_url -}}" defer></script>
+		<script src="{{- 'bundle.js' | asset_url -}}" defer></script>
 	    {%- section 'global-newsletter-popup' -%}
         {% include "bc_banner" %}
 </body>

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import translations from "@savchukoleksii/shopify-theme-translations-tool";
 import settings from "@savchukoleksii/shopify-theme-settings-tool";
-import objects from "../../core/objects";
+import objects from "../../js/core/objects";
 import { formatMoney } from "@shopify/theme-currency";
 import { getSizedImageUrl } from "@shopify/theme-images";
 

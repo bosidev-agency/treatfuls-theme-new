@@ -1,9 +1,9 @@
 import { register } from "@shopify/theme-sections";
 import Vue from "vue";
-import "../vue/filters";
-import { store } from "../vue/store";
-import { cartActions } from "../vue/store/cart/types";
-import Cart from "../vue/Cart";
+import "../../vue/filters";
+import { store } from "../../vue/store";
+import { cartActions } from "../../vue/store/cart/types";
+import Cart from "../../vue/Cart";
 
 const selectors = {
 	sectionData: "[data-section-data]"

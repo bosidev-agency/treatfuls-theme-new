@@ -1,9 +1,9 @@
 import { register } from "@shopify/theme-sections";
 import Vue from "vue";
-import "../vue/filters";
-import { store } from "../vue/store";
-import { cartActions } from "../vue/store/cart/types";
-import MinicartVue from "../vue/Minicart";
+import "../../vue/filters";
+import { store } from "../../vue/store";
+import { cartActions } from "../../vue/store/cart/types"
+import MinicartVue from "../../vue/Minicart"
 import { templateEquals } from "@savchukoleksii/shopify-template-checker";
 
 const selectors = {

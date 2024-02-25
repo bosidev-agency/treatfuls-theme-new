@@ -25,6 +25,21 @@
     "shop": "treatfuls.myshopify.com"
   },
   "dependencies": {
+    "@savchukoleksii/gulp-shopify-theme-translations-tool": "^0.0.2",
+    "@savchukoleksii/shopify-template-checker": "^1.0.4",
+    "@savchukoleksii/shopify-theme-settings-tool": "^0.0.1",
+    "@savchukoleksii/shopify-theme-translations-tool": "^0.0.9",
+    "@shopify/theme-currency": "^4.1.1",
+    "@shopify/theme-images": "^4.1.1",
+    "@shopify/theme-product-form": "^4.1.1",
+    "@shopify/theme-sections": "^4.1.1",
+    "axios": "^1.6.7",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "es6-promise": "^4.2.8",
+    "form-serialize": "^0.7.2",
+    "jquery": "^3.7.1",
+    "qs": "^6.11.2",
+    "swiper": "^11.0.6",
     "vue": "^3.2.26",
     "vuex": "^4.0.2"
   },

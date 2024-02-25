@@ -1,4 +1,4 @@
-import settings from "../../../core/settings";
+import settings from "../../../js/core/settings";
 import cartApi from "../../api/cart";
 
 import { cartActions, cartMutations, cartGetters } from "./types";
