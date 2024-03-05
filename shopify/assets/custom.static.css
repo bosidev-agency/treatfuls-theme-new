@@ -1824,10 +1824,6 @@ section.advantages__header.full_width_div {
 }
 
 @media screen and (max-width: 990px) {
-.product-gallery .product-gallery__slider-thumbnail .swiper-slide {
-  width: 20% !important;
-}
-
 .product-gallery .product-gallery__slider-thumbnail picture {
   height: 70px !important;
   width: 70px !important;
