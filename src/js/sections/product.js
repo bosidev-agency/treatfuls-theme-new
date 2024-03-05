@@ -10,8 +10,8 @@ import axios from "axios";
 import { register } from "@shopify/theme-sections";
 import { formatMoney } from "@shopify/theme-currency";
 import { getUrlWithVariant } from "@shopify/theme-product-form";
-import translations from "@savchukoleksii/shopify-theme-translations-tool";
-import Swiper, { Thumbs } from "swiper";
+import Swiper from "swiper";
+import { Thumbs } from "swiper/modules"
 import CustomProductForm from "../../js/core/ProductForm";
 import { addToCartSubmit } from "../core/helpers/addToCartSubmit";
 import objects from "../core/objects";
@@ -50,6 +50,8 @@ const selectors = {
 	productGalleryThumbnail: '[data-product-gallery="thumbnail"]',
 	productGalleryWrapper: '[data-product-gallery="wrapper"]'
 };
+
+const { translations } = window;
 
 register("product", {
 	slider: null,
@@ -258,13 +260,13 @@ register("product", {
 
 		if (!variant) {
 			this.submitButtonElement.disabled = true;
-			buttonText = translations.get("products.product.unavailable");
+			buttonText = translations.products.product.unavailable;
 		} else if (variant.available) {
 			this.submitButtonElement.disabled = false;
-			buttonText = translations.get("products.product.add_to_cart");
+			buttonText = translations.products.product.add_to_cart;
 		} else {
 			this.submitButtonElement.disabled = true;
-			buttonText = translations.get("products.product.sold_out");
+			buttonText = translations.products.product.sold_out;
 		}
 
 		this.submitButtonTextElement.innerHTML = buttonText;
