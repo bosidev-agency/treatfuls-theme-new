@@ -45,13 +45,6 @@
           "copyright_text": "<a href=\"https:\/\/appsoluts.de\" style=\"color: #ffffff\">_app:soluts\/*<\/a> is presenting this 😋 snackable website 🌐<br><br>\n© 2024, snacks with benefits GmbH. Alle Rechte vorbehalten."
         }
       },
-      "minicart": {
-        "type": "minicart",
-        "settings": {
-          "empty_button_text": "SHOP ALL",
-          "empty_button_url": ""
-        }
-      },
       "main-cart-mini": {
         "type": "main-cart-mini",
         "settings": {
