@@ -25,10 +25,10 @@ window.theme = window.theme || {};
 require("./components/lazy-load-images");
 require("./components/not-found");
 require("./components/accordion");
+require("./components/cart-item");
 
 /*================ Sections ================*/
 require("./sections/header");
-require("./sections/cart");
 require("./sections/minicart");
 require("./sections/product");
 require("./sections/ingredients");
@@ -38,6 +38,7 @@ require("./sections/home/ticker");
 require("./sections/collections");
 require("./sections/advantages");
 require("./sections/about-us");
+require("./sections/comparison-slider");
 
 /*================ Templates ================*/
 require("./templates/customers-addresses");
