@@ -1,0 +1,17 @@
+<div class="cart-order" class="{% if is_mini_cart %}cart-order--mini{% endif %}">
+  <div class="cart-order__heading h3">
+    <span class="cart-order__title">{{ 'cart.general.cart_subtotal' | t }}</span>
+    <span class="cart-order__total">{{ cart.total_price | money }}</span>
+  </div>
+  <div class="cart-order__actions">
+    <button form="{% if is_mini_cart %}mini-cart-form{% else %}cart-form{% endif %}" type="submit"
+      class="cart-order__button button button--tertiary">
+      {{ 'cart.general.checkout' | t }}
+    </button>
+    {%- if is_mini_cart -%}
+      <button class="cart-order__link">
+        {{ 'cart.general.continue_shopping' | t }}
+      </button>
+    {%- endif -%}
+  </div>
+</div>
