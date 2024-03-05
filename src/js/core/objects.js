@@ -44,15 +44,17 @@ export default {
 	get(name) {
 		try {
 			const value = name.split(".").reduce((objects, key) => {
-				if (objects.hasOwnProperty(key)) {
-					return objects[key];
-				}
+				if (Object.prototype.hasOwnProperty.call(objects, key)) {
+          return objects[key];
+        }
 
 				return null;
 			}, this.objects);
 
 			return unescape(value);
-		} catch (error) {}
+		} catch (error) {
+      console.log(error)
+    }
 
 		return null;
 	},
