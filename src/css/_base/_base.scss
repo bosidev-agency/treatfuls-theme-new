@@ -1,6 +1,5 @@
 @import "variables";
 @import "reset-styles";
-@import "fonts";
 @import "typography";
 
 * {
@@ -86,7 +85,7 @@ svg.icon-triangular-line {
 		max-width: 970px;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		&.container--md {
 			max-width: 768px;
 		}
@@ -98,12 +97,12 @@ svg.icon-triangular-line {
 		}
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		&.container--sm {
 			max-width: 34vw;
 		}
@@ -120,11 +119,11 @@ svg.icon-triangular-line {
 	padding-top: 80px;
 	padding-bottom: 200px;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-bottom: 110px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		padding-top: 7vw;
 	}
 }

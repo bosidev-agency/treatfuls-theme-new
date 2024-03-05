@@ -503,7 +503,7 @@ footer.footer svg.icon.icon-triangular-line {
 .newsletter-popup__title {
     padding-left: 0;
     padding-right: 0;
-    font-family: Founders Grotesk,sans-serif;
+    font-family: "Founders Grotesk",sans-serif;
     font-size: 24px;
     line-height: 1.1;
 }
@@ -517,7 +517,7 @@ footer.footer svg.icon.icon-triangular-line {
 .newsletter-popup__description {
 /*     padding-left: 20px;
     padding-right: 20px; */
-    font-family: Founders Grotesk,sans-serif;
+    font-family: "Founders Grotesk",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0;
