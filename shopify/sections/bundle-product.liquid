@@ -40,6 +40,28 @@
 	[data-pdp-bg="senary"] .main-product {
 	background-color: #9c4054;
 	}
+
+  {% if product.metafields.custom.background_color -%}
+    .main-product, .header {
+      background-color: {{ product.metafields.custom.background_color }} !important;
+    }
+
+    @media screen and (max-width: 991px) {
+      .product-form {
+        background-color: {{ product.metafields.custom.background_color }} !important;
+      }
+    }
+  {%- endif -%}
+
+  {%- if product.metafields.custom.accent_color -%}
+    .main-product .title-bg > span::before, .product-form__button::before{
+      background-color: {{ product.metafields.custom.accent_color }} !important;
+    }
+
+    .header__logo-wrapper {
+      color: {{ product.metafields.custom.accent_color }} !important;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 <div class="main-product bundle-product"
