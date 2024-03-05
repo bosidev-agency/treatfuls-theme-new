@@ -176,8 +176,8 @@
       "cart_error": "Beim Aktualisieren des Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
       "cart_subtotal": "Zwischensumme",
       "mini_cart_item": "Artikel",
-      "mini_cart_empty_title": "Ihr Warenkorb ist leer",
-      "mini_cart_empty_subtitle": "Sie verpassen alles, was wir sagen."
+      "mini_cart_empty_title": "Dein Warenkorb ist leer",
+      "mini_cart_empty_subtitle": "Noch nichts gefunden?"
     },
     "label": {
       "discounted_total": "Gesamtrabatt",
