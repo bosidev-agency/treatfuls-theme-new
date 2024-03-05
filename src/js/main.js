@@ -2,7 +2,6 @@
 
 import "es6-promise/auto";
 import objects from "./core/objects";
-import translations from "@savchukoleksii/shopify-theme-translations-tool";
 import settings from "@savchukoleksii/shopify-theme-settings-tool";
 import * as sections from "@shopify/theme-sections";
 
@@ -47,7 +46,6 @@ require("./templates/customers-login");
 (async () => {
 	try {
 		await Promise.all([
-			translations.load(),
 			objects.load(),
 			settings.load(),
 			DOMContentLoadedPromise
