@@ -2,7 +2,7 @@
 	padding-bottom: 74px;
 	background-color: $brand-tertiary;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-bottom: 58px;
 	}
 }
@@ -36,12 +36,12 @@
 	padding-bottom: 64px;
 	text-align: center;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		padding-top: 100px;
 		padding-bottom: 120px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 30vw;
 	}
 }
@@ -49,7 +49,7 @@
 .home-richtext__title {
 	padding-bottom: 33px;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 81%;
 	}
 }
@@ -86,7 +86,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 30vw;
 	}
 }
@@ -96,7 +96,7 @@
 	max-width: 438px;
 	margin-top: 67px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: none;
 	}
 }

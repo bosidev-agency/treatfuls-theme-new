@@ -61,7 +61,7 @@
 			background-color: $brand-quaternary;
 		}
 
-		@include breakpoint(no-m-xl) {
+		@media #{$no-m-xl} {
 			.header {
 				background-color: $brand-quaternary;
 			}

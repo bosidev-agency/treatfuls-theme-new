@@ -21,11 +21,11 @@
 		padding-right: 0;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-right: 46px;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		&:nth-child(1),
 		&:nth-child(2) {
 			padding-bottom: 32px;
@@ -49,7 +49,7 @@
 		height: 100%;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 60vw;
 	}
 }

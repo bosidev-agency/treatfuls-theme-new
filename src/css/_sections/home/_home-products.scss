@@ -7,7 +7,16 @@
 	position: relative;
 	padding-top: 60px;
 
-	@include breakpoint(no-m-xl) {
+  .swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+  }
+
+	@media #{$no-m-xl} {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -15,11 +24,11 @@
 		padding-top: 0;
 	}
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		padding-top: 20px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		height: calc(100vh - 114px);
 	}
 
@@ -49,20 +58,20 @@
 		}
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		padding-bottom: 1vh;
 	}
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		max-width: 720px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 39.65vw;
 		padding-bottom: 0;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-bottom: 70px;
 	}
 
@@ -95,21 +104,21 @@
 	margin-top: 50px;
 	transition: opacity 0.25s ease-in-out;
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		margin-top: 1vh;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 20vw;
 		margin-top: 4vw;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 278px;
 		margin-top: 24px;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		max-width: 203px;
 	}
 }
@@ -136,11 +145,11 @@
 		}
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-bottom: 120px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		padding-bottom: 30px;
 
 		.swiper-slide {

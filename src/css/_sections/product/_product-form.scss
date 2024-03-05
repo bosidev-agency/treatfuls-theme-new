@@ -1,5 +1,5 @@
 .product-form {
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		position: fixed;
 		bottom: 0;
 		left: 0;
@@ -22,7 +22,7 @@
 		}
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding: 16px;
 	}
 }
@@ -32,7 +32,7 @@
 	justify-content: space-between;
 	margin-bottom: 20px;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		margin-bottom: 40px;
 	}
 }

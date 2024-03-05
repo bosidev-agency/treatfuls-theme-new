@@ -16,7 +16,7 @@
 		vertical-align: middle;
 		text-align: left;
 
-		@include breakpoint(m-xxl) {
+		@media #{$m-xxl} {
 			color: inherit;
 		}
 	}
@@ -26,7 +26,7 @@
 	}
 }
 
-@include breakpoint(m-xl) {
+@media #{$m-xl} {
 	.responsive-table {
 		width: 100%;
 

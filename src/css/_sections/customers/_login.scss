@@ -52,19 +52,19 @@
 	}
 }
 
-@include breakpoint(m-xl) {
+@media #{$m-xl} {
 	.customer__column {
 		margin-top: 60px;
 	}
 }
 
-@include breakpoint(m-l) {
+@media #{$m-l} {
 	.customer__recover-img {
 		width: 700px;
 	}
 }
 
-@include breakpoint(no-m-xl) {
+@media #{$no-m-xl} {
 	.customer__login {
 		max-width: 704px;
 	}
@@ -79,7 +79,7 @@
 	}
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.customer__login {
 		max-width: 39vw;
 	}

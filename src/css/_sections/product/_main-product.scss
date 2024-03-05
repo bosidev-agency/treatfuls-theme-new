@@ -12,11 +12,11 @@
 .main-product__info {
 	padding-bottom: 60px;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		padding-bottom: 120px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		padding-bottom: 5vw;
 	}
 }

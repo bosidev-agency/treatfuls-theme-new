@@ -40,7 +40,7 @@
 		border-color: transparent;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1.5vw;
 		line-height: 0.9;
 	}
@@ -77,7 +77,7 @@
 		cursor: pointer;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		width: 1.1vw;
 		height: 1.16vw;
 	}

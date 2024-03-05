@@ -59,7 +59,7 @@
 		opacity: 0.7;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		width: 20px;
 		height: 20px;
 	}
@@ -156,7 +156,7 @@
 	}
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.cart-product__title {
 		font-size: 1.4vw;
 	}
@@ -191,7 +191,7 @@
 	}
 }
 
-@include breakpoint(m-l) {
+@media #{$m-l} {
 	.cart-product__info {
 		padding-left: 16px;
 	}

@@ -7,11 +7,11 @@
 	max-width: 672px;
 	margin: 0 auto;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 38vw;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 490px;
 		padding-left: 16px;
 		padding-right: 16px;
@@ -45,11 +45,11 @@
 		right: 0;
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		display: block;
 		visibility: visible;
 	}
-	@include breakpoint(l) {
+	@media #{$l} {
 		&.cart__img--left {
 			left: -100px;
 		}

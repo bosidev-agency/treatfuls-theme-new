@@ -33,7 +33,7 @@
 		right: 90px;
 	}
 
-	@include breakpoint(xl) {
+	@media #{$xl} {
 		&.eyes--left {
 			left: 210px;
 		}
@@ -43,7 +43,7 @@
 		}
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		width: 80px;
 		height: 80px;
 
@@ -56,7 +56,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		width: 250px;
 		height: 250px;
 
@@ -69,7 +69,7 @@
 		}
 	}
 
-	@include breakpoint(no-qhd) {
+	@media #{$no-qhd} {
 		width: 290px;
 		height: 290px;
 
@@ -93,12 +93,12 @@
 		color: #000000;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		width: 30px;
 		height: 30px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		width: 90px;
 		height: 90px;
 	}

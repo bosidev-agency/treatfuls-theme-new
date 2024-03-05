@@ -132,7 +132,7 @@
 			line-height: 1.5;
 		}
 
-		@include breakpoint(no-fw) {
+		@media #{$no-fw} {
 			p {
 				font-size: 1vw;
 			}

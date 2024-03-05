@@ -21,11 +21,11 @@
 		text-align: center;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 60vw;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		top: 10vw;
 		max-width: 94%;
 		padding: 40px 10px 10px;
@@ -92,7 +92,7 @@
 	}
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.modal__close {
 		top: 5px;
 		right: 5px;

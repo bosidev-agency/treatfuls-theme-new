@@ -1,7 +1,7 @@
 .link-swipe {
 	color: #fff;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		position: relative;
 		transition: color 0.3s ease-in-out;
 		cursor: pointer;

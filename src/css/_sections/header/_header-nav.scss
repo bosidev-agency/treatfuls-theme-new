@@ -22,7 +22,7 @@
 		padding-left: 0;
 		line-height: 1;
 
-		@include breakpoint(m-l) {
+		@media #{$m-l} {
 			margin-left: 16px;
 		}
 	}
@@ -34,7 +34,7 @@
 		transition: all 0.25s ease-in-out;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		.header-nav__img-left,
 		.header-nav__img-right {
 			position: absolute;
@@ -85,13 +85,13 @@
 		}
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		.header-nav__wrap {
 			left: -16px;
 		}
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		.header-nav__img-left,
 		.header-nav__img-right {
 			display: none;
@@ -107,7 +107,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		.header-nav__link {
 			font-size: 1vw;
 			line-height: 1.4;

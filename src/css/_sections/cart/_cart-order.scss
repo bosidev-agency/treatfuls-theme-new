@@ -15,7 +15,7 @@
 	line-height: 1.2;
 	color: #ffffff;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1.3vw;
 	}
 }

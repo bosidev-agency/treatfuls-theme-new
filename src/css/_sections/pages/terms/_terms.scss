@@ -6,7 +6,7 @@
 		display: none;
 		visibility: hidden;
 
-		@include breakpoint(no-m) {
+		@media #{$no-m} {
 			display: block;
 			visibility: visible;
 
@@ -16,7 +16,7 @@
 			}
 		}
 
-		@include breakpoint(m-xxl) {
+		@media #{$m-xxl} {
 			&.title-wrapper__title--mobile {
 				display: block;
 				visibility: visible;
@@ -39,13 +39,13 @@
 		right: 0;
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		position: absolute;
 		display: block;
 		visibility: visible;
 	}
 
-	@include breakpoint(l) {
+	@media #{$l} {
 		&.terms__img--right {
 			right: -105px;
 		}

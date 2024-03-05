@@ -87,7 +87,7 @@
 		transform: rotate(-0.25turn);
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		select {
 			font-size: 1.1vw;
 		}

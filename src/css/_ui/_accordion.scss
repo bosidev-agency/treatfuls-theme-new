@@ -66,7 +66,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		.icon-arrow-down {
 			width: 27px;
 			height: 16px;

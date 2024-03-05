@@ -3,12 +3,12 @@
 }
 
 .community__form {
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 
-	@include breakpoint(no-qhd) {
+	@media #{$no-qhd} {
 		iframe {
 			min-height: 920px;
 		}

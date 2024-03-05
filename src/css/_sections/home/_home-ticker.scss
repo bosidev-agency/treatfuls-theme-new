@@ -6,12 +6,12 @@
 	position: relative;
 	overflow: hidden;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		padding-top: 65px;
 		padding-bottom: 120px;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-top: 50px;
 		padding-bottom: 60px;
 	}
@@ -27,7 +27,7 @@
 	padding-right: 90%;
 	white-space: nowrap;
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-right: 80%;
 	}
 }
@@ -41,7 +41,7 @@
 		padding-left: 0;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-left: 80%;
 	}
 }
@@ -52,11 +52,11 @@
 	line-height: 1.1;
 	color: #fff;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		font-size: 150px;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		font-size: 64px;
 	}
 }

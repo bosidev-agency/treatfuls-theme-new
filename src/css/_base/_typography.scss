@@ -3,7 +3,7 @@
 body {
 	font-size: 16px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1.3vw;
 	}
 }
@@ -32,11 +32,11 @@ h1,
 .h1 {
 	font-size: 64px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 3vw;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		font-size: 40px;
 	}
 }
@@ -50,7 +50,7 @@ h3,
 .h3 {
 	font-size: 24px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1.5vw;
 	}
 }
@@ -88,22 +88,22 @@ h3,
 		}
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 60vw;
 		padding-bottom: 60px;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		max-width: 70vw;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		max-width: none;
 		padding-left: 16px;
 		padding-right: 16px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 32vw;
 		padding-bottom: 5vw;
 
@@ -186,7 +186,7 @@ h3,
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 3vw;
 
 		> span {
@@ -208,7 +208,7 @@ h3,
 		}
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		> span {
 			&::before {
 				top: 13px;
@@ -228,7 +228,7 @@ h3,
 		}
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		font-size: 40px;
 
 		&.title-bg--sm {
@@ -249,7 +249,7 @@ h3,
 	font-weight: 400;
 	line-height: 32px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1.5vw;
 		line-height: 1.3;
 	}
@@ -263,7 +263,7 @@ h3,
 		font-size: 14px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 1vw;
 
 		&.text--sm {

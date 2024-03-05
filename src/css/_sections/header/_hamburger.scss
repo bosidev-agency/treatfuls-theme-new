@@ -15,7 +15,7 @@
 	transition-duration: 0.15s;
 	transition-timing-function: linear;
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		display: flex;
 	}
 }

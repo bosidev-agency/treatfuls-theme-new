@@ -93,10 +93,10 @@
 		}
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-bottom: 168px;
 	}
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		padding-bottom: 136px;
 	}
 }

@@ -1,11 +1,11 @@
 .advantages__container {
 	background-color: $brand-secondary;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		padding-bottom: 40px;
 	}
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		padding-bottom: 119px;
 	}
 }
@@ -25,7 +25,7 @@
 	padding-bottom: 98px;
 	text-align: center;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 39.65vw;
 	}
 }
@@ -33,11 +33,11 @@
 .advantages__title {
 	margin-bottom: 32px;
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		max-width: 85%;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		max-width: none;
 	}
 }
@@ -46,7 +46,7 @@
 	max-width: 430px;
 	color: #ffffff;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 27vw;
 	}
 }
@@ -55,12 +55,12 @@
 	position: relative;
 	overflow: hidden;
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		max-width: 939px;
 		margin: 0 auto;
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		.swiper-wrapper {
 			flex-wrap: wrap;
 		}
@@ -70,22 +70,22 @@
 		}
 	}
 
-	@include breakpoint(no-m) {
+	@media #{$no-m} {
 		.advantages__slide {
 			width: 25%;
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 45vw;
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		margin-left: -32px;
 		margin-right: -32px;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		margin-left: -16px;
 		margin-right: -16px;
 	}
@@ -110,7 +110,7 @@
 	padding-top: 27px;
 	color: #ffffff;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: none;
 	}
 }

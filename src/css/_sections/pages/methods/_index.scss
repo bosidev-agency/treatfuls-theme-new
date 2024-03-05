@@ -10,7 +10,7 @@
 .methods__img {
 	display: none;
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		position: absolute;
 		display: inline-block;
 		min-width: 160px;
@@ -37,7 +37,7 @@
 		}
 	}
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		&.methods__img--left-top {
 			top: 20%;
 			left: 12vw;
@@ -59,7 +59,7 @@
 		}
 	}
 
-	@include breakpoint(no-xl) {
+	@media #{$no-xl} {
 		&.methods__img--left-top {
 			left: 17vw;
 		}
@@ -73,7 +73,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		min-width: 240px;
 		min-height: 240px;
 
@@ -90,7 +90,7 @@
 		}
 	}
 
-	@include breakpoint(no-qhd) {
+	@media #{$no-qhd} {
 		&.methods__img--right-top,
 		&.methods__img--left-top {
 			top: 17%;
@@ -106,7 +106,7 @@
 		line-height: 1.5;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		p {
 			font-size: 1vw;
 		}

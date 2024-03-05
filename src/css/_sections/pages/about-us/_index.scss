@@ -1,5 +1,5 @@
 .about-us {
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		.title-wrapper {
 			padding-bottom: 120px;
 		}
@@ -36,7 +36,7 @@
 		min-width: 243px;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		&[data-tooltip-img="1"] {
 			min-width: 378px;
 		}
@@ -46,7 +46,7 @@
 		}
 	}
 
-	@include breakpoint(m-xl) {
+	@media #{$m-xl} {
 		&[data-tooltip-img="2"] {
 			top: -340px;
 			left: 0;
@@ -54,7 +54,7 @@
 		}
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		&[data-tooltip-img="2"] {
 			top: 0;
 			left: 50%;
@@ -85,7 +85,7 @@
 	}
 }
 
-@include breakpoint(m-l) {
+@media #{$m-l} {
 	[data-tooltip="2"] {
 		position: initial;
 	}

@@ -68,7 +68,7 @@
 	}
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.checkbox {
 		padding-left: 1.5vw;
 	}

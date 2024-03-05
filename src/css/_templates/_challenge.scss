@@ -13,11 +13,11 @@
 		padding-top: 80px;
 		padding-bottom: 200px;
 
-		@include breakpoint(m-xxl) {
+		@media #{$m-xxl} {
 			padding-bottom: 110px;
 		}
 
-		@include breakpoint(no-fw) {
+		@media #{$no-fw} {
 			padding-top: 7vw;
 		}
 	}
@@ -27,7 +27,7 @@
 		line-height: 32px;
 		color: #ffffff;
 
-		@include breakpoint(no-fw) {
+		@media #{$no-fw} {
 			font-size: 1.5vw;
 			line-height: 1.3;
 		}

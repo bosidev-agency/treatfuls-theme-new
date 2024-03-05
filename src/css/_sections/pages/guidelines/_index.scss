@@ -8,7 +8,7 @@
 .guidelines__img {
 	display: none;
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		position: absolute;
 		display: inline-block;
 		min-width: 160px;
@@ -25,7 +25,7 @@
 		}
 	}
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		&.guidelines__img--left {
 			bottom: 10%;
 			left: 8%;
@@ -37,7 +37,7 @@
 		}
 	}
 
-	@include breakpoint(no-xl) {
+	@media #{$no-xl} {
 		&.guidelines__img--left {
 			left: 15vw;
 		}
@@ -48,7 +48,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		min-width: 240px;
 		min-height: 240px;
 

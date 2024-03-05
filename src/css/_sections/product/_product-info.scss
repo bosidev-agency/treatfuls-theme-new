@@ -7,7 +7,7 @@
 	padding-left: 16px;
 	padding-right: 16px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 50vw;
 	}
 }
@@ -17,7 +17,7 @@
 	margin-left: -16px;
 	margin-right: -16px;
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		flex-direction: column;
 	}
 }
@@ -31,7 +31,7 @@
 .product-info__title {
 	margin-bottom: 48px;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		margin-bottom: 2vw;
 	}
 }
@@ -42,7 +42,7 @@
 	p {
 		padding-bottom: 20px;
 
-		@include breakpoint(no-fw) {
+		@media #{$no-fw} {
 			padding-bottom: 1vw;
 		}
 	}
@@ -61,7 +61,7 @@
 		color: #ffffff;
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		font-size: 0.8vw;
 
 		.icon {

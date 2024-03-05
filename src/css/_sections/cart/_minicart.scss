@@ -166,7 +166,7 @@
 	text-align: center;
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.minicart__container {
 		max-width: 45vw;
 	}

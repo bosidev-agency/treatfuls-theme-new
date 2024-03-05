@@ -11,11 +11,11 @@
 	min-height: 70vh;
 	width: 100%;
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		height: calc(100vh - 91px);
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		height: calc(100vh - 114px);
 	}
 
@@ -49,16 +49,16 @@
 	margin-top: 50px;
 	transition: opacity 0.25s ease-in-out;
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		max-width: 20vw;
 	}
 
-	@include breakpoint(m-xxl) {
+	@media #{$m-xxl} {
 		max-width: 278px;
 		margin-top: 24px;
 	}
 
-	@include breakpoint(m-l) {
+	@media #{$m-l} {
 		max-width: 203px;
 	}
 }
@@ -85,11 +85,11 @@
 		}
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		padding-bottom: 20px;
 	}
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		.swiper-slide {
 			&:not([data-slide-color="quaternary"]) {
 				padding-top: 3%;
@@ -97,7 +97,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		padding-bottom: 30px;
 
 		.swiper-slide {

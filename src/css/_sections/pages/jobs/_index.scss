@@ -9,7 +9,7 @@
 .jobs__img {
 	display: none;
 
-	@include breakpoint(no-m-xl) {
+	@media #{$no-m-xl} {
 		position: absolute;
 		display: inline-block;
 		min-width: 160px;
@@ -26,7 +26,7 @@
 		}
 	}
 
-	@include breakpoint(no-l) {
+	@media #{$no-l} {
 		&.jobs__img--left {
 			top: -80px;
 			left: 8%;
@@ -38,7 +38,7 @@
 		}
 	}
 
-	@include breakpoint(no-xl) {
+	@media #{$no-xl} {
 		&.jobs__img--left {
 			left: 15vw;
 		}
@@ -48,7 +48,7 @@
 		}
 	}
 
-	@include breakpoint(no-fw) {
+	@media #{$no-fw} {
 		min-width: 240px;
 		min-height: 240px;
 
@@ -62,7 +62,7 @@
 		}
 	}
 
-	@include breakpoint(no-qhd) {
+	@media #{$no-qhd} {
 		&.jobs__img--left {
 			top: -160px;
 		}

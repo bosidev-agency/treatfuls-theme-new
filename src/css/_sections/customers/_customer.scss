@@ -58,14 +58,14 @@
 	}
 }
 
-@include breakpoint(m-xxl) {
+@media #{$m-xxl} {
 	.customer-grid__main {
 		margin-bottom: 40px;
 		padding-bottom: 16px;
 		border-bottom: 1px solid #fff;
 	}
 }
-@include breakpoint(no-m) {
+@media #{$no-m} {
 	.customer-grid__main {
 		width: 70%;
 	}
@@ -75,7 +75,7 @@
 	}
 }
 
-@include breakpoint(no-fw) {
+@media #{$no-fw} {
 	.customer-grid {
 		max-width: 60vw;
 	}
