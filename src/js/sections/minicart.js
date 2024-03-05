@@ -1,84 +1,143 @@
-import { register } from "@shopify/theme-sections";
-import Vue from "vue";
-import "../../vue/filters";
-import { store } from "../../vue/store";
-import { cartActions } from "../../vue/store/cart/types"
-import MinicartVue from "../../vue/Minicart"
-import { templateEquals } from "@savchukoleksii/shopify-template-checker";
+import * as bodyScrollLock from "body-scroll-lock";
 
-const selectors = {
-	sectionData: "[data-section-data]"
-};
+class MiniCart extends HTMLElement {
+  constructor() {
+    super();
+    this.isOpened = false;
+    this.cartCountContainer = document.querySelector(".js-header-cat-items");
+    this.sectionId = "main-cart-mini";
+    this.height = window.innerHeight;
+    this.overlay = this.querySelector(".minicart__overlay");
+    this.container = this.querySelector(".minicart__container");
+    this.closeButton = this.querySelector(".minicart__close");
+    this.continueShoppingButton = this.querySelector(".cart-order__link");
+    // Bind methods to class instance
+    this.closeCart = this.closeCart.bind(this);
+    this.openCart = this.openCart.bind(this);
+    this.updateMiniCartSection = this.updateMiniCartSection.bind(this);
+    this.onProductAdd = this.onProductAdd.bind(this); // Ensure this method is bound to the class instance
+    this.listenersAdded = false; // Flag to track if listeners have been added
+  }
 
-document.addEventListener("product:add", async function (event) {
-	const detail = event.detail;
+  // Lifecycle callback when the element is added to the document
+  connectedCallback() {
+    this.addListeners();
+  }
 
-	if (!detail) {
-		return null;
-	}
+  // Lifecycle callback when the element is removed from the document
+  disconnectedCallback() {
+    this.removeListeners();
+  }
 
-	const items = detail.items;
-	if (!items) {
-		return null;
-	}
+  async onProductAdd(event) {
+    const detail = event.detail;
 
-	const errorCallback =
-		typeof event.detail.errorCallback === "function"
-			? event.detail.errorCallback
-			: () => {};
+    if (!detail) {
+      return null;
+    }
 
-	await store.dispatch(`cart/${cartActions.ADD_TO_CART}`, {
-		products: event.detail.items,
-		errorCallback
-	});
+    const items = detail.items;
+    if (!items) {
+      return null;
+    }
 
-	const callback = detail.callback;
+    let formData = {
+      items: [],
+    };
 
-	if (typeof callback === "function") {
-		await callback();
-	}
+    const totalQuantity = items.reduce((accumulator, item) => {
+      return accumulator + parseInt(item.quantity);
+    }, 0); // starting value for the accumulator is 0
 
-	document.dispatchEvent(new CustomEvent("open:minicart"));
-});
+    items.forEach((item) => {
+      let formattedItem = {
+        id: item.id,
+        quantity: parseInt(item.quantity),
+      };
 
-if (!templateEquals("cart")) {
-	register("minicart", {
-		minicartOpeners: null,
-		onLoad: function () {
-			this.init();
-		},
-		init: async function () {
-			const sectionData = JSON.parse(
-				this.container.querySelector(selectors.sectionData).innerHTML
-			);
+      formData.items.push(formattedItem);
+    });
 
-			await store.dispatch(`cart/${cartActions.INIT_CART}`);
+    fetch(window.Shopify.routes.root + "cart/add.js", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        this.updateMiniCartSection(totalQuantity);
+      })
+      .catch((error) => {
+        console.error("Error adding item to cart:", error);
+      });
+  }
 
-			new Vue({
-				store,
-				data: () => ({ ...sectionData }),
-				render: (h) => h(MinicartVue)
-			}).$mount(this.container);
+  addListeners() {
+    if (this.listenersAdded) return; // Check if listeners have already been added
+    document.addEventListener("product:add", this.onProductAdd);
+    this.overlay.addEventListener("click", this.closeCart);
+    this.closeButton.addEventListener("click", this.closeCart);
+    this.continueShoppingButton.addEventListener("click", this.closeCart)
+    this.listenersAdded = true; // Set flag to true
+  }
 
-			this.minicartOpeners = Array.prototype.slice.call(
-				document.querySelectorAll("[data-minicart-opener]")
-			);
+  removeListeners() {
+    document.removeEventListener("product:add", this.onProductAdd);
+    this.overlay.removeEventListener("click", this.closeCart);
+    this.closeButton.removeEventListener("click", this.closeCart);
+    this.continueShoppingButton.removeEventListener("click", this.closeCart)
+    this.listenersAdded = false; // Reset flag when listeners are removed
+  }
 
-			this.initEvents();
-		},
-		initEvents: function () {
-			if (!this.minicartOpeners) {
-				return;
-			}
+  updateMiniCartSection(totalQuantity) {
+    fetch(`${window.location.pathname}?sections=${this.sectionId}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const newHtml = data[this.sectionId];
+        const newSection = document.querySelector(
+          `#shopify-section-${this.sectionId}`
+        );
+        newSection.innerHTML = newHtml;
+      })
+      .then(() => {
+        this.overlay = document.querySelector(".minicart__overlay");
+        this.container = document.querySelector(".minicart__container");
+        this.updateCartCount(totalQuantity);
+        this.openCart();
+      })
+      .catch((error) =>
+        console.error("Error updating mini-cart section:", error)
+      );
+  }
 
-			this.minicartOpeners.forEach((opener) => {
-				opener.addEventListener("click", this.open.bind(this));
-			});
-		},
-		open: function (e) {
-			e.preventDefault();
+  updateCartCount(totalQuantity) {
+    this.cartCountContainer.innerHTML =
+      Number(this.cartCountContainer.innerHTML) + totalQuantity;
+  }
 
-			document.dispatchEvent(new CustomEvent("open:minicart"));
-		}
-	});
+  closeCart(e) {
+    if (e) e.preventDefault();
+    this.clearBodyScroll();
+    this.container.classList.remove("minicart__container--open");
+    this.overlay.classList.remove("minicart__overlay--shown");
+  }
+
+  openCart() {
+    this.bodyScroll();
+    this.container.classList.add("minicart__container--open");
+    this.overlay.classList.add("minicart__overlay--shown");
+  }
+
+  clearBodyScroll() {
+    bodyScrollLock.clearAllBodyScrollLocks();
+    this.querySelector(".js-minicart-items").scrollTo(0, 0);
+  }
+
+  bodyScroll() {
+    bodyScrollLock.disableBodyScroll(this.querySelector(".js-minicart-items"));
+  }
 }
+
+customElements.define("mini-cart", MiniCart);
