@@ -27,21 +27,21 @@
         "product_item_mGLG8t": {
           "type": "product_item",
           "settings": {
-            "product": "bite-sized-love-box-36-stuck-3-sorten-bio-vegan",
+            "product": "bite-sized-love-box-36-stuck-4-sorten-bio-vegan",
             "color": "primary"
           }
         },
         "product_item_CMKMAp": {
           "type": "product_item",
           "settings": {
-            "product": "love-at-firs-bite-box-30-stuck-3-sorten-bio-vegan",
+            "product": "love-at-firs-bite-box-30-stuck-4-sorten-bio-vegan",
             "color": "quaternary"
           }
         },
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
-            "product": "probierbox-16-stuck-3-sorten-zum-probieren-bio-vegan",
+            "product": "probierbox-alle-sorten-16-stuck-bio-vegan",
             "color": "tertiary"
           }
         },
@@ -50,6 +50,20 @@
           "settings": {
             "product": "20er-mixbox-get-it-all-bundle-mit-3-riegeln-bio-vegan",
             "color": "quaternary"
+          }
+        },
+        "product_item_A3669g": {
+          "type": "product_item",
+          "settings": {
+            "product": "gemischtes-paket-mit-allen-4-riegeln",
+            "color": "tertiary"
+          }
+        },
+        "product_item_yJ9RiE": {
+          "type": "product_item",
+          "settings": {
+            "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan",
+            "color": "tertiary"
           }
         }
       },
@@ -60,7 +74,9 @@
         "product_item_mGLG8t",
         "product_item_CMKMAp",
         "product_item_fwnbt4",
-        "product_item_iM9nAw"
+        "product_item_iM9nAw",
+        "product_item_A3669g",
+        "product_item_yJ9RiE"
       ],
       "settings": {
         "title": "OMG, a recyclable packaging that <span><span>doesn’t <\/span><\/span><span><span>look recyclable<\/span><\/span>",

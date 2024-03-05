@@ -66,7 +66,7 @@
         "title": "Vorgestellte Kategorie",
         "collection": "produkte",
         "grid": 3,
-        "rows": 4,
+        "rows": 5,
         "show_vendor": false,
         "show_view_all": false
       }
