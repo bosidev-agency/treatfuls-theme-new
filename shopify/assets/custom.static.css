@@ -1828,11 +1828,6 @@ section.advantages__header.full_width_div {
   height: 70px !important;
   width: 70px !important;
 }
-
-
-  .product-gallery__slider-thumbnail .swiper-wrapper {
-    justify-content: center;
-  }
 }
 
 .product-form__meta-price {

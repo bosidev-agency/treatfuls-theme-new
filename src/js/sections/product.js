@@ -334,21 +334,23 @@ register("product", {
 
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
-				slidesPerView: 4,
+				slidesPerView: 4.2,
 				direction: "vertical",
 
 				breakpoints: {
 					300: {
 						direction: "horizontal",
-						spaceBetween: 15
+						spaceBetween: 15,
+            slidesPerView: 4.5,
 					},
 					767: {
 						direction: "horizontal",
-						spaceBetween: 15
+						spaceBetween: 15,
+            slidesPerView: 4.5,
 					},
 					992: {
 						direction: "vertical",
-						slidesPerView: 4
+            slidesPerView: 4.5,
 					}
 				}
 			});
