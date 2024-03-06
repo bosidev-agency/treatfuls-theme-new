@@ -1,7 +1,12 @@
 <div class="review_wrapper">
   <div class="container">
     <div class="review_inner">
-      <h2 class="section_title"><span>{{ section.settings.title }}</span></h2>
+      {%- if section.settings.underline_word != blank -%}
+        {%- assign title_without_word = section.settings.title | remove: section.settings.underline_word -%}
+        <h2 class="section_title"><span>{{ title_without_word }}</span><span class="section_title--underline">{{ section.settings.underline_word }}</span></h2>
+      {%- else -%}
+        <h2 class="section_title"><span>{{ section.settings.title }}</span></h2>
+      {%- endif -%}
       <div class="all_revies ">
         {% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}
         <div class="custom_write_reviews">
@@ -25,12 +30,17 @@
   {
     "name": "Product Reviews",
     "settings": [
-      {
+    {
 			"type": "text",
 			"id": "title",
 			"label": "Title"
 		},
-      {
+    {
+			"type": "text",
+			"id": "underline_word",
+			"label": "Word to underline"
+		},
+    {
       "id": "text-box",
       "type": "text",
       "label": "Heading",
