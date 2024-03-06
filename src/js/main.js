@@ -25,6 +25,7 @@ require("./components/lazy-load-images");
 require("./components/not-found");
 require("./components/accordion");
 require("./components/cart-item");
+require("./components/atc-button");
 
 /*================ Sections ================*/
 require("./sections/header");
