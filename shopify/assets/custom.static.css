@@ -1,15 +1,3 @@
-@media screen and (max-width: 768px) {
-  .hidden-phone {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .hidden-desktop {
-    display: none !important;
-  }
-}
-
 .products_listing {
     width: 100%;
     display: inline-block;
