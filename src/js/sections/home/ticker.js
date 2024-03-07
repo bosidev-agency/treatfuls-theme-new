@@ -29,8 +29,8 @@ register("ticker", {
 	},
 	tickersAnimation() {
 		const position = Math.round((window.scrollY / window.innerHeight) * 100);
-		const fromLeft = position - 110;
-		const fromRight = position - 30;
+		const fromLeft = position - 180;
+		const fromRight = position;
 		let isMobile = false;
 
 		if (window.innerWidth <= 767) {
@@ -46,11 +46,11 @@ register("ticker", {
 			let currentRightPosition = 0;
 
 			if (isMobile) {
-				currentLeftPosition = fromLeft + 30;
-				currentRightPosition = fromRight;
+				currentLeftPosition = ((fromLeft) / 100) * 15; // Adjust the multiplier to control speed
+        currentRightPosition = ((fromRight) / 100) * 15;  // Same here
 			} else {
-				currentLeftPosition = ((fromLeft - number) / 100) * 25;
-				currentRightPosition = ((fromRight - number) / 100) * 50;
+				currentLeftPosition = ((fromLeft - number) / 100) * 15;
+				currentRightPosition = ((fromRight - number) / 100) * 15;
 			}
 
 			if (ticker.dataset.tickerRevert === "true") {
