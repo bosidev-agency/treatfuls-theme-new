@@ -97,6 +97,15 @@
     "compare_product_reviews": {
       "type": "compare-product-reviews",
       "blocks": {
+        "text_pfjpEN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "",
+            "review_title": "",
+            "review_content": ""
+          }
+        },
         "aa617827-5535-4d4b-a335-b84f4c3b4b27": {
           "type": "text",
           "disabled": true,
@@ -144,6 +153,7 @@
         }
       },
       "block_order": [
+        "text_pfjpEN",
         "aa617827-5535-4d4b-a335-b84f4c3b4b27",
         "c3fbd356-cf27-49d8-ae72-878d6f919592",
         "89088c16-9028-4a04-98c9-2df8e95dd102",
@@ -152,6 +162,7 @@
       ],
       "settings": {
         "title": "Eure Bewertungen",
+        "underline_word": "Bewertungen",
         "text-box": "",
         "link": "#",
         "linktext": "Schreibe eine Bewertung"

@@ -187,6 +187,7 @@
       ],
       "settings": {
         "title": "Eure Bewertungen",
+        "underline_word": "Bewertungen",
         "text-box": "",
         "link": "#",
         "linktext": "Schreibe eine Bewertung"
