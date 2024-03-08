@@ -118,7 +118,7 @@
 }
 
 .products_listing .page-width .section-header span {
-    z-index: 999;
+    z-index: 2;
     position: relative;
     color: #fff;
 }
