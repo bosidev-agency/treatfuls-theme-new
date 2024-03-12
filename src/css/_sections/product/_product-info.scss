@@ -55,39 +55,7 @@
 	line-height: 1.3;
 	color: #ffffff;
 
-	.icon {
-		width: 18px;
-		height: 17px;
-		color: #ffffff;
-	}
-
 	@media #{$no-fw} {
 		font-size: 0.8vw;
-
-		.icon {
-			width: 26px;
-			height: 24px;
-		}
 	}
-}
-
-.product-rating {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.product-rating__average {
-	margin-right: 10px;
-	padding-top: 2px;
-}
-
-.product-rating__total {
-	margin-left: 10px;
-	padding-top: 2px;
-}
-
-.product-rating__star {
-	display: inline-flex;
-	margin-right: 5px;
 }

@@ -1388,7 +1388,7 @@ div#section-cta {
     font-size: 17px!important;
 }
 span.jdgm-prev-badge__stars {
-    margin: 0;
+    margin: 0 10px 0 0;
     padding: 0;
 }
 .jdgm-carousel--card-theme .jdgm-carousel-item__review {
