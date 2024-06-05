@@ -1,6 +1,8 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/fav_ico.png",
+    "cart_show_free_shipping_threshold": true,
+    "cart_free_shipping_threshold": 60,
     "checkout_logo_image": "shopify:\/\/shop_images\/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
@@ -49,7 +51,10 @@
         "type": "main-cart-mini",
         "settings": {
           "empty_button_text": "Weiter Shoppen",
-          "empty_button_url": ""
+          "empty_button_url": "",
+          "show_upsell": true,
+          "upsell_heading": "Das könnte dir  ebenfalls gefallen",
+          "upsell_collection": "upsell-collection"
         }
       },
       "customer-login": {

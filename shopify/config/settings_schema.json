@@ -56,5 +56,32 @@
         "info": "Will be scaled down to 32 x 32px"
       }
     ]
+  },
+  {
+    "name": "Free Shipping",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_show_free_shipping_threshold",
+        "label": "Show free shipping bar in cart"
+      },
+      {
+        "type": "number",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free shipping threshold"
+      },
+      {
+        "type": "color",
+        "id": "free_shipping_success_color",
+        "label": "Free shipping success color",
+        "default": "#2AC2BD"
+      },
+      {
+        "type": "color",
+        "id": "free_shipping_remaining_color",
+        "label": "Free shipping remaining color",
+        "default": "#F3587F"
+      }
+    ]
   }
 ]
