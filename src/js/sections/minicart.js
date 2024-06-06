@@ -5,6 +5,7 @@ class MiniCart extends HTMLElement {
     super();
     this.isOpened = false;
     this.cartCountContainer = document.querySelector(".js-header-cat-items");
+    this.basketIcon = document.querySelector(".basket");
     this.sectionId = "main-cart-mini";
     this.height = window.innerHeight;
     this.overlay = this.querySelector(".minicart__overlay");
@@ -79,7 +80,10 @@ class MiniCart extends HTMLElement {
     document.addEventListener("product:add", this.onProductAdd);
     this.overlay.addEventListener("click", this.closeCart);
     this.closeButton.addEventListener("click", this.closeCart);
-    this.continueShoppingButton.addEventListener("click", this.closeCart)
+    if (this.continueShoppingButton) {
+      this.continueShoppingButton.addEventListener("click", this.closeCart);
+    }
+    this.basketIcon.addEventListener("click", this.openCart);
     this.listenersAdded = true; // Set flag to true
   }
 
@@ -87,7 +91,10 @@ class MiniCart extends HTMLElement {
     document.removeEventListener("product:add", this.onProductAdd);
     this.overlay.removeEventListener("click", this.closeCart);
     this.closeButton.removeEventListener("click", this.closeCart);
-    this.continueShoppingButton.removeEventListener("click", this.closeCart)
+    if (this.continueShoppingButton) {
+      this.continueShoppingButton.removeEventListener("click", this.closeCart);
+    }
+    this.basketIcon.removeEventListener("click", this.openCart);
     this.listenersAdded = false; // Reset flag when listeners are removed
   }
 
@@ -99,7 +106,7 @@ class MiniCart extends HTMLElement {
         const newSection = document.querySelector(
           `#shopify-section-${this.sectionId}`
         );
-        newSection.innerHTML = newHtml;
+        newSection.outerHTML = newHtml;
       })
       .then(() => {
         this.overlay = document.querySelector(".minicart__overlay");
@@ -125,7 +132,9 @@ class MiniCart extends HTMLElement {
   }
 
   openCart() {
-    this.bodyScroll();
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      this.bodyScroll();
+    }
     this.container.classList.add("minicart__container--open");
     this.overlay.classList.add("minicart__overlay--shown");
   }

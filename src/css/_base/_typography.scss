@@ -131,13 +131,14 @@ h3,
 	> span {
 		position: relative;
 		display: inline-block;
+    z-index: 1;
 
 		&::before {
 			content: "";
 			position: absolute;
 			top: 22px;
 			left: -5px;
-			z-index: 0;
+			z-index: -1;
 			display: block;
 			width: 104%;
 			height: 72%;
@@ -218,13 +219,6 @@ h3,
 
 		&.title-bg--sm {
 			font-size: 64px;
-
-			> span {
-				&::before {
-					top: 22px;
-					left: -5px;
-				}
-			}
 		}
 	}
 

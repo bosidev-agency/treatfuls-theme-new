@@ -169,15 +169,18 @@
       "taxes_included_but_shipping_at_checkout": "inkl. MwSt. und zzgl. Versandkosten",
       "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
       "update": "Warenkorb aktualisieren",
-      "checkout": "Zur Kasse",
+      "checkout": "Zur Kasse - {{ cart_amount }}",
       "empty": "Dein Warenkorb ist im Moment leer.",
       "cookies_required": "Aktiviere Cookies, um den Warenkorb benutzen zu können",
       "continue_shopping": "Weiter shoppen",
       "cart_error": "Beim Aktualisieren des Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
-      "cart_subtotal": "Zwischensumme",
-      "mini_cart_item": "Artikel",
+      "cart_subtotal": "Versandkosten und Rabattcodes werden bei der Bezahlung berechnet.",
+      "mini_cart_item": "{{ item_count }} Produkte im Warenkorb",
       "mini_cart_empty_title": "Dein Warenkorb ist leer",
-      "mini_cart_empty_subtitle": "Noch nichts gefunden?"
+      "mini_cart_empty_subtitle": "Noch nichts gefunden? 🤔",
+      "free_shipping_amount": "Kostenloser Versand ab einem Warenkorb von {{ free_shipping_amount }}",
+      "free_shipping_html": "🎉     Dein Versand ist <strong>kostenlos!</strong>",
+      "free_shipping_remaining_html": "🚚     Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Versand</strong>"
     },
     "label": {
       "discounted_total": "Gesamtrabatt",

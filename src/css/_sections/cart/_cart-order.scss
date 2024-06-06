@@ -1,5 +1,5 @@
 .cart-order {
-	padding-top: 60px;
+	padding-top: 20px;
 
 	&.cart-order--mini {
 		padding-top: 20px;
@@ -7,30 +7,18 @@
 }
 
 .cart-order__heading {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 32px;
-	font-size: 24px;
-	font-weight: bold;
+	margin-bottom: 16px;
 	line-height: 1.2;
 	color: #ffffff;
+  font-size: 12px;
 
 	@media #{$no-fw} {
-		font-size: 1.3vw;
+		font-size: 0.9vw;
 	}
 }
 
 .cart-order__button {
 	width: 100%;
 	text-align: center;
-}
-
-.cart-order__link {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	background-color: transparent;
-	text-align: center;
-	text-decoration: underline;
-	color: #fff;
+  font-size: 24px;
 }

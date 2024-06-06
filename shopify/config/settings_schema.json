@@ -8,6 +8,17 @@
     "theme_documentation_url": "https:\/\/www.google.com\/"
   },
   {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text Color",
+        "default": "#ffffff"
+      }
+    ]
+  },
+  {
     "name": "Social media",
     "settings": [
       {

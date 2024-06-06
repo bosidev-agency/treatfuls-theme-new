@@ -63,6 +63,7 @@
 		<link rel="stylesheet" href="{{ 'bundle.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'custom.static.css' | asset_url }}">
     {% render 'fonts' %}
+    {% render 'css-variables' %}
 
 		{%- if template.directory == 'customers' -%}
 			<script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>

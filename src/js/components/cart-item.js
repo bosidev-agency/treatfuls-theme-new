@@ -87,7 +87,7 @@ class CartItem extends HTMLElement {
             "minicart__container ",
             "minicart__container minicart__container--open"
           );
-        newSection.innerHTML = newHtml;
+        newSection.outerHTML = newHtml;
       })
       .then(() => {
         this.cartCountContainer.innerHTML = item_count;
