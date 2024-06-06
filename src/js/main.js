@@ -26,6 +26,7 @@ require("./components/not-found");
 require("./components/accordion");
 require("./components/cart-item");
 require("./components/atc-button");
+require("./components/cart-upsell");
 
 /*================ Sections ================*/
 require("./sections/header");
