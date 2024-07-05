@@ -210,13 +210,6 @@ h3,
 	}
 
 	@media #{$m-xxl} {
-		> span {
-			&::before {
-				top: 13px;
-				left: -2px;
-			}
-		}
-
 		&.title-bg--sm {
 			font-size: 64px;
 		}
@@ -225,15 +218,15 @@ h3,
 	@media #{$m-xl} {
 		font-size: 40px;
 
+    > span {
+      &::before {
+        top: 13px;
+        left: -2px;
+      }
+    }
+
 		&.title-bg--sm {
 			font-size: 40px;
-
-			> span {
-				&::before {
-					top: 13px;
-					left: -2px;
-				}
-			}
 		}
 	}
 }

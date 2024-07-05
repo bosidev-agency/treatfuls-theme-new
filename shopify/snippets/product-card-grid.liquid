@@ -1,4 +1,20 @@
 {%- assign field_product_bg_color = product.metafields.my_fields.product_background_color -%}
+{%- assign product_price = product.price | money -%}
+
+{%- if product.has_only_default_variant -%}
+  {%- assign unit_price = product.variants.first.unit_price -%}
+  {%- assign unit_reference = product.variants.first.unit_price_measurement.reference_unit -%}
+  {%- assign unit_reference_value = product.variants.first.unit_price_measurement.reference_value -%}
+{%- else -%}
+  {%- assign unit_price = product.unit_price -%}
+  {%- assign unit_reference = product.unit_price_measurement.reference_unit -%}
+  {%- assign unit_reference_value = product.unit_price_measurement.reference_value -%}
+{%- endif -%}
+
+{%- assign quantity_content = product.metafields.custom.quantity_content -%}
+{%- assign weight_content = product.metafields.custom.weight_content -%}
+{%- assign unit_name = product.metafields.custom.unit_name -%}
+
 
 {%- assign product_bg_color = '' -%}
   {%- if field_product_bg_color == 'Berry' -%}
@@ -46,20 +62,34 @@
     </div>
 
     <div class="product_content_wrapping">
-      <a href="{{ product.url }}">
+      <a href="{{ product.url }}" class="hidden-phone">
         <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
+      </a>
+      <a href="{{ product.url }}" class="hidden-desktop">
+        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
+          {%- if product.metafields.custom.short_title != blank -%}
+            {{ product.metafields.custom.short_title }}
+          {%- else -%}
+            {{ product.title }}
+          {%- endif -%}
+        </div>
       </a>
       <div class="size_price_wrapper">
         <div class="size_wrapper">
-          {% if product.metafields.custom.custom_variant_name != blank %}
-            <p>{{ product.metafields.custom.custom_variant_name }}</p>
-          {% else %}
-            <p>20 x 40g Riegel</p>
+          {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+            <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
           {% endif %}
         </div>
-      <div class="price_wrapper">
-        {% include 'product-price', variant: product %}
-      </div>
+        <div class="size_wrapper__labels">
+          <div class="size_wrapper">
+            {% render 'icon-vegan' %}
+            {{ 'collections.product_card.vegan_badge' | t }}
+          </div>
+          <div class="size_wrapper">
+            {% render 'icon-bio' %}
+            {{ 'collections.product_card.bio_badge' | t }}
+          </div>
+        </div>
     </div>
 
     <atc-button class="product_content-buttons">
@@ -104,20 +134,19 @@
         </label>
 
         <button
-          class="button product-form__button"
+          class="button product-form__button button--tertiary"
           type="submit"
           name="add"
           data-submit-button
-          data-button-color="tertiary"
         >
           <span
             class="product-form__button-text product-form__button-text--add-to-card"
             data-submit-button-text
           >
             {%- if product.variants.first.available == true -%}
-              {{ "products.product.add_to_cart" | t }}
+              <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {{ "collections.product_card.add_to_cart" | t }}
             {%- else -%}
-              {{ "products.product.sold_out" | t }}
+              {{ "collections.product_card.sold_out" | t }}
             {%- endif -%}
           </span>
         </button>
