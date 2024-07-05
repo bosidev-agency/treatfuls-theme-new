@@ -1,3 +1,7 @@
+{%- assign quantity_content = item.product.metafields.custom.quantity_content -%}
+{%- assign weight_content = item.product.metafields.custom.weight_content -%}
+{%- assign unit_name = item.product.metafields.custom.unit_name -%}
+
 <cart-item class="cart-product" class="{% if is_mini_cart %}cart-product--mini{% endif %}">
   <a href="{{ item.url }}" class="cart-product__image-wrap">
     <picture>
@@ -18,15 +22,15 @@
     <div class="cart-product__heading">
       <div class="cart-product__content">
         <a class="cart-product__title" href="item.url">
-          {%- if item.product.metafields.custom.alternative_product_title != blank -%}
-            {{ item.product.metafields.custom.alternative_product_title }}
+          {%- if item.product.metafields.custom.short_title != blank -%}
+            {{ item.product.metafields.custom.short_title }}
           {%- else -%}
             {{ item.title }}
           {%- endif -%}
         </a>
-        {%- if item.product.metafields.custom.custom_variant_name != blank -%}
+        {%- if quantity_content != blank and weight_content != blank -%}
           <span class="cart-product__item-content">
-            {{ item.product.metafields.custom.custom_variant_name }}
+            {{ quantity_content }} x {{ weight_content.value | split: '' }}
           </span>
         {%- endif -%}
       </div>

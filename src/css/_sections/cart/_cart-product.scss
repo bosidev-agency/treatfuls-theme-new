@@ -27,7 +27,7 @@
 	justify-content: space-between;
 	width: calc(100% - 85px);
 	min-height: 80px;
-	padding-left: 32px;
+	padding-left: 26px;
 }
 
 .cart-product__heading {
@@ -50,6 +50,7 @@
 
 .cart-product__item-content {
   margin-top: 10px;
+  font-size: 90%;
 }
 
 .cart-product__remove {
@@ -176,7 +177,7 @@
 
 @media #{$no-fw} {
 	.cart-product__title {
-		font-size: 1.4vw;
+		font-size: 1.2vw;
 	}
 
 	.cart-product__quantity {
@@ -204,8 +205,8 @@
 	}
 
 	.cart-product__info {
-		width: calc(100% - 170px);
-		min-height: 160px;
+		width: calc(100% - 100px);
+		min-height: 120px;
 	}
 }
 
