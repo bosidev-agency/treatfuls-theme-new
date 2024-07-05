@@ -95,21 +95,9 @@
 	{%- assign body_classes = body_classes | append: template_class -%}
 
 	{%- assign base_site_bg = '' -%}
+  
 	{%- if template.name == 'collection' -%}
 		{%- assign base_site_bg = 'quaternary' -%}
-    <style>
-      .template-collection[data-site-bg=quaternary] .header__logo-wrapper {
-        color: #f3587f;;
-      }
-      .template-collection[data-site-bg=quaternary] .collection-products {
-        background-color: #f3587f;
-      }
-      @media (min-width: 768px) {
-        .template-collection[data-site-bg=quaternary] .header {
-          background-color: #2ac2bd;
-        }
-      }
-    </style>
 	{%- endif -%}
 
 	{%- include 'product-field-color' -%}
