@@ -11,10 +11,10 @@
   {%- assign unit_reference_value = product.unit_price_measurement.reference_value -%}
 {%- endif -%}
 
+{%- assign short_title = product.metafields.custom.short_title -%}
 {%- assign quantity_content = product.metafields.custom.quantity_content -%}
 {%- assign weight_content = product.metafields.custom.weight_content -%}
 {%- assign unit_name = product.metafields.custom.unit_name -%}
-
 
 {%- assign product_bg_color = '' -%}
   {%- if field_product_bg_color == 'Berry' -%}
@@ -63,12 +63,18 @@
 
     <div class="product_content_wrapping">
       <a href="{{ product.url }}" class="hidden-phone">
-        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
+        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
+          {%- if short_title != blank and unit_name != blank -%}
+            {{ short_title }} {{ unit_name }}
+          {%- else -%}
+            {{ product.title }}
+          {%- endif -%}
+        </div>
       </a>
       <a href="{{ product.url }}" class="hidden-desktop">
         <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
-          {%- if product.metafields.custom.short_title != blank -%}
-            {{ product.metafields.custom.short_title }}
+          {%- if short_title != blank -%}
+            {{ short_title }}
           {%- else -%}
             {{ product.title }}
           {%- endif -%}

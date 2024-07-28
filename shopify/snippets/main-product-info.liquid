@@ -1,12 +1,15 @@
-{%- assign product_fields = product.metafields.my_fields -%}
+{%- assign short_title = product.metafields.custom.short_title -%}
+{%- assign quantity_content = product.metafields.custom.quantity_content -%}
+{%- assign weight_content = product.metafields.custom.weight_content -%}
+{%- assign unit_name = product.metafields.custom.unit_name -%}
 
 <section class="product-info">
 	<div class="product-info__container">
 		<div class="product-info__row">
 			<div class="product-info__col">
 				<div class="product-info__main">
-					{%- if product_fields.pdp_title != blank -%}
-						<h1 class="product-info__title title-bg title-bg--sm">{{ product_fields.pdp_title }}</h1>
+					{%- if short_title != blank and unit_name != blank -%}
+						<h1 class="product-info__title title-bg title-bg--sm">{{ short_title }} {{ unit_name }}</h1>
 					{%- else -%}
 						<h1 class="product-info__title h2">{{ product.title }}</h1>
 					{% endif %}
