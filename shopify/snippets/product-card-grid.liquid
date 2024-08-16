@@ -15,6 +15,7 @@
 {%- assign quantity_content = product.metafields.custom.quantity_content -%}
 {%- assign weight_content = product.metafields.custom.weight_content -%}
 {%- assign unit_name = product.metafields.custom.unit_name -%}
+{%- assign custom_card_badge = product.metafields.custom.custom_card_badge.value -%}
 
 {%- assign product_bg_color = '' -%}
   {%- if field_product_bg_color == 'Berry' -%}
@@ -87,6 +88,21 @@
           {% endif %}
         </div>
         <div class="size_wrapper__labels">
+          {%- if custom_card_badge -%}
+            <div class="size_wrapper size_wrapper--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
+              {%- if custom_card_badge.emoji -%}
+                <style>
+                  .products_listing ul.grid li.grid__item:hover .size_wrapper--custom {
+                    border: 1px solid {{ custom_card_badge.text_color }};
+                  }
+                </style>
+                <span class="size_wrapper--emoji">
+                  {{ custom_card_badge.emoji }}
+                </span>
+              {%- endif -%}
+              {{ custom_card_badge.text }}
+            </div>
+          {%- endif -%}
           <div class="size_wrapper">
             {% render 'icon-vegan' %}
             {{ 'collections.product_card.vegan_badge' | t }}
