@@ -15,16 +15,16 @@
         "collection_item_njphjp": {
           "type": "collection_item",
           "settings": {
-            "collection": "produkte",
+            "collection": "riegel",
             "image": "shopify:\/\/shop_images\/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
-            "collection_title": "Riegel",
+            "collection_title": "Alle Riegel",
             "color": "tertiary"
           }
         },
         "collection_item_zt4DCn": {
           "type": "collection_item",
           "settings": {
-            "collection": "frontpage",
+            "collection": "balls",
             "image": "shopify:\/\/shop_images\/treatfuls_bio_vegan_21_energyballs_baelle.webp",
             "collection_title": "Balls",
             "color": "tertiary"
@@ -33,17 +33,9 @@
         "collection_item_fnrKqm": {
           "type": "collection_item",
           "settings": {
-            "collection": "upsell-collection",
+            "collection": "bundles",
             "image": "shopify:\/\/shop_images\/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
             "collection_title": "Boxen",
-            "color": "tertiary"
-          }
-        },
-        "collection_item_wpgtcD": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "frontpage",
-            "collection_title": "Was geht ab",
             "color": "tertiary"
           }
         }
@@ -52,12 +44,11 @@
         "collection_item_HBNT6z",
         "collection_item_njphjp",
         "collection_item_zt4DCn",
-        "collection_item_fnrKqm",
-        "collection_item_wpgtcD"
+        "collection_item_fnrKqm"
       ],
       "settings": {
-        "heading_desktop": "<span><span>Produkte<\/span><\/span>",
-        "heading_mobile": "<span><span>Produktübersicht<\/span><\/span>"
+        "heading_desktop": "Produkte",
+        "heading_mobile": "Produktübersicht"
       }
     },
     "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
