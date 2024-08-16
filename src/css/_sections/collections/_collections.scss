@@ -533,7 +533,7 @@ input[checked="checked"] + .popover__choice-label {
   display: none;
 }
 
-.products_listing .size_price_wrapper {
+.products_listing .products_listing__information {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -541,7 +541,7 @@ input[checked="checked"] + .popover__choice-label {
   margin: 20px 0;
   gap: 10px;
 }
-.products_listing .size_price_wrapper .price_wrapper {
+.products_listing .products_listing__information .price_wrapper {
   width: 50%;
   display: inline-block;
   text-align: right;
@@ -551,12 +551,21 @@ input[checked="checked"] + .popover__choice-label {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
 }
-.products_listing .size_price_wrapper .size_wrapper__labels {
+.products_listing
+  .products_listing__information
+  .products_listing__information-labels {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
-.products_listing .size_price_wrapper .size_wrapper {
+
+.products_listing__information-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.products_listing .products_listing__information .products_listing__label {
   display: inline-flex;
   align-items: center;
   text-align: left;
@@ -624,7 +633,7 @@ input[checked="checked"] + .popover__choice-label {
     border-radius: 8px;
   }
 
-  .products_listing ul.grid li.grid__item:hover .size_wrapper {
+  .products_listing ul.grid li.grid__item:hover .products_listing__label {
     border: 1px solid #1d8884;
   }
 }

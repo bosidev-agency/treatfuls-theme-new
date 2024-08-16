@@ -81,35 +81,37 @@
           {%- endif -%}
         </div>
       </a>
-      <div class="size_price_wrapper">
-        <div class="size_wrapper">
-          {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
-            <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
-          {% endif %}
-        </div>
-        <div class="size_wrapper__labels">
-          {%- if custom_card_badge -%}
-            <div class="size_wrapper size_wrapper--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
-              {%- if custom_card_badge.emoji -%}
-                <style>
-                  .products_listing ul.grid li.grid__item:hover .size_wrapper--custom {
-                    border: 1px solid {{ custom_card_badge.text_color }};
-                  }
-                </style>
-                <span class="size_wrapper--emoji">
-                  {{ custom_card_badge.emoji }}
-                </span>
-              {%- endif -%}
-              {{ custom_card_badge.text }}
+      <div class="products_listing__information">
+        <div class="products_listing__information-wrapper">
+          <div class="products_listing__information-labels">
+            {%- if custom_card_badge -%}
+              <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
+                {%- if custom_card_badge.emoji -%}
+                  <style>
+                    .products_listing ul.grid li.grid__item:hover .products_listing__label--custom {
+                      border: 1px solid {{ custom_card_badge.text_color }};
+                    }
+                  </style>
+                  <span class="products_listing__label--emoji">
+                    {{ custom_card_badge.emoji }}
+                  </span>
+                {%- endif -%}
+                {{ custom_card_badge.text }}
+              </div>
+            {%- endif -%}
+            <div class="products_listing__label">
+              {% render 'icon-vegan' %}
+              {{ 'collections.product_card.vegan_badge' | t }}
             </div>
-          {%- endif -%}
-          <div class="size_wrapper">
-            {% render 'icon-vegan' %}
-            {{ 'collections.product_card.vegan_badge' | t }}
+            <div class="products_listing__label">
+              {% render 'icon-bio' %}
+              {{ 'collections.product_card.bio_badge' | t }}
+            </div>
           </div>
-          <div class="size_wrapper">
-            {% render 'icon-bio' %}
-            {{ 'collections.product_card.bio_badge' | t }}
+          <div class="products_listing__label">
+            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+              <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
+            {% endif %}
           </div>
         </div>
     </div>
