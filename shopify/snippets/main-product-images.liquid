@@ -58,7 +58,7 @@
 {%- endcapture -%}
 
 {%- capture product_images_thumbnail -%}
-	<div class="product-gallery__slider-thumbnail swiper-container" data-product-gallery="thumbnail" >
+	<div class="product-gallery__slider-thumbnail swiper-container" data-product-gallery="thumbnail" data-slide-length="{{ product.media.size }}">
 		<div class="swiper-wrapper">
 			{%- for media in product.media -%}
 				<div class="swiper-slide">

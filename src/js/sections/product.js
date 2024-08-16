@@ -332,25 +332,27 @@ register("product", {
 			selectors.productGalleryThumbnail
 		);
 
+    const slidesPerView = sliderThumbnail.dataset.slideLength > 4 ? 4 : 3
+
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
-				slidesPerView: 4.2,
+				slidesPerView: slidesPerView + 0.5,
 				direction: "vertical",
 
 				breakpoints: {
 					300: {
 						direction: "horizontal",
 						spaceBetween: 15,
-            slidesPerView: 4.5,
+            slidesPerView: 3.5,
 					},
-					767: {
+					576: {
 						direction: "horizontal",
 						spaceBetween: 15,
-            slidesPerView: 4.5,
+            slidesPerView: slidesPerView + 0.5,
 					},
 					992: {
 						direction: "vertical",
-            slidesPerView: 4.5,
+            slidesPerView: slidesPerView + 0.5,
 					}
 				}
 			});
