@@ -7,6 +7,8 @@ if (!customElements.get("collection-slider")) {
       constructor() {
         super();
         this.slider = null;
+        this.slides = this.dataset.slides > 4 ? 4 : this.dataset.slides;
+        
       }
 
       connectedCallback() {
@@ -25,7 +27,7 @@ if (!customElements.get("collection-slider")) {
           spaceBetween: 12,
           breakpoints: {
             769: {
-              slidesPerView: 4,
+              slidesPerView: this.slides,
               spaceBetween: 36,
             }
           }

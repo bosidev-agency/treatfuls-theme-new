@@ -11,6 +11,15 @@
   background-color: #f3587f;
 }
 
+.template-collection[data-site-bg=quaternary] .footer__wrap {
+  background-color: #5359e5 !important;
+}
+
+.template-collection[data-site-bg=quaternary] footer.footer svg.icon-triangular-line {
+  color: #5359e5 !important;
+  background-color: #2ac2bd!important;
+}
+
 @media (min-width: 768px) {
   .template-collection[data-site-bg="quaternary"] .header {
     background-color: #dbaaeb;

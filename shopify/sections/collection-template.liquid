@@ -23,7 +23,7 @@
     {%- endif -%}
 		{%- if section.blocks.size > 0 -%}
       <div class="swiper-container-wrapper">
-        <collection-slider class="swiper">
+        <collection-slider class="swiper" data-slides="{{ section.blocks.size }}">
           <div class="swiper-wrapper">
             {%- for block in section.blocks -%}
               {%- assign block_collection = collections[block.settings.collection] -%}

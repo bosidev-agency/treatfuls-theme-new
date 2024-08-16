@@ -554,6 +554,7 @@ input[checked="checked"] + .popover__choice-label {
 .products_listing .size_price_wrapper .size_wrapper__labels {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .products_listing .size_price_wrapper .size_wrapper {
   display: inline-flex;
@@ -573,6 +574,10 @@ input[checked="checked"] + .popover__choice-label {
   @media #{$m-xl} {
     font-size: 11px;
     padding: 4px 6px;
+  }
+
+  &--emoji {
+    margin-bottom: -2px;
   }
 }
 .products_listing a.grid-view-item__link {
