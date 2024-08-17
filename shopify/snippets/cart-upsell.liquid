@@ -60,7 +60,7 @@
                     <div class="cart-upsell__content">
                       <span class="cart-upsell__product-contents">
                         {%- if quantity_content != blank and weight_content != blank -%}
-                          {{ quantity_content }} x {{ weight_content.value | split: '' }}
+                          {{ quantity_content }} x {{ weight_content.value | split: ' ' }}
                         {%- endif -%}
                       </span>
                       <span class="cart-upsell__product-price">

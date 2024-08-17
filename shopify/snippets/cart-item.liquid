@@ -28,9 +28,9 @@
             {{ item.title }}
           {%- endif -%}
         </a>
-        {%- if quantity_content != blank and weight_content != blank -%}
+        {%- if quantity_content != blank and weight_content != blank and unit_name != blank -%}
           <span class="cart-product__item-content">
-            {{ quantity_content }} x {{ weight_content.value | split: '' }}
+            {{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }}
           </span>
         {%- endif -%}
       </div>
