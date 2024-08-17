@@ -1,7 +1,7 @@
 {% assign data = shop.metafields.bc_cookie %}
 {% assign cookieData = data.bc_cookie_list %}
 
-{% if data.size > 0 and cookieData._bc_c_set.live == '1' and content_for_header contains 'beeclever.app\/get-script.php' %}
+{% if data.size > 0 and cookieData._bc_c_set.live == '1' and content_for_header contains 'app.gdpr-legal-cookie.com\/get-script.php' %}
 
     <script>
         if (typeof BC_JSON_ObjectBypass === "undefined"){
