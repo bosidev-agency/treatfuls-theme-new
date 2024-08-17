@@ -47,8 +47,8 @@
         "collection_item_fnrKqm"
       ],
       "settings": {
-        "heading_desktop": "Produkte",
-        "heading_mobile": "Produktübersicht"
+        "heading_desktop": "<span>Produkte<\/span>",
+        "heading_mobile": "<span>Produktübersicht<\/span>"
       }
     },
     "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
