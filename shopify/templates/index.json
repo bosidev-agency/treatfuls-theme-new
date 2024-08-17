@@ -27,21 +27,21 @@
         "product_item_mGLG8t": {
           "type": "product_item",
           "settings": {
-            "product": "bite-sized-love-box-36-stuck-4-sorten-bio-vegan",
+            "product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan",
             "color": "primary"
           }
         },
         "product_item_CMKMAp": {
           "type": "product_item",
           "settings": {
-            "product": "love-at-firs-bite-box-30-stuck-4-sorten-bio-vegan",
+            "product": "big-deal-bundle-32-stuck-alle-sorten-bio-vegan",
             "color": "quaternary"
           }
         },
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
-            "product": "probierbox-alle-sorten-16-stuck-bio-vegan",
+            "product": "alle-sorten-probierbox-14-stuck-riegel-balle-zum-probieren-bio-vegan",
             "color": "tertiary"
           }
         },
@@ -65,6 +65,13 @@
             "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan",
             "color": "tertiary"
           }
+        },
+        "product_item_YikLNA": {
+          "type": "product_item",
+          "settings": {
+            "product": "20-x-banana-bread-energieballs-bio-vegan",
+            "color": "tertiary"
+          }
         }
       },
       "block_order": [
@@ -76,7 +83,8 @@
         "product_item_fwnbt4",
         "product_item_iM9nAw",
         "product_item_A3669g",
-        "product_item_yJ9RiE"
+        "product_item_yJ9RiE",
+        "product_item_YikLNA"
       ],
       "settings": {
         "title": "OMG, a recyclable packaging that <span><span>doesn’t <\/span><\/span><span><span>look recyclable<\/span><\/span>",
