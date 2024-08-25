@@ -96,7 +96,15 @@
                     {{ custom_card_badge.emoji }}
                   </span>
                 {%- endif -%}
-                {{ custom_card_badge.text }}
+
+                <span class="hidden-phone">{{ custom_card_badge.text }}</span>
+                <span class="hidden-desktop">
+                  {%- if custom_card_badge.mobile_text != blank -%}
+                    {{ custom_card_badge.mobile_text }}
+                  {%- else -%}
+                    {{ custom_card_badge.text }}
+                  {%- endif -%}
+                </span>
               </div>
             {%- endif -%}
             <div class="products_listing__label">

@@ -77,7 +77,13 @@ data-section-type="ingredients"
 			<div class="accordian_content">
         {%- if product.metafields.custom.bundle_products.value != blank -%}
           {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
-            <h3>{{ bundle_product.title }}</h3>
+            <h3>
+              {%- if bundle_product.metafields.custom.short_title != blank and bundle_product.metafields.custom.unit_name != blank -%}
+                {{ bundle_product.metafields.custom.short_title }} {{ bundle_product.metafields.custom.unit_name }}
+              {%- else -%}
+                {{ bundle_product.title }}
+              {%- endif -%}
+            </h3>
             {{ bundle_product.metafields.custom.ingredients }}
             <br><br>
           {%- endfor -%}
