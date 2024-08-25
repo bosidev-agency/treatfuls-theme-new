@@ -1,8 +1,13 @@
 .home-ticker {
 	background-color: $brand-tertiary;
+  transition: all 0.25s ease-in-out;
 
   [data-ticker="item"] {
     transition: transform 0.4s ease-out;
+  }
+
+  .base-triangular-line {
+    color: $brand-tertiary;
   }
 }
 
@@ -11,19 +16,14 @@
 	overflow: hidden;
 
 	@media #{$no-m} {
-		padding-top: 65px;
+		padding-top: 120px;
 		padding-bottom: 120px;
 	}
 
 	@media #{$m-xxl} {
-		padding-top: 50px;
+		padding-top: 60px;
 		padding-bottom: 60px;
 	}
-}
-
-.home-ticker__bg-line {
-	background-color: $brand-tertiary;
-	color: $brand-secondary;
 }
 
 .ticker {

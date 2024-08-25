@@ -1,6 +1,10 @@
 .ingredients {
 	background-color: $brand-tertiary;
 	transition: all 0.25s ease-in-out;
+
+  .base-triangular-line {
+    color: $brand-tertiary;
+  }
 }
 
 .ingredients__container {
@@ -18,21 +22,6 @@
 	@media #{$no-fw} {
 		padding-top: 7vw;
 		padding-bottom: 7vw;
-	}
-}
-
-.ingredients__bg-line {
-	color: $brand-primary;
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: -2px;
-		left: 0;
-		z-index: 1;
-		width: 100%;
-		height: 3px;
-		background-color: $brand-primary;
 	}
 }
 

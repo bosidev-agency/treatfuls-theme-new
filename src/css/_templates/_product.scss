@@ -10,30 +10,28 @@
 					}
 				}
 			}
+
+      .base-triangular-line, .atc-triangular-line {
+        color: $brand-primary;
+      }
 		}
 
 		.footer__wrap {
 			background-color: $brand-secondary;
-		}
-
-		.footer__bg-line {
-			background-color: $brand-primary;
-			color: $brand-secondary;
 		}
 	}
 
 	&[data-pdp-bg="secondary"] {
 		.main-product {
 			background-color: $brand-secondary;
+
+      .base-triangular-line, .atc-triangular-line {
+        color: $brand-secondary;
+      }
 		}
 
 		.footer__wrap {
 			background-color: $brand-tertiary;
-		}
-
-		.footer__bg-line {
-			background-color: $brand-primary;
-			color: $brand-tertiary;
 		}
 
 		.footer__logo {
@@ -44,20 +42,22 @@
 	&[data-pdp-bg="tertiary"] {
 		.main-product {
 			background-color: $brand-tertiary;
-		}
 
-		.main-product__bg-line {
-			color: $brand-secondary;
-
-			&::after {
-				background-color: $brand-secondary;
-			}
+      .base-triangular-line, .atc-triangular-line {
+        color: $brand-tertiary;
+      }
 		}
 
 		.ingredients,
 		.footer__wrap {
 			background-color: $brand-secondary;
 		}
+
+    .ingredients {
+      .base-triangular-line {
+        color: $brand-secondary;
+      }
+    }
 
 		/* stylelint-disable no-descending-specificity */
 		.ingredients__title {
@@ -67,36 +67,23 @@
 				}
 			}
 		}
-
-		.footer__bg-line {
-			background-color: $brand-primary;
-			color: $brand-secondary;
-		}
 	}
 
 	&[data-pdp-bg="quaternary"] {
 		.main-product {
 			background-color: $brand-quaternary;
+
+      .base-triangular-line, .atc-triangular-line {
+        color: $brand-quaternary;
+      }
 		}
 
 		.footer__wrap {
 			background-color: $brand-tertiary;
 		}
 
-		.footer__bg-line {
-			background-color: $brand-primary;
-			color: $brand-tertiary;
-		}
-
 		.footer__logo {
 			color: $brand-primary;
 		}
-	}
-
-	@media #{$m-xxl} {
-		padding-bottom: 168px;
-	}
-	@media #{$m-xl} {
-		padding-bottom: 136px;
 	}
 }

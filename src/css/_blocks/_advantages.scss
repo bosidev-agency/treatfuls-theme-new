@@ -1,18 +1,21 @@
-.advantages__container {
+.advantages {
 	background-color: $brand-secondary;
 
-	@media #{$m-xxl} {
-		padding-bottom: 40px;
-	}
+  .base-triangular-line {
+    color: $brand-secondary;
+  }
 
-	@media #{$no-m} {
-		padding-bottom: 119px;
-	}
-}
+  .advantages__container {
+    @media #{$m-xxl} {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
 
-.advantages__bg-line {
-	background-color: $brand-tertiary;
-	color: $brand-secondary;
+    @media #{$no-m} {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
 }
 
 .advantages__header {
@@ -119,4 +122,8 @@
 	.advantages__container {
 		background-color: $brand-primary;
 	}
+
+  .base-triangular-line {
+    color: $brand-primary;
+  }
 }

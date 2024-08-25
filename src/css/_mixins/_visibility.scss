@@ -2,6 +2,10 @@
   .hidden-phone {
     display: none !important;
   }
+
+  .mobile-vanish {
+    transform: translateY(120%) !important;
+  }
 }
 
 @media screen and (min-width: 769px) {

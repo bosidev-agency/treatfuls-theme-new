@@ -5,9 +5,6 @@
 	data-section-id="{{- section.id -}}"
 	data-section-type="home-richtext"
 >
-	<div class="home-richtext__bg-line">
-		{%- render 'icon-triangular-line' -%}
-	</div>
 	<div class="container home-richtext__container">
 		{%- if sec_sett.title != blank -%}
 			<h2 class="home-richtext__title title-bg title-bg--primary">{{ sec_sett.title }}</h2>
@@ -38,6 +35,9 @@
 		{%- endif -%}
 	</div>
 
+  <div class="base-triangular-line">
+		{%- render 'icon-triangular-line' -%}
+	</div>
 </section>
 
 

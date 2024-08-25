@@ -11,8 +11,6 @@ class PopoverContainer extends HTMLElement {
     this.sectionId = document.querySelector(
       ".collection-template"
     ).dataset.sectionId;
-
-    console.log(this.sectionId);
   }
 
   connectedCallback() {
@@ -57,7 +55,6 @@ class PopoverContainer extends HTMLElement {
       .then((data) => {
         const fakeDiv = document.createElement("div");
         fakeDiv.innerHTML = data;
-        console.log(fakeDiv.querySelector(".grid--view-items"));
         document.querySelector(".grid--view-items").innerHTML =
           fakeDiv.querySelector(".grid--view-items").innerHTML; // Replace the products container with new content
       })

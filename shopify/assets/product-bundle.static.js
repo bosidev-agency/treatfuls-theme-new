@@ -122,7 +122,6 @@ class BundlePicker extends HTMLElement {
   updateMainPrice() {
     const combinedQuantityContents = this.allInputProducts.reduce(
       (accumulator, currentProduct) => {
-        console.log(currentProduct.quantityContent);
         return accumulator + currentProduct.quantityContent;
       },
       0

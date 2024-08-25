@@ -6,6 +6,8 @@
 		z-index: 101;
 		width: 100%;
 		padding: 32px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
 
 		&[data-product-form-color="primary"] {
 			background-color: $brand-primary;

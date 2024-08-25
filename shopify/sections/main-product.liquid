@@ -46,6 +46,10 @@
       background-color: {{ product.metafields.custom.background_color }} !important;
     }
 
+    .main-product .base-triangular-line, .main-product .atc-triangular-line {
+      color: {{ product.metafields.custom.background_color }} !important;
+    }
+
     @media screen and (max-width: 991px) {
       .product-form {
         background-color: {{ product.metafields.custom.background_color }} !important;
@@ -77,7 +81,7 @@
 		{%- render 'main-product-info', product: product -%}
 	</div>
 
-	<div class="main-product__bg-line base-triangular-line">
+	<div class="base-triangular-line">
 		{%- render 'icon-triangular-line' -%}
 	</div>
 </div>

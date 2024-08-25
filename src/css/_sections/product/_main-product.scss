@@ -9,18 +9,6 @@
 	padding-top: 86px;
 }
 
-.main-product__info {
-	padding-bottom: 60px;
-
-	@media #{$no-m} {
-		padding-bottom: 120px;
-	}
-
-	@media #{$no-fw} {
-		padding-bottom: 5vw;
-	}
-}
-
 .main-product__bg-line {
 	color: $brand-tertiary;
 

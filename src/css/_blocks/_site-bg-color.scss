@@ -7,6 +7,10 @@
 
 		.home-products {
 			background-color: $brand-primary;
+
+      .base-triangular-line {
+        color: $brand-primary;
+      }
 		}
 
 		.header {
@@ -22,6 +26,10 @@
 
 		.home-products {
 			background-color: $brand-secondary;
+
+      .base-triangular-line {
+        color: $brand-secondary;
+      }
 		}
 
 		.header {
@@ -37,6 +45,10 @@
 
 		.home-products {
 			background-color: $brand-tertiary;
+
+      .base-triangular-line {
+        color: $brand-tertiary;
+      }
 		}
 
 		.home-products__title {
@@ -47,17 +59,12 @@
 			}
 		}
 
-		.home-products__bg-line {
-			color: $brand-primary;
-		}
-
 		.home-ticker {
 			background-color: $brand-primary;
-		}
 
-		.home-ticker__bg-line {
-			background-color: $brand-primary;
-			color: $brand-secondary;
+      .base-triangular-line {
+        color: $brand-primary;
+      }
 		}
 
 		.header {
@@ -73,6 +80,10 @@
 
 		.home-products {
 			background-color: $brand-quaternary;
+
+      .base-triangular-line {
+        color: $brand-quaternary;
+      }
 		}
 
 		.header {

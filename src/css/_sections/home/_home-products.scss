@@ -43,7 +43,6 @@
 	@media (max-height: 700px) and (max-width: 1366px) {
 		height: auto;
 		min-height: auto;
-		margin-bottom: 40px;
 	}
 }
 
@@ -90,11 +89,6 @@
 	@media (max-width: 767px) {
 		font-size: 40px;
 	}
-}
-
-.home-products__bg-line {
-	color: $brand-tertiary;
-	transition: background-color 0.25s ease-in-out;
 }
 
 .home-products__button {

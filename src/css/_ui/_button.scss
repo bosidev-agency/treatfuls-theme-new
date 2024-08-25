@@ -125,6 +125,16 @@
 		}
 	}
 
+  &[data-button-color="quinary"] {
+		&:before {
+			background-color: $button-primary;
+		}
+
+		&:after {
+			background-color: $button-tertiary; /* onhover background color */
+		}
+	}
+
 	// Disabled
 	&.disabled,
 	&[disabled] {

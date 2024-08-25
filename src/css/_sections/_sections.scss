@@ -20,6 +20,8 @@
 
 // Collections
 @import "collections/collections";
+@import "collections/products-listing";
+@import "collections/sort-by";
 
 // Product
 @import "product/main-product";
@@ -28,6 +30,7 @@
 @import "product/product-form";
 @import "product/ingredients";
 @import "product/comparison-slider";
+@import "product/review-slider";
 
 // Customers
 @import "customers/customer";
@@ -45,5 +48,6 @@
 @import "pages/about-us/index";
 @import "pages/jobs/index";
 @import "pages/terms/terms";
+@import "pages/faq/index";
 
 // Blog

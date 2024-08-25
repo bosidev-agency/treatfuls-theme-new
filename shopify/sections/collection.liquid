@@ -1,6 +1,6 @@
 <!-- collection.liquid -->
 {%- assign collection_sort_by = collection.sort_by | default: collection.default_sort_by -%}
-<div class="products_listing collection-template" data-section-id="{{ section.id }}">
+<div class="products_listing collection-template triangular-balance" data-section-id="{{ section.id }}">
 <div class="page-width" >
   <div class="product-facet__meta-bar-item product-facet__meta-bar-item--sort">
     <span class="product-facet__sort-by-title text--subdued hidden-pocket">{{ 'collections.sorting.title' | t }}</span>
@@ -100,8 +100,10 @@
   {% endif %}
 
 </div>
+  <div class="base-triangular-line">
+  {%- render 'icon-triangular-line' -%}
 </div>
-
+</div>
 
 {% schema %}
 {

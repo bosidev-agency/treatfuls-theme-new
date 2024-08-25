@@ -6,11 +6,11 @@
 .template-account {
 	background-color: $brand-secondary;
 
-	.header {
-		background-color: $brand-secondary;
-	}
+  .base-triangular-line {
+    color: $brand-secondary;
+  }
 
-	.footer__bg-line {
+	.header {
 		background-color: $brand-secondary;
 	}
 
@@ -20,10 +20,6 @@
 
 	&[data-site-bg="primary"] {
 		background-color: $brand-primary;
-
-		.footer__bg-line {
-			background-color: $brand-primary;
-		}
 	}
 }
 .template-addresses {
