@@ -58,7 +58,7 @@ picture {
 	overflow: hidden;
 }
 
-.base-triangular-line, .top-triangular-line, .atc-triangular-line {
+.base-triangular-line, .top-triangular-line {
   position: absolute;
   width: 100%;
   background-color: transparent;
@@ -72,7 +72,7 @@ picture {
   transform: rotate(180deg);
 }
 
-.top-triangular-line, .atc-triangular-line {
+.top-triangular-line {
   transform: translateY(-100%);
   top: 0.5px;
 }

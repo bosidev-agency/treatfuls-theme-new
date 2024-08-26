@@ -11,7 +11,7 @@
 				}
 			}
 
-      .base-triangular-line, .atc-triangular-line {
+      .base-triangular-line {
         color: $brand-primary;
       }
 		}
@@ -25,7 +25,7 @@
 		.main-product {
 			background-color: $brand-secondary;
 
-      .base-triangular-line, .atc-triangular-line {
+      .base-triangular-line {
         color: $brand-secondary;
       }
 		}
@@ -43,7 +43,7 @@
 		.main-product {
 			background-color: $brand-tertiary;
 
-      .base-triangular-line, .atc-triangular-line {
+      .base-triangular-line {
         color: $brand-tertiary;
       }
 		}
@@ -73,7 +73,7 @@
 		.main-product {
 			background-color: $brand-quaternary;
 
-      .base-triangular-line, .atc-triangular-line {
+      .base-triangular-line {
         color: $brand-quaternary;
       }
 		}
