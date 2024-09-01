@@ -7,6 +7,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="theme-color" content="{{- settings.color_button -}}">
+    {% if product.metafields.custom.hide_product %}
+      <meta name="robots" content="noindex">
+    {% endif %}
       	<!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
