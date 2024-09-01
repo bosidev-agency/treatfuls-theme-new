@@ -66,6 +66,7 @@ h3,
 
 	.title-wrapper__title {
 		padding-bottom: 24px;
+    color: #ffffff;
 	}
 
 	.title-wrapper__subtitle {
@@ -90,7 +91,7 @@ h3,
 
 	@media #{$m-xxl} {
 		max-width: 60vw;
-		padding-bottom: 60px;
+		padding-bottom: 20px;
 	}
 
 	@media #{$m-xl} {
@@ -99,13 +100,11 @@ h3,
 
 	@media #{$m-l} {
 		max-width: none;
-		padding-left: 16px;
-		padding-right: 16px;
 	}
 
 	@media #{$no-fw} {
-		max-width: 32vw;
-		padding-bottom: 5vw;
+		max-width: 40vw;
+		padding-bottom: 2vw;
 
 		.title-wrapper__title {
 			padding-bottom: 2vw;
@@ -176,6 +175,22 @@ h3,
 		}
 	}
 
+  &.title-bg--quinary {
+		> span {
+			&::before {
+				background-color: $brand-quinary;
+			}
+		}
+	}
+
+  &.title-bg--senary {
+		> span {
+			&::before {
+				background-color: $brand-senary;
+			}
+		}
+	}
+
 	&.title-bg--sm {
 		font-size: 40px;
 
@@ -186,6 +201,16 @@ h3,
 			}
 		}
 	}
+
+  &.title-bg--xs {
+    font-size: 28px;
+
+    > span {
+      &::before {
+        top: 10px;
+      }
+    }
+  }
 
 	@media #{$no-fw} {
 		font-size: 3vw;
@@ -207,11 +232,25 @@ h3,
 				}
 			}
 		}
+
+    &.title-bg--xs {
+			font-size: 1.5vw;
+
+      > span {
+				&::before {
+					top: 10px;
+				}
+			}
+		}
 	}
 
 	@media #{$m-xxl} {
 		&.title-bg--sm {
 			font-size: 64px;
+		}
+
+    &.title-bg--xs {
+			font-size: 40px;
 		}
 	}
 
@@ -227,6 +266,16 @@ h3,
 
 		&.title-bg--sm {
 			font-size: 40px;
+		}
+
+    &.title-bg--xs {
+			font-size: 24px;
+
+      > span {
+				&::before {
+					top: 8px;
+				}
+			}
 		}
 	}
 }
@@ -265,6 +314,10 @@ h3,
 
 .text-center {
 	text-align: center;
+}
+
+.text-left {
+	text-align: left;
 }
 
 .color-white {

@@ -1,0 +1,92 @@
+.signup-with-image {
+  background-color: $brand-quinary;
+
+  .container {
+    @media #{$no-m} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+    }
+
+    .title-wrapper {
+      max-width: none;
+    }
+  }
+
+  &__content {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title-wrapper {
+      @media #{$no-m-xl} {
+        padding-bottom: 60px;
+      }
+
+      @media #{$m-xl} {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .base-triangular-line {
+    color: $brand-quinary;
+  }
+
+  .input-checkbox {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .checkbox-upsell__hidden-trigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 1em;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .checkbox-upsell__item-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-upsell__item-content .icon {
+    border: 0.5px solid #ffffff;
+    padding: 2px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+
+  .checkbox-upsell__item-content .icon path {
+    stroke: transparent;
+  }
+
+  input:checked ~ .checkbox-upsell__item-content .icon path {
+    stroke: white;
+  }
+
+  .label {
+    padding: 0;
+  }
+
+  .button--space {
+    margin-bottom: 0;
+  }
+}

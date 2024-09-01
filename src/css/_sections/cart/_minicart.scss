@@ -131,7 +131,7 @@
     background-color: $brand-primary;
 
     .base-triangular-line {
-      color: $brand-primary;
+      color: $brand-primary !important;
       left: 0;
     }
   }

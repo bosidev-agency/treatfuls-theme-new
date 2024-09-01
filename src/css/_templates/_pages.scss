@@ -56,4 +56,24 @@
 			color: $brand-secondary;
 		}
 	}
+
+  &.template-page--adventskalender {
+    background-color: $brand-secondary;
+
+    .base-triangular-line {
+      color: $brand-quinary;
+    }
+
+		.header {
+			background-color: $brand-quinary;
+		}
+
+    .header__logo-wrapper {
+			color: $brand-tertiary;
+		}
+
+		.footer__logo {
+			color: $brand-senary;
+		}
+  }
 }

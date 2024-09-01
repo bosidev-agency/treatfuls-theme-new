@@ -76,7 +76,8 @@
       "newsletter_email": "Abonniere unsere Mailingliste",
       "email_placeholder": "E-Mail-Adresse",
       "confirmation": "Danke für deine Anmeldung!",
-      "submit": "Abonnieren"
+      "submit": "Abonnieren",
+      "newsletter_opt_in": "Ich bin damit einverstanden, den treatfuls Newsletter zu erhalten."
     },
     "filters": {
       "show_more": "Mehr anzeigen",

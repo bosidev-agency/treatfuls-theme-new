@@ -1,0 +1,116 @@
+{%- assign title = section.settings.title -%}
+{%- assign subtitle = section.settings.subtitle -%}
+{%- assign bg_image = section.settings.image -%}
+
+<section
+	class="signup-with-image"
+	data-section-id="{{- section.id -}}"
+	data-section-type="signup-with-image"
+>
+	<div class="content-wrapper">
+		{%- if section.settings.title or section.settings.subtitle -%}
+			<div class="title-wrapper">
+				{%- if section.settings.title -%}
+					<h1 class="title-wrapper__title title-bg title-bg--senary">{{ section.settings.title }}</h1>
+				{%- endif -%}
+
+				{%- if section.settings.title_mobile -%}
+					<h2 class="title-wrapper__title title-wrapper__title--mobile title-bg title-bg--tertiary">{{ section.settings.title_mobile }}</h2>
+				{%- endif -%}
+
+				{%- if section.settings.subtitle -%}
+					<p class="title-wrapper__subtitle">{{ section.settings.subtitle }}</p>
+				{%- endif -%}
+			</div>
+
+      <div class="container container--lg">
+        {%- if section.settings.image != blank -%}
+          <div class="signup-with-image__image-wrapper">
+            <img src="{{ section.settings.image | image_url: width: section.settings.image.width, height: section.settings.image.height }}">
+          </div>
+          <div class="signup-with-image__content">
+            <div class="title-wrapper">
+              {%- if section.settings.content_title -%}
+                <h3 class="title-wrapper__title title-bg--senary title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
+              {%- endif -%}
+
+              {%- if section.settings.content -%}
+                <p class="title-wrapper__subtitle title-wrapper__subtitle--sm text-left">{{ section.settings.content }}</p>
+              {%- endif -%}
+            </div>
+            <div class="signup-with-image__sign-up-form">
+              <sign-up-form>
+                <form>
+                  <input class="input input--blue" id="first_name" type="text" placeholder="Vorname" required>
+                  <input class="input input--blue" id="email_address" type="text" placeholder="Email Adresse" required>
+                  <div class="input-checkbox">
+                    <input class="checkbox-upsell__hidden-trigger" id="newsletter" type="checkbox">
+                    <div class="checkbox-upsell__item-content">
+                      {%- render 'icon-check' -%}
+                      <label class="label text" for="newsletter">{{ 'general.newsletter_form.newsletter_opt_in' | t }}</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="button button--quinary button--space button--fw">{{ 'customer.login.sign_in' | t }}</button>
+                </form>
+              </sign-up-form>
+            </div>
+          </div>
+        {%- endif -%}
+			</div>
+		{%- endif -%}
+	</div>
+
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}
+  </div>
+</section>
+{% schema %}
+	{
+		"name": "Signup With Image",
+		"settings": [
+      {
+				"type": "header",
+				"content": "Header"
+			},
+      {
+				"type": "text",
+				"id": "title",
+				"label": "Title"
+			},
+      {
+				"type": "text",
+				"id": "title_mobile",
+				"label": "Title mobile"
+			},
+      {
+				"type": "text",
+				"id": "subtitle",
+				"label": "Subtitle"
+			},
+      {
+				"type": "header",
+				"content": "Content"
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			},
+      {
+				"type": "text",
+				"id": "content_title",
+				"label": "Content Title"
+			},
+      {
+				"type": "textarea",
+				"id": "content",
+				"label": "Content"
+			}
+		],
+    "presets": [
+      {
+        "name": "Signup With Image"
+      }
+    ]
+	}
+{% endschema %}

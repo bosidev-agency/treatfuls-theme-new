@@ -85,6 +85,26 @@
 		}
 	}
 
+  &.button--quaternary {
+		&:before {
+			background-color: $button-secondary;
+		}
+
+		&:after {
+			background-color: $button-tertiary; /* onhover background color */
+		}
+	}
+
+  &.button--quinary {
+		&:before {
+			background-color: $brand-senary;
+		}
+
+		&:after {
+			background-color: $brand-tertiary; /* onhover background color */
+		}
+	}
+
 	&[data-button-color="primary"] {
 		&:before {
 			background-color: $button-primary;
