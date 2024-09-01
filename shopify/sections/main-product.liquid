@@ -1,46 +1,6 @@
-{%- if product.metafields.custom.redirect != blank -%}
-  <script>
-    window.location = '{{ product.metafields.custom.redirect }}';
-  </script>
-{%- endif -%}
-
 {%- assign sec_sett = section.settings -%}
 
-{% comment %} Get product color from Shopify metafields {% endcomment %}
-{%- include 'product-field-color' -%}
-
 {%- style -%}
-	[data-pdp-bg="primary"],
-	[data-pdp-bg="primary"] .main-product {
-	background-color: #dbaaeb;
-	}
-
-	[data-pdp-bg="secondary"],
-	[data-pdp-bg="secondary"] .main-product {
-	background-color: #5359e5;
-	}
-
-	[data-pdp-bg="tertiary"],
-	[data-pdp-bg="tertiary"] .main-product,
-	[data-pdp-bg="tertiary"] .main-product__bg-line {
-	background-color: #2ac2bd;
-	}
-
-	[data-pdp-bg="quaternary"],
-	[data-pdp-bg="quaternary"] .main-product {
-	background-color: #f3587f;
-	}
-  
-    [data-pdp-bg="quinary"],
-	[data-pdp-bg="quinary"] .main-product {
-	background-color: #035d64;
-	}
-
-    [data-pdp-bg="senary"],
-	[data-pdp-bg="senary"] .main-product {
-	background-color: #9c4054;
-	}
-
   {% if product.metafields.custom.background_color -%}
     .main-product, .header {
       background-color: {{ product.metafields.custom.background_color }} !important;

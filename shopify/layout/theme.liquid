@@ -148,6 +148,12 @@
 });
 </script>
 
+{%- if product.metafields.custom.redirect != blank -%}
+  <script>
+    window.location = '{{ product.metafields.custom.redirect }}';
+  </script>
+{%- endif -%}
+
 
 <style>
   @media screen and (min-width: 800px) {
