@@ -1,3 +1,5 @@
+{%- render 'color-scheme', section: section -%}
+
 {%- assign sec_sett = section.settings -%}
 {%- assign title = sec_sett.title -%}
 {%- assign img_1 = sec_sett.img_on_hover_first -%}
@@ -79,7 +81,29 @@
 				"id": "img_on_hover_second",
 				"info": "For <span data-tooltip='2'>text</span>",
 				"label": "Tooltip Image 2 on link hover"
-			}
+			},
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#dbaaeb"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "color",
+        "id": "hover_color",
+        "label": "Hover Color",
+        "default": "#f3587f"
+      }
 		],
 		"blocks": [
 			{
@@ -99,6 +123,11 @@
 					}
 				]
 			}
-		]
+		],
+    "presets": [
+      {
+        "name": "About Us"
+      }
+    ]
 	}
 {% endschema %}
