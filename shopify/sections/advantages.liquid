@@ -1,8 +1,10 @@
+{% render 'color-scheme', resource: product, section: section %}
+
 {% assign sec_sett = section.settings %}
 
 {%- capture slider -%}
 	{%- if section.blocks.size > 0 -%}
-		<div class="AAAXX advantages__gallery">
+		<div class="advantages__gallery">
 			<div class="swiper" data-advantages-slider>
 				<div class="swiper-wrapper">
 					{%- for block in section.blocks -%}
@@ -33,29 +35,29 @@
 
 
 <section
-	class="advantages advantages--product"
+	class="advantages"
 	data-section-id="{{- section.id -}}"
 	data-section-type="advantages"
 >
-	<div class="container advantages__container">
-		{%- if sec_sett.title != blank or sec_sett.subtitle != blank -%}
-			<section class="advantages__header {% if product.id == 7154928255170 %} full_width_div {% endif %}">
+  <div class="content-wrapper">
+    <div class="container container--sm">
+      {%- if product.metafields.custom.comparison_slider_without_wrap != blank and product.metafields.custom.comparison_slider_with_wrap != blank -%}
+        {% render 'comparison-slider' %}
+      {%- endif -%}
+      <div class="title-wrapper">
+        {%- if sec_sett.title != blank or sec_sett.subtitle != blank -%}       
+          {%- if sec_sett.title != blank -%}
+            <h2 class="title-wrapper__title title-bg title-bg--quaternary">{{- sec_sett.title -}}</h2>
+          {%- endif -%}
+          {%- if sec_sett.subtitle != blank -%}
+            <p class="title-wrapper__subtitle">{{- sec_sett.subtitle -}}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
 
-        <div class="slider_images comparision_slider_wrapping">
-          {% render 'comparison-slider' %}
-        </div>
-              
-				{%- if sec_sett.title != blank -%}
-					<h2 class="advantages__title title-bg title-bg--tertiary">{{- sec_sett.title -}}</h2>
-				{%- endif -%}
-				{%- if sec_sett.subtitle != blank -%}
-					<p class="advantages__subtitle subtitle">{{- sec_sett.subtitle -}}</p>
-				{%- endif -%}
-			</section>
-		{%- endif -%}
-
-		{{ slider }}
-	</div>
+    {{ slider }}
+  </div>
 
   <div class="base-triangular-line">
 		{%- render 'icon-triangular-line' -%}
@@ -64,13 +66,8 @@
 
 {% schema %}
 {
-	"name": "Product advantages",
+	"name": "Advantages",
 	"settings": [
-      	{
-					"type": "image_picker",
-					"id": "main_image",
-					"label": "Image"
-		},
 		{
 			"type": "text",
 			"id": "title",
@@ -83,7 +80,29 @@
 			"id": "subtitle",
 			"label": "Subtitle",
 			"default": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile."
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
 	],
 	"blocks": [
 		{
@@ -102,6 +121,11 @@
 				}
 			]
 		}
-	]
+	],
+  "presets": [
+    {
+      "name": "Advantages"
+    }
+  ]
 }
 {% endschema %}

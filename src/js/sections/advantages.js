@@ -42,7 +42,6 @@ register("advantages", {
 			spaceBetween: 30,
 
 			breakpoints: {
-				// when window width is >= 320px
 				300: {
 					slidesPerView: 1.6
 				},
