@@ -1,19 +1,21 @@
+{% render 'color-scheme', resource: product, section: section %}
+
 {% assign sec_sett = section.settings %}
 
 <section
-	class="home-richtext"
+	class="richtext"
 	data-section-id="{{- section.id -}}"
-	data-section-type="home-richtext"
+	data-section-type="richtext"
 >
-	<div class="container home-richtext__container">
+	<div class="container richtext__container">
 		{%- if sec_sett.title != blank -%}
-			<h2 class="home-richtext__title title-bg title-bg--primary">{{ sec_sett.title }}</h2>
+			<h2 class="richtext__title title-bg title-bg--primary">{{ sec_sett.title }}</h2>
 		{%- endif -%}
 		{%- if sec_sett.first_text != blank -%}
-			<div class="home-richtext__text home-richtext__text--first subtitle">
+			<div class="richtext__text richtext__text--first subtitle">
 				{{- sec_sett.first_text -}}
 				{%- if sec_sett.img_on_hover.src != blank -%}
-					<picture class="home-richtext__hover-img js-home-tooltip-img">
+					<picture class="richtext__hover-img js-home-tooltip-img">
 						<source
 							srcset="{{ sec_sett.img_on_hover.src | img_url: '423x' }} 1x, {{ sec_sett.img_on_hover.src | img_url: '846x' }} 2x, {{ sec_sett.img_on_hover.src | img_url: '1269x' }} 3x"
 							media="(min-width: 991px)">
@@ -28,10 +30,10 @@
 			</div>
 		{%- endif -%}
 		{%- if sec_sett.second_text != blank  -%}
-			<div class="home-richtext__text subtitle">{{- sec_sett.second_text -}}</div>
+			<div class="richtext__text subtitle">{{- sec_sett.second_text -}}</div>
 		{%- endif -%}
 		{%- if sec_sett.link_url != blank -%}
-			<a href="{{- sec_sett.link_url -}}" class="button button--secondary home-richtext__button">{{- sec_sett.link_text -}}</a>
+			<a href="{{- sec_sett.link_url -}}" class="button button--secondary richtext__button">{{- sec_sett.link_text -}}</a>
 		{%- endif -%}
 	</div>
 
@@ -43,18 +45,20 @@
 
 {% schema %}
 {
-	"name": "Home rich text",
+	"name": "Richtext",
 	"settings": [
 		{
 			"type": "text",
 			"id": "title",
 			"label": "Title",
+			"info": "Need wrap words to see background, <span><span>example</span></span>",
 			"default": "hungry for a <span><span>change?</span></span>"
 		},
 		{
 			"type": "textarea",
 			"id": "first_text",
 			"label": "First Paragraph",
+			"info": "Need wrap words <span class='tooltip'>example</span> to see hover image",
 			"default": "Bist du bereit mit uns gemeinsam die Snack-Industrie zu revolutionieren? Wir wollen Snacks die besser sind, als das was <span class='tooltip'>der Markt uns gerade bietet</span>. Wir wollen Süßigkeiten die geil schmecken und besser für dich und die Umwelt sind."
 		},
 		{
@@ -78,11 +82,33 @@
 			"id": "link_text",
 			"label": "Link text",
 			"default": "Jetzt Probierpaket kaufen"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
 	],
 	"presets": [
 		{
-			"name": "Home rich text",
+			"name": "Richtext",
 			"category": "Homepage"
 		}
 	]
