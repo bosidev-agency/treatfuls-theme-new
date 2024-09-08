@@ -1,7 +1,29 @@
 .faq {
-	background-color: $brand-secondary;
+  table {
+    tr {
+      border-bottom: 1px solid;
+      padding: 10px 0;
+      display: inline-block;
+      width: 100%;
+  
+      &:last-child {
+        border: none;
+      }
+  
+      td {
+        width: 33%;
+        display: inline-block;
+        word-wrap: break-word;
 
-  .base-triangular-line {
-    color: $brand-secondary;
+        @media #{$m-xxl} {
+          width: 32%;
+          padding-right: 10px;
+        }
+  
+        &:nth-child(1) {
+          text-align: left;
+        }
+      }
+    }
   }
 }

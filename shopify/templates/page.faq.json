@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "page-faq",
+      "type": "faq",
       "blocks": {
         "88bfeb12-e232-45e0-a79a-5ecaf80568b5": {
           "type": "faq_item",
@@ -132,7 +132,5 @@
       }
     }
   },
-  "order": [
-    "main"
-  ]
+  "order": ["main"]
 }
