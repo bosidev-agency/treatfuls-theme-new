@@ -1,46 +1,52 @@
-.comparision_slider_wrapping .img-comp-container {
-  display: flex;
-  width: 700px;
-  position: relative;
-  margin-bottom: 385px;
-}
-
-.comparision_slider_wrapping .img-comp-img {
+.comparison-slider {
   width: 100%;
-  position: absolute;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Snow */
-.comparision_slider_wrapping .img-comp-img:nth-child(1) {
+.comparison-slider .comparison-slider__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.comparison-slider .comparison-slider__image {
   z-index: 1;
+  width: 100%;
 }
 
-/* Forest */
-.comparision_slider_wrapping .img-comp-img:nth-child(2) {
+.comparison-slider .comparison-slider__image--top {
+  position: absolute;
   z-index: 2;
   overflow: hidden;
   width: 50%;
 }
 
-.comparision_slider_wrapping img {
+.comparison-slider img {
   width: 700px;
   max-width: 700px;
+
+  @media #{$m-xl} {
+    width: 300px;
+    max-width: 300px;
+  }
 }
 
-.comparision_slider_wrapping #Custom_slider_desktop,
-.comparision_slider_wrapping #Custom_slider_mobile {
+.comparison-slider #compare-slider-range {
   -webkit-appearance: none;
   cursor: ew-resize;
   position: absolute;
   z-index: 100;
-  width: 114%;
-  top: 175px;
-  left: -7%;
+  width: 105%;
+  left: -2.5%;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: transparent;
   outline: none;
+  display: block;
 }
 
-.comparision_slider_wrapping input[type="range"]::-webkit-slider-thumb {
+.comparison-slider input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 36px;
@@ -50,29 +56,9 @@
   background: #ffffff;
   margin-top: -4px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
-@media (max-width: 1024px) {
-  input#Custom_slider_mobile {
-    display: block !important;
-  }
-  input#Custom_slider_desktop {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .comparision_slider_wrapping .img-comp-container {
-    width: 300px;
-    margin: 0 auto;
-    padding-bottom: 154px;
-  }
-  .comparision_slider_wrapping img {
-    width: 300px;
-    max-width: 300px;
-  }
-  .comparision_slider_wrapping #Custom_slider_desktop,
-  .comparision_slider_wrapping #Custom_slider_mobile {
-    top: 75px;
+  @media #{$m-xl} {
+    height: 24px;
+    width: 24px;
   }
 }

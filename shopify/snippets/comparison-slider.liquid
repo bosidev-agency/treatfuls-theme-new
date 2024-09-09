@@ -1,21 +1,14 @@
-<section class="img-comp-container"> 
-  <div class="img-comp-img">
-     {% if product.metafields.custom.comparison_slider_without_wrap != blank %}
-       <img src="{{ product.metafields.custom.comparison_slider_without_wrap | img_url: 'master' }}" >
-        {% else %}
-        <img src="https://cdn.shopify.com/s/files/1/0601/8256/0962/files/without-wap-choclate.png?v=1678877417" >
-       {% endif %}
+<comparison-slider>
+  <div class="comparison-slider">
+    <div class="comparison-slider__wrapper">
+      <div class="comparison-slider__image">
+        <img src="{{ product.metafields.custom.comparison_slider_without_wrap | img_url: 'master' }}" alt="Before Image">
+      </div>
+      <div class="comparison-slider__image comparison-slider__image--top">
+        <img src="{{ product.metafields.custom.comparison_slider_with_wrap | img_url: 'master' }}" alt="After Image">
+      </div>
+      <!-- Single range input without mobile/desktop distinction -->
+      <input type="range" id="compare-slider-range" min="0">
+    </div>
   </div>
-  
-  <div class="img-comp-img img-comp-overlay">
-    {% if product.metafields.custom.comparison_slider_with_wrap != blank %}
-      <img src="{{ product.metafields.custom.comparison_slider_with_wrap | img_url: 'master' }}">
-      {% else %}
-      <img src="https://cdn.shopify.com/s/files/1/0601/8256/0962/files/wrap-choclate.png?v=1678877417">
-      {% endif %}
-  </div>
-
-  <input type="range" id="Custom_slider_desktop" min="0" max="700" value="50%">
-  <input type="range" style="display:none;" id="Custom_slider_mobile" min="0" max="300" value="50%">
-  
-</section>
+</comparison-slider>
