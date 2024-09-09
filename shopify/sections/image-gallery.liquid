@@ -28,11 +28,7 @@
       {%- capture swiper_config -%}
         {
           "loop": true,
-          "slidesPerView": 1,
-          "freeMode": {
-            "enabled": true,
-            "sticky": false
-          }
+          "slidesPerView": "auto"
         }
       {%- endcapture -%}
 
@@ -58,11 +54,20 @@
                     }
                     @media screen and (max-width: 991px) {
                       #{{ block.id }} {
-                        grid-column: {{ block.settings.column_start_mobile }} / span {{ block.settings.column_span_mobile }};
+                        grid-column: {{ block.settings.column_start_mobile }} / span {% if mobile_overhang > 0 %}{{ block.settings.column_span_mobile | minus: mobile_overhang }}{% else %}{{ block.settings.column_span_mobile }}{% endif %};
                         grid-row: {{ block.settings.row_start_mobile }} / span {{ block.settings.row_span_mobile }};
-                        {% if mobile_overhang > 0 %}margin-right: -{{ mobile_overhang | times: 50 }}%;{% endif %}
+                        {% if mobile_overhang > 0 %}
+                          margin-right: calc(-{{ mobile_overhang | times: 100 | divived_by: 12 }}% - {{ mobile_overhang | times: 4 }}px - {{ mobile_overhang | times: 4 }}px);
+                        {% endif %}
                       }
                     }
+
+                    {%- if block.settings.content != blank -%}
+                      [data-id="{{ block.id }}"] {
+                        top: {{ block.settings.content_position_y }}%;
+                        left: {{ block.settings.content_position_x }}%;
+                      }
+                    {%- endif -%}
                   </style>
 
                   {% if block.settings.image %}
@@ -78,15 +83,17 @@
       {%- endfor -%}
     </div>
 
-    {% for block in section.blocks %}
-      {%- if block.settings.content != blank -%}
-        <tool-tip class="gallery-item__tooltip-wrapper" data-id="{{ block.id }}">
-          <div class="gallery-item__tooltip">
-            {{ block.settings.content }}
-          </div>
-        </tool-tip>
-      {%- endif -%}
-    {%- endfor -%}
+    <div class="image-gallery__tooltip-wrapper">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.content != blank -%}
+          <tool-tip class="gallery-item__tooltip-wrapper" data-id="{{ block.id }}">
+            <div class="gallery-item__tooltip">
+              {{ block.settings.content }}
+            </div>
+          </tool-tip>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
 
     {%- if grid_container_quantity > 1 -%}
       </slider-element>
@@ -253,9 +260,33 @@
           "label": "Upload Video"
         },
         {
+          "type": "header",
+          "content": "Content"
+        },
+        {
           "type": "richtext",
           "id": "content",
           "label": "Grid Popup Content"
+        },
+        {
+          "type": "range",
+          "id": "content_position_y",
+          "label": "Vertical Content Position",
+          "min": 0,
+          "max": 100,
+          "unit": "%",
+          "step": 5,
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "content_position_x",
+          "label": "Horizontal Content Position",
+          "min": 0,
+          "max": 100,
+          "unit": "%",
+          "step": 5,
+          "default": 50
         },
         {
           "type": "header",

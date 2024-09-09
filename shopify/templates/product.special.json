@@ -18,7 +18,8 @@
       "blocks": {
         "description_qt6wj4": {
           "type": "description",
-          "settings": {}
+          "settings": {
+          }
         },
         "countdown_VtCQd8": {
           "type": "countdown",
@@ -43,8 +44,8 @@
         "buy_button_MxK7PU"
       ],
       "settings": {
-        "heading": "Der <span>treatfuls Adventskalender</span>",
-        "mobile_heading": "Der treatfuls <span>Adventskalender</span>",
+        "heading": "Der <span>treatfuls Adventskalender<\/span>",
+        "mobile_heading": "Der treatfuls <span>Adventskalender<\/span>",
         "show_price": true,
         "background_color": "",
         "reviews_average_rating": "",
@@ -54,8 +55,8 @@
     "video_iTDPK9": {
       "type": "video",
       "settings": {
-        "video": "shopify://files/videos/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
-        "video_mobile": "shopify://files/videos/WedndesdayXbilou_Keyvisual_TEST_mobil.MP4",
+        "video": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
+        "video_mobile": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_mobil.MP4",
         "background_color": "#aa3e59",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -64,72 +65,102 @@
     "image_gallery_GH9tRD": {
       "type": "image-gallery",
       "blocks": {
+        "image_pYhYQN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LB_8095.jpg",
+            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "11",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "6",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        },
         "image_6z6KA6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
-            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁</p>",
+            "image": "shopify:\/\/shop_images\/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
+            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
+            "content_position_y": 30,
+            "content_position_x": 30,
             "grid_number": "1",
             "column_start": "1",
-            "column_span": "3",
+            "column_span": "4",
             "row_start": "1",
-            "row_span": "2"
+            "row_span": "2",
+            "column_start_mobile": "12",
+            "column_span_mobile": "2",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
           }
         },
         "image_VChGcY": {
           "type": "image",
           "settings": {
-            "video": "shopify://files/videos/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
-            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁</p>",
+            "video": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
+            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
+            "content_position_y": 35,
+            "content_position_x": 70,
             "grid_number": "1",
             "column_start": "4",
             "column_span": "7",
             "row_start": "1",
-            "row_span": "1"
+            "row_span": "1",
+            "column_start_mobile": "1",
+            "column_span_mobile": "8",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
           }
         },
         "image_96gGPi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Jan_Website_Gallery_Opener_16_9_Querformat.jpg",
-            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁</p>",
+            "image": "shopify:\/\/shop_images\/Jan_Website_Gallery_Opener_16_9_Querformat.jpg",
+            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
             "column_span": "7",
             "row_start": "2",
-            "row_span": "1"
-          }
-        },
-        "image_pYhYQN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LB_8095.jpg",
-            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁</p>",
-            "grid_number": "1",
-            "column_start": "11",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2"
+            "row_span": "1",
+            "column_start_mobile": "7",
+            "column_span_mobile": "6",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
           }
         },
         "image_nxRjPX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
+            "image": "shopify:\/\/shop_images\/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
             "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
             "grid_number": "2",
             "column_start": "2",
             "column_span": "8",
             "row_start": "1",
-            "row_span": "1"
+            "row_span": "1",
+            "column_start_mobile": "4",
+            "column_span_mobile": "8",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
           }
         }
       },
       "block_order": [
+        "image_pYhYQN",
         "image_6z6KA6",
         "image_VChGcY",
         "image_96gGPi",
-        "image_pYhYQN",
         "image_nxRjPX"
       ],
       "settings": {
@@ -153,7 +184,9 @@
           }
         }
       },
-      "block_order": ["advantage_item_RgLwwJ"],
+      "block_order": [
+        "advantage_item_RgLwwJ"
+      ],
       "settings": {
         "title": "Unsere Riegel bieten viele Vorteile",
         "subtitle": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile.",
@@ -175,7 +208,9 @@
           }
         }
       },
-      "block_order": ["faq_item_Ey8e3K"],
+      "block_order": [
+        "faq_item_Ey8e3K"
+      ],
       "settings": {
         "title": "Du hast Fragen?  Hier sind die Antworten!",
         "subtitle": "",
@@ -187,7 +222,7 @@
     "page_about_us_xeLARH": {
       "type": "about-us",
       "settings": {
-        "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls</span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱</span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies</span>, die die Snack <span class=\"emoji\">🍫</span> Industrie revolutionieren <span class=\"emoji\">💪</span> wollen.",
+        "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls<\/span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱<\/span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies<\/span>, die die Snack <span class=\"emoji\">🍫<\/span> Industrie revolutionieren <span class=\"emoji\">💪<\/span> wollen.",
         "background_color": "#275c63",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
