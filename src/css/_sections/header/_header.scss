@@ -27,6 +27,7 @@
 	z-index: 1;
 	display: inline-block;
 	line-height: 0;
+  transition: color .25s ease-in-out;
 
 	@media #{$m-xl} {
 		top: -4px;

@@ -21,16 +21,17 @@
       }
     }
 
-    .swiper-container {
+    .product-gallery__slider {
+      max-width: 400px;
       position: relative;
       overflow: hidden;
       list-style: none;
       padding: 0;
       z-index: 1;
-    }
-
-    .product-gallery__slider {
-      max-width: 400px;
+      
+      @media #{$no-m} {
+        margin-left: 20px;
+      }
 
       @media #{$no-l} {
         max-width: 500px;
