@@ -5,21 +5,17 @@
       padding: 10px 0;
       display: inline-block;
       width: 100%;
-  
+
       &:last-child {
         border: none;
       }
-  
+
       td {
-        width: 33%;
+        width: 32%;
+        padding-right: 10px;
         display: inline-block;
         word-wrap: break-word;
 
-        @media #{$m-xxl} {
-          width: 32%;
-          padding-right: 10px;
-        }
-  
         &:nth-child(1) {
           text-align: left;
         }
