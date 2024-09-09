@@ -63,9 +63,11 @@
                     }
 
                     {%- if block.settings.content != blank -%}
-                      [data-id="{{ block.id }}"] {
-                        top: {{ block.settings.content_position_y }}%;
-                        left: {{ block.settings.content_position_x }}%;
+                      @media screen and (min-width: 992px) {
+                        [data-id="{{ block.id }}"] {
+                          top: {{ block.settings.content_position_y }}%;
+                          left: {{ block.settings.content_position_x }}%;
+                        }
                       }
                     {%- endif -%}
                   </style>

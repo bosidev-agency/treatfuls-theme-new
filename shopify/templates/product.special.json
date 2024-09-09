@@ -65,61 +65,43 @@
     "image_gallery_GH9tRD": {
       "type": "image-gallery",
       "blocks": {
-        "image_pYhYQN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/LB_8095.jpg",
-            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "11",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "6",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_6z6KA6": {
+        "image_E7xyiR": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
-            "content_position_y": 30,
-            "content_position_x": 30,
+            "content_position_y": 55,
+            "content_position_x": 25,
             "grid_number": "1",
             "column_start": "1",
-            "column_span": "4",
+            "column_span": "3",
             "row_start": "1",
             "row_span": "2",
-            "column_start_mobile": "12",
-            "column_span_mobile": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
             "row_start_mobile": "1",
-            "row_span_mobile": "1"
+            "row_span_mobile": "2"
           }
         },
-        "image_VChGcY": {
+        "image_CHXcKq": {
           "type": "image",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
+            "image": "shopify:\/\/shop_images\/fYXh16O9ewY5zECCWcYqBvCeQSzS0mTmKoHloElh.jpg",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
-            "content_position_y": 35,
-            "content_position_x": 70,
+            "content_position_y": 50,
+            "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
-            "column_span": "7",
+            "column_span": "6",
             "row_start": "1",
             "row_span": "1",
-            "column_start_mobile": "1",
-            "column_span_mobile": "8",
-            "row_start_mobile": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
             "row_span_mobile": "1"
           }
         },
-        "image_96gGPi": {
+        "image_ELrtHw": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Jan_Website_Gallery_Opener_16_9_Querformat.jpg",
@@ -128,50 +110,49 @@
             "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
-            "column_span": "7",
+            "column_span": "6",
             "row_start": "2",
             "row_span": "1",
-            "column_start_mobile": "7",
-            "column_span_mobile": "6",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_nxRjPX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "2",
-            "column_start": "2",
-            "column_span": "8",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "4",
-            "column_span_mobile": "8",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
             "row_start_mobile": "1",
             "row_span_mobile": "1"
+          }
+        },
+        "image_q7LijX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LB_8095.jpg",
+            "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
           }
         }
       },
       "block_order": [
-        "image_pYhYQN",
-        "image_6z6KA6",
-        "image_VChGcY",
-        "image_96gGPi",
-        "image_nxRjPX"
+        "image_E7xyiR",
+        "image_CHXcKq",
+        "image_ELrtHw",
+        "image_q7LijX"
       ],
       "settings": {
-        "heading": "24 Tage voller gesunder Überraschungen!",
+        "heading": "24 Tage voller <span>gesunder<\/span><br><span>Überraschungen!<\/span>",
         "show_atc_button": true,
-        "grid_container_quantity": "2",
+        "grid_container_quantity": "1",
         "background_color": "#aa3e59",
         "accent_color": "#275c63",
         "hover_color": "#f3587f",
-        "popup_background_color": "#2ac2bd",
-        "popup_text_color": "#275c63"
+        "popup_background_color": "#f3587f",
+        "popup_text_color": "#aa3e59"
       }
     },
     "advantages_AtVQrF": {
@@ -180,16 +161,41 @@
         "advantage_item_RgLwwJ": {
           "type": "advantage_item",
           "settings": {
-            "text": ""
+            "image": "shopify:\/\/shop_images\/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_7gpaeh": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_rYayte": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-3-organic.png",
+            "text": "Bio zertfiziert"
+          }
+        },
+        "advantage_item_pzt4D6": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img-4-packaging.png",
+            "text": "Kompostierbare Verpackung"
           }
         }
       },
       "block_order": [
-        "advantage_item_RgLwwJ"
+        "advantage_item_RgLwwJ",
+        "advantage_item_7gpaeh",
+        "advantage_item_rYayte",
+        "advantage_item_pzt4D6"
       ],
       "settings": {
-        "title": "Unsere Riegel bieten viele Vorteile",
-        "subtitle": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile.",
+        "title": "Was macht unseren Kalender <span>besonders<\/span>",
+        "subtitle": "",
         "background_color": "#275c63",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
@@ -201,18 +207,68 @@
         "faq_item_Ey8e3K": {
           "type": "faq_item",
           "settings": {
-            "title": "asdfasdf",
-            "content": "asdfasdfasdfaf",
+            "title": "Wann kann ich den treatfuls Adventskalender kaufen?",
+            "content": "",
             "show_ingredients": false,
             "show_nutrition": true
+          }
+        },
+        "faq_item_RbNWq3": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wann wird der Adventskalender versendet?",
+            "content": "",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_fjwx6m": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Kann ich meine Bestellung später noch stornieren?",
+            "content": "",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_T3Lfyj": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sind die Artikel im Adventskalender auch im Shop erhältlich oder sind es nur exklusive Stücke?",
+            "content": "",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_UVU9Uk": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Gibt es eine Liste mit den treats, die im Adventskalender enthalten sein werden?",
+            "content": "",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_TXQkJk": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Kann ich den Adventskalender retournieren, falls er mir nicht gefällt? ",
+            "content": "",
+            "show_ingredients": false,
+            "show_nutrition": false
           }
         }
       },
       "block_order": [
-        "faq_item_Ey8e3K"
+        "faq_item_Ey8e3K",
+        "faq_item_RbNWq3",
+        "faq_item_fjwx6m",
+        "faq_item_T3Lfyj",
+        "faq_item_UVU9Uk",
+        "faq_item_TXQkJk"
       ],
       "settings": {
-        "title": "Du hast Fragen?  Hier sind die Antworten!",
+        "title": "Du hast <span>Fragen?<\/span><br>  Hier sind die <span>Antworten!<\/span>",
         "subtitle": "",
         "background_color": "#aa3e59",
         "accent_color": "#275c63",
