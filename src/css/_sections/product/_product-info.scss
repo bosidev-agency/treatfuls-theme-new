@@ -4,8 +4,6 @@
 	width: 100%;
 	max-width: 938px;
 	margin: 0 auto;
-	padding-left: 16px;
-	padding-right: 16px;
   padding-bottom: 20px;
 
 	@media #{$no-fw} {
@@ -15,8 +13,6 @@
 
 .product-info__row {
 	display: flex;
-	margin-left: -16px;
-	margin-right: -16px;
 
 	@media #{$m-xxl} {
 		flex-direction: column;

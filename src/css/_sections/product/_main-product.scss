@@ -30,26 +30,31 @@
 }
 
 [data-pdp-bg="secondary"],
-[data-pdp-bg="secondary"] .main-product {
+[data-pdp-bg="secondary"] .main-product,
+[data-pdp-bg="secondary"] .product-page {
   background-color: #5359e5;
 }
 
 [data-pdp-bg="tertiary"],
-[data-pdp-bg="tertiary"] .main-product {
+[data-pdp-bg="tertiary"] .main-product,
+[data-pdp-bg="tertiary"] .product-page {
   background-color: #2ac2bd;
 }
 
 [data-pdp-bg="quaternary"],
-[data-pdp-bg="quaternary"] .main-product {
+[data-pdp-bg="quaternary"] .main-product,
+[data-pdp-bg="quaternary"] .product-page {
   background-color: #f3587f;
 }
 
 [data-pdp-bg="quinary"],
-[data-pdp-bg="quinary"] .main-product {
+[data-pdp-bg="quinary"] .main-product,
+[data-pdp-bg="quinary"] .product-page {
   background-color: #035d64;
 }
 
 [data-pdp-bg="senary"],
-[data-pdp-bg="senary"] .main-product {
+[data-pdp-bg="senary"] .main-product,
+[data-pdp-bg="senary"] .product-page {
   background-color: #9c4054;
 }

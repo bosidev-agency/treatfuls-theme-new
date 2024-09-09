@@ -1,4 +1,4 @@
-.product-form {
+.main-product .product-form, .product-page .product-form__buttons {
 	@media #{$m-xxl} {
 		position: fixed;
 		bottom: 0;
