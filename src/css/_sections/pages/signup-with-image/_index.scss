@@ -2,12 +2,6 @@
   background-color: $brand-quinary;
 
   .container {
-    @media #{$no-m} {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8rem;
-    }
-
     .title-wrapper {
       max-width: none;
     }

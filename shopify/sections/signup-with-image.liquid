@@ -23,37 +23,29 @@
 				{%- endif -%}
 			</div>
 
-      <div class="container container--lg">
+      <div class="container container--lg container--two-columns">
         {%- if section.settings.image != blank -%}
           <div class="signup-with-image__image-wrapper">
             <img src="{{ section.settings.image | image_url: width: section.settings.image.width, height: section.settings.image.height }}">
           </div>
           <div class="signup-with-image__content">
-            <div class="title-wrapper">
-              {%- if section.settings.content_title -%}
-                <h3 class="title-wrapper__title title-bg--senary title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
-              {%- endif -%}
+            {%- if section.settings.content_title != blank or section.settings.content != blank -%}
+              <div class="title-wrapper">
+                {%- if section.settings.content_title -%}
+                  <h3 class="title-wrapper__title title-bg--senary title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
+                {%- endif -%}
 
-              {%- if section.settings.content -%}
-                <p class="title-wrapper__subtitle title-wrapper__subtitle--sm text-left">{{ section.settings.content }}</p>
-              {%- endif -%}
-            </div>
-            <div class="signup-with-image__sign-up-form">
-              <sign-up-form>
-                <form>
-                  <input class="input input--blue" id="first_name" type="text" placeholder="Vorname" required>
-                  <input class="input input--blue" id="email_address" type="text" placeholder="Email Adresse" required>
-                  <div class="input-checkbox">
-                    <input class="checkbox-upsell__hidden-trigger" id="newsletter" type="checkbox">
-                    <div class="checkbox-upsell__item-content">
-                      {%- render 'icon-check' -%}
-                      <label class="label text" for="newsletter">{{ 'general.newsletter_form.newsletter_opt_in' | t }}</label>
-                    </div>
-                  </div>
-                  <button type="submit" class="button button--quinary button--space button--fw">{{ 'customer.login.sign_in' | t }}</button>
-                </form>
-              </sign-up-form>
-            </div>
+                {%- if section.settings.content -%}
+                  <span class="title-wrapper__subtitle title-wrapper__subtitle--sm text-left">{{ section.settings.content }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.klavyio_id != blank -%}
+              <div class="signup-with-image__sign-up-form">
+                <div class="klaviyo-form-{{ section.settings.klavyio_id }}"></div>
+              </div>
+            {%- endif -%}
           </div>
         {%- endif -%}
 			</div>
@@ -102,9 +94,15 @@
 				"label": "Content Title"
 			},
       {
-				"type": "textarea",
+				"type": "richtext",
 				"id": "content",
 				"label": "Content"
+			},
+      {
+				"type": "text",
+				"id": "klaviyo_id",
+				"label": "Klavyio ID",
+        "info": "Put the ID of the signup form in this field. For Example 'ABCDEF'. NOT the whole Div, only the ID"
 			}
 		],
     "presets": [
