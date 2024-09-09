@@ -12,6 +12,7 @@ body {
 	background-color: #fff;
 	font-family: $font-primary;
 	scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +27,39 @@ body {
 
 .content {
 	flex: 1 0 auto;
+}
+
+.shopify-section:not(#shopify-section-header):not(#shopify-section-footer) {
+  background-color: rgb(var(--section-background-color));
+}
+
+.shopify-section:not(#shopify-section-header):not(#shopify-section-footer) .button:not(.home-products__button)::after {
+  background-color: rgb(var(--section-hover-color));
+}
+
+.shopify-section .base-triangular-line {
+  color: rgb(var(--section-background-color));
+}
+
+.shopify-section:not(#shopify-section-header):not(#shopify-section-footer) .button:not(.home-products__button)::before,
+.shopify-section:not(#shopify-section-header):not(#shopify-section-footer) .title-bg > span::before {
+  background-color: rgb(var(--section-accent-color));
+}
+
+#shopify-section-header {
+  background-color: rgb(var(--header-background-color));
+}
+
+#shopify-section-footer {
+  background-color: rgb(var(--footer-background-color));
+}
+
+.header__logo-wrapper {
+  color: rgb(var(--header-accent-color));
+}
+
+.footer__logo {
+  color: rgb(var(--footer-accent-color));
 }
 
 .visually-hidden,
@@ -81,10 +115,15 @@ svg.icon-triangular-line {
 	display: flex;
 	width: 100%;
 	height: 100%;
-	margin-bottom: -2px;
+  stroke-width: 2px;
+  margin-bottom: -2px;
 
   @media #{$xl} {
     margin-bottom: -1px;
+  }
+
+  path {
+    stroke: currentColor;
   }
 }
 
@@ -93,6 +132,10 @@ svg.icon-triangular-line {
 	margin: 0 auto;
 	padding-left: 32px;
 	padding-right: 32px;
+
+  &.container--xs {
+		max-width: 500px;
+	}
 
 	&.container--sm {
 		max-width: 736px;
@@ -120,6 +163,10 @@ svg.icon-triangular-line {
 			padding-left: 16px;
 			padding-right: 16px;
     }
+
+    &.container--xs {
+      max-width: 300px;
+    }
 	}
 
 	@media #{$m-l} {
@@ -128,6 +175,10 @@ svg.icon-triangular-line {
 	}
 
 	@media #{$no-fw} {
+    &.container--xs {
+      max-width: 20vw;
+    }
+
 		&.container--sm {
 			max-width: 34vw;
 		}
@@ -140,16 +191,24 @@ svg.icon-triangular-line {
       max-width: 70vw;
     }
 	}
+
+  &.container--two-columns {
+    @media #{$no-m} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8rem;
+    }
+  }
 }
 
 .content-wrapper {
 	position: relative;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 80px;
 
 	@media #{$m-xxl} {
-		padding-top: 40px;
+		padding-top: 60px;
 	  padding-bottom: 40px;
 	}
 
@@ -197,4 +256,13 @@ svg.icon-triangular-line {
   @media #{$m-l} {
     padding-top: 40px !important
   }
+}
+
+tool-tip {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  top: 50%;
+  left: 50%;
 }

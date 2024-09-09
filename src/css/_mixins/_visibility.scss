@@ -1,14 +1,16 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .hidden-phone {
     display: none !important;
   }
+}
 
+@media screen and (max-width: 991px) {
   .mobile-vanish {
     transform: translateY(120%) !important;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
   .hidden-desktop {
     display: none !important;
   }
@@ -16,4 +18,10 @@
 
 .lock-body {
   overflow: hidden;
+}
+
+[visible] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }

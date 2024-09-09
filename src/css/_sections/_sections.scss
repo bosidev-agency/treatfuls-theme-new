@@ -15,7 +15,7 @@
 
 // Home
 @import "home/home-products";
-@import "home/home-richtext";
+@import "home/richtext";
 @import "home/home-ticker";
 
 // Collections
@@ -25,12 +25,16 @@
 
 // Product
 @import "product/main-product";
+@import "product/product-page";
 @import "product/product-gallery";
+@import "product/product-images";
 @import "product/product-info";
 @import "product/product-form";
 @import "product/ingredients";
 @import "product/comparison-slider";
 @import "product/review-slider";
+@import "product/countdown-display";
+@import "product/image-gallery";
 
 // Customers
 @import "customers/customer";
@@ -50,5 +54,6 @@
 @import "pages/terms/terms";
 @import "pages/faq/index";
 @import "pages/signup-with-image/index";
+@import "pages/video/index";
 
 // Blog
