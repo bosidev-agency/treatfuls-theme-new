@@ -28,12 +28,15 @@ require("./components/cart-item");
 require("./components/atc-button");
 require("./components/cart-upsell");
 require("./components/sort-popover");
-require("./components/signup-form");
+require("./components/countdown-display");
+require("./components/slider");
+require("./components/tooltip");
 
 /*================ Sections ================*/
 require("./sections/header");
 require("./sections/minicart");
 require("./sections/product");
+require("./sections/product-page");
 require("./sections/ingredients");
 require("./sections/home/richtext");
 require("./sections/home/products");
