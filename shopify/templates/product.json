@@ -14,8 +14,8 @@
         "title": "Wir verwenden nur <span><span>beste Zutaten<\/span><\/span>"
       }
     },
-    "main-product-advantages": {
-      "type": "main-product-advantages",
+    "advantages": {
+      "type": "advantages",
       "blocks": {
         "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756": {
           "type": "advantage_item",
@@ -177,7 +177,7 @@
   "order": [
     "main",
     "main_product_ingredients",
-    "main-product-advantages",
+    "advantages",
     "compare_product_reviews"
   ]
 }

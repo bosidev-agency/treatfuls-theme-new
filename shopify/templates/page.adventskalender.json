@@ -3,16 +3,17 @@
     "product_teaser_cHpidz": {
       "type": "signup-with-image",
       "settings": {
-        "title": "<span>Coming soon</span> - <br>der Treatfuls Adventskalender",
+        "title": "Coming soon - der Treatfuls Adventskalender",
         "title_mobile": "",
         "subtitle": "",
         "image": "shopify://shop_images/IMG_9061.png",
-        "content_title": "SETZ DICH JETZT AUF DIE <span>WARTELISTE</span> FÜR DEN ADVENTSKALENDER 2024!",
-        "content": "Darauf warten alle – der treatfuls Adventskalender 2024, gefüllt mit 24 köstlichen, veganen Überraschungen. \nDamit du dieses Jahr nicht leer ausgehst, kannst du dich jetzt auf die Warteliste setzen lassen. Wir informieren dich, sobald der Kalender verfügbar ist, damit du dir dein Exemplar sichern kannst. Anfang September wird es endlich soweit sein."
+        "content_title": "SETZ DICH JETZT AUF DIE WARTELISTE FÜR DEN ADVENTSKALENDER 2024!",
+        "content": "<p>Darauf haben alle gewartet: Der allererste <strong>treatfuls Adventskalender 2024</strong>! Gefüllt mit 24 unwiderstehlichen, veganen Überraschungen, die nicht nur lecker sind, sondern auch gut für dich und den Planeten. 🌍✨</p><p> </p><p>Trag dich jetzt in die Warteliste ein, um als Erste<em>r Bescheid zu wissen, wenn der Pre-Sale startet – und dir dabei </em><em><strong>exklusive 17% Rabatt</strong></em><em> zu sichern. Aber Achtung, der Rabatt ist nur für Newsletter-Abonnent</em>innen und nur im Pre-Sale verfügbar! 😍</p><p>Der Countdown läuft: Mitte September geht's los! ⏰<br/>Sichere dir jetzt dein Stück vegane Vorfreude!</p>",
+        "klaviyo_id": ""
       }
     },
     "main": {
-      "type": "page-about-us",
+      "type": "about-us",
       "blocks": {
         "d8653dcc-00ce-4937-9501-a70dfe0c76b0": {
           "type": "article_item",
@@ -37,7 +38,9 @@
       "settings": {
         "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls</span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱</span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies</span>, die die Snack <span class=\"emoji\">🍫</span> Industrie revolutionieren <span class=\"emoji\">💪</span> wollen.",
         "img_on_hover_first": "shopify://shop_images/about-us-prod-3x.png",
-        "img_on_hover_second": "shopify://shop_images/about-us-img-3x.jpg"
+        "img_on_hover_second": "shopify://shop_images/about-us-img-3x.jpg",
+        "background_color": "",
+        "accent_color": ""
       }
     }
   },
