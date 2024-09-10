@@ -68,7 +68,7 @@
 			&.header-nav__wrap--open {
 				max-height: 100vh;
 				height: calc(100vh - 80px);
-				background-color: rgb(var(--nav-background));
+				background-color: var(--nav-background);
 				transition: all 0.25s ease-out;
 
 				.header-nav__img-left,
