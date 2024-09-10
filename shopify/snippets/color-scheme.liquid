@@ -4,12 +4,16 @@
   #shopify-section-header {
     {% if color_scheme.header_background.value != blank %}
       --header-background-color: {{ color_scheme.header_background.value }};
+    {% elsif product.metafields.custom.background_color %}
+      --header-background-color: {{ product.metafields.custom.background_color }};
     {% else %}
       --header-background-color: {{ settings.header_background }};
     {% endif %}
 
     {% if color_scheme.header_accent.value != blank %}
       --header-accent-color: {{ color_scheme.header_accent.value }};
+    {% elsif product.metafields.custom.accent_color %}
+      --header-accent-color: {{ product.metafields.custom.accent_color }};
     {% else %}
       --header-accent-color: {{ settings.header_accent }};
     {% endif %}
@@ -35,6 +39,8 @@
         --header-background-color: {{ color_scheme.header_background_mobile.value }};
       {% elsif color_scheme.header_background.value != blank %}
         --header-background-color: {{ color_scheme.header_background.value }};
+      {%- elsif product.metafields.custom.background_color -%}
+        --header-background-color: {{ product.metafields.custom.background_color }};
       {%- else -%}
         --header-background-color: {{ settings.header_background }};
       {% endif %}
@@ -43,6 +49,8 @@
         --header-accent-color: {{ color_scheme.header_accent_mobile.value }};
       {% elsif color_scheme.header_accent.value != blank %}
         --header-accent-color: {{ color_scheme.header_accent.value }};
+      {%- elsif product.metafields.custom.accent_color -%}
+        --header-background-color: {{ product.metafields.custom.accent_color }};
       {% else %}
         --header-accent-color: {{ settings.header_accent }};
       {% endif %}
