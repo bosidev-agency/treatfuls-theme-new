@@ -6,71 +6,61 @@
         "15b986fe-6e10-40ac-ac01-2d2f587377eb": {
           "type": "product_item",
           "settings": {
-            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
-            "color": "primary"
+            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have"
           }
         },
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
           "type": "product_item",
           "settings": {
-            "product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
-            "color": "secondary"
+            "product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex"
           }
         },
         "28b053f4-1040-48a6-9229-7fa4f1d54ca5": {
           "type": "product_item",
           "settings": {
-            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship",
-            "color": "tertiary"
+            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship"
           }
         },
         "product_item_mGLG8t": {
           "type": "product_item",
           "settings": {
-            "product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan",
-            "color": "primary"
+            "product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan"
           }
         },
         "product_item_CMKMAp": {
           "type": "product_item",
           "settings": {
-            "product": "big-deal-bundle-34-stuck-alle-sorten-bio-vegan",
-            "color": "quaternary"
+            "product": "big-deal-bundle-34-stuck-alle-sorten-bio-vegan"
           }
         },
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
-            "product": "alle-sorten-probierbox-14-stuck-riegel-balle-zum-probieren-bio-vegan",
-            "color": "tertiary"
+            "product": "alle-sorten-probierbox-14-stuck-riegel-balle-zum-probieren-bio-vegan"
           }
         },
         "product_item_iM9nAw": {
           "type": "product_item",
           "settings": {
-            "product": "20er-mixbox-get-it-all-bundle-mit-3-riegeln-bio-vegan",
-            "color": "quaternary"
+            "product": "20er-mixbox-get-it-all-bundle-mit-3-riegeln-bio-vegan"
           }
         },
         "product_item_A3669g": {
           "type": "product_item",
           "settings": {
-            "product": "gemischtes-paket-mit-allen-4-riegeln",
-            "color": "tertiary"
+            "product": "gemischtes-paket-mit-allen-4-riegeln"
           }
         },
         "product_item_yJ9RiE": {
           "type": "product_item",
           "settings": {
-            "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan",
-            "color": "tertiary"
+            "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan"
           }
         },
         "product_item_YikLNA": {
           "type": "product_item",
           "settings": {
-            "product": "20-x-banana-bread-energieballs-bio-vegan",
-            "color": "tertiary"
+            "product": "20-x-banana-bread-energieballs-bio-vegan"
           }
         }
       },
