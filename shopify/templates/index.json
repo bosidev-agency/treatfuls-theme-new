@@ -189,7 +189,7 @@
         "advantage_item_f8LpM9"
       ],
       "settings": {
-        "title": "nicht noch so ein Bio-Riegel…",
+        "title": "nicht noch so <br><span>ein Bio-Riegel…<\/span>",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
@@ -205,7 +205,7 @@
         "second_text": "Wir sind Macher und Träumerinnen zugleich und haben aus diesem Grund treatfuls ins Leben gerufen. Mach mit und probiere und überzeuge dich selbst, wie lecker vegane und natürliche Snacks sein können.",
         "link_url": "shopify:\/\/products\/probierbox-alle-sorten-16-stuck-bio-vegan",
         "link_text": "Jetzt Probierpaket kaufen",
-        "background_color": "#2AC2BD",
+        "background_color": "#2ac2bd",
         "accent_color": "#dbaaeb",
         "hover_color": "#f3587f"
       }

@@ -3,15 +3,19 @@
     "main": {
       "type": "main-product",
       "settings": {
-        "background_color": "{{ product.metafields.my_fields.product_background_color.value }}",
         "reviews_average_rating": "",
-        "reviews_quantity_text": ""
+        "reviews_quantity_text": "",
+        "background_color": "{{ product.metafields.custom.background_color.value }}",
+        "accent_color": "{{ product.metafields.custom.accent_color.value }}",
+        "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
     "main_product_ingredients": {
       "type": "main-product-ingredients",
       "settings": {
-        "title": "Wir verwenden nur <span><span>beste Zutaten<\/span><\/span>"
+        "title": "Wir verwenden nur <span>beste Zutaten<\/span>",
+        "background_color": "{{ product.metafields.custom.accent_color.value }}",
+        "accent_color": "{{ product.metafields.custom.background_color.value }}"
       }
     },
     "advantages": {
@@ -86,7 +90,10 @@
       ],
       "settings": {
         "title": "Unsere Riegel bieten viele Vorteile",
-        "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen"
+        "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen",
+        "background_color": "{{ product.metafields.custom.background_color.value }}",
+        "accent_color": "{{ product.metafields.custom.accent_color.value }}",
+        "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
     "compare_product_reviews": {

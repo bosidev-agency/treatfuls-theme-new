@@ -3,8 +3,11 @@
     "main": {
       "type": "page-contact",
       "settings": {
-        "title": "hey, du hast Fragen, Ideen oder willst einfach was los werden?",
-        "subtitle": "Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns."
+        "title": "hey, du hast <span>Fragen<\/span>, <span>Ideen<\/span> oder willst einfach <br><span>was los werden?<\/span>",
+        "subtitle": "Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns.",
+        "background_color": "#5359e5",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     }
   },

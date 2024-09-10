@@ -45,11 +45,13 @@
       ],
       "settings": {
         "heading": "Der <span>treatfuls Adventskalender<\/span>",
-        "mobile_heading": "Der treatfuls <span>Adventskalender<\/span>",
+        "mobile_heading": "Der treatfuls Adventskalender",
         "show_price": true,
-        "background_color": "",
         "reviews_average_rating": "",
-        "reviews_quantity_text": ""
+        "reviews_quantity_text": "",
+        "background_color": "{{ product.metafields.custom.background_color.value }}",
+        "accent_color": "{{ product.metafields.custom.accent_color.value }}",
+        "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
     "video_iTDPK9": {

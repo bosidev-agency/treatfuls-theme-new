@@ -9,44 +9,14 @@
         "image": "shopify:\/\/shop_images\/treatfuls_adventskalender_teaser.webp",
         "content_title": "Setz dich jetzt auf die Warteliste für den Adventskalender!",
         "content": "<p>Darauf haben wir so lange gewartet – unser Traum wird wahr: Der allererste treatfuls Adventskalender ist da! Gefüllt mit 24 unwiderstehlichen, veganen Überraschungen, die nicht nur lecker sind, sondern auch gut für dich und den Planeten. 🌍✨<\/p><p>Um Danke zu sagen, möchten wir unseren treuen Newsletter-Abonnent:innen etwas Besonderes schenken: <\/p><p><br\/>Trag dich jetzt auf die Warteliste ein und sei unter den Ersten, die erfahren, wann der Vorverkauf startet. Als Dankeschön gibt’s für dich <strong>exklusive 17% Rabatt<\/strong> – nur im Pre-Access auf den Adventskalender! 😍<\/p><p>Der Countdown läuft: Mitte September geht’s los! ⏰<br\/>Sichere dir jetzt dein Stück vegane Vorfreude und feiere diesen besonderen Moment mit uns!<\/p>",
-        "klaviyo_id": "X3H7FL"
-      }
-    },
-    "main": {
-      "type": "about-us",
-      "blocks": {
-        "d8653dcc-00ce-4937-9501-a70dfe0c76b0": {
-          "type": "article_item",
-          "settings": {
-            "title": "Look Mom! We <span><span>made our own<\/span><\/span><span><span>&nbspsweets.<\/span><\/span>",
-            "content": "So ungefähr hat es angefangen als wir beide noch frische 6 und 11 Jahre alt waren, uns beide noch gar nicht kannten und jeder für sich zuhause in der Küche, unseren Müttern stolz unsere selbstgebackenen Torten und Süßigkeiten präsentierten. Wir sind inzwischen etwas herangewachsen, aber im Herzen noch immer diese zwei kleinen Mädels, die von ihrer eigenen Süßwaren-Company geträumt haben; die volle Freude und Euphorie etwas in der Hand gehalten haben, dass sie selbst geschaffen hatten; das lecker war und glücklich gemacht hat.\n<br>\n24 Jahre später stehen wir nun hier, haben uns beide auf großen Umwegen über die Modebranche kennen gelernt und unsere ganz neue Version unseres Kindheitstraums wahr werden lassen: Süßigkeiten, die unglaublich lecker sind und kompromisslos glücklich machen."
-          }
-        },
-        "9b425d9a-fb70-4cf5-8e99-bcb2b0ead54d": {
-          "type": "article_item",
-          "settings": {
-            "title": "Look snack industry. We found the <span><span>sweet&nbsp<\/span><\/span><span><span>spot.<\/span><\/span>",
-            "content": "Wir sind zwei leidenschaftliche Foodies, die unterschiedlicher nicht sein können. Snacken lieben wir beide, aber während es für Tugce die Geschmacksexplosion sein muss, sind für Magdalena die Inhaltsstoffe essenziell. Unsere beiden Welten zu vereinen, war bisher vergeblich. Und so fing unsere Reise an.\n<br>\nEs war eines gemütlichen Wein-Genuss-Abends, als sich uns die Frage auftat \"Warum gibt es keine Süßigkeiten, die aus natürlichen Zutaten bestehen und gleichzeitig einfach nur 'geil' sind?\" Uns beiden war direkt klar: Da müssen wir ran! Wir machen es wahr und wagen uns auf ein neues Terrain. Wir sind MACHERINNEN und TRÄUMERINNEN zugleich. Wir haben Visionen, Ideen und Vorstellungen, die manchmal genau das bleiben. ABER! Bei TREATFULS blieben wir dran, denn wir wussten: Nicht nur wir brauchen leckere und gesunde Snacks.\n<br>\nEs ging also los: Wir stürmten 24 Jahre später erneut unsere heimischen Küchen, diesmal gemeinsam und experimentierten herum - Tag und Nacht - nutzten jede freie Minute neben unseren \"normalen Jobs\", bis wir unser Produkt geschaffen hatten. Berauscht von unserem Kindheitstraum und dem natürlichen Zucker in unseren Treats, wagten wir den Sprung ins Unbekannte. \n<br><br>\nZugegeben, die Umsetzung unserer Vision hatten wir uns etwas einfacher vorgestellt. Dennoch – oder gerade deswegen: wir lieben die Herausforderung und gaben nicht auf. Manche würden sagen, wir sind mutig. Andere halten uns für ein wenig verrückt ... Aber wir beide glauben daran, dass wir den Sweet Spot gefunden haben: Süßigkeiten, die kompromisslos glücklich machen für Süßigkeiten-Junkies, Healthy-Foodlover... und einfach jeden, der Süßigkeiten liebt. \n<br>\nJetzt könnt ihr es sicherlich kaum mehr abwarten, TREATFULS zu probieren. Na dann los, hier geht’s zu unseren treats. Kommt in den Genuss von natürlichen und geilen Süßigkeiten und werdet ein Teil der Revolution!"
-          }
-        }
-      },
-      "block_order": [
-        "d8653dcc-00ce-4937-9501-a70dfe0c76b0",
-        "9b425d9a-fb70-4cf5-8e99-bcb2b0ead54d"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls<\/span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱<\/span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies<\/span>, die die Snack <span class=\"emoji\">🍫<\/span> Industrie revolutionieren <span class=\"emoji\">💪<\/span> wollen.",
-        "img_on_hover_first": "shopify:\/\/shop_images\/about-us-prod-3x.png",
-        "img_on_hover_second": "shopify:\/\/shop_images\/about-us-img-3x.jpg",
-        "background_color": "",
-        "accent_color": "",
+        "klaviyo_id": "X3H7FL",
+        "background_color": "#275c63",
+        "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
       }
     }
   },
   "order": [
-    "product_teaser_cHpidz",
-    "main"
+    "product_teaser_cHpidz"
   ]
 }
