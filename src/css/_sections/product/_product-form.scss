@@ -8,20 +8,6 @@
 		padding: 32px;
     transform: translateY(0);
     transition: transform 0.3s ease;
-
-		&[data-product-form-color="primary"] {
-			background-color: $brand-primary;
-		}
-
-		&[data-product-form-color="secondary"] {
-			background-color: $brand-secondary;
-		}
-		&[data-product-form-color="tertiary"] {
-			background-color: $brand-tertiary;
-		}
-		&[data-product-form-color="quaternary"] {
-			background-color: $brand-quaternary;
-		}
 	}
 
 	@media #{$m-xl} {

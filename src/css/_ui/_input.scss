@@ -18,12 +18,12 @@
 		&:-webkit-autofill:focus,
 		&:-webkit-autofill:active {
 			-webkit-text-fill-color: #ffffff;
-			-webkit-box-shadow: 0 0 0 62px $brand-secondary inset !important;
+			-webkit-box-shadow: 0 0 0 62px var(--section-background-color) inset !important;
 		}
 	}
 
 	&.input--error {
-		border-bottom-color: $brand-quaternary;
+		border-bottom-color: var(--error-color);
 	}
 
 	&::placeholder {
@@ -31,7 +31,7 @@
 	}
 
 	&:focus {
-		border-bottom-color: $brand-tertiary;
+		border-bottom-color: var(--section-accent-color);
 		box-shadow: none;
 	}
 

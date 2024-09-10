@@ -1,3 +1,17 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign sec_sett = section.settings -%}
 {%- assign title = sec_sett.title -%}
 {%- assign subtitle = sec_sett.subtitle -%}
@@ -13,7 +27,7 @@
 		{%- if title or subtitle -%}
 			<div class="title-wrapper">
 				{%- if title -%}
-					<h1 class="title-wrapper__title title-bg title-bg--tertiary">{{ title }}</h1>
+					<h1 class="title-wrapper__title title-bg">{{ title }}</h1>
 				{%- endif -%}
 
 				{%- if subtitle -%}
@@ -66,7 +80,7 @@
 								<div class="accordion__body">
 									<div class="accordion__dsc text color-white ">{{ description }}</div>
 									{%- if button_url != blank -%}
-										<a href="{{ button_url }}" class="button button--fw accordion__button" data-button-color="secondary">{{ button_text }}</a>
+										<a href="{{ button_url }}" class="button button--fw accordion__button">{{ button_text }}</a>
 									{%- endif -%}
 								</div>
 							</section>
@@ -81,7 +95,7 @@
     {%- render 'icon-triangular-line' -%}
   </div>
 </section>
-
+{% comment %} TODO: This is not guidelines {% endcomment %}
 {% schema %}
 	{
 		"name": "Guidelines",
@@ -109,7 +123,29 @@
 				"type": "image_picker",
 				"id": "img_right",
 				"label": "Background Image right"
-			}
+			},
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#5359e5"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "color",
+        "id": "hover_color",
+        "label": "Hover Color",
+        "default": "#f3587f"
+      }
 		],
 		"blocks": [
 			{

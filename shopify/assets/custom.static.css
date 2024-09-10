@@ -497,84 +497,6 @@ width: 50%;
     max-width: 53vw;
 }
 
-/* div#shopify-section-template--17892190748936__compare_big_content {
-    display: inherit;
-} */
-
-
-
-
-.accordian_tabber_content section h3 {
-    background: transparent;
-    padding: 10px;
-    margin: 0;
-    cursor: pointer;
-    border-top: 1px solid #fff;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.accordian_tabber_content section div {
-    background: transparent;
-    padding: 10px 10px 45px;
-    display: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-}
-.accordian_tabber_content section h3 i {
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-    color: #fff;
-    font-size: 17px;
-}
-
-.accordian_tabber_content {
-    width: 100%;
-    max-width: 60%;
-    margin: 0 auto;
-    display: block;
-    padding: 90px 0 40px 0;
-}
-.accordian_tabber_content section.accordian_tabber table {
-    width: 100%;
-    text-align: center;
-}
-.accordian_tabber_content section.accordian_tabber table tr {
-    border-bottom: 1px solid;
-    padding: 10px 0;
-    display: inline-block;
-    width: 100%;
-}
-.accordian_tabber_content section.accordian_tabber table tr td {
-    width: 33%;
-    display: inline-block;
-}
-.accordian_tabber_content section.accordian_tabber table tr td:nth-child(1) {
-    text-align: left;
-}
-
-.custom_compare_temp .main-product {
-    background-color: #F3587F!important;
-}
-.site-bg-color.custom_compare_temp[data-pdp-bg=secondary] .header{
-  background-color: #F3587F!important;
-}
-
-.custom_compare_temp .main-product .product_main {
-    background-color: #F3587F!important;
-}
-
-
-@media (max-width: 1300px){
-
-
-}
 
 
 .delevery_payment .delivery_payment-wrapper {
@@ -698,13 +620,6 @@ height: 22px;
     padding: 50px 0 90px;
 }
 
-.accordian_tabber_content {
-    max-width: 100%;
-}
-.accordian_tabber_content section.accordian_tabber table tr td {
-    width: 32%;
-  padding: 0 8px 0 0;
-}
 .content_wrapper .container {
     max-width: 100%;
 }
@@ -736,15 +651,7 @@ height: 22px;
 .product_main_wraper .content_side_wwrp .product_wraping_inner {
     min-height: 210px;
 }
-.accordian_tabber_content section div {
-    padding: 10px 0px 25px;
-}
-.accordian_tabber_content section.accordian_tabber table tr {
-    padding: 10px 0;
-}
-.accordian_tabber_content section.accordian_tabber table tr td {
-    word-wrap: break-word;
-}
+
 .product_main_wraper .content_side_cont .content_side_wwrp .product_wraping p.prodduct_label {
     top: -6px;
     font-size: 14px;

@@ -11,10 +11,82 @@
     "name": "Colors",
     "settings": [
       {
+        "type": "header",
+        "content": "Theme"
+      },
+      {
         "type": "color",
         "id": "color_text",
         "label": "Text Color",
         "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#dbaaeb"
+      },
+      {
+        "type": "color",
+        "id": "accent",
+        "label": "Accent",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "color",
+        "id": "hover",
+        "label": "Button Hover",
+        "default": "#f3587f"
+      },
+      {
+        "type": "color",
+        "id": "color_error",
+        "label": "Error Color",
+        "default": "#f3587f"
+      },
+      {
+        "type": "header",
+        "content": "Header",
+        "info": "This colors are used when there is no alternative set in the color scheme of that page"
+      },
+      {
+        "type": "color",
+        "id": "header_background",
+        "label": "Header Background Color",
+        "default": "#dbaaeb"
+      },
+      {
+        "type": "color",
+        "id": "header_accent",
+        "label": "Header Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "header",
+        "content": "Footer",
+        "info": "This colors are used when there is no alternative set in the color scheme of that page"
+      },
+      {
+        "type": "color",
+        "id": "footer_background",
+        "label": "Footer Background Color",
+        "default": "#dbaaeb"
+      },
+      {
+        "type": "color",
+        "id": "footer_accent",
+        "label": "Footer Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "header",
+        "content": "Navigation"
+      },
+      {
+        "type": "color",
+        "id": "nav_background",
+        "label": "Nav Background Color",
+        "default": "#5359e5"
       }
     ]
   },

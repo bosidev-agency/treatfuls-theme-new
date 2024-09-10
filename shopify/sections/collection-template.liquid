@@ -1,5 +1,35 @@
+<style>
+  @media screen and (min-width: 992px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+      {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color_mobile != 'rgba(0,0,0,0)' and section.settings.background_color_mobile!= blank -%}
+        --section-background-color: {{ section.settings.background_color_mobile }};
+      {%- else -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+
+      {%- if section.settings.accent_color_mobile != 'rgba(0,0,0,0)' and section.settings.accent_color_mobile != blank -%}
+        --section-accent-color: {{ section.settings.accent_color_mobile }};
+      {%- else -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+</style>
+
 {%- assign sec_sett = section.settings -%}
 
+{% comment %} TODO: Rename this section {% endcomment %}
 <section
 	class="collection-products"
 	data-section-id="{{- section.id -}}"
@@ -91,6 +121,34 @@
       "id": "heading_mobile",
       "label": "Heading mobile",
       "default": "<span><span>Produktübersicht</span></span>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "background_color_mobile",
+      "label": "Background Color Mobile",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color_mobile",
+      "label": "Accent Color Mobile",
+      "default": "#f3587f"
     }
 	],
 	"blocks": [

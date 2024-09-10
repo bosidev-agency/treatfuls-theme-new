@@ -1,4 +1,16 @@
-{% render 'color-scheme', resource: product, section: section %}
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
 
 {% assign sec_sett = section.settings %}
 
@@ -47,7 +59,7 @@
       <div class="title-wrapper">
         {%- if sec_sett.title != blank or sec_sett.subtitle != blank -%}       
           {%- if sec_sett.title != blank -%}
-            <h2 class="title-wrapper__title title-bg title-bg--quaternary">{{- sec_sett.title -}}</h2>
+            <h2 class="title-wrapper__title title-bg">{{- sec_sett.title -}}</h2>
           {%- endif -%}
           {%- if sec_sett.subtitle != blank -%}
             <p class="title-wrapper__subtitle">{{- sec_sett.subtitle -}}</p>

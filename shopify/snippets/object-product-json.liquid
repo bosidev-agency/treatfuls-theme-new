@@ -2,9 +2,6 @@
 	{%- assign include_recharge = false -%}
 {%- endif -%}
 
-{% comment %} Get product color from Shopify metafields {% endcomment %}
-{%- include 'product-field-color' -%}
-
 {%- if product != blank -%}
 	{%- assign variants_json = "" -%}
 	{%- for variant in product.variants -%}

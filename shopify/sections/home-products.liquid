@@ -1,3 +1,17 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign sec_sett = section.settings -%}
 
 <section
@@ -20,9 +34,25 @@
 							{%- assign b_sett = block.settings -%}
 							{%- assign product = all_products[b_sett.product] -%}
 							{%- assign product_image = product.featured_image -%}
-							{%- assign color = b_sett.color -%}
 
-							<div class="swiper-slide" data-slide-color="{{ color }}">
+              {%- if forloop.first -%}
+                <style>
+                  #shopify-section-{{ section.id }} {
+                    --section-background-color: {{ product.metafields.custom.background_color }};
+                    --section-accent-color: {{ product.metafields.custom.accent_color }};
+                    --section-hover-color: {{ product.metafields.custom.hover_color }};
+                  }
+                </style>
+              {%- endif -%}
+
+							<div 
+                class="swiper-slide" 
+                data-slide-color='{
+                  "background": "{{ product.metafields.custom.background_color }}",
+                  "accent": "{{ product.metafields.custom.accent_color }}",
+                  "hover": "{{ product.metafields.custom.hover_color }}"
+                }'
+              >
 								{%- if product_image != blank -%}
 									<a href="{{- product.url | within: collection -}}">
 										<picture>
@@ -48,12 +78,11 @@
 									</a>
 								{%- endif -%}
 
-								{%- assign button_class = 'button--primary' -%}
-								{%- if color == 'tertiary' -%}
-									{%- assign button_class = 'button--secondary' -%}
-								{%- endif -%}
-								<a href="{{- product.url | within: collection -}}"
-									 class="button {{ button_class }} home-products__button">{{- sec_sett.link_text -}}</a>
+                <a href="{{- product.url | within: collection -}}"
+                   class="button home-products__button" 
+                >
+                  {{- sec_sett.link_text -}}
+                </a>
 							</div>
 						{% endfor %}
 					</div>
@@ -102,7 +131,23 @@
 			"id": "link_text",
 			"label": "Link text for button in slider",
 			"default": "Jetzt kaufen"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    }
 	],
 	"blocks": [
 		{
@@ -113,38 +158,6 @@
 					"type": "product",
 					"id": "product",
 					"label": "Product"
-				},
-				{
-					"type": "select",
-					"id": "color",
-					"label": "Background color",
-					"options": [
-                        {
-							"value": "senary",
-							"label": "Berry"
-						},
-                        {
-							"value": "quinary",
-							"label": "Teal"
-						},
-                        {
-							"value": "quaternary",
-							"label": "Red"
-						},
-						{
-							"value": "tertiary",
-							"label": "Green"
-						},
-						{
-							"value": "secondary",
-							"label": "Blue"
-						},
-						{
-							"value": "primary",
-							"label": "Purple"
-						}
-					],
-					"default": "tertiary"
 				}
 			]
 		}

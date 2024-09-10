@@ -1,10 +1,5 @@
 .ingredients {
-	background-color: $brand-tertiary;
 	transition: all 0.25s ease-in-out;
-
-  .base-triangular-line {
-    color: $brand-tertiary;
-  }
 }
 
 .ingredients__container {
@@ -30,12 +25,6 @@
 	margin: 0 auto;
 	padding-bottom: 120px;
 	text-align: center;
-
-	> span {
-		&::before {
-			background-color: $brand-primary;
-		}
-	}
 
 	@media #{$no-fw} {
 		max-width: 39.65vw;

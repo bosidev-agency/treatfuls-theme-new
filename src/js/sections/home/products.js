@@ -30,7 +30,9 @@ register("home-products", {
 	},
 	initSlider(selector, randomNumber) {
 		const container = this.container;
-		const body = this.bodyElement;
+    const sectionContainer = container.closest('.shopify-section');
+		const header = document.querySelector('#shopify-section-header');
+    const ticker = document.querySelector('.home-ticker').closest('.shopify-section');
 
 		this.slider = new Swiper(selector, {
 			loop: true,
@@ -66,8 +68,13 @@ register("home-products", {
 					setTimeout(() => {
 						const currentSlide =
 							container.querySelector(`.swiper-slide-active`);
-
-						body.dataset.siteBg = currentSlide.dataset.slideColor;
+            const colorScheme = JSON.parse(currentSlide.getAttribute('data-slide-color'));
+            sectionContainer.style.setProperty('--section-background-color', colorScheme.background);
+            sectionContainer.style.setProperty('--section-accent-color', colorScheme.accent);
+            sectionContainer.style.setProperty('--section-hover-color', colorScheme.hover);   
+            header.style.setProperty('--header-background-color', colorScheme.background);
+            header.style.setProperty('--header-accent-color', colorScheme.accent);
+            ticker.style.setProperty('--section-background-color', colorScheme.accent);
 					}, 0);
 				}
 			}

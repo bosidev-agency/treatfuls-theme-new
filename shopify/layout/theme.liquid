@@ -96,15 +96,19 @@
 	{%- endcapture -%}
 
 	{%- assign body_classes = body_classes | append: template_class -%}
+  {%- assign ressource = '' -%}
 
-	{%- assign base_site_bg = '' -%}
-	{%- if template.name == 'collection' -%}
-		{%- assign base_site_bg = 'quaternary' -%}
-	{%- endif -%}
+  {% if template.name == 'product' %}
+    {% assign resource = product %}
+  {% elsif template.name == 'collection' %}
+    {% assign resource = collection %}
+  {% elsif template.name == 'page' %}
+    {% assign resource = page %}
+  {% endif %}
 
-	{%- include 'product-field-color' -%}
+  {%- render 'color-scheme', resource: resource -%}
 
-	<body class="{{ body_classes }} {% if product.id == 8201303785736 %} custom_compare_temp {% endif %}" data-site-bg="{{ base_site_bg }}" data-pdp-bg="{{ pdp_bg_color }}">
+	<body class="{{ body_classes }}">
       	<!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFCVWZ5"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -129,24 +133,6 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-  $(document).ready(function (){
-  // Delete that line if you don't want the first Div to be displayed by default
-  $(".accordian_tabber_content div:first").css("display", "block");
-  
-  // 
-  $(".accordian_tabber_content h3").click(function () {
-    $(this).next().slideToggle(500);
-    $(".accordian_tabber_content div").not($(this).next()).slideUp(500);
-    
-    // how to rotate the icon JUST h3>i
-    // $("i").css({'transform':'rotate(180deg)'});
-    
-  });
-  
-});
-</script>
 
 {%- if product.metafields.custom.redirect != blank -%}
   <script>

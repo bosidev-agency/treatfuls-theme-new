@@ -2,7 +2,15 @@
   #shopify-section-{{ section.id }} {
     --free-shipping-success: {{ settings.free_shipping_success_color }};
     --free-shipping-remaining: {{ settings.free_shipping_remaining_color }};
+    --mini-cart-background: {{ section.settings.background_color }};
+    --section-accent-color: {{ section.settings.accent_color }};
+    --section-hover-color: {{ section.settings.hover_color }};
     --upsell-background: {{ section.settings.upsell_collection_background_desktop }};
+  }
+
+  #shopify-section-{{ section.id }} .cart-upsell__button {
+    --section-accent-color: {{ section.settings.hover_color }};
+    --section-hover-color: {{ section.settings.accent_color }};
   }
 </style>
 
@@ -49,7 +57,7 @@
 				<div class="minicart__section minicart__section--header">
 					<div class="minicart__header">
             <div class="minicart__heading">
-              <h3 class="minicart__title title-bg title-bg--tertiary">
+              <h3 class="minicart__title title-bg">
                 <span>{{ 'cart.general.title' | t }}</span>
               </h3>
               <div class="minicart__close"></div>
@@ -189,6 +197,28 @@
       "id": "upsell_collection_background_desktop",
       "label": "Background Color Desktop",
       "default": "#9977a5"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2AC2BD"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#F3587F"
     }
 	]
 }

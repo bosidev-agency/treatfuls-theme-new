@@ -1,34 +1,24 @@
-{% render 'color-scheme', resource: product, section: section %}
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} .product-form {
+      background-color: {{ section.settings.background_color }};
+    }
+  }
+</style>
 
 {%- assign sec_sett = section.settings -%}
-
-{%- style -%}
-  {% if product.metafields.custom.background_color -%}
-    .main-product, .header {
-      background-color: {{ product.metafields.custom.background_color }} !important;
-    }
-
-    .main-product .base-triangular-line {
-      color: {{ product.metafields.custom.background_color }} !important;
-    }
-
-    @media screen and (max-width: 991px) {
-      .product-form {
-        background-color: {{ product.metafields.custom.background_color }} !important;
-      }
-    }
-  {%- endif -%}
-
-  {%- if product.metafields.custom.accent_color -%}
-    .main-product .title-bg > span::before, .product-form__button::before{
-      background-color: {{ product.metafields.custom.accent_color }} !important;
-    }
-
-    .header__logo-wrapper {
-      color: {{ product.metafields.custom.accent_color }} !important;
-    }
-  {%- endif -%}
-{%- endstyle -%}
 
 <div class="main-product"
 		 data-section-id="{{ section.id }}"
@@ -94,17 +84,10 @@
 }
 </script>
 
-
 {% schema %}
 {
 	"name": "Product",
 	"settings": [
-		{
-			"type": "text",
-			"id": "background_color",
-			"label": "Background color",
-			"info": "[Metafields] Background for products need add one of [ Green, Blue, Purple, Red ]"
-		},
 		{
 			"type": "text",
 			"id": "reviews_average_rating",
@@ -116,7 +99,26 @@
 			"id": "reviews_quantity_text",
 			"label": "Quantity of reviews",
 			"info": "[Metafields] Example - 400 reviews"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color"
+    }
 	],
 	"presets": [
 		{

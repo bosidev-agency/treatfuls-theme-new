@@ -15,7 +15,7 @@
 			&:-webkit-autofill:focus,
 			&:-webkit-autofill:active {
 				-webkit-text-fill-color: #ffffff;
-				-webkit-box-shadow: 0 0 0 62px $brand-secondary inset !important;
+				-webkit-box-shadow: 0 0 0 62px var(--section-background-color) inset !important;
 			}
 		}
 	}
@@ -36,11 +36,11 @@
 		transition: all 150ms ease;
 
 		&:required:invalid {
-			color: $brand-quaternary;
+			color: var(--error-color);
 		}
 
 		option {
-			color: $brand-secondary;
+			color: var(--section-background-color);
 			padding: 5px 10px;
 			background: #fff;
 			&[value=""][disabled] {
@@ -55,11 +55,11 @@
 			}
 
 			&:hover {
-				background: $brand-tertiary;
+				background: var(--section-accent-color);
 			}
 
 			&[selected] {
-				background: $brand-tertiary;
+				background: var(--section-accent-color);
 			}
 		}
 

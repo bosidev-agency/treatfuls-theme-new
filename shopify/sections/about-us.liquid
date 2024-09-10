@@ -1,4 +1,16 @@
-{%- render 'color-scheme', section: section -%}
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
 
 {%- assign sec_sett = section.settings -%}
 {%- assign title = sec_sett.title -%}
@@ -42,7 +54,7 @@
 					{%- assign content = block.settings.content -%}
 					<div class="title-wrapper">
 						{%- if title -%}
-							<h2 class="title-wrapper__title title-bg title-bg--tertiary">{{ title }}</h2>
+							<h2 class="title-wrapper__title title-bg">{{ title }}</h2>
 						{%- endif -%}
 
 						{%- if content -%}
@@ -90,7 +102,7 @@
         "type": "color",
         "id": "background_color",
         "label": "Background Color",
-        "default": "#dbaaeb"
+        "default": "#5359e5"
       },
       {
         "type": "color",

@@ -12,18 +12,27 @@
   }
 </style>
 
-{% comment %}
-	Password message which you can edit on http://www.shopify.com/admin/online_store/preferences
-{% endcomment %}
-{% unless shop.password_message == blank %}
-	<div class="password-message">
-		{{ shop.password_message }}
-	</div>
-{% endunless %}
+<section
+	class="page"
+	data-section-id="{{- section.id -}}"
+	data-section-type="page"
+>
+	<div class="content-wrapper">
+    <div class="container">
+      <div class="title-wrapper">
+        <h1 class="community__title title-wrapper__title title-bg">{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
 
 {% schema %}
 {
-	"name": "Content",
+	"name": "Page",
 	"settings": [
     {
       "type": "header",
@@ -32,21 +41,24 @@
     {
       "type": "color",
       "id": "background_color",
-      "label": "Background Color",
-      "default": "#5359e5"
+      "label": "Background Color"
     },
     {
       "type": "color",
       "id": "accent_color",
-      "label": "Accent Color",
-      "default": "#2ac2bd"
+      "label": "Accent Color"
     },
     {
       "type": "color",
       "id": "hover_color",
-      "label": "Hover Color",
-      "default": "#f3587f"
+      "label": "Hover Color"
     }
-  ]
+	],
+	"presets": [
+		{
+			"name": "Page"
+		}
+	],
+	"templates": ["page"]
 }
 {% endschema %}

@@ -1,11 +1,6 @@
 .products_listing {
   width: 100%;
   display: inline-block;
-  background: $brand-tertiary;
-
-  .base-triangular-line {
-    color: $brand-tertiary;
-  }
 
   @media #{$m-xl} {
     padding-top: 20px;

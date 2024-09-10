@@ -1,5 +1,4 @@
 .collection-products {
-  background-color: transparent;
   transition: background-color 0.25s ease-in-out;
 
   .swiper-slide {
@@ -32,7 +31,7 @@
     }
   }
 
-  @media #{$m-xl} {
+  @media #{$m-xxl} {
     .swiper:not(.swiper-initialized) .swiper-slide {
       width: 30%;
       margin-right: 12px;

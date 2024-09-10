@@ -1,27 +1,3 @@
-.template-login,
-.template-reset_password,
-.template-register,
-.template-addresses,
-.template-order,
-.template-account {
-	background-color: $brand-secondary;
-
-  .base-triangular-line {
-    color: $brand-secondary;
-  }
-
-	.header {
-		background-color: $brand-secondary;
-	}
-
-	.footer__logo {
-		color: $brand-secondary;
-	}
-
-	&[data-site-bg="primary"] {
-		background-color: $brand-primary;
-	}
-}
 .template-addresses {
 	@media #{$no-fw} {
 		.title-wrapper {

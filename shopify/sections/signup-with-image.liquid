@@ -1,3 +1,17 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign title = section.settings.title -%}
 {%- assign subtitle = section.settings.subtitle -%}
 {%- assign bg_image = section.settings.image -%}
@@ -11,11 +25,11 @@
 		{%- if section.settings.title or section.settings.subtitle -%}
 			<div class="title-wrapper">
 				{%- if section.settings.title -%}
-					<h1 class="title-wrapper__title title-bg title-bg--senary">{{ section.settings.title }}</h1>
+					<h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
 				{%- endif -%}
 
 				{%- if section.settings.title_mobile -%}
-					<h2 class="title-wrapper__title title-wrapper__title--mobile title-bg title-bg--tertiary">{{ section.settings.title_mobile }}</h2>
+					<h2 class="title-wrapper__title title-wrapper__title--mobile title-bg">{{ section.settings.title_mobile }}</h2>
 				{%- endif -%}
 
 				{%- if section.settings.subtitle -%}
@@ -32,7 +46,7 @@
             {%- if section.settings.content_title != blank or section.settings.content != blank -%}
               <div class="title-wrapper">
                 {%- if section.settings.content_title -%}
-                  <h3 class="title-wrapper__title title-bg--senary title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
+                  <h3 class="title-wrapper__title title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
                 {%- endif -%}
 
                 {%- if section.settings.content -%}
@@ -103,7 +117,29 @@
 				"id": "klaviyo_id",
 				"label": "Klavyio ID",
         "info": "Put the ID of the signup form in this field. For Example 'ABCDEF'. NOT the whole Div, only the ID"
-			}
+			},
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#5359e5"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "color",
+        "id": "hover_color",
+        "label": "Hover Color",
+        "default": "#f3587f"
+      }
 		],
     "presets": [
       {

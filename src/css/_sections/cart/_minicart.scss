@@ -10,7 +10,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: $brand-tertiary;
+  background-color: var(--section-accent-color);
   transform: translateX(100%);
   max-width: 400px;
   transition-property: transform;
@@ -128,10 +128,10 @@
   padding-right: 20px;
 
   &.minicart__section--header {
-    background-color: $brand-primary;
+    background-color: var(--mini-cart-background);
 
     .base-triangular-line {
-      color: $brand-primary !important;
+      color: var(--mini-cart-background);
       left: 0;
     }
   }
@@ -156,10 +156,10 @@
   &.minicart__section--footer {
     position: relative;
     padding-bottom: 12px;
-    background-color: $brand-primary;
+    background-color: var(--section-background-color);
 
     .top-triangular-line {
-      color: $brand-primary;
+      color: var(--section-background-color);
       left: 0;
     }
   }

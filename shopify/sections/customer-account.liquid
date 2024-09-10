@@ -1,3 +1,37 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+
+  #shopify-section-header {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --header-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --header-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+  }
+
+  #shopify-section-footer{
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --footer-accent-color: {{ section.settings.background_color }};
+    {%- endif -%}
+
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --footer-background-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign title = section.settings.title -%}
 {%- assign subtitle = section.settings.subtitle -%}
 
@@ -8,7 +42,7 @@
 >
 	<div class="content-wrapper">
 		<div class="title-wrapper">
-			<h1 class="title-wrapper__title title-bg title-bg--tertiary">{{ title | replace: 'UserName', customer.first_name }}</h1>
+			<h1 class="title-wrapper__title title-bg">{{ title | replace: 'UserName', customer.first_name }}</h1>
 
 			<p class="title-wrapper__subtitle">{{ subtitle }}</p>
 		</div>
@@ -101,7 +135,29 @@
 			"id": "subtitle",
 			"label": "Subtitle",
 			"default": "Hier kannst du deine Bestellungen einsehen und deinen Account verwalten"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#5359e5"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
 	]
 }
 {% endschema %}

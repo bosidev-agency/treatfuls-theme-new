@@ -1,3 +1,17 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign title = section.settings.title -%}
 {%- assign subtitle = section.settings.subtitle -%}
 
@@ -49,7 +63,7 @@
 				required
 			>{% if form.body %}{{ form.body }}{% endif %}</textarea>
 		</label>
-		<button type="submit" class="button contact-form__button" data-button-color="secondary">{{ 'contact.form.submit' | t }}</button>
+		<button type="submit" class="button contact-form__button">{{ 'contact.form.submit' | t }}</button>
 
 	{% endform %}
 {%- endcapture -%}
@@ -63,7 +77,7 @@
 			{%- if title or subtitle -%}
 				<div class="title-wrapper">
 					{%- if title -%}
-						<h1 class="contact__title title-wrapper__title title-bg title-bg--tertiary">{{ title }}</h1>
+						<h1 class="contact__title title-wrapper__title title-bg">{{ title }}</h1>
 					{%- endif -%}
 
 					{%- if subtitle -%}
@@ -101,7 +115,29 @@
 				"id": "subtitle",
 				"label": "Subtitle",
 				"default": "Wir freuen uns von dir zu hören! Egal ob Feedback oder Kooperation, melde dich."
-			}
+			},
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#5359e5"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#2ac2bd"
+      },
+      {
+        "type": "color",
+        "id": "hover_color",
+        "label": "Hover Color",
+        "default": "#f3587f"
+      }
 		]
 	}
 {% endschema %}

@@ -1,22 +1,29 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} .product-form__buttons {
+      background-color: {{ section.settings.background_color }};
+    }
+  }
+</style>
+
 {%- assign sec_sett = section.settings -%}
 {%- assign product_title = product.metafields.my_fields.pdp_title -%}
 {%- assign short_title = product.metafields.custom.short_title -%}
 {%- assign quantity_content = product.metafields.custom.quantity_content -%}
 {%- assign weight_content = product.metafields.custom.weight_content -%}
 {%- assign unit_name = product.metafields.custom.unit_name -%}
-
-
-{% if product.metafields.custom.color_scheme.value -%}
-  {%- render 'color-scheme', resource: product, section: section -%}
-
-  <style>
-    @media screen and (max-width: 991px) {
-      #shopify-section-{{ section.id }} .product-form__buttons {
-        background-color: {{ product.metafields.custom.color_scheme.value.background.value }};
-      }
-    }
-  </style>
-{%- endif -%}
 
 <div class="product-page"
 		 data-section-id="{{ section.id }}"
@@ -124,12 +131,6 @@
 		},
 		{
 			"type": "text",
-			"id": "background_color",
-			"label": "Background color",
-			"info": "[Metafields] Background for products need add one of [ Green, Blue, Purple, Red ]"
-		},
-		{
-			"type": "text",
 			"id": "reviews_average_rating",
 			"label": "Average rating reviews",
 			"info": "[Metafields] Example - 4.87"
@@ -139,7 +140,26 @@
 			"id": "reviews_quantity_text",
 			"label": "Quantity of reviews",
 			"info": "[Metafields] Example - 400 reviews"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color"
+    }
 	],
   "blocks": [
     {

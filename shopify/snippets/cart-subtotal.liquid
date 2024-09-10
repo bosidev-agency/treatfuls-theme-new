@@ -8,12 +8,12 @@
   </div>
   <div class="cart-order__actions">
     {%- if is_empty_cart -%}
-    <button class="cart-order__button button button--primary cart-order__link">
+    <button class="cart-order__button button cart-order__link">
       {{ 'cart.general.continue_shopping' | t }}
     </button>
     {%- else -%}
       <button form="{% if is_mini_cart %}mini-cart-form{% else %}cart-form{% endif %}" type="submit"
-        class="cart-order__button button button--primary">
+        class="cart-order__button button">
         {{ 'cart.general.checkout' | t: cart_amount: cart_amount }}
       </button>
     {%- endif -%}

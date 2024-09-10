@@ -1,3 +1,37 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+
+  #shopify-section-header {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --header-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --header-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+  }
+
+  #shopify-section-footer{
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --footer-accent-color: {{ section.settings.background_color }};
+    {%- endif -%}
+
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --footer-background-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+  }
+</style>
+
 {%- assign login_title = section.settings.login_title -%}
 {%- assign login_subtitle = section.settings.login_subtitle -%}
 {%- assign login_form_title = section.settings.login_form_title -%}
@@ -21,7 +55,7 @@
 		{%- if login_title or login_subtitle -%}
 			<div class="title-wrapper">
 				{%- if login_title -%}
-					<h1 class="title-wrapper__title title-bg title-bg--tertiary">{{ login_title }}</h1>
+					<h1 class="title-wrapper__title title-bg">{{ login_title }}</h1>
 				{%- endif -%}
 
 				{%- if login_subtitle -%}
@@ -77,7 +111,7 @@
 					</label>
 				{% endif %}
 
-				<button type="submit" class="button button--primary button--space button--fw">{{ 'customer.login.sign_in' | t }}</button>
+				<button type="submit" class="button button--space button--fw">{{ 'customer.login.sign_in' | t }}</button>
 
 				{% if form.password_needed %}
 					<a href="#recover" id="RecoverPassword" class="link-underline text">
@@ -93,7 +127,7 @@
 				{%- if login_column_subtitle -%}
 					<p class="customer__column-subtitle text">{{ login_column_subtitle }}</p>
 				{%- endif -%}
-				<a href="/account/register" class="button button--primary button--space button--fw">{{ 'layout.customer.create_account' | t }}</a>
+				<a href="/account/register" class="button button--space button--fw">{{ 'layout.customer.create_account' | t }}</a>
 			</section>
 		</div>
 
@@ -107,7 +141,7 @@
 		{%- if recover_title or recover_subtitle -%}
 			<div class="title-wrapper">
 				{%- if recover_title -%}
-					<h1 class="title-wrapper__title title-bg title-bg--tertiary">{{ recover_title }}</h1>
+					<h1 class="title-wrapper__title title-bg">{{ recover_title }}</h1>
 				{%- endif -%}
 
 				{%- if recover_subtitle -%}
@@ -151,9 +185,9 @@
 					</label>
 
 					<div class="customer__recover-actions">
-						<button  type="submit" class="button button--primary">{{ 'customer.recover_password.submit' | t }}</button>
+						<button  type="submit" class="button">{{ 'customer.recover_password.submit' | t }}</button>
 
-						<button type="button" id="HideRecoverPasswordLink" class="button button--tertiary">{{ 'customer.recover_password.cancel' | t }}</button>
+						<button type="button" id="HideRecoverPasswordLink" class="button">{{ 'customer.recover_password.cancel' | t }}</button>
 					</div>
 
 					{%- if recover_form_footer_text -%}
@@ -184,7 +218,7 @@
 				{%- if recover_success_title or recover_success_subtitle -%}
 					<div class="title-wrapper">
 						{%- if recover_success_title -%}
-							<h2 class="h1 title-wrapper__title title-bg title-bg--tertiary">{{ recover_success_title }}</h2>
+							<h2 class="h1 title-wrapper__title title-bg">{{ recover_success_title }}</h2>
 						{%- endif -%}
 
 						{%- if recover_success_subtitle -%}
@@ -325,7 +359,29 @@
 			"type": "image_picker",
 			"id": "recover_success_image_mobile",
 			"label": "Recover success image mobile"
-		}
+		},
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#5359e5"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
 	]
 }
 {% endschema %}
