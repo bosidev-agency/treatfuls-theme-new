@@ -89,7 +89,7 @@
      {% render 'translations' %}
 	</head>
 
-	{%- assign body_classes = "site-bg-color template " -%}
+	{%- assign body_classes = "template " -%}
 	{%- capture template_class -%}
 		{%- if request.path contains 'challenge' -%}template-challenge {%- else -%}template-{{ template.name | handle }} {%- endif -%}
 		{% if template.suffix != blank %}template-{{ template.name | handle }}--{{ template.suffix | handle }}{% endif %}

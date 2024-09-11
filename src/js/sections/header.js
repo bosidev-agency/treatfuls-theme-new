@@ -31,9 +31,9 @@ register("header", {
 			nav.classList.toggle(selectors.classNavOpen);
 
 			if (body.classList.contains(selectors.classMenuOpen)) {
-				disableBodyScroll(this.container);
+				document.documentElement.classList.add('no-scroll');
 			} else {
-				clearAllBodyScrollLocks();
+				document.documentElement.classList.remove('no-scroll');
 			}
 		});
 	},
