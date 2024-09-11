@@ -1,5 +1,4 @@
 import { register } from "@shopify/theme-sections";
-import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
 
 const selectors = {
 	burgerButton: ".js-header-burger",
