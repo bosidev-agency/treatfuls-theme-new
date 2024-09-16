@@ -17,7 +17,7 @@
           "settings": {
             "collection": "riegel",
             "image": "shopify:\/\/shop_images\/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
-            "collection_title": "Alle Riegel",
+            "collection_title": "Riegel",
             "color": "tertiary"
           }
         },
@@ -47,8 +47,12 @@
         "collection_item_fnrKqm"
       ],
       "settings": {
-        "heading_desktop": "<span>Produkte<\/span>",
-        "heading_mobile": "<span>Produktübersicht<\/span>"
+        "heading_desktop": "Produkte",
+        "heading_mobile": "Produktübersicht",
+        "background_color": "#dbaaeb",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#2ac2bd",
+        "accent_color_mobile": "#f3587f"
       }
     },
     "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
@@ -59,7 +63,10 @@
         "grid": 3,
         "rows": 5,
         "show_vendor": false,
-        "show_view_all": false
+        "show_view_all": false,
+        "background_color": "#2ac2bd",
+        "accent_color": "#f3587f",
+        "hover_color": "#dbaaeb"
       }
     }
   },

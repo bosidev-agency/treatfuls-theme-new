@@ -44,7 +44,7 @@
         "buy_button_MxK7PU"
       ],
       "settings": {
-        "heading": "Der <span>treatfuls Adventskalender<\/span>",
+        "heading": "Der treatfuls Adventskalender",
         "mobile_heading": "Der treatfuls Adventskalender",
         "show_price": true,
         "reviews_average_rating": "",
@@ -57,8 +57,8 @@
     "video_iTDPK9": {
       "type": "video",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_desktop.MP4",
-        "video_mobile": "shopify:\/\/files\/videos\/WedndesdayXbilou_Keyvisual_TEST_mobil.MP4",
+        "video": "shopify:\/\/files\/videos\/0916(1).mp4",
+        "video_mobile": "shopify:\/\/files\/videos\/treatfuls_adventkalender_45.mp4",
         "background_color": "#aa3e59",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -70,7 +70,7 @@
         "image_E7xyiR": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
+            "video": "shopify:\/\/files\/videos\/door_13).mp4",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -88,7 +88,7 @@
         "image_CHXcKq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fYXh16O9ewY5zECCWcYqBvCeQSzS0mTmKoHloElh.jpg",
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-09-16_um_19.07.53.png",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -106,7 +106,7 @@
         "image_ELrtHw": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Jan_Website_Gallery_Opener_16_9_Querformat.jpg",
+            "video": "shopify:\/\/files\/videos\/0916(3).mp4",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -124,7 +124,7 @@
         "image_q7LijX": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LB_8095.jpg",
+            "video": "shopify:\/\/files\/videos\/teaser_2.mp4",
             "content": "<p>🎅 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 🎄 euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 📆 tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 🎁<\/p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -147,7 +147,7 @@
         "image_q7LijX"
       ],
       "settings": {
-        "heading": "24 Tage voller <span>gesunder<\/span><br><span>Überraschungen!<\/span>",
+        "heading": "Vegan. Natürlich. Süßer als deine Weihnachtserinnerungen.",
         "show_atc_button": true,
         "grid_container_quantity": "1",
         "background_color": "#aa3e59",
@@ -196,7 +196,7 @@
         "advantage_item_pzt4D6"
       ],
       "settings": {
-        "title": "Was macht unseren Kalender <span>besonders<\/span>",
+        "title": "Was macht unseren Kalender besonders",
         "subtitle": "",
         "background_color": "#275c63",
         "accent_color": "#aa3e59",
