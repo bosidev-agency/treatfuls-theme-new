@@ -164,28 +164,28 @@
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-1-smile.png",
-            "text": "Lecker"
+            "text": "24 yummy Überraschungen"
           }
         },
         "advantage_item_7gpaeh": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-2-vegan.png",
-            "text": "Vegan"
+            "text": "vegan & ohne raffinierten Zucker"
           }
         },
         "advantage_item_rYayte": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-3-organic.png",
-            "text": "Bio zertfiziert"
+            "text": "bio & fairtrade Schoki"
           }
         },
         "advantage_item_pzt4D6": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-4-packaging.png",
-            "text": "Kompostierbare Verpackung"
+            "text": "DIY-Karton für nächstes Jahr"
           }
         }
       },
@@ -196,7 +196,7 @@
         "advantage_item_pzt4D6"
       ],
       "settings": {
-        "title": "Was macht unseren Kalender besonders",
+        "title": "das süßeste Geheimnis der Weihnachtszeit – & du bist eingeweiht✨",
         "subtitle": "",
         "background_color": "#275c63",
         "accent_color": "#aa3e59",
@@ -210,16 +210,16 @@
           "type": "faq_item",
           "settings": {
             "title": "Wann kann ich den treatfuls Adventskalender kaufen?",
-            "content": "",
+            "content": "👉 Ab sofort! Schnapp dir dein Exemplar, bevor es weg ist – limitiert ist er nämlich auch!",
             "show_ingredients": false,
-            "show_nutrition": true
+            "show_nutrition": false
           }
         },
         "faq_item_RbNWq3": {
           "type": "faq_item",
           "settings": {
             "title": "Wann wird der Adventskalender versendet?",
-            "content": "",
+            "content": "📦 Anfang\/Mitte November trudelt dein treatfuls Kalender bei dir ein, just in time für deine Vorweihnachtsfreude.",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -228,7 +228,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Kann ich meine Bestellung später noch stornieren?",
-            "content": "",
+            "content": "❌ Ja, aber nur bevor wir die Magie ins Päckchen gepackt haben! Danach geht’s auf die Schokoladen-Reise direkt zu dir!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -237,7 +237,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Sind die Artikel im Adventskalender auch im Shop erhältlich oder sind es nur exklusive Stücke?",
-            "content": "",
+            "content": "✨ Exklusiver geht’s nicht! Viele der Leckereien gibt es nur im Kalender – du bist einer der Auserwählten, die sie probieren dürfen.",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -246,7 +246,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Gibt es eine Liste mit den treats, die im Adventskalender enthalten sein werden?",
-            "content": "",
+            "content": "🎅 Spoiler Alert! Nope, wir wollen dir nicht den Spaß verderben. Lass dich überraschen – du wirst es nicht bereuen!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -255,7 +255,34 @@
           "type": "faq_item",
           "settings": {
             "title": "Kann ich den Adventskalender retournieren, falls er mir nicht gefällt? ",
-            "content": "",
+            "content": "🔒 Leider nicht. Jeder Kalender wird mit viel Liebe speziell für dich gepackt. Aber mal ehrlich, wer würde bei diesen süßen Überraschungen schon Nein sagen?",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_3GrHw4": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wird der Adventskalender nächstes Jahr als DIY-Kit wiederverwendbar sein?",
+            "content": "🎨 Absolut! Lass deiner Kreativität freien Lauf und mach ihn nächstes Jahr zu deinem ganz persönlichen DIY-Projekt.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_ixFNPj": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Gibt’s auch was für den Schokoholic in mir?",
+            "content": "🍫 Na klar! Zotter-Schokolade vom Feinsten – handgemacht und Fairtrade, nur für dich!",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_bt6pgg": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Kann ich jemanden mit dem Kalender überraschen?",
+            "content": "🎁 Natürlich! Der Kalender macht sich auch wunderbar als Geschenk – und wer würde nicht gerne jeden Tag im Dezember treatfuls naschen?",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -267,10 +294,13 @@
         "faq_item_fjwx6m",
         "faq_item_T3Lfyj",
         "faq_item_UVU9Uk",
-        "faq_item_TXQkJk"
+        "faq_item_TXQkJk",
+        "faq_item_3GrHw4",
+        "faq_item_ixFNPj",
+        "faq_item_bt6pgg"
       ],
       "settings": {
-        "title": "Du hast <span>Fragen?<\/span><br>  Hier sind die <span>Antworten!<\/span>",
+        "title": "Du hast Fragen?  Hier sind die Antworten!",
         "subtitle": "",
         "background_color": "#aa3e59",
         "accent_color": "#275c63",
