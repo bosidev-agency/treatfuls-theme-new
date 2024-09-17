@@ -114,68 +114,66 @@
     {%- endif -%}
 
     {%- if section.settings.show_atc_button -%}
-      <div class="content-wrapper">
-        <div class="container container--xs">
-          <atc-button class="product_content-buttons">
-            {%- form 'product', product,
-              class: '',
-              data-product-form: '',
-              data-product-form-color: product_bg_color,
-              data-product-handle: product.handle,
-              data-enable-history-state: 'true',
-              data-productid: product.id
-            -%}
-              <select
-                name="id"
-                class="no-js visually-hidden"
-                data-productid="{{- product.id -}}"
-                data-original-product-select
-              >
-                {%- for variant in product.variants -%}
-                  <option
-                    {% if variant == current_variant %}selected="selected"{% endif %}
-                    {% unless variant.available %}disabled="disabled"{% endunless %}
-                    value="{{ variant.id }}"
-                  >
-                    {{ variant.title }}
-                  </option>
-                {%- endfor -%}
-              </select>
-
-              <label class="quantity-element__label">
-                <input
-                  class="quantity-element__input"
-                  type="hidden"
-                  id="Quantity"
-                  name="quantity"
-                  value="1"
-                  min="1"
-                  max="99"
-                  maxlength="2"
-                  data-quantity="input"
-                />
-              </label>
-
-              <button
-                class="button product-form__button"
-                type="submit"
-                name="add"
-                data-submit-button
-              >
-                <span
-                  class="product-form__button-text product-form__button-text--add-to-card"
-                  data-submit-button-text
+      <div class="container container--xs image-gallery__button">
+        <atc-button>
+          {%- form 'product', product,
+            class: '',
+            data-product-form: '',
+            data-product-form-color: product_bg_color,
+            data-product-handle: product.handle,
+            data-enable-history-state: 'true',
+            data-productid: product.id
+          -%}
+            <select
+              name="id"
+              class="no-js visually-hidden"
+              data-productid="{{- product.id -}}"
+              data-original-product-select
+            >
+              {%- for variant in product.variants -%}
+                <option
+                  {% if variant == current_variant %}selected="selected"{% endif %}
+                  {% unless variant.available %}disabled="disabled"{% endunless %}
+                  value="{{ variant.id }}"
                 >
-                  {%- if product.variants.first.available == true -%}
-                    <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {{ "collections.product_card.add_to_cart" | t }}
-                  {%- else -%}
-                    {{ "collections.product_card.sold_out" | t }}
-                  {%- endif -%}
-                </span>
-              </button>
-            {%- endform -%}
-          </atc-button>
-        </div>
+                  {{ variant.title }}
+                </option>
+              {%- endfor -%}
+            </select>
+
+            <label class="quantity-element__label">
+              <input
+                class="quantity-element__input"
+                type="hidden"
+                id="Quantity"
+                name="quantity"
+                value="1"
+                min="1"
+                max="99"
+                maxlength="2"
+                data-quantity="input"
+              />
+            </label>
+
+            <button
+              class="button product-form__button"
+              type="submit"
+              name="add"
+              data-submit-button
+            >
+              <span
+                class="product-form__button-text product-form__button-text--add-to-card"
+                data-submit-button-text
+              >
+                {%- if product.variants.first.available == true -%}
+                  <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {{ "collections.product_card.add_to_cart" | t }}
+                {%- else -%}
+                  {{ "collections.product_card.sold_out" | t }}
+                {%- endif -%}
+              </span>
+            </button>
+          {%- endform -%}
+        </atc-button>
       </div>
     {%- endif -%}
   </div>

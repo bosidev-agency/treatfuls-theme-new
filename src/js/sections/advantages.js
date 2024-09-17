@@ -39,14 +39,13 @@ register("advantages", {
 		this.slider = new Swiper(selector, {
 			loop: true,
 			slidesPerView: "auto",
-			spaceBetween: 30,
-
+      centeredSlides: true,
 			breakpoints: {
 				300: {
-					slidesPerView: 1.6
+					slidesPerView: 2.2
 				},
 				400: {
-					slidesPerView: 2.5
+					slidesPerView: 2.2
 				},
 				500: {
 					slidesPerView: 3.5
