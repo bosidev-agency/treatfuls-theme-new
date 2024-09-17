@@ -206,7 +206,7 @@ h3,
 	}
 
 	&.title-bg--sm {
-		font-size: 32px;
+		font-size: 40px;
 
 		> span {
 			&::before {
@@ -269,7 +269,7 @@ h3,
 	}
 
 	@media #{$m-xl} {
-		font-size: 40px;
+		font-size: 32px;
 
     > span {
       &::before {
@@ -279,7 +279,7 @@ h3,
     }
 
 		&.title-bg--sm {
-			font-size: 40px;
+			font-size: 32px;
 		}
 
     &.title-bg--xs {
