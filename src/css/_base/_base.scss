@@ -207,16 +207,20 @@ svg.icon-triangular-line {
 .content-wrapper {
 	position: relative;
 	margin: 0 auto;
-	padding-top: 120px;
+	padding-top: 80px;
 	padding-bottom: 80px;
 
 	@media #{$m-xxl} {
 		padding-top: 60px;
-	  padding-bottom: 40px;
+		padding-bottom: 60px;
 	}
+}
 
-	@media #{$no-fw} {
-		padding-top: 7vw;
+.shopify-section:nth-of-type(2) .content-wrapper {
+	padding-top: 20px !important;
+
+  @media #{$m-xxl} {
+		padding-top: 20px !important;
 	}
 }
 
@@ -254,9 +258,9 @@ svg.icon-triangular-line {
 }
 
 .triangular-balance {
-  padding-top: 80px !important;
+  padding-top: 100px !important;
 
-  @media #{$m-l} {
+  @media #{$m-xxl} {
     padding-top: 40px !important
   }
 }
