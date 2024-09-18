@@ -25,6 +25,17 @@
 {%- endif -%}
 {%- endfor -%}
 
+{%- assign has_bundle_items = false -%}
+{%- assign bundle_item_count = 0 -%}
+
+{%- if product.metafields.custom.bundle_products.value != blank -%}
+  {%- assign has_bundle_items = true -%}
+
+  {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
+    {%- assign bundle_item_count = bundle_item_count | plus: 1 -%}
+  {%- endfor -%}
+{%- endif -%}
+
 {%- capture slider -%}
 {%- if ingredient_counter > 0 -%}
 <div class="ingredients__gallery">
@@ -90,8 +101,8 @@ data-section-type="ingredients"
             <h2 class="h3 accordion__title">{{ 'products.product.ingredients' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
           </header>
-          <div class="accordion__body">
-            <div class="accordion__dsc text color-white ">
+          <div class="accordion__body" {% if has_bundle_items %}style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"{% endif %}>
+            <div class="accordion__dsc text color-white">
               {%- if product.metafields.custom.bundle_products.value != blank -%}
                 {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
                   <h3>
@@ -115,12 +126,14 @@ data-section-type="ingredients"
             <h2 class="h3 accordion__title">{{ 'products.product.nutrition_table' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
           </header>
-          <div class="accordion__body">
-            <div class="accordion__dsc text color-white ">
+          <div class="accordion__body" {% if has_bundle_items %}style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"{% endif %}>
+            <div class="accordion__dsc text color-white">
               {%- if product.metafields.custom.bundle_products.value != blank -%}
                 {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
                   {%- assign nutrition_values = bundle_product.metafields.custom.nutrition_values.value -%}
-                  <br><br>
+                  {%- unless forloop.first -%}
+                    <br><br>
+                  {%- endunless -%}
                   <h3>{{ nutrition_values.produktname }}</h3>
                   <table>
                     <tr>

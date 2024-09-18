@@ -5,6 +5,7 @@
 {% comment %} Get product color from Shopify metafields {% endcomment %}
 {%- assign field_product_bg_color = next_product.metafields.my_fields.product_background_color -%}
 
+{% comment %} TODO: REMOVE BG COLOR STUFF {% endcomment %}
 {%- assign next_product_bg_color = '' -%}
 {%- if field_product_bg_color == 'Green' -%}
 	{%- assign next_product_bg_color = 'tertiary' -%}
