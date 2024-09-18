@@ -76,11 +76,16 @@ body {
 }
 
 picture {
+  border-radius: var(--border-radius);
 	img {
 		filter: blur(0);
 		transition-property: filter;
 		transition-duration: 0.3s;
 	}
+}
+
+img {
+  border-radius: var(--border-radius);
 }
 
 .lazy {
@@ -207,12 +212,12 @@ svg.icon-triangular-line {
 .content-wrapper {
 	position: relative;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 80px;
 
 	@media #{$m-xxl} {
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 	}
 }
 

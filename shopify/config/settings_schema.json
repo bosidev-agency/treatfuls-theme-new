@@ -91,6 +91,22 @@
     ]
   },
   {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "range",
+        "id": "border_radius",
+        "label": "Border Radius",
+        "info": "Here you can set the border radius for all images and other stuff, that should have rounded or straight edges",
+        "min": 0,
+        "max": 20,
+        "default": 8,
+        "step": 1,
+        "unit": "px"
+      }
+    ]
+  },
+  {
     "name": "Social media",
     "settings": [
       {

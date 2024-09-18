@@ -11,6 +11,7 @@
     .swiper-container-wrapper {
       position: relative;
       display: flex;
+      justify-content: center;
       transition: opacity 0.25s ease-in-out;
       @media #{$m-xxl} {
         flex-direction: column-reverse;
@@ -42,7 +43,7 @@
       }
 
       @media #{$no-qhd} {
-        max-width: 40vw;
+        max-width: 600px;
       }
 
       @media #{$m-xl} {
@@ -131,6 +132,11 @@
         height: 64px;
         border: 1px solid #fff;
         padding: 5px;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
