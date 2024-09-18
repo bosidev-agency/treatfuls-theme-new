@@ -6,13 +6,13 @@
   <a href="{{ item.url }}" class="cart-product__image-wrap">
     <picture>
       <source
-        srcset="{{ item.image.src | img_url: '170x170' }}"
+        srcset="{{ item.image.src | img_url: '190x190' }}"
         media="(min-width: 2560px)">
       <source
-        srcset="{{ item.image.src | img_url: '125x125' }}"
+        srcset="{{ item.image.src | img_url: '150x150' }}"
         media="(min-width: 1920px)">
       <img
-        src="{{ item.image.src | img_url: '85x85' }}"
+        src="{{ item.image.src | img_url: '120x120' }}"
         alt="{{ item.image.alt }}"
       />
     </picture>
