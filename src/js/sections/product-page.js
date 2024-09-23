@@ -72,8 +72,6 @@ register("product-page", {
 		this.product = await this.getProductJson(
 			productFormElement.dataset.productHandle
 		);
-    console.log(this.container
-			.querySelector(selectors.productGalleryWrapper))
 
 		this.container
 			.querySelector(selectors.productGalleryWrapper)
