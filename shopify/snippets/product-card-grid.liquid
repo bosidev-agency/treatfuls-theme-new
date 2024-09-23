@@ -42,11 +42,16 @@
 	{% endunless %}
   <div class="custom_data_wrapping">
     <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
+      {%- assign cover_image = product.featured_image -%}
+      {%- if product.metafields.custom.alternate_product_card_image != blank -%}
+        {%- assign cover_image = product.metafields.custom.alternate_product_card_image -%}
+      {%- endif -%}
+
       <div style="padding-top:{% unless product.featured_image == blank %}{{ 1 | divided_by: product.featured_image.aspect_ratio | times: 100}}%{% else %}100%{% endunless %};">
         <a href="{{ product.url }}">
           <img id="{{ img_id }}"
             class="grid-view-item__image lazyload hover_image_hide"
-            src="{{ product.featured_image | img_url: 'master' }}"
+            src="{{ cover_image | img_url: 'master' }}"
             data-src="{{ img_url }}"
             data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
             data-aspectratio="{{ product.featured_image.aspect_ratio }}"
@@ -116,11 +121,11 @@
               {{ 'collections.product_card.bio_badge' | t }}
             </div>
           </div>
-          <div class="products_listing__label">
-            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+          {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+            <div class="products_listing__label">
               <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
-            {% endif %}
-          </div>
+            </div>
+          {% endif %}
         </div>
     </div>
 
@@ -176,7 +181,7 @@
             data-submit-button-text
           >
             {%- if product.variants.first.available == true -%}
-              <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {{ "collections.product_card.add_to_cart" | t }}
+              <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {% if product.metafields.custom.preorder_date != blank %}{{ "collections.product_card.preorder" | t }}{% else %}{{ "collections.product_card.add_to_cart" | t }}{% endif %}
             {%- else -%}
               {{ "collections.product_card.sold_out" | t }}
             {%- endif -%}

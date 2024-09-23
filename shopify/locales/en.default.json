@@ -224,6 +224,13 @@
     "filters": {
       "title_tags": "Filter by",
       "all_tags": "All products"
+    },
+    "product_card": {
+      "add_to_cart": "Add to cart",
+      "preorder": "Preorder now",
+      "sold_out": "coming soon",
+      "vegan_badge": "Vegan",
+      "bio_badge": "Bio"
     }
   },
   "contact": {

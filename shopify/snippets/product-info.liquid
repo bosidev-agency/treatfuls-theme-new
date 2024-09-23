@@ -198,6 +198,11 @@
                 </div>
               </div>
 
+              {%- if product.metafields.custom.preorder_date != blank -%}
+                <input id="test1" name="properties[Test]" value="test" data-product-property>
+                <input id="test2" name="properties[Test2]" value="testasdf" data-product-property>
+              {%- endif -%}
+
             {%- when 'countdown' -%}
               {%- if product.metafields.custom.countdown_date != blank -%}
                 {% assign today_date = 'now' | date: '%s' %}
