@@ -31,6 +31,11 @@
 	padding-left: 26px;
 }
 
+.cart-product__properties {
+  display: flex;
+  flex-direction: column;
+}
+
 .cart-product__heading {
 	display: flex;
 	justify-content: space-between;

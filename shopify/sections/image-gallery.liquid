@@ -124,6 +124,11 @@
             data-enable-history-state: 'true',
             data-productid: product.id
           -%}
+            {%- if product.metafields.custom.preorder_date != blank -%}
+              <input type="hidden" id="test1" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+              <input type="hidden" id="test2" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
+            {%- endif -%}
+            
             <select
               name="id"
               class="no-js visually-hidden"

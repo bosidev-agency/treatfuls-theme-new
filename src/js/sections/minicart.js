@@ -54,6 +54,7 @@ class MiniCart extends HTMLElement {
       let formattedItem = {
         id: item.id,
         quantity: parseInt(item.quantity),
+        properties: item.properties
       };
 
       formData.items.push(formattedItem);

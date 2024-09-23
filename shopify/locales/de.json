@@ -422,6 +422,11 @@
       "fibre": "Ballaststoffe \/ Fibre",
       "protein": "Eiweiß \/ Protein",
       "salt": "Salz \/ Salt"
+    },
+    "pre_order": {
+      "note": "Hinweis",
+      "shipping": "Lieferzeit",
+      "pre_order": "Vorbestellung",
     }
   },
   "gift_cards": {

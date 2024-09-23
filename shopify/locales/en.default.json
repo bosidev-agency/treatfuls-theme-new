@@ -419,6 +419,11 @@
       "fibre": "Ballaststoffe \/ Fibre",
       "protein": "Eiweiß \/ Protein",
       "salt": "Salz \/ Salt"
+    },
+    "pre_order": {
+      "note": "Note",
+      "shipping": "Shipping",
+      "pre_order": "Preorder",
     }
   },
   "store_availability": {

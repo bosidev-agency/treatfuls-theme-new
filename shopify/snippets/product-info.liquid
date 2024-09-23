@@ -79,6 +79,11 @@
           {%- assign product_bg_color = 'quaternary' -%}
         {%- endif -%}
 
+        {%- if product.metafields.custom.preorder_date != blank -%}
+          <input type="hidden" id="test1" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+          <input type="hidden" id="test2" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
+        {%- endif -%}
+
         <select
           name="id"
           class="no-js visually-hidden"
@@ -197,11 +202,6 @@
                   </button>
                 </div>
               </div>
-
-              {%- if product.metafields.custom.preorder_date != blank -%}
-                <input id="test1" name="properties[Test]" value="test" data-product-property>
-                <input id="test2" name="properties[Test2]" value="testasdf" data-product-property>
-              {%- endif -%}
 
             {%- when 'countdown' -%}
               {%- if product.metafields.custom.countdown_date != blank -%}
