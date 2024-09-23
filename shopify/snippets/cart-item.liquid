@@ -17,7 +17,6 @@
       />
     </picture>
   </a>
-
   <div class="cart-product__info">
     <div class="cart-product__heading">
       <div class="cart-product__content">
@@ -33,6 +32,16 @@
             {{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }}
           </span>
         {%- endif -%}
+
+        {%- for property in item.properties -%}
+          {%- assign first_character_in_key = property.first | truncate: 1, '' -%}
+
+          {%- if property.last == blank or first_character_in_key == '_' -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {{ property.first }}: {{ property.last }}
+        {%- endfor -%}
       </div>
 
       {%- unless is_mini_cart -%}
