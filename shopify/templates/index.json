@@ -59,8 +59,9 @@
         },
         "product_item_YikLNA": {
           "type": "product_item",
+          "disabled": true,
           "settings": {
-            "product": "20-x-banana-bread-energieballs-bio-vegan"
+            "product": "adventskalender_2024_bio_vegan"
           }
         }
       },
@@ -80,7 +81,9 @@
         "title": "OMG, a recyclable packaging that <span><span>doesn’t <\/span><\/span><span><span>look recyclable<\/span><\/span>",
         "title-second": "OMG, a vegan snack that <span><span>doesn’t <\/span><\/span><span><span>taste vegan<\/span><\/span>",
         "title-third": "OMG, a vegan snack, that <span><span>doesn’t <\/span><\/span><span><span>taste vegan.<\/span><\/span>",
-        "link_text": "Jetzt kaufen"
+        "link_text": "Jetzt kaufen",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd"
       }
     },
     "home-ticker": {
@@ -106,6 +109,7 @@
         "516bcf2f-264d-4de0-80a9-94bb5edd64ce"
       ],
       "settings": {
+        "background_color": "#2ac2bd"
       }
     },
     "advantages_C7eDVR": {

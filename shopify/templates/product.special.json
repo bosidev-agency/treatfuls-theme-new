@@ -44,8 +44,8 @@
         "buy_button_MxK7PU"
       ],
       "settings": {
-        "heading": "der🥇treatfuls <span>Adventskalender<\/span>",
-        "mobile_heading": "der🥇treatfuls <span>Adventskalender<\/span>",
+        "heading": "der🥇treatfuls Adventskalender",
+        "mobile_heading": "der🥇treatfuls Adventskalender",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -147,7 +147,7 @@
         "image_q7LijX"
       ],
       "settings": {
-        "heading": "vegan und natürlich so viel <span>süßer<\/span> als deine Weihnachts-erinnerungen🎄",
+        "heading": "vegan und natürlich, so viel <span>süßer<\/span> als deine Weihnachts-erinnerungen🎄",
         "show_atc_button": true,
         "grid_container_quantity": "1",
         "background_color": "#aa3e59",
@@ -164,28 +164,28 @@
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-1-smile.png",
-            "text": "Lecker"
+            "text": "24 yummy Türchen"
           }
         },
         "advantage_item_7gpaeh": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-2-vegan.png",
-            "text": "Vegan"
+            "text": "kein Industriezucker + vegan"
           }
         },
         "advantage_item_rYayte": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-3-organic.png",
-            "text": "Bio zertfiziert"
+            "text": "bio-zertfiziert + natürlich"
           }
         },
         "advantage_item_pzt4D6": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify:\/\/shop_images\/img-4-packaging.png",
-            "text": "Kompostierbare Verpackung"
+            "text": "Kalender wieder-verwendbar"
           }
         }
       },
@@ -323,15 +323,6 @@
             "show_nutrition": false
           }
         },
-        "faq_item_4bMLq4": {
-          "type": "faq_item",
-          "settings": {
-            "title": "was ist, wenn ich mehrere",
-            "content": "",
-            "show_ingredients": false,
-            "show_nutrition": false
-          }
-        },
         "faq_item_MXXPVk": {
           "type": "faq_item",
           "settings": {
@@ -356,7 +347,6 @@
         "faq_item_KXXnVi",
         "faq_item_79W7iH",
         "faq_item_iDnQkE",
-        "faq_item_4bMLq4",
         "faq_item_MXXPVk"
       ],
       "settings": {
