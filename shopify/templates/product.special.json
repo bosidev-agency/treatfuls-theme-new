@@ -23,6 +23,7 @@
         },
         "countdown_VtCQd8": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "heading": "Early Bird Sale endet in :",
             "color": "#275c63",
