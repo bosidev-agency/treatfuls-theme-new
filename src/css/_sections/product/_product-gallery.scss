@@ -31,10 +31,11 @@
       list-style: none;
       padding: 0;
       z-index: 1;
-      max-width: 100%;
+      max-width: 80%;
       
       @media #{$no-m} {
         margin-left: 20px;
+        max-width: 100%;
       }
 
       @media #{$m-xxl} {
