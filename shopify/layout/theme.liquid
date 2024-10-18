@@ -1,7 +1,7 @@
 <!doctype html> 
 <html class="no-js" lang="{{- shop.locale -}}">
 	<head>
-{% include "load-metafields" %}
+{% render "load-metafields" %}
 
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -58,26 +58,22 @@
 		{%- render 'custom-variables.css' -%}
     {%- render 'css-variables' -%}
 
-		{%- if page_description -%}
-			<meta name="description" content="{{- page_description | escape -}}">
-		{%- endif -%}
+		{% render 'social-meta-tags' %}
 
-		{% include 'social-meta-tags' %}
-
-		<link rel="stylesheet" href="{{ 'bundle.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'custom.static.css' | asset_url }}">
+    {{ 'FoundersGrotesk-Regular.woff2' | asset_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
+    {{ 'FoundersGrotesk-Bold.woff2' | asset_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
+    {{ 'FoundersGroteskMono-Medium.woff2' | asset_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
     {% render 'fonts' %}
+
+    {{ 'bundle.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.static.css' | asset_url | stylesheet_tag: preload: true }}
 
 		{%- if template.directory == 'customers' -%}
 			<script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
 		{%- endif -%}
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-
+    <script src="{{- 'bundle.js' | asset_url -}}" defer="defer"></script>
       
-     <!-- START SCRIPT --><script id="wgs-scripttag-prod" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=treatfuls.myshopify.com&cart_attr_disabled=false&line_items_disabled=false&shopify_app_proxy_enabled=true&wgs_mode=4" async=true></script><style>#customerReferenceId { display: none; }</style><!-- END SCRIPT -->
-{{ content_for_header }}
+     <!-- START SCRIPT --><script id="wgs-scripttag-prod" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=treatfuls.myshopify.com&cart_attr_disabled=false&line_items_disabled=false&shopify_app_proxy_enabled=true&wgs_mode=4" async=true></script><style>#customerReferenceId { display: none; }</style><!-- END SCRIPT -->{{ content_for_header }}
 
 		<script>
 			const LOCATION_PATHNAME = window.location.pathname;
@@ -124,15 +120,10 @@
 		{%- if template.directory == 'customers' -%}
 			<script src="{{- 'shopify_common.js' | shopify_asset_url -}}" defer></script>
 		{%- endif -%}
-
-		<script src="{{- 'bundle.js' | asset_url -}}" defer></script>
 	    {%- section 'global-newsletter-popup' -%}
         {% include "bc_banner" %}
 </body>
 </html>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 {%- if product.metafields.custom.redirect != blank -%}
   <script>

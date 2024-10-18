@@ -343,14 +343,10 @@ register("product-page", {
 			selectors.productGalleryThumbnail
 		);
 
-    const slidesPerView = sliderThumbnail.dataset.slideLength > 4 ? 4 : 3
-
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
 				slidesPerView: 'auto',
 				direction: "vertical",
-        spaceBetween: 10,
-
 				breakpoints: {
 					300: {
 						direction: "horizontal",

@@ -50,6 +50,8 @@
 							src="{{ media.preview_image | img_url: '264x' }}"
 							srcset="{{ media.preview_image | img_url: '264x' }} 1x, {{ media.preview_image | img_url: '528x' }} 2x, {{ media.preview_image | img_url: '792x' }} 3x"
 							alt="{{- media.alt | default: title -}}"
+              width="400"
+              height="500"
 						/>
 					</picture>
 				</div>
@@ -65,10 +67,7 @@
 				<div class="swiper-slide">
           <div class="thumbnail-slide__wrapper">
             <picture>
-              <img
-                src="{{ media.preview_image | img_url: 'master' }}"
-                alt="{{- media.alt | default: title -}}"
-              />
+              {{ media.preview_image | image_url: width: 100 | image_tag: width: 64, height: 64 }}
             </picture>
           </div>
 				</div>
@@ -78,7 +77,7 @@
 {%- endcapture -%}
 
 <div class="product-gallery">
-	<div class="swiper-container-wrapper opacity-0" data-product-gallery="wrapper">
+	<div class="swiper-container-wrapper" data-product-gallery="wrapper">
 		{%- if product_images_thumbnail != blank -%}
 			{{- product_images_thumbnail -}}
 		{%- endif -%}

@@ -1,4 +1,3 @@
-import { debounce } from "../utils/helpers";
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 import axios from "axios";

@@ -9,7 +9,7 @@
 html,
 body {
 	background-color: #fff;
-	font-family: $font-primary;
+	font-family: $font-primary, sans-serif;
 	scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -279,4 +279,12 @@ tool-tip {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+
+.image-link-wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
