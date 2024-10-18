@@ -45,82 +45,6 @@
         "title": "Wir verwenden nur beste Zutaten"
       }
     },
-    "main-product-advantages": {
-      "type": "main-product-advantages",
-      "blocks": {
-        "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-1-smile.png",
-            "text": "Lecker"
-          }
-        },
-        "e004a74c-a36a-44c7-b2a2-bd6859ece912": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-2-vegan.png",
-            "text": "Vegan"
-          }
-        },
-        "481cf990-f8c9-4949-b40c-95dfcf923edf": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-3-organic.png",
-            "text": "Bio-zertifiziert"
-          }
-        },
-        "d45fe6f2-1704-4dc6-a123-33beb7e857b3": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
-          }
-        },
-        "81513617-39d3-48cb-b383-42d5a0f019fd": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-5-soy.png",
-            "text": "Ohne Soja"
-          }
-        },
-        "07747c04-c64f-454d-b22f-e67f32c4045d": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "8581f446-2cf4-400e-ab7a-09e3a9966d9f": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
-          }
-        },
-        "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
-          }
-        }
-      },
-      "block_order": [
-        "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756",
-        "e004a74c-a36a-44c7-b2a2-bd6859ece912",
-        "481cf990-f8c9-4949-b40c-95dfcf923edf",
-        "d45fe6f2-1704-4dc6-a123-33beb7e857b3",
-        "81513617-39d3-48cb-b383-42d5a0f019fd",
-        "07747c04-c64f-454d-b22f-e67f32c4045d",
-        "8581f446-2cf4-400e-ab7a-09e3a9966d9f",
-        "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc"
-      ],
-      "settings": {
-        "main_image": "shopify:\/\/shop_images\/new_image.png",
-        "title": "Unsere Riegel bieten viele Vorteile",
-        "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen"
-      }
-    },
     "compare_big_content": {
       "type": "compare-big-content",
       "settings": {
@@ -198,7 +122,6 @@
     "main",
     "168126247459f8a605",
     "main_product_ingredients",
-    "main-product-advantages",
     "compare_big_content",
     "compare_product_reviews"
   ]
