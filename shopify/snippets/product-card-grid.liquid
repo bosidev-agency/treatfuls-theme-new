@@ -42,11 +42,12 @@
   <div class="custom_data_wrapping">
     <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
       {%- assign cover_image = product.featured_image -%}
+
       {%- if product.metafields.custom.alternate_product_card_image != blank -%}
-        {%- assign cover_image = product.metafields.custom.alternate_product_card_image -%}
+        {%- assign cover_image = product.metafields.custom.alternate_product_card_image.value -%}
       {%- endif -%}
 
-      {%- assign aspect_ratio  = 1 | divided_by: product.featured_image.aspect_ratio | times: 100 -%}
+      {%- assign aspect_ratio  = 1 | divided_by: cover_image.aspect_ratio | times: 100 -%}
 
       {%- if aspect_ratio > 100 -%}
         {%- assign aspect_ratio  = 100 -%}
