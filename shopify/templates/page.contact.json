@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "page-contact",
       "settings": {
-        "title": "hey, du hast <span>Fragen<\/span>, <span>Ideen<\/span> oder willst einfach <br><span>was los werden?<\/span>",
+        "title": "hey, du hast <span>Fragen</span>, <span>Ideen</span> oder willst einfach <br><span>was los werden?</span>",
         "subtitle": "Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns.",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",

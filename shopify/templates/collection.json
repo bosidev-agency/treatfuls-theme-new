@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product-grid": {
@@ -7,7 +16,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "produkte",
-            "image": "shopify:\/\/shop_images\/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
             "collection_title": "Alle Produkte",
             "color": "tertiary"
           }
@@ -16,7 +25,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "riegel",
-            "image": "shopify:\/\/shop_images\/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
+            "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
             "collection_title": "Riegel",
             "color": "tertiary"
           }
@@ -25,7 +34,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "balls",
-            "image": "shopify:\/\/shop_images\/treatfuls_bio_vegan_21_energyballs_baelle.webp",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
             "collection_title": "Balls",
             "color": "tertiary"
           }
@@ -34,7 +43,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "bundles",
-            "image": "shopify:\/\/shop_images\/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
+            "image": "shopify://shop_images/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
             "collection_title": "Boxen",
             "color": "tertiary"
           }

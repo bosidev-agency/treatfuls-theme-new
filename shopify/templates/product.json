@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,7 +22,7 @@
     "main_product_ingredients": {
       "type": "main-product-ingredients",
       "settings": {
-        "title": "Wir verwenden nur <span>beste Zutaten<\/span>",
+        "title": "Wir verwenden nur <span>beste Zutaten</span>",
         "background_color": "{{ product.metafields.custom.accent_color.value }}",
         "accent_color": "{{ product.metafields.custom.background_color.value }}"
       }
@@ -24,56 +33,56 @@
         "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-1-smile.png",
+            "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
         "e004a74c-a36a-44c7-b2a2-bd6859ece912": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-2-vegan.png",
+            "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
         "481cf990-f8c9-4949-b40c-95dfcf923edf": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-3-organic.png",
+            "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
         "d45fe6f2-1704-4dc6-a123-33beb7e857b3": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-4-packaging.png",
+            "image": "shopify://shop_images/img-4-packaging.png",
             "text": "Recyclebare Verpackung"
           }
         },
         "81513617-39d3-48cb-b383-42d5a0f019fd": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-5-soy.png",
+            "image": "shopify://shop_images/img-5-soy.png",
             "text": "Ohne Soja"
           }
         },
         "07747c04-c64f-454d-b22f-e67f32c4045d": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-6-gluten-free.png",
+            "image": "shopify://shop_images/img-6-gluten-free.png",
             "text": "Ohne Gluten"
           }
         },
         "8581f446-2cf4-400e-ab7a-09e3a9966d9f": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-7-sugar.png",
+            "image": "shopify://shop_images/img-7-sugar.png",
             "text": "Ohne raffinierten Zucker"
           }
         },
         "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-8-additives.png",
+            "image": "shopify://shop_images/img-8-additives.png",
             "text": "Ohne Zusatzstoffe"
           }
         }

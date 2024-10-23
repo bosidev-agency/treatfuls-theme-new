@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "home-products": {
@@ -78,9 +87,9 @@
         "product_item_YikLNA"
       ],
       "settings": {
-        "title": "OMG, a recyclable packaging that <span><span>doesn’t <\/span><\/span><span><span>look recyclable<\/span><\/span>",
-        "title-second": "OMG, a vegan snack that <span><span>doesn’t <\/span><\/span><span><span>taste vegan<\/span><\/span>",
-        "title-third": "OMG, a vegan snack, that <span><span>doesn’t <\/span><\/span><span><span>taste vegan.<\/span><\/span>",
+        "title": "OMG, a recyclable packaging that <span><span>doesn’t </span></span><span><span>look recyclable</span></span>",
+        "title-second": "OMG, a vegan snack that <span><span>doesn’t </span></span><span><span>taste vegan</span></span>",
+        "title-third": "OMG, a vegan snack, that <span><span>doesn’t </span></span><span><span>taste vegan.</span></span>",
         "link_text": "Jetzt kaufen",
         "background_color": "#dbaaeb",
         "accent_color": "#2ac2bd"
@@ -118,56 +127,56 @@
         "advantage_item_Rxrckx": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-1-smile.png",
+            "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
         "advantage_item_aLtQhy": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-2-vegan.png",
+            "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
         "advantage_item_AyV7yV": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-3-organic.png",
+            "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
         "advantage_item_XntbcJ": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-4-packaging.png",
+            "image": "shopify://shop_images/img-4-packaging.png",
             "text": "Recyclebare Verpackung"
           }
         },
         "advantage_item_CR9zhB": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-5-soy.png",
+            "image": "shopify://shop_images/img-5-soy.png",
             "text": "Ohne Soja"
           }
         },
         "advantage_item_j6BMtx": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-6-gluten-free.png",
+            "image": "shopify://shop_images/img-6-gluten-free.png",
             "text": "Ohne Gluten"
           }
         },
         "advantage_item_RbjjRA": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-7-sugar.png",
+            "image": "shopify://shop_images/img-7-sugar.png",
             "text": "Ohne raffinierten Zucker"
           }
         },
         "advantage_item_f8LpM9": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-8-additives.png",
+            "image": "shopify://shop_images/img-8-additives.png",
             "text": "Ohne Zusatzstoffe"
           }
         }
@@ -183,7 +192,7 @@
         "advantage_item_f8LpM9"
       ],
       "settings": {
-        "title": "nicht noch so <br><span>ein Bio-Riegel…<\/span>",
+        "title": "nicht noch so <br><span>ein Bio-Riegel…</span>",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
@@ -193,11 +202,11 @@
     "richtext_QaqNnf": {
       "type": "richtext",
       "settings": {
-        "title": "hungry for a <span>change?<\/span>",
-        "first_text": "Bist du bereit mit uns gemeinsam die Snack-Industrie zu revolutionieren? Wir wollen Snacks die besser sind, als das was <span class=\"tooltip\">der Markt uns gerade bietet<\/span>. Wir wollen Süßigkeiten die geil schmecken und besser für dich und die Umwelt sind.",
-        "img_on_hover": "shopify:\/\/shop_images\/home-richtext-img-hover.png",
+        "title": "hungry for a <span>change?</span>",
+        "first_text": "Bist du bereit mit uns gemeinsam die Snack-Industrie zu revolutionieren? Wir wollen Snacks die besser sind, als das was <span class=\"tooltip\">der Markt uns gerade bietet</span>. Wir wollen Süßigkeiten die geil schmecken und besser für dich und die Umwelt sind.",
+        "img_on_hover": "shopify://shop_images/home-richtext-img-hover.png",
         "second_text": "Wir sind Macher und Träumerinnen zugleich und haben aus diesem Grund treatfuls ins Leben gerufen. Mach mit und probiere und überzeuge dich selbst, wie lecker vegane und natürliche Snacks sein können.",
-        "link_url": "shopify:\/\/products\/probierbox-alle-sorten-16-stuck-bio-vegan",
+        "link_url": "shopify://products/probierbox-alle-sorten-16-stuck-bio-vegan",
         "link_text": "Jetzt Probierpaket kaufen",
         "background_color": "#2ac2bd",
         "accent_color": "#dbaaeb",

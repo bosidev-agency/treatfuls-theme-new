@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "product_template_fbYgEz": {
@@ -58,8 +67,8 @@
     "video_iTDPK9": {
       "type": "video",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/0916(1).mp4",
-        "video_mobile": "shopify:\/\/files\/videos\/treatfuls_adventkalender_45.mp4",
+        "video": "shopify://files/videos/0916(1).mp4",
+        "video_mobile": "shopify://files/videos/treatfuls_adventkalender_45.mp4",
         "background_color": "#aa3e59",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -71,8 +80,8 @@
         "image_E7xyiR": {
           "type": "image",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/door_13).mp4",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁<\/p>",
+            "video": "shopify://files/videos/door_13).mp4",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -89,8 +98,8 @@
         "image_CHXcKq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2024-09-16_um_19.07.53.png",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁<\/p>",
+            "image": "shopify://shop_images/Bildschirmfoto_2024-09-16_um_19.07.53.png",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -107,8 +116,8 @@
         "image_ELrtHw": {
           "type": "image",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/0916(3).mp4",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁<\/p>",
+            "video": "shopify://files/videos/0916(3).mp4",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -125,8 +134,8 @@
         "image_q7LijX": {
           "type": "image",
           "settings": {
-            "video": "shopify:\/\/files\/videos\/teaser_2.mp4",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁<\/p>",
+            "video": "shopify://files/videos/teaser_2.mp4",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -148,7 +157,7 @@
         "image_q7LijX"
       ],
       "settings": {
-        "heading": "vegan und natürlich, so viel <span>süßer<\/span> als deine Weihnachts-erinnerungen🎄",
+        "heading": "vegan und natürlich, so viel <span>süßer</span> als deine Weihnachts-erinnerungen🎄",
         "show_atc_button": true,
         "grid_container_quantity": "1",
         "background_color": "#aa3e59",
@@ -164,28 +173,28 @@
         "advantage_item_RgLwwJ": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-1-smile.png",
+            "image": "shopify://shop_images/img-1-smile.png",
             "text": "24 yummy Türchen"
           }
         },
         "advantage_item_7gpaeh": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-2-vegan.png",
+            "image": "shopify://shop_images/img-2-vegan.png",
             "text": "kein Industriezucker + vegan"
           }
         },
         "advantage_item_rYayte": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-3-organic.png",
+            "image": "shopify://shop_images/img-3-organic.png",
             "text": "bio-zertfiziert + natürlich"
           }
         },
         "advantage_item_pzt4D6": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-4-packaging.png",
+            "image": "shopify://shop_images/img-4-packaging.png",
             "text": "Kalender wieder-verwendbar"
           }
         }
@@ -220,7 +229,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Wann wird der Adventskalender versendet?",
-            "content": "🚚 Anfang\/Mitte November flitzt dein treatfuls Kalender direkt zu dir – perfekt getimt, damit du pünktlich am 1. Dezember losnaschen kannst!",
+            "content": "🚚 Anfang/Mitte November flitzt dein treatfuls Kalender direkt zu dir – perfekt getimt, damit du pünktlich am 1. Dezember losnaschen kannst!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -328,7 +337,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Wird der Adventskalender separat zu anderen bestellten Artikeln verschickt?",
-            "content": "📦 ja, dein Adventskalender wird separat versendet. Damit du nicht warten musst, bis der Kalender bereit ist, werden alle anderen Produkte in deiner Bestellung sofort verschickt. Der Kalender kommt dann Anfang\/Mitte November direkt hinterher!",
+            "content": "📦 ja, dein Adventskalender wird separat versendet. Damit du nicht warten musst, bis der Kalender bereit ist, werden alle anderen Produkte in deiner Bestellung sofort verschickt. Der Kalender kommt dann Anfang/Mitte November direkt hinterher!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -361,7 +370,7 @@
     "page_about_us_xeLARH": {
       "type": "about-us",
       "settings": {
-        "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls<\/span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱<\/span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies<\/span>, die die Snack <span class=\"emoji\">🍫<\/span> Industrie revolutionieren <span class=\"emoji\">💪<\/span> wollen.",
+        "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls</span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱</span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies</span>, die die Snack <span class=\"emoji\">🍫</span> Industrie revolutionieren <span class=\"emoji\">💪</span> wollen.",
         "background_color": "#275c63",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
