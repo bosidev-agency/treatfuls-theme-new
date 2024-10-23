@@ -55,7 +55,7 @@
 
       <div style="padding-top:{% unless aspect_ratio == blank %}{{ aspect_ratio }}%{% else %}100%{% endunless %};">
         <a href="{{ product.url }}" class="image-link-wrapper">
-          {{ cover_image | image_url: width: 1000 | image_tag: class: "grid-view-item__image lazyload", sizes: '(max-width: 749px) 200px, (min-width: 750px) 400px', width: 400, loading: lazy_load }}
+          {{ cover_image | image_url: width: 700 | image_tag: class: "grid-view-item__image lazyload", sizes: '(max-width: 749px) 175px, (min-width: 750px) 350px', loading: lazy_load }}
         </a>
       </div>
     </div>
