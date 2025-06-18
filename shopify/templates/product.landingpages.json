@@ -101,8 +101,8 @@
         "buy_button_MxK7PU"
       ],
       "settings": {
-        "heading": "mein treatfuls Adventskalender",
-        "mobile_heading": "mein treatfuls Adventskalender",
+        "heading": "Cyber Monday treats",
+        "mobile_heading": "Cyber Monday treats",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -113,6 +113,7 @@
     },
     "video_iTDPK9": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "video": "shopify://files/videos/adventskalender aufbau treatmas.mp4",
         "video_mobile": "shopify://files/videos/treatmas_mobile video29.mp4",
@@ -127,8 +128,8 @@
         "image_E7xyiR": {
           "type": "image",
           "settings": {
-            "video": "shopify://files/videos/door_13).mp4",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Bildschirmfoto_2024-12-02_um_13.02.25.png",
+            "content": "<p>🎅 🎁</p>",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -145,8 +146,8 @@
         "image_CHXcKq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Bildschirmfoto_2024-11-29_um_18.55.25.png",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Bildschirmfoto_2024-12-02_um_13.05.12.png",
+            "content": "<p>🎅 🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -163,8 +164,8 @@
         "image_ELrtHw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Bildschirmfoto_2024-11-29_um_18.53.07.png",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Bildschirmfoto_2024-12-02_um_13.04.05.png",
+            "content": "<p>🎅 🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -181,8 +182,8 @@
         "image_q7LijX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_7.webp",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Bildschirmfoto_2024-12-02_um_13.05.23.png",
+            "content": "<p>🎅 🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -204,8 +205,8 @@
         "image_q7LijX"
       ],
       "settings": {
-        "heading": "vegan und natürlich, so viel süßer als deine Weihnachts-erinnerungen🎄",
-        "show_atc_button": true,
+        "heading": "Der süßeste Deal des Jahres: Cyber Monday bei treatfuls!🎄",
+        "show_atc_button": false,
         "grid_container_quantity": "1",
         "background_color": "#aa3e59",
         "accent_color": "#275c63",
@@ -252,6 +253,7 @@
         "advantage_item_rYayte",
         "advantage_item_pzt4D6"
       ],
+      "disabled": true,
       "settings": {
         "title": "Was macht unseren Kalender besonders",
         "subtitle": "",
@@ -406,6 +408,7 @@
         "faq_item_iDnQkE",
         "faq_item_MXXPVk"
       ],
+      "disabled": true,
       "settings": {
         "title": "Du hast Fragen?  Hier sind die Antworten!",
         "subtitle": "",

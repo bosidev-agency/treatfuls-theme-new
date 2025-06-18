@@ -12,12 +12,6 @@
     "home-products": {
       "type": "home-products",
       "blocks": {
-        "15b986fe-6e10-40ac-ac01-2d2f587377eb": {
-          "type": "product_item",
-          "settings": {
-            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have"
-          }
-        },
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
           "type": "product_item",
           "settings": {
@@ -36,12 +30,6 @@
             "product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan"
           }
         },
-        "product_item_CMKMAp": {
-          "type": "product_item",
-          "settings": {
-            "product": "big-deal-bundle-34-stuck-alle-sorten-bio-vegan"
-          }
-        },
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
@@ -51,7 +39,7 @@
         "product_item_iM9nAw": {
           "type": "product_item",
           "settings": {
-            "product": "20er-mixbox-get-it-all-bundle-mit-3-riegeln-bio-vegan"
+            "product": "selflove-snackbox-bio-vegan"
           }
         },
         "product_item_A3669g": {
@@ -66,25 +54,29 @@
             "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan"
           }
         },
-        "product_item_YikLNA": {
+        "product_item_ALK7CL": {
           "type": "product_item",
-          "disabled": true,
           "settings": {
-            "product": "adventskalender_2024_bio_vegan"
+            "product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan"
+          }
+        },
+        "product_item_6mCijk": {
+          "type": "product_item",
+          "settings": {
+            "product": "love-you-like-snacks-bio-vegan"
           }
         }
       },
       "block_order": [
-        "15b986fe-6e10-40ac-ac01-2d2f587377eb",
         "1cfded86-563d-4d47-bb13-779d107d88ef",
         "28b053f4-1040-48a6-9229-7fa4f1d54ca5",
         "product_item_mGLG8t",
-        "product_item_CMKMAp",
         "product_item_fwnbt4",
         "product_item_iM9nAw",
         "product_item_A3669g",
         "product_item_yJ9RiE",
-        "product_item_YikLNA"
+        "product_item_ALK7CL",
+        "product_item_6mCijk"
       ],
       "settings": {
         "title": "OMG, a recyclable packaging that <span><span>doesn’t </span></span><span><span>look recyclable</span></span>",

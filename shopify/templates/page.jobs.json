@@ -12,6 +12,15 @@
     "main": {
       "type": "page-jobs",
       "blocks": {
+        "jobs_item_CTHbdA": {
+          "type": "jobs_item",
+          "settings": {
+            "title": "New Business Development & Partnerships  (m/w/d) – Werkstudent*in oder Praktikum",
+            "description": "New Business Development & Partnerships  (m/w/d) – \nWerkstudent*in oder Praktikum: \nDu willst treatfuls in neue Regale bringen, spannende Partner:innen begeistern – und dabei lernen, wie man ein Unternehmen operativ unterstützt und wachsen lässt? Dann bist du bei uns genau richtig! Diese Stelle verbindet das Beste aus Business Development, Sales und Admin: mitdenken, mitmachen und treatfuls nach vorne bringen.\nDas erwartet dich:  Du unterstützt uns bei verschiedenen Projekten im Sales, im Business Development und im Trade-Marketing.\nStrategisches Wachstum & Kooperationen\nDu recherchierst neue Business-Potenziale, z. B. Partnerschaften & Messen\nDu identifizierst relevante Unternehmen,  Brands, Events & Vertriebskanäle \nDu unterstützt bei Kooperationsanbahnungen und Follow-ups\nDu wirkst mit bei Präsentationen, Partnervorschlägen und Pitch-Decks\nDu begleitest uns bei der Vorbereitung von Events, Retail-Pitches oder Sampling-Kampagnen\nVertrieb & Sales-Admin\nDu planst und führst Kaltakquise via Mail, Telefon oder LinkedIn durch\nDu legst Kund:innen & Bestellungen in unserem System an (CRM & Excel)\nDu behältst den Überblick über offene Anfragen, Follow-ups & To-dos\nDu unterstützt bei der Angebotserstellung, Rechnungsvorbereitung & Sortimentspflege\nDu beantwortest Rückfragen zu Bestellungen, Lieferzeiten & Produkten (B2B)\nDu koordinierst Anlieferung & Lieferzeit Fenster mit Partnern\nDu hilfst bei der Koordination von POS-Materialien & Werbemitteln\nDu hilfst mit, Prozesse sauber zu dokumentieren und Sales-KPIs zu tracken\nDas bringst du mit – du musst kein Profi sein, aber Drive haben 🧠✨\nDu bist ein:e strukturierte:r Macher:in mit einem Herz für Menschen & Marken\nDu liebst es, wenn Listen abgearbeitet sind und To-dos in Bewegung kommen\nDu hast erste Erfahrung in Sales, Business Development oder Projektarbeit (gerne auch durch Uni, Startups, Ehrenamt o. Ä.)\nDu bist kommunikationsstark, arbeitest eigenverantwortlich und lösungsorientiert\nDu hast idealerweise erste Berührung mit CRM, Google Sheets oder Asana",
+            "button_text": "Jetzt bewerben",
+            "button_url": "shopify://pages/contact"
+          }
+        },
         "20563fd1-d026-4eed-b1d9-cb6a87e43b05": {
           "type": "jobs_item",
           "settings": {
@@ -32,14 +41,18 @@
         }
       },
       "block_order": [
+        "jobs_item_CTHbdA",
         "20563fd1-d026-4eed-b1d9-cb6a87e43b05",
         "0623a213-a65c-4b0e-b205-99a51d73789f"
       ],
       "settings": {
         "title": "<span><span>best job</span></span> you''ll ever have<span><span></span></span>",
-        "subtitle": "Wir sind Magdalena und Tugce und haben 2020 unseren Traum erfüllt und treatfuls gegründet – dabei handelt es sich um die leckersten veganen & bio-zertifizierten Süßigkeiten, die die Welt je probiert hat. Unsere Devise lautet: Taste first. Aber bitte natürlich und nachhaltig.\n\nWir sind davon überzeugt, dass sich guter Geschmack, gute Zutaten und Nachhaltigkeit nicht ausschließen – im Gegenteil. treatfuls möchte ein Umdenken in der Süßigkeiten Branche anregen. Neue Standards, die gut für dich, aber auch gut für die Umwelt sind. Natürliche Süßigkeiten können kompromisslos glücklich machen – wirklich! Raus aus der Nische mit ihnen, rein in die Warenregale der großen Ketten, rein in die Münder aller Süßigkeiten Liebhaber:innen, rein in jede Süßigkeiten-Schublade! Jetzt!\n\nWenn dein Herz gerade angefangen hat höher zu schlagen und du denkst: ich feiere das Produkt jetzt schon und will Teil davon sein, dann bewirb dich bei uns und hilf uns dabei gemeinsam unsere Produkte von treatfuls bekannter zu machen und unsere Community aufzubauen.\n\nDu willst mit uns die Snack-Industrie revolutionieren? <br>Dann freuen wir uns auf deine Bewerbung!<br>\n<br>\nWir sind nicht nur fest davon überzeugt, dass die Süßigkeiten Industrie neu gedacht werden sollte, sondern auch Bewerbungsverfahren, aus diesem Grund läuft das bei uns alles etwas anders ab: <br>Bewirb dich bei uns ganz einfach per Video, nimm entweder auf, wie du dich kurz vorstellst oder ein Kundengespräch für treatfuls führen würdest. Zeige uns deine Sales Expertise und bewirb dich mit einem passenden Video. Das Video kannst du uns per Mail an \n<b> hey@treatfuls.com\n</b>  schicken.<br>\n<br>\nCraving for more? Dann kontaktier uns: <br>\nTugce Cakir |  hey@treatfuls.com |  Instagram @enjoytreatfuls |  TikTok @treatfuls Snacks with benefits GmbH |  Rather Straße 25 |  40476 Düsseldorf <br>\n <br>\nhier geht es zu den offenen Stellen ⬇️",
+        "subtitle": "Hey, wir sind Magdalena & Tugce – Gründerinnen, Snack-Loverinnen & Optimistinnen mit Vision. treatfuls ist unser Beitrag für eine bessere Snackwelt: bio, vegan, ehrlich & ohne Bullsh*t.\nUnsere Produkte schmecken nach mehr – und wir brauchen dich, um weiter zu wachsen.",
         "img_left": "shopify://shop_images/flexed-biceps-4x.png",
-        "img_right": "shopify://shop_images/laptop-4x.png"
+        "img_right": "shopify://shop_images/laptop-4x.png",
+        "background_color": "#5359e5",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     }
   },

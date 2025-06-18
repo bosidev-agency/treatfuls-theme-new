@@ -19,6 +19,9 @@
         <!-- End Google Tag Manager -->
 		<link rel="canonical" href="{{- canonical_url -}}">
 
+{% render 'ultimate-datalayer' %}
+
+      
 		{%- if settings.favicon != blank -%}
 			<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
 		{%- endif -%}

@@ -30,6 +30,24 @@
             "color": "tertiary"
           }
         },
+        "collection_item_BpgG7M": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "love-bites-valentinstag",
+            "image": "shopify://shop_images/vday_spread_bundle.webp",
+            "collection_title": "Mix-Boxen",
+            "color": "tertiary"
+          }
+        },
+        "collection_item_LLzRme": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nuss-aufstriche",
+            "image": "shopify://shop_images/spreads-treatfuls.webp",
+            "collection_title": "Aufstriche",
+            "color": "tertiary"
+          }
+        },
         "collection_item_zt4DCn": {
           "type": "collection_item",
           "settings": {
@@ -52,6 +70,8 @@
       "block_order": [
         "collection_item_HBNT6z",
         "collection_item_njphjp",
+        "collection_item_BpgG7M",
+        "collection_item_LLzRme",
         "collection_item_zt4DCn",
         "collection_item_fnrKqm"
       ],
@@ -69,7 +89,7 @@
       "settings": {
         "title": "",
         "collection": "produkte",
-        "grid": 3,
+        "grid": 5,
         "rows": 5,
         "show_vendor": false,
         "show_view_all": false,
