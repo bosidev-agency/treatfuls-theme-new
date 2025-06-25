@@ -3841,26 +3841,6 @@ hr {
   .site-header__icon .icon-search {
     margin-right: 3px; } }
 
-.announcement-bar {
-  z-index: 10;
-  position: relative;
-  text-align: center;
-  border-bottom: 1px solid transparent;
-  padding: 2px; }
-
-.announcement-bar__link {
-  display: block; }
-
-.announcement-bar__message {
-  display: block;
-  padding: 11px 22px;
-  font-size: calc(((16) / (var(--font-size-base))) * 1em);
-  font-weight: var(--font-weight-header); }
-  @media only screen and (min-width: 750px) {
-    .announcement-bar__message {
-      padding-left: 55px;
-      padding-right: 55px; } }
-
 .article-listing {
   padding-top: 55px;
   margin-bottom: 55px; }

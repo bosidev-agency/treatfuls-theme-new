@@ -1,7 +1,7 @@
 {% assign color_scheme = resource.metafields.custom.color_scheme.value %}
 
 {%- style -%}
-  #shopify-section-header {
+  #shopify-section-header, #shopify-section-announcement-bar {
     {% if color_scheme.header_background.value != blank %}
       --header-background-color: {{ color_scheme.header_background.value }};
     {% elsif product.metafields.custom.background_color %}
@@ -34,7 +34,7 @@
   }
 
   @media screen and (max-width: 991px) {
-    #shopify-section-header {
+    #shopify-section-header, #shopify-section-announcement-bar {
       {% if color_scheme.header_background_mobile.value != blank %}
         --header-background-color: {{ color_scheme.header_background_mobile.value }};
       {% elsif color_scheme.header_background.value != blank %}

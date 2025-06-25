@@ -32,6 +32,7 @@ register("home-products", {
 		const container = this.container;
     const sectionContainer = container.closest('.shopify-section');
 		const header = document.querySelector('#shopify-section-header');
+    const announcementBar = document.querySelector('#shopify-section-announcement-bar');
     const ticker = document.querySelector('.home-ticker').closest('.shopify-section');
 
 		this.slider = new Swiper(selector, {
@@ -74,6 +75,7 @@ register("home-products", {
             sectionContainer.style.setProperty('--section-hover-color', colorScheme.hover);   
             header.style.setProperty('--header-background-color', colorScheme.background);
             header.style.setProperty('--header-accent-color', colorScheme.accent);
+            announcementBar.style.setProperty('--header-accent-color', colorScheme.accent);
             ticker.style.setProperty('--section-background-color', colorScheme.accent);
 					}, 0);
 				}
