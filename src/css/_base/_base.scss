@@ -32,11 +32,11 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-footer) {
+.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-header):not(#shopify-section-footer) {
   background-color: var(--section-background-color);
 }
 
-.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-footer) .button::after {
+.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-header):not(#shopify-section-footer) .button::after {
   background-color: var(--section-hover-color);
 }
 
@@ -44,8 +44,8 @@ body {
   color: var(--section-background-color);
 }
 
-.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-footer) .button::before,
-.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-footer) .title-bg > span::before {
+.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-header):not(#shopify-section-footer) .button::before,
+.shopify-section:not(.shopify-section-group-header-group):not(#shopify-section-announcement-bar):not(#shopify-section-header):not(#shopify-section-footer) .title-bg > span::before {
   background-color: var(--section-accent-color);
 }
 
