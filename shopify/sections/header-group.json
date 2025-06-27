@@ -11,19 +11,19 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "announcement_bar_dw4NUd": {
+      "type": "announcement-bar",
+      "name": "Announcement Bar",
+      "settings": {
+        "text": "☀️ Too hot to ship! Jetzt bestellen. Wir versenden, sobald die Temperaturen wieder schokofreundlich sind"
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
         "main_linklist": "header-menu",
         "mobile_left_img": "shopify://shop_images/mobile-menu-img-left.png",
         "mobile_right_img": "shopify://shop_images/mobile-menu-img-bottom.png"
-      }
-    },
-    "announcement_bar_dw4NUd": {
-      "type": "announcement-bar",
-      "name": "Announcement Bar",
-      "settings": {
-        "text": "Announcement Bar"
       }
     }
   },
