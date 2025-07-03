@@ -35,7 +35,7 @@
           "settings": {
             "collection": "love-bites-valentinstag",
             "image": "shopify://shop_images/vday_spread_bundle.webp",
-            "collection_title": "Mix-Boxen",
+            "collection_title": "Sommerboxen",
             "color": "tertiary"
           }
         },
@@ -89,8 +89,7 @@
       "settings": {
         "title": "",
         "collection": "produkte",
-        "grid": 5,
-        "rows": 5,
+        "items_per_page": 48,
         "show_vendor": false,
         "show_view_all": false,
         "background_color": "#2ac2bd",
