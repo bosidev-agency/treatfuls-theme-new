@@ -54,30 +54,11 @@
       {%- form 'product', product,
         class: 'product-form',
         data-product-form: '',
-        data-product-form-color: product_bg_color,
         data-product-handle: product.handle,
         data-enable-history-state: 'true',
         data-productid: product.id
       -%}
         {%- assign current_variant = product.selected_or_first_available_variant -%}
-	      {%- assign sku_array = product.variants | map: 'sku' -%}
-
-        {%- assign field_product_bg_color = product.metafields.my_fields.product_background_color -%}
-
-        {%- assign product_bg_color = '' -%}
-          {%- if field_product_bg_color == 'Berry' -%}
-            {%- assign product_bg_color = 'senary' -%}
-          {%- elsif field_product_bg_color == 'Teal' -%}
-            {%- assign product_bg_color = 'quinary' -%}
-        {%- elsif field_product_bg_color == 'Green' -%}
-          {%- assign product_bg_color = 'tertiary' -%}
-        {%- elsif field_product_bg_color == 'Blue' -%}
-          {%- assign product_bg_color = 'secondary' -%}
-        {%- elsif field_product_bg_color == 'Purple' -%}
-          {%- assign product_bg_color = 'primary' -%}
-        {%- elsif field_product_bg_color contains 'Red' -%}
-          {%- assign product_bg_color = 'quaternary' -%}
-        {%- endif -%}
 
         {%- if product.metafields.custom.preorder_date != blank -%}
           <input type="hidden" id="test1" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>

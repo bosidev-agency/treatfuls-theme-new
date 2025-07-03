@@ -1,26 +1,3 @@
-{% comment %} Optional values {% endcomment %}
-{%- assign product_fields = product.metafields.my_fields -%}
-{%- assign next_product = all_products[product_fields.link_to_next_product] -%}
-
-{% comment %} Get product color from Shopify metafields {% endcomment %}
-{%- assign field_product_bg_color = next_product.metafields.my_fields.product_background_color -%}
-
-{% comment %} TODO: REMOVE BG COLOR STUFF {% endcomment %}
-{%- assign next_product_bg_color = '' -%}
-{%- if field_product_bg_color == 'Green' -%}
-	{%- assign next_product_bg_color = 'tertiary' -%}
-{%- elsif field_product_bg_color == 'Blue' -%}
-	{%- assign next_product_bg_color = 'secondary' -%}
-{%- elsif field_product_bg_color == 'Teal' -%}
-	{%- assign next_product_bg_color = 'quinary' -%}
-{%- elsif field_product_bg_color == 'Berry' -%}
-	{%- assign next_product_bg_color = 'senary' -%}
-{%- elsif field_product_bg_color == 'Purple' -%}
-	{%- assign next_product_bg_color = 'primary' -%}
-{%- else -%}
-	{%- assign next_product_bg_color = 'quaternary' -%}
-{%- endif -%}
-
 {%- capture product_images -%}
 	<div class="product-gallery__slider swiper-container" data-product-gallery="gallery" >
 		<div class="swiper-wrapper">

@@ -1,4 +1,3 @@
-{%- assign field_product_bg_color = product.metafields.my_fields.product_background_color -%}
 {%- assign product_price = product.price | money -%}
 {%- assign lazy_load = 'eager' -%}
 
@@ -21,21 +20,6 @@
 {%- assign weight_content = product.metafields.custom.weight_content -%}
 {%- assign unit_name = product.metafields.custom.unit_name -%}
 {%- assign custom_card_badge = product.metafields.custom.custom_card_badge.value -%}
-
-{%- assign product_bg_color = '' -%}
-  {%- if field_product_bg_color == 'Berry' -%}
-    {%- assign product_bg_color = 'senary' -%}
-  {%- elsif field_product_bg_color == 'Teal' -%}
-    {%- assign product_bg_color = 'quinary' -%}
-{%- elsif field_product_bg_color == 'Green' -%}
-  {%- assign product_bg_color = 'tertiary' -%}
-{%- elsif field_product_bg_color == 'Blue' -%}
-  {%- assign product_bg_color = 'secondary' -%}
-{%- elsif field_product_bg_color == 'Purple' -%}
-  {%- assign product_bg_color = 'primary' -%}
-{%- elsif field_product_bg_color contains 'Red' -%}
-  {%- assign product_bg_color = 'quaternary' -%}
-{%- endif -%}
 
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
 
@@ -129,7 +113,6 @@
       {%- form 'product', product,
         class: '',
         data-product-form: '',
-        data-product-form-color: product_bg_color,
         data-product-handle: product.handle,
         data-enable-history-state: 'true',
         data-productid: product.id

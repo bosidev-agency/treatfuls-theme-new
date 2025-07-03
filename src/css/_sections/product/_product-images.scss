@@ -189,26 +189,14 @@
     @media #{$no-fw} {
       top: 23%;
       right: -330px;
-
-      &[data-next-product="quaternary"] {
-        top: 8%;
-      }
     }
 
     @media #{$l} {
       right: -280px;
-
-      &[data-next-product="quaternary"] {
-        top: 2%;
-      }
     }
 
     @media #{$m-xxl} {
       right: -114px;
-
-      &[data-next-product="quaternary"] {
-        top: 9%;
-      }
     }
 
     @media #{$m-l} {
