@@ -107,6 +107,29 @@
     ]
   },
   {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "active_search",
+        "label": "Active Search",
+        "default": true
+      },
+      {
+        "type": "collection",
+        "id": "recommendation_collection",
+        "label": "Recommendation Collection",
+        "info": "This collection will be used to show the recommendation products in the search page"
+      },
+      {
+        "type": "product_list",
+        "id": "recommendation_products",
+        "label": "Recommendation Products",
+        "info": "This products will be used to show the recommendation products in the search page (Only applies when there is no collection set)"
+      }
+    ]
+  },
+  {
     "name": "Social media",
     "settings": [
       {

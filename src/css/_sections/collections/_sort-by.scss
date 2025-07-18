@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   color: var(--color-text);
-  margin-bottom: 10px;
 }
 
 [dir="ltr"] .product-facet__meta-bar-item .icon--filters {
@@ -206,11 +205,10 @@ input[checked="checked"] + .popover__choice-label {
   margin: 0;
 }
 
-.popover__close-button {
+.popover__close-button, .remove-search-input {
   background-color: transparent;
 
   svg {
-    stroke: #1d8884;
 
     path {
       fill: var(--color-text) !important;

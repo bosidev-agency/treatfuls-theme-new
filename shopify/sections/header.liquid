@@ -1,4 +1,10 @@
 {%- capture header_static_menu -%}
+  {%- if settings.active_search -%}
+		<a href="{{ routes.search_url }}" class="header-nav__link header-nav__link--static hidden-phone" data-toggle="predictive-search-container">
+			{%- render 'icon-search' -%}
+		</a>
+	{%- endif -%}
+
 	{%- if shop.customer_accounts_enabled -%}
 		<a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
 			class="header-nav__link header-nav__link--static">
@@ -29,6 +35,13 @@
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
+          {%- if settings.active_search -%}
+            <div class="header-nav header__nav">
+              <a href="{{ routes.search_url }}" class="header-nav__link header-nav__link--static hidden-desktop" data-toggle="predictive-search-container">
+                {%- render 'icon-search' -%}
+              </a>
+            </div>
+          {%- endif -%}
         </div>
 
         <div class="header__column header__column--logo">
@@ -40,7 +53,7 @@
         <div class="header-nav header__nav">
           <nav class="header-nav__wrap js-header-nav" role="navigation">
             {%- if section.settings.mobile_left_img -%}
-              <img src="{{ section.settings.mobile_left_img | img_url: 'master' }}" class="header-nav__img-left" alt="">
+              {{ section.settings.mobile_left_img | image_url: width: section.settings.mobile_left_img.width | image_tag: class: "header-nav__img-left" }}
             {%- endif -%}
             {%- if section.settings.main_linklist != blank -%}
               <ul class="header-nav__menu">
@@ -53,7 +66,7 @@
                   </li>
                 {% endfor %}
                 {%- if section.settings.mobile_right_img -%}
-                  <img src="{{ section.settings.mobile_right_img | img_url: 'master' }}" class="header-nav__img-right" alt="">
+                  {{ section.settings.mobile_right_img | image_url: width: section.settings.mobile_right_img.width | image_tag: class: "header-nav__img-right" }}
                 {%- endif -%}
               </ul>
             {%- endif -%}
@@ -63,6 +76,8 @@
       </div>
     </div>
   </section>
+
+  {% render 'predictive-search-container' %}
 </div>
 
 {% schema %}

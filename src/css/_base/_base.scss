@@ -51,6 +51,7 @@ body {
 
 #shopify-section-header {
   background-color: var(--header-background-color);
+  position: relative;
 }
 
 #shopify-section-footer {
@@ -287,4 +288,28 @@ tool-tip {
   top: 0;
   height: 100%;
   width: 100%;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+span {
+  color: var(--color-text);
 }

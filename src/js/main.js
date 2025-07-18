@@ -31,6 +31,8 @@ require("./components/sort-popover");
 require("./components/countdown-display");
 require("./components/slider");
 require("./components/tooltip");
+require("./components/modal-popover");
+require("./components/predictive-search");
 
 /*================ Sections ================*/
 require("./sections/header");

@@ -51,7 +51,7 @@
     },
     "search": {
       "empty_search_message": "Suchfeld darf nicht leer sein",
-      "title": "Suche auf unserer Seite",
+      "title": "Suche",
       "placeholder": "Suchen",
       "submit": "Suchen",
       "close": "Schließen (esc)",
@@ -66,7 +66,7 @@
       "products": "Produkte",
       "number_of_results_found": "{{ results_count }} Ergebnisse gefunden",
       "one_result_found": "1 Ergebnis gefunden",
-      "no_results": "Überprüfe die Schreibweise oder versuche es mit anderen Wörtern.",
+      "no_results": "Keine Ergebnisse gefunden. Überprüfe die Schreibweise oder versuche es mit anderen Wörtern.",
       "results_with_count": {
         "one": "{{ count }} Suchergebnis für \"{{ terms }}\"",
         "other": "{{ count }} Suchergebnisse für \"{{ terms }}\""
