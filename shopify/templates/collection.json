@@ -34,7 +34,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "love-bites-valentinstag",
-            "image": "shopify://shop_images/vday_spread_bundle.webp",
+            "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
             "collection_title": "Sommerboxen",
             "color": "tertiary"
           }
@@ -59,6 +59,7 @@
         },
         "collection_item_fnrKqm": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "collection": "bundles",
             "image": "shopify://shop_images/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
