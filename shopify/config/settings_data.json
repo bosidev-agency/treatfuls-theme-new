@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/fav_ico.png",
+    "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 60,
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo-checkout.png",
+    "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
     "checkout_button_color": "#2ac2bd",
@@ -12,8 +21,8 @@
         "type": "header",
         "settings": {
           "main_linklist": "header-menu",
-          "mobile_left_img": "shopify:\/\/shop_images\/mobile-menu-img-left.png",
-          "mobile_right_img": "shopify:\/\/shop_images\/mobile-menu-img-bottom.png"
+          "mobile_left_img": "shopify://shop_images/mobile-menu-img-left.png",
+          "mobile_right_img": "shopify://shop_images/mobile-menu-img-bottom.png"
         }
       },
       "footer": {
@@ -44,7 +53,7 @@
           "ea18fcdc-4902-4650-81d8-20ffc18479bf"
         ],
         "settings": {
-          "copyright_text": "<a href=\"https:\/\/appsoluts.de\" style=\"color: #ffffff\">_app:soluts\/*<\/a> is presenting this 😋 snackable website 🌐<br><br>\n© 2024, snacks with benefits GmbH. Alle Rechte vorbehalten."
+          "copyright_text": "<a href=\"https://appsoluts.de\" style=\"color: #ffffff\">_app:soluts/*</a> is presenting this 😋 snackable website 🌐<br><br>\n© 2025, snacks with benefits GmbH. Alle Rechte vorbehalten."
         }
       },
       "main-cart-mini": {
@@ -54,22 +63,26 @@
           "empty_button_url": "",
           "show_upsell": true,
           "upsell_heading": "Das könnte dir  ebenfalls gefallen",
-          "upsell_collection": "upsell-collection"
+          "upsell_collection": "upsell-collection",
+          "upsell_collection_background_desktop": "#9977a5",
+          "background_color": "#dbaaeb",
+          "accent_color": "#2ac2bd",
+          "hover_color": "#f3587f"
         }
       },
       "customer-login": {
         "type": "customer-login",
         "settings": {
-          "login_title": "<span><span>Melde dich an<\/span><\/span> oder <span><span>registriere<\/span><\/span> dich",
+          "login_title": "<span><span>Melde dich an</span></span> oder <span><span>registriere</span></span> dich",
           "login_subtitle": "Du kannst dich mit einem Account anmelden oder einen neuen erstellen.",
           "login_form_title": "Anmelden",
           "login_column_title": "Registrieren",
           "login_column_subtitle": "Erstelle jetzt ein Konto, um Bestellungen zu verfolgen, dein Profil zu verwalten, deine Lieferadresse hinzuzufügen und den Bezahlvorgang zum optimieren.",
-          "recover_title": "Setze hier dein <span><span>Passwort zurück<\/span><\/span>",
+          "recover_title": "Setze hier dein <span><span>Passwort zurück</span></span>",
           "recover_subtitle": "Du hast dein Passwort vergessen? Gar kein Problem, setze es einfach zurück.",
           "recover_form_title": "Passwort zurücksetzen",
           "recover_form_footer_text": "Wir senden Ihnen eine E-Mail, um Ihr Passwort zurückzusetzen.",
-          "recover_success_title": "Check doch mal deine <span><span>Mails!<\/span><\/span>",
+          "recover_success_title": "Check doch mal deine <span><span>Mails!</span></span>",
           "recover_success_subtitle": "Wir haben dir eine E-Mail geschickt, in der du dein Passwort zurücksetzen kannst.",
           "recover_success_link_text": "Zurück zur Login-Seite"
         }
@@ -77,7 +90,7 @@
       "customer-register": {
         "type": "customer-register",
         "settings": {
-          "title": "<span><span>Erstelle<\/span><\/span> jetzt einen <span><span>Account<\/span><\/span>",
+          "title": "<span><span>Erstelle</span></span> jetzt einen <span><span>Account</span></span>",
           "subtitle": "Erstelle ein Konto, um deine Bestellungen zu verfolgen",
           "link_text": "Du hast einen Account? Anmelden"
         }
@@ -86,35 +99,30 @@
         "type": "global-newsletter-popup",
         "settings": {
           "enable_popup": true,
-          "title": "Gewinne ein Probierpaket im <span>Wert von 46€!<\/span>",
-          "description": "<p>Jetzt zum Newsletter anmelden und deinem Glück auf die Sprünge helfen! ⏱️<\/p>",
+          "title": "Gewinne ein Probierpaket im <span>Wert von 46€!</span>",
+          "description": "<p>Jetzt zum Newsletter anmelden und deinem Glück auf die Sprünge helfen! ⏱️</p>",
           "button_text": "Jetzt Probierpaket gewinnen!",
-          "under_button_text": "<p>Die Teilnahmebedingungen für dieses Gewinnspiel findest du auf <a href=\"https:\/\/www.naughtynuts.de\/pages\/teilnahmebedingungen\" title=\"www.naughtynuts.de\">www.naughtynuts.de\/pages\/teilnahmebedingungen<\/a><\/p>",
+          "under_button_text": "<p>Die Teilnahmebedingungen für dieses Gewinnspiel findest du auf <a href=\"https://www.naughtynuts.de/pages/teilnahmebedingungen\" title=\"www.naughtynuts.de\">www.naughtynuts.de/pages/teilnahmebedingungen</a></p>",
           "thank_you_message": "Thank your for signing up to our newsletter!"
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "319724205969189013": {
-        "type": "shopify:\/\/apps\/form-builder-with-file-upload\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "type": "shopify://apps/form-builder-with-file-upload/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   }
