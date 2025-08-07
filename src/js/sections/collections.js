@@ -30,7 +30,11 @@ if (!customElements.get("collection-slider")) {
               slidesPerView: this.slides,
               spaceBetween: 36,
             }
-          }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
         });
       }
     }
