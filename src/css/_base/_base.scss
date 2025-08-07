@@ -313,3 +313,35 @@ tool-tip {
 span {
   color: var(--color-text);
 }
+
+a.button {
+  text-decoration: none !important;
+}
+
+.shopify-section:has(.page) {
+  margin-bottom: -1px;
+}
+
+.text--strong {
+  font-weight: 600 !important;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.shopify-block {
+  width: 100%;
+}
+
+.heading {
+  color: var(--color-text);
+}
+
+.text--subdued {
+  color: rgba(var(--color-text), 0.5);
+}
+
+.input__label {
+  font-size: 20px;
+}
