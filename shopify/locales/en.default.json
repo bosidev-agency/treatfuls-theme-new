@@ -236,11 +236,16 @@
   "contact": {
     "form": {
       "name": "Name",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "order_number": "Order Number",
       "email": "Email",
       "phone": "Phone Number",
       "message": "Message",
       "submit": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "b2b_submit": "Submit request",
+      "post_success_html": "<span>Thank you</span> for your request, we will check your details and get back to you within the next few days.",
+      "back_to_home": "Back to home",
       "error_heading": "Please adjust the following:"
     }
   },

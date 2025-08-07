@@ -9,6 +9,86 @@
  */
 {
   "sections": {
+    "hero_GRwq8M": {
+      "type": "hero",
+      "name": "Image with text overlay",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Sweet_sunshine_Box_Web.jpg",
+        "desktop_image_height": "adapt",
+        "mobile_image": "shopify://shop_images/Bildschirmfoto_2025-07-29_um_14.45.43.png",
+        "mobile_image_height": "adapt",
+        "vertical_alignment": "middle",
+        "horizontal_alignment": "left",
+        "max_width": "fixed",
+        "max_width_px": 700,
+        "title": "Foto mit überlegtem Text",
+        "text": "<p>Lege Text über ein Bild und erzähle deinen Kunden mehr über deine Marke. Verwende Bilder und Texte, die zu deiner Markenstory und deinem Branding passen.</p>",
+        "button_label": "Produkte",
+        "button_link": "shopify://collections",
+        "background_color": "#5359e5",
+        "show_base_triangular_line": false
+      }
+    },
+    "featured_collections_EUemmF": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_item_nBcRpr": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "produkte",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
+            "collection_title": "Alle produkte"
+          }
+        },
+        "collection_item_c33Q89": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "riegel",
+            "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
+            "collection_title": ""
+          }
+        },
+        "collection_item_hHjCCf": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "love-bites-valentinstag",
+            "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
+            "collection_title": "Sommerboxen"
+          }
+        },
+        "collection_item_zbE6pg": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nuss-aufstriche",
+            "image": "shopify://shop_images/spreads-treatfuls.webp",
+            "collection_title": "Aufstriche"
+          }
+        },
+        "collection_item_7HkdAc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "balls",
+            "collection_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_nBcRpr",
+        "collection_item_c33Q89",
+        "collection_item_hHjCCf",
+        "collection_item_zbE6pg",
+        "collection_item_7HkdAc"
+      ],
+      "name": "Featured collections",
+      "settings": {
+        "heading_desktop": "<span>Produkte</span>",
+        "heading_mobile": "Produktübersicht",
+        "background_color": "#dbaaeb",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#2ac2bd",
+        "accent_color_mobile": "#f3587f"
+      }
+    },
     "home-products": {
       "type": "home-products",
       "blocks": {
@@ -207,6 +287,8 @@
     }
   },
   "order": [
+    "hero_GRwq8M",
+    "featured_collections_EUemmF",
     "home-products",
     "home-ticker",
     "advantages_C7eDVR",

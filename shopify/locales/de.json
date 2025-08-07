@@ -239,11 +239,16 @@
   "contact": {
     "form": {
       "name": "Dein Name",
+      "first_name": "Vorname",
+      "last_name": "Nachname",
+      "order_number": "Bestellnummer",
       "email": "Deine E-Mail",
       "phone": "Telefonnummer",
       "message": "Deine Nachricht",
       "submit": "Nachricht senden",
-      "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
+      "b2b_submit": "Anfrage senden",
+      "post_success_html": "<span>Danke</span> für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück.",
+      "back_to_home": "Zurück zur Startseite",
       "error_heading": "Bitte passe Folgendes an:"
     }
   },

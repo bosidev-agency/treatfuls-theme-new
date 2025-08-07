@@ -10,7 +10,7 @@
 {
   "sections": {
     "product-grid": {
-      "type": "collection-template",
+      "type": "featured-collections",
       "blocks": {
         "collection_item_HBNT6z": {
           "type": "collection_item",
