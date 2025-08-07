@@ -20,20 +20,43 @@
 	<div class="content-wrapper">
     <div class="container">
       <div class="title-wrapper">
-        <h1 class="community__title title-wrapper__title title-bg">{{ page.title }}</h1>
+        {%- if section.settings.title or section.settings.subtitle -%}
+          {%- if section.settings.title -%}
+            <h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
+          {%- endif -%}
+  
+          {%- if section.settings.subtitle -%}
+            <div class="title-wrapper__subtitle rte">{{ section.settings.subtitle }}</div>
+          {%- endif -%}
+        {%- else -%}
+          <h1 class="title-bg">{{ page.title }}</h1>
+        {%- endif -%}
       </div>
-
       <div class="rte">
         {{ page.content }}
       </div>
     </div>
   </div>
-</div>
+</section>
 
 {% schema %}
 {
 	"name": "Page",
 	"settings": [
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
     {
       "type": "header",
       "content": "Colors"
@@ -58,7 +81,6 @@
 		{
 			"name": "Page"
 		}
-	],
-	"templates": ["page"]
+	]
 }
 {% endschema %}

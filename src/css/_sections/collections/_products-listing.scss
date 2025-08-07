@@ -21,7 +21,9 @@
   padding: 50px;
   min-height: 440px;
   margin: 6px; /* Adjust margin to account for the shadow size */
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
 
   @media #{$m-xl} {
     margin: 0;
@@ -203,7 +205,7 @@
 }
 
 @media (max-width: 1024px) {
-  .products_listing .collection-products__container {
+  .products_listing .featured-collections__container {
     height: unset;
     min-height: 45vh;
   }
@@ -235,7 +237,7 @@
 }
 
 @media (max-width: 768px) {
-  .products_listing .collection-products__container {
+  .products_listing .featured-collections__container {
     height: unset;
   }
 
