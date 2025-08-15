@@ -13,20 +13,20 @@
       "type": "hero",
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Sweet_sunshine_Box_Web.jpg",
+        "desktop_image": "shopify://shop_images/treatfuls_backtoschool_banner_desktop_cf106ed9-a5c3-48fa-8b1d-48ab3cdde303.svg",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Bildschirmfoto_2025-07-29_um_14.45.43.png",
+        "mobile_image": "shopify://shop_images/treatfuls_backtoschool_banner_mobile.svg",
         "mobile_image_height": "adapt",
         "vertical_alignment": "middle",
-        "horizontal_alignment": "left",
-        "max_width": "fixed",
+        "horizontal_alignment": "center",
+        "max_width": "100%",
         "max_width_px": 700,
-        "title": "Foto mit überlegtem Text",
-        "text": "<p>Lege Text über ein Bild und erzähle deinen Kunden mehr über deine Marke. Verwende Bilder und Texte, die zu deiner Markenstory und deinem Branding passen.</p>",
-        "button_label": "Produkte",
-        "button_link": "shopify://collections",
-        "background_color": "#5359e5",
-        "show_base_triangular_line": false
+        "title": "✏️ back to School",
+        "text": "<p>Die coolste Schultüte seit es Pausen <br/>gibt: limited Edition im treatfuls-Design,<br/>gefüllt mit unseren leckeren, bio<br/>Snacks + <strong>buah</strong>-Trockenfrüchte und <strong>Stickerbogen</strong> zum <br/>Selbstgestalten natürlich, bunt<br/>und zum Anbeißen! ✨</p>",
+        "button_label": "zur Schultüte",
+        "button_link": "shopify://collections/all",
+        "background_color": "#2ac2bd",
+        "show_base_triangular_line": true
       }
     },
     "featured_collections_EUemmF": {
@@ -81,12 +81,12 @@
       ],
       "name": "Featured collections",
       "settings": {
-        "heading_desktop": "<span>Produkte</span>",
-        "heading_mobile": "Produktübersicht",
-        "background_color": "#dbaaeb",
-        "background_color_mobile": "#2ac2bd",
-        "accent_color": "#2ac2bd",
-        "accent_color_mobile": "#f3587f"
+        "heading_desktop": "Produkte",
+        "heading_mobile": "Produkte",
+        "background_color": "#2AC2BD",
+        "background_color_mobile": "#2AC2BD",
+        "accent_color": "#F3587F",
+        "accent_color_mobile": "#F3587F"
       }
     },
     "home-products": {

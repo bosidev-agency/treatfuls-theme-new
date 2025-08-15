@@ -13,6 +13,7 @@
   "sections": {
     "announcement_bar_dw4NUd": {
       "type": "announcement-bar",
+      "disabled": true,
       "name": "Announcement Bar",
       "settings": {
         "text": "🌱 100 % vegan 💚 100 % Bio 🍀 100 % natürlich"
