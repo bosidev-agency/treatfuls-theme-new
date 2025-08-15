@@ -19,9 +19,21 @@
     transform: translate(var(--translate-x), var(--translate-y));
 
     .button {
-      max-width: 300px;
-      min-width: 300px;
+      max-width: 438px;
+      width: 100%;
       text-align: center;
+
+      @media #{$no-fw} {
+        max-width: 20vw;
+      }
+    
+      @media #{$m-xxl} {
+        max-width: 278px;
+      }
+    
+      @media #{$m-l} {
+        max-width: 203px;
+      }
     }
   }
 
@@ -55,10 +67,12 @@
 
   .hero__content-image {
     width: 100%;
-    aspect-ratio: var(--desktop-aspect-ratio, 16/9);
+    aspect-ratio: var(--desktop-aspect-ratio);
+    position: relative;
+    overflow: hidden;
 
     @media (max-width: 768px) {
-      aspect-ratio: var(--mobile-aspect-ratio, 16/9);
+      aspect-ratio: var(--mobile-aspect-ratio);
     }
   }
 
@@ -67,6 +81,9 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .base-triangular-line {

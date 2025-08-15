@@ -72,13 +72,13 @@
                       {{
                         collection_image
                         | image_url: width: 800
-                        | image_tag: class: 'hidden-phone', alt: collection_image.alt
+                        | image_tag: alt: collection_image.alt
                       }}
                     {%- else -%}
                       {{
                         block_collection.featured_image
                         | image_url: width: 800
-                        | image_tag: class: 'hidden-phone', alt: block_collection.featured_image.alt
+                        | image_tag: alt: block_collection.featured_image.alt
                       }}
                     {%- endif -%}
                     <div class="collection-swiper__link">

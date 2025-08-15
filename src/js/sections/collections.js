@@ -23,7 +23,7 @@ if (!customElements.get("collection-slider")) {
         this.slider = new Swiper(this, {
           loop: false,
           centerMode: false,
-          slidesPerView: 'auto',
+          slidesPerView: 2,
           spaceBetween: 12,
           breakpoints: {
             769: {

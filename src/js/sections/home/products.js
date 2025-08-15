@@ -73,11 +73,11 @@ register("home-products", {
             sectionContainer.style.setProperty('--section-background-color', colorScheme.background);
             sectionContainer.style.setProperty('--section-accent-color', colorScheme.accent);
             sectionContainer.style.setProperty('--section-hover-color', colorScheme.hover);   
-            header.style.setProperty('--header-background-color', colorScheme.background);
-            header.style.setProperty('--header-accent-color', colorScheme.accent);
-            header.style.setProperty('--header-hover-color', colorScheme.hover);
-            announcementBar.style.setProperty('--header-accent-color', colorScheme.accent);
-            ticker.style.setProperty('--section-background-color', colorScheme.accent);
+            // header.style.setProperty('--header-background-color', colorScheme.background);
+            // header.style.setProperty('--header-accent-color', colorScheme.accent);
+            // header.style.setProperty('--header-hover-color', colorScheme.hover);
+            // announcementBar.style.setProperty('--header-accent-color', colorScheme.accent);
+            // ticker.style.setProperty('--section-background-color', colorScheme.accent);
 					}, 0);
 				}
 			}
