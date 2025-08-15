@@ -10,6 +10,15 @@
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
   }
+
+  #shopify-section-{{ section.id }} .content-wrapper {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  #shopify-section-{{ section.id }} .title-wrapper__subtitle {
+    font-size: {{ section.settings.subtitle_font_size }}px;
+  }
 </style>
 
 <section
@@ -58,6 +67,15 @@
       "label": "Subtitle"
     },
     {
+      "type": "range",
+      "id": "subtitle_font_size",
+      "label": "Subtitle Font Size",
+      "default": 24,
+      "min": 16,
+      "max": 48,
+      "step": 1
+    },
+    {
       "type": "header",
       "content": "Colors"
     },
@@ -75,6 +93,28 @@
       "type": "color",
       "id": "hover_color",
       "label": "Hover Color"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 5
     }
 	],
 	"presets": [
