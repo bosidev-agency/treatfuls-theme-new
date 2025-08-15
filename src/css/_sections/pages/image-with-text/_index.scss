@@ -45,6 +45,10 @@
   .image-with-text__title {
     margin-top: 0;
     margin-bottom: 2rem;
+
+    @media #{$no-m-xl} {
+      font-size: 42px;
+    }
   }
 
   .image-with-text__content {

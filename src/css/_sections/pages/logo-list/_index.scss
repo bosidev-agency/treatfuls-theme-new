@@ -4,6 +4,11 @@
     align-items: center;
   }
 
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
   &__link {
     display: block;
     width: 100%;
