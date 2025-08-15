@@ -25,7 +25,9 @@
         "text": "<p>Die coolste Schultüte seit es Pausen <br/>gibt: limited Edition im treatfuls-Design,<br/>gefüllt mit unseren leckeren, bio<br/>Snacks + <strong>buah</strong>-Trockenfrüchte und <strong>Stickerbogen</strong> zum <br/>Selbstgestalten natürlich, bunt<br/>und zum Anbeißen! ✨</p>",
         "button_label": "zur Schultüte",
         "button_link": "shopify://collections/all",
-        "background_color": "#2ac2bd",
+        "background_color": "#5359e5",
+        "accent_color": "#f3587f",
+        "hover_color": "#5359e5",
         "show_base_triangular_line": true
       }
     },
@@ -83,10 +85,10 @@
       "settings": {
         "heading_desktop": "Produkte",
         "heading_mobile": "Produkte",
-        "background_color": "#2AC2BD",
-        "background_color_mobile": "#2AC2BD",
-        "accent_color": "#F3587F",
-        "accent_color_mobile": "#F3587F"
+        "background_color": "#2ac2bd",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#f3587f",
+        "accent_color_mobile": "#f3587f"
       }
     },
     "home-products": {
@@ -163,8 +165,9 @@
         "title-second": "OMG, a vegan snack that <span><span>doesn’t </span></span><span><span>taste vegan</span></span>",
         "title-third": "OMG, a vegan snack, that <span><span>doesn’t </span></span><span><span>taste vegan.</span></span>",
         "link_text": "Jetzt kaufen",
-        "background_color": "#dbaaeb",
-        "accent_color": "#2ac2bd"
+        "background_color": "#9977a5",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#dbaaeb"
       }
     },
     "home-ticker": {

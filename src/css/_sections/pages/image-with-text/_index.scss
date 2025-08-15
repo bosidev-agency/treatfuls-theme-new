@@ -44,6 +44,7 @@
 
   .image-with-text__title {
     margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   .image-with-text__content {
@@ -59,6 +60,19 @@
   .button {
     margin-top: 20px;
     max-width: 300px;
+    width: 100%;
     text-align: center;
+
+    @media #{$no-fw} {
+      max-width: 20vw;
+    }
+  
+    @media #{$m-xxl} {
+      max-width: 278px;
+    }
+  
+    @media #{$m-l} {
+      max-width: 203px;
+    }
   }
 }
