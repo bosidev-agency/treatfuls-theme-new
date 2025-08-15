@@ -30,10 +30,6 @@ register("home-products", {
 	},
 	initSlider(selector, randomNumber) {
 		const container = this.container;
-    const sectionContainer = container.closest('.shopify-section');
-		const header = document.querySelector('#shopify-section-header');
-    const announcementBar = document.querySelector('#shopify-section-announcement-bar');
-    const ticker = document.querySelector('.home-ticker').closest('.shopify-section');
 
 		this.slider = new Swiper(selector, {
 			loop: true,
@@ -64,21 +60,6 @@ register("home-products", {
 					if (slider.classList.contains(selectors.classOpacity)) {
 						slider.classList.remove(selectors.classOpacity);
 					}
-				},
-				slideChange: function () {
-					setTimeout(() => {
-						const currentSlide =
-							container.querySelector(`.swiper-slide-active`);
-            const colorScheme = JSON.parse(currentSlide.getAttribute('data-slide-color'));
-            sectionContainer.style.setProperty('--section-background-color', colorScheme.background);
-            sectionContainer.style.setProperty('--section-accent-color', colorScheme.accent);
-            sectionContainer.style.setProperty('--section-hover-color', colorScheme.hover);   
-            // header.style.setProperty('--header-background-color', colorScheme.background);
-            // header.style.setProperty('--header-accent-color', colorScheme.accent);
-            // header.style.setProperty('--header-hover-color', colorScheme.hover);
-            // announcementBar.style.setProperty('--header-accent-color', colorScheme.accent);
-            // ticker.style.setProperty('--section-background-color', colorScheme.accent);
-					}, 0);
 				}
 			}
 		});

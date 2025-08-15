@@ -35,23 +35,8 @@
 							{%- assign product = all_products[b_sett.product] -%}
 							{%- assign product_image = product.featured_image -%}
 
-              {%- if forloop.first -%}
-                <style>
-                  #shopify-section-{{ section.id }} {
-                    --section-background-color: {{ product.metafields.custom.background_color }};
-                    --section-accent-color: {{ product.metafields.custom.accent_color }};
-                    --section-hover-color: {{ product.metafields.custom.hover_color }};
-                  }
-                </style>
-              {%- endif -%}
-
 							<div 
-                class="swiper-slide" 
-                data-slide-color='{
-                  "background": "{{ product.metafields.custom.background_color }}",
-                  "accent": "{{ product.metafields.custom.accent_color }}",
-                  "hover": "{{ product.metafields.custom.hover_color }}"
-                }'
+                class="swiper-slide"
               >
 								{%- if product_image != blank -%}
 									<a href="{{- product.url | within: collection -}}">
@@ -147,6 +132,12 @@
       "id": "accent_color",
       "label": "Accent Color",
       "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#dbaaeb"
     }
 	],
 	"blocks": [
