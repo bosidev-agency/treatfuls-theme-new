@@ -17,8 +17,7 @@
           "settings": {
             "collection": "produkte",
             "image": "shopify://shop_images/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
-            "collection_title": "Alle Produkte",
-            "color": "tertiary"
+            "collection_title": "Alle Produkte"
           }
         },
         "collection_item_njphjp": {
@@ -26,8 +25,7 @@
           "settings": {
             "collection": "riegel",
             "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
-            "collection_title": "Riegel",
-            "color": "tertiary"
+            "collection_title": "Riegel"
           }
         },
         "collection_item_BpgG7M": {
@@ -35,8 +33,7 @@
           "settings": {
             "collection": "love-bites-valentinstag",
             "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
-            "collection_title": "Sommerboxen",
-            "color": "tertiary"
+            "collection_title": "Sommerboxen"
           }
         },
         "collection_item_LLzRme": {
@@ -44,8 +41,7 @@
           "settings": {
             "collection": "nuss-aufstriche",
             "image": "shopify://shop_images/spreads-treatfuls.webp",
-            "collection_title": "Aufstriche",
-            "color": "tertiary"
+            "collection_title": "Aufstriche"
           }
         },
         "collection_item_zt4DCn": {
@@ -53,8 +49,7 @@
           "settings": {
             "collection": "balls",
             "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
-            "collection_title": "Balls",
-            "color": "tertiary"
+            "collection_title": "Balls"
           }
         },
         "collection_item_fnrKqm": {
@@ -63,8 +58,7 @@
           "settings": {
             "collection": "bundles",
             "image": "shopify://shop_images/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
-            "collection_title": "Boxen",
-            "color": "tertiary"
+            "collection_title": "Boxen"
           }
         }
       },

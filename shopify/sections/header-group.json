@@ -24,9 +24,7 @@
       "settings": {
         "main_linklist": "header-menu",
         "mobile_left_img": "shopify://shop_images/mobile-menu-img-left.png",
-        "mobile_right_img": "shopify://shop_images/mobile-menu-img-bottom.png",
-        "background_color": "#9977a5",
-        "accent_color": "#5359e5"
+        "mobile_right_img": "shopify://shop_images/mobile-menu-img-bottom.png"
       }
     }
   },
