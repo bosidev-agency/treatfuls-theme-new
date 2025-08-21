@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "header_background": "#1ba7a2",
+    "header_background": "#F3587F",
     "header_accent": "#dbaaeb",
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,

@@ -15,17 +15,17 @@
       "settings": {
         "desktop_image": "shopify://shop_images/treatfuls_backtoschool_banner_desktop_cf106ed9-a5c3-48fa-8b1d-48ab3cdde303.svg",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/treatfuls_backtoschool_banner_mobile.svg",
+        "mobile_image": "shopify://shop_images/heroSection_Back_to_scool__mobile.png",
         "mobile_image_height": "adapt",
         "vertical_alignment": "middle",
         "horizontal_alignment": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "✏️ back to School",
+        "title": "✏️ back to <span>School<span></span></span>",
         "text": "<p>Die coolste Schultüte seit es Pausen <br/>gibt: limited Edition im treatfuls-Design,<br/>gefüllt mit unseren leckeren, bio<br/>Snacks + <strong>buah</strong>-Trockenfrüchte und <strong>Stickerbogen</strong> zum <br/>Selbstgestalten natürlich, bunt<br/>und zum Anbeißen! ✨</p>",
         "button_label": "zur Schultüte",
-        "button_link": "shopify://collections/all",
-        "background_color": "#F3587F",
+        "button_link": "shopify://products/schultute-bio-vegan",
+        "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "show_base_triangular_line": true
@@ -166,7 +166,7 @@
         "title-second": "powered by  <span><span>plants </span></span><span><span>loved </span></span> by everyone",
         "title-third": "healthy <span><span>never </span></span><span><span></span>tasted </span> this naughty",
         "link_text": "Jetzt kaufen",
-        "background_color": "#F3587F",
+        "background_color": "#f3587f",
         "accent_color": "#2ac2bd",
         "hover_color": "#dbaaeb"
       }

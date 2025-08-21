@@ -71,31 +71,15 @@
     "logo_list_UihVAX": {
       "type": "logo-list",
       "blocks": {
-        "logo_image_FijQCQ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Faire_Logo-1.png",
-            "link": ""
-          }
-        },
-        "logo_image_gTNyVQ": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Ankorstore_idH7qXzUT-_1.png",
-            "link": ""
-          }
-        },
         "logo_image_b7weHh": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/aaa4017e-df8a-44fb-85d1-789c7e3f1fc8_Orderchamp_LOGO.avif",
+            "image": "shopify://shop_images/Faire_White_Logo.png",
             "link": ""
           }
         }
       },
       "block_order": [
-        "logo_image_FijQCQ",
-        "logo_image_gTNyVQ",
         "logo_image_b7weHh"
       ],
       "name": "Logo list",
