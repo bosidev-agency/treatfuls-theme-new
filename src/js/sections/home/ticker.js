@@ -29,7 +29,7 @@ register("ticker", {
 	},
 	tickersAnimation() {
 		const position = Math.round((window.scrollY / window.innerHeight) * 100);
-		const fromLeft = position - 180;
+		const fromLeft = position - 360;
 		const fromRight = position;
 		let isMobile = false;
 
