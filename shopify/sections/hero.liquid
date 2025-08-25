@@ -1,4 +1,12 @@
 <style>
+  {% if section.settings.hide_on_mobile %}
+    @media (max-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none;
+      }
+    }
+  {% endif %}
+
   #shopify-section-{{ section.id }} {
     {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
       --section-background-color: {{ section.settings.background_color }};
@@ -155,6 +163,16 @@
       ]
     },
     {
+      "type": "checkbox",
+      "id": "hide_on_mobile",
+      "label": "Hide on mobile",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Text settings"
+    },
+    {
       "type": "select",
       "id": "vertical_alignment",
       "label": "Alignment",
@@ -173,10 +191,6 @@
           "label": "Bottom"
         }
       ]
-    },
-    {
-      "type": "header",
-      "content": "Text settings"
     },
     {
       "type": "select",
