@@ -1,0 +1,101 @@
+{% assign desktop_slides_per_view = block.settings.slides_per_view_desktop %}
+{% assign mobile_slides_per_view = block.settings.slides_per_view_mobile %}
+
+{% if block.settings.show_next_slide %}
+  <script>
+    console.log('show_next_slide')
+  </script>
+  {% assign desktop_slides_per_view = desktop_slides_per_view | plus: 0.3 %}
+  {% assign mobile_slides_per_view = mobile_slides_per_view | plus: 0.3 %}
+{% endif %}
+
+<script>
+  console.log({{ desktop_slides_per_view }})
+  console.log({{ mobile_slides_per_view }})
+</script>
+
+{%- capture swiper_config -%}
+  {
+    "loop": {{ block.settings.loop }},
+    "slidesPerView": 1.2,
+    "breakpoints": {
+      "768": {
+        "slidesPerView": {% if block.settings.hide_desktop %}{{ block.blocks.size }}{% else %}{{ desktop_slides_per_view }}{% endif %}
+      }
+    },
+    "spaceBetween": {{ block.settings.gap }}
+  }
+{%- endcapture -%}
+
+<slider-element class="swiper" data-swiper-config='{{ swiper_config }}' {% if block.settings.hide_mobile %}data-only-mobile{% endif %}>
+  <div class="swiper-wrapper">
+    {% content_for 'blocks' %}
+  </div>
+</slider-element>
+
+{% schema %}
+{
+  "name": "Slider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_desktop",
+      "label": "Hide on desktop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_mobile",
+      "label": "Hide on mobile",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Slider settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Loop",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "slides_per_view_desktop",
+      "label": "Slides per view desktop",
+      "default": 1
+    },
+    {
+      "type": "number",
+      "id": "slides_per_view_mobile",
+      "label": "Slides per view mobile",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "show_next_slide",
+      "label": "Show next slide",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap",
+      "default": 20,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider"
+    }
+  ]
+}
+{% endschema %}
