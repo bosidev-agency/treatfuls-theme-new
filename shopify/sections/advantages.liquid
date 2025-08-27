@@ -1,4 +1,12 @@
 <style>
+  {% if section.settings.hide_on_mobile %}
+    @media (max-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        display: none;
+      }
+    }
+  {% endif %}
+
   #shopify-section-{{ section.id }} {
     {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
       --section-background-color: {{ section.settings.background_color }};
@@ -26,11 +34,7 @@
 						<div class="swiper-slide advantages__slide">
 							<div class="advantage-item">
 								{%- if image != blank -%}
-									<img class="advantage-item__img"
-											 src="{{- image | img_url: '100x' -}}"
-											 srcset="{{ image | img_url: '100x' }} 1x, {{ image | img_url: '200x' }} 2x, {{ image | img_url: '300x' }} 3x"
-											 alt="{{- text -}}"
-									>
+                  {{ image | image_url: width: 100 | image_tag: class: 'advantage-item__img' }}
 								{%- endif -%}
 								{%- if text != blank -%}
 									<h3 class="advantage-item__title">{{- text -}}</h3>
@@ -80,6 +84,12 @@
 {
 	"name": "Advantages",
 	"settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_on_mobile",
+      "label": "Hide on mobile",
+      "default": false
+    },
 		{
 			"type": "text",
 			"id": "title",

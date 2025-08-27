@@ -20,7 +20,7 @@
   }
 
   #shopify-section-{{ section.id }} .hero__content-text {
-    color: var(--color-text);
+    color: rgb(var(--color-text));
     {% if section.settings.max_width == 'fixed' %}
       max-width: {{ section.settings.max_width_px }}px;
     {% else %}
@@ -46,17 +46,24 @@
 {%- endif -%}
 
 <section
-	class="hero"
-	data-section-id="{{- section.id -}}"
-	data-section-type="hero"
+  class="hero"
+  data-section-id="{{- section.id -}}"
+  data-section-type="hero"
 >
   <div class="hero__content">
-    <div class="hero__content-image" style="--desktop-aspect-ratio: {{ aspect_ratio_desktop }}; --mobile-aspect-ratio: {{ aspect_ratio_mobile }}">
+    <div
+      class="hero__content-image"
+      style="--desktop-aspect-ratio: {{ aspect_ratio_desktop }}; --mobile-aspect-ratio: {{ aspect_ratio_mobile }}"
+    >
       {% if section.settings.desktop_image != blank %}
         {{ section.settings.desktop_image | image_url: width: 1000 | image_tag: class: 'hero__image hidden-phone' }}
       {% endif %}
       {% if section.settings.mobile_image != blank %}
-        {{ section.settings.mobile_image | image_url: width: 1000 | image_tag: class: 'hero__image hero__image--mobile hidden-desktop' }}
+        {{
+          section.settings.mobile_image
+          | image_url: width: 1000
+          | image_tag: class: 'hero__image hero__image--mobile hidden-desktop'
+        }}
       {% endif %}
     </div>
     <div class="hero__content-text hero__content-text--{{ section.settings.horizontal_alignment }} hero__content-text--{{ section.settings.vertical_alignment }}">
@@ -122,7 +129,7 @@
         {
           "label": "Extra Large",
           "value": "1.5/1"
-        },
+        }
       ]
     },
     {
@@ -159,7 +166,7 @@
         {
           "label": "Extra Large",
           "value": "1/2"
-        },
+        }
       ]
     },
     {
@@ -224,7 +231,7 @@
         {
           "label": "Fixed width",
           "value": "fixed"
-        },
+        }
       ]
     },
     {
