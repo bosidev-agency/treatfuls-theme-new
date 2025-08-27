@@ -17,6 +17,7 @@
         "desktop_image_height": "adapt",
         "mobile_image": "shopify://shop_images/heroSection_Back_to_scool__mobile.png",
         "mobile_image_height": "adapt",
+        "hide_on_mobile": false,
         "vertical_alignment": "middle",
         "horizontal_alignment": "center",
         "max_width": "100%",
@@ -268,7 +269,8 @@
         "advantage_item_f8LpM9"
       ],
       "settings": {
-        "title": "nicht noch so <br><span>ein Bio-Riegel…</span>",
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
