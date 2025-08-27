@@ -20,6 +20,10 @@
   }
 </style>
 
+{%- if product == blank -%}
+  {%- assign product = section.settings.product -%}
+{%- endif -%}
+
 {%- assign is_swiper = false-%}
 {%- assign grid_container_quantity =  section.settings.grid_container_quantity | plus: 0 -%}
 
@@ -192,6 +196,12 @@
 {
   "name": "Image Gallery Grid",
   "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "If you want to display a product in the image gallery, you can select it here. The product will be displayed in the image gallery as a button to add to cart."
+    },
     {
       "type": "text",
       "id": "heading",
