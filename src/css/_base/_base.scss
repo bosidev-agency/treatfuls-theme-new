@@ -296,7 +296,7 @@ tool-tip {
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
   transition: all 0.3s ease-in-out;
 
   &:hover,
@@ -311,11 +311,12 @@ tool-tip {
 }
 
 span {
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 a.button {
   text-decoration: none !important;
+  text-align: center;
 }
 
 .shopify-section:has(.page) {
@@ -335,7 +336,7 @@ a.button {
 }
 
 .heading {
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 .text--subdued {

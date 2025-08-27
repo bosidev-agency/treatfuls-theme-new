@@ -46,14 +46,14 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 .minicart__title {
   flex-grow: 1;
   font-weight: bold;
   text-align: left;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 
   @media #{$no-fw} {
     font-size: 3.2vw;
@@ -91,7 +91,7 @@
     display: flex;
     width: 32px;
     height: 2px;
-    background-color: var(--color-text);
+    background-color: rgb(var(--color-text));
   }
 
   &::before {
@@ -178,11 +178,11 @@
 
 .minicart-empty__title {
   margin-bottom: 15px;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 .minicart-empty__subtitle {
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 .minicart-empty__button {
@@ -195,7 +195,7 @@
   font-size: 120%;
   display: block;
   width: 100%;
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid rgb(var(--color-text));
   padding-bottom: 20px;
 }
 
@@ -238,7 +238,7 @@
   margin-right: auto;
   width: 100%;
   text-align: center;
-  color: var(--color-text)
+  color: rgb(var(--color-text));
 }
 
 .shipping-bar__text {
@@ -252,7 +252,7 @@
   margin-bottom: 6px;
   height: 7px;
   border-radius: 4px;
-  background-color: var(--color-text);
+  background-color: rgb(var(--color-text));
 
   &:after {
     position: absolute;

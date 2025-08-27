@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 
   .hero__content {
     display: flex;
@@ -26,11 +26,11 @@
       @media #{$no-fw} {
         max-width: 20vw;
       }
-    
+
       @media #{$m-xxl} {
         max-width: 278px;
       }
-    
+
       @media #{$m-l} {
         max-width: 203px;
       }
