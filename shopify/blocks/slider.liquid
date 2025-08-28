@@ -2,22 +2,14 @@
 {% assign mobile_slides_per_view = block.settings.slides_per_view_mobile %}
 
 {% if block.settings.show_next_slide %}
-  <script>
-    console.log('show_next_slide')
-  </script>
-  {% assign desktop_slides_per_view = desktop_slides_per_view | plus: 0.3 %}
-  {% assign mobile_slides_per_view = mobile_slides_per_view | plus: 0.3 %}
+  {% assign desktop_slides_per_view = desktop_slides_per_view | plus: 0.15 %}
+  {% assign mobile_slides_per_view = mobile_slides_per_view | plus: 0.15 %}
 {% endif %}
-
-<script>
-  console.log({{ desktop_slides_per_view }})
-  console.log({{ mobile_slides_per_view }})
-</script>
 
 {%- capture swiper_config -%}
   {
     "loop": {{ block.settings.loop }},
-    "slidesPerView": 1.2,
+    "slidesPerView": {{ mobile_slides_per_view }},
     "breakpoints": {
       "768": {
         "slidesPerView": {% if block.settings.hide_desktop %}{{ block.blocks.size }}{% else %}{{ desktop_slides_per_view }}{% endif %}
