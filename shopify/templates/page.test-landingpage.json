@@ -221,7 +221,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-banana-bread-energieballs-bio-vegan"
+                        "card_product": "20-x-banana-bread-energieballs-bio-vegan",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
                       },
                       "blocks": {}
                     }
@@ -239,7 +241,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-banana-bread-energieballs-bio-vegan"
+                        "card_product": "20-x-banana-bread-energieballs-bio-vegan",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
                       },
                       "blocks": {}
                     }
@@ -257,7 +261,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-banana-bread-energieballs-bio-vegan"
+                        "card_product": "20-x-banana-bread-energieballs-bio-vegan",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
                       },
                       "blocks": {}
                     }
@@ -275,7 +281,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-banana-bread-energieballs-bio-vegan"
+                        "card_product": "20-x-banana-bread-energieballs-bio-vegan",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
                       },
                       "blocks": {}
                     }
