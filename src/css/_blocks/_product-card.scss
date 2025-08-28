@@ -13,7 +13,7 @@
     }
   }
   .product-card__content {
-    background-color: var(--section-hover-color);
+    background-color: rgb(var(--product-card-background));
     padding: 100px 20px 20px 20px;
     border-radius: 10px;
     display: flex;
@@ -22,10 +22,6 @@
 
     @media #{$m-xl} {
       padding: 100px 10px 10px 10px;
-    }
-
-    .product-card__title {
-      color: rgb(var(--color-text));
     }
 
     .product-card__bullet-points {
