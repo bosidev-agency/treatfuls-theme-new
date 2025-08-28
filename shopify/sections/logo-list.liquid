@@ -10,6 +10,10 @@
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
   }
+
+  #shopify-section-{{ section.id }} .title-wrapper__subtitle {
+    font-size: {{ section.settings.font_size_adjustment }}%;
+  }
 </style>
 
 {% capture slider_config %}
@@ -37,7 +41,7 @@
           {%- endif -%}
   
           {%- if section.settings.subtitle != blank -%}
-            <div class="title-wrapper__subtitle rte text--strong text--underline">{{ section.settings.subtitle }}</div>
+            <div class="title-wrapper__subtitle rte">{{ section.settings.subtitle }}</div>
           {%- endif -%}
         {% endif %}
       </div>
@@ -81,6 +85,15 @@
       "id": "subtitle",
       "label": "Subheading",
       "default": "<p>Subheading</p>"
+    },
+    {
+      "type": "range",
+      "id": "font_size_adjustment",
+      "label": "Font size adjustment",
+      "default": 100,
+      "min": 50,
+      "max": 200,
+      "step": 5
     },
     {
       "type": "header",
