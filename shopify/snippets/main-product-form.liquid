@@ -1,12 +1,11 @@
 {%- comment -%}
-	@params
-	product - product object *required
+  @params
+  product - product object *required
 {%- endcomment -%}
-
 {%- if product != blank -%}
-	{%- assign current_variant = product.selected_or_first_available_variant -%}
+  {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-	{%- capture no_script -%}
+  {%- capture no_script -%}
 		<select
 			name="id"
 			class="no-js visually-hidden"
@@ -25,7 +24,7 @@
 		</select>
 	{%- endcapture -%}
 
-	{%- capture price -%}
+  {%- capture price -%}
 		<span class="product-form__meta-price h3" data-price-wrapper>
 			{%- unless product.compare_at_price_max > product.price -%}
 				{% assign hidden_class = 'hide' %}
@@ -58,7 +57,7 @@
 		</span>
 	{%- endcapture -%}
 
-	{%- capture product_quantity -%}
+  {%- capture product_quantity -%}
 		<div class="quantity-element {% unless current_variant.available %}visually-hidden{% endunless %}" data-quantity="wrapper">
 			<button
 				type="button"
@@ -92,16 +91,22 @@
 		</div>
 	{%- endcapture -%}
 
-	{%- capture form_submit -%}
-		{%- if current_variant.available == true and current_variant.inventory_quantity <= 0 -%}
-			<input id="presale" required="true" label="presale" type="checkbox" name="presale" oninvalid="this.setCustomValidity('Hey, Click mich um vorzubestellen')" onchange="this.setCustomValidity('')"/>
-            <label for="presale" class="product-info__description text">ich bin mir sicher, dass ich vorbestellen möchte und bin bereit 3-4 Wochen auf meine leckeren Treats zu warten 🤩🌱🍫📦</label>
-            <br/><br/>
-		{%- endif -%}
+  {%- capture form_submit -%}
+    {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
+      <span class="product-info__shipping">
+        {{ "products.pre_order.shipping_info" | t: date: product.metafields.custom.preorder_date }}
+      </span>
+
+      <input type="hidden" id="PreorderNote" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+      <input type="hidden" id="PreorderShipping" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
+    {%- endif -%}
 		<button
 			class="button product-form__button"
 			type="submit"
 			name="add"
+      {% unless current_variant.available %}
+        disabled
+      {% endunless %}
 			data-submit-button
 		>
 			<span
@@ -109,7 +114,11 @@
 				data-submit-button-text
 			>
 				{%- if current_variant.available == true -%}
-					{{ "products.product.add_to_cart" | t }}
+          {% if product.metafields.custom.preorder_date != blank %}
+            {{ "products.pre_order.pre_order_atc" | t }}
+          {% else %}
+            {{ "products.product.add_to_cart" | t }}
+          {% endif %}
 				{%- else -%}
 					{{ "products.product.sold_out" | t }}
 				{%- endif -%}
@@ -117,24 +126,24 @@
 		</button>
 	{%- endcapture -%}
 
-	{%- form 'product', product,
-		class: 'product-form',
-		data-product-form: '',
-		data-product-handle: product.handle,
-		data-enable-history-state: 'true',
-		data-productid: product.id
-	-%}
+  {%- form 'product',
+    product,
+    class: 'product-form',
+    data-product-form: '',
+    data-product-handle: product.handle,
+    data-enable-history-state: 'true',
+    data-productid: product.id
+  -%}
+    {{- no_script -}}
 
-		{{- no_script -}}
+    <div class="product-form__footer">
+      <div class="product-form__quantity-wrapper">
+        {{- product_quantity -}}
+      </div>
 
-		<div class="product-form__footer">
-			<div class="product-form__quantity-wrapper">
-				{{- product_quantity -}}
-			</div>
+      {{- price -}}
+    </div>
 
-			{{- price -}}
-		</div>
-
-		{{- form_submit -}}
-	{%- endform -%}
+    {{- form_submit -}}
+  {%- endform -%}
 {%- endif -%}

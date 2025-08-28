@@ -60,11 +60,6 @@
       -%}
         {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-        {%- if product.metafields.custom.preorder_date != blank -%}
-          <input type="hidden" id="test1" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
-          <input type="hidden" id="test2" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
-        {%- endif -%}
-
         <select
           name="id"
           class="no-js visually-hidden"
@@ -126,10 +121,13 @@
                   </div>
                 {%- endif -%}
 
-                {%- if current_variant.available == true and current_variant.inventory_quantity <= 0 -%}
-                  <input id="presale" required="true" label="presale" type="checkbox" name="presale" oninvalid="this.setCustomValidity('Hey, Click mich um vorzubestellen')" onchange="this.setCustomValidity('')"/>
-                  <label for="presale" class="product-info__description text">ich bin mir sicher, dass ich vorbestellen möchte und bin bereit 3-4 Wochen auf meine leckeren Treats zu warten 🤩🌱🍫📦</label>
-                  <br/><br/>
+                {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
+                  <span class="product-info__shipping">
+                    {{ "products.pre_order.shipping_info" | t: date: product.metafields.custom.preorder_date }}
+                  </span>
+            
+                  <input type="hidden" id="PreorderNote" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+                  <input type="hidden" id="PreorderShipping" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
                 {%- endif -%}
 
                 <div class="product-form__button-wrapper">
@@ -175,7 +173,11 @@
                       data-submit-button-text
                     >
                       {%- if current_variant.available == true -%}
-                        {% if product.metafields.custom.preorder_date != blank %}{{ "products.pre_order.pre_order_atc" | t }}{% else %}{{ "products.product.add_to_cart" | t }}{% endif %}
+                        {% if product.metafields.custom.preorder_date != blank %}
+                          {{ "products.pre_order.pre_order_atc" | t }}
+                        {% else %}
+                          {{ "products.product.add_to_cart" | t }}
+                        {% endif %}
                       {%- else -%}
                         {{ "products.product.sold_out" | t }}
                       {%- endif -%}

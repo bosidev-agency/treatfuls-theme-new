@@ -264,6 +264,7 @@ register("product-page", {
 	},
 
 	renderSubmitButton(variant) {
+    console.log('was geht ab')
 		let buttonText = "";
 		if (!this.submitButtonElement) {
 			return;

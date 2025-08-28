@@ -429,7 +429,8 @@
       "note": "Note",
       "shipping": "Shipping",
       "pre_order": "Preorder",
-      "pre_order_atc": "Preorder now"
+      "pre_order_atc": "Preorder now",
+      "shipping_info": "Shipping date of preorder: {{ date }}"
     }
   },
   "store_availability": {
