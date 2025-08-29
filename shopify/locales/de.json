@@ -432,7 +432,8 @@
       "note": "Hinweis",
       "shipping": "Lieferzeit",
       "pre_order": "Vorbestellung",
-      "pre_order_atc": "Jetzt vorbestellen"
+      "pre_order_atc": "Jetzt vorbestellen",
+      "shipping_info": "Lieferzeit der Vorbestellung: {{ date }}"
     }
   },
   "gift_cards": {
