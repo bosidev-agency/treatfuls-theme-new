@@ -79,7 +79,8 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  transform: translateY(-20%);
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
   transition-property: opacity;
   transition-duration: 0.3s;
@@ -225,6 +226,7 @@
 
   .minicart__close {
     right: 7px;
+    top: 10px;
   }
 }
 
@@ -238,7 +240,7 @@
   margin-right: auto;
   width: 100%;
   text-align: center;
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
 .shipping-bar__text {

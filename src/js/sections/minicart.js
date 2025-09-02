@@ -1,5 +1,3 @@
-import * as bodyScrollLock from "body-scroll-lock";
-
 class MiniCart extends HTMLElement {
   constructor() {
     super();
@@ -51,26 +49,15 @@ class MiniCart extends HTMLElement {
 
   closeCart(e) {
     if (e) e.preventDefault();
-    this.clearBodyScroll();
     this.container.classList.remove("minicart__container--open");
     this.overlay.classList.remove("minicart__overlay--shown");
+    document.documentElement.classList.remove("no-scroll");
   }
 
   openCart() {
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      this.bodyScroll();
-    }
     this.container.classList.add("minicart__container--open");
     this.overlay.classList.add("minicart__overlay--shown");
-  }
-
-  clearBodyScroll() {
-    bodyScrollLock.clearAllBodyScrollLocks();
-    this.querySelector(".js-minicart-items").scrollTo(0, 0);
-  }
-
-  bodyScroll() {
-    bodyScrollLock.disableBodyScroll(this.querySelector(".js-minicart-items"));
+    document.documentElement.classList.add("no-scroll");
   }
 }
 

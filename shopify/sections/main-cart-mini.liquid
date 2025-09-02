@@ -60,7 +60,8 @@
               <h3 class="minicart__title title-bg">
                 <span>{{ 'cart.general.title' | t }}</span>
               </h3>
-              <div class="minicart__close"></div>
+              <button class="minicart__close">
+              </button>
             </div>
             {%- if settings.cart_show_free_shipping_threshold and settings.cart_free_shipping_threshold != '' -%}
               {%- assign free_shipping_thresholds = settings.cart_free_shipping_threshold | remove: ' ' | split: ',' -%}
