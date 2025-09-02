@@ -37,6 +37,8 @@ class CartUpsell extends HTMLElement {
     this.atcForms.forEach((form) => {
       form.addEventListener("submit", this.handleSubmit);
     });
+
+    this.initSlider();
   }
 
   disconnectedCallback() {
