@@ -44,9 +44,31 @@
                         />
                       </picture>
                     </a>
-                    <button type="button" class="cart-upsell__button button" data-item-key="{{ product.variants[0].id }}">
-                      +
-                    </button>
+                    {% form 'product', product %}
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                      <input type="hidden" name="quantity" value="1">
+
+                      {%- if product.metafields.custom.preorder_date != blank -%}       
+                        <input
+                          type="hidden"
+                          id="PreorderNote"
+                          name="properties[{{ 'products.pre_order.note' | t }}]"
+                          value="{{ 'products.pre_order.pre_order' | t }}"
+                          data-product-property
+                        >
+                        <input
+                          type="hidden"
+                          id="PreorderShipping"
+                          name="properties[{{ 'products.pre_order.shipping' | t }}]"
+                          value="{{ product.metafields.custom.preorder_date }}"
+                          data-product-property
+                        >
+                      {%- endif -%}
+
+                      <button type="submit" class="cart-upsell__button button">
+                        +
+                      </button>
+                    {% endform %}
                   </div>
                   
                   <div class="cart-upsell__content-wrapper">

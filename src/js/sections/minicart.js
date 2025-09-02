@@ -3,126 +3,50 @@ import * as bodyScrollLock from "body-scroll-lock";
 class MiniCart extends HTMLElement {
   constructor() {
     super();
-    this.isOpened = false;
+  }
+
+  connectedCallback() {
     this.cartCountContainer = document.querySelector(".js-header-cat-items");
-    this.basketIcon = document.querySelector(".basket");
-    this.sectionId = "main-cart-mini";
-    this.height = window.innerHeight;
-    this.overlay = this.querySelector(".minicart__overlay");
-    this.container = this.querySelector(".minicart__container");
+    this.container = document.querySelector(".minicart__container");
+    this.overlay = document.querySelector(".minicart__overlay");
+    this.openTrigger = document.querySelector("[data-open-minicart]");
     this.closeButton = this.querySelector(".minicart__close");
     this.continueShoppingButton = this.querySelector(".cart-order__link");
-    // Bind methods to class instance
+
     this.closeCart = this.closeCart.bind(this);
     this.openCart = this.openCart.bind(this);
     this.updateMiniCartSection = this.updateMiniCartSection.bind(this);
-    this.onProductAdd = this.onProductAdd.bind(this); // Ensure this method is bound to the class instance
-    this.listenersAdded = false; // Flag to track if listeners have been added
-  }
 
-  // Lifecycle callback when the element is added to the document
-  connectedCallback() {
-    this.addListeners();
+    this.openTrigger.addEventListener("click", this.openCart);
+    this.closeButton.addEventListener("click", this.closeCart);
+    this.overlay.addEventListener("click", this.closeCart);
+    document.addEventListener("cart:rerender", this.updateMiniCartSection);
   }
 
   // Lifecycle callback when the element is removed from the document
   disconnectedCallback() {
-    this.removeListeners();
-  }
-
-  async onProductAdd(event) {
-    const detail = event.detail;
-
-    if (!detail) {
-      return null;
-    }
-
-    const items = detail.items;
-    if (!items) {
-      return null;
-    }
-
-    let formData = {
-      items: [],
-    };
-
-    const totalQuantity = items.reduce((accumulator, item) => {
-      return accumulator + parseInt(item.quantity);
-    }, 0); // starting value for the accumulator is 0
-
-    items.forEach((item) => {
-      let formattedItem = {
-        id: item.id,
-        quantity: parseInt(item.quantity),
-        properties: item.properties
-      };
-
-      formData.items.push(formattedItem);
-    });
-
-    fetch(window.Shopify.routes.root + "cart/add.js", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        this.updateMiniCartSection(totalQuantity);
-      })
-      .catch((error) => {
-        console.error("Error adding item to cart:", error);
-      });
-  }
-
-  addListeners() {
-    if (this.listenersAdded) return; // Check if listeners have already been added
-    document.addEventListener("product:add", this.onProductAdd);
-    this.overlay.addEventListener("click", this.closeCart);
-    this.closeButton.addEventListener("click", this.closeCart);
-    if (this.continueShoppingButton) {
-      this.continueShoppingButton.addEventListener("click", this.closeCart);
-    }
-    this.basketIcon.addEventListener("click", this.openCart);
-    this.listenersAdded = true; // Set flag to true
-  }
-
-  removeListeners() {
-    document.removeEventListener("product:add", this.onProductAdd);
-    this.overlay.removeEventListener("click", this.closeCart);
+    this.openTrigger.removeEventListener("click", this.openCart);
     this.closeButton.removeEventListener("click", this.closeCart);
-    if (this.continueShoppingButton) {
-      this.continueShoppingButton.removeEventListener("click", this.closeCart);
-    }
-    this.basketIcon.removeEventListener("click", this.openCart);
-    this.listenersAdded = false; // Reset flag when listeners are removed
+    this.overlay.removeEventListener("click", this.closeCart);
+    document.removeEventListener("cart:rerender", this.updateMiniCartSection);
   }
 
-  updateMiniCartSection(totalQuantity) {
-    fetch(`${window.location.pathname}?sections=${this.sectionId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        const newHtml = data[this.sectionId];
-        const newSection = document.querySelector(
-          `#shopify-section-${this.sectionId}`
-        );
-        newSection.outerHTML = newHtml;
-      })
-      .then(() => {
-        this.overlay = document.querySelector(".minicart__overlay");
-        this.container = document.querySelector(".minicart__container");
-        this.updateCartCount(totalQuantity);
-        this.openCart();
-      })
-      .catch((error) =>
-        console.error("Error updating mini-cart section:", error)
-      );
-  }
+  updateMiniCartSection(event) {
+    const tempDiv = document.createElement("div");
+    const tempCarCount = document.createElement("div");
 
-  updateCartCount(totalQuantity) {
+    tempDiv.innerHTML = event.detail.sections["main-cart-mini"];
+    tempCarCount.innerHTML = event.detail.sections["cart-count"];
+
+    this.container.innerHTML = tempDiv.querySelector(
+      ".minicart__container"
+    ).innerHTML;
     this.cartCountContainer.innerHTML =
-      Number(this.cartCountContainer.innerHTML) + totalQuantity;
+      tempCarCount.querySelector(".basket__count").innerHTML;
+
+    if (!this.container.classList.contains("minicart__container--open")) {
+      this.openCart();
+    }
   }
 
   closeCart(e) {

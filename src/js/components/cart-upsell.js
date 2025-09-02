@@ -22,35 +22,49 @@ class CartUpsell extends HTMLElement {
   constructor() {
     super();
     this.slider = null;
-    this.atcButtons = Array.from(document.querySelectorAll(".cart-upsell__button"));
+  }
+
+  connectedCallback() {
+    this.atcForms = Array.from(
+      document.querySelectorAll("form[action='/cart/add']")
+    );
     this.sliderElement = this.querySelector("[data-upsell-slider]");
     this.cartCountContainer = document.querySelector(".js-header-cat-items");
     this.sectionId = this.closest("section").dataset.sectionId;
-    this.listenersAdded = false; // Flag to track if listeners have been added
-    this.init();
-  }
 
-  init() {
-    this.addListeners();
-    this.initSlider();
-  }
+    this.handleSubmit = this.handleSubmit.bind(this);
 
-  addListeners() {
-    if (this.listenersAdded) return; // Check if listeners have already been added
-    this.atcButtons.forEach((button) => {
-      const itemKey = button.dataset.itemKey;
-      button.addEventListener("click", () => {
-        this.addItem({
-          id: itemKey,
-          quantity: 1,
-        });
-      });
+    this.atcForms.forEach((form) => {
+      form.addEventListener("submit", this.handleSubmit);
     });
-    this.listenersAdded = true; // Set flag to true
   }
 
-  removeListeners() {
-    this.listenersAdded = false; // Reset flag when listeners are removed
+  disconnectedCallback() {
+    this.atcForms.forEach((form) => {
+      form.removeEventListener("submit", this.handleSubmit);
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("sections", "main-cart-mini,cart-count");
+
+    fetch(`${window.Shopify.routes.root}cart/add.js`, {
+      body: formData,
+      method: "POST",
+      headers: { "X-Requested-With": "XMLHttpRequest" },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        document.dispatchEvent(new CustomEvent("cart:rerender", {
+          detail: data,
+          bubbles: true,
+        }));
+      })
+      .catch((error) =>
+        console.error("Error updating mini-cart section:", error)
+      );
   }
 
   initSlider() {
@@ -63,45 +77,6 @@ class CartUpsell extends HTMLElement {
       spaceBetween: 30,
       slidesPerView: slidesPerViewCount,
     });
-  }
-
-  addItem(newItem) {
-    axios
-      .post(URL.add, qs.stringify(newItem), configHeader)
-      .then((res) => res.data)
-      .then((res) => {
-        this.updateMiniCartSection();
-        this.updateCartCount(newItem.quantity);
-      });
-  }
-
-  updateMiniCartSection() {
-    fetch(`${window.location.pathname}?sections=${this.sectionId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        let newHtml = data[this.sectionId];
-        const newSection = document.querySelector(
-          `#shopify-section-${this.sectionId}`
-        );
-        newHtml = newHtml
-          .replace(
-            "minicart__overlay ",
-            "minicart__overlay minicart__overlay--shown"
-          )
-          .replace(
-            "minicart__container ",
-            "minicart__container minicart__container--open"
-          );
-        newSection.outerHTML = newHtml;
-      })
-      .catch((error) =>
-        console.error("Error updating mini-cart section:", error)
-      );
-  }
-
-  updateCartCount(totalQuantity) {
-    this.cartCountContainer.innerHTML =
-      Number(this.cartCountContainer.innerHTML) + totalQuantity;
   }
 }
 
