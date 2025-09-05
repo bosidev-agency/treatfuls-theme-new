@@ -113,9 +113,9 @@
     "video_iTDPK9": {
       "type": "video",
       "settings": {
-        "video": "shopify://files/videos/adventskalender aufbau treatmas.mp4",
-        "video_mobile": "shopify://files/videos/treatmas_mobile video29.mp4",
-        "background_color": "#aa3e59",
+        "video": "shopify://files/videos/AK_2025_DT_NEW_WHITE.mov",
+        "video_mobile": "shopify://files/videos/AK_2025_mobile_NEW.MOV",
+        "background_color": "#590212",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -206,8 +206,8 @@
         "heading": "vegan und natürlich, so viel süßer als deine Weihnachts-erinnerungen🎄",
         "show_atc_button": true,
         "grid_container_quantity": "1",
-        "background_color": "#aa3e59",
-        "accent_color": "#275c63",
+        "background_color": "#590212",
+        "accent_color": "#e4a9bd",
         "hover_color": "#f3587f",
         "popup_background_color": "#f3587f",
         "popup_text_color": "#aa3e59"
@@ -254,8 +254,8 @@
       "settings": {
         "title": "Was macht unseren Kalender besonders",
         "subtitle": "",
-        "background_color": "#275c63",
-        "accent_color": "#aa3e59",
+        "background_color": "#e4a9bd",
+        "accent_color": "#e4a9bd",
         "hover_color": "#f3587f"
       }
     },
@@ -417,7 +417,7 @@
       "type": "about-us",
       "settings": {
         "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls</span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱</span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies</span>, die die Snack <span class=\"emoji\">🍫</span> Industrie revolutionieren <span class=\"emoji\">💪</span> wollen.",
-        "background_color": "#275c63",
+        "background_color": "#e4a9bd",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
       }
