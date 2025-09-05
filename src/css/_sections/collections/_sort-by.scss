@@ -253,7 +253,7 @@ input[checked="checked"] + .popover__choice-label {
 
 .popover__overlay {
   bottom: calc(100% - 10px);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   content: "";
   height: 100vh;
   left: 0;

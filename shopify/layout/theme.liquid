@@ -125,7 +125,8 @@
 		{%- if template.directory == 'customers' -%}
 			<script src="{{- 'shopify_common.js' | shopify_asset_url -}}" defer></script>
 		{%- endif -%}
-	    {%- section 'global-newsletter-popup' -%}
+    {%- section 'global-newsletter-popup' -%}
+	  {%- section 'klaviyo-popups' -%}
         {% include "bc_banner" %}
 </body>
 </html>
