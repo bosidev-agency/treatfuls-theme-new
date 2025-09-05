@@ -17,6 +17,7 @@
         "desktop_image_height": "adapt",
         "mobile_image": "shopify://shop_images/heroSection_Back_to_scool__mobile.png",
         "mobile_image_height": "adapt",
+        "hide_on_mobile": false,
         "vertical_alignment": "middle",
         "horizontal_alignment": "center",
         "max_width": "100%",
@@ -164,7 +165,7 @@
       "settings": {
         "title": "This is what <span><span>guiltfree</span></span><span><span></span></span> looks like",
         "title-second": "powered by  <span><span>plants </span></span><span><span>loved </span></span> by everyone",
-        "title-third": "healthy <span><span>never </span></span><span><span></span>tasted </span> this naughty",
+        "title-third": "healthy <span><span>never </span></span><span><span></span> tasted </span> this naughty",
         "link_text": "Jetzt kaufen",
         "background_color": "#f3587f",
         "accent_color": "#2ac2bd",

@@ -88,7 +88,6 @@
         },
         "buy_button_MxK7PU": {
           "type": "buy_button",
-          "disabled": true,
           "settings": {
             "show_quantity_selector": true,
             "show_price": true
@@ -127,7 +126,7 @@
         "image_E7xyiR": {
           "type": "image",
           "settings": {
-            "video": "shopify://files/videos/door_13).mp4",
+            "image": "shopify://shop_images/treatfuls_adventskalender_teaser.webp",
             "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 55,
             "content_position_x": 25,
