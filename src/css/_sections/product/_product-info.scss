@@ -59,6 +59,10 @@
 
 .product-info__shipping {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 20px;
+
+  @media #{$m-xl} {
+    font-size: 12px;
+  }
 }
