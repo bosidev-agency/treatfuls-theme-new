@@ -100,8 +100,8 @@
         "buy_button_MxK7PU"
       ],
       "settings": {
-        "heading": "mein treatfuls Adventskalender",
-        "mobile_heading": "mein treatfuls Adventskalender",
+        "heading": "Santa, Baby… I got snacks",
+        "mobile_heading": "Santa, Baby… I got snacks",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -115,7 +115,7 @@
       "settings": {
         "video": "shopify://files/videos/AK_2025_DT_NEW_WHITE.mov",
         "video_mobile": "shopify://files/videos/AK_2025_mobile_NEW.MOV",
-        "background_color": "#590212",
+        "background_color": "#823546",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -126,7 +126,7 @@
         "image_E7xyiR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_teaser.webp",
+            "image": "shopify://shop_images/Hoch1_Kopie.jpg",
             "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -144,7 +144,7 @@
         "image_CHXcKq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Bildschirmfoto_2024-11-29_um_18.55.25.png",
+            "image": "shopify://shop_images/Quer3_Kopie_2.webp",
             "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -162,7 +162,7 @@
         "image_ELrtHw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Bildschirmfoto_2024-11-29_um_18.53.07.png",
+            "image": "shopify://shop_images/Quer1_Kopie.webp",
             "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -180,7 +180,7 @@
         "image_q7LijX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_7.webp",
+            "image": "shopify://shop_images/Hoch2_Kopie.webp",
             "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -206,10 +206,10 @@
         "heading": "vegan und natürlich, so viel süßer als deine Weihnachts-erinnerungen🎄",
         "show_atc_button": true,
         "grid_container_quantity": "1",
-        "background_color": "#590212",
-        "accent_color": "#e4a9bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "#f3587f",
+        "background_color": "#823546",
+        "accent_color": "#cc7dab",
+        "hover_color": "#e25478",
+        "popup_background_color": "#e25478",
         "popup_text_color": "#aa3e59"
       }
     },
@@ -254,7 +254,7 @@
       "settings": {
         "title": "Was macht unseren Kalender besonders",
         "subtitle": "",
-        "background_color": "#e4a9bd",
+        "background_color": "#cc7dab",
         "accent_color": "#e4a9bd",
         "hover_color": "#f3587f"
       }
@@ -275,7 +275,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Wann wird der Adventskalender versendet?",
-            "content": "🚚 Anfang/Mitte November flitzt dein treatfuls Kalender direkt zu dir – perfekt getimt, damit du pünktlich am 1. Dezember losnaschen kannst!",
+            "content": "🚚 Ende Oktober/ Anfang November flitzt dein treatfuls Kalender direkt zu dir – perfekt getimt, damit du pünktlich am 1. Dezember losnaschen kannst!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -284,7 +284,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Kann ich meine Bestellung später noch stornieren?",
-            "content": "❌ Ja, aber nur bevor der Kalender gepackt wird! Danach sind die Treats bereit für die Reise – und eine Rückkehr gibt's nicht mehr.",
+            "content": "❌ Ja, aber nur bevor der Kalender gepackt wird! Danach sind die treats bereit für die Reise – und eine Rückkehr gibt's nicht mehr.",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -311,7 +311,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Sind die Produkte im Adventskalender glutenfrei, ohne raffinierten Zucker und bio?",
-            "content": "🌿 Aber natürlich! Alles in unserem Kalender ist 100% glutenfrei, bio und kommt ganz ohne raffinierten Zucker aus. Das heißt: Naschen mit gutem Gewissen – ganz im treatfuls-Style!",
+            "content": "🌿 Aber natürlich! All unsere Rezepturen sind glutenfrei, bio und kommt ganz ohne raffinierten Zucker aus. Das heißt: Naschen mit gutem Gewissen – ganz im treatfuls-Style!",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -320,7 +320,7 @@
           "type": "faq_item",
           "settings": {
             "title": "Was ist das Besondere am treatfuls Adventskalender?",
-            "content": "✨ Neu, frech, unwiderstehlich! Er ist unser allererster Adventskalender, vollgepackt mit brandneuen Sorten, limitierter Zotter-Schokolade, einer Überraschung, die nicht essbar ist, und einem Gutschein zwischen 15 und 100 Euro! Plus: Alle Produkte sind in Originalgröße – kein Mini-Kram!",
+            "content": "Unser Adventskalender ist zurück und dieses Jahr steckt noch mehr Magie drin: \n9 komplett neue Produkte, die noch niemand probiert hat, dazu 4 exklusive Überraschungen, die es nur im Kalender gibt. Obendrauf wartet eine geheime Co-Creation, die in Zusammenarbeit entstanden ist, und ein Special, das nicht zum Naschen gedacht ist – aber mindestens genauso treatfuls. Und weil wir Vorfreude großschreiben, gibt’s natürlich alles in Originalgröße. Kein Mini-Kram, nur volle Portion Glück.",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -354,9 +354,10 @@
         },
         "faq_item_KXXnVi": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "title": "Was kostet der Adventskalender und wie hoch ist der Wert der enthaltenen Produkte?",
-            "content": "💸 Der Kalender kostet 119,99 und hat einen Wert von über 130 Euro. Und das für volle 24 Tage pure treatfuls Freude!",
+            "content": "",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -387,6 +388,15 @@
             "show_ingredients": false,
             "show_nutrition": false
           }
+        },
+        "faq_item_cmNXLk": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Was ist im Adventkalender enthalten?",
+            "content": "Dattelpaste, weißer kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Haselnuss-Füllung (15%) (Haselnuss (42%), Dattelpulver, Cashewmus, Kakaobutter), glutenfreies Hafermehl, Haselnuss (8,4%), Dattelsirup, Mandelmus, Tapiokafaser, Chai-Gewürzmischung (1,45%) (Zimt, Ingwerpulver, Kardamom, Muskatnuss, Nelkenpulver, Korianderpulver, Piment), Kakaobutter, Meersalz, Vanilleextrakt. Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver) , Cashew-Matcha-Füllung (15%) [Cashewmus (60%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, Matchapulver (3%)], glutenfreies Hafermehl, Mandeln, Dattelsirup, Tapiokafaser, Mandelmus, Meersalz, Vanilleextrakt.(KAKAO: 60% MINDESTENS IN DER SCHOKOLADENKUVERTURE). (2X20G). \nZutaten: Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Trocken lagern und vor Wärme schützen.(KAKAO: 60% MINDESTENS IN DER SCHOKOLADENKUVERTURE). (2X20G). \nZutaten: Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Bio-Haselnuss-Bananen-Snackkugeln mit Haselnuss-Kakao Füllung (2x17). Zutaten: Dattel*, Hafermehl* (glutenfrei), Dattelsirup* (100% Dattel), geröstete Haselnuss (9,2%)*, gefriergetrocknete Bananen (6,2%)*, Haselnussmus (5,3%)*, Cashewmus*, Kakao* (gemahlen), Zimt*, Datteln*(gemahlen), Muskatnuss*, Salz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Bio-Haselnuss-Karotten-Snackkugeln mit Mandel-Zimt Füllung (2x17). Zutaten: Dattel*, Hafermehl* (glutenfrei), geröstete Haselnuss (9%)*, getrocknete Karotten (7,5%)*, Cashewmus*, Dattelsirup* (Dattel, Wasser), Mandelmus (2,5%)*, Zimt (0,9%)*, Muskatnuss*, Salz, Vanille*, Zitronen Öl*, Orange*. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. BIO-ERDNUSS-HAFER-RIEGEL MIT DUNKLER SCHOKOLADEN-KUVERTÜRE (Kakao: 75% mindestens, in der Schokoladen-Kuvertüre). MIT SÜßUNGSMITTEL. (2 x 20g). Zutaten: Dattel*, geröstete Erdnuss* (31%), Dattelsirup*, dunkle Schokoladenkuvertüre* (9%) [Kakaomasse*,**, Süßungsmittel: Erythrit*, Kakaobutter*,**], Hafermehl* (glutenfrei) (8%), Meersalz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Bio-Haselnuss-Cashewkerne-Riegel mit dunkler Schokoladen-Kuvertüre (mit einem Kakaoanteil von mindestens 75%). mit Süßungsmittel. (2 x 20g). ZUTATEN: Dattel*, HASELNUSS* (18%), Hafermehl (glutenfrei), dunkle Schokoladenkuvertüre* (9%) [Kakaobutter*,**, Süßungsmittel: Erythrit*, Kakaobutter*,**], geröstete CASHEWKERNE* (8%), Mandel*, Kakao gemahlen*,**, Meersalz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Erdnüssen, Schalenfrüchten, Nussschalen, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Trocken lagern und vor Wärme schützen *aus kontrolliert biologischem Anbau. **aus fairem Handel Verpackung recyclebar Bio-Haselnuss-Snackkugeln mit Haselnuss-Cashewkerne Füllung (2x17). Zutaten: Dattel*, Hafermehl* (glutenfrei), geröstete Haselnuss (14%)*, geröstete Cashewkerne (10%)*, Haselnussmus (5,6%)*, Dattelsirup* (Dattel, Wasser), Cashewmus(3,6%)*, Kakao Butter*, Salz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Bio-Haselnuss-Cashewkerne-Riegel mit weißem Reis-Kokos-Überzug. mit Süßungsmittel. (2 x 20g). ZUTATEN: Dattel*, HASELNUSS* (18%), Hafermehl (glutenfrei), Reis-Kokos-Überzug* (9%): [Kakaobutter*,**, Reisdrinkpulver*(Reis*, Sonnenblumenöl*), Kokosnussmilchpulver*, Süßungsmittel: Erythrit*, Orangenpulver* (Orangensaftkonzentrat*, Reismehl*)], geröstete CASHEWKERNE* (8%), Mandel*, Meersalz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Erdnüssen, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Trocken lagern und vor Wärme schützen. *aus kontrolliert biologischem Anbau. **aus fairem Handel Verpackung recyclebar BIO-ERDNUSS-HAFER-RIEGEL MIT WEIßEM REIS-KOKOS ÜBERZUG. MIT SÜßUNGSMITTEL. (2 x 20g). Zutaten: Dattelpaste*, geröstete Erdnuss* (29%), Reis-Kokos Überzug* (13%) [Kakaobutter*,**, Reisdrinkpulver (Reis*, Sonnenblumenöl*), Kokosnusspulver, Orangenpulver*(Orangen*, Reismehl*),Süßungsmittel: Erythrit*], Dattelkonzentrat*(100% Datteln)*, Hafermehl*(glutenfrei) (7%), Meersalz, Vanille*. Kann Spuren",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
         }
       },
       "block_order": [
@@ -403,7 +413,8 @@
         "faq_item_KXXnVi",
         "faq_item_79W7iH",
         "faq_item_iDnQkE",
-        "faq_item_MXXPVk"
+        "faq_item_MXXPVk",
+        "faq_item_cmNXLk"
       ],
       "settings": {
         "title": "Du hast Fragen?  Hier sind die Antworten!",
@@ -417,7 +428,7 @@
       "type": "about-us",
       "settings": {
         "title": "Hey, wir sind <span data-tooltip=\"1\">treatfuls</span> eine unglaublich leckere und vegane <span class=\"emoji\">🌱</span> Snack-Company aus Düsseldorf. Wir, das sind zwei leidenschaftliche <span data-tooltip=\"2\">Foodies</span>, die die Snack <span class=\"emoji\">🍫</span> Industrie revolutionieren <span class=\"emoji\">💪</span> wollen.",
-        "background_color": "#e4a9bd",
+        "background_color": "#cc7dab",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
       }

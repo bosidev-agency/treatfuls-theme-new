@@ -12,9 +12,21 @@
     "hero_GRwq8M": {
       "type": "hero",
       "blocks": {
+        "button_M3XbEb": {
+          "type": "button",
+          "name": "Button",
+          "settings": {
+            "text": "20 % Code sichern",
+            "url": "",
+            "signup_button": true,
+            "klaviyo_form": "X3H7FL"
+          },
+          "blocks": {}
+        },
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "zur Schultüte",
             "url": "shopify://products/schultute-bio-vegan",
@@ -25,25 +37,27 @@
         }
       },
       "block_order": [
+        "button_M3XbEb",
         "button_gWRaVG"
       ],
+      "disabled": true,
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_backtoschool_banner_desktop_cf106ed9-a5c3-48fa-8b1d-48ab3cdde303.svg",
+        "desktop_image": "shopify://shop_images/Heroshots_Launch_adventskalender_desktop_3500x_10bb2f28-b21c-48bf-923d-c5d26d93faa2.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/heroSection_Back_to_scool__mobile.png",
+        "mobile_image": "shopify://shop_images/Heroshots3_Launch_adventskalender_mobil_1200x_fdd8d055-e20a-4fdb-8605-f64d10221f00.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
-        "vertical_alignment": "middle",
-        "horizontal_alignment": "center",
+        "vertical_alignment": "top",
+        "horizontal_alignment": "left",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "✏️ back to <span>School</span>",
-        "text": "<p>Die coolste Schultüte seit es Pausen <br/>gibt: limited Edition im treatfuls-Design,<br/>gefüllt mit unseren leckeren, bio<br/>Snacks + <strong>buah</strong>-Trockenfrüchte und <strong>Stickerbogen</strong> zum <br/>Selbstgestalten natürlich, bunt<br/>und zum Anbeißen! ✨</p>",
+        "title": "Santa’s Sweet Deal!",
+        "text": "<h4>Unser Adventskalender ist streng limitiert! </h4><h4>Trag dich jetzt in den Newsletter ein & schnapp dir deinen exklusiven</h4><h4>&lt;span&gt;20 %-Code 🎁&lt;span&gt;</h4>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
-        "hover_color": "#dbaaeb",
-        "show_base_triangular_line": true
+        "hover_color": "#2ac2bd",
+        "show_base_triangular_line": false
       }
     },
     "featured_collections_EUemmF": {
@@ -96,7 +110,6 @@
         "collection_item_zbE6pg",
         "collection_item_7HkdAc"
       ],
-      "disabled": true,
       "name": "Featured collections",
       "settings": {
         "heading_desktop": "Produkte",
