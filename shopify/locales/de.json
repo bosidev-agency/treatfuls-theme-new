@@ -426,7 +426,10 @@
       "sugar": "- davon Zucker \/ Sugar",
       "fibre": "Ballaststoffe \/ Fibre",
       "protein": "Eiweiß \/ Protein",
-      "salt": "Salz \/ Salt"
+      "salt": "Salz \/ Salt",
+      "view_product": "Produkt ansehen",
+      "information": "Informationen",
+      "nutrients": "Nährwerte"
     },
     "pre_order": {
       "note": "Hinweis",

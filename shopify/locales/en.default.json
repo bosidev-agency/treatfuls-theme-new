@@ -412,7 +412,7 @@
       "view_cart": "View cart",
       "view_in_space": "View in your space",
       "view_in_space_label": "View in your space, loads item in augmented reality window",
-      "ingredients": "Inhaltsstoffe",
+      "ingredients": "Ingredients",
       "nutrition_table": "Nährwerttabelle",
       "nutrition_grams": "100gr",
       "nutrition_portion_html": "20g <br><span>(Die Packung enthält 2 Portionen.<br> 1 Portion = 20 g)<\/span>",
@@ -423,7 +423,10 @@
       "sugar": "- davon Zucker \/ Sugar",
       "fibre": "Ballaststoffe \/ Fibre",
       "protein": "Eiweiß \/ Protein",
-      "salt": "Salz \/ Salt"
+      "salt": "Salz \/ Salt",
+      "view_product": "View product",
+      "information": "Information",
+      "nutrients": "Nutrients"
     },
     "pre_order": {
       "note": "Note",

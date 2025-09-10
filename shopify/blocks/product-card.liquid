@@ -41,9 +41,9 @@
 
     <info-tabs class="info-tabs">
       <div class="tabs-navigation hidden-desktop">
-        <div class="tabs-navigation__item" data-tab-heading="Information" open>Information</div>
-        <div class="tabs-navigation__item" data-tab-heading="Ingredients">Ingredients</div>
-        <div class="tabs-navigation__item" data-tab-heading="Directions">Directions</div>
+        <div class="tabs-navigation__item" data-tab-heading="Information" open>{{ 'products.product.information' | t }}</div>
+        <div class="tabs-navigation__item" data-tab-heading="Ingredients">{{ 'products.product.ingredients' | t }}</div>
+        <div class="tabs-navigation__item" data-tab-heading="Nutrients">{{ 'products.product.nutrients' | t }}</div>
       </div>
       <div class="tab-wrapper" data-tab-heading="Information" open>
         {% if card_product.metafields.custom.bullet_points.value != blank %}
@@ -99,16 +99,10 @@
         </div>
         <div class="product-card__ctas">
           {% if card_product != blank %}
-            <atc-button>
-              {% form 'product', card_product, class: 'product-form' %}
-                <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
-                <input type="hidden" name="quantity" value="1">
-                <button type="submit" class="button product-form__button">Add to Cart</button>
-              {% endform %}
-            </atc-button>
+            {% render 'atc-button', product: card_product %}
           {% endif %}
           {% if card_product != blank %}
-            <a href="{{ card_product.url }}" class="button product-form__button">View Product</a>
+            <a href="{{ card_product.url }}" class="button product-form__button">{{ 'products.product.view_product' | t }}</a>
           {% endif %}
         </div>
       </div>
@@ -117,7 +111,7 @@
           {{ card_product.metafields.custom.ingredients }}
         </div>
       </div>
-      <div class="tab-wrapper" data-tab-heading="Directions">
+      <div class="tab-wrapper" data-tab-heading="Nutrients">
         <div class="product-card__directions">
           {%- assign nutrition_values = card_product.metafields.custom.nutrition_values.value -%}
 
