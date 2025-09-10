@@ -49,9 +49,9 @@
 		data-section-id="{{- section.id -}}"
 		data-section-type="{{- section.type -}}"
 	>
-		<div class="minicart__overlay {% if isOpened %}minicart__overlay--shown{% endif %}"></div>
+		<div class="minicart__overlay"></div>
 
-		<div class="minicart__container {% if isOpened %}minicart__container--open{% endif %}"
+		<div class="minicart__container"
 				 style="">
 			<div class="minicart__wrapper">
 				<div class="minicart__section minicart__section--header">
@@ -60,7 +60,8 @@
               <h3 class="minicart__title title-bg">
                 <span>{{ 'cart.general.title' | t }}</span>
               </h3>
-              <div class="minicart__close"></div>
+              <button class="minicart__close">
+              </button>
             </div>
             {%- if settings.cart_show_free_shipping_threshold and settings.cart_free_shipping_threshold != '' -%}
               {%- assign free_shipping_thresholds = settings.cart_free_shipping_threshold | remove: ' ' | split: ',' -%}

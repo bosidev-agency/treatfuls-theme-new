@@ -18,6 +18,7 @@
 	class="home-products"
 	data-section-id="{{- section.id -}}"
 	data-section-type="home-products"
+  data-adjust-colors-to-current-slide="{{ sec_sett.adjust_colors_to_current_slide }}"
 >
 	<div class="home-products__container">
 		{%- if sec_sett.title != blank -%}
@@ -35,8 +36,24 @@
 							{%- assign product = all_products[b_sett.product] -%}
 							{%- assign product_image = product.featured_image -%}
 
+              {%- if forloop.first -%}
+                <style>
+                  #shopify-section-{{ section.id }} {
+                    --section-background-color: {% if product.metafields.custom.background_color %}{{ product.metafields.custom.background_color }}{% else %}{{ section.settings.background_color }}{% endif %};
+                    --section-accent-color: {% if product.metafields.custom.accent_color %}{{ product.metafields.custom.accent_color }}{% else %}{{ section.settings.accent_color }}{% endif %};
+                    --section-hover-color: {% if product.metafields.custom.hover_color %}{{ product.metafields.custom.hover_color }}{% else %}{{ section.settings.hover_color }}{% endif %};
+                  }
+                </style>
+              {%- endif -%}
+
 							<div 
                 class="swiper-slide"
+                class="swiper-slide"
+                data-slide-color='{
+                  "background": "{% if product.metafields.custom.background_color %}{{ product.metafields.custom.background_color }}{% else %}{{ section.settings.background_color }}{% endif %}",
+                  "accent": "{% if product.metafields.custom.accent_color %}{{ product.metafields.custom.accent_color }}{% else %}{{ section.settings.accent_color }}{% endif %}",
+                  "hover": "{% if product.metafields.custom.hover_color %}{{ product.metafields.custom.hover_color }}{% else %}{{ section.settings.hover_color }}{% endif %}"
+                }'
               >
 								{%- if product_image != blank -%}
 									<a href="{{- product.url | within: collection -}}">
@@ -122,22 +139,29 @@
       "content": "Colors"
     },
     {
+      "type": "checkbox",
+      "id": "adjust_colors_to_current_slide",
+      "label": "Adjust colors to current slide",
+      "default": false,
+      "info": "Activate this to change the color of the section based on the current product/slide. The colors below only work when this is not selected or if there are products without color settings."
+    },
+    {
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
-      "default": "#dbaaeb"
+      "default": "#dbaaeb",
     },
     {
       "type": "color",
       "id": "accent_color",
       "label": "Accent Color",
-      "default": "#2ac2bd"
+      "default": "#2ac2bd",
     },
     {
       "type": "color",
       "id": "hover_color",
       "label": "Hover Color",
-      "default": "#dbaaeb"
+      "default": "#dbaaeb",
     }
 	],
 	"blocks": [

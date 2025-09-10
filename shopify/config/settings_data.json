@@ -9,8 +9,9 @@
  */
 {
   "current": {
-    "header_background": "#F3587F",
-    "header_accent": "#dbaaeb",
+    "color_error": "#f3587f",
+    "header_background": "#f3587f",
+    "header_accent": "#2ac2bd",
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 60,
@@ -107,6 +108,21 @@
           "under_button_text": "<p>Die Teilnahmebedingungen für dieses Gewinnspiel findest du auf <a href=\"https://www.naughtynuts.de/pages/teilnahmebedingungen\" title=\"www.naughtynuts.de\">www.naughtynuts.de/pages/teilnahmebedingungen</a></p>",
           "thank_you_message": "Thank your for signing up to our newsletter!"
         }
+      },
+      "klaviyo-popups": {
+        "type": "klaviyo-popups",
+        "blocks": {
+          "klaviyo_popup_kcrLGa": {
+            "type": "klaviyo_popup",
+            "settings": {
+              "klaviyo_form": "X3H7FL"
+            }
+          }
+        },
+        "block_order": [
+          "klaviyo_popup_kcrLGa"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [],

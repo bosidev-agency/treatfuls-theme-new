@@ -1,4 +1,3 @@
-{%- assign product_price = product.price | money -%}
 {%- assign lazy_load = 'eager' -%}
 
 {%- if index > 4 -%}
@@ -46,133 +45,69 @@
 
     <div class="product_content_wrapping">
       <div class="product-card__top-content">
-      <a href="{{ product.url }}" class="hidden-phone">
-        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
-          {%- if short_title != blank and unit_name != blank -%}
-            {{ short_title }} {{ unit_name }}
-          {%- else -%}
-            {{ product.title }}
-          {%- endif -%}
-        </div>
-      </a>
-      <a href="{{ product.url }}" class="hidden-desktop">
-        <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
-          {%- if short_title != blank -%}
-            {{ short_title }}
-          {%- else -%}
-            {{ product.title }}
-          {%- endif -%}
-        </div>
-      </a>
-      <div class="products_listing__information">
-        <div class="products_listing__information-wrapper">
-          <div class="products_listing__information-labels">
-            {%- if custom_card_badge -%}
-              <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
-                {%- if custom_card_badge.emoji -%}
-                  <style>
-                    .products_listing ul.grid li.grid__item:hover .products_listing__label--custom {
-                      border: 1px solid {{ custom_card_badge.text_color }};
-                    }
-                  </style>
-                  <span class="products_listing__label--emoji">
-                    {{ custom_card_badge.emoji }}
-                  </span>
-                {%- endif -%}
-
-                <span class="hidden-phone">{{ custom_card_badge.text }}</span>
-                <span class="hidden-desktop">
-                  {%- if custom_card_badge.mobile_text != blank -%}
-                    {{ custom_card_badge.mobile_text }}
-                  {%- else -%}
-                    {{ custom_card_badge.text }}
-                  {%- endif -%}
-                </span>
-              </div>
+        <a href="{{ product.url }}" class="hidden-phone">
+          <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
+            {%- if short_title != blank and unit_name != blank -%}
+              {{ short_title }} {{ unit_name }}
+            {%- else -%}
+              {{ product.title }}
             {%- endif -%}
-            <div class="products_listing__label">
-              {% render 'icon-vegan' %}
-              {{ 'collections.product_card.vegan_badge' | t }}
-            </div>
-            <div class="products_listing__label">
-              {% render 'icon-bio' %}
-              {{ 'collections.product_card.bio_badge' | t }}
-            </div>
           </div>
-          {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
-            <div class="products_listing__label">
-              <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
+        </a>
+        <a href="{{ product.url }}" class="hidden-desktop">
+          <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
+            {%- if short_title != blank -%}
+              {{ short_title }}
+            {%- else -%}
+              {{ product.title }}
+            {%- endif -%}
+          </div>
+        </a>
+        <div class="products_listing__information">
+          <div class="products_listing__information-wrapper">
+            <div class="products_listing__information-labels">
+              {%- if custom_card_badge -%}
+                <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
+                  {%- if custom_card_badge.emoji -%}
+                    <style>
+                      .products_listing ul.grid li.grid__item:hover .products_listing__label--custom {
+                        border: 1px solid {{ custom_card_badge.text_color }};
+                      }
+                    </style>
+                    <span class="products_listing__label--emoji">
+                      {{ custom_card_badge.emoji }}
+                    </span>
+                  {%- endif -%}
+
+                  <span class="hidden-phone">{{ custom_card_badge.text }}</span>
+                  <span class="hidden-desktop">
+                    {%- if custom_card_badge.mobile_text != blank -%}
+                      {{ custom_card_badge.mobile_text }}
+                    {%- else -%}
+                      {{ custom_card_badge.text }}
+                    {%- endif -%}
+                  </span>
+                </div>
+              {%- endif -%}
+              <div class="products_listing__label">
+                {% render 'icon-vegan' %}
+                {{ 'collections.product_card.vegan_badge' | t }}
+              </div>
+              <div class="products_listing__label">
+                {% render 'icon-bio' %}
+                {{ 'collections.product_card.bio_badge' | t }}
+              </div>
             </div>
-          {% endif %}
+            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+              <div class="products_listing__label">
+                <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
+              </div>
+            {% endif %}
+          </div>
         </div>
       </div>
-    </div>
 
-    <atc-button class="product_content-buttons">
-
-      {%- form 'product', product,
-        class: '',
-        data-product-form: '',
-        data-product-handle: product.handle,
-        data-enable-history-state: 'true',
-        data-productid: product.id
-      -%}
-
-        {%- if product.metafields.custom.preorder_date != blank -%}
-          <input type="hidden" id="test1" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
-          <input type="hidden" id="test2" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
-        {%- endif -%}
-        
-        <select
-          name="id"
-          class="no-js visually-hidden"
-          data-productid="{{- product.id -}}"
-          data-original-product-select
-        >
-          {%- for variant in product.variants -%}
-            <option
-              {% if variant == current_variant %}selected="selected"{% endif %}
-              {% unless variant.available %}disabled="disabled"{% endunless %}
-              value="{{ variant.id }}"
-            >
-              {{ variant.title }}
-            </option>
-          {%- endfor -%}
-        </select>
-
-        <label class="quantity-element__label">
-          <input
-            class="quantity-element__input"
-            type="hidden"
-            id="Quantity"
-            name="quantity"
-            value="1"
-            min="1"
-            max="99"
-            maxlength="2"
-            data-quantity="input"
-          />
-        </label>
-
-        <button
-          class="button product-form__button"
-          type="submit"
-          name="add"
-          data-submit-button
-        >
-          <span
-            class="product-form__button-text product-form__button-text--add-to-card"
-            data-submit-button-text
-          >
-            {%- if product.variants.first.available == true -%}
-              <span class="product-form__button-price" style="margin-right:5px;">{{ product_price }}</span> {% if product.metafields.custom.preorder_date != blank %}{{ "collections.product_card.preorder" | t }}{% else %}{{ "collections.product_card.add_to_cart" | t }}{% endif %}
-            {%- else -%}
-              {{ "collections.product_card.sold_out" | t }}
-            {%- endif -%}
-          </span>
-        </button>
-      {%- endform -%}
-    </atc-button>
+      {% render 'atc-button', product: product%}
     </div>
   </div>
 </div>

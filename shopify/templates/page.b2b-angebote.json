@@ -14,7 +14,7 @@
       "settings": {
         "title": "B2B",
         "subtitle": "<p>Wir sind treatfuls: unsere Riegel, Balls und Spreads sind 100 % natürlich, bio, vegan, ohne raffinierten Zucker und voller Energie.</p><p>Egal ob <strong>im Supermarkt</strong>, <strong>im Concept Store</strong> oder <strong>direkt auf dem Meetingtisch</strong> – treatfuls passen dahin, wo bewusster Genuss nicht nur ein Buzzword ist, sondern Standard.</p><p><strong>Bold im Design. Unverschämt gut im Geschmack. Ehrlich in der Zusammenarbeit.</strong></p><p>Lass uns gemeinsam den Snackmarkt aufmischen, die Regale schöner machen und zeigen, dass „better for you“ verdammt lecker sein kann.</p><p><strong>Klingt gut? Dann lass uns loslegen.</strong></p>",
-        "subtitle_font_size": 18,
+        "subtitle_font_size": 24,
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
         "hover_color": "",
@@ -75,7 +75,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/Faire_White_Logo.png",
-            "link": ""
+            "link": "https://treatfuls.faire.com"
           }
         }
       },
@@ -85,7 +85,7 @@
       "name": "Logo list",
       "settings": {
         "title": "treatfuls im Großhandel",
-        "subtitle": "<h5>direkt über diese Plattformen:</h5>",
+        "subtitle": "<p>Neukund:innen aufgepasst: 50 % Rabatt auf deine erste treatfuls-Bestellung über Faire (bis zu 150 €) – plus 1 Jahr gratis Versand. 🧡 Aber pssst… das Angebot gilt nur, wenn du über unseren Link bestellst. Los geht’s –  treat your customers!</p>",
         "background_color": "#2ac2bd",
         "accent_color": "",
         "hover_color": ""

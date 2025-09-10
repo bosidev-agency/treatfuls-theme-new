@@ -72,7 +72,7 @@ data-section-type="ingredients"
     
     <div class="container container--md">
       <div class="accordion">
-        <section class="accordion__item js-accordion__item">
+        <accordion-item class="accordion__item js-accordion__item">
           <header class="accordion__header js-accordion__header">
             <h2 class="h3 accordion__title">{{ 'products.product.ingredients' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
@@ -96,8 +96,8 @@ data-section-type="ingredients"
               {%- endif -%}
             </div>
           </div>
-        </section>
-        <section class="accordion__item js-accordion__item">
+        </accordion-item>
+        <accordion-item class="accordion__item js-accordion__item">
           <header class="accordion__header js-accordion__header">
             <h2 class="h3 accordion__title">{{ 'products.product.nutrition_table' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
@@ -212,7 +212,7 @@ data-section-type="ingredients"
               {%- endif -%}
             </div>
           </div>
-        </section>
+        </accordion-item>
       </div>
     </div>
   </div>

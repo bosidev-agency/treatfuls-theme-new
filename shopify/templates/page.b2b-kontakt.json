@@ -15,9 +15,12 @@
       "settings": {
         "title": "",
         "subtitle": "",
+        "subtitle_font_size": 24,
         "background_color": "",
         "accent_color": "",
-        "hover_color": ""
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "contact_form_edBndX": {
@@ -299,10 +302,39 @@
                 "required": true
               },
               "blocks": {}
+            },
+            "group_jFeGRX": {
+              "type": "group",
+              "name": "Group",
+              "settings": {
+                "display_type": "flex",
+                "direction": "row",
+                "gap": 16,
+                "child_width": "1fr 1fr",
+                "margin_top": 0,
+                "margin_bottom": 20
+              },
+              "blocks": {
+                "form_input_A4NxUF": {
+                  "type": "form-input",
+                  "name": "Anmerkung",
+                  "settings": {
+                    "type": "custom",
+                    "label": "Anmerkung",
+                    "placeholder": "Anmerkung eingeben",
+                    "required": false
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "form_input_A4NxUF"
+              ]
             }
           },
           "block_order": [
-            "form_input_3X3DYL"
+            "form_input_3X3DYL",
+            "group_jFeGRX"
           ]
         }
       },

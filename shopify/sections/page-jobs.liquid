@@ -72,7 +72,7 @@
 							{%- assign button_text = block.settings.button_text -%}
 							{%- assign button_url = block.settings.button_url -%}
 
-							<section class="accordion__item js-accordion__item">
+							<accordion-item class="accordion__item js-accordion__item">
 								<header class="accordion__header js-accordion__header">
 									<h2 class="h3 accordion__title">{{ title }}</h2>
 									{%- render 'icon-arrow-down' -%}
@@ -83,7 +83,7 @@
 										<a href="{{ button_url }}" class="button button--fw accordion__button">{{ button_text }}</a>
 									{%- endif -%}
 								</div>
-							</section>
+							</accordion-item>
 						{%- endfor -%}
 					</div>
 				</div>

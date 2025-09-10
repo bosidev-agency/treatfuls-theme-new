@@ -76,7 +76,9 @@
 		{%- endif -%}
     <script src="{{- 'bundle.js' | asset_url -}}" defer="defer"></script>
       
-     <!-- START SCRIPT --><script id="wgs-scripttag-prod" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=treatfuls.myshopify.com&cart_attr_disabled=false&line_items_disabled=false&shopify_app_proxy_enabled=true&wgs_mode=4" async=true></script><style>#customerReferenceId { display: none; }</style><!-- END SCRIPT -->{{ content_for_header }}
+     
+<!-- START SCRIPT --><script id="wgs-scripttag-prod" src="/apps/ap/static/scripts/dist/wgs.bundle.js?shop=treatfuls.myshopify.com&cart_attr_disabled=false&line_items_disabled=false&shopify_app_proxy_enabled=true&wgs_mode=4" async=true></script><style>#customerReferenceId { display: none; }</style><!-- END SCRIPT -->
+{{ content_for_header }}
 
 		<script>
 			const LOCATION_PATHNAME = window.location.pathname;
@@ -123,7 +125,8 @@
 		{%- if template.directory == 'customers' -%}
 			<script src="{{- 'shopify_common.js' | shopify_asset_url -}}" defer></script>
 		{%- endif -%}
-	    {%- section 'global-newsletter-popup' -%}
+    {%- section 'global-newsletter-popup' -%}
+	  {%- section 'klaviyo-popups' -%}
         {% include "bc_banner" %}
 </body>
 </html>

@@ -152,8 +152,6 @@ register("product", {
 
 		this.initQuantityValidate();
 
-		this.renderSubmitButton(this.productForm.variant());
-
 		this.initSliders();
 	},
 

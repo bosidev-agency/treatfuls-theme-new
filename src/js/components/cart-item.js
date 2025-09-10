@@ -18,21 +18,17 @@ const URL = {
 class CartItem extends HTMLElement {
   constructor() {
     super();
+  }
+
+  connectedCallback() {
     this.removeButton = this.querySelector(".cart-product__remove");
     this.addButton = this.querySelector(".cart-product__quantity-btn--plus");
     this.minusButton = this.querySelector(".cart-product__quantity-btn--minus");
     this.quantityChange = this.querySelector(".cart-product__quantity-input");
     this.itemKey = this.removeButton.dataset.itemKey;
+    this.sectionId = this.closest("section").dataset.sectionId;
     this.cartCountContainer = document.querySelector(".js-header-cat-items");
-    this.sectionId = this.closest('section').dataset.sectionId;
-    this.init();
-  }
 
-  init() {
-    this.addListeners();
-  }
-
-  addListeners() {
     this.removeButton.addEventListener("click", () => {
       this.removeItem(this.itemKey);
     });
@@ -50,6 +46,24 @@ class CartItem extends HTMLElement {
     });
   }
 
+  disconnectedCallback() {
+    this.removeButton.removeEventListener("click", () => {
+      this.removeItem(this.itemKey);
+    });
+
+    this.addButton.removeEventListener("click", () => {
+      this.changeQuantity(this.itemKey, Number(this.quantityChange.value) + 1);
+    });
+
+    this.minusButton.removeEventListener("click", () => {
+      this.changeQuantity(this.itemKey, Number(this.quantityChange.value) - 1);
+    });
+
+    this.quantityChange.removeEventListener("change", () => {
+      this.changeQuantity(this.itemKey, Number(this.quantityChange.value));
+    });
+  }
+
   removeItem(itemKey) {
     this.changeQuantity(itemKey, 0);
   }
@@ -58,39 +72,27 @@ class CartItem extends HTMLElement {
     this.changeItem({
       id: key,
       quantity,
+      sections: "main-cart-mini,cart-count",
     });
   }
 
   changeItem(newItem) {
-    axios
-      .post(URL.change, qs.stringify(newItem), configHeader)
-      .then((res) => res.data)
-      .then((res) => {
-        this.updateMiniCartSection(res.item_count);
-      });
-  }
-
-  updateMiniCartSection(item_count) {
-    fetch(`${window.location.pathname}?sections=${this.sectionId}`)
-      .then((res) => res.json())
+    fetch(`${window.Shopify.routes.root}cart/change.js`, {
+      body: JSON.stringify(newItem),
+      method: "POST",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
       .then((data) => {
-        let newHtml = data[this.sectionId];
-        const newSection = document.querySelector(
-          `#shopify-section-${this.sectionId}`
+        document.dispatchEvent(
+          new CustomEvent("cart:rerender", {
+            detail: data,
+            bubbles: true,
+          })
         );
-        newHtml = newHtml
-          .replace(
-            "minicart__overlay ",
-            "minicart__overlay minicart__overlay--shown"
-          )
-          .replace(
-            "minicart__container ",
-            "minicart__container minicart__container--open"
-          );
-        newSection.outerHTML = newHtml;
-      })
-      .then(() => {
-        this.cartCountContainer.innerHTML = item_count;
       })
       .catch((error) =>
         console.error("Error updating mini-cart section:", error)

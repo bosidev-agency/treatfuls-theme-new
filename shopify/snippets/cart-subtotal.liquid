@@ -8,9 +8,9 @@
   </div>
   <div class="cart-order__actions">
     {%- if is_empty_cart -%}
-    <button class="cart-order__button button cart-order__link">
+    <a href="{{ routes.all_products_collection_url }}" class="cart-order__button button cart-order__link">
       {{ 'cart.general.continue_shopping' | t }}
-    </button>
+    </a>
     {%- else -%}
       <button form="{% if is_mini_cart %}mini-cart-form{% else %}cart-form{% endif %}" type="submit"
         class="cart-order__button button">
