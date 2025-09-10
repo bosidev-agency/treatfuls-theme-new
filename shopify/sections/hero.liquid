@@ -56,12 +56,12 @@
       style="--desktop-aspect-ratio: {{ aspect_ratio_desktop }}; --mobile-aspect-ratio: {{ aspect_ratio_mobile }}"
     >
       {% if section.settings.desktop_image != blank %}
-        {{ section.settings.desktop_image | image_url: width: 1000 | image_tag: class: 'hero__image hidden-phone' }}
+        {{ section.settings.desktop_image | image_url: width: section.settings.desktop_image.width | image_tag: class: 'hero__image hidden-phone' }}
       {% endif %}
       {% if section.settings.mobile_image != blank %}
         {{
           section.settings.mobile_image
-          | image_url: width: 1000
+          | image_url: width: section.settings.mobile_image.width
           | image_tag: class: 'hero__image hero__image--mobile hidden-desktop'
         }}
       {% endif %}
