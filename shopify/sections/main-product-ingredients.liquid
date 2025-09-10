@@ -12,18 +12,7 @@
 {% comment %} TODO: Cleanup Section {% endcomment %}
 
 {%- assign sec_sett = section.settings -%}
-{%- assign field_product = product.metafields.my_fields -%}
-
-{%- assign ingredient_counter = 0 -%}
-{%- for number in (1..3) -%}
-{%- capture ingredient_image -%}ingredients_image_{{ number }}{%- endcapture -%}
-{%- capture ingredient_svg -%}ingredients_circle_{{ number }}{%- endcapture -%}
-
-{%- if field_product[ingredient_image] and field_product[ingredient_svg] -%}
-{%- assign ingredient_counter = ingredient_counter | plus: 1 -%}
-{%- break -%}
-{%- endif -%}
-{%- endfor -%}
+{%- assign ingredient_highlights = product.metafields.custom.ingredient_highlights.value -%}
 
 {%- assign has_bundle_items = false -%}
 {%- assign bundle_item_count = 0 -%}
@@ -37,47 +26,34 @@
 {%- endif -%}
 
 {%- capture slider -%}
-{%- if ingredient_counter > 0 -%}
-<div class="ingredients__gallery">
-	<div class="swiper" data-ingredients-slider>
-		<div class="swiper-wrapper">
-			{%- for number in (1..3) -%}
-			{%- capture ingredient_image -%}ingredients_image_{{ number }}{%- endcapture -%}
-			{%- capture ingredient_svg -%}ingredients_circle_{{ number }}{%- endcapture -%}
+  {%- if ingredient_highlights != blank -%}
+    <div class="ingredients__gallery">
+      <div class="swiper" data-ingredients-slider>
+        <div class="swiper-wrapper">
+          {%- for ingredient_highlight in ingredient_highlights -%}
 
-			{%- assign image = field_product[ingredient_image] -%}
-			{%- assign icon_name = field_product[ingredient_svg] -%}
-			{%- assign full_icon_name = 'icon-circle-' | append: icon_name -%}
+            {%- if ingredient_highlight.ingredient_image != blank or ingredient_highlight.ingredient_circle != blank -%}
+              <div class="swiper-slide ingredients__slide">
+                <div class="ingredients-item">
+                  <div class="ingredients-item__image-wrapper">
+                    {%- if ingredient_highlight.ingredient_image != blank -%}
+                      {{ ingredient_highlight.ingredient_image | image_url: width: 240 | image_tag: class: 'ingredients-item__img' }}
+                    {%- endif -%}
+                  </div>
 
-			{%- if image or icon_name -%}
-			<div class="swiper-slide ingredients__slide">
-				<div class="ingredients-item">
-					{%- if image != blank -%}
-					<picture>
-						<source
-						srcset="{{ image | img_url: '180x' }} 1x, {{ image | img_url: '360x' }} 2x, {{ image | img_url: '540x' }} 3x"
-						media="(min-width: 2560px)">
-						<source
-						srcset="{{ image | img_url: '120x' }} 1x, {{ image | img_url: '240x' }} 2x, {{ image | img_url: '360x' }} 3x"
-						media="(min-width: 1920px)">
-						<img class="ingredients-item__img"
-						src="{{- image | img_url: '60x' -}}"
-						srcset="{{ image | img_url: '60x' }} 1x, {{ image | img_url: '120x' }} 2x, {{ image | img_url: '180x' }} 3x"
-						alt="{{ ingredient_svg }}">
-					</picture>
-					{%- endif -%}
-
-					{%- if icon_name != blank -%}
-					{%- include full_icon_name -%}
-					{%- endif -%}
-				</div>
-			</div>
-			{%- endif -%}
-			{%- endfor -%}
-		</div>
-	</div>
-</div>
-{%- endif -%}
+                  <div class="ingredients-item__icon-wrapper icon">
+                    {%- if ingredient_highlight.ingredient_circle != blank -%}
+                      {{ ingredient_highlight.ingredient_circle | image_url: width: 800 | image_tag }}
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
 {%- endcapture -%}
 
 <section

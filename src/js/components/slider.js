@@ -33,12 +33,12 @@ class SliderElement extends HTMLElement {
 
   handleResize(e) {
     if (e.matches) {
-      // Screen width is <= 991px
+      // Screen width is <= 991px (mobile)
       if (!this.swiperInstance) {
         this.swiperInstance = new Swiper(this, this.sliderConfig);
       }
     } else {
-      // Screen width is > 991px
+      // Screen width is > 991px (desktop)
       if (this.swiperInstance) {
         this.swiperInstance.destroy(true, true);
         this.swiperInstance = null;

@@ -6,9 +6,9 @@ import settings from "@savchukoleksii/shopify-theme-settings-tool";
 import * as sections from "@shopify/theme-sections";
 
 const DOMContentLoadedPromise = new Promise((resolve) => {
-	document.addEventListener("DOMContentLoaded", async () => {
-		resolve();
-	});
+  document.addEventListener("DOMContentLoaded", async () => {
+    resolve();
+  });
 });
 
 import * as bodyScrollLock from "body-scroll-lock";
@@ -33,6 +33,7 @@ require("./components/slider");
 require("./components/tooltip");
 require("./components/modal-popover");
 require("./components/predictive-search");
+require("./components/info-tabs");
 
 /*================ Sections ================*/
 require("./sections/header");
@@ -53,18 +54,18 @@ require("./templates/customers-addresses");
 require("./templates/customers-login");
 
 (async () => {
-	try {
-		await Promise.all([
-			objects.load(),
-			settings.load(),
-			DOMContentLoadedPromise
-		]);
+  try {
+    await Promise.all([
+      objects.load(),
+      settings.load(),
+      DOMContentLoadedPromise,
+    ]);
 
-		document.dispatchEvent(new CustomEvent("theme:all:loaded"));
-	} catch (error) {
-		// eslint-disable-next-line no-console
-		console.warn(`catch error ----------`, error);
-	}
+    document.dispatchEvent(new CustomEvent("theme:all:loaded"));
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.warn(`catch error ----------`, error);
+  }
 
-	sections.load("*");
+  sections.load("*");
 })();

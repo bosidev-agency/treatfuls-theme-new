@@ -6,7 +6,7 @@
 
 .cart-upsell {
   margin: 10px 0;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 
   @media #{$no-m-xl} {
     display: block;

@@ -5,7 +5,15 @@
   }
 </style>
 
-<h2 class="heading">{{ block.settings.text }}</h2>
+<div class="title-wrapper">
+  {%- if block.settings.heading_text -%}
+    <h1 class="title-wrapper__title title-bg">{{ block.settings.heading_text }}</h1>
+  {%- endif -%}
+
+  {%- if block.settings.subtitle_text -%}
+    <p class="title-wrapper__subtitle">{{ block.settings.subtitle_text }}</p>
+  {%- endif -%}
+</div>
 
 {% schema %}
 {
@@ -13,8 +21,13 @@
   "settings": [
     {
       "type": "text",
-      "id": "text",
-      "label": "Text"
+      "id": "heading_text",
+      "label": "Heading Text"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_text",
+      "label": "Subtitle Text"
     },
     {
       "type": "range",
@@ -39,7 +52,11 @@
   ],
   "presets": [
     {
-      "name": "Heading"
+      "name": "Heading",
+      "settings": {
+        "heading_text": "Heading",
+        "subtitle_text": "Subtitle"
+      }
     }
   ]
 }

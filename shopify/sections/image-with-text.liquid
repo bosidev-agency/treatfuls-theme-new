@@ -10,6 +10,11 @@
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
   }
+
+  #shopify-section-{{ section.id }} .content-wrapper {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 </style>
 
 <section
@@ -21,7 +26,7 @@
     <div class="container">
       <div class="image-with-text__items">
         {% for block in section.blocks %}
-          <div class="image-with-text__wrapper">
+          <div class="image-with-text__wrapper {% if block.settings.image_position == 'right' %}image-with-text__wrapper--reverse{% endif %}">
             <div class="image-with-text__image">
               {% if block.settings.image != blank %}
                 {{ block.settings.image | image_url: width: 1000 | image_tag: class: 'image-with-text__image-image' }}
@@ -75,6 +80,28 @@
       "type": "color",
       "id": "hover_color",
       "label": "Hover Color"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "default": 80,
+      "min": 0,
+      "max": 100,
+      "step": 5
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "default": 40,
+      "min": 0,
+      "max": 100,
+      "step": 5
     }
 	],
   "blocks": [
@@ -90,6 +117,22 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
         },
         {
           "type": "text",

@@ -32,7 +32,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: var(--section-accent-color);
-    color: var(--color-text);
+    color: rgb(var(--color-text));
     top: 50%;
     margin-top: 0;
     transform: translateY(-50%);
