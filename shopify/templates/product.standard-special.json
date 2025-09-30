@@ -21,113 +21,13 @@
     },
     "video_np3fqk": {
       "type": "video",
-      "disabled": true,
       "name": "Video",
       "settings": {
-        "video": "shopify://files/videos/mysterybox viedeo.MOV",
-        "background_color": "#823546",
+        "video": "shopify://files/videos/MysteryBox 2.0.MOV",
+        "video_mobile": "shopify://files/videos/MysteryBox 2.0.MOV",
+        "background_color": "#823646",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "image_gallery_CTGC6X": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_hkQqPw": {
-          "type": "image",
-          "settings": {
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_LDWGh4": {
-          "type": "image",
-          "settings": {
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_6b6Whi": {
-          "type": "image",
-          "settings": {
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_6DCXXk": {
-          "type": "image",
-          "settings": {
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_hkQqPw",
-        "image_LDWGh4",
-        "image_6b6Whi",
-        "image_6DCXXk"
-      ],
-      "disabled": true,
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "",
-        "heading": "",
-        "show_atc_button": true,
-        "grid_container_quantity": "1",
-        "background_color": "#dbaaeb",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
-      }
-    },
-    "main_product_ingredients": {
-      "type": "main-product-ingredients",
-      "settings": {
-        "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "{{ product.metafields.custom.accent_color.value }}",
-        "accent_color": "{{ product.metafields.custom.background_color.value }}"
       }
     },
     "advantages": {
@@ -209,6 +109,14 @@
         "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
+    "main_product_ingredients": {
+      "type": "main-product-ingredients",
+      "settings": {
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "{{ product.metafields.custom.accent_color.value }}",
+        "accent_color": "{{ product.metafields.custom.background_color.value }}"
+      }
+    },
     "compare_product_reviews": {
       "type": "compare-product-reviews",
       "blocks": {
@@ -285,12 +193,108 @@
         "b1694818-0b81-42c8-ac0e-020a9ca87756",
         "3bd524cf-72c4-47af-8ff2-8b3b5f87b9a9"
       ],
+      "disabled": true,
       "settings": {
         "title": "Eure Bewertungen",
         "underline_word": "Bewertungen",
         "text-box": "",
         "link": "#",
         "linktext": "Schreibe eine Bewertung"
+      }
+    },
+    "image_gallery_CTGC6X": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_hkQqPw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_mystery_box_3oeetq3oeetq3oee.png",
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_LDWGh4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Mystery_Boxen.webp",
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6b6Whi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_mystery_box_V1.webp",
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6DCXXk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_mystery_box_V2.webp",
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_hkQqPw",
+        "image_LDWGh4",
+        "image_6b6Whi",
+        "image_6DCXXk"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": true,
+        "grid_container_quantity": "1",
+        "background_color": "#823646",
+        "accent_color": "#cc7dab",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
       }
     },
     "faq_QEXxKQ": {
@@ -359,12 +363,11 @@
         "faq_item_UghL9L",
         "faq_item_cANe4p"
       ],
-      "disabled": true,
       "name": "FAQ",
       "settings": {
         "title": "Häufig gestellte Fragen",
         "subtitle": "Hier haben wir Fragen gesammelt die wir häufig gestellt bekommen.",
-        "background_color": "#dbaaeb",
+        "background_color": "#cc7dab",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -373,10 +376,10 @@
   "order": [
     "main",
     "video_np3fqk",
-    "image_gallery_CTGC6X",
-    "main_product_ingredients",
     "advantages",
+    "main_product_ingredients",
     "compare_product_reviews",
+    "image_gallery_CTGC6X",
     "faq_QEXxKQ"
   ]
 }
