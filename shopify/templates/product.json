@@ -19,10 +19,113 @@
         "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
+    "video_np3fqk": {
+      "type": "video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/mysterybox viedeo.MOV",
+        "background_color": "#823546",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "image_gallery_CTGC6X": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_hkQqPw": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_LDWGh4": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6b6Whi": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6DCXXk": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_hkQqPw",
+        "image_LDWGh4",
+        "image_6b6Whi",
+        "image_6DCXXk"
+      ],
+      "disabled": true,
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": true,
+        "grid_container_quantity": "1",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
     "main_product_ingredients": {
       "type": "main-product-ingredients",
       "settings": {
-        "title": "Wir verwenden nur <span>beste Zutaten</span>",
+        "title": "Wir verwenden nur beste Zutaten",
         "background_color": "{{ product.metafields.custom.accent_color.value }}",
         "accent_color": "{{ product.metafields.custom.background_color.value }}"
       }
@@ -98,6 +201,7 @@
         "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc"
       ],
       "settings": {
+        "hide_on_mobile": false,
         "title": "Unsere Riegel bieten viele Vorteile",
         "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen",
         "background_color": "{{ product.metafields.custom.background_color.value }}",
@@ -188,12 +292,90 @@
         "link": "#",
         "linktext": "Schreibe eine Bewertung"
       }
+    },
+    "faq_QEXxKQ": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_8wgtnn": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sneak peak 👀🤫🤭",
+            "content": "Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver) , Cashew-Matcha-Füllung (15%) [Cashewmus (60%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, Matchapulver (3%)], glutenfreies Hafermehl, Mandeln, Dattelsirup, Tapiokafaser, Mandelmus, Meersalz, Vanilleextrakt.\n Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Macadamia-Cashew-Himbeerfüllung (16%) (Cashewmus (64%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, gefriergetrocknete Himbeeren), glutenfreies Hafermehl, Mandeln (11,2%), Dattelsirup, Tapiokafaser, Mandelmus (3,8%), Meersalz, Vanilleextrakt. \n Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Dattelpaste, weißer kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Haselnuss-Füllung (15%) (Haselnuss (42%), Dattelpulver, Cashewmus, Kakaobutter), glutenfreies Hafermehl, Haselnuss (8,4%), Dattelsirup, Mandelmus, Tapiokafaser, Chai-Gewürzmischung (1,45%) (Zimt, Ingwerpulver, Kardamom, Muskatnuss, Nelkenpulver, Korianderpulver, Piment), Kakaobutter, Meersalz, Vanilleextrakt.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_pPyERt": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sind das komplett neue Sorten oder nur bestehende?",
+            "content": "Komplett neu.\nNoch nicht gelauncht, noch nirgends zu kaufen, noch nie gezeigt.\nDu bist ganz offiziell Early Taster 🎉",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_6WTzgU": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Kann ich eine bestimmte Sorte auswählen?",
+            "content": "Nope – it’s called Mystery Box for a reason.\nAber eins ist sicher: Du wirst alle vier lieben.\nTrust the treat. ✨",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_dG9GKw": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie viele Produkte sind drin?",
+            "content": "4 brandneue Snacks. 4 Geschmacks-Überraschungen.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_UghL9L": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie lange gibt’s die Mystery Box?",
+            "content": "Nur solange der geheime Vorrat reicht.\nWir sagen’s mal so: treat now or cry later. 😅",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_cANe4p": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Ist das eine Pre-Launch Box?",
+            "content": "YES – du bekommst die neuen Sorten vor dem offiziellen Launch.\nDu bist Teil unseres geheimen Testpanels… ohne Laborkittel.\nNur mit Geschmacksknospen.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_8wgtnn",
+        "faq_item_pPyERt",
+        "faq_item_6WTzgU",
+        "faq_item_dG9GKw",
+        "faq_item_UghL9L",
+        "faq_item_cANe4p"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Hier haben wir Fragen gesammelt die wir häufig gestellt bekommen.",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
     }
   },
   "order": [
     "main",
+    "video_np3fqk",
+    "image_gallery_CTGC6X",
     "main_product_ingredients",
     "advantages",
-    "compare_product_reviews"
+    "compare_product_reviews",
+    "faq_QEXxKQ"
   ]
 }

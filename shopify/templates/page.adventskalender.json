@@ -12,14 +12,14 @@
     "product_teaser_cHpidz": {
       "type": "signup-with-image",
       "settings": {
-        "title": "Das süßeste Geheimnis der Saison: unser Adventskalender",
+        "title": "grab your Matcha",
         "title_mobile": "",
-        "subtitle": "Melde dich zum Newsletter an und hol dir 15% Rabatt🎅✨",
-        "image": "shopify://shop_images/treatfuls_adventskalender_teaser.webp",
-        "content_title": "Setz dich jetzt auf die Warteliste für den Adventskalender!",
-        "content": "<p>Darauf haben wir so lange gewartet – unser Traum wird wahr: Der allererste treatfuls Adventskalender ist da! Gefüllt mit 24 unwiderstehlichen, veganen Überraschungen, die nicht nur lecker sind, sondern auch gut für dich und den Planeten. 🌍✨</p><p>Um Danke zu sagen, möchten wir unseren treuen Newsletter-Abonnent:innen etwas Besonderes schenken: </p><p><br/>Trag dich jetzt auf die Warteliste ein und sei unter den Ersten, die erfahren, wann der Vorverkauf startet. Als Dankeschön gibt’s für dich <strong>exklusive 15% Rabatt</strong> – nur im Pre-Access auf den Adventskalender! 😍</p><p>Der Countdown läuft: Mitte September geht’s los! ⏰<br/>Sichere dir jetzt dein Stück vegane Vorfreude und feiere diesen besonderen Moment mit uns!</p>",
+        "subtitle": "Jetzt anmelden & gratis Matcha sichern",
+        "image": "shopify://shop_images/treatfuls_digital_flyer_quadrat_12x12cm_V1.gif",
+        "content_title": "Wir feiern Launchparty",
+        "content": "<p>Am <strong>11.10.</strong> verwandeln wir unseren Innenhof in den place-to-be für alle treatful lovers. Mit deiner Anmeldung sicherst du dir nicht nur deinen Platz, sondern auch deinen <strong>gratis Matcha</strong> – limitiert und exklusiv für alle, die vorab dabei sind.</p><ul><li>Was dich erwartet:<br/><br/>✨ <strong>Vier brandneue Sorten</strong> zum Probieren – bevor sie irgendwo anders erhältlich sind<br/>✨ Ein Matcha aufs Haus – garantiert durch deine Anmeldung<br/>✨ Specials & kleine Überraschungen nur für diesen Tag<br/>✨ Musik, good vibes & ein Abend voller treatful energy<br/>✨ Shop the vibe – zum ersten Mal auch jede Sorte einzeln erhältlich</li><li></li></ul><p>Also: <strong>anmelden, Platz sichern, Matcha genießen & mit uns feiern.</strong> 💚</p>",
         "klaviyo_id": "X3H7FL",
-        "background_color": "#275c63",
+        "background_color": "#a4b88c",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
       }

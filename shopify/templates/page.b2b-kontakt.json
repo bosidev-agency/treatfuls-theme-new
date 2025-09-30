@@ -32,8 +32,11 @@
           "settings": {
             "display_type": "grid",
             "direction": "row",
+            "alignment": "flex-start",
             "gap": 16,
-            "child_width": "25%",
+            "child_width": "50%",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 0,
             "margin_bottom": 20
           },
@@ -88,8 +91,11 @@
           "settings": {
             "display_type": "grid",
             "direction": "row",
+            "alignment": "center",
             "gap": 16,
             "child_width": "1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 0,
             "margin_bottom": 20
           },
@@ -128,8 +134,11 @@
           "settings": {
             "display_type": "grid",
             "direction": "row",
+            "alignment": "center",
             "gap": 16,
             "child_width": "1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 0,
             "margin_bottom": 20
           },
@@ -178,8 +187,11 @@
           "settings": {
             "display_type": "grid",
             "direction": "row",
+            "alignment": "center",
             "gap": 16,
             "child_width": "1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 0,
             "margin_bottom": 20
           },
@@ -218,8 +230,11 @@
           "settings": {
             "display_type": "flex",
             "direction": "row",
+            "alignment": "center",
             "gap": 16,
             "child_width": "1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 0,
             "margin_bottom": 0
           },
@@ -286,8 +301,11 @@
           "settings": {
             "display_type": "grid",
             "direction": "row",
+            "alignment": "center",
             "gap": 16,
             "child_width": "1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
             "margin_top": 20,
             "margin_bottom": 0
           },
@@ -309,8 +327,11 @@
               "settings": {
                 "display_type": "flex",
                 "direction": "row",
+                "alignment": "center",
                 "gap": 16,
                 "child_width": "1fr 1fr",
+                "max_width_enabled": false,
+                "max_width": 1200,
                 "margin_top": 0,
                 "margin_bottom": 20
               },

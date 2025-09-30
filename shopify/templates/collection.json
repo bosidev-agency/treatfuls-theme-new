@@ -31,9 +31,17 @@
         "collection_item_BpgG7M": {
           "type": "collection_item",
           "settings": {
-            "collection": "love-bites-valentinstag",
+            "collection": "mixboxen",
             "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
-            "collection_title": "Sommerboxen"
+            "collection_title": "Mixboxen"
+          }
+        },
+        "collection_item_fnrKqm": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "weihnachten-1",
+            "image": "shopify://shop_images/AK_MOCKUP_Kopie.webp",
+            "collection_title": "Weihnachten"
           }
         },
         "collection_item_LLzRme": {
@@ -51,24 +59,15 @@
             "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
             "collection_title": "Balls"
           }
-        },
-        "collection_item_fnrKqm": {
-          "type": "collection_item",
-          "disabled": true,
-          "settings": {
-            "collection": "bundles",
-            "image": "shopify://shop_images/Vday_pink_treatfuls_love_gifting_box_5e5ef7a0-747e-4974-9748-891852561307.webp",
-            "collection_title": "Boxen"
-          }
         }
       },
       "block_order": [
         "collection_item_HBNT6z",
         "collection_item_njphjp",
         "collection_item_BpgG7M",
+        "collection_item_fnrKqm",
         "collection_item_LLzRme",
-        "collection_item_zt4DCn",
-        "collection_item_fnrKqm"
+        "collection_item_zt4DCn"
       ],
       "settings": {
         "heading_desktop": "Produkte",

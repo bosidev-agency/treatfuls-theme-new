@@ -25,11 +25,16 @@
     },
     "hero_eNmaQw": {
       "type": "hero",
+      "disabled": true,
       "name": "Hero banner",
       "settings": {
         "desktop_image_height": "adapt",
         "mobile_image_height": "adapt",
         "hide_on_mobile": true,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "center",
+        "vertical_alignment_mobile": "middle",
+        "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 1200,
         "title": "Hero banner",
@@ -76,94 +81,15 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "20-x-banana-bread-energieballs-bio-vegan",
-        "heading": "{{ section.settings.product.title }}",
-        "mobile_heading": "",
+        "product": "summer-crush-kopie",
+        "heading": "🍫 4 neue Riegel. Gefüllt. Natürlich. Unwiderstehlich.",
+        "mobile_heading": "🍫 Gefüllt. Natürlich. Unwiderstehlich.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#f3587f",
-        "accent_color": "",
-        "hover_color": ""
-      }
-    },
-    "advantages_BcfMf9": {
-      "type": "advantages",
-      "blocks": {
-        "advantage_item_8gBfw3": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-1-smile.png",
-            "text": "Lecker"
-          }
-        },
-        "advantage_item_G8CBAM": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-2-vegan.png",
-            "text": "Vegan"
-          }
-        },
-        "advantage_item_CARaAK": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-3-organic.png",
-            "text": "Bio-zertifiziert"
-          }
-        },
-        "advantage_item_qxe3cw": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
-          }
-        },
-        "advantage_item_hy9grG": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-5-soy.png",
-            "text": "Ohne Soja"
-          }
-        },
-        "advantage_item_XE7riB": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_WEkgHC": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
-          }
-        },
-        "advantage_item_mqdQfY": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
-          }
-        }
-      },
-      "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC",
-        "advantage_item_mqdQfY"
-      ],
-      "settings": {
-        "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
+        "background_color": "#c081a9",
+        "accent_color": "#e35478",
+        "hover_color": "#24a5a1"
       }
     },
     "custom_section_9AEAFL": {
@@ -173,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Heading",
-            "subtitle_text": "Subheading",
+            "heading_text": "New Fillings, Who Dis?",
+            "subtitle_text": "Sieht gut aus. Schmeckt noch besser.",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -217,7 +143,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-carrot-cake-energyballs-bio-vegan",
+                        "card_product": "matcha-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -237,7 +163,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-banana-bread-energieballs-bio-vegan",
+                        "card_product": "himbeer-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -257,7 +183,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20-x-weisse-schoko-erdnuss-dattelkaramell-riegel-bio-vegan",
+                        "card_product": "chai-latte-spill-the-tea",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -277,7 +203,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship",
+                        "card_product": "brownie-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -347,7 +273,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "image": "shopify://shop_images/Bildschirmfoto_2025-08-26_um_15.22.54.png",
+                    "image": "shopify://shop_images/Yogurette_2.webp",
                     "text": "Herkömmliche Süßigkeiten",
                     "liquid": ""
                   },
@@ -356,6 +282,7 @@
                 "table_cell_dPaGtF": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
@@ -399,7 +326,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Vegan",
+                    "text": "Bio",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -419,6 +346,7 @@
                 "table_cell_BVHMme": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -460,7 +388,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Bio",
+                    "text": "Vegan",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -480,6 +408,7 @@
                 "table_cell_nTLj3N": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -521,7 +450,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Produkttyp",
+                    "text": "Kalorien",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -529,6 +458,7 @@
                 "table_cell_yDAyMi": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -545,7 +475,7 @@
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Bärchen",
+                    "text": "2.382 kJ / 571 kcal",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -557,7 +487,7 @@
                     "cell_type": "td",
                     "background_color": "#6ad4d1",
                     "sticky": true,
-                    "text": "Riegel",
+                    "text": "1884 kJ / 450 kcal",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -568,67 +498,6 @@
                 "table_cell_yDAyMi",
                 "table_cell_cVqDAD",
                 "table_cell_d699NA"
-              ]
-            },
-            "table_row_JkGcKx": {
-              "type": "table-row",
-              "name": "Nachhaltig",
-              "settings": {},
-              "blocks": {
-                "table_cell_P9TewY": {
-                  "type": "table-cell",
-                  "name": "Vegan",
-                  "settings": {
-                    "cell_type": "th",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": false,
-                    "text": "Nachhaltig",
-                    "liquid": ""
-                  },
-                  "blocks": {}
-                },
-                "table_cell_LCrXgC": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": false,
-                    "text": "❌",
-                    "liquid": ""
-                  },
-                  "blocks": {}
-                },
-                "table_cell_mY7zCQ": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": false,
-                    "text": "❌",
-                    "liquid": ""
-                  },
-                  "blocks": {}
-                },
-                "table_cell_wABQzt": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "#6ad4d1",
-                    "sticky": true,
-                    "text": "✅",
-                    "liquid": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "table_cell_P9TewY",
-                "table_cell_LCrXgC",
-                "table_cell_mY7zCQ",
-                "table_cell_wABQzt"
               ]
             },
             "table_row_egiqnF": {
@@ -643,7 +512,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Ohne Gluten",
+                    "text": "Ballaststoffe",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -655,7 +524,7 @@
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "❌",
+                    "text": "0 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -663,6 +532,7 @@
                 "table_cell_gayeYF": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -679,7 +549,7 @@
                     "cell_type": "td",
                     "background_color": "#6ad4d1",
                     "sticky": true,
-                    "text": "✅",
+                    "text": "11,7 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -704,7 +574,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Ohne Zusatzstoffe",
+                    "text": "Kohlenhydrate",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -716,7 +586,7 @@
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "❌",
+                    "text": "56,8 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -724,6 +594,7 @@
                 "table_cell_6RnUHj": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -740,7 +611,7 @@
                     "cell_type": "td",
                     "background_color": "#6ad4d1",
                     "sticky": true,
-                    "text": "✅",
+                    "text": "47,8 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -751,6 +622,68 @@
                 "table_cell_KEkDjp",
                 "table_cell_6RnUHj",
                 "table_cell_BXDkdE"
+              ]
+            },
+            "table_row_JkGcKx": {
+              "type": "table-row",
+              "name": "Nachhaltig",
+              "settings": {},
+              "blocks": {
+                "table_cell_P9TewY": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Zucker",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_LCrXgC": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "55,4 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_mY7zCQ": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_wABQzt": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "#6ad4d1",
+                    "sticky": true,
+                    "text": "22,1 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_P9TewY",
+                "table_cell_LCrXgC",
+                "table_cell_mY7zCQ",
+                "table_cell_wABQzt"
               ]
             },
             "table_row_q9hQGQ": {
@@ -765,7 +698,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
-                    "text": "Ohne Raffinierten Zucker",
+                    "text": "Ohne Raffinierten Zucker ?",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -785,6 +718,7 @@
                 "table_cell_Rh6dGT": {
                   "type": "table-cell",
                   "name": "Table Cell",
+                  "disabled": true,
                   "settings": {
                     "cell_type": "td",
                     "background_color": "rgba(0,0,0,0)",
@@ -882,9 +816,9 @@
             "table_row_FdtTwp",
             "table_row_qRweF6",
             "table_row_rjxCg9",
-            "table_row_JkGcKx",
             "table_row_egiqnF",
             "table_row_ndaVMJ",
+            "table_row_JkGcKx",
             "table_row_q9hQGQ",
             "table_row_J8iF9r"
           ]
@@ -895,7 +829,7 @@
       ],
       "name": "Comparison Table",
       "settings": {
-        "product": "20-x-banana-bread-energieballs-bio-vegan",
+        "product": "himbeer-riegel",
         "title": "Du kannst dich nicht entscheiden? Hier der Vergleich",
         "footer_note": "",
         "background_color": "#2ac2bd",
@@ -911,29 +845,41 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Brownie_filled.png",
+            "image": "shopify://shop_images/Unbenannt-2.webp",
             "image_position": "left",
-            "title": "Title",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
-            "button_text": "Button Text",
-            "button_url": ""
+            "title": "Snack. Smile. Repeat.",
+            "content": "<p><strong>Storytelling, wir sind auf eure wünsche eingegangen und haben das vereint was ihr liebt unsere riegel und unsere Spreads, jetzt beides zusammen mit einem weichen flüssigen kern etc... </strong><br/>   Unsere vier neuen treatfuls Riegel vereinen cremigen Genuss mit natürlichen, bio-zertifizierten Zutaten. Vegan, ohne raffinierten Zucker und gesüßt mit Datteln, für bewusste Snackmomente mit echtem Geschmack. Jede Packung liefert fast 20% deiner täglichen Ballaststoffzufuhr und unterstützt deine innere Balance. Wähle deinen Favoriten: fruchtig, schokoladig, würzig oder matcha-grün und snack dich happy.</p><p><strong><br/>Die Probierbox ist nur für kurze Zeit verfügbar - limitiert und exklusiv für den Launch.</strong></p>",
+            "button_text": "Try them all",
+            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Schultuete_mockup_V2.webp",
-            "image_position": "right",
-            "title": "Title",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>",
-            "button_text": "Button Text",
-            "button_url": ""
+            "image": "shopify://shop_images/Matcha_4-5.png",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Hier auf Vorteile eingehen, Ballststoffe, Zucker etcToo Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         }
       },
       "block_order": [
         "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN"
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
       ],
       "name": "Image with text",
       "settings": {
@@ -943,15 +889,98 @@
         "padding_top": 80,
         "padding_bottom": 40
       }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Ohne Zusatzstoffe"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
+        "background_color": "#5359e5",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
     }
   },
   "order": [
     "main",
     "hero_eNmaQw",
     "featured_product_GbQVWw",
-    "advantages_BcfMf9",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
-    "image_with_text_NHKmKF"
+    "image_with_text_NHKmKF",
+    "advantages_BcfMf9"
   ]
 }

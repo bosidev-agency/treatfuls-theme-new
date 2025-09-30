@@ -15,6 +15,7 @@
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "20 % Code sichern",
             "url": "",
@@ -26,10 +27,9 @@
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
-          "disabled": true,
           "settings": {
-            "text": "zur Schultüte",
-            "url": "shopify://products/schultute-bio-vegan",
+            "text": "Adventskalender sichern 🎁",
+            "url": "shopify://products/adventskalender",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -50,11 +50,11 @@
         "vertical_alignment_desktop": "middle",
         "horizontal_alignment_desktop": "left",
         "vertical_alignment_mobile": "top",
-        "horizontal_alignment_mobile": "left",
+        "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Santa’s <span>Sweet Deal!<span></span></span>",
-        "text": "<h4><strong>Unser Kalender ist fast so schnell weg wie unsere Snacks!</strong></h4><h4><strong>Trag dich jetzt in den Newsletter ein & schnapp dir deinen exklusiven </strong></h4><h4><strong>20 %-Code 🎁</strong></h4>",
+        "title": "24 Gründe, jeden Tag auszuflippen",
+        "text": "",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",
@@ -83,7 +83,7 @@
         "collection_item_hHjCCf": {
           "type": "collection_item",
           "settings": {
-            "collection": "love-bites-valentinstag",
+            "collection": "mixboxen",
             "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
             "collection_title": "Sommerboxen"
           }
@@ -128,7 +128,7 @@
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
           "type": "product_item",
           "settings": {
-            "product": "schultute-bio-vegan"
+            "product": "box-full-of-love-bio-vegan"
           }
         },
         "28b053f4-1040-48a6-9229-7fa4f1d54ca5": {
@@ -192,10 +192,11 @@
         "product_item_6mCijk"
       ],
       "settings": {
-        "title": "This is what <span><span>guiltfree</span></span><span><span></span></span> looks like",
-        "title-second": "powered by  <span><span>plants </span></span><span><span>loved </span></span> by everyone",
-        "title-third": "healthy <span><span>never </span></span><span><span></span> tasted </span> this naughty",
+        "title": "This is what <span>guiltfree</span>looks like",
+        "title-second": "powered by  <span>plants loved</span> by everyone",
+        "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
+        "adjust_colors_to_current_slide": false,
         "background_color": "#f3587f",
         "accent_color": "#2ac2bd",
         "hover_color": "#dbaaeb"
@@ -298,6 +299,7 @@
         "advantage_item_f8LpM9"
       ],
       "settings": {
+        "hide_on_mobile": false,
         "title": "nicht noch so <br><span>ein Bio-Riegel…</span>",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
         "background_color": "#5359e5",
