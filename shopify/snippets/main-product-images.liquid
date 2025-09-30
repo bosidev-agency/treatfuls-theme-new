@@ -45,11 +45,8 @@
 			{%- for media in product.media -%}
 				<div class="swiper-slide">
 					<picture>
-						<img
-							src="{{ media.preview_image | img_url: 'master' }}"
-							alt="{{- media.alt | default: title -}}"
-						/>
-					</picture>
+            {{ media.preview_image | image_url: width: 100 | image_tag: width: 64, height: 64 }}
+          </picture>
 				</div>
 			{%- endfor -%}
 		</div>

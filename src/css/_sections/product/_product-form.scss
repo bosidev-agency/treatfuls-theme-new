@@ -27,7 +27,7 @@
 }
 
 .product-form__price {
-  color: #ffffff;
+  color: rgb(var(--color-text));
 
   &.product-form__price--old {
     text-decoration: line-through;

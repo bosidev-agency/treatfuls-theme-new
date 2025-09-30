@@ -78,18 +78,16 @@
               </span>
               {%- if current_variant.unit_price_measurement -%}
                 {%- capture unit_price_base_unit -%}
-                  
-                    {%- if current_variant.available and current_variant.unit_price_measurement -%}
-                      {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
-                        {{- current_variant.unit_price_measurement.reference_value -}}
-                      {%- endif -%}
-                      {{ current_variant.unit_price_measurement.reference_unit }}
+                  {%- if current_variant.unit_price_measurement -%}
+                    {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+                      {{- current_variant.unit_price_measurement.reference_value -}}
                     {%- endif -%}
-                  
+                    {{ current_variant.unit_price_measurement.reference_unit }}
+                  {%- endif -%}
                 {%- endcapture -%}
+
                 <span class="product-form__unit-price {{ sale_class }}" data-product-price>
-                  {{- current_variant.unit_price | money -}}
-                  / {{ unit_price_base_unit }}
+                  {{- current_variant.unit_price | money -}} / {{ unit_price_base_unit }}
                 </span>
               {%- endif -%}
             </span>

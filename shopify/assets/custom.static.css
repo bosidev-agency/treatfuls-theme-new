@@ -723,7 +723,7 @@ li.slick-active button {
 }
 
 .product-form__unit-price {
-  color: #ffffff;
+  color: rgb(var(--color-text));
   font-size: 0.5em; 
 }
 
