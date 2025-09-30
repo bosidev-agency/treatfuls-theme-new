@@ -37,25 +37,38 @@
       min-height: 66px;
 
       .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 64px;
-        min-height: 64px;
-
         &:hover {
           cursor: pointer;
         }
       }
 
-      picture {
+      .thumbnail-slide__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+
+        @media #{$no-l} {
+          width: 80px;
+          height: 80px;
+        }
+
+        @media #{$no-fw} { 
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      img {
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 64px;
-        height: 64px;
-        border: 1px solid #fff;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: 1px solid rgb(var(--color-text));
       }
     }
 
@@ -65,7 +78,6 @@
         top: 0;
         left: 10vw;
         height: 100%;
-        max-height: 420px;
         padding-right: 5vw;
       }
 
@@ -78,10 +90,6 @@
     @media #{$no-l} {
       .product-gallery__slider {
         max-width: 672px;
-      }
-
-      .product-gallery__slider-thumbnail {
-        max-height: 440px;
       }
     }
 
@@ -99,17 +107,10 @@
       }
 
       .product-gallery__slider-thumbnail {
-        max-height: 650px;
         left: 10vw;
 
         .swiper-slide {
           min-width: 120px;
-          min-height: 120px;
-        }
-
-        picture {
-          width: 120px;
-          height: 120px;
         }
       }
     }
@@ -136,12 +137,7 @@
       }
 
       .product-gallery__slider-thumbnail {
-        max-width: 500px;
-
-        .swiper-slide {
-          min-width: 32px;
-          min-height: 32px;
-        }
+        max-width: 400px;
       }
     }
 
@@ -162,16 +158,6 @@
 
       .product-gallery__slider-thumbnail {
         max-width: 300px;
-
-        .swiper-slide {
-          min-width: 32px;
-          min-height: 32px;
-        }
-
-        picture {
-          width: 32px;
-          height: 32px;
-        }
       }
     }
   }

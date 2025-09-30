@@ -341,28 +341,40 @@ register("product", {
 		const sliderThumbnail = this.container.querySelector(
 			selectors.productGalleryThumbnail
 		);
-
-    const slidesPerView = sliderThumbnail.dataset.slideLength > 4 ? 4 : 3
+    const slidesPerView = sliderThumbnail.dataset.slideLength > 4 ? 4.5 : "auto"
+    const slidesPerViewTablet = sliderThumbnail.dataset.slideLength > 4 ? 4.5 : sliderThumbnail.dataset.slideLength
+    const slidesPerViewMobile = sliderThumbnail.dataset.slideLength > 3 ? 3.5 : sliderThumbnail.dataset.slideLength
 
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
-				slidesPerView: slidesPerView + 0.5,
-				direction: "vertical",
+				slidesPerView: slidesPerView,
+        spaceBetween: 10,
+        direction: "horizontal",
 
 				breakpoints: {
 					300: {
-						direction: "horizontal",
-						spaceBetween: 15,
-            slidesPerView: 3.5,
+            direction: "horizontal",
+            slidesPerView: slidesPerViewMobile,
+            spaceBetween: 5,
 					},
-					576: {
-						direction: "horizontal",
-						spaceBetween: 15,
-            slidesPerView: slidesPerView + 0.5,
+          576: {
+            direction: "horizontal",
+            slidesPerView: slidesPerViewTablet,
+            spaceBetween: 5,
 					},
 					992: {
 						direction: "vertical",
-            slidesPerView: slidesPerView + 0.5,
+            slidesPerView: slidesPerView,
+            gap: 10,
+					},
+          1250: {
+            direction: "vertical",
+            slidesPerView: slidesPerView,
+            gap: 20,
+          },
+          1920: {
+            direction: "vertical",
+						spaceBetween: 20,
 					}
 				}
 			});
