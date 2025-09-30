@@ -365,7 +365,7 @@ register("product", {
 					992: {
 						direction: "vertical",
             slidesPerView: slidesPerView,
-            gap: 10,
+            gap: 15,
 					},
           1250: {
             direction: "vertical",
