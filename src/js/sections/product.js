@@ -342,8 +342,8 @@ register("product", {
 			selectors.productGalleryThumbnail
 		);
     const slidesPerView = sliderThumbnail.dataset.slideLength > 4 ? 4.5 : "auto"
-    const slidesPerViewTablet = sliderThumbnail.dataset.slideLength > 4 ? 4.5 : sliderThumbnail.dataset.slideLength
-    const slidesPerViewMobile = sliderThumbnail.dataset.slideLength > 3 ? 3.5 : sliderThumbnail.dataset.slideLength
+    const slidesPerViewTablet = sliderThumbnail.dataset.slideLength > 4 ? 4.5 : Number(sliderThumbnail.dataset.slideLength)
+    const slidesPerViewMobile = sliderThumbnail.dataset.slideLength > 3 ? 3.5 : Number(sliderThumbnail.dataset.slideLength)
 
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {

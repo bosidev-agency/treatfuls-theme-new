@@ -34,7 +34,6 @@
     }
 
     .product-gallery__slider-thumbnail {
-      min-height: 66px;
 
       .swiper-slide {
         &:hover {
@@ -44,6 +43,7 @@
 
       .thumbnail-slide__wrapper {
         display: flex;
+        flex-shrink: 0;
         justify-content: center;
         align-items: center;
         width: 60px;
@@ -145,10 +145,6 @@
       .product-gallery__slider {
         max-width: 480px;
       }
-
-      .product-gallery__slider-thumbnail {
-        min-width: 200px;
-      }
     }
 
     @media #{$m-l} {
@@ -157,7 +153,8 @@
       }
 
       .product-gallery__slider-thumbnail {
-        max-width: 300px;
+        max-width: 250px;
+        width: 250px;
       }
     }
   }
