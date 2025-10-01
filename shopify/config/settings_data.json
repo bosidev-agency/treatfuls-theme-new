@@ -10,7 +10,7 @@
 {
   "current": {
     "color_error": "#f3587f",
-    "header_background": "#e7bcd4",
+    "header_background": "#d43e4a",
     "header_accent": "#2ac2bd",
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,

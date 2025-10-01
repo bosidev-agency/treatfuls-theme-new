@@ -353,6 +353,24 @@
             "show_ingredients": false,
             "show_nutrition": false
           }
+        },
+        "faq_item_J8ddxa": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Ist die Schokolade Fairtrade?",
+            "content": "Klaro – unsere Schoki ist 100 % Fairtrade. 🍫🌍 Für uns ist das keine Option, sondern Standard. Denn guter Geschmack darf niemals auf Kosten anderer entstehen.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_JkMj7D": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sind die Mystery Box Snacks wirklich bio, vegan und nachhaltig?",
+            "content": "Oh yes! 🙌 Alle unsere Snacks sind bio-zertifiziert, vegan und frei von raffiniertem Zucker – perfekt für alle, die bewusst snacken wollen. Außerdem setzen wir auf natürliche Zutaten, recyclebare Verpackungen und fairen Kakao. Kurz gesagt: treatfuls sind genauso kompromisslos lecker wie nachhaltig.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
         }
       },
       "block_order": [
@@ -361,7 +379,9 @@
         "faq_item_6WTzgU",
         "faq_item_dG9GKw",
         "faq_item_UghL9L",
-        "faq_item_cANe4p"
+        "faq_item_cANe4p",
+        "faq_item_J8ddxa",
+        "faq_item_JkMj7D"
       ],
       "name": "FAQ",
       "settings": {
