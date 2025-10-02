@@ -1,16 +1,16 @@
-@media screen and (max-width: 991px) {
+@media #{$m-xl} {
   .hidden-phone {
     display: none !important;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media #{$m-xl} {
   .mobile-vanish {
     transform: translateY(120%) !important;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media #{$no-m-xl} {
   .hidden-desktop {
     display: none !important;
   }
