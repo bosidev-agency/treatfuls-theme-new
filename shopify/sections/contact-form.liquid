@@ -22,13 +22,13 @@
       {% form 'contact' %}
         <div class="title-wrapper">
           {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
-            {%- if section.settings.title -%}
+            {%- if section.settings.title and form.posted_successfully? == false -%}
               <h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
             {%- endif -%}
             
             {% if form.posted_successfully? %}
               <div class="form-message form-message--success">
-                <h3 class="form-message__title title-bg title-bg--sm">{{ 'contact.form.post_success_html' | t }}</h3>
+                <h3 class="form-message__title title-bg title-bg--sm">{{ section.settings.post_success_message }}</h3>
 
                 <a class="button" href="{{ routes.root_url }}">
                   {{ 'contact.form.back_to_home' | t }}
@@ -55,9 +55,11 @@
                 {% content_for 'blocks' %}
               </div>
 
-              <button type="submit" class="button contact-form__button">
-                {{ 'contact.form.b2b_submit' | t }}
-              </button>
+              <div class="contact-form__button-wrapper button-position--{{ section.settings.button_position }}">
+                <button type="submit" class="button contact-form__button">
+                  {{ section.settings.button_text }}
+                </button>
+              </div>
             {% endunless %}
           </div>
         </div>
@@ -85,6 +87,42 @@
       "id": "subtitle",
       "label": "Subtitle",
       "default": "<p>We're here to help you</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "post_success_message",
+      "label": "Post success message",
+      "default": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück."
+    },
+    { 
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Anfrage senden"
+    },
+    {
+      "type": "select",
+      "id": "button_position",
+      "label": "Button position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     },
     {
       "type": "header",
@@ -118,6 +156,9 @@
     },
     {
       "type": "form-input",
+    },
+    {
+      "type": "textarea",
     },
     {
       "type": "heading",

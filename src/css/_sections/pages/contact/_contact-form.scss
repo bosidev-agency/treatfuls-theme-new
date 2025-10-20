@@ -1,3 +1,17 @@
+.contact-form__button-wrapper {
+  display: flex;
+
+  &.button-position--left {
+    justify-content: flex-start;
+  }
+  &.button-position--center {
+    justify-content: center;
+  }
+  &.button-position--right {
+    justify-content: flex-end;
+  }
+}
+
 .contact-form__button {
   margin-top: 24px;
   max-width: 300px;

@@ -1,24 +1,43 @@
+label:has(.textarea) {
+  min-height: 355px;
+
+  @media (max-width: 991px) {
+    min-height: 240px;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 225px;
+  }
+
+  @media (min-width: 1920px) {
+    min-height: 250px;
+  }
+
+  @media (min-width: 2560px) {
+    min-height: 398px;
+  }
+}
+
 textarea,
 .textarea {
   width: 100%;
-  min-height: 100px;
-  max-height: 200px;
   padding: 16px 10px 16px 0;
   border: none;
-  border-bottom: 1px solid #fff;
   outline: 0;
   background: transparent;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   color: #ffffff;
   box-shadow: none;
   resize: none;
-
-  &::placeholder {
-    color: #ffffff;
-  }
+  border: 1px solid rgb(var(--color-text));
+  padding: 12px;
 
   @media #{$no-fw} {
     font-size: 1.1vw;
+  }
+
+  &::placeholder {
+    color: #ffffff;
   }
 }

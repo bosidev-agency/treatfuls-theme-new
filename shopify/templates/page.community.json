@@ -11,14 +11,116 @@
   "sections": {
     "main": {
       "type": "page-community",
+      "disabled": true,
       "settings": {
-        "title": "Werde Teil und fange an zu <span><span>gestalten</span></span>",
+        "title": "Werde Teil und fange an zu gestalten",
         "subtitle": "Denk dir einen Text aus, der später auf die Riegel gedruckt wird.",
-        "contact_form": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"jv4gccjJJDBpSILAg54CGw\"></div>"
+        "contact_form": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"jv4gccjJJDBpSILAg54CGw\"></div>",
+        "textarea_background": "shopify://shop_images/Onlineshop_Mockup_barrylicious_baby_1000x562px_V1_Kopie_3.webp"
+      }
+    },
+    "contact_form_AUAhLJ": {
+      "type": "contact-form",
+      "blocks": {
+        "group_XiJn3e": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 16,
+            "child_width": "100%",
+            "max_width_enabled": true,
+            "max_width": 400,
+            "margin_top": 0,
+            "margin_bottom": 38
+          },
+          "blocks": {
+            "textarea_eVkXTb": {
+              "type": "textarea",
+              "name": "Textarea",
+              "settings": {
+                "label": "",
+                "placeholder": "Hier ist Platz für deine Kreativität",
+                "typewriter_effect": true,
+                "background_image": "shopify://shop_images/404-img.png",
+                "position_absolute": true,
+                "position_absolute_top": 17,
+                "position_absolute_left": 23,
+                "width": 66,
+                "height": 57
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "textarea_eVkXTb"
+          ]
+        },
+        "group_gJMdew": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 16,
+            "child_width": "auto",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 24
+          },
+          "blocks": {
+            "form_input_e8MYUt": {
+              "type": "form-input",
+              "name": "Form input",
+              "settings": {
+                "type": "custom",
+                "label": "Dein Name",
+                "placeholder": "Name",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "form_input_4VnPXR": {
+              "type": "form-input",
+              "name": "Form input",
+              "settings": {
+                "type": "email",
+                "label": "Deine Email Adresse",
+                "placeholder": "Email Adresse",
+                "required": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "form_input_e8MYUt",
+            "form_input_4VnPXR"
+          ]
+        }
+      },
+      "block_order": [
+        "group_XiJn3e",
+        "group_gJMdew"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "title": "Werde Teil und fange an zu gestalten",
+        "subtitle": "<p>Denk dir einen Text aus, der später auf die Riegel gedruckt wird.</p>",
+        "post_success_message": "<span>Danke</span> für deine Idee! Vielleicht wird sie ja bald schon umgesetzt :)",
+        "button_text": "Text abschicken",
+        "button_position": "center",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "contact_form_AUAhLJ"
   ]
 }

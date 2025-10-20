@@ -34,6 +34,7 @@ require("./components/tooltip");
 require("./components/modal-popover");
 require("./components/predictive-search");
 require("./components/info-tabs");
+require("./components/typewriter-textarea");
 
 /*================ Sections ================*/
 require("./sections/header");

@@ -1,0 +1,114 @@
+<style>
+  #shopify-block-{{ block.id }} .textarea {
+    {% if block.settings.position_absolute %}
+      position: absolute;
+      top: {{ block.settings.position_absolute_top }}%;
+      left: {{ block.settings.position_absolute_left }}%;
+      width: {{ block.settings.width }}%;
+      height: {{ block.settings.height }}%;
+    {% endif %}
+  }
+</style>
+
+<label
+  class="label"
+  {% if block.settings.background_image %}
+    style="background-image: url({{ block.settings.background_image | image_url : width: block.settings.background_image.width }}); background-size: contain; background-position: center; background-repeat: no-repeat;"
+  {% endif %}
+>
+  <span class="text input__label">
+    {{- block.settings.label -}}
+    {% if block.settings.required %} *{% endif %}
+  </span>
+  <textarea
+    name="contact[Community text]"
+    {% if block.settings.typewriter_effect %}
+      is="textarea-typewriter"
+    {% endif %}
+    placeholder="{{ block.settings.placeholder }}"
+    id="ContactForm-CommunityText"
+    class="textarea"
+    {% if block.settings.required %}
+      required="required"
+    {% endif %}
+  ></textarea>
+</label>
+
+{% schema %}
+{
+  "name": "Textarea",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Placeholder"
+    },
+    {
+      "type": "checkbox",
+      "id": "typewriter_effect",
+      "label": "Typewriter effect",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "checkbox",
+      "id": "position_absolute",
+      "label": "Position absolute",
+      "default": false
+    },
+
+    {
+      "type": "range",
+      "id": "position_absolute_top",
+      "label": "Position absolute top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "visible_if": "{{ block.settings.position_absolute }}"
+    },
+    {
+      "type": "range",
+      "id": "position_absolute_left",
+      "label": "Position absolute left",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "visible_if": "{{ block.settings.position_absolute }}"
+    },
+    {
+      "type": "range",
+      "id": "width",
+      "label": "Width",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "visible_if": "{{ block.settings.position_absolute }}"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Height",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "visible_if": "{{ block.settings.position_absolute }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Textarea"
+    }
+  ]
+}
+{% endschema %}
