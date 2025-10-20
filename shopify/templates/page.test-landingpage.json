@@ -275,7 +275,7 @@
                     "sticky": false,
                     "image": "shopify://shop_images/Yogurette_2.webp",
                     "text": "Herkömmliche Süßigkeiten",
-                    "liquid": ""
+                    "liquid": "pro 100 g"
                   },
                   "blocks": {}
                 },
@@ -298,11 +298,11 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "th",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "image": "{{ closest.product.featured_image }}",
                     "text": "{{ closest.product.metafields.custom.short_title.value }}",
-                    "liquid": "{%- if closest.product.has_only_default_variant -%}\n  {%- assign unit_price = closest.product.variants.first.unit_price -%}\n  {%- assign unit_reference = closest.product.variants.first.unit_price_measurement.reference_unit -%}\n  {%- assign unit_reference_value = closest.product.variants.first.unit_price_measurement.reference_value -%}\n{%- else -%}\n  {%- assign unit_price = product.unit_price -%}\n  {%- assign unit_reference = product.unit_price_measurement.reference_unit -%}\n  {%- assign unit_reference_value = product.unit_price_measurement.reference_value -%}\n{%- endif -%}\n\n{%- assign quantity_content = closest.product.metafields.custom.quantity_content -%}\n{%- assign weight_content = closest.product.metafields.custom.weight_content -%}\n{%- assign unit_name = closest.product.metafields.custom.unit_name -%}\n\n{% if quantity_content != blank and weight_content != blank and unit_name != blank %}\n<div class=\"products_listing__label\"\nstyle=\"font-weight: 400;\n    font-size: 12px;\n    line-height: 24px;\n    color: #1d8884;\n    background-color: #6ad4d1;\n    padding: 4px 8px;\nborder-radius: 4px;\n    border: 1px solid #1d8884;\"\n>\n              <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>\n            </div>\n          {% endif %}"
+                    "liquid": "pro 100 g"
                   },
                   "blocks": {}
                 }
@@ -361,7 +361,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -423,7 +423,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -485,7 +485,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "1884 kJ / 450 kcal",
                     "liquid": ""
@@ -547,7 +547,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "11,7 g",
                     "liquid": ""
@@ -609,7 +609,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "47,8 g",
                     "liquid": ""
@@ -671,7 +671,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "22,1 g",
                     "liquid": ""
@@ -733,7 +733,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "#6ad4d1",
+                    "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -830,7 +830,7 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "Du kannst dich nicht entscheiden? Hier der Vergleich",
+        "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
         "background_color": "#2ac2bd",
         "accent_color": "#f3587f",
@@ -848,7 +848,7 @@
             "image": "shopify://shop_images/Unbenannt-2.webp",
             "image_position": "left",
             "title": "Snack. Smile. Repeat.",
-            "content": "<p><strong>Storytelling, wir sind auf eure wünsche eingegangen und haben das vereint was ihr liebt unsere riegel und unsere Spreads, jetzt beides zusammen mit einem weichen flüssigen kern etc... </strong><br/>   Unsere vier neuen treatfuls Riegel vereinen cremigen Genuss mit natürlichen, bio-zertifizierten Zutaten. Vegan, ohne raffinierten Zucker und gesüßt mit Datteln, für bewusste Snackmomente mit echtem Geschmack. Jede Packung liefert fast 20% deiner täglichen Ballaststoffzufuhr und unterstützt deine innere Balance. Wähle deinen Favoriten: fruchtig, schokoladig, würzig oder matcha-grün und snack dich happy.</p><p><strong><br/>Die Probierbox ist nur für kurze Zeit verfügbar - limitiert und exklusiv für den Launch.</strong></p>",
+            "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
             "button_text": "Try them all",
             "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -859,13 +859,14 @@
             "image": "shopify://shop_images/Matcha_4-5.png",
             "image_position": "left",
             "title": "Filling done right",
-            "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit bis zu 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße stammt dabei zu 100 % aus Früchten wie Datteln und einem Hauch Erythrit, komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
+            "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit ganzen 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße kommt dabei zu 100 % aus  Datteln und komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
             "button_text": "Show me the filling",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
             "image_position": "left",

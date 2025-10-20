@@ -28,8 +28,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "jetzt sichern 🔒",
-            "url": "https://treatfuls.com/products/mystery-box",
+            "text": "taste the filled bars 😍",
+            "url": "shopify://products/summer-crush-kopie",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Herobanner_Mystery_Desktop.webp",
+        "desktop_image": "shopify://shop_images/v2_desktop_Herobanner_newbars_Desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/mobile_Herobanner_Mystery_Desktop.webp",
+        "mobile_image": "shopify://shop_images/v2_mobile_Herobanner_newbars_Desktop.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -53,8 +53,8 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Mystery Box",
-        "text": "<p>Unwrap the unknown – taste the magic.</p>",
+        "title": "",
+        "text": "<h3>Say hi to your next obsession 🍫</h3>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",

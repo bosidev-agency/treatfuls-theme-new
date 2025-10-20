@@ -10,7 +10,7 @@
 {
   "current": {
     "color_error": "#f3587f",
-    "header_background": "#d43e4a",
+    "header_background": "#f3587f",
     "header_accent": "#2ac2bd",
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
@@ -141,6 +141,13 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "13180643132867056963": {
+        "type": "shopify://apps/complianz-gdpr-cookie-consent/blocks/bc-block/e49729f0-d37d-4e24-ac65-e0e2f472ac27",
+        "disabled": false,
+        "settings": {
+          "hide_label": false
+        }
       }
     }
   }
