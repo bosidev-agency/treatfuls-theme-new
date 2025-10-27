@@ -50,13 +50,13 @@
         height: 60px;
 
         @media #{$no-l} {
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
         }
 
         @media #{$no-fw} { 
-          width: 120px;
-          height: 120px;
+          width: 90px;
+          height: 90px;
         }
       }
 
@@ -89,7 +89,7 @@
 
     @media #{$no-l} {
       .product-gallery__slider {
-        max-width: 672px;
+        max-width: 550px;
       }
     }
 
@@ -103,7 +103,7 @@
       margin-bottom: 5vw;
 
       .product-gallery__slider {
-        max-width: 50vw;
+        max-width: 40vw;
       }
 
       .product-gallery__slider-thumbnail {

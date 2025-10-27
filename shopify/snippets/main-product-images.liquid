@@ -7,32 +7,7 @@
 		<div class="swiper-wrapper">
 			{%- for media in product.media -%}
 				<div class="swiper-slide">
-					<picture>
-						<source
-							srcset="{{ media.preview_image | img_url: '1208x' }} 1x, {{ media.preview_image | img_url: '2416x' }} 2x, {{ media.preview_image | img_url: '3624x' }} 3x"
-							media="(min-width: 2560px)">
-
-						<source
-							srcset="{{ media.preview_image | img_url: '1008x' }} 1x, {{ media.preview_image | img_url: '2016x' }} 2x, {{ media.preview_image | img_url: '3024x' }} 3x"
-							media="(min-width: 1920px)">
-
-						<source
-							srcset="{{ media.preview_image | img_url: '672x' }} 1x, {{ media.preview_image | img_url: '1344x' }} 2x, {{ media.preview_image | img_url: '2016x' }} 3x"
-							media="(min-width: 1250px)">
-
-						<source
-							srcset="{{ media.preview_image | img_url: '550x' }} 1x, {{ media.preview_image | img_url: '1100x' }} 2x, {{ media.preview_image | img_url: '1650x' }} 3x"
-							media="(min-width: 991px)">
-
-						<source
-							srcset="{{ media.preview_image | img_url: '458x' }} 1x, {{ media.preview_image | img_url: '916x' }} 2x,{{ media.preview_image | img_url: '1374x' }} 3x"
-							media="(min-width: 575px)">
-						<img
-							src="{{ media.preview_image | img_url: '264x' }}"
-							srcset="{{ media.preview_image | img_url: '264x' }} 1x, {{ media.preview_image | img_url: '528x' }} 2x, {{ media.preview_image | img_url: '792x' }} 3x"
-							alt="{{- media.alt | default: title -}}"
-						/>
-					</picture>
+					{{ media.preview_image | image_url: width: media.preview_image.width | image_tag }}
 				</div>
 			{%- endfor -%}
 		</div>
