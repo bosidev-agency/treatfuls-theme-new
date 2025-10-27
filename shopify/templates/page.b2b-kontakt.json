@@ -369,8 +369,11 @@
       ],
       "name": "Contact form",
       "settings": {
-        "title": "B2B Registration",
+        "title": "<span>B2B</span> Registration",
         "subtitle": "<p>1. Als Firmenkunde kannst Du unsere B2B-Rabatte erhalten. Damit kaufst Du unsere Produkte zu vergünstigten Preisen ein</p><p>2. Nachdem Du Dich registriert hast, prüfen wir Deine Angaben innerhalb weniger Tage. Im Anschluss erhältst Du eine Bestätigungsmail sowie eine ausführliche Beschreibung zu der B2B-Rabattstruktur. Bitte beachte, dass die B2B-Rabatte ohne unsere Validierung noch nicht gültig sind.</p><p>3. Nach erfolgreicher Freischaltung werden die B2B-Rabatte abhängig vom Einkaufswert stets auf Deinen Warenkorb angewandt.</p><p>4. Registriere Dich jetzt!</p>",
+        "post_success_message": "<span>Danke</span> für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück.",
+        "button_text": "Anfrage senden",
+        "button_position": "left",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"

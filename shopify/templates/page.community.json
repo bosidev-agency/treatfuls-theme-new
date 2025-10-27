@@ -15,8 +15,7 @@
       "settings": {
         "title": "Werde Teil und fange an zu gestalten",
         "subtitle": "Denk dir einen Text aus, der später auf die Riegel gedruckt wird.",
-        "contact_form": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"jv4gccjJJDBpSILAg54CGw\"></div>",
-        "textarea_background": "shopify://shop_images/Onlineshop_Mockup_barrylicious_baby_1000x562px_V1_Kopie_3.webp"
+        "contact_form": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"jv4gccjJJDBpSILAg54CGw\"></div>"
       }
     },
     "contact_form_AUAhLJ": {
@@ -108,7 +107,7 @@
       ],
       "name": "Contact form",
       "settings": {
-        "title": "Werde Teil und fange an zu gestalten",
+        "title": "Werde Teil und fange an zu <span>gestalten</span>",
         "subtitle": "<p>Denk dir einen Text aus, der später auf die Riegel gedruckt wird.</p>",
         "post_success_message": "<span>Danke</span> für deine Idee! Vielleicht wird sie ja bald schon umgesetzt :)",
         "button_text": "Text abschicken",
