@@ -45,6 +45,76 @@
         "show_base_triangular_line": false
       }
     },
+    "featured_collections_qWR4p8": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_item_RAiXXm": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "produkte",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
+            "collection_title": "Alle Produkte"
+          }
+        },
+        "collection_item_ErgVHi": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "riegel",
+            "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
+            "collection_title": "Riegel"
+          }
+        },
+        "collection_item_kECnxV": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "mixboxen",
+            "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
+            "collection_title": "Mixboxen"
+          }
+        },
+        "collection_item_txnMzH": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "weihnachten-1",
+            "image": "shopify://shop_images/AK_MOCKUP_Kopie.webp",
+            "collection_title": "Weihnachten"
+          }
+        },
+        "collection_item_JNgrKn": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nuss-aufstriche",
+            "image": "shopify://shop_images/spreads-treatfuls.webp",
+            "collection_title": "Aufstriche"
+          }
+        },
+        "collection_item_cR6yK6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "balls",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
+            "collection_title": "Balls"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_RAiXXm",
+        "collection_item_ErgVHi",
+        "collection_item_kECnxV",
+        "collection_item_txnMzH",
+        "collection_item_JNgrKn",
+        "collection_item_cR6yK6"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading_desktop": "Produkte",
+        "heading_mobile": "Produktübersicht",
+        "background_color": "#dbaaeb",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#2ac2bd",
+        "accent_color_mobile": "#f3587f"
+      }
+    },
     "featured_product_GbQVWw": {
       "type": "featured-product",
       "blocks": {
@@ -81,13 +151,13 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "summer-crush-kopie",
-        "heading": "🍫 4 neue Riegel. Gefüllt. Natürlich. Unwiderstehlich.",
-        "mobile_heading": "🍫 Gefüllt. Natürlich. Unwiderstehlich.",
+        "product": "treatfuls-gutschein",
+        "heading": "X-MAS just got snackier.",
+        "mobile_heading": "X-MAS just got snackier.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c081a9",
+        "background_color": "#713242",
         "accent_color": "#e35478",
         "hover_color": "#24a5a1"
       }
@@ -99,8 +169,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "New Fillings, Who Dis?",
-            "subtitle_text": "Sieht gut aus. Schmeckt noch besser.",
+            "heading_text": "Approved by Santa 🎅",
+            "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -827,6 +897,7 @@
       "block_order": [
         "table_EbWcfp"
       ],
+      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
@@ -883,7 +954,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "",
+        "background_color": "#713242",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -968,7 +1039,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
+        "background_color": "#e56a89",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -977,6 +1048,7 @@
   "order": [
     "main",
     "hero_eNmaQw",
+    "featured_collections_qWR4p8",
     "featured_product_GbQVWw",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",

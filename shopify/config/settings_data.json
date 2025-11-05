@@ -9,12 +9,16 @@
  */
 {
   "current": {
+    "background": "#e56a89",
+    "accent": "#e56a89",
     "color_error": "#f3587f",
     "header_background": "#f3587f",
-    "header_accent": "#2ac2bd",
+    "header_accent": "#e56a89",
+    "footer_accent": "#e56a89",
+    "nav_background": "#e56a89",
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
-    "cart_free_shipping_threshold": 60,
+    "cart_free_shipping_threshold": 75,
     "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
@@ -148,6 +152,11 @@
         "settings": {
           "hide_label": false
         }
+      },
+      "12634813005945594690": {
+        "type": "shopify://apps/mable/blocks/inject-log-script/369b4fed-dc17-45bb-b0b6-5cf0837c7ccb",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
