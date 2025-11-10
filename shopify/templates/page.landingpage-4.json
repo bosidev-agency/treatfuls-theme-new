@@ -892,6 +892,101 @@
         "padding_bottom": 40
       }
     },
+    "image_gallery_UETJQr": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_TFNHhc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_Cy3jpV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_gift.jpg",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_cQtzp7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_X-Mas_Box.jpg",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_XffPqA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/XMas_Box_2.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_TFNHhc",
+        "image_Cy3jpV",
+        "image_cQtzp7",
+        "image_XffPqA"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#1da59d",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
     "advantages_BcfMf9": {
       "type": "advantages",
       "blocks": {
@@ -983,6 +1078,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "image_gallery_UETJQr",
     "advantages_BcfMf9"
   ]
 }

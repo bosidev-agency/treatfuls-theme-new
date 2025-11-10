@@ -213,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "matcha-riegel",
+                        "card_product": "all-year-gifting-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "himbeer-riegel",
+                        "card_product": "x-mas-gifting-box-grun",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "chai-latte-spill-the-tea",
+                        "card_product": "gifting-boxen-bundle",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -916,27 +916,28 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Unbenannt-2.webp",
+            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
             "image_position": "left",
-            "title": "Snack. Smile. Repeat.",
-            "content": "<p><strong>Storytelling, wir sind auf eure wünsche eingegangen und haben das vereint was ihr liebt unsere riegel und unsere Spreads, jetzt beides zusammen mit einem weichen flüssigen kern etc... </strong><br/>   Unsere vier neuen treatfuls Riegel vereinen cremigen Genuss mit natürlichen, bio-zertifizierten Zutaten. Vegan, ohne raffinierten Zucker und gesüßt mit Datteln, für bewusste Snackmomente mit echtem Geschmack. Jede Packung liefert fast 20% deiner täglichen Ballaststoffzufuhr und unterstützt deine innere Balance. Wähle deinen Favoriten: fruchtig, schokoladig, würzig oder matcha-grün und snack dich happy.</p><p><strong><br/>Die Probierbox ist nur für kurze Zeit verfügbar - limitiert und exklusiv für den Launch.</strong></p>",
-            "button_text": "Try them all",
-            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "All I want for X-Mas is...",
+            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe.<br/>Du bist spät dran? No stress. Es gibt auch einen Gutschein zum Ausdrucken - Joy to the world, literally.</p>",
+            "button_text": "Give the Joy",
+            "button_url": "shopify://products/gifting-boxen-bundle"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Matcha_4-5.png",
+            "image": "shopify://shop_images/ALL_X_MaS_GIFTS.png",
             "image_position": "left",
-            "title": "Filling done right",
-            "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit bis zu 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße stammt dabei zu 100 % aus Früchten wie Datteln und einem Hauch Erythrit, komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
-            "button_text": "Show me the filling",
+            "title": "X-Mas ready.",
+            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
+            "button_text": "Schenke alles auf einmal",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
             "image_position": "left",
@@ -959,6 +960,119 @@
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
+      }
+    },
+    "image_gallery_f4ehGz": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_aRwhDh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_V7BJdt": {
+          "type": "image",
+          "settings": {
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "8",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "1",
+            "column_span_mobile": "8",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_fjFFbd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_URwrcE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
+            "content": "<p></p><p></p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_w3CmDz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
+            "content": "<p></p><p></p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_aRwhDh",
+        "image_V7BJdt",
+        "image_fjFFbd",
+        "image_URwrcE",
+        "image_w3CmDz"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "gifting-boxen-bundle",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#f3587f",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
       }
     },
     "advantages_BcfMf9": {
@@ -1039,7 +1153,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e56a89",
+        "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -1053,6 +1167,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "image_gallery_f4ehGz",
     "advantages_BcfMf9"
   ]
 }

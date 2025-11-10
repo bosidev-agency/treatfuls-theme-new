@@ -234,7 +234,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#e56a89",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -827,6 +827,7 @@
       "block_order": [
         "table_EbWcfp"
       ],
+      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
@@ -884,11 +885,106 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "",
+        "background_color": "#823546",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
+      }
+    },
+    "image_gallery_fYGR9x": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_Ba3F9a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hoch1_Kopie.jpg",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_KRRgPJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Quer3_Kopie_2.webp",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_kTbkJk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Quer1_Kopie.webp",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_GGqJ3U": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hoch2_Kopie.webp",
+            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ba3F9a",
+        "image_KRRgPJ",
+        "image_kTbkJk",
+        "image_GGqJ3U"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#cc7dab",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
       }
     },
     "advantages_BcfMf9": {
@@ -969,7 +1065,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
+        "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -982,6 +1078,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "image_gallery_fYGR9x",
     "advantages_BcfMf9"
   ]
 }
