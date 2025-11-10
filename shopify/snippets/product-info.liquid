@@ -1,9 +1,3 @@
-{%- assign product_title = product.metafields.my_fields.pdp_title -%}
-{%- assign short_title = product.metafields.custom.short_title -%}
-{%- assign quantity_content = product.metafields.custom.quantity_content -%}
-{%- assign weight_content = product.metafields.custom.weight_content -%}
-{%- assign unit_name = product.metafields.custom.unit_name -%}
-
 <section class="product-info">
 	<div class="product-info__container">
     <div class="product-info__main">
@@ -62,23 +56,6 @@
       -%}
         {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-        <select
-          name="id"
-          class="no-js visually-hidden"
-          data-productid="{{- product.id -}}"
-          data-original-product-select
-        >
-          {%- for variant in product.variants -%}
-            <option
-              {% if variant == current_variant %}selected="selected"{% endif %}
-              {% unless variant.available %}disabled="disabled"{% endunless %}
-              value="{{ variant.id }}"
-            >
-              {{ variant.title }}
-            </option>
-          {%- endfor -%}
-        </select>
-
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'description' -%}
@@ -88,6 +65,29 @@
 
             {%- when 'buy_button' -%}
               <div class="product-form__buttons">
+                {% unless product.has_only_default_variant %}
+                  <variant-dropdown class="product-form__variant-selector" data-section-id="main-product" data-product-handle="{{ product.handle }}">
+                    {% for option in product.options_with_values %}
+                      <label class="select-box select-box--blue">
+                        <span class="text color-white select-box__label input__label">{{ option.name }}:</span>
+                        <select name="id">
+                          {% for value in option.values %}
+                            <option value="{{ value.variant.id }}" {% if value.variant.id == current_variant.id %}selected{% endif %}>{{ value }}</option>
+                          {% endfor %}
+                        </select>
+                      </label>
+                    {% endfor %}
+                  </variant-dropdown>
+                {% else %}
+                  <input
+                    name="id"
+                    value="{{ product.selected_or_first_available_variant.id }}"
+                    type="hidden"
+                    data-productid="{{- product.id -}}"
+                    data-original-product-select
+                  >
+                {% endunless %}
+
                 {%- if block.settings.show_price -%}
                   <div class="product-form__price">
                     <span class="product-form__meta-price h3" data-price-wrapper>

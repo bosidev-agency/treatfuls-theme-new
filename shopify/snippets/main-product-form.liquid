@@ -7,7 +7,7 @@
 
   {%- capture no_script -%}
     {% unless product.has_only_default_variant %}
-      <variant-dropdown class="product-form__variant-selector" data-section-id="{{ section.id }}">
+      <variant-dropdown class="product-form__variant-selector" data-section-id="{{ section.id }}" data-product-handle="{{ product.handle }}" data-update-url>
         {% for option in product.options_with_values %}
           <label class="select-box select-box--blue">
             <span class="text color-white select-box__label input__label">{{ option.name }}:</span>

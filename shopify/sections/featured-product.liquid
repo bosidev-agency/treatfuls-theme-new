@@ -19,11 +19,11 @@
 </style>
 
 {%- assign product = section.settings.product -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
 
 <div class="product-page"
 		 data-section-id="{{ section.id }}"
 		 data-section-type="product-page"
-		 data-product-background="{{ product_bg_color }}"
 >
   <div class="content-wrapper">
     {%- if section.settings.heading != blank -%}
@@ -62,9 +62,6 @@
 		{{ product | json }}
 	</script>
 {% endunless %}
-
-
-{% assign current_variant = product.selected_or_first_available_variant %}
 
 <script type="application/ld+json">
 {

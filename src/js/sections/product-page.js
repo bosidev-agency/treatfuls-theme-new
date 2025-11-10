@@ -106,30 +106,7 @@ register("product-page", {
 		);
 
 		this.productForm = new CustomProductForm(productFormElement, this.product, {
-			onOptionChange: this.onFormOptionChange.bind(this),
-			onQuantityChange: () => {},
-			onPropertyChange: () => {},
-			onFormSubmit: (event) => {
-				event.preventDefault();
-
-				event.dataset.variant = {
-					...event.dataset.variant,
-					product: this.product
-				};
-
-				event.detail = {
-					// errorCallback: ({ data }) => {
-					// 	console.log('errorCallback data', data);
-					// }
-				};
-
-				addToCartSubmit(event);
-			},
-			selectors: {
-				idInput: "[data-original-product-select]",
-				quantityInput: '[data-quantity="input"]',
-				propertyInput: "[data-product-property]"
-			}
+			
 		});
 
 		this.onQuantityChange = this.initQuantityClick.bind(this);
@@ -286,7 +263,6 @@ register("product-page", {
 	},
 
 	renderSubmitButton(variant) {
-    console.log('was geht ab')
 		let buttonText = "";
 		if (!this.submitButtonElement) {
 			return;

@@ -4,17 +4,20 @@ class VariantDropdown extends HTMLElement {
   }
 
   get sectionId() {
-    return this.getAttribute('data-section-id');
+    return this.getAttribute("data-section-id");
+  }
+
+  get productHandle() {
+    return this.getAttribute("data-product-handle");
   }
 
   connectedCallback() {
     this.selectElement = this.querySelector('select[name="id"]');
-    this.selectElement.addEventListener('change', this.handleChange.bind(this));
+    this.selectElement.addEventListener("change", this.handleChange.bind(this));
   }
 
   handleChange() {
-    console.log('handleChange', this.selectElement.value);
-    const url = `${window.location.pathname}?variant=${this.selectElement.value}&section_id=${this.sectionId}`;
+    const url = `${window.Shopify.routes.root}products/${this.productHandle}?variant=${this.selectElement.value}&section_id=${this.sectionId}`;
 
     fetch(url)
       .then((response) => response.text())
@@ -22,12 +25,17 @@ class VariantDropdown extends HTMLElement {
         const tempDiv = document.createElement("div");
         tempDiv.innerHTML = data;
 
-        document.querySelector("[data-product-price]").innerHTML =
-          tempDiv.querySelector("[data-product-price]").innerHTML;
+        this.closest('form[action="/cart/add"]').querySelector(
+          "[data-price-wrapper]"
+        ).innerHTML = tempDiv.querySelector(
+          "[data-price-wrapper]"
+        ).innerHTML;
 
-        const newUrl = new URL(url, window.location.origin);
-        newUrl.searchParams.delete("section_id");
-        window.history.pushState({}, "", newUrl.toString());
+        if (this.getAttribute("data-update-url") !== null) {
+          const newUrl = new URL(url, window.location.origin);
+          newUrl.searchParams.delete("section_id");
+          window.history.pushState({}, "", newUrl.toString());
+        }
       })
       .catch((error) => {
         if (error.name !== "AbortError") {
@@ -37,4 +45,4 @@ class VariantDropdown extends HTMLElement {
   }
 }
 
-customElements.define('variant-dropdown', VariantDropdown);
+customElements.define("variant-dropdown", VariantDropdown);
