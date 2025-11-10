@@ -28,29 +28,6 @@
       >
     {%- endif -%}
 
-    {% unless product.has_only_default_variant %}
-      <variant-dropdown class="product-form__variant-selector" data-section-id="{{ section.id }}">
-        {% for option in product.options_with_values %}
-          <label class="select-box select-box--blue">
-            <span class="text color-white select-box__label input__label">{{ option.name }}:</span>
-            <select name="id">
-              {% for value in option.values %}
-                <option value="{{ value.variant.id }}">{{ value }}</option>
-              {% endfor %}
-            </select>
-          </label>
-        {% endfor %}
-      </variant-dropdown>
-    {% else %}
-      <input
-        name="id"
-        value="{{ product.selected_or_first_available_variant.id }}"
-        type="hidden"
-        data-productid="{{- product.id -}}"
-        data-original-product-select
-      >
-    {% endunless %}
-
     <label class="quantity-element__label">
       <input
         class="quantity-element__input"
@@ -65,30 +42,43 @@
       >
     </label>
 
-    <button
-      class="button product-form__button"
-      type="submit"
-      name="add"
-      {% unless product.available == true %}
-        disabled
-      {% endunless %}
-      data-submit-button
-    >
-      <span
-        class="product-form__button-text product-form__button-text--add-to-card"
-        data-submit-button-text
+    {% unless product.has_only_default_variant %}
+      <a
+        class="button product-form__button"
+        href="{{ product.url }}"
       >
-        {%- if product.variants.first.available == true -%}
-          <span class="product-form__button-price" style="margin-right:5px;">{{ product.price | money }}</span>
-          {% if product.metafields.custom.preorder_date != blank -%}
-            {{- 'collections.product_card.preorder' | t -}}
+        <span
+          class="product-form__button-text product-form__button-text--add-to-card"
+        >
+          {{ 'collections.product_card.view_product' | t }}
+        </span>
+      </a>
+    {% else %}
+      <button
+        class="button product-form__button"
+        type="submit"
+        name="add"
+        {% unless product.available == true %}
+          disabled
+        {% endunless %}
+        data-submit-button
+      >
+        <span
+          class="product-form__button-text product-form__button-text--add-to-card"
+          data-submit-button-text
+        >
+          {%- if product.variants.first.available == true -%}
+            <span class="product-form__button-price" style="margin-right:5px;">{{ product.price | money }}</span>
+            {% if product.metafields.custom.preorder_date != blank -%}
+              {{- 'collections.product_card.preorder' | t -}}
+            {%- else -%}
+              {{- 'collections.product_card.add_to_cart' | t -}}
+            {%- endif %}
           {%- else -%}
-            {{- 'collections.product_card.add_to_cart' | t -}}
-          {%- endif %}
-        {%- else -%}
-          {{ 'collections.product_card.sold_out' | t }}
-        {%- endif -%}
-      </span>
-    </button>
+            {{ 'collections.product_card.sold_out' | t }}
+          {%- endif -%}
+        </span>
+      </button>
+    {% endunless %}
   {%- endform -%}
 </atc-button>

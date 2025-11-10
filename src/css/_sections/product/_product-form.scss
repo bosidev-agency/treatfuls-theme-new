@@ -68,13 +68,14 @@
   }
 
   .select-box {
-    max-width: 200px;
+
     display: flex;
     align-items: center;
     gap: 20px;
 
     select {
       -webkit-appearance: auto;
+      max-width: 150px;
       padding: 10px 0;
 
       @media #{$m-xl} {

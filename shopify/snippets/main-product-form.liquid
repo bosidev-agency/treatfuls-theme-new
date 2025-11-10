@@ -13,7 +13,7 @@
             <span class="text color-white select-box__label input__label">{{ option.name }}:</span>
             <select name="id">
               {% for value in option.values %}
-                <option value="{{ value.variant.id }}">{{ value }}</option>
+                <option value="{{ value.variant.id }}" {% if value.variant.id == current_variant.id %}selected{% endif %}>{{ value }}</option>
               {% endfor %}
             </select>
           </label>
