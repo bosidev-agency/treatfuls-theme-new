@@ -35,6 +35,11 @@
 		color: #ffffff;
 		transition: all 150ms ease;
 
+    @media #{$m-xl} {
+      font-size: 14px;
+      min-height: 32px;
+    }
+
 		&:required:invalid {
 			color: var(--error-color);
 		}
@@ -61,12 +66,6 @@
 			&[selected] {
 				background: var(--section-accent-color);
 			}
-		}
-
-		&:focus {
-			outline: none;
-			border-color: #d3d6d9;
-			box-shadow: 0 1px 3px -2px #d3d6d9;
 		}
 
 		&:hover + svg {

@@ -35,6 +35,7 @@ require("./components/modal-popover");
 require("./components/predictive-search");
 require("./components/info-tabs");
 require("./components/typewriter-textarea");
+require("./components/variant-dropdown");
 
 /*================ Sections ================*/
 require("./sections/header");

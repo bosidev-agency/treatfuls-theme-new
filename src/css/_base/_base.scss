@@ -359,6 +359,10 @@ a.button {
 
 .input__label {
   font-size: 20px;
+
+  @media #{$m-xl} {
+    font-size: 16px;
+  }
 }
 
 .swiper-slide {

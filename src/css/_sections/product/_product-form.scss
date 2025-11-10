@@ -58,3 +58,28 @@
   margin-right: 5px;
   font-size: 110%;
 }
+
+.product-form__variant-selector {
+  margin-bottom: 20px;
+  display: block;
+
+  @media #{$m-xl} {
+    margin-bottom: 10px;
+  }
+
+  .select-box {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    select {
+      -webkit-appearance: auto;
+      padding: 10px 0;
+
+      @media #{$m-xl} {
+        padding: 4px 0;
+      }
+    }
+  }
+}

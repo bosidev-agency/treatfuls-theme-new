@@ -28,26 +28,28 @@
       >
     {%- endif -%}
 
-    <select
-      name="id"
-      class="no-js visually-hidden"
-      data-productid="{{- product.id -}}"
-      data-original-product-select
-    >
-      {%- for variant in product.variants -%}
-        <option
-          {% if variant == current_variant %}
-            selected="selected"
-          {% endif %}
-          {% unless variant.available %}
-            disabled="disabled"
-          {% endunless %}
-          value="{{ variant.id }}"
-        >
-          {{ variant.title }}
-        </option>
-      {%- endfor -%}
-    </select>
+    {% unless product.has_only_default_variant %}
+      <variant-dropdown class="product-form__variant-selector" data-section-id="{{ section.id }}">
+        {% for option in product.options_with_values %}
+          <label class="select-box select-box--blue">
+            <span class="text color-white select-box__label input__label">{{ option.name }}:</span>
+            <select name="id">
+              {% for value in option.values %}
+                <option value="{{ value.variant.id }}">{{ value }}</option>
+              {% endfor %}
+            </select>
+          </label>
+        {% endfor %}
+      </variant-dropdown>
+    {% else %}
+      <input
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+        type="hidden"
+        data-productid="{{- product.id -}}"
+        data-original-product-select
+      >
+    {% endunless %}
 
     <label class="quantity-element__label">
       <input
