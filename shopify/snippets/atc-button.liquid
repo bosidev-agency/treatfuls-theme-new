@@ -50,7 +50,11 @@
         <span
           class="product-form__button-text product-form__button-text--add-to-card"
         >
-          {{ 'collections.product_card.view_product' | t }}
+          {% if product.gift_card? %}
+            {{ 'collections.product_card.view_gift_card' | t }}
+          {% else %}
+            {{ 'collections.product_card.view_product' | t }}
+          {% endif %}
         </span>
       </a>
     {% else %}

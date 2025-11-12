@@ -231,7 +231,8 @@
       "sold_out": "coming soon",
       "vegan_badge": "Vegan",
       "bio_badge": "Bio",
-      "view_product": "View product"
+      "view_product": "View product",
+      "view_gift_card": "View gift card"
     }
   },
   "contact": {
