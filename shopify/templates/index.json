@@ -28,8 +28,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "🎁 Jetzt Türchen öffnen",
-            "url": "shopify://products/adventskalender",
+            "text": "👉🏽  Ich will die Box. Jetzt.",
+            "url": "shopify://products/singles-box-xxl-alle-treatfuls-produkte-1x",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroshots_Launch_adventskalender_desktop_3500x_10bb2f28-b21c-48bf-923d-c5d26d93faa2.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_desktop_singles.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroshots3_Launch_adventskalender_mobil_1200x_fdd8d055-e20a-4fdb-8605-f64d10221f00.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_mobil_singles.jpg",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -54,7 +54,7 @@
         "max_width": "100%",
         "max_width_px": 700,
         "title": "",
-        "text": "<h3>No Santa, just Snacks. Und zwar jeden Tag 🧑‍🎄🍫</h3>",
+        "text": "<h3>Kein Date. Kein Drama. Nur Snacks 💘</h3>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",
@@ -176,7 +176,7 @@
         "product_item_6mCijk": {
           "type": "product_item",
           "settings": {
-            "product": "love-you-like-snacks-bio-vegan"
+            "product": "singles-box-1"
           }
         }
       },
