@@ -346,6 +346,7 @@ register("product-page", {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
 				slidesPerView: 'auto',
 				direction: "vertical",
+        spaceBetween: 10,
 				breakpoints: {
 					300: {
 						direction: "horizontal",

@@ -342,12 +342,12 @@ register("product", {
 					992: {
 						direction: "vertical",
             slidesPerView: slidesPerView,
-            gap: 15,
+            spaceBetween: 15,
 					},
           1250: {
             direction: "vertical",
             slidesPerView: slidesPerView,
-            gap: 20,
+            spaceBetween: 20,
           },
           1920: {
             direction: "vertical",

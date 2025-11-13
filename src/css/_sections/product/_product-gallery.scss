@@ -13,6 +13,7 @@
 
     .swiper-container-wrapper {
       position: relative;
+      height: 100%;
       display: flex;
       justify-content: center;
       transition: opacity 0.25s ease-in-out;
@@ -34,7 +35,7 @@
       max-width: 80%;
       
       @media #{$no-m} {
-        margin-left: 20px;
+        margin-left: 100px;
         max-width: 100%;
       }
 
@@ -70,17 +71,35 @@
     .product-gallery__slider-thumbnail {
       position: relative;
       overflow: hidden;
+      height: 100%;
       left: 0;
       padding: 0;
       flex-shrink: 0;
+      max-height: 600px;
 
       .swiper-wrapper {
         gap: 10px;
       }
 
+      &.swiper-initialized .swiper-wrapper {
+        gap: 0;
+      }
+
       @media #{$no-m} {
+        position: absolute;
+
         .swiper-wrapper {
           flex-direction: column;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          box-shadow: 0 0 10px 10px var(--section-background-color);
+          z-index: 10;
         }
       }
 
