@@ -45,6 +45,76 @@
         "show_base_triangular_line": false
       }
     },
+    "featured_collections_qWR4p8": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_item_RAiXXm": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "produkte",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_14_riegel_energyballs_c794a023-0e44-4a29-9808-de3609ff8a4b.webp",
+            "collection_title": "Alle Produkte"
+          }
+        },
+        "collection_item_ErgVHi": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "riegel",
+            "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
+            "collection_title": "Riegel"
+          }
+        },
+        "collection_item_kECnxV": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "mixboxen",
+            "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
+            "collection_title": "Mixboxen"
+          }
+        },
+        "collection_item_txnMzH": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "weihnachten-1",
+            "image": "shopify://shop_images/AK_MOCKUP_Kopie.webp",
+            "collection_title": "Weihnachten"
+          }
+        },
+        "collection_item_JNgrKn": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "nuss-aufstriche",
+            "image": "shopify://shop_images/spreads-treatfuls.webp",
+            "collection_title": "Aufstriche"
+          }
+        },
+        "collection_item_cR6yK6": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "balls",
+            "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
+            "collection_title": "Balls"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_RAiXXm",
+        "collection_item_ErgVHi",
+        "collection_item_kECnxV",
+        "collection_item_txnMzH",
+        "collection_item_JNgrKn",
+        "collection_item_cR6yK6"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading_desktop": "Produkte",
+        "heading_mobile": "Produktübersicht",
+        "background_color": "#dbaaeb",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#2ac2bd",
+        "accent_color_mobile": "#f3587f"
+      }
+    },
     "featured_product_GbQVWw": {
       "type": "featured-product",
       "blocks": {
@@ -81,15 +151,15 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "all-year-gifting-box",
-        "heading": "Sweet things inside.",
-        "mobile_heading": "Sweet things inside.",
+        "product": "white-winter-treats",
+        "heading": "X-MAS just got snackier.",
+        "mobile_heading": "X-MAS just got snackier.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c13666",
-        "accent_color": "#830606",
-        "hover_color": "#2ac2bd"
+        "background_color": "#713242",
+        "accent_color": "#e35478",
+        "hover_color": "#24a5a1"
       }
     },
     "custom_section_9AEAFL": {
@@ -143,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "all-year-gifting-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -163,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "x-mas-gifting-box-grun",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -183,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "xmas-box-weisse-tute",
+                        "card_product": "gifting-boxen-bundle",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -203,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
+                        "card_product": "xmas-box-weisse-tute",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -275,7 +345,7 @@
                     "sticky": false,
                     "image": "shopify://shop_images/Yogurette_2.webp",
                     "text": "Herkömmliche Süßigkeiten",
-                    "liquid": "pro 100 g"
+                    "liquid": ""
                   },
                   "blocks": {}
                 },
@@ -298,11 +368,11 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "th",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "image": "{{ closest.product.featured_image }}",
                     "text": "{{ closest.product.metafields.custom.short_title.value }}",
-                    "liquid": "pro 100 g"
+                    "liquid": "{%- if closest.product.has_only_default_variant -%}\n  {%- assign unit_price = closest.product.variants.first.unit_price -%}\n  {%- assign unit_reference = closest.product.variants.first.unit_price_measurement.reference_unit -%}\n  {%- assign unit_reference_value = closest.product.variants.first.unit_price_measurement.reference_value -%}\n{%- else -%}\n  {%- assign unit_price = product.unit_price -%}\n  {%- assign unit_reference = product.unit_price_measurement.reference_unit -%}\n  {%- assign unit_reference_value = product.unit_price_measurement.reference_value -%}\n{%- endif -%}\n\n{%- assign quantity_content = closest.product.metafields.custom.quantity_content -%}\n{%- assign weight_content = closest.product.metafields.custom.weight_content -%}\n{%- assign unit_name = closest.product.metafields.custom.unit_name -%}\n\n{% if quantity_content != blank and weight_content != blank and unit_name != blank %}\n<div class=\"products_listing__label\"\nstyle=\"font-weight: 400;\n    font-size: 12px;\n    line-height: 24px;\n    color: #1d8884;\n    background-color: #6ad4d1;\n    padding: 4px 8px;\nborder-radius: 4px;\n    border: 1px solid #1d8884;\"\n>\n              <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>\n            </div>\n          {% endif %}"
                   },
                   "blocks": {}
                 }
@@ -361,7 +431,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -423,7 +493,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -485,7 +555,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "1884 kJ / 450 kcal",
                     "liquid": ""
@@ -547,7 +617,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "11,7 g",
                     "liquid": ""
@@ -609,7 +679,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "47,8 g",
                     "liquid": ""
@@ -671,7 +741,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "22,1 g",
                     "liquid": ""
@@ -733,7 +803,7 @@
                   "name": "Table Cell",
                   "settings": {
                     "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
+                    "background_color": "#6ad4d1",
                     "sticky": true,
                     "text": "✅",
                     "liquid": ""
@@ -831,7 +901,7 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "über 50% weniger Zucker 👇🏼",
+        "title": "Du kannst dich nicht entscheiden? Hier der Vergleich",
         "footer_note": "",
         "background_color": "#2ac2bd",
         "accent_color": "#f3587f",
@@ -846,23 +916,23 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/White_tempation_Tuete.png",
+            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
             "image_position": "left",
-            "title": "Snack me softly",
-            "content": "<p>Unsere White temptation<em> </em>Tüte ist der Traum für alle, die nicht widerstehen können, wenn es weiß, cremig und richtig gut wird. Vollgepackt mit unseren beliebtesten Riegeln mit weißer veganer Schoki – natürlich bio, ohne raffinierten Zucker und mit jeder Menge Geschmack. In dieser Geschenk-Tüte warten gleich 18 Riegel auf dich: zart, crunchy, verführerisch. Perfekt zum Teilen, Snacken oder einfach selbst behalten. Ideal für alle, die vegane weiße Schoki lieben und Wert auf faire Zutaten, Zero-Bullshit-Inhalte und guten Geschmack legen.<br/><br/>💌 Und falls du sie doch nicht teilen willst: We feel you.</p>",
-            "button_text": "Jetzt Tüte vernaschen",
-            "button_url": "shopify://products/white-winter-treats"
+            "title": "All I want for X-Mas is...",
+            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe.<br/>Du bist spät dran? No stress. Es gibt auch einen Gutschein zum Ausdrucken - Joy to the world, literally.</p>",
+            "button_text": "Give the Joy",
+            "button_url": "shopify://products/gifting-boxen-bundle"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/AK_2025_6.webp",
+            "image": "shopify://shop_images/ALL_X_MaS_GIFTS.png",
             "image_position": "left",
-            "title": "24 Tage. 0 Kompromisse.",
-            "content": "<p>Unser Adventskalender ist gemacht für alle, die sich an 24 Tagen nicht mit weniger als richtig gutem Geschmack zufriedengeben<strong>.</strong> Hinter jeder Tür wartet ein neuer Snackmoment – fair, bio, vegan und ganz ohne raffinierten Zucker. Von cremig bis crunchy, von zart bis naughty: Jeden Tag eine neue Überraschung für Soul & Snackschublade. Liebevoll verpackt und mit richtig viel treatfuls-Attitüde.</p><p>Perfekt für Foodies, Design-Lovers und alle, die Weihnachten snackiger machen wollen<strong>.</strong></p><p>🎄 Und ja: Wir verstehen, wenn du vor dem 1. Dezember reinschaust.</p>",
-            "button_text": "Jetzt Türchen sichern",
-            "button_url": "shopify://products/adventskalender"
+            "title": "X-Mas ready.",
+            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
+            "button_text": "Schenke alles auf einmal",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         },
         "image_with_text_BjFpid": {
@@ -885,21 +955,21 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#830606",
+        "background_color": "#713242",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
       }
     },
-    "image_gallery_jpAA4C": {
+    "image_gallery_f4ehGz": {
       "type": "image-gallery",
       "blocks": {
-        "image_iA8HfU": {
+        "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sweetmas_Giftbox.png",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -913,11 +983,28 @@
             "row_span_mobile": "2"
           }
         },
-        "image_tQxFjV": {
+        "image_V7BJdt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/7_gift.jpg",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "8",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "1",
+            "column_span_mobile": "8",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_fjFFbd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -931,11 +1018,11 @@
             "row_span_mobile": "1"
           }
         },
-        "image_Aa4zyg": {
+        "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/weihnachten_rosa_2.webp",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
+            "content": "<p></p><p></p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -949,11 +1036,11 @@
             "row_span_mobile": "1"
           }
         },
-        "image_dhM98M": {
+        "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sweetmas_Box_im_Nikolaus_Schuh.png",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
+            "content": "<p></p><p></p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -969,18 +1056,19 @@
         }
       },
       "block_order": [
-        "image_iA8HfU",
-        "image_tQxFjV",
-        "image_Aa4zyg",
-        "image_dhM98M"
+        "image_aRwhDh",
+        "image_V7BJdt",
+        "image_fjFFbd",
+        "image_URwrcE",
+        "image_w3CmDz"
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
-        "product": "all-year-gifting-box",
+        "product": "gifting-boxen-bundle",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#c13666",
+        "background_color": "#f3587f",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1065,7 +1153,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#f3587f",
+        "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -1074,11 +1162,12 @@
   "order": [
     "main",
     "hero_eNmaQw",
+    "featured_collections_qWR4p8",
     "featured_product_GbQVWw",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "image_gallery_jpAA4C",
+    "image_gallery_f4ehGz",
     "advantages_BcfMf9"
   ]
 }

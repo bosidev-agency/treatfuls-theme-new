@@ -152,8 +152,8 @@
       "name": "Featured product",
       "settings": {
         "product": "treatfuls-gutschein",
-        "heading": "X-MAS just got snackier.",
-        "mobile_heading": "X-MAS just got snackier.",
+        "heading": "„Was soll ich schenken?“",
+        "mobile_heading": "„Was soll ich schenken?“",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "white-winter-treats",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "brownie-riegel",
+                        "card_product": "xmas-box-weisse-tute",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -932,7 +932,7 @@
             "title": "X-Mas ready.",
             "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
             "button_text": "Schenke alles auf einmal",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "button_url": "shopify://products/santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle"
           }
         },
         "image_with_text_BjFpid": {
@@ -969,7 +969,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
-            "content": "",
+            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -983,28 +983,11 @@
             "row_span_mobile": "2"
           }
         },
-        "image_V7BJdt": {
-          "type": "image",
-          "settings": {
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "8",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "1",
-            "column_span_mobile": "8",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
         "image_fjFFbd": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
-            "content": "",
+            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1022,7 +1005,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
-            "content": "<p></p><p></p>",
+            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1040,7 +1023,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Gutscheine_vom_baum.png",
-            "content": "<p></p><p></p>",
+            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1057,7 +1040,6 @@
       },
       "block_order": [
         "image_aRwhDh",
-        "image_V7BJdt",
         "image_fjFFbd",
         "image_URwrcE",
         "image_w3CmDz"

@@ -99,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "New Fillings, Who Dis?",
-            "subtitle_text": "Sieht gut aus. Schmeckt noch besser.",
+            "heading_text": "Approved by Santa 🎅",
+            "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -143,7 +143,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "matcha-riegel",
+                        "card_product": "x-mas-gifting-box-grun",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -163,7 +163,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "himbeer-riegel",
+                        "card_product": "all-year-gifting-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -183,7 +183,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "chai-latte-spill-the-tea",
+                        "card_product": "xmas-box-weisse-tute",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -203,7 +203,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "brownie-riegel",
+                        "card_product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -846,10 +846,10 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Unbenannt-2.webp",
+            "image": "shopify://shop_images/Sweetmas_Box_im_Nikolaus_Schuh.png",
             "image_position": "left",
             "title": "Snack. Smile. Repeat.",
-            "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
+            "content": "",
             "button_text": "Try them all",
             "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -857,10 +857,10 @@
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Matcha_4-5.png",
+            "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
             "image_position": "left",
             "title": "Filling done right",
-            "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit ganzen 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße kommt dabei zu 100 % aus  Datteln und komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
+            "content": "",
             "button_text": "Show me the filling",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -898,8 +898,8 @@
         "image_Ba3F9a": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Hoch1_Kopie.jpg",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Online_Shop_double_Joy_Box_ohne_Schleife.png",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -916,8 +916,8 @@
         "image_KRRgPJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Quer3_Kopie_2.webp",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -934,8 +934,8 @@
         "image_kTbkJk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Quer1_Kopie.webp",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Online_Shop_Double_JOY_Box.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -952,8 +952,8 @@
         "image_GGqJ3U": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Hoch2_Kopie.webp",
-            "content": "<p>🎅 Entdecke den Zauber des treatfuls Adventskalenders – voller Überraschungen, exklusiver Sorten und süßer Highlights für deine festliche Vorfreude!🎁</p>",
+            "image": "shopify://shop_images/Online_Shop_X-MAS_Box_Nikolausschuh.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
