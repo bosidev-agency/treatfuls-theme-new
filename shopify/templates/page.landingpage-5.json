@@ -89,7 +89,7 @@
         "reviews_quantity_text": "",
         "background_color": "#c13666",
         "accent_color": "#830606",
-        "hover_color": "#2ac2bd"
+        "hover_color": "#e35478"
       }
     },
     "custom_section_9AEAFL": {
@@ -234,7 +234,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#e56a89",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -846,11 +846,11 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/White_tempation_Tuete.png",
+            "image": "shopify://shop_images/Online_Shop_Produktfotos.png",
             "image_position": "left",
             "title": "Snack me softly",
-            "content": "<p>Unsere White temptation<em> </em>Tüte ist der Traum für alle, die nicht widerstehen können, wenn es weiß, cremig und richtig gut wird. Vollgepackt mit unseren beliebtesten Riegeln mit weißer veganer Schoki – natürlich bio, ohne raffinierten Zucker und mit jeder Menge Geschmack. In dieser Geschenk-Tüte warten gleich 18 Riegel auf dich: zart, crunchy, verführerisch. Perfekt zum Teilen, Snacken oder einfach selbst behalten. Ideal für alle, die vegane weiße Schoki lieben und Wert auf faire Zutaten, Zero-Bullshit-Inhalte und guten Geschmack legen.<br/><br/>💌 Und falls du sie doch nicht teilen willst: We feel you.</p>",
-            "button_text": "Jetzt Tüte vernaschen",
+            "content": "<p>Unsere White temptation<em> </em>Tüte ist der Traum für alle, die nicht widerstehen können, wenn es weiß, cremig und richtig gut wird. Vollgepackt mit unseren beliebtesten Riegeln mit weißer veganer Schoki.  In dieser Geschenk-Tüte warten gleich 18 Riegel für 44,99€ auf dich: zart, crunchy, verführerisch. Perfekt zum Teilen, Snacken oder einfach selbst behalten. Ideal für alle, die vegane weiße Schoki lieben und Wert auf faire Zutaten, Zero-Bullshit und guten Geschmack legen.<br/><br/>💌 Und falls du sie doch nicht teilen willst: We feel you.</p>",
+            "button_text": "Zur White Tüte",
             "button_url": "shopify://products/white-winter-treats"
           }
         },
@@ -860,7 +860,7 @@
             "image": "shopify://shop_images/AK_2025_6.webp",
             "image_position": "left",
             "title": "24 Tage. 0 Kompromisse.",
-            "content": "<p>Unser Adventskalender ist gemacht für alle, die sich an 24 Tagen nicht mit weniger als richtig gutem Geschmack zufriedengeben<strong>.</strong> Hinter jeder Tür wartet ein neuer Snackmoment – fair, bio, vegan und ganz ohne raffinierten Zucker. Von cremig bis crunchy, von zart bis naughty: Jeden Tag eine neue Überraschung für Soul & Snackschublade. Liebevoll verpackt und mit richtig viel treatfuls-Attitüde.</p><p>Perfekt für Foodies, Design-Lovers und alle, die Weihnachten snackiger machen wollen<strong>.</strong></p><p>🎄 Und ja: Wir verstehen, wenn du vor dem 1. Dezember reinschaust.</p>",
+            "content": "<p>Unser Adventskalender ist gemacht für alle, die sich an 24 Tagen nicht mit weniger als richtig gutem Geschmack zufriedengeben<strong>.</strong> Hinter jeder Tür wartet ein neuer Snackmoment. Von cremig bis crunchy, von zart bis naughty: Jeden Tag eine neue Überraschung für Soul & Snackschublade. Liebevoll verpackt und mit richtig viel treatfuls-Attitüde. <br/><br/></p><p>🎄 Für 112,99 € und ja, wir verstehen, wenn du vorher reinschaust.</p>",
             "button_text": "Jetzt Türchen sichern",
             "button_url": "shopify://products/adventskalender"
           }
@@ -885,7 +885,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#830606",
+        "background_color": "#c13666",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -898,8 +898,8 @@
         "image_iA8HfU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Sweetmas_Giftbox.png",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "image": "shopify://shop_images/Sweetmas_Giftingbox_4-5.png",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -917,7 +917,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/7_gift.jpg",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -934,8 +934,8 @@
         "image_Aa4zyg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/weihnachten_rosa_2.webp",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "image": "shopify://shop_images/Onlineshop_the_double_joy.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -953,7 +953,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Sweetmas_Box_im_Nikolaus_Schuh.png",
-            "content": "<p>🎅Das perfekte Geschenk. Für Nikolaus, Weihnachten & alle, die mehr snacken als basteln wollen🎁</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -980,7 +980,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#c13666",
+        "background_color": "#830606",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1065,7 +1065,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#f3587f",
+        "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

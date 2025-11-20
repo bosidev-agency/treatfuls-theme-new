@@ -152,14 +152,14 @@
       "name": "Featured product",
       "settings": {
         "product": "xmas-box-weisse-tute",
-        "heading": "X-MAS just got snackier.",
-        "mobile_heading": "X-MAS just got snackier.",
+        "heading": "Die leckerste Geschenktüte.",
+        "mobile_heading": "Die leckerste Geschenktüte.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "#713242",
         "accent_color": "#e35478",
-        "hover_color": "#24a5a1"
+        "hover_color": "#e35478"
       }
     },
     "custom_section_9AEAFL": {
@@ -213,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "all-year-gifting-box",
+                        "card_product": "x-mas-gifting-box-grun",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "gifting-boxen-bundle",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "white-winter-treats",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
+                        "card_product": "xmas-box-weisse-tute",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -916,23 +916,23 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/Santas_Fav_bundle.png",
             "image_position": "left",
-            "title": "All I want for X-Mas is...",
-            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe.<br/>Du bist spät dran? No stress. Es gibt auch einen Gutschein zum Ausdrucken - Joy to the world, literally.</p>",
-            "button_text": "Give the Joy",
-            "button_url": "shopify://products/gifting-boxen-bundle"
+            "title": "All the treats, no stress",
+            "content": "<p>Du willst alles? Dann gönn dir alles. In Santas Favorite Bundle steckt unser komplettes X-MAS Sortiment für 124,99€: vier Geschenkboxen voller veganer Bio-Snacks – liebevoll verpackt, ready to gift und mit ordentlich Geschmack. Ob für dich, für deine Liebsten oder als Secret Santa Showstopper: Dieses Bundle bringt Vielfalt, Freude und Design unter den Baum. Ein Weihnachtsgeschenk, das wirklich niemand zurückgeben will.</p>",
+            "button_text": "Get the bundle",
+            "button_url": "shopify://products/santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/ALL_X_MaS_GIFTS.png",
+            "image": "shopify://shop_images/Online_Shop_ZimtRiegel.png",
             "image_position": "left",
-            "title": "X-Mas ready.",
-            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
-            "button_text": "Schenke alles auf einmal",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "Let’s spice things up",
+            "content": "<p>Wenn Weihnachten ein Riegel wäre, dann dieser. Unser „xmas is nuts and cinnamon and stars“-Riegel vereint crunchy Nüsse, winterliche Gewürze und vegane weiße Bio-Schoki zu einem Fest der Sinne. Saftig, soft und mit echtem Zimt-Stern-Vibe. Ideal für kalte Tage, süße Pausen oder alle, die Weihnachten snacken wollen.</p><p></p>",
+            "button_text": "Zum Zimtriegel",
+            "button_url": "shopify://products/20-x-white-covered-zimt-treats-bio-xmas-is-nuts-and-cinnamon-and-stars"
           }
         },
         "image_with_text_BjFpid": {
@@ -968,9 +968,9 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/Merry_treatmas_Box.png",
             "content": "",
-            "content_position_y": 55,
+            "content_position_y": 75,
             "content_position_x": 25,
             "grid_number": "1",
             "column_start": "1",
@@ -983,29 +983,12 @@
             "row_span_mobile": "2"
           }
         },
-        "image_V7BJdt": {
-          "type": "image",
-          "settings": {
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "8",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "1",
-            "column_span_mobile": "8",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
         "image_fjFFbd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "image": "shopify://shop_images/2_gift.jpg",
             "content": "",
-            "content_position_y": 50,
+            "content_position_y": 60,
             "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
@@ -1021,9 +1004,9 @@
         "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
-            "content": "<p></p><p></p>",
-            "content_position_y": 50,
+            "image": "shopify://shop_images/white__gifting_treatfuls.jpg",
+            "content": "",
+            "content_position_y": 70,
             "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
@@ -1039,10 +1022,10 @@
         "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
-            "content": "<p></p><p></p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
+            "image": "shopify://shop_images/treatfuls_mobile_gifting_top.webp",
+            "content": "",
+            "content_position_y": 40,
+            "content_position_x": 85,
             "grid_number": "1",
             "column_start": "10",
             "column_span": "3",
@@ -1057,7 +1040,6 @@
       },
       "block_order": [
         "image_aRwhDh",
-        "image_V7BJdt",
         "image_fjFFbd",
         "image_URwrcE",
         "image_w3CmDz"
@@ -1068,7 +1050,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#f3587f",
+        "background_color": "#c13666",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",

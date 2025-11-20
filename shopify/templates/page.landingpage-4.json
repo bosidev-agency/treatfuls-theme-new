@@ -234,7 +234,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#1da59d",
+        "background_color": "#e56a89",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -849,7 +849,7 @@
             "image": "shopify://shop_images/Giftcard_am_baum.png",
             "image_position": "left",
             "title": "Gutschein geht immer.",
-            "content": "<p>Ob Sweetmas, White temptation, Merry treatmas oder doch das volle Paket, unsere Weihnachtsboxen sind so unterschiedlich wie die Menschen, die du beschenken willst. Aber was, wenn du nicht weißt, welche am besten passt? Ganz einfach: Verschenk einen treatfuls Gutschein. Der digitale<strong> </strong>treatfuls Geschenkgutschein<strong> </strong>ist das perfekte Last-Minute-Geschenk für alle Snack-Lover, Genießer:innen und Bio-Schokoladen-Fans. So können sich deine Liebsten genau das aussuchen, was sie wirklich snacken wollen – ganz ohne Stress.</p>",
+            "content": "<p>Ob Sweetmas, White temptation, Merry treatmas oder doch das volle Paket, unsere Weihnachtsboxen sind so unterschiedlich wie die Menschen, die du beschenken willst. Aber was, wenn du nicht weißt, welche am besten passt? Ganz einfach: Verschenk einen treatfuls Gutschein. Der digitale<strong> </strong>treatfuls Geschenkgutschein<strong> </strong>ist das perfekte Last-Minute-Geschenk für alle Snack-Lover. So können sich deine Liebsten genau das aussuchen, was sie wirklich snacken wollen – ganz ohne Stress.</p>",
             "button_text": "Gutschein auswählen",
             "button_url": "shopify://products/treatfuls-gutschein"
           }
@@ -857,11 +857,11 @@
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/DoubleJoy_aus_Vorhang.png",
             "image_position": "left",
             "title": "Too good to gift once.",
-            "content": "<p>Zwei Boxen, ein Gedanke: schenken macht doppelt Spaß, wenn alle was davon haben. In unserer Double Joy Box stecken zwei unserer beliebtesten Gifting Boxen – vollgepackt mit fairer Bio-Schokolade, vegan, natürlich süß und wunderschön verpackt.</p><p>Ob zum Teilen, Tauschen oder gleich doppelt Selbstbehalten, diese Kombi bringt Geschmack, Design & Conscious Vibes direkt unter den Baum. Für alle, die mehr als nur eine gute Entscheidung treffen wollen. Mehr Auswahl, mehr Genuss, mehr Joy – in einer Box, die alles kann. </p>",
-            "button_text": "Twice as nice",
+            "content": "<p>Zwei Boxen, ein Gedanke: schenken macht doppelt Spaß, wenn alle was davon haben. In unserer Double Joy Box stecken zwei unserer beliebtesten Gifting Boxen – vollgepackt mit fairer Bio-Schokolade, vegan, natürlich süß und wunderschön verpackt.</p><p>Ob zum Teilen, Tauschen oder gleich doppelt Selbstbehalten, diese Kombi bringt Geschmack, Design & Conscious Vibes direkt unter den Baum. Für alle, die mehr als nur eine gute Entscheidung treffen wollen. Mehr Auswahl, mehr Genuss, mehr Joy – in einer Box für 39,99€. </p>",
+            "button_text": "Zum Bundle",
             "button_url": "shopify://products/gifting-boxen-bundle"
           }
         },
@@ -898,8 +898,8 @@
         "image_TFNHhc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
-            "content": "<p>🎄Zimtliebe in Geschenkform. Unsere X-MAS Box bringt cozy Winter-Vibes🎁</p>",
+            "image": "shopify://shop_images/X-Mas_Giftbox_-_45.png",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -917,7 +917,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
-            "content": "<p>🎄Zimtliebe in Geschenkform. Unsere X-MAS Box bringt cozy Winter-Vibes🎁</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -935,7 +935,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/treatfuls_X-Mas_Box.jpg",
-            "content": "<p>🎄Zimtliebe in Geschenkform. Unsere X-MAS Box bringt cozy Winter-Vibes🎁</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -952,8 +952,8 @@
         "image_XffPqA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/XMas_Box_2.png",
-            "content": "<p>🎄Zimtliebe in Geschenkform. Unsere X-MAS Box bringt cozy Winter-Vibes🎁</p>",
+            "image": "shopify://shop_images/Online_Shop_X-MAS_Box_Nikolausschuh.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1065,7 +1065,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
+        "background_color": "#2ac2bd",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

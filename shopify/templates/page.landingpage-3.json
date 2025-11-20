@@ -159,7 +159,7 @@
         "reviews_quantity_text": "",
         "background_color": "#713242",
         "accent_color": "#e35478",
-        "hover_color": "#24a5a1"
+        "hover_color": "#e35478"
       }
     },
     "custom_section_9AEAFL": {
@@ -916,11 +916,11 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/DoubleJoy_aus_Vorhang.png",
             "image_position": "left",
             "title": "All I want for X-Mas is...",
-            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe.<br/>Du bist spät dran? No stress. Es gibt auch einen Gutschein zum Ausdrucken - Joy to the world, literally.</p>",
-            "button_text": "Give the Joy",
+            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe. Für 39,99 € fast zu schön, um zu teilen. </p>",
+            "button_text": "Zum Bundle",
             "button_url": "shopify://products/gifting-boxen-bundle"
           }
         },
@@ -930,7 +930,7 @@
             "image": "shopify://shop_images/ALL_X_MaS_GIFTS.png",
             "image_position": "left",
             "title": "X-Mas ready.",
-            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
+            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox für 124,99€. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für  Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share. </p><p></p>",
             "button_text": "Schenke alles auf einmal",
             "button_url": "shopify://products/santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle"
           }
@@ -969,7 +969,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
-            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -987,7 +987,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
-            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1005,7 +1005,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
-            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1023,7 +1023,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Gutscheine_vom_baum.png",
-            "content": "<p>🎁 Schenken ohne Grübeln, der treatfuls Gutschein ist das perfekte Last-Minute-Geschenk für alle, die Snacks mehr lieben als Entscheidungen<strong>.</strong> Digital, liebevoll & direkt zum Ausdrucken ✨</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1050,7 +1050,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#f3587f",
+        "background_color": "#c13666",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1135,7 +1135,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
+        "background_color": "#e56a89",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

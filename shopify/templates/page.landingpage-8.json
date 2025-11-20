@@ -152,13 +152,13 @@
       "name": "Featured product",
       "settings": {
         "product": "white-winter-treats",
-        "heading": "X-MAS just got snackier.",
-        "mobile_heading": "X-MAS just got snackier.",
+        "heading": "Sweet dreams in white.",
+        "mobile_heading": "Sweet dreams in white.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#713242",
-        "accent_color": "#e35478",
+        "background_color": "#0f7279",
+        "accent_color": "#1da59d",
         "hover_color": "#24a5a1"
       }
     },
@@ -304,7 +304,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#e56a89",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -916,23 +916,23 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/Produktbild_neu.png",
             "image_position": "left",
-            "title": "All I want for X-Mas is...",
-            "content": "<p>Zweimal Freude, null schlechtes Gewissen: das ist unser Double Joy Bundle. Zwei unserer beliebtesten Gifting Boxes, vollgepackt mit fairer, veganer Schokolade und wrapped in Design, das besser aussieht als alles, was sonst unter’m Baum liegt. Das perfekte Weihnachtsgeschenk für alle, die auf bewusstes Naschen stehen. Ohne raffinierten Zucker, ohne Blabla, aber mit richtig viel Liebe.<br/>Du bist spät dran? No stress. Es gibt auch einen Gutschein zum Ausdrucken - Joy to the world, literally.</p>",
-            "button_text": "Give the Joy",
-            "button_url": "shopify://products/gifting-boxen-bundle"
+            "title": "Treat them all",
+            "content": "<p>Die komplette treatfuls Vielfalt in einer Tüte: Unsere Merry treatmas Box bringt dir 22 Riegel in 11 Sorten (jeweils 2x), kombiniert mit unserem cinnamon-roll Spread und verpackt in einer festlichen Geschenktüte. Ob als Geschenk oder Vorrat für kalte Tage, das ist pure Snackfreude, bio, vegan & ohne raffinierten Zucker. Merry, sweet & seriously snacky.<br/><br/>👉🏽 Für 64,99€ gibts das voll treatfuls-Programm</p>",
+            "button_text": "Get the merry mix",
+            "button_url": "shopify://products/xmas-box-weisse-tute"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/ALL_X_MaS_GIFTS.png",
+            "image": "shopify://shop_images/Giftcard_am_baum.png",
             "image_position": "left",
-            "title": "X-Mas ready.",
-            "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
-            "button_text": "Schenke alles auf einmal",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "Gutschein. Freude. Fertig.",
+            "content": "<p>Du willst Freude verschenken, aber nicht entscheiden, wie sie schmeckt? Kein Problem. Mit dem treatfuls Geschenkgutschein gibst du die süßeste Wahl einfach weiter. Digital, liebevoll gestaltet und sofort verschenkbar. Für spontane Geschenkideen, last-minute magic und alle, die lieber selbst snacken statt überrascht werden.</p><p>Vegan, bio, stylish und genau so flexibel wie dein Geschenk-Game.</p><p></p>",
+            "button_text": "Jetzt Gutschein sichern",
+            "button_url": "shopify://products/treatfuls-gutschein"
           }
         },
         "image_with_text_BjFpid": {
@@ -955,7 +955,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#713242",
+        "background_color": "#0f7279",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -968,10 +968,10 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/XMAS_Box.png",
             "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
+            "content_position_y": 80,
+            "content_position_x": 20,
             "grid_number": "1",
             "column_start": "1",
             "column_span": "3",
@@ -983,29 +983,12 @@
             "row_span_mobile": "2"
           }
         },
-        "image_V7BJdt": {
-          "type": "image",
-          "settings": {
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "8",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "1",
-            "column_span_mobile": "8",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
         "image_fjFFbd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "image": "shopify://shop_images/9_gift.jpg",
             "content": "",
-            "content_position_y": 50,
+            "content_position_y": 40,
             "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
@@ -1021,9 +1004,9 @@
         "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
-            "content": "<p></p><p></p>",
-            "content_position_y": 50,
+            "image": "shopify://shop_images/Tuete_aus_Vorhang.png",
+            "content": "",
+            "content_position_y": 70,
             "content_position_x": 50,
             "grid_number": "1",
             "column_start": "4",
@@ -1039,10 +1022,10 @@
         "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
-            "content": "<p></p><p></p>",
-            "content_position_y": 50,
-            "content_position_x": 50,
+            "image": "shopify://shop_images/Online_Shop_Produktfotos.png",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 85,
             "grid_number": "1",
             "column_start": "10",
             "column_span": "3",
@@ -1057,7 +1040,6 @@
       },
       "block_order": [
         "image_aRwhDh",
-        "image_V7BJdt",
         "image_fjFFbd",
         "image_URwrcE",
         "image_w3CmDz"
@@ -1068,7 +1050,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#f3587f",
+        "background_color": "#1da59d",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1153,8 +1135,8 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
-        "accent_color": "#2ac2bd",
+        "background_color": "#2AC2BD",
+        "accent_color": "#2AC2BD",
         "hover_color": "#f3587f"
       }
     }

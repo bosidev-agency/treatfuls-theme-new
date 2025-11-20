@@ -152,14 +152,14 @@
       "name": "Featured product",
       "settings": {
         "product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
-        "heading": "X-MAS just got snackier.",
-        "mobile_heading": "X-MAS just got snackier.",
+        "heading": "Einmal alles, bitte.",
+        "mobile_heading": "Einmal alles, bitte.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "#713242",
         "accent_color": "#e35478",
-        "hover_color": "#24a5a1"
+        "hover_color": "#e35478"
       }
     },
     "custom_section_9AEAFL": {
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "white-winter-treats",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "brownie-riegel",
+                        "card_product": "xmas-box-weisse-tute",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -304,7 +304,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#e56a89",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -915,6 +915,7 @@
       "blocks": {
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
             "image_position": "left",
@@ -932,7 +933,7 @@
             "title": "X-Mas ready.",
             "content": "<p>Alle vier X-MAS Produkte, eine Box, null Kompromisse: Diese limitierte Superbox vereint das komplette treatfuls Weihnachts-Sortiment in einer Geschenkbox. Vegan, bio, ohne raffinierten Zucker, aber mit allem, was dein Christmas-Snackherz braucht. Ideal als hochwertiges Weihnachtsgeschenk für Foodies, Design-Lover oder alle, die endlich mal was anderes als Wein oder Socken verschenken wollen. Das volle Joy-Paket für unter den Baum - ready to gift, hard to share.</p><p></p>",
             "button_text": "Schenke alles auf einmal",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "button_url": "shopify://products/santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle"
           }
         },
         "image_with_text_BjFpid": {
@@ -968,7 +969,7 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/double_joy.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -983,27 +984,10 @@
             "row_span_mobile": "2"
           }
         },
-        "image_V7BJdt": {
-          "type": "image",
-          "settings": {
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "8",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "1",
-            "column_span_mobile": "8",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
         "image_fjFFbd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "image": "shopify://shop_images/7_gift.jpg",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -1021,8 +1005,8 @@
         "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
-            "content": "<p></p><p></p>",
+            "image": "shopify://shop_images/Tuete_aus_Vorhang.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1039,8 +1023,8 @@
         "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
-            "content": "<p></p><p></p>",
+            "image": "shopify://shop_images/Produktbild_OnlineShop.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -1057,7 +1041,6 @@
       },
       "block_order": [
         "image_aRwhDh",
-        "image_V7BJdt",
         "image_fjFFbd",
         "image_URwrcE",
         "image_w3CmDz"
@@ -1068,7 +1051,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#f3587f",
+        "background_color": "#c13666",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1153,7 +1136,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
+        "background_color": "#e56a89",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
