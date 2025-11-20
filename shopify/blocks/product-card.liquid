@@ -39,11 +39,15 @@
       {%- endif -%}
     </h3>
 
+    {%- assign nutrition_values = card_product.metafields.custom.nutrition_values.value -%}
+
     <info-tabs class="info-tabs">
       <div class="tabs-navigation hidden-desktop">
         <div class="tabs-navigation__item" data-tab-heading="Information" open>{{ 'products.product.information' | t }}</div>
         <div class="tabs-navigation__item" data-tab-heading="Ingredients">{{ 'products.product.ingredients' | t }}</div>
-        <div class="tabs-navigation__item" data-tab-heading="Nutrients">{{ 'products.product.nutrients' | t }}</div>
+        {% if nutrition_values != blank %}
+          <div class="tabs-navigation__item" data-tab-heading="Nutrients">{{ 'products.product.nutrients' | t }}</div>
+        {% endif %}
       </div>
       <div class="tab-wrapper" data-tab-heading="Information" open>
         {% if card_product.metafields.custom.bullet_points.value != blank %}
@@ -109,59 +113,59 @@
           {{ card_product.metafields.custom.ingredients }}
         </div>
       </div>
-      <div class="tab-wrapper" data-tab-heading="Nutrients">
-        <div class="product-card__directions">
-          {%- assign nutrition_values = card_product.metafields.custom.nutrition_values.value -%}
-
-          <table>
-            <tr>
-              <td></td>
-              <td>{{ 'products.product.nutrition_grams' | t }}</td>
-              <td>{{ 'products.product.nutrition_portion_html' | t }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.energy' | t }}</td>
-              <td>{{ nutrition_values.energie_100_gr }}</td>
-              <td>{{ nutrition_values.energie_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.fat' | t }}</td>
-              <td>{{ nutrition_values.fett_100_gr }}</td>
-              <td>{{ nutrition_values.fett_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.sat_fat' | t }}</td>
-              <td>{{ nutrition_values.gesattigte_fettsauren_100_gr }}</td>
-              <td>{{ nutrition_values.gesattigte_fettsauren_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.carbs' | t }}</td>
-              <td>{{ nutrition_values.kohlenhydrate_100_gr }}</td>
-              <td>{{ nutrition_values.kohlenhydrate_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.sugar' | t }}</td>
-              <td>{{ nutrition_values.zucker_100_gr }}</td>
-              <td>{{ nutrition_values.zucker_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.fibre' | t }}</td>
-              <td>{{ nutrition_values.ballaststoffe_100_gr }}</td>
-              <td>{{ nutrition_values.ballaststoffe_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.protein' | t }}</td>
-              <td>{{ nutrition_values.eiweiss_100_gr }}</td>
-              <td>{{ nutrition_values.eiweiss_portion }}</td>
-            </tr>
-            <tr>
-              <td>{{ 'products.product.salt' | t }}</td>
-              <td>{{ nutrition_values.salz_100_gr }}</td>
-              <td>{{ nutrition_values.salz_portion }}</td>
-            </tr>
-          </table>
+      {% if nutrition_values != blank %}
+        <div class="tab-wrapper" data-tab-heading="Nutrients">
+          <div class="product-card__directions">
+            <table>
+              <tr>
+                <td></td>
+                <td>{{ 'products.product.nutrition_grams' | t }}</td>
+                <td>{{ 'products.product.nutrition_portion_html' | t }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.energy' | t }}</td>
+                <td>{{ nutrition_values.energie_100_gr }}</td>
+                <td>{{ nutrition_values.energie_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.fat' | t }}</td>
+                <td>{{ nutrition_values.fett_100_gr }}</td>
+                <td>{{ nutrition_values.fett_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.sat_fat' | t }}</td>
+                <td>{{ nutrition_values.gesattigte_fettsauren_100_gr }}</td>
+                <td>{{ nutrition_values.gesattigte_fettsauren_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.carbs' | t }}</td>
+                <td>{{ nutrition_values.kohlenhydrate_100_gr }}</td>
+                <td>{{ nutrition_values.kohlenhydrate_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.sugar' | t }}</td>
+                <td>{{ nutrition_values.zucker_100_gr }}</td>
+                <td>{{ nutrition_values.zucker_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.fibre' | t }}</td>
+                <td>{{ nutrition_values.ballaststoffe_100_gr }}</td>
+                <td>{{ nutrition_values.ballaststoffe_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.protein' | t }}</td>
+                <td>{{ nutrition_values.eiweiss_100_gr }}</td>
+                <td>{{ nutrition_values.eiweiss_portion }}</td>
+              </tr>
+              <tr>
+                <td>{{ 'products.product.salt' | t }}</td>
+                <td>{{ nutrition_values.salz_100_gr }}</td>
+                <td>{{ nutrition_values.salz_portion }}</td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </div>
+      {% endif %}
     </info-tabs>
   </div>
 </div>
