@@ -6,7 +6,7 @@
   </style>
 {% endif %}
 
-<{{ block.settings.cell_type }} {% if block.settings.sticky %}class="sticky-cell"{% endif %} id="shopify-block-{{ block.id }}">
+<{{ block.settings.cell_type }} class="table-cell {% if block.settings.sticky %}sticky-cell{% endif %}" id="shopify-block-{{ block.id }}">
   <div class="table-cell__content">
     {% if block.settings.image %}
       {{ block.settings.image | image_url: width: 100 | image_tag }}

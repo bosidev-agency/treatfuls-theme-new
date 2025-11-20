@@ -9,8 +9,8 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
 
-  @media #{$m-xl} {
-    width: 133.33%;
+  .table-cell {
+    background-color: var(--section-background-color);
   }
 
   tr {

@@ -1,0 +1,7 @@
+.comparison-table {
+  table {
+    @media #{$m-xl} {
+      width: 133.33%;
+    }
+  }
+}
