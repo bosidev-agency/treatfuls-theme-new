@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_eWWbAt": {
+      "type": "hero",
+      "blocks": {
+        "button_y67rYw": {
+          "type": "button",
+          "name": "Button",
+          "disabled": true,
+          "settings": {
+            "text": "20 % Code sichern",
+            "url": "",
+            "signup_button": true,
+            "klaviyo_form": "X3H7FL"
+          },
+          "blocks": {}
+        },
+        "button_BLHFee": {
+          "type": "button",
+          "name": "Button",
+          "disabled": true,
+          "settings": {
+            "text": "👉🏽 zu den X-Mas Boxen",
+            "url": "shopify://collections/weihnachten-1",
+            "signup_button": false,
+            "klaviyo_form": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "button_y67rYw",
+        "button_BLHFee"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "desktop_image": "shopify://shop_images/cookieImage_o6a6k5o6a6k5o6a6.png",
+        "desktop_image_height": "4/1",
+        "mobile_image": "shopify://shop_images/cookieImage_o6a6k5o6a6k5o6a6.png",
+        "mobile_image_height": "1/1",
+        "hide_on_mobile": false,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "left",
+        "vertical_alignment_mobile": "bottom",
+        "horizontal_alignment_mobile": "center",
+        "max_width": "100%",
+        "max_width_px": 700,
+        "title": "",
+        "text": "",
+        "background_color": "#f3587f",
+        "accent_color": "#f3587f",
+        "hover_color": "#2ac2bd",
+        "show_base_triangular_line": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "title": "",
+        "subtitle": "<p><strong>Hey du! 👋 Willkommen zu unserer Cookie-Voting-Umfrage.</strong><br/>Du hast den half Baked Cookie mit Himbeere und Pistazie probiert? Dann bist du jetzt Teil unseres Produktteams! Wir wollen wissen: Wie hat’s geschmeckt? Was können wir verbessern? Und soll diese Sorte ins treatfuls-Sortiment?</p><p>🍪 Deine Meinung fließt direkt in die Produktentscheidung ein.<br/>🎁 Dauer: 1 Minute.</p>",
+        "subtitle_font_size": 17,
+        "background_color": "#be75a6",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "hero_eWWbAt",
+    "main"
+  ]
+}

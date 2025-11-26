@@ -11,16 +11,35 @@
   "sections": {
     "main": {
       "type": "page-contact",
+      "disabled": true,
       "settings": {
-        "title": "hey, du hast <span>Fragen</span>, <span>Ideen</span> oder willst einfach <br><span>was los werden?</span>",
+        "title": "hey, du hast Fragen, Ideen oder willst einfach was los werden?",
         "subtitle": "Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns.",
         "background_color": "#5359e5",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
+    },
+    "main_page_6PBAtX": {
+      "type": "main-page",
+      "custom_css": [
+        ".rte {display: flex; justify-content: center; margin-top: 40px;}"
+      ],
+      "name": "Page",
+      "settings": {
+        "title": "hey, du hast Fragen, Ideen oder willst einfach was los werden?",
+        "subtitle": "<p>Immer her damit. Wir freuen uns von dir zu hören - ob Feedback, Kooperationanfrage oder Listung melde dich bei uns.</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#5359e5",
+        "accent_color": "#2AC2BD",
+        "hover_color": "#f3587f",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "main_page_6PBAtX"
   ]
 }

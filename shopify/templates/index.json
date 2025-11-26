@@ -17,10 +17,10 @@
           "name": "Button",
           "disabled": true,
           "settings": {
-            "text": "20 % Code sichern",
+            "text": "jetzt anmelden👇🏽",
             "url": "",
             "signup_button": true,
-            "klaviyo_form": "X3H7FL"
+            "klaviyo_form": "TKczcf"
           },
           "blocks": {}
         },
@@ -28,8 +28,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉🏽 zu den X-Mas Boxen",
-            "url": "shopify://collections/weihnachten-1",
+            "text": "jetzt anmelden👇🏽",
+            "url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=TSYyRr",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -42,23 +42,23 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/V2_treatfuls_mobile_gifting_top_v2.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_fake_plakat_A3-05_45ded690-ffa5-497d-8499-a5a57f7d0243.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/V2_gifting_mobile_Herobanner_Desktop.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_fake_plakat_A3_V2.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "left",
+        "horizontal_alignment_desktop": "right",
         "vertical_alignment_mobile": "bottom",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
         "title": "",
-        "text": "<h3>Ready to gift. Ready to snack.</h3>",
+        "text": "<h3>Get the good stuff before it’s gone.</h3>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",
-        "show_base_triangular_line": true
+        "show_base_triangular_line": false
       }
     },
     "featured_collections_EUemmF": {
