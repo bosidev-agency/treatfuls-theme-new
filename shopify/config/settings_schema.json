@@ -205,5 +205,28 @@
         "default": "#F3587F"
       }
     ]
+  },
+  {
+    "name": "Goodies",
+    "settings": [
+      {
+        "type": "text",
+        "id": "start_date",
+        "label": "Start date",
+        "info": "Enter date in the format 'DD.MM.YYYY HH:MM:SS', example '01.01.2025 18:30:00"
+      },
+      {
+        "type": "text",
+        "id": "end_date",
+        "label": "End date",
+        "info": "Enter date in the format 'DD.MM.YYYY HH:MM:SS', example '01.01.2025 18:30:00"
+      },
+      {
+        "type": "metaobject_list",
+        "id": "goodies",
+        "label": "Goodies",
+        "metaobject_type": "goodie"
+      }
+    ]
   }
 ]

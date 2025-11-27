@@ -13,7 +13,6 @@ import { getUrlWithVariant } from "@shopify/theme-product-form";
 import Swiper from "swiper";
 import { Thumbs } from "swiper/modules"
 import CustomProductForm from "../../js/core/ProductForm";
-import { addToCartSubmit } from "../core/helpers/addToCartSubmit";
 import objects from "../core/objects";
 
 Swiper.use([Thumbs]);

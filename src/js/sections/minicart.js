@@ -10,6 +10,7 @@ class MiniCart extends HTMLElement {
     this.openTrigger = document.querySelector("[data-open-minicart]");
     this.continueShoppingButton = this.querySelector(".cart-order__link");
     this.closeButton = this.querySelector(".minicart__close");
+    this.goodies = this.querySelector("cart-goodies");
 
     this.closeCart = this.closeCart.bind(this);
     this.openCart = this.openCart.bind(this);
@@ -18,7 +19,7 @@ class MiniCart extends HTMLElement {
     this.openTrigger.addEventListener("click", this.openCart);
     this.attachCloseButtonListener();
     this.overlay.addEventListener("click", this.closeCart);
-    document.addEventListener("cart:rerender", this.updateMiniCartSection);
+    document.addEventListener("cart:change", this.handleCartChange.bind(this));
 
     // Add event delegation as backup for close button
     this.addEventListener("click", this.handleClick.bind(this));
@@ -29,7 +30,10 @@ class MiniCart extends HTMLElement {
     this.openTrigger.removeEventListener("click", this.openCart);
     this.removeCloseButtonListener();
     this.overlay.removeEventListener("click", this.closeCart);
-    document.removeEventListener("cart:rerender", this.updateMiniCartSection);
+    document.removeEventListener(
+      "cart:change",
+      this.handleCartChange.bind(this)
+    );
     this.removeEventListener("click", this.handleClick.bind(this));
   }
 
@@ -55,12 +59,86 @@ class MiniCart extends HTMLElement {
     }
   }
 
+  handleCartChange(event) {
+    if (this.goodies) {
+      fetch(`${window.Shopify.routes.root}cart.js`, { method: "GET" })
+        .then((response) => response.json())
+        .then((data) => {
+          this.checkGoodies(data, event);
+        });
+    } else {
+      this.updateMiniCartSection(event);
+    }
+  }
+
+  checkGoodies(currentData, event) {
+    const updates = {};
+    const goodieData = JSON.parse(this.goodies.dataset.goodieData);
+
+    goodieData.forEach((goodie) => {
+      const cartHasGoodie = currentData.items.some((item) => {
+        return item.id === goodie.id;
+      });
+      const thresholdReached = currentData.original_total_price >= goodie.threshold;
+      const goodieLineItem = currentData.items.find((item) => {
+        return item.id === goodie.it
+      })
+      const goodieCount = goodieLineItem ? goodieLineItem.quantity : 0;
+
+      if (
+        (cartHasGoodie && thresholdReached && goodieCount === 1) ||
+        (!cartHasGoodie && !thresholdReached)
+      ) {
+        return;
+      }
+
+      if (cartHasGoodie && !thresholdReached) {
+        updates[goodie.id] = 0;
+        return;
+      }
+
+      if (!cartHasGoodie && thresholdReached) {
+        updates[goodie.id] = 1;
+        return;
+      }
+
+      if (cartHasGoodie && thresholdReached && goodieCount !== 1 ) {
+        updates[goodie.id] = 1;
+        return;
+      }
+    });
+
+    if (Object.keys(updates).length === 0) {
+      // Nothing to update, just refresh minicart section
+      this.updateMiniCartSection(event);
+      return;
+    }
+
+    fetch(`${window.Shopify.routes.root}cart/update.js`, {
+      body: JSON.stringify({ updates, sections: "main-cart-mini,cart-count" }),
+      method: "POST",
+      headers: {
+        "X-Requested-With": "XMLHttpRequest",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // if (threshold reached and event.detail.items)
+        this.updateMiniCartSection(data);
+      })
+      .catch((error) =>
+        console.error("Error updating mini-cart section:", error)
+      );
+  }
+
   updateMiniCartSection(event) {
+    const data = event.detail ? event.detail : event;
     const tempDiv = document.createElement("div");
     const tempCarCount = document.createElement("div");
 
-    tempDiv.innerHTML = event.detail.sections["main-cart-mini"];
-    tempCarCount.innerHTML = event.detail.sections["cart-count"];
+    tempDiv.innerHTML = data.sections["main-cart-mini"];
+    tempCarCount.innerHTML = data.sections["cart-count"];
 
     // Remove the old close button listener before updating content
     this.removeCloseButtonListener();

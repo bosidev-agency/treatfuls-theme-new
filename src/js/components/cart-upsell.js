@@ -25,8 +25,9 @@ class CartUpsell extends HTMLElement {
   }
 
   connectedCallback() {
+    this.miniCart = document.querySelector('mini-cart');
     this.atcForms = Array.from(
-      document.querySelectorAll("form[action='/cart/add']")
+      this.miniCart.querySelectorAll("form[action='/cart/add']")
     );
     this.sliderElement = this.querySelector("[data-upsell-slider]");
     this.cartCountContainer = document.querySelector(".js-header-cat-items");
@@ -59,7 +60,7 @@ class CartUpsell extends HTMLElement {
     })
       .then((response) => response.json())
       .then((data) => {
-        document.dispatchEvent(new CustomEvent("cart:rerender", {
+        document.dispatchEvent(new CustomEvent("cart:change", {
           detail: data,
           bubbles: true,
         }));

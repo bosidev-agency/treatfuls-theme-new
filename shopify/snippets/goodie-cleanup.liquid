@@ -1,0 +1,54 @@
+{% capture goodie_variant_ids %}
+  [
+    {% if settings.goodies != blank %}
+      {% for goodie in settings.goodies %}
+        {{ goodie.goodie_variant.value.id }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ]
+{% endcapture %}
+<script>
+  (() => {
+    const COOKIE_NAME = 'treatfuls_goodie_cleanup';
+    const COOKIE_TTL_SECONDS = 60 * 60 * 24 * 10;
+    const cartItems = {{ cart.items | json }};
+    const goodieVariantIds = {{ goodie_variant_ids | strip_newlines }};
+    if (!Array.isArray(goodieVariantIds) || !goodieVariantIds.length) return;
+
+    const hasCookie = document.cookie
+      .split(';')
+      .map((entry) => entry.trim())
+      .some((entry) => entry.startsWith(`${COOKIE_NAME}=`));
+    if (hasCookie) return;
+
+    const hasGoodieInCart = (cartItems || []).some((item) => {
+      if (!item || typeof item.variant_id === 'undefined') return false;
+      return goodieVariantIds.includes(item.variant_id);
+    });
+
+    const setCookie = () => {
+      document.cookie = `${COOKIE_NAME}=1; Max-Age=${COOKIE_TTL_SECONDS}; Path=/; SameSite=Lax`;
+    };
+
+    if (!hasGoodieInCart) {
+      setCookie();
+      return;
+    }
+
+    const updatesPayload = goodieVariantIds.reduce((updates, id) => {
+      updates[id] = 0;
+      return updates;
+    }, {});
+
+    fetch('/cart/update.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ updates: updatesPayload })
+    })
+      .catch(() => {})
+      .finally(() => {
+        setCookie();
+        window.location.reload();
+      });
+  })();
+</script>

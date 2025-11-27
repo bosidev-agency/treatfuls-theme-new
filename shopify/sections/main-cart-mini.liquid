@@ -40,28 +40,29 @@
 {%- endif -%}
 
 <section
-	id="minicart-{{- section.id -}}"
-	data-section-id="{{- section.id -}}"
-	data-section-type="minicart"
+  id="minicart-{{- section.id -}}"
+  data-section-id="{{- section.id -}}"
+  data-section-type="minicart"
 >
-	<mini-cart
-		class="minicart"
-		data-section-id="{{- section.id -}}"
-		data-section-type="{{- section.type -}}"
-	>
-		<div class="minicart__overlay"></div>
+  <mini-cart
+    class="minicart"
+    data-section-id="{{- section.id -}}"
+    data-section-type="{{- section.type -}}"
+  >
+    <div class="minicart__overlay"></div>
 
-		<div class="minicart__container"
-				 style="">
-			<div class="minicart__wrapper">
-				<div class="minicart__section minicart__section--header">
-					<div class="minicart__header">
+    <div
+      class="minicart__container"
+      style=""
+    >
+      <div class="minicart__wrapper">
+        <div class="minicart__section minicart__section--header">
+          <div class="minicart__header">
             <div class="minicart__heading">
               <h3 class="minicart__title title-bg">
                 <span>{{ 'cart.general.title' | t }}</span>
               </h3>
-              <button class="minicart__close">
-              </button>
+              <button class="minicart__close"></button>
             </div>
             {%- if settings.cart_show_free_shipping_threshold and settings.cart_free_shipping_threshold != '' -%}
               {%- assign free_shipping_thresholds = settings.cart_free_shipping_threshold | remove: ' ' | split: ',' -%}
@@ -95,39 +96,131 @@
                   {%- endif -%}
                 {%- endfor -%}
 
-                <free-shipping-bar threshold="{{ threshold_in_cents }}" class="shipping-bar" style="--progress: {{ calculated_total_price | times: 1.0 | divided_by: threshold_in_cents | at_most: 1 }}">
+                <free-shipping-bar
+                  threshold="{{ threshold_in_cents }}"
+                  class="shipping-bar"
+                  style="--progress: {{ calculated_total_price | times: 1.0 | divided_by: threshold_in_cents | at_most: 1 }}"
+                >
                   {%- if calculated_total_price >= threshold_in_cents -%}
                     <span class="shipping-bar__text text--small">{{ 'cart.general.free_shipping_html' | t }}</span>
                   {%- else -%}
                     {%- capture remaining_amount -%}{{ calculated_total_price | minus: threshold_in_cents | abs | money }}{%- endcapture -%}
-                    <span class="shipping-bar__text text--small">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</span>
+                    <span class="shipping-bar__text text--small">
+                      {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
+                    </span>
                   {%- endif -%}
 
-                  <span class="shipping-bar__progress{% if calculated_total_price >= threshold_in_cents %} shipping-bar__progress--achieved{% else %} shipping-bar__progress--remaining{% endif %}"></span>
-                  <span class="shipping-bar__information">{{ 'cart.general.free_shipping_amount' | t: free_shipping_amount: free_shipping_money }}</span>
+                  <span
+                    class="shipping-bar__progress{% if calculated_total_price >= threshold_in_cents %} shipping-bar__progress--achieved{% else %} shipping-bar__progress--remaining{% endif %}"
+                  ></span>
+                  <span class="shipping-bar__information">
+                    {{- 'cart.general.free_shipping_amount' | t: free_shipping_amount: free_shipping_money -}}
+                  </span>
                 </free-shipping-bar>
 
                 <div class="divider"></div>
               {%- endif -%}
             {%- endif -%}
-					</div>
+
+            {% assign goodies_are_active = false %}
+            {% assign goodies_recently_ended = false %}
+            {% assign start_date_iso = settings.start_date | date: '%Y-%m-%dT%H:%M:%S%z' %}
+            {% assign end_date_iso = settings.end_date | date: '%Y-%m-%dT%H:%M:%S%z' %}
+            {% assign current_date_iso = 'now' | date: '%Y-%m-%dT%H:%M:%S%z' %}
+
+            {%- comment -%}
+              Calculate one week after the end date in seconds.
+              1 week = 7 days = 7 * 24 * 60 * 60 = 604800 seconds
+            {%- endcomment -%}
+            {% assign end_date_epoch = settings.end_date | date: '%s' | plus: 0 %}
+            {% assign current_date_epoch = 'now' | date: '%s' | plus: 0 %}
+            {% assign week_after_end_epoch = end_date_epoch | plus: 604800 %}
+
+            {% if start_date_iso <= current_date_iso and current_date_iso <= end_date_iso %}
+              {% assign goodies_are_active = true %}
+            {% endif %}
+
+            {% if current_date_epoch > end_date_epoch and current_date_epoch <= week_after_end_epoch %}
+              {% assign goodies_recently_ended = true %}
+            {% endif %}
+
+            {% if start_date_iso <= current_date_iso and current_date_iso <= end_date_iso %}
+              {% assign goodies_are_active = true %}
+            {% endif %}
+
+            {% if settings.goodies != blank and goodies_are_active %}
+              {%- capture goodie_data -%}
+                [
+                  {%- for goodie in settings.goodies -%}
+                    {
+                      "id": {{- goodie.goodie_variant.value.id -}},
+                      "threshold": {{- goodie.threshold.value -}}
+                    }{%- unless forloop.last -%},{%- endunless -%}
+                  {%- endfor -%}               
+                ]
+              {%- endcapture -%}
+
+              <cart-goodies data-goodie-data='{{- goodie_data -}}'>
+                {% assign highest_treshold = 0 %}
+
+                {% for goodie in settings.goodies %}
+                  {% if highest_treshold < goodie.threshold.value %}
+                    {% assign highest_treshold = goodie.threshold.value %}
+                  {% endif %}
+                {% endfor %}
+
+                <free-shipping-bar
+                  threshold="{{ highest_treshold }}"
+                  class="shipping-bar"
+                  style="--progress: {{ calculated_total_price | times: 1.0 | divided_by: highest_treshold | at_most: 1 }}"
+                >
+                  {%- if calculated_total_price >= highest_treshold -%}
+                    <span class="shipping-bar__text text--small">{{ 'cart.goodie.goodie_html' | t }}</span>
+                  {%- else -%}
+                    {%- capture remaining_amount -%}{{ calculated_total_price | minus: highest_treshold | abs | money }}{%- endcapture -%}
+                    <span class="shipping-bar__text text--small">
+                      {{- 'cart.goodie.goodie_remaining_html' | t: remaining_amount: remaining_amount -}}
+                    </span>
+                  {%- endif -%}
+
+                  <span
+                    class="shipping-bar__progress{% if calculated_total_price >= highest_treshold %} shipping-bar__progress--achieved{% else %} shipping-bar__progress--remaining{% endif %}"
+                  ></span>
+                  {% assign money_threshold = highest_treshold | money %}
+                  <span class="shipping-bar__information">
+                    {{- 'cart.goodie.goodie_amount' | t: threshold: money_threshold -}}
+                  </span>
+                </free-shipping-bar>
+
+                <div class="divider"></div>
+              </cart-goodies>
+            {% endif %}
+
+            
+
+            {% if goodies_recently_ended %}
+              {% render 'goodie-cleanup' %}
+            {% endif %}
+          </div>
 
           <div class="base-triangular-line">
             {%- render 'icon-triangular-line' -%}
           </div>
-				</div>
+        </div>
 
-				<div
-					class="minicart__body {% if is_empty_cart %}minicart__body--empty{% endif %}"
-				>
+        <div
+          class="minicart__body {% if is_empty_cart %}minicart__body--empty{% endif %}"
+        >
           <div
             class="minicart__section minicart__section--items js-minicart-items"
           >
-            <span class="minicart__item-count title-bg--sm"><b>{{ 'cart.general.mini_cart_item' | t: item_count: cart.item_count }}</b></span>
+            <span class="minicart__item-count title-bg--sm"
+              ><b>{{ 'cart.general.mini_cart_item' | t: item_count: cart.item_count }}</b></span
+            >
             {%- if is_empty_cart -%}
-            <div class="minicart__empty-cart-notice">
-              <span>{{ 'cart.general.mini_cart_empty_subtitle' | t }}</span>
-            </div>
+              <div class="minicart__empty-cart-notice">
+                <span>{{ 'cart.general.mini_cart_empty_subtitle' | t }}</span>
+              </div>
             {%- else -%}
               <form id="mini-cart-form" action="{{ routes.cart_url }}" novalidate method="post">
                 <input type="hidden" name="checkout">
@@ -141,37 +234,37 @@
               {% render 'cart-upsell', cart: cart, is_mini_cart: true, settings: section.settings, mobile: true -%}
             {%- endif -%}
           </div>
-				</div>
-				<div class="minicart__section minicart__section--footer">
+        </div>
+        <div class="minicart__section minicart__section--footer">
           <div class="top-triangular-line">
             {%- render 'icon-triangular-line' -%}
           </div>
           {% render 'cart-subtotal', cart: cart, is_mini_cart: true, is_empty_cart: is_empty_cart -%}
-				</div>
-			</div>
+        </div>
+      </div>
       {%- if has_upsell_items_left -%}
         {% render 'cart-upsell', cart: cart, is_mini_cart: true, settings: section.settings, mobile: false -%}
       {%- endif -%}
-		</div>
-	</mini-cart>
+    </div>
+  </mini-cart>
 </section>
 
 {%- schema -%}
 {
-	"name": "Minicart",
-	"settings": [
-		{
-			"type": "text",
-			"id": "empty_button_text",
-			"label": "Button text",
-			"default": "SHOP ALL",
-			"info": "Shown when minimap is empty"
-		},
-		{
-			"type": "url",
-			"id": "empty_button_url",
-			"label": "Button url"
-		},
+  "name": "Minicart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "empty_button_text",
+      "label": "Button text",
+      "default": "SHOP ALL",
+      "info": "Shown when minimap is empty"
+    },
+    {
+      "type": "url",
+      "id": "empty_button_url",
+      "label": "Button url"
+    },
     {
       "type": "header",
       "content": "Upsell"
@@ -221,6 +314,6 @@
       "label": "Hover Color",
       "default": "#F3587F"
     }
-	]
+  ]
 }
 {%- endschema -%}

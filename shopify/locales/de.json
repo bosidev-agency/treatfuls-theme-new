@@ -192,6 +192,11 @@
       "free_shipping_html": "🎉     Dein Versand ist <strong>kostenlos!</strong>",
       "free_shipping_remaining_html": "🚚     Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Versand</strong>"
     },
+    "goodie": {
+      "goodie_amount": "Kostenfreies Goodie ab {{ threshold }}",
+      "goodie_html": "Goodie freigeschaltet",
+      "goodie_remaining_html": "🍬 Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Goodie</strong>"
+    },
     "label": {
       "discounted_total": "Gesamtrabatt",
       "product": "Artikel",

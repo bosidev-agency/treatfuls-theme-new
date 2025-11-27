@@ -88,7 +88,7 @@ class CartItem extends HTMLElement {
       .then((response) => response.json())
       .then((data) => {
         document.dispatchEvent(
-          new CustomEvent("cart:rerender", {
+          new CustomEvent("cart:change", {
             detail: data,
             bubbles: true,
           })
