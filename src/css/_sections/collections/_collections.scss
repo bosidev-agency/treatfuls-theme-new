@@ -101,7 +101,7 @@
 
     .swiper-slide {
       display: inline-block;
-      flex-shrink: 0;
+      flex-shrink: unset;
     }
   }
 }
