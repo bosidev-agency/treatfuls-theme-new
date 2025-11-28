@@ -161,6 +161,7 @@
               {%- endcapture -%}
 
               <cart-goodies data-goodie-data='{{- goodie_data -}}'>
+                {% render 'goodie-add' %}
                 {% assign highest_treshold = 0 %}
 
                 {% for goodie in settings.goodies %}

@@ -1,0 +1,79 @@
+{%- capture goodie_data -%}
+  [
+    {%- if settings.goodies != blank -%}
+      {%- for goodie in settings.goodies -%}
+        {
+          "id": {{- goodie.goodie_variant.value.id -}},
+          "threshold": {{- goodie.threshold.value -}}
+        }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    {%- endif -%}
+  ]
+{%- endcapture -%}
+
+<script>
+  (() => {
+    const COOKIE_NAME = 'treatfuls_goodie_add';
+    const COOKIE_TTL_SECONDS = 60 * 60 * 24 * 10;
+    const cartItems = {{ cart.items | json }};
+    const goodieData = {{ goodie_data | strip_newlines }};
+    const calculatedTotalPrice = {{ cart.original_total_price }};
+    
+    if (!Array.isArray(goodieData) || !goodieData.length) {
+      return;
+    }
+
+    const hasCookie = document.cookie
+      .split(';')
+      .map((entry) => entry.trim())
+      .some((entry) => entry.startsWith(`${COOKIE_NAME}=`));
+    
+    if (hasCookie) {
+      return;
+    }
+
+    const setCookie = () => {
+      document.cookie = `${COOKIE_NAME}=1; Max-Age=${COOKIE_TTL_SECONDS}; Path=/; SameSite=Lax`;
+    };
+
+    const updatesPayload = {};
+    let needsUpdate = false;
+
+    goodieData.forEach((goodie) => {
+      if (!goodie || !goodie.id || typeof goodie.threshold === 'undefined') {
+        return;
+      }
+
+      const thresholdReached = calculatedTotalPrice >= goodie.threshold;
+      const hasGoodieInCart = (cartItems || []).some((item) => {
+        if (!item || typeof item.variant_id === 'undefined') return false;
+        return item.variant_id === goodie.id;
+      });
+
+      // Only add goodie if threshold is reached and goodie is not already in cart
+      if (thresholdReached && !hasGoodieInCart) {
+        updatesPayload[goodie.id] = 1;
+        needsUpdate = true;
+      }
+    });
+
+    // Set cookie regardless of whether we're adding goodies
+    setCookie();
+
+    // If no goodies need to be added, we're done
+    if (!needsUpdate) {
+      return;
+    }
+
+    // Add goodies to cart
+    fetch('/cart/update.js', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ updates: updatesPayload })
+    })
+      .catch(() => {})
+      .finally(() => {
+        window.location.reload();
+      });
+  })();
+</script>
