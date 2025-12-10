@@ -21,9 +21,7 @@
     "cart_free_shipping_threshold": 75,
     "start_date": "27.11.2025 18:00:00",
     "end_date": "01.12.2025 23:59:00",
-    "goodies": [
-      "spreat"
-    ],
+    "goodies": [],
     "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",

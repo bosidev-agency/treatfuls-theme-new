@@ -847,7 +847,6 @@
           "type": "image_with_text",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Unbenannt-2.webp",
             "image_position": "left",
             "title": "Snack. Smile. Repeat.",
             "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
@@ -861,19 +860,19 @@
             "image": "shopify://shop_images/61.png",
             "image_position": "left",
             "title": "matcha made in heaven",
-            "content": "<p>Manche Dinge passen einfach. So wie Matcha und Macadamia, oder wir und Michi von Want. Gemeinsam haben wir eine limitierte Co-Creation auf den Löffel gebracht: \"matcha made in heaven\", ein cremiger Aufstrich, der hält, was er verspricht. <br/><br/>Die Basis: feine Cashewkerne und Macadamianüsse, kombiniert mit cremigem Kokos- und Reismilchpulver, einem Hauch Dattelsüße, edlem Matcha-Pulver und einer Prise Salz für die perfekte Balance. Das Ergebnis ist samtig, natürlich süß und überraschend rund im Geschmack, perfekt fürs Croissant, Crêpe oder direkt vom Löffel. Und natürlich Vegan, bio , ohne raffinierten Zucker.</p>",
+            "content": "<p>Die Basis: feine Cashewkerne und Macadamianüsse, kombiniert mit cremigem Kokos- und Reismilchpulver, einem Hauch Dattelsüße, edlem Matcha-Pulver und einer Prise Salz für die perfekte Balance. Das Ergebnis ist samtig, natürlich süß und überraschend rund im Geschmack, perfekt fürs Croissant, Crêpe oder direkt vom Löffel. Und natürlich Vegan, bio , ohne raffinierten Zucker.</p>",
             "button_text": "Matcha? Let’s go 👇🏽",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "button_url": "shopify://collections/michis-lieblinge"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image": "shopify://shop_images/68.png",
             "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "title": "TEAM (foto)",
+            "content": "",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -988,6 +987,58 @@
         "popup_text_color": ""
       }
     },
+    "image_with_text_rxFGj9": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_W49AGe": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image_position": "left",
+            "title": "Snack. Smile. Repeat.",
+            "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
+            "button_text": "Try them all",
+            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_zpicPq": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/61.png",
+            "image_position": "left",
+            "title": "matcha made in heaven",
+            "content": "<p>Manche Dinge passen einfach. So wie Matcha und Macadamia, oder wir und Michi von Want. Gemeinsam haben wir eine limitierte Co-Creation auf den Löffel gebracht: \"matcha made in heaven\", ein cremiger Aufstrich, der hält, was er verspricht. <br/><br/>Die Basis: feine Cashewkerne und Macadamianüsse, kombiniert mit cremigem Kokos- und Reismilchpulver, einem Hauch Dattelsüße, edlem Matcha-Pulver und einer Prise Salz für die perfekte Balance. Das Ergebnis ist samtig, natürlich süß und überraschend rund im Geschmack, perfekt fürs Croissant, Crêpe oder direkt vom Löffel. Und natürlich Vegan, bio , ohne raffinierten Zucker.</p>",
+            "button_text": "Matcha? Let’s go 👇🏽",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_B3yYVY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/68.png",
+            "image_position": "left",
+            "title": "Michi&treatfuls",
+            "content": "<p>Manche Dinge passen einfach. So wie Matcha und Macadamia, oder wir und Michi von Want. Gemeinsam haben wir eine limitierte Co-Creation auf den Löffel gebracht: \"matcha made in heaven\", ein cremiger Aufstrich, der hält, was er verspricht. </p>",
+            "button_text": "zu Michis Lieblingen",
+            "button_url": "shopify://collections/michis-lieblinge"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_W49AGe",
+        "image_with_text_zpicPq",
+        "image_with_text_B3yYVY"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "advantages_BcfMf9": {
       "type": "advantages",
       "blocks": {
@@ -1080,6 +1131,7 @@
     "custom_section_9AEAFL",
     "image_with_text_NHKmKF",
     "image_gallery_d8EpDC",
+    "image_with_text_rxFGj9",
     "advantages_BcfMf9"
   ]
 }

@@ -81,14 +81,14 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "summer-crush-kopie",
-        "heading": "🍫 4 neue Riegel. Gefüllt. Natürlich. Unwiderstehlich.",
-        "mobile_heading": "🍫 Gefüllt. Natürlich. Unwiderstehlich.",
+        "product": "singles-box-1",
+        "heading": "Alle Sorten. Einmal snacken, alles checken",
+        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "#c081a9",
-        "accent_color": "#e35478",
+        "accent_color": "#dbaaeb",
         "hover_color": "#24a5a1"
       }
     },
@@ -99,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "New Fillings, Who Dis?",
-            "subtitle_text": "Sieht gut aus. Schmeckt noch besser.",
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -234,8 +234,8 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
-        "accent_color": "",
+        "background_color": "#dbaaeb",
+        "accent_color": "#e56a89",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
@@ -832,7 +832,7 @@
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -845,33 +845,32 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Unbenannt-2.webp",
+            "image": "shopify://shop_images/Matcha_flew.png",
             "image_position": "left",
-            "title": "Snack. Smile. Repeat.",
-            "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
+            "title": "Snacks, wie sie sein sollten.",
+            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
             "button_text": "Try them all",
-            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "button_url": "shopify://collections/produkte"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Matcha_4-5.png",
+            "image": "shopify://shop_images/Himbeer_flew.png",
             "image_position": "left",
-            "title": "Filling done right",
-            "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit ganzen 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße kommt dabei zu 100 % aus  Datteln und komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
+            "title": "Kids and Mom friendly",
+            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
             "button_text": "Show me the filling",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "button_url": "shopify://products/summer-crush-kopie"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
             "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "title": "Meet the Snack Squad",
+            "content": "<p>treatfuls wurde nicht im Labor entwickelt, sondern mit Herz, viel Humor und der festen Überzeugung, dass Snacks besser sein können. Jedes Produkt, jede Sorte, jede Idee entsteht gemeinsam, nicht am Schreibtisch, sondern in der Küche, wo treatfuls geboren wurde: mit Löffel, Liebe und ganz viel Dattelpaste.</p>",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -884,8 +883,8 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "",
-        "accent_color": "#2AC2BD",
+        "background_color": "#e56a89",
+        "accent_color": "#2ac2bd",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
@@ -969,7 +968,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

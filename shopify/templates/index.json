@@ -20,7 +20,7 @@
             "text": "jetzt anmelden👇🏽",
             "url": "",
             "signup_button": true,
-            "klaviyo_form": "TKczcf"
+            "klaviyo_form": ""
           },
           "blocks": {}
         },
@@ -28,8 +28,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "jetzt anmelden👇🏽",
-            "url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=TSYyRr",
+            "text": "ohne Sünde shoppen 🎅",
+            "url": "shopify://collections/weihnachten-1",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -42,19 +42,19 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_fake_plakat_A3-05_45ded690-ffa5-497d-8499-a5a57f7d0243.webp",
+        "desktop_image": "shopify://shop_images/V4_treatfuls_desktop_gifting_top_v2.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/treatfuls_fake_plakat_A3_V2.webp",
+        "mobile_image": "shopify://shop_images/v4_treatfuls_mobile_gifting.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
         "horizontal_alignment_desktop": "right",
-        "vertical_alignment_mobile": "bottom",
+        "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
         "title": "",
-        "text": "<h3>Get the good stuff before it’s gone.</h3>",
+        "text": "<h3>Gibt’s eigentlich ein Geschenk, das happy & healthy macht? 👇🏽</h3>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",

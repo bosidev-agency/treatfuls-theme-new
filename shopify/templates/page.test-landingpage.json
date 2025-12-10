@@ -845,7 +845,7 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Unbenannt-2.webp",
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle.png",
             "image_position": "left",
             "title": "Snack. Smile. Repeat.",
             "content": "<p>Ihr habt es euch gewünscht und wir haben alles darangesetzt, es möglich zu machen. Die Idee war klar: Eure Lieblings-Riegel treffen auf unsere cremigsten Spreads. Ein Riegel mit flüssigem Kern. Cremig. Soft. Pure Verführung. Was danach kam, war alles, nur nicht einfach. 11 Monate voller Testproduktionen, verworfener Chargen, nächtlicher Ideen und kleiner Erfolge. Reisen zu unseren Produzenten, Schleifen an der Textur, Feintuning am Geschmack. Bis alles so war, wie wir es uns vorgestellt haben und wie ihr es verdient habt. Jetzt sind sie endlich da: unsere neuen Filled Bars. Vier Sorten. Mit einem weichen, flüssigen Kern, der euch beim ersten Biss überrascht. Ein bisschen wie ein Dessert. </p>",
@@ -856,7 +856,7 @@
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Matcha_4-5.png",
+            "image": "shopify://shop_images/treatfuls_berrylicious_babe.png",
             "image_position": "left",
             "title": "Filling done right",
             "content": "<p>Unsere Filled Bars sehen aus wie ein süßer Cheat, fühlen sich an wie ein kleiner Genussmoment und sind dabei randvoll mit allem, was deinem Körper wirklich guttut. Statt Zuckerbomben servieren wir dir Bio-Riegel mit cremiger Nussfüllung, pflanzlicher Power und einer Prise frecher Natürlichkeit. Die Basis? Dattelpaste, glutenfreies Hafermehl, hochwertige Nussmuse und ein zart schmelzender Überzug aus weißer Kakaobutter oder dunkler Schokolade. Klingt wie ein Dessert, ist aber dein neuer Lieblingssnack für jeden Tag. Anders als herkömmliche Riegel liefern unsere Filled Bars nicht nur leere Kalorien, sondern echte Benefits: Mit ganzen 12,1 g Ballaststoffen pro 100 g fördern sie deine Verdauung, sättigen langanhaltend und stabilisieren deinen Blutzuckerspiegel ganz ohne Hänger. Die Süße kommt dabei zu 100 % aus  Datteln und komplett ohne raffinierten Zucker. Und weil treatfuls eben treatfuls ist, sind alle Riegel natürlich bio, vegan, ohne Palmöl und frei von Bullshit-Zutaten.</p><p></p>",
@@ -885,7 +885,7 @@
       "name": "Image with text",
       "settings": {
         "background_color": "",
-        "accent_color": "#2AC2BD",
+        "accent_color": "#2ac2bd",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
