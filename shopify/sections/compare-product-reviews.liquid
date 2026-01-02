@@ -5,42 +5,51 @@
     <div class="review_inner">
       {%- if section.settings.underline_word != blank -%}
         {%- assign title_without_word = section.settings.title | remove: section.settings.underline_word -%}
-        <h2 class="section_title"><span>{{ title_without_word }}</span><span class="section_title--underline">{{ section.settings.underline_word }}</span></h2>
+        <h2 class="section_title">
+          <span>{{ title_without_word }}</span
+          ><span class="section_title--underline">{{ section.settings.underline_word }}</span>
+        </h2>
       {%- else -%}
-        <h2 class="section_title"><span>{{ section.settings.title }}</span></h2>
+        <h2 class="section_title">
+          <span>{{ section.settings.title }}</span>
+        </h2>
       {%- endif -%}
       <div class="all_revies ">
         {% render 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: false %}
         <div class="custom_write_reviews">
-          {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false, product: product %}
+          {% render 'judgeme_widgets',
+            widget_type: 'judgeme_review_widget',
+            concierge_install: false,
+            product: product
+          %}
         </div>
       </div>
-      
+
       <div id="section-cta">
         <a href="{{ section.settings.link }}" class="button product-form__button">{{ section.settings.linktext }}</a>
       </div>
     </div>
   </div>
-  
+
   <div class="base-triangular-line">
-		{%- render 'icon-triangular-line' -%}
-	</div>
+    {%- render 'icon-triangular-line' -%}
+  </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Product Reviews",
-    "settings": [
+{
+  "name": "Product Reviews",
+  "settings": [
     {
-			"type": "text",
-			"id": "title",
-			"label": "Title"
-		},
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
     {
-			"type": "text",
-			"id": "underline_word",
-			"label": "Word to underline"
-		},
+      "type": "text",
+      "id": "underline_word",
+      "label": "Word to underline"
+    },
     {
       "id": "text-box",
       "type": "text",
@@ -58,37 +67,34 @@
       "label": "Button text",
       "default": "Click Here"
     }
-    ],
-    "blocks": [
+  ],
+  "blocks": [
     {
       "type": "text",
-      "name":"Reviews",
+      "name": "Reviews",
       "settings": [
-          {
-            "type": "text",
-			"id": "name",
-			"label": "Name"
-          },
-          {
-            "type": "text",
-			"id": "review_title",
-			"label": "Review Title"
-          },
-          {
-            "type": "textarea",
-			"id": "review_content",
-			"label": "Review"
-          }
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review Title"
+        },
+        {
+          "type": "textarea",
+          "id": "review_content",
+          "label": "Review"
+        }
       ]
     }
-      ]
-        
-     
-  }
+  ],
+  "presets": [
+    {
+      "name": "Product reviews"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
