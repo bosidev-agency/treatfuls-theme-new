@@ -15,11 +15,10 @@
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
-          "disabled": true,
           "settings": {
-            "text": "jetzt anmelden👇🏽",
-            "url": "",
-            "signup_button": true,
+            "text": "Sign me up",
+            "url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=TSYyRr",
+            "signup_button": false,
             "klaviyo_form": ""
           },
           "blocks": {}
@@ -27,6 +26,7 @@
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "ohne Sünde shoppen 🎅",
             "url": "shopify://collections/weihnachten-1",
@@ -42,19 +42,19 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/V4_treatfuls_desktop_gifting_top_v2.webp",
+        "desktop_image": "shopify://shop_images/Heroelement_Matchabox_2.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/v4_treatfuls_mobile_gifting.webp",
+        "mobile_image": "shopify://shop_images/Heroelement_Matchabox_1.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "right",
+        "horizontal_alignment_desktop": "left",
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "",
-        "text": "<h3>Gibt’s eigentlich ein Geschenk, das happy & healthy macht? 👇🏽</h3>",
+        "title": "Gute Vorsätze? We got you.",
+        "text": "<p>Jetzt zum Newsletter anmelden  und <br/>ab Januar 20 % + Geschenk ab 100 € sichern 🎁</p>",
         "background_color": "#f3587f",
         "accent_color": "#f3587f",
         "hover_color": "#2ac2bd",
@@ -83,7 +83,7 @@
         "collection_item_hHjCCf": {
           "type": "collection_item",
           "settings": {
-            "collection": "mixboxen",
+            "collection": "veganuary",
             "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
             "collection_title": "Sommerboxen"
           }

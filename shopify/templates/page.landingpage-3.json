@@ -67,7 +67,7 @@
         "collection_item_kECnxV": {
           "type": "collection_item",
           "settings": {
-            "collection": "mixboxen",
+            "collection": "veganuary",
             "image": "shopify://shop_images/Summer_Crush_Box_NEW.webp",
             "collection_title": "Mixboxen"
           }
@@ -157,7 +157,7 @@
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#713242",
+        "background_color": "#c13666",
         "accent_color": "#e35478",
         "hover_color": "#e35478"
       }
@@ -169,7 +169,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Approved by Santa 🎅",
+            "heading_text": "",
             "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
@@ -213,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "all-year-gifting-box",
+                        "card_product": "singles-box-1",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "singles-box-xxl-alle-treatfuls-produkte-1x",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "white-winter-treats",
+                        "card_product": "brownie-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "xmas-box-weisse-tute",
+                        "card_product": "matcha-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -915,6 +915,7 @@
       "blocks": {
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DoubleJoy_aus_Vorhang.png",
             "image_position": "left",
@@ -953,6 +954,7 @@
         "image_with_text_XgJXRN",
         "image_with_text_BjFpid"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "background_color": "#713242",
@@ -968,7 +970,7 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gifting_Bundle_4-5.png",
+            "image": "shopify://shop_images/Himbeer_flew.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -986,7 +988,7 @@
         "image_fjFFbd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "image": "shopify://shop_images/Heroelement_Matcha_01_Kopie.webp",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -1004,7 +1006,7 @@
         "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_Gutschein_unter_Baum.png",
+            "image": "shopify://shop_images/gutscheintreatfuls.webp",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -1022,7 +1024,7 @@
         "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Gutscheine_vom_baum.png",
+            "image": "shopify://shop_images/Matcha_Riegel_Vorrat.png",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -1036,13 +1038,31 @@
             "row_start_mobile": "3",
             "row_span_mobile": "2"
           }
+        },
+        "image_DLiYkb": {
+          "type": "image",
+          "settings": {
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "8",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "1",
+            "column_span_mobile": "8",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
         }
       },
       "block_order": [
         "image_aRwhDh",
         "image_fjFFbd",
         "image_URwrcE",
-        "image_w3CmDz"
+        "image_w3CmDz",
+        "image_DLiYkb"
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {

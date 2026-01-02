@@ -19,9 +19,11 @@
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 75,
-    "start_date": "27.11.2025 18:00:00",
-    "end_date": "01.12.2025 23:59:00",
-    "goodies": [],
+    "start_date": "04.01.2026 10:00:00",
+    "end_date": "31.01.2026 23:59:00",
+    "goodies": [
+      "jutebeutel"
+    ],
     "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
@@ -119,15 +121,15 @@
       "klaviyo-popups": {
         "type": "klaviyo-popups",
         "blocks": {
-          "klaviyo_popup_kcrLGa": {
+          "klaviyo_popup_8T7BwL": {
             "type": "klaviyo_popup",
             "settings": {
-              "klaviyo_form": "X3H7FL"
+              "klaviyo_form": ""
             }
           }
         },
         "block_order": [
-          "klaviyo_popup_kcrLGa"
+          "klaviyo_popup_8T7BwL"
         ],
         "settings": {}
       }
