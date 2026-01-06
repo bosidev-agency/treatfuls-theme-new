@@ -19,6 +19,17 @@
         "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
+    "video_np3fqk": {
+      "type": "video",
+      "disabled": true,
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/mysterybox viedeo.MOV",
+        "background_color": "#823546",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "image_gallery_CTGC6X": {
       "type": "image-gallery",
       "blocks": {
@@ -361,6 +372,7 @@
   },
   "order": [
     "main",
+    "video_np3fqk",
     "image_gallery_CTGC6X",
     "main_product_ingredients",
     "advantages",

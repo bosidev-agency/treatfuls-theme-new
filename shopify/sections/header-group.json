@@ -13,10 +13,9 @@
   "sections": {
     "announcement_bar_dw4NUd": {
       "type": "announcement-bar",
-      "disabled": true,
       "name": "Announcement Bar",
       "settings": {
-        "text": "Santa kommt, aber nur, wenn du bis 16.12 bestellst 🎅🏼"
+        "text": "Jetzt zum Newsletter anmelden & 20 % sparen 🎉"
       }
     },
     "header": {

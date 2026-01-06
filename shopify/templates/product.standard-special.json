@@ -19,6 +19,17 @@
         "hover_color": "{{ product.metafields.custom.hover_color.value }}"
       }
     },
+    "video_np3fqk": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "video": "shopify://files/videos/MysteryBox 2.0.MOV",
+        "video_mobile": "shopify://files/videos/MysteryBox 2.0.MOV",
+        "background_color": "#823646",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "advantages": {
       "type": "advantages",
       "blocks": {
@@ -384,6 +395,7 @@
   },
   "order": [
     "main",
+    "video_np3fqk",
     "advantages",
     "main_product_ingredients",
     "compare_product_reviews",
