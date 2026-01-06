@@ -1,0 +1,192 @@
+<style>
+  @media screen and (min-width: 992px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+      {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color_mobile != 'rgba(0,0,0,0)' and section.settings.background_color_mobile!= blank -%}
+        --section-background-color: {{ section.settings.background_color_mobile }};
+      {%- else -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+
+      {%- if section.settings.accent_color_mobile != 'rgba(0,0,0,0)' and section.settings.accent_color_mobile != blank -%}
+        --section-accent-color: {{ section.settings.accent_color_mobile }};
+      {%- else -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+</style>
+
+{% comment %} TODO: Rename this section {% endcomment %}
+<section
+  class="blog-filters"
+  data-section-id="{{- section.id -}}"
+  data-section-type="blog-filters"
+>
+  <div class="blog-filters__container page-width">
+    {%- if section.settings.heading_desktop != blank -%}
+      <h2
+        class="title-bg home-products__title hidden-phone"
+      >
+        {{ section.settings.heading_desktop }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.heading_mobile != blank -%}
+      <h2
+        class="title-bg home-products__title hidden-desktop"
+      >
+        {{ section.settings.heading_mobile }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="swiper-container-wrapper">
+        <collection-slider class="swiper" data-slides="{{ section.blocks.size }}">
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {%- assign blog_filter = block.settings.tag -%}
+              {%- assign blog_filter_image = block.settings.image -%}
+
+              {%- if block.settings.blog_filter_title != blank -%}
+                {%- assign blog_filter_title = block.settings.blog_filter_title -%}
+              {%- endif -%}
+
+              <div class="custom_slider swiper-slide">
+                {%- if blog_filter != blank -%}
+                  <a
+                    href="/blogs/{{ blog.handle }}/tagged/{{ blog_filter | handleize }}"
+                    class="active"
+                  >
+                    {%- if blog_filter_image != blank -%}
+                      {{
+                        blog_filter_image
+                        | image_url: width: 800
+                        | image_tag: class: 'hidden-phone', alt: blog_filter_image.alt
+                      }}
+                    {%- else -%}
+                      {{ 'collection-1' | placeholder_svg_tag }}
+                    {%- endif -%}
+                    <div class="collection-swiper__link">
+                      <span>{{- blog_filter_title -}}</span>
+                    </div>
+                  </a>
+                {%- else -%}
+                  {{ 'collection-1' | placeholder_svg_tag }}
+                {%- endif -%}
+              </div>
+            {% endfor %}
+          </div>
+        </collection-slider>
+        <div class="swiper-button-prev">
+        </div>
+        <div class="swiper-button-next">
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Blog filters",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_desktop",
+      "label": "Heading desktop",
+      "default": "<span><span>Alle Rezepte</span></span>"
+    },
+    {
+      "type": "text",
+      "id": "heading_mobile",
+      "label": "Heading mobile",
+      "default": "<span><span>Alle Rezepte</span></span>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "background_color_mobile",
+      "label": "Background Color Mobile",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color_mobile",
+      "label": "Accent Color Mobile",
+      "default": "#f3587f"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "blog_filter",
+      "name": "Blog filter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "blog_filter_title",
+          "label": "Collection Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog filters",
+      "blocks": [
+        {
+          "type": "blog_filter",
+          "settings": {}
+        },
+        {
+          "type": "blog_filter",
+          "settings": {}
+        },
+        {
+          "type": "blog_filter",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

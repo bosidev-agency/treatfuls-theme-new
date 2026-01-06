@@ -38,6 +38,7 @@ require("./components/typewriter-textarea");
 require("./components/variant-dropdown");
 require("./components/cart-goodies");
 require("./components/product-form");
+require("./components/ingredients");
 
 /*================ Sections ================*/
 require("./sections/header");

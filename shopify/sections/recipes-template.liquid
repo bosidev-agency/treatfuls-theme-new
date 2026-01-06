@@ -1,0 +1,242 @@
+<style>
+  @media screen and (min-width: 992px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+      {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} {
+      {%- if section.settings.background_color_mobile != 'rgba(0,0,0,0)' and section.settings.background_color_mobile!= blank -%}
+        --section-background-color: {{ section.settings.background_color_mobile }};
+      {%- else -%}
+        --section-background-color: {{ section.settings.background_color }};
+      {%- endif -%}
+
+      {%- if section.settings.accent_color_mobile != 'rgba(0,0,0,0)' and section.settings.accent_color_mobile != blank -%}
+        --section-accent-color: {{ section.settings.accent_color_mobile }};
+      {%- else -%}
+        --section-accent-color: {{ section.settings.accent_color }};
+      {%- endif -%}
+    }
+  }
+</style>
+
+{% comment %} TODO: Rename this section {% endcomment %}
+<section
+  class="recipe image-with-text"
+  data-section-id="{{- section.id -}}"
+  data-section-type="recipe"
+>
+  <div class="content-wrapper">
+    <div class="container recipe-container">
+      <div class="image-with-text__wrapper">
+        <div class="image-with-text__image">
+          {% if article.image != blank %}
+            {{ article.image | image_url: width: 1000 | image_tag: class: 'image-with-text__image-image' }}
+          {% else %}
+            {{ 'collection-1' | placeholder_svg_tag }}
+          {% endif %}
+
+          {% if article.metafields.custom.zeit != blank or article.metafields.custom.schwierigkeit != blank %}
+            <div class="recipe__details">
+              {% if article.metafields.custom.zeit != blank %}
+                <div class="icon-with-text">
+                  {%- render 'icon-cart' -%}
+                  <span class="text text--l">{{ article.metafields.custom.zeit }}</span>
+                </div>
+              {% endif %}
+
+              {% if article.metafields.custom.schwierigkeit != blank %}
+                <div class="icon-with-text">
+                  {%- render 'icon-cart' -%}
+                  <span class="text text--l">{{ article.metafields.custom.schwierigkeit }}</span>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="image-with-text__content">
+          <div class="image-with-text__text-content">
+            <h1 class="image-with-text__title title-bg">{{ article.title }}</h1>
+
+            {% if article.content != blank %}
+              <div class="image-with-text__content-text">
+                {{ article.content }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="recipe__information">
+        <div class="recipe__preparation">
+          <h2>{{ "blogs.recipe.preparation" | t }}</h2>
+
+          <div class="preparation">
+            {% for step in article.metafields.custom.zubereitung.value %}
+              <div class="preparation__step">
+                <span class="number-icon">{{ forloop.index }}</span>
+                <p>{{ step }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="recipe__ingredients">
+          <h2>{{ "blogs.recipe.ingredients" | t }}</h2>
+
+          <ingredients-container class="ingredients">
+            <div class="ingredient__calculator">
+              <div class="quantity-element">
+                <button
+                  type="button"
+                  class="quantity-element__button"
+                  data-quantity="decrement"
+                >
+                  {%- render 'icon-quantity-minus' -%}
+                </button>
+
+                <label class="quantity-element__label">
+                  <input
+                    class="quantity-element__input"
+                    type="number"
+                    id="Quantity"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                    max="99"
+                    maxlength="2"
+                    data-quantity="input"
+                  >
+                </label>
+
+                <button
+                  type="button"
+                  class="quantity-element__button"
+                  data-quantity="increment"
+                >
+                  {%- render 'icon-quantity-plus' -%}
+                </button>
+              </div>
+
+              <span>{{ "blogs.recipe.person_quantity" | t }}</span>
+            </div>
+
+            <ul class="ingredients__table">
+              {% for ingredient in article.metafields.custom.zutaten.value %}
+                <li class="ingredients__item">
+                  <div>
+                    {% if ingredient.anzahl != blank %}
+                      <span data-ingredient-value="{{ ingredient.anzahl }}">{{ ingredient.anzahl }}</span>
+                    {% endif %}
+                    <span>{{ ingredient.masheinheit }}</span>
+                  </div>
+                  <div>
+                    <span>{{ ingredient.name }}</span>
+                  </div>
+                  <div></div>
+                </li>
+              {% endfor %}
+            </ul>
+          </ingredients-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}
+  </div>
+</section>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleBody": "{{ article.content | strip_html }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ shop.url }}{{ page.url }}"
+    },
+    "headline": "{{ article.title }}",
+    {% if article.excerpt != blank %}
+      "description": "{{ article.excerpt | strip_html }}",
+    {% endif %}
+    {% if article.image %}
+      {% assign image_size = article.image.width | append: 'x' %}
+      "image": [
+        "https:{{ article | img_url: image_size }}"
+      ],
+    {% endif %}
+    "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "dateCreated": "{{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ article.author }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      {% if settings.share_image %}
+        {% assign image_size = settings.share_image.width | append: 'x' %}
+        "logo": {
+          "@type": "ImageObject",
+          "height": "{{ settings.share_image.height }}",
+          "url": "https:{{ settings.share_image | img_url: image_size }}",
+          "width": "{{ settings.share_image.width }}"
+        },
+      {% endif %}
+      "name": "{{ shop.name }}"
+    }
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Recipe",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "background_color_mobile",
+      "label": "Background Color Mobile",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "accent_color_mobile",
+      "label": "Accent Color Mobile",
+      "default": "#f3587f"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recipe"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["article"]
+  }
+}
+{% endschema %}

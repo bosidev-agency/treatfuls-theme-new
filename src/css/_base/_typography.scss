@@ -320,6 +320,18 @@ h3,
 			font-size: 1vw;
 		}
 	}
+
+  &.text--l {
+		font-size: 20px;
+	}
+
+	@media #{$no-fw} {
+		font-size: 1vw;
+
+		&.text--l {
+			font-size: 1vw;
+		}
+	}
 }
 
 .fw-500 {

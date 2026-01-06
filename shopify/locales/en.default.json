@@ -155,6 +155,12 @@
         "one": "{{ count }} comment",
         "other": "{{ count }} comments"
       }
+    },
+    "recipe": {
+      "preparation": "Preparation",
+      "ingredients": "Ingredients",
+      "person_quantity": "Persons",
+      "article_card_cta": "To recipe"
     }
   },
   "cart": {

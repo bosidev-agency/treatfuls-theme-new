@@ -1,0 +1,46 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blog_filter_hKP4Yz": {
+      "type": "blog-filter",
+      "blocks": {
+        "blog_filter_iyKNNV": {
+          "type": "blog_filter",
+          "settings": {
+            "tag": "vegan",
+            "image": "shopify://shop_images/1Beutel_1.webp",
+            "blog_filter_title": "Alle veganen Rezepte"
+          }
+        }
+      },
+      "block_order": [
+        "blog_filter_iyKNNV"
+      ],
+      "name": "Blog filter",
+      "settings": {
+        "heading_desktop": "Alle Rezepte",
+        "heading_mobile": "Alle Rezepte",
+        "background_color": "#dbaaeb",
+        "background_color_mobile": "#2ac2bd",
+        "accent_color": "#2ac2bd",
+        "accent_color_mobile": "#f3587f"
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "blog_filter_hKP4Yz",
+    "main"
+  ]
+}

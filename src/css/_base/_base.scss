@@ -368,3 +368,12 @@ a.button {
 .swiper-slide {
   height: auto;
 }
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    margin-right: 12px;
+  }
+}

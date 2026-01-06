@@ -1,0 +1,88 @@
+<div class="grid-view-item product-card">
+
+  <div class="custom_data_wrapping">
+    <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
+      {%- assign cover_image = article.image -%}
+
+      {%- assign aspect_ratio  = 1 | divided_by: cover_image.aspect_ratio | times: 100 -%}
+
+      {%- if aspect_ratio > 100 -%}
+        {%- assign aspect_ratio  = 100 -%}
+      {%- endif -%}
+
+      <div style="padding-top:{% unless aspect_ratio == blank %}{{ aspect_ratio }}%{% else %}100%{% endunless %};">
+        <a href="{{ article.url }}" class="image-link-wrapper">
+          {% if cover_image != blank %}
+            {{ cover_image | image_url: width: 700 | image_tag: class: "grid-view-item__image", sizes: '(max-width: 749px) 175px, (min-width: 750px) 350px' }}
+          {% else %}
+            {{ 'collection-1' | placeholder_svg_tag }}
+          {% endif %}
+        </a>
+      </div>
+    </div>
+
+    <div class="product_content_wrapping">
+      <div class="product-card__top-content">
+        <a href="{{ article.url }}" class="hidden-phone">
+          <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
+            {{ article.title }}
+          </div>
+        </a>
+
+        <div class="products_listing__information">
+          <div class="products_listing__information-wrapper">
+            <div class="products_listing__information-labels">
+              {%- if custom_card_badge -%}
+                <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
+                  {%- if custom_card_badge.emoji -%}
+                    <style>
+                      .products_listing ul.grid li.grid__item:hover .products_listing__label--custom {
+                        border: 1px solid {{ custom_card_badge.text_color }};
+                      }
+                    </style>
+                    <span class="products_listing__label--emoji">
+                      {{ custom_card_badge.emoji }}
+                    </span>
+                  {%- endif -%}
+
+                  <span class="hidden-phone">{{ custom_card_badge.text }}</span>
+                  <span class="hidden-desktop">
+                    {%- if custom_card_badge.mobile_text != blank -%}
+                      {{ custom_card_badge.mobile_text }}
+                    {%- else -%}
+                      {{ custom_card_badge.text }}
+                    {%- endif -%}
+                  </span>
+                </div>
+              {%- endif -%}
+              <div class="products_listing__label">
+                {% render 'icon-vegan' %}
+                {{ 'collections.product_card.vegan_badge' | t }}
+              </div>
+              <div class="products_listing__label">
+                {% render 'icon-bio' %}
+                {{ 'collections.product_card.bio_badge' | t }}
+              </div>
+            </div>
+            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+              <div class="products_listing__label">
+                <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="button product-form__button"
+        href="{{ article.url }}"
+      >
+        <span
+          class="product-form__button-text product-form__button-text--add-to-card"
+        >
+          {{ "blogs.recipe.article_card_cta" | t }}
+        </span>
+      </a>
+    </div>
+  </div>
+</div>

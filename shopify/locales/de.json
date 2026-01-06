@@ -164,6 +164,12 @@
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       }
+    },
+    "recipe": {
+      "preparation": "Zubereitung",
+      "ingredients": "Zutaten",
+      "person_quantity": "Personen",
+      "article_card_cta": "Zum Rezept"
     }
   },
   "cart": {

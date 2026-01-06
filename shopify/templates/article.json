@@ -8,9 +8,13 @@
  * ------------------------------------------------------------
  */
 {
-  "markets": {
-    "de": {
-      "parent": "@default"
+  "sections": {
+    "main": {
+      "type": "recipes-template",
+      "settings": {}
     }
-  }
+  },
+  "order": [
+    "main"
+  ]
 }
