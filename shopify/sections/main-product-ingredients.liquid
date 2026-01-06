@@ -11,7 +11,8 @@
 
 {% comment %} TODO: Cleanup Section {% endcomment %}
 
-{%- assign sec_sett = section.settings -%}
+{% assign product = section.settings.product | default: product %}
+
 {%- assign ingredient_highlights = product.metafields.custom.ingredient_highlights.value -%}
 
 {%- assign has_bundle_items = false -%}
@@ -57,19 +58,13 @@
 {%- endcapture -%}
 
 <section
-class="ingredients"
-data-section-id="{{- section.id -}}"
-data-section-type="ingredients"
+  class="ingredients"
+  data-section-id="{{- section.id -}}"
+  data-section-type="ingredients"
 >
   <div class="container ingredients__container">
-    {%- if field_product.ingredients_title != blank -%}
-    <h2 class="ingredients__title title-bg">{{- field_product.ingredients_title -}}</h2>
-    {%- elsif sec_sett.title != blank -%}
-    <h2 class="ingredients__title title-bg">{{- sec_sett.title -}}</h2>
-    {%- endif -%}
-
     {{ slider }}
-    
+
     <div class="container container--md">
       <div class="accordion">
         <accordion-item class="accordion__item js-accordion__item">
@@ -77,19 +72,28 @@ data-section-type="ingredients"
             <h2 class="h3 accordion__title">{{ 'products.product.ingredients' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
           </header>
-          <div class="accordion__body" {% if has_bundle_items %}style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"{% endif %}>
+          <div
+            class="accordion__body"
+            {% if has_bundle_items %}
+              style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"
+            {% endif %}
+          >
             <div class="accordion__dsc text color-white">
               {%- if product.metafields.custom.bundle_products.value != blank -%}
                 {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
                   <h3>
-                    {%- if bundle_product.metafields.custom.short_title != blank and bundle_product.metafields.custom.unit_name != blank -%}
-                      {{ bundle_product.metafields.custom.short_title }} {{ bundle_product.metafields.custom.unit_name }}
+                    {%- if bundle_product.metafields.custom.short_title != blank
+                      and bundle_product.metafields.custom.unit_name != blank
+                    -%}
+                      {{ bundle_product.metafields.custom.short_title }}
+                      {{ bundle_product.metafields.custom.unit_name }}
                     {%- else -%}
                       {{ bundle_product.title }}
                     {%- endif -%}
                   </h3>
                   {{ bundle_product.metafields.custom.ingredients }}
-                  <br><br>
+                  <br>
+                  <br>
                 {%- endfor -%}
               {%- else -%}
                 {{ product.metafields.custom.ingredients }}
@@ -102,13 +106,19 @@ data-section-type="ingredients"
             <h2 class="h3 accordion__title">{{ 'products.product.nutrition_table' | t }}</h2>
             {%- render 'icon-arrow-down' -%}
           </header>
-          <div class="accordion__body" {% if has_bundle_items %}style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"{% endif %}>
+          <div
+            class="accordion__body"
+            {% if has_bundle_items %}
+              style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"
+            {% endif %}
+          >
             <div class="accordion__dsc text color-white">
               {%- if product.metafields.custom.bundle_products.value != blank -%}
                 {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
                   {%- assign nutrition_values = bundle_product.metafields.custom.nutrition_values.value -%}
                   {%- unless forloop.first -%}
-                    <br><br>
+                    <br>
+                    <br>
                   {%- endunless -%}
                   <h3>{{ nutrition_values.produktname }}</h3>
                   <table>
@@ -120,44 +130,44 @@ data-section-type="ingredients"
                     <tr>
                       <td>{{ 'products.product.energy' | t }}</td>
                       <td>{{ nutrition_values.energie_100_gr }}</td>
-                      <td>{{ nutrition_values.energie_portion}}</td>
+                      <td>{{ nutrition_values.energie_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.fat' | t }}</td>
                       <td>{{ nutrition_values.fett_100_gr }}</td>
-                      <td>{{ nutrition_values.fett_portion}}</td>
+                      <td>{{ nutrition_values.fett_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.sat_fat' | t }}</td>
                       <td>{{ nutrition_values.gesattigte_fettsauren_100_gr }}</td>
-                      <td>{{ nutrition_values.gesattigte_fettsauren_portion}}</td>
+                      <td>{{ nutrition_values.gesattigte_fettsauren_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.carbs' | t }}</td>
                       <td>{{ nutrition_values.kohlenhydrate_100_gr }}</td>
-                      <td>{{ nutrition_values.kohlenhydrate_portion}}</td>
+                      <td>{{ nutrition_values.kohlenhydrate_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.sugar' | t }}</td>
                       <td>{{ nutrition_values.zucker_100_gr }}</td>
-                      <td>{{ nutrition_values.zucker_portion}}</td>
+                      <td>{{ nutrition_values.zucker_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.fibre' | t }}</td>
                       <td>{{ nutrition_values.ballaststoffe_100_gr }}</td>
-                      <td>{{ nutrition_values.ballaststoffe_portion}}</td>
+                      <td>{{ nutrition_values.ballaststoffe_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.protein' | t }}</td>
                       <td>{{ nutrition_values.eiweiss_100_gr }}</td>
-                      <td>{{ nutrition_values.eiweiss_portion}}</td>
+                      <td>{{ nutrition_values.eiweiss_portion }}</td>
                     </tr>
                     <tr>
                       <td>{{ 'products.product.salt' | t }}</td>
                       <td>{{ nutrition_values.salz_100_gr }}</td>
-                      <td>{{ nutrition_values.salz_portion}}</td>
+                      <td>{{ nutrition_values.salz_portion }}</td>
                     </tr>
-                  </table>	
+                  </table>
                 {%- endfor -%}
               {%- else -%}
                 {%- assign nutrition_values = product.metafields.custom.nutrition_values.value -%}
@@ -171,44 +181,44 @@ data-section-type="ingredients"
                   <tr>
                     <td>{{ 'products.product.energy' | t }}</td>
                     <td>{{ nutrition_values.energie_100_gr }}</td>
-                    <td>{{ nutrition_values.energie_portion}}</td>
+                    <td>{{ nutrition_values.energie_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.fat' | t }}</td>
                     <td>{{ nutrition_values.fett_100_gr }}</td>
-                    <td>{{ nutrition_values.fett_portion}}</td>
+                    <td>{{ nutrition_values.fett_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.sat_fat' | t }}</td>
                     <td>{{ nutrition_values.gesattigte_fettsauren_100_gr }}</td>
-                    <td>{{ nutrition_values.gesattigte_fettsauren_portion}}</td>
+                    <td>{{ nutrition_values.gesattigte_fettsauren_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.carbs' | t }}</td>
                     <td>{{ nutrition_values.kohlenhydrate_100_gr }}</td>
-                    <td>{{ nutrition_values.kohlenhydrate_portion}}</td>
+                    <td>{{ nutrition_values.kohlenhydrate_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.sugar' | t }}</td>
                     <td>{{ nutrition_values.zucker_100_gr }}</td>
-                    <td>{{ nutrition_values.zucker_portion}}</td>
+                    <td>{{ nutrition_values.zucker_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.fibre' | t }}</td>
                     <td>{{ nutrition_values.ballaststoffe_100_gr }}</td>
-                    <td>{{ nutrition_values.ballaststoffe_portion}}</td>
+                    <td>{{ nutrition_values.ballaststoffe_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.protein' | t }}</td>
                     <td>{{ nutrition_values.eiweiss_100_gr }}</td>
-                    <td>{{ nutrition_values.eiweiss_portion}}</td>
+                    <td>{{ nutrition_values.eiweiss_portion }}</td>
                   </tr>
                   <tr>
                     <td>{{ 'products.product.salt' | t }}</td>
                     <td>{{ nutrition_values.salz_100_gr }}</td>
-                    <td>{{ nutrition_values.salz_portion}}</td>
+                    <td>{{ nutrition_values.salz_portion }}</td>
                   </tr>
-                </table>	
+                </table>
               {%- endif -%}
             </div>
           </div>
@@ -224,8 +234,14 @@ data-section-type="ingredients"
 
 {% schema %}
 {
-	"name": "Product ingredients",
-	"settings": [
+  "name": "Product ingredients",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product",
+      "info": "You can choose a specific product here. If not, then the product of the current template is used."
+    },
     {
       "type": "text",
       "id": "title",
@@ -249,6 +265,11 @@ data-section-type="ingredients"
       "label": "Accent Color",
       "default": "#2ac2bd"
     }
-	]
+  ],
+  "presets": [
+    {
+      "name": "Ingredients"
+    }
+  ]
 }
 {% endschema %}
