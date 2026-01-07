@@ -890,6 +890,16 @@
         "padding_bottom": 40
       }
     },
+    "main_product_ingredients_Kgi9bT": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "singles-box-1",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd"
+      }
+    },
     "advantages_BcfMf9": {
       "type": "advantages",
       "blocks": {
@@ -981,6 +991,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "main_product_ingredients_Kgi9bT",
     "advantages_BcfMf9"
   ]
 }

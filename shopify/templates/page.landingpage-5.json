@@ -99,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Approved by Santa 🎅",
-            "subtitle_text": "",
+            "heading_text": "Veganuary",
+            "subtitle_text": "but make it tasty",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -143,7 +143,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "singles-box-1",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -163,7 +163,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "gute-vorsatze-vorrat-alle-sorten-bio-vegan",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -183,7 +183,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "xmas-box-weisse-tute",
+                        "card_product": "selflove-snackbox-bio-vegan",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -203,7 +203,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
+                        "card_product": "20x-alle-11-sorten",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -883,6 +883,7 @@
         "image_with_text_XgJXRN",
         "image_with_text_BjFpid"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "background_color": "#c13666",
@@ -974,6 +975,7 @@
         "image_Aa4zyg",
         "image_dhM98M"
       ],
+      "disabled": true,
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
         "product": "all-year-gifting-box",
@@ -1065,9 +1067,19 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
+        "background_color": "#c13666",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "main_product_ingredients_FwTzyE": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "all-year-gifting-box",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#e35478",
+        "accent_color": "#2ac2bd"
       }
     }
   },
@@ -1079,6 +1091,7 @@
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
     "image_gallery_jpAA4C",
-    "advantages_BcfMf9"
+    "advantages_BcfMf9",
+    "main_product_ingredients_FwTzyE"
   ]
 }
