@@ -9,6 +9,16 @@
 				<div class="swiper-slide">
 					{{ media.preview_image | image_url: width: media.preview_image.width | image_tag }}
 				</div>
+        {% if forloop.first and product.metafields.custom.badge != blank %}
+          {% assign badge = product.metafields.custom.badge.value %}
+
+          {% if badge.display == "Global" or badge.display == "Produktseite" %}
+            <div class="badge-container">
+              {% render 'badge' with badge.shape %}
+              <span>{{ badge.content }}</span>
+            </div>
+          {% endif %}
+        {% endif %}
 			{%- endfor -%}
 		</div>
 	</div>

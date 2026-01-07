@@ -1,0 +1,25 @@
+.badge-container {
+  display: flex;
+  position: absolute;
+  top: -50px;
+  right: -20px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.badge {
+  rect,
+  path {
+    fill: var(--section-accent-color);
+  }
+}
+
+.product-gallery .badge-container {
+  top: 0;
+  right: 0;
+}

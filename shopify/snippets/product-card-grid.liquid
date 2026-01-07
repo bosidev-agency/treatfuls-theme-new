@@ -39,6 +39,17 @@
       <div style="padding-top:{% unless aspect_ratio == blank %}{{ aspect_ratio }}%{% else %}100%{% endunless %};">
         <a href="{{ product.url }}" class="image-link-wrapper">
           {{ cover_image | image_url: width: 700 | image_tag: class: "grid-view-item__image", sizes: '(max-width: 749px) 175px, (min-width: 750px) 350px' }}
+          
+          {% if product.metafields.custom.badge != blank %}
+            {% assign badge = product.metafields.custom.badge.value %}
+
+            {% if badge.display == "Global" or badge.display == "Kollektionsseite" %}
+              <div class="badge-container">
+                {% render 'badge' with badge.shape %}
+                <span>{{ badge.content }}</span>
+              </div>
+            {% endif %}
+          {% endif %}
         </a>
       </div>
     </div>
