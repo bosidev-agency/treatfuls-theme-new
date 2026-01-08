@@ -13,49 +13,9 @@
 </style>
 
 {% comment %} TODO: Cleanup this section {% endcomment %}
-{%- assign collection_sort_by = collection.sort_by | default: collection.default_sort_by -%}
+
 <div class="products_listing collection-template triangular-balance" data-section-id="{{ section.id }}">
   <div class="page-width" >
-    <div class="product-facet__meta-bar-item product-facet__meta-bar-item--sort">
-      <span class="product-facet__sort-by-title text--subdued hidden-pocket">{{ 'collections.sorting.title' | t }}</span>
-
-      <popover-container class="popover-container">
-        {%- for option in collection.sort_options -%}
-          {%- if option.value == collection_sort_by -%}
-            {%- assign collection_sort_by_name = option.name -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-
-        <button type="button" class="popover-button hidden-pocket" aria-expanded="false">
-          <span id="sort-by-selected-value" style="pointer-events: none">{{- collection_sort_by_name -}}</span>
-          {%- render 'icon-chevron-down' -%}
-        </button>
-
-        <div class="popover">
-          <span class="popover__overlay"></span>
-
-          <header class="popover__header">
-            <span class="popover__title heading h6">{{- 'collections.sorting.title' | t -}}</span>
-
-            <button type="button" class="popover__close-button tap-area tap-area--large" title="{{ 'general.accessibility.close' | t | escape }}">
-              {%- render 'icon-close' -%}
-            </button>
-          </header>
-
-          <div class="popover__content">
-            <div class="popover__choice-list">
-              {%- for sort_option in collection.sort_options -%}
-                <label class="popover__choice-item">
-                  <input type="radio" data-bind-value="sort-by-selected-value" class="visually-hidden" {% if sort_option.value == collection_sort_by %}checked="checked"{% endif %} name="sort_by" value="{{ sort_option.value }}" title="{{ sort_option.name }}">
-                  <span class="popover__choice-label">{{ sort_option.name }}</span>
-                </label>
-              {%- endfor -%}
-            </div>
-          </div>
-        </div>
-      </popover-container>
-    </div>
     {% if section.settings.title != blank %}
       <div class="section-header text-center">
         <h2><span>{{ section.settings.title | escape }}</span></h2>
@@ -76,7 +36,7 @@
     {%- assign product_limit = section.settings.items_per_page -%}
 
     <ul class="grid grid--uniform grid--view-items">
-      {% for product in collection.products limit: product_limit %}
+      {% for product in section.settings.collection.products limit: product_limit %}
         {%- if product.metafields.custom.hide_product -%}
           {%- continue -%}
         {%- endif -%}
@@ -104,7 +64,7 @@
 
 {% schema %}
 {
-  "name": "Collection page",
+  "name": "Featured collection",
   "class": "index-section",
   "settings": [
     {
@@ -112,6 +72,11 @@
       "id": "title",
       "label": "Title",
       "default": "Featured collection"
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": "Collection"
     },
     {
       "type": "range",
@@ -159,7 +124,7 @@
   ],
   "presets": [
     {
-      "name": "Collection page",
+      "name": "Featured Collection",
     }
   ]
 }
