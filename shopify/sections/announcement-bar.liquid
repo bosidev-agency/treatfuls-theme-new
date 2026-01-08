@@ -14,11 +14,19 @@
   }
 </style>
 
+{% if section.settings.klaviyo_signup and section.settings.klaviyo_form != blank %}
+  <button class="button button--unstyled" data-toggle="{{ section.settings.klaviyo_form }}">
+{% endif %}
+
 <section id="shopify-section-announcement-bar" class="announcement-bar shopify-section">
   <div class="announcement-bar__text">
     <span>{{ section.settings.text }}</span>
   </div>
 </section>
+
+{% if section.settings.klaviyo_signup and section.settings.klaviyo_form != blank %}
+  </button>
+{% endif %}
 
 {% schema %}
 {
@@ -54,6 +62,18 @@
       "max": 32,
       "default": 16,
       "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "klaviyo_signup",
+      "label": "Klaviyo Signup",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_form",
+      "label": "Klaviyo Form ID",
+      "visible_if": "{{ section.settings.klaviyo_signup }}"
     },
     {
       "type": "header",

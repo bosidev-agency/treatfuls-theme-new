@@ -98,3 +98,11 @@
 	}
 }
 /* stylelint-enable */
+
+.button--unstyled {
+  width: 100%;
+  padding: 0;
+  font-weight: normal;
+  border-radius: 0;
+  line-height: inherit;
+}
