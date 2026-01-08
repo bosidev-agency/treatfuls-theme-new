@@ -1,3 +1,19 @@
+<style>
+  @media screen and (min-width: 992px) {
+    .announcement-bar {
+      padding-block: {{ section.settings.padding_desktop }}px;
+      font-size: {{ section.settings.font_desktop }}px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .announcement-bar {
+      padding-block: {{ section.settings.padding_mobile }}px;
+      font-size: {{ section.settings.font_mobile }}px;
+    }
+  }
+</style>
+
 <section id="shopify-section-announcement-bar" class="announcement-bar shopify-section">
   <div class="announcement-bar__text">
     <span>{{ section.settings.text }}</span>
@@ -12,10 +28,54 @@
   },
   "settings": [
     {
+      "type": "header",
+      "content": "Content"
+    },
+    {
       "type": "text",
       "id": "text",
       "label": "Text",
       "default": "Announcement Bar"
+    },
+    {
+      "type": "range",
+      "id": "font_desktop",
+      "label": "Font Desktop",
+      "min": 8,
+      "max": 32,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "font_mobile",
+      "label": "Font Mobile",
+      "min": 8,
+      "max": 32,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Display"
+    },
+    {
+      "type": "range",
+      "id": "padding_desktop",
+      "label": "Padding Desktop",
+      "min": 8,
+      "max": 32,
+      "default": 24,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_mobile",
+      "label": "Padding Mobile",
+      "min": 8,
+      "max": 32,
+      "default": 24,
+      "unit": "px"
     }
   ],
   "presets": [
