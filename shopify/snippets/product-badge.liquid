@@ -1,0 +1,10 @@
+{% if product.metafields.custom.badge != blank %}
+  {% assign badge = product.metafields.custom.badge.value %}
+
+  {% if display contains badge.display %}
+    <div class="badge-container {% if size != blank %} badge-container--{{ size }}{% endif %}">
+      {% render 'badge' with badge.shape %}
+      <span>{{ badge.content }}</span>
+    </div>
+  {% endif %}
+{% endif %}

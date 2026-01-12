@@ -77,6 +77,8 @@
 													 srcset="{{ product_image.src | img_url: '265x' }} 1x, {{ product_image.src | img_url: '530x' }} 2x,{{ product_image.src | img_url: '795x' }} 3x"
 													 alt="{{ product_image.alt }}">
 										</picture>
+
+                    {% render 'product-badge', product: product, display: "Global,Kollektionsseite", size: "homepage" %}
 									</a>
 								{%- endif -%}
 

@@ -31,6 +31,9 @@
               height="500"
 						/>
 					</picture>
+          {% if forloop.first %}
+            {% render 'product-badge', product: product, display: "Global,Produktseite" %}
+          {% endif %}
 				</div>
 			{%- endfor -%}
 		</div>

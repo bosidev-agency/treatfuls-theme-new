@@ -29,6 +29,7 @@
     {% else %}
       {{ 'product-1' | placeholder_svg_tag: 'product-card__image-placeholder' }}
     {% endif %}
+    {% render 'product-badge', product: card_product, display: "Global,Kollektionsseite", size: "product-card" %}
   </div>
   <div class="product-card__content">
     <h3 class="product-card__title">
