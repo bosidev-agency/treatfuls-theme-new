@@ -2,13 +2,14 @@
   .image-with-text__image img {
     position: relative;
   }
-  
+
   .recipe-container {
     margin-bottom: 40px;
   }
   .recipe__details {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
     .icon {
       width: 30px;
@@ -35,7 +36,6 @@
 
     .preparation__step {
       display: flex;
-      align-items: center;
 
       .number-icon {
         background-color: var(--section-accent-color);
@@ -47,12 +47,13 @@
         font-size: 26px;
         border-radius: 50%;
         margin-right: 24px;
+        flex-shrink: 0;
       }
     }
   }
 
   .recipe__ingredients {
-    min-width: 450px;
+    min-width: 500px;
     margin-left: 25px;
     padding-left: 25px;
     border-left: 1px solid rgb(var(--color-text));
@@ -72,7 +73,7 @@
       border: 1px solid rgb(var(--color-text));
 
       .quantity-element__input {
-        font-size: 100%
+        font-size: 100%;
       }
     }
 
@@ -84,6 +85,8 @@
       padding-bottom: 12px;
       border-bottom: 1px solid rgb(var(--color-text));
       margin-bottom: 12px;
+      display: flex;
+      gap: 10px;
 
       > div {
         display: table-cell;
@@ -92,6 +95,53 @@
       > div:first-child {
         width: 80px;
       }
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+
+    .ingredient__product {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-product__image-wrap {
+      max-width: 150px;
+      margin-left: 20px;
+    }
+  }
+
+  @media #{$m-xl} {
+    .image-with-text__content {
+      margin-top: 80px;
+    }
+
+    .recipe__details {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .recipe__information {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+    .recipe__ingredients {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none;
+      max-width: 100%;
+    }
+
+    .recipe__ingredients .cart-product__image-wrap  {
+      max-width: 100px;
+      margin-left: 10px;
+    }
+
+    .recipe__ingredients .ingredients__item {
+      gap: 5px;
     }
   }
 }
