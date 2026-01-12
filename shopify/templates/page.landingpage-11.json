@@ -1121,6 +1121,16 @@
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
+    },
+    "main_product_ingredients_wVVqEM": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "michivanwant-box-matcha-spread",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd"
+      }
     }
   },
   "order": [
@@ -1132,6 +1142,7 @@
     "image_with_text_NHKmKF",
     "image_gallery_d8EpDC",
     "image_with_text_rxFGj9",
-    "advantages_BcfMf9"
+    "advantages_BcfMf9",
+    "main_product_ingredients_wVVqEM"
   ]
 }

@@ -982,6 +982,17 @@
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
+    },
+    "compare_product_reviews_4JnjWz": {
+      "type": "compare-product-reviews",
+      "name": "Product reviews",
+      "settings": {
+        "title": "",
+        "underline_word": "",
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click Here"
+      }
     }
   },
   "order": [
@@ -992,6 +1003,7 @@
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
     "main_product_ingredients_Kgi9bT",
-    "advantages_BcfMf9"
+    "advantages_BcfMf9",
+    "compare_product_reviews_4JnjWz"
   ]
 }

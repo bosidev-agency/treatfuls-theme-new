@@ -18,8 +18,8 @@
           "settings": {
             "text": "Sign me up",
             "url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=TSYyRr",
-            "signup_button": false,
-            "klaviyo_form": ""
+            "signup_button": true,
+            "klaviyo_form": "X578qa"
           },
           "blocks": {}
         },

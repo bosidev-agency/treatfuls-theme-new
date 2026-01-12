@@ -832,7 +832,7 @@
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -889,6 +889,16 @@
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
+      }
+    },
+    "main_product_ingredients_zDPfWU": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "summer-crush-kopie",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd"
       }
     },
     "advantages_BcfMf9": {
@@ -969,7 +979,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#5359e5",
+        "background_color": "#e56a89",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -982,6 +992,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "main_product_ingredients_zDPfWU",
     "advantages_BcfMf9"
   ]
 }
