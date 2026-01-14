@@ -16,9 +16,9 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "Sign me up",
-            "url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=TSYyRr",
-            "signup_button": true,
+            "text": "👉 Jetzt probieren",
+            "url": "shopify://collections/veganuary",
+            "signup_button": false,
             "klaviyo_form": "X578qa"
           },
           "blocks": {}
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroelement_Matchabox_2.webp",
+        "desktop_image": "shopify://shop_images/Heroelement_Matcha_01_Kopie_1.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroelement_Matchabox_1.webp",
+        "mobile_image": "shopify://shop_images/Heroelement_Matcha-02_Kopie_1.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -53,11 +53,11 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Gute Vorsätze? We got you.",
-        "text": "<p>Jetzt zum Newsletter anmelden  und <br/>ab Januar 20 % + Geschenk ab 100 € sichern 🎁</p>",
-        "background_color": "#f3587f",
-        "accent_color": "#f3587f",
-        "hover_color": "#2ac2bd",
+        "title": "Matcha als Aufstrich?",
+        "text": "<p>neu bei treatfuls und einfach himmlisch 💚 </p>",
+        "background_color": "#ceb0d1",
+        "accent_color": "#ceb0d1",
+        "hover_color": "#384211",
         "show_base_triangular_line": false
       }
     },
@@ -197,7 +197,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#f3587f",
+        "background_color": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "hover_color": "#dbaaeb"
       }

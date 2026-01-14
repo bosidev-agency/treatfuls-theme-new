@@ -15,10 +15,10 @@
       "type": "announcement-bar",
       "name": "Announcement Bar",
       "settings": {
-        "text": "Jetzt zum Newsletter anmelden & 20 % sparen 🎉",
+        "text": "🌿 Bio 🌱 Vegan 💚 Glutenfrei",
         "font_desktop": 16,
         "font_mobile": 14,
-        "klaviyo_signup": true,
+        "klaviyo_signup": false,
         "klaviyo_form": "X578qa",
         "padding_desktop": 13,
         "padding_mobile": 12
