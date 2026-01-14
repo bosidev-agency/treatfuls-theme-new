@@ -5,6 +5,12 @@
 .footer__list-menu {
 	padding-top: 64px;
 	padding-bottom: 66px;
+  display: flex;
+  justify-content: space-between;
+
+  @media #{$m-xl} {
+    flex-direction: column;
+  }
 }
 
 .footer-menu {

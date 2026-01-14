@@ -28,6 +28,9 @@
 					{%- endfor -%}
 				{% endif %}
 			</div>
+      {% if section.settings.klaviyo_id != blank %}
+        <div id="klaviyo-form-{{ section.settings.klaviyo_id }}"></div>
+      {% endif %}
 		</div>
 		<div class="container">
 			<a class="footer__logo">
@@ -48,7 +51,13 @@
 			"id": "copyright_text",
 			"label": "Copyright text",
 			"default": "© 2022, snacks with benefits GmbH. Alle Rechte vorbehalten."
-		}
+		},
+    {
+      "type": "text",
+      "id": "klaviyo_id",
+      "label": "Klaviyo ID",
+      "info": "Put the ID of the signup form in this field. For Example 'ABCDEF'. NOT the whole Div, only the ID"
+    }
 	],
 	"blocks": [
 		{
