@@ -15,7 +15,7 @@
         "title": "Storefinder",
         "subtitle": "<p>Du willst wissen wo wir vertreten sind?</p>",
         "subtitle_font_size": 24,
-        "background_color": "#e56a89",
+        "background_color": "#384211",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -103,7 +103,11 @@
       "block_order": [
         "s_store_locator_storeify_storelocator_tcV3kU"
       ],
-      "settings": {}
+      "settings": {
+        "background_color": "#384211",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
     },
     "custom_section_9AEAFL": {
       "type": "custom-section",
@@ -949,7 +953,7 @@
         "image_cQtzp7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_X-Mas_Box.jpg",
+            "image": "shopify://shop_images/Coffe_SVG.svg",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,

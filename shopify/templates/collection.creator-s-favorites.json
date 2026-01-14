@@ -70,8 +70,8 @@
         "collection_item_zt4DCn"
       ],
       "settings": {
-        "heading_desktop": "Michis süße Auswahl",
-        "heading_mobile": "Michis Lieblinge",
+        "heading_desktop": "süße Auswahl",
+        "heading_mobile": "treatfuls Lieblinge",
         "background_color": "#dbaaeb",
         "background_color_mobile": "#2ac2bd",
         "accent_color": "#2ac2bd",
@@ -82,7 +82,6 @@
       "type": "collection",
       "settings": {
         "title": "",
-        "collection": "produkte",
         "items_per_page": 48,
         "show_vendor": false,
         "show_view_all": false,
