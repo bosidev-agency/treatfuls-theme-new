@@ -48,8 +48,8 @@
       <div class="product-card__top-content">
         <a href="{{ product.url }}" class="hidden-phone">
           <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">
-            {%- if short_title != blank and unit_name != blank -%}
-              {{ short_title }} {{ unit_name }}
+            {%- if short_title != blank -%}
+              {{ short_title }}
             {%- else -%}
               {{ product.title }}
             {%- endif -%}
