@@ -15,7 +15,7 @@
         "title": "Storefinder",
         "subtitle": "<p>Du willst wissen wo wir vertreten sind?</p>",
         "subtitle_font_size": 24,
-        "background_color": "#384211",
+        "background_color": "#96bd8b",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -104,7 +104,7 @@
         "s_store_locator_storeify_storelocator_tcV3kU"
       ],
       "settings": {
-        "background_color": "#384211",
+        "background_color": "#96bd8b",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -917,7 +917,7 @@
         "image_TFNHhc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/X-Mas_Giftbox_-_45.png",
+            "image": "shopify://shop_images/Vly_fuer_Storefinder.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -971,7 +971,7 @@
         "image_XffPqA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Online_Shop_X-MAS_Box_Nikolausschuh.png",
+            "image": "shopify://shop_images/Vly_und_treatfuls_2.png",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -999,7 +999,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#e56a89",
+        "background_color": "#e89dc5",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1080,6 +1080,7 @@
         "advantage_item_XE7riB",
         "advantage_item_WEkgHC"
       ],
+      "disabled": true,
       "settings": {
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
