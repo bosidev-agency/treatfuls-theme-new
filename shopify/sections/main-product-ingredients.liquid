@@ -83,10 +83,10 @@
                 {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
                   <h3>
                     {%- if bundle_product.metafields.custom.short_title != blank
-                      and bundle_product.metafields.custom.unit_name != blank
+                      and bundle_product.metafields.custom.unit_name_new != blank
                     -%}
                       {{ bundle_product.metafields.custom.short_title }}
-                      {{ bundle_product.metafields.custom.unit_name }}
+                      {{ bundle_product.metafields.custom.unit_name_new }}
                     {%- else -%}
                       {{ bundle_product.title }}
                     {%- endif -%}

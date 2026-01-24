@@ -64,11 +64,6 @@
                 {{ 'collections.product_card.bio_badge' | t }}
               </div>
             </div>
-            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
-              <div class="products_listing__label">
-                <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
-              </div>
-            {% endif %}
           </div>
         </div>
       </div>

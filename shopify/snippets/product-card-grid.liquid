@@ -17,7 +17,7 @@
 {%- assign short_title = product.metafields.custom.short_title -%}
 {%- assign quantity_content = product.metafields.custom.quantity_content -%}
 {%- assign weight_content = product.metafields.custom.weight_content -%}
-{%- assign unit_name = product.metafields.custom.unit_name -%}
+{%- assign unit_name_new = product.metafields.custom.unit_name_new -%}
 {%- assign custom_card_badge = product.metafields.custom.custom_card_badge.value -%}
 
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
@@ -99,9 +99,9 @@
                 {{ 'collections.product_card.bio_badge' | t }}
               </div>
             </div>
-            {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+            {% if quantity_content != blank and weight_content != blank and unit_name_new != blank %}
               <div class="products_listing__label">
-                <p>{{ quantity_content }} x {{ weight_content.value | split: ' ' }} {{ unit_name }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
+                <p>{{ quantity_content }} {{ unit_name_new }} {% if unit_price %}| {{ unit_price | money }} / {{ unit_reference_value }}{{ unit_reference }}{% endif %}</p>
               </div>
             {% endif %}
           </div>

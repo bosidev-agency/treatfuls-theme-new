@@ -154,17 +154,17 @@
                       {%- assign short_title = ingredient_product.metafields.custom.short_title -%}
                       {%- assign quantity_content = ingredient_product.metafields.custom.quantity_content -%}
                       {%- assign weight_content = ingredient_product.metafields.custom.weight_content -%}
-                      {%- assign unit_name = ingredient_product.metafields.custom.unit_name -%}
+                      {%- assign unit_name_new = ingredient_product.metafields.custom.unit_name_new -%}
 
                       <div class="ingredient__product">
                         <span>{{ ingredient.name }}</span>
                         <span class="text text--subdued text--sm">{{ short_title }}</span>
                         <span class="text text--subdued text--sm">{{ ingredient_product.price | money }}</span>
-                        {% if quantity_content != blank and weight_content != blank and unit_name != blank %}
+                        {% if quantity_content != blank and weight_content != blank and unit_name_new != blank %}
                           <div class="products_listing__label text text--subdued text--sm">
                             <p>
                               {{ quantity_content }} x {{ weight_content.value | split: ' ' }}
-                              {{ unit_name }}
+                              {{ unit_name_new }}
                               {% if unit_price -%}
                                 | {{ unit_price | money }} / {{ unit_reference_value -}}
                                 {{- unit_reference -}}

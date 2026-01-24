@@ -11,7 +11,6 @@
           {%- for product in collections[settings.upsell_collection].products -%}
             {%- assign quantity_content = product.metafields.custom.quantity_content -%}
             {%- assign weight_content = product.metafields.custom.weight_content -%}
-            {%- assign unit_name = product.metafields.custom.unit_name -%}
 
             {%- assign is_in_cart = false -%}
 
