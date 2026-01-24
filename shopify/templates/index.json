@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroelement_Matcha_01_Kopie_1.webp",
+        "desktop_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroelement_Matcha-02_Kopie_1.webp",
+        "mobile_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_mobil.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -54,10 +54,10 @@
         "max_width": "100%",
         "max_width_px": 700,
         "title": "Matcha als Aufstrich?",
-        "text": "<p>neu bei treatfuls und einfach himmlisch 💚 </p>",
+        "text": "<p><strong>Ja. Und jetzt kommst du davon nicht mehr los </strong>💚 </p>",
         "background_color": "#ceb0d1",
-        "accent_color": "#ceb0d1",
-        "hover_color": "#384211",
+        "accent_color": "#91bd9a",
+        "hover_color": "#ceb0d1",
         "show_base_triangular_line": false
       }
     },

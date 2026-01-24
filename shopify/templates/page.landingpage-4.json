@@ -12,8 +12,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title": "Storefinder",
-        "subtitle": "<p>Du willst wissen wo wir vertreten sind?</p>",
+        "title": "Heißgetränk mit vly. treatfuls for free.",
+        "subtitle": "<p>Hier sind die Cafés 👇🏽</p>",
         "subtitle_font_size": 24,
         "background_color": "#96bd8b",
         "accent_color": "",
@@ -107,6 +107,19 @@
         "background_color": "#96bd8b",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "main_page_w34DJG": {
+      "type": "main-page",
+      "settings": {
+        "title": "",
+        "subtitle": "<p><strong>So funktioniert’s ☕️✨</strong><br/>Bestell dein Heißgetränk mit <strong>vly</strong> und schon bekommst du <strong>einen treatfuls Riegel gratis</strong> 🍫💚<br/><br/>Die Anzahl der Riegel ist begrenzt – <strong>wenn weg, dann weg. ALSO, schnell sein lohnt sich.</strong> 😉</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#96bd8b",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "custom_section_9AEAFL": {
@@ -971,7 +984,7 @@
         "image_XffPqA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Vly_und_treatfuls_2.png",
+            "image": "shopify://shop_images/vlyxtreaty.png",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -1096,6 +1109,7 @@
     "hero_eNmaQw",
     "featured_product_GbQVWw",
     "1768310214d3f63ba2",
+    "main_page_w34DJG",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
