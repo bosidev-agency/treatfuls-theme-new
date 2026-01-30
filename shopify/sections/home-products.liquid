@@ -36,7 +36,7 @@
 							{%- assign product = all_products[b_sett.product] -%}
 							{%- assign product_image = product.featured_image -%}
 
-              {%- if forloop.first -%}
+              {%- if forloop.first and section.settings.adjust_colors_to_current_slide -%}
                 <style>
                   #shopify-section-{{ section.id }} {
                     --section-background-color: {% if product.metafields.custom.background_color %}{{ product.metafields.custom.background_color }}{% else %}{{ section.settings.background_color }}{% endif %};
