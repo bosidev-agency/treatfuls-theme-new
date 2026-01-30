@@ -81,15 +81,15 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "valentinstags-black-box-black-box",
-        "heading": "vday",
-        "mobile_heading": "vday",
+        "product": "singles-box-1",
+        "heading": "DM Gewinnspiel",
+        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c13666",
-        "accent_color": "#de85a1",
-        "hover_color": "#e56a89"
+        "background_color": "#c081a9",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1"
       }
     },
     "custom_section_9AEAFL": {
@@ -99,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Valentinstag",
-            "subtitle_text": "made with love",
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -143,7 +143,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-white-box",
+                        "card_product": "matcha-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -163,7 +163,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-all-year-box",
+                        "card_product": "himbeer-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -183,7 +183,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-break-up-box",
+                        "card_product": "chai-latte-spill-the-tea",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -203,7 +203,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-black-box-black-box",
+                        "card_product": "brownie-riegel",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -234,8 +234,8 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#de85a1",
-        "accent_color": "",
+        "background_color": "#dbaaeb",
+        "accent_color": "#e56a89",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
@@ -827,13 +827,12 @@
       "block_order": [
         "table_EbWcfp"
       ],
-      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -846,33 +845,32 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Online_Shop_Sweetmas_Box_im_Schuh.png",
+            "image": "shopify://shop_images/Matcha_flew.png",
             "image_position": "left",
-            "title": "Sweetmas? Sweet yes.",
-            "content": "<p>Dein kleines, süßes Statement unterm Baum. In dieser Box stecken fünf unserer beliebten treats, von crunchy Brownie bis cremigem Haselnuss-Spread. Alles bio, vegan und wrapped in Design, das man eigentlich nicht aufreißen möchte. Die perfekte Wahl für Besties, Secret Santas oder einfach dich selbst, weil Self-Gifting auch self-loving heißt.<br/><br/>💌 Eine kleine Liebeserklärung in Snackform für 24,99€.</p>",
-            "button_text": "Jetzt vernaschen",
-            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "Snacks, wie sie sein sollten.",
+            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
+            "button_text": "Try them all",
+            "button_url": "shopify://collections/produkte"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
+            "image": "shopify://shop_images/Himbeer_flew.png",
             "image_position": "left",
-            "title": "Filling done right",
-            "content": "<p>Zimtliebe zum Verschenken. Für alle, die Weihnachten snacken wollen. Unsere X-Mas  Box bringt alles mit, was Weihnachten cozy, crunchy und köstlich macht. Mit cremigem Spread, warmen Chai-Vibes und jeder Menge Zimt ist sie das perfekte Geschenk für alle, die mehr als nur Schoki verschenken wollen, ob an andere oder an dich selbst. <br/><br/>💌 Für 24,99 € bekommst du das ganze Snackpaket in einer festlichen Box.</p>",
-            "button_text": "Zur X-Mas Box",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "Kids and Mom friendly",
+            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
+            "button_text": "Show me the filling",
+            "button_url": "shopify://products/summer-crush-kopie"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
             "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "title": "Meet the Snack Squad",
+            "content": "<p>treatfuls wurde nicht im Labor entwickelt, sondern mit Herz, viel Humor und der festen Überzeugung, dass Snacks besser sein können. Jedes Produkt, jede Sorte, jede Idee entsteht gemeinsam, nicht am Schreibtisch, sondern in der Küche, wo treatfuls geboren wurde: mit Löffel, Liebe und ganz viel Dattelpaste.</p>",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -885,106 +883,21 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#c13666",
-        "accent_color": "",
+        "background_color": "#e56a89",
+        "accent_color": "#2ac2bd",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
       }
     },
-    "image_gallery_fYGR9x": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_Ba3F9a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/treatfuls_X-Mas_Box_f65e30c1-605c-4879-a235-336980272dcd.jpg",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_KRRgPJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_kTbkJk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Online_Shop_Double_JOY_Box.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_GGqJ3U": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_gift.jpg",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_Ba3F9a",
-        "image_KRRgPJ",
-        "image_kTbkJk",
-        "image_GGqJ3U"
-      ],
-      "name": "Image Gallery Grid (24-cell)",
+    "main_product_ingredients_Kgi9bT": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
       "settings": {
-        "product": "",
-        "heading": "",
-        "show_atc_button": false,
-        "grid_container_quantity": "1",
-        "background_color": "#de85a1",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
+        "product": "singles-box-1",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd"
       }
     },
     "advantages_BcfMf9": {
@@ -1065,9 +978,20 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "compare_product_reviews_4JnjWz": {
+      "type": "compare-product-reviews",
+      "name": "Product reviews",
+      "settings": {
+        "title": "",
+        "underline_word": "",
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click Here"
       }
     }
   },
@@ -1078,7 +1002,8 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "image_gallery_fYGR9x",
-    "advantages_BcfMf9"
+    "main_product_ingredients_Kgi9bT",
+    "advantages_BcfMf9",
+    "compare_product_reviews_4JnjWz"
   ]
 }
