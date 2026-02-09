@@ -1,33 +1,3 @@
-<style>
-  @media screen and (min-width: 992px) {
-    #shopify-section-{{ section.id }} {
-      {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
-        --section-background-color: {{ section.settings.background_color }};
-      {%- endif -%}
-      {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
-        --section-accent-color: {{ section.settings.accent_color }};
-      {%- endif -%}
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    #shopify-section-{{ section.id }} {
-      {%- if section.settings.background_color_mobile != 'rgba(0,0,0,0)' and section.settings.background_color_mobile!= blank -%}
-        --section-background-color: {{ section.settings.background_color_mobile }};
-      {%- else -%}
-        --section-background-color: {{ section.settings.background_color }};
-      {%- endif -%}
-
-      {%- if section.settings.accent_color_mobile != 'rgba(0,0,0,0)' and section.settings.accent_color_mobile != blank -%}
-        --section-accent-color: {{ section.settings.accent_color_mobile }};
-      {%- else -%}
-        --section-accent-color: {{ section.settings.accent_color }};
-      {%- endif -%}
-    }
-  }
-</style>
-
-{% comment %} TODO: Rename this section {% endcomment %}
 <section
   class="recipe image-with-text"
   data-section-id="{{- section.id -}}"
