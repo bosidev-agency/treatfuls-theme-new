@@ -151,15 +151,15 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "white-winter-treats",
-        "heading": "Sweet dreams in white.",
-        "mobile_heading": "Sweet dreams in white.",
+        "product": "valentinstags-all-year-box",
+        "heading": "Made to fall in love.",
+        "mobile_heading": "Made to fall in love.",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#0f7279",
-        "accent_color": "#1da59d",
-        "hover_color": "#24a5a1"
+        "background_color": "#c081a9",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#e35478"
       }
     },
     "custom_section_9AEAFL": {
@@ -169,7 +169,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Approved by Santa 🎅",
+            "heading_text": "Welche Box ist deine Love Language?",
             "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
@@ -213,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "all-year-gifting-box",
+                        "card_product": "valentinstags-black-box-black-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "valentinstags-white-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "valentinstags-break-up-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "xmas-box-weisse-tute",
+                        "card_product": "valentinstags-all-year-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -304,7 +304,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#e56a89",
+        "background_color": "#dbaaeb",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -916,16 +916,17 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Produktbild_neu.png",
+            "image": "shopify://shop_images/cashew.png",
             "image_position": "left",
-            "title": "Treat them all",
-            "content": "<p>Die komplette treatfuls Vielfalt in einer Tüte: Unsere Merry treatmas Box bringt dir 22 Riegel in 11 Sorten (jeweils 2x), kombiniert mit unserem cinnamon-roll Spread und verpackt in einer festlichen Geschenktüte. Ob als Geschenk oder Vorrat für kalte Tage, das ist pure Snackfreude, bio, vegan & ohne raffinierten Zucker. Merry, sweet & seriously snacky.<br/><br/>👉🏽 Für 64,99€ gibts das voll treatfuls-Programm</p>",
-            "button_text": "Get the merry mix",
-            "button_url": "shopify://products/xmas-box-weisse-tute"
+            "title": "All in love. No second thoughts.",
+            "content": "<p>Die <strong>All in Love Box</strong> vereint alles, was Love Moments brauchen. In der Box stecken vier Riegel und ein cremiger Spread drin. Perfekt aufeinander abgestimmt und gemacht zum Teilen, Verschenken oder gemeinsam snacken. </p><p>Mit <strong>Love at first bite</strong>, <strong>Best date you’ll ever have</strong> und dem <strong>Melting for you</strong> Spread bringt diese Box süße, nussige und zartschmelzende Aromen zusammen. Ob Date Night, Valentinstag oder einfach ein besonderer Moment zwischendurch, das hier ist Love in Snackform.</p><p>Hergestellt aus <strong>100 % natürlichen Bio-Zutaten</strong>, <strong>vegan</strong> und ohne raffinierten Zucker. Alles liebevoll verpackt in einer <strong>Valentinstagsbox</strong>, ready to gift und fast zu schön zum Öffnen.</p><p>👉 <strong>Die perfekte Box für kleine Liebeserklärungen – ganz ohne Stress.</strong></p>",
+            "button_text": "zur Love Box",
+            "button_url": "shopify://products/valentinstags-all-year-box"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Giftcard_am_baum.png",
             "image_position": "left",
@@ -955,7 +956,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#0f7279",
+        "background_color": "#c081a9",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -1044,13 +1045,14 @@
         "image_URwrcE",
         "image_w3CmDz"
       ],
+      "disabled": true,
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
         "product": "gifting-boxen-bundle",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#1da59d",
+        "background_color": "#dbaaeb",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -1135,8 +1137,8 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#2AC2BD",
-        "accent_color": "#2AC2BD",
+        "background_color": "#f3587f",
+        "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
     }

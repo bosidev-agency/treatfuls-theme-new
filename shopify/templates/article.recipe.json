@@ -17,9 +17,159 @@
         "accent_color": "#2ac2bd",
         "accent_color_mobile": "#f3587f"
       }
+    },
+    "custom_section_wG6MNK": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_iXnGFE": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "andere",
+            "subtitle_text": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_UgxJQz": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_6HQa3p": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_387kQ8": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_EWmXAT": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "matcha-riegel",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_EWmXAT"
+                  ]
+                },
+                "slide_RjpUKH": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_NGde7T": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "20-x-white-covered-zimt-treats-bio-xmas-is-nuts-and-cinnamon-and-stars",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_NGde7T"
+                  ]
+                },
+                "slide_c73MyV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_FkfG9y": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_FkfG9y"
+                  ]
+                },
+                "slide_pzCka7": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_A3fXdd": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_A3fXdd"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_387kQ8",
+                "slide_RjpUKH",
+                "slide_c73MyV",
+                "slide_pzCka7"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_6HQa3p"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_iXnGFE",
+        "group_UgxJQz"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_section_wG6MNK"
   ]
 }

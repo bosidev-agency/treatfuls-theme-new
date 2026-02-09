@@ -154,31 +154,21 @@
               },
               "blocks": {}
             },
-            "dropdown_XBDVkY": {
-              "type": "dropdown",
-              "name": "Unternehmensart",
+            "form_input_TrJ7EF": {
+              "type": "form-input",
+              "name": "Form input",
               "settings": {
+                "type": "custom",
                 "label": "Unternehmensart",
+                "placeholder": "Unternehmensart eingeben...",
                 "required": false
               },
-              "blocks": {
-                "option_3TyxEh": {
-                  "type": "_option",
-                  "name": "Option",
-                  "settings": {
-                    "label": "Unternehmensart eingeben..."
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "option_3TyxEh"
-              ]
+              "blocks": {}
             }
           },
           "block_order": [
             "form_input_776jwp",
-            "dropdown_XBDVkY"
+            "form_input_TrJ7EF"
           ]
         },
         "group_8eq9FF": {

@@ -15,9 +15,10 @@
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "👉 Jetzt probieren",
-            "url": "shopify://collections/veganuary",
+            "url": "shopify://collections/valentinstag",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -26,10 +27,9 @@
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
-          "disabled": true,
           "settings": {
-            "text": "ohne Sünde shoppen 🎅",
-            "url": "shopify://collections/weihnachten-1",
+            "text": "Alnatura Storefinder 👉🏽",
+            "url": "https://treatfuls.com/pages/storefinder",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_desktop.webp",
+        "desktop_image": "shopify://shop_images/Heroelement_wellnestxalnatura_desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_mobil.webp",
+        "mobile_image": "shopify://shop_images/Heroelement_wellnestxalnatura_mobil.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -53,10 +53,10 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Matcha als Aufstrich?",
-        "text": "<p><strong>Ja. Und jetzt kommst du davon nicht mehr los </strong>💚 </p>",
-        "background_color": "#ceb0d1",
-        "accent_color": "#91bd9a",
+        "title": "Von Snack zu Spa.",
+        "text": "<p>Kauf 2 treatfuls Riegel bei Alnatura, poste eine Instagram Story & gewinne Wellness bei Wellnest.</p>",
+        "background_color": "#b46493",
+        "accent_color": "#c081a9",
         "hover_color": "#8a7194",
         "show_base_triangular_line": false
       }
@@ -134,7 +134,7 @@
         "28b053f4-1040-48a6-9229-7fa4f1d54ca5": {
           "type": "product_item",
           "settings": {
-            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship"
+            "product": "michivanwant-box-matcha-spread"
           }
         },
         "product_item_mGLG8t": {
@@ -176,7 +176,7 @@
         "product_item_6mCijk": {
           "type": "product_item",
           "settings": {
-            "product": "singles-box-1"
+            "product": "singles-box-1-ohne-weisse-haselnuss"
           }
         }
       },
@@ -197,7 +197,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#8a7194",
+        "background_color": "#859972",
         "accent_color": "#2ac2bd",
         "hover_color": "#ceb0d1"
       }

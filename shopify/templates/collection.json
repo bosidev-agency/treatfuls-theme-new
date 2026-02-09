@@ -20,12 +20,12 @@
             "collection_title": "Alle Produkte"
           }
         },
-        "collection_item_BpgG7M": {
+        "collection_item_q3yEkb": {
           "type": "collection_item",
           "settings": {
-            "collection": "veganuary",
-            "image": "shopify://shop_images/Matcha_Spread_Box_V1.webp",
-            "collection_title": "Veganuary"
+            "collection": "valentinstag",
+            "image": "shopify://shop_images/treatfuls_valentinsbox_V2_0cbce59b-5171-4a54-818f-2706cb330834.webp",
+            "collection_title": "Valentinstag"
           }
         },
         "collection_item_AQhgbG": {
@@ -63,7 +63,7 @@
       },
       "block_order": [
         "collection_item_HBNT6z",
-        "collection_item_BpgG7M",
+        "collection_item_q3yEkb",
         "collection_item_AQhgbG",
         "collection_item_njphjp",
         "collection_item_LLzRme",
@@ -82,7 +82,6 @@
       "type": "collection",
       "settings": {
         "title": "",
-        "collection": "produkte",
         "items_per_page": 48,
         "show_vendor": false,
         "show_view_all": false,

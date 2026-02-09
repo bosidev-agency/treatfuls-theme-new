@@ -82,8 +82,8 @@
       "name": "Featured product",
       "settings": {
         "product": "valentinstags-black-box-black-box",
-        "heading": "vday",
-        "mobile_heading": "vday",
+        "heading": "The Black Box of Love",
+        "mobile_heading": "The Black Box of Love",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -99,8 +99,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Valentinstag",
-            "subtitle_text": "made with love",
+            "heading_text": "Welche Box ist deine Love Language?",
+            "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -846,16 +846,17 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Online_Shop_Sweetmas_Box_im_Schuh.png",
+            "image": "shopify://shop_images/14.png",
             "image_position": "left",
-            "title": "Sweetmas? Sweet yes.",
-            "content": "<p>Dein kleines, süßes Statement unterm Baum. In dieser Box stecken fünf unserer beliebten treats, von crunchy Brownie bis cremigem Haselnuss-Spread. Alles bio, vegan und wrapped in Design, das man eigentlich nicht aufreißen möchte. Die perfekte Wahl für Besties, Secret Santas oder einfach dich selbst, weil Self-Gifting auch self-loving heißt.<br/><br/>💌 Eine kleine Liebeserklärung in Snackform für 24,99€.</p>",
-            "button_text": "Jetzt vernaschen",
-            "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "Made for dark chocolate lovers.",
+            "content": "<p>In dieser Box findest du alle unsere Sorten mit dunkler Schokolade überzogen. Von saftig-schokoladig bis nussig und leicht salzig. Der Brownie-Riegel schmeckt wie ein frisch gebackener Brownie, saftig, schokoladig und mit einem flüssigen Kern, der beim Reinbeißen einfach glücklich macht. Best Date You’ll Ever have ist ein dunkler Erdnussriegel, bei dem eine feine salzige Note alles perfekt ausbalanciert. Call Me Nuts verbindet dunkle Schokolade und Haselnuss zu einem Geschmack, der an eine Süßigkeit erinnert, die wir alle kennen – nur eben ohne Kompromisse. 😉 <br/><br/>Hergestellt aus hochwertigen, <strong>bio-zertifizierten Zutaten</strong>, <strong>100 % vegan</strong> und ohne unnötigen Schnickschnack.</p><p><strong>Verpackt in einer liebevoll gestalteten Valentinstagsbox</strong> ist sie perfekt zum Verschenken oder zum Selbstverwöhnen. 🖤</p>",
+            "button_text": "zur Black Box",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
             "image_position": "left",
@@ -898,7 +899,7 @@
         "image_Ba3F9a": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_X-Mas_Box_f65e30c1-605c-4879-a235-336980272dcd.jpg",
+            "image": "shopify://shop_images/12.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -916,7 +917,7 @@
         "image_KRRgPJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Giftingboxen_Chistmas.webp",
+            "image": "shopify://shop_images/brownei.png",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -934,7 +935,7 @@
         "image_kTbkJk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Online_Shop_Double_JOY_Box.png",
+            "image": "shopify://shop_images/treatfuls_nut_your_basic_brownie_zutaten.webp",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
@@ -952,7 +953,7 @@
         "image_GGqJ3U": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/7_gift.jpg",
+            "image": "shopify://shop_images/15_c291eb59-df10-48b9-bd18-01cabf002202.png",
             "content": "",
             "content_position_y": 50,
             "content_position_x": 50,

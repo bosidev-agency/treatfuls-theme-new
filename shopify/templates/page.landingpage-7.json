@@ -151,13 +151,13 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "xmas-box-weisse-tute",
-        "heading": "Die leckerste Geschenktüte.",
-        "mobile_heading": "Die leckerste Geschenktüte.",
+        "product": "valentinstags-white-box",
+        "heading": "The White Box of Love",
+        "mobile_heading": "The White Box of Love",
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#713242",
+        "background_color": "#de85a1",
         "accent_color": "#e35478",
         "hover_color": "#e35478"
       }
@@ -169,7 +169,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Approved by Santa 🎅",
+            "heading_text": "Welche Box ist deine Love Language?",
             "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
@@ -213,7 +213,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "x-mas-gifting-box-grun",
+                        "card_product": "valentinstags-black-box-black-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +233,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gifting-boxen-bundle",
+                        "card_product": "valentinstags-break-up-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +253,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "white-winter-treats",
+                        "card_product": "valentinstags-all-year-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +273,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "xmas-box-weisse-tute",
+                        "card_product": "valentinstags-white-box",
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -304,7 +304,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#c13766",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -916,16 +916,17 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Santas_Fav_bundle.png",
+            "image": "shopify://shop_images/1_09623b7e-b4aa-4f49-b54b-6fe6d5bd3f67.png",
             "image_position": "left",
-            "title": "All the treats, no stress",
-            "content": "<p>Du willst alles? Dann gönn dir alles. In Santas Favorite Bundle steckt unser komplettes X-MAS Sortiment für 124,99€: vier Geschenkboxen voller veganer Bio-Snacks – liebevoll verpackt, ready to gift und mit ordentlich Geschmack. Ob für dich, für deine Liebsten oder als Secret Santa Showstopper: Dieses Bundle bringt Vielfalt, Freude und Design unter den Baum. Ein Weihnachtsgeschenk, das wirklich niemand zurückgeben will.</p>",
-            "button_text": "Get the bundle",
-            "button_url": "shopify://products/santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle"
+            "title": "Sweet dreams in white.",
+            "content": "<p>Du magst es soft, süß und ein bisschen dreamy? Dann ist die Valentines White Box genau dein Match. In dieser Box steckt unsere komplette White-Chocolate-Welt.</p><p>Diese Box ist gemacht zum Teilen, Verschenken oder gemeinsamen Wegsnacken. Ob als Valentinstagsgeschenk, für einen gemütlichen Abend zu zweit oder als kleine Aufmerksamkeit für jemanden, den du gern hast: Sie funktioniert immer.</p><p>Hergestellt aus bio-zertifizierten Zutaten, 100 % vegan und ohne unnötigen Schnickschnack.<br/></p><p> 🤍 Eine süße Liebeserklärung in Snackform.</p>",
+            "button_text": "Zur White Box",
+            "button_url": "shopify://products/valentinstags-white-box"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Online_Shop_ZimtRiegel.png",
             "image_position": "left",
@@ -955,7 +956,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#713242",
+        "background_color": "#de85a1",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -968,7 +969,7 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Merry_treatmas_Box.png",
+            "image": "shopify://shop_images/12.png",
             "content": "",
             "content_position_y": 75,
             "content_position_x": 25,
@@ -986,7 +987,7 @@
         "image_fjFFbd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_gift.jpg",
+            "image": "shopify://shop_images/treatfuls_berrylicious_babe.webp",
             "content": "",
             "content_position_y": 60,
             "content_position_x": 50,
@@ -1004,7 +1005,7 @@
         "image_URwrcE": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/white__gifting_treatfuls.jpg",
+            "image": "shopify://shop_images/treatfuls_spicy_but_grounded_zutaten_V1.webp",
             "content": "",
             "content_position_y": 70,
             "content_position_x": 50,
@@ -1022,7 +1023,7 @@
         "image_w3CmDz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_mobile_gifting_top.webp",
+            "image": "shopify://shop_images/sweeter-than-your-ex-treatfuls-dessert-instashot03_1.jpg",
             "content": "",
             "content_position_y": 40,
             "content_position_x": 85,

@@ -12,10 +12,10 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title": "Heißgetränk mit vly. treatfuls for free.",
-        "subtitle": "<p>Hier sind die Cafés 👇🏽</p>",
+        "title": "Von Snack zu Spa?",
+        "subtitle": "<p>Kaufe 2 treats bei Alnatura, poste es in deine Instagram Story, markiere @enjoytreatfuls & @alnatura & <strong>gewinne einen von 3 Wellness-Erlebnisgutscheinen bei Wellnest – für dich und deine Lieblingsperson.<br/><br/></strong>Finde einen Alnatura Biomarkt in deiner Nähe👇🏽</p>",
         "subtitle_font_size": 24,
-        "background_color": "#96bd8b",
+        "background_color": "#859972",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -104,22 +104,9 @@
         "s_store_locator_storeify_storelocator_tcV3kU"
       ],
       "settings": {
-        "background_color": "#96bd8b",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "main_page_w34DJG": {
-      "type": "main-page",
-      "settings": {
-        "title": "",
-        "subtitle": "<p><strong>So funktioniert’s ☕️✨</strong><br/>Bestell dein Heißgetränk mit <strong>vly</strong> und schon bekommst du <strong>einen treatfuls Riegel gratis</strong> 🍫💚<br/><br/>Die Anzahl der Riegel ist begrenzt – <strong>wenn weg, dann weg. ALSO, schnell sein lohnt sich.</strong> 😉</p>",
-        "subtitle_font_size": 24,
-        "background_color": "#96bd8b",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
       }
     },
     "custom_section_9AEAFL": {
@@ -871,6 +858,114 @@
         "padding_bottom": 40
       }
     },
+    "image_gallery_UETJQr": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_TFNHhc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wellnestxtreatfuls_4-5.jpg",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_Cy3jpV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Produc_Shot_with_showing_lips.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_cQtzp7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Erlebnisgutschein.jpg",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_XffPqA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Alnatura_Tuete_finished.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_TFNHhc",
+        "image_Cy3jpV",
+        "image_cQtzp7",
+        "image_XffPqA"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
+    "main_page_w34DJG": {
+      "type": "main-page",
+      "settings": {
+        "title": "Das erwartet euch",
+        "subtitle": "<h6>Diese Auszeit hast du dir mehr als verdient. Schnapp dir deinen Lieblingsmenschen & gönn dir deine Auszeit in deinem 35qm großen, ganz privaten Spa – mit Whirlpool, Sauna und Erlebnisdusche.<br/><br/>✨ Food & Drinks passend zu eurem Vibe</h6><h6>💡 Besondere Licht & Sound Stimmung</h6><h6>🔥 Saunaaufguss & Body Scrub</h6><h6>🧘 Geführte Meditation & vieles mehr…</h6><h6>🍫 <strong>Ein treatfuls Snack für danach (oder davor)</strong></h6>",
+        "subtitle_font_size": 24,
+        "background_color": "#c081a9",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "image_with_text_NHKmKF": {
       "type": "image-with-text",
       "blocks": {
@@ -922,101 +1017,6 @@
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
-      }
-    },
-    "image_gallery_UETJQr": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_TFNHhc": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Vly_fuer_Storefinder.png",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_Cy3jpV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Vly_auf_erbsen.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_cQtzp7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Coffe_SVG.svg",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_XffPqA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/vlyxtreaty.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_TFNHhc",
-        "image_Cy3jpV",
-        "image_cQtzp7",
-        "image_XffPqA"
-      ],
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "",
-        "heading": "",
-        "show_atc_button": false,
-        "grid_container_quantity": "1",
-        "background_color": "#e89dc5",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
       }
     },
     "advantages_BcfMf9": {
@@ -1109,11 +1109,11 @@
     "hero_eNmaQw",
     "featured_product_GbQVWw",
     "1768310214d3f63ba2",
-    "main_page_w34DJG",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
-    "image_with_text_NHKmKF",
     "image_gallery_UETJQr",
+    "main_page_w34DJG",
+    "image_with_text_NHKmKF",
     "advantages_BcfMf9"
   ]
 }
