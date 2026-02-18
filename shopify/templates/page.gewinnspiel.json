@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "title": "treatfuls",
+        "subtitle": "<p><strong>Hey du! 👋 Willkommen zu unserer Cookie-Voting-Umfrage.</strong><br/>Du hast „Half Baked – Mandel & Kokos“ probiert? Dann bist du jetzt Teil unseres Produktteams!Wir wollen wissen: Wie hat’s geschmeckt? Was können wir verbessern? Und – soll diese Sorte ins Treatfuls-Sortiment?</p><p>🍪 Deine Meinung fließt direkt in die Produktentscheidung ein.<br/>🎁 Dauer: 1 Minute.</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#9d4054",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
