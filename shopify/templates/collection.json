@@ -20,14 +20,6 @@
             "collection_title": "Alle Produkte"
           }
         },
-        "collection_item_q3yEkb": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "valentinstag",
-            "image": "shopify://shop_images/treatfuls_valentinsbox_V2_0cbce59b-5171-4a54-818f-2706cb330834.webp",
-            "collection_title": "Valentinstag"
-          }
-        },
         "collection_item_AQhgbG": {
           "type": "collection_item",
           "settings": {
@@ -63,7 +55,6 @@
       },
       "block_order": [
         "collection_item_HBNT6z",
-        "collection_item_q3yEkb",
         "collection_item_AQhgbG",
         "collection_item_njphjp",
         "collection_item_LLzRme",

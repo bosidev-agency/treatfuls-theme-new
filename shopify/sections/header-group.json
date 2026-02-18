@@ -15,11 +15,11 @@
       "type": "announcement-bar",
       "name": "Announcement Bar",
       "settings": {
-        "text": "Thanks for loving treatfuls 💕",
+        "text": "Für 10 % hier klicken 💕",
         "font_desktop": 16,
         "font_mobile": 14,
-        "klaviyo_signup": false,
-        "klaviyo_form": "SfJmkt",
+        "klaviyo_signup": true,
+        "klaviyo_form": "WjYcDJ",
         "padding_desktop": 13,
         "padding_mobile": 12
       }

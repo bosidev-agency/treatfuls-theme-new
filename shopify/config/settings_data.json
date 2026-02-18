@@ -68,7 +68,7 @@
         ],
         "settings": {
           "copyright_text": "<a href=\"https://appsoluts.de\" style=\"color: #ffffff\">_app:soluts/*</a> is presenting this 😋 snackable website 🌐<br><br>\n© 2025, snacks with benefits GmbH. Alle Rechte vorbehalten.",
-          "klaviyo_id": ""
+          "klaviyo_id": "SfJmkt"
         }
       },
       "main-cart-mini": {
@@ -124,15 +124,22 @@
       "klaviyo-popups": {
         "type": "klaviyo-popups",
         "blocks": {
-          "klaviyo_popup_8T7BwL": {
+          "klaviyo_popup_9MMAiH": {
             "type": "klaviyo_popup",
             "settings": {
-              "klaviyo_form": "X578qa"
+              "klaviyo_form": "SfJmkt"
+            }
+          },
+          "klaviyo_popup_T7UJC9": {
+            "type": "klaviyo_popup",
+            "settings": {
+              "klaviyo_form": "WjYcDJ"
             }
           }
         },
         "block_order": [
-          "klaviyo_popup_8T7BwL"
+          "klaviyo_popup_9MMAiH",
+          "klaviyo_popup_T7UJC9"
         ],
         "settings": {}
       }

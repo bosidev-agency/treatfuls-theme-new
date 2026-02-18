@@ -890,11 +890,11 @@
         "padding_bottom": 40
       }
     },
-    "main_product_ingredients_Kgi9bT": {
+    "main_product_ingredients_6KHBRk": {
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "singles-box-1",
+        "product": "summer-crush-kopie",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#dbaaeb",
         "accent_color": "#2ac2bd"
@@ -1002,7 +1002,7 @@
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "main_product_ingredients_Kgi9bT",
+    "main_product_ingredients_6KHBRk",
     "advantages_BcfMf9",
     "compare_product_reviews_4JnjWz"
   ]
