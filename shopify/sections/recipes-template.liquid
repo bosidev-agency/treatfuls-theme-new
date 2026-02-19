@@ -1,3 +1,17 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
 <section
   class="recipe image-with-text"
   data-section-id="{{- section.id -}}"
@@ -261,12 +275,6 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "#dbaaeb"
-    },
-    {
-      "type": "color",
-      "id": "background_color_mobile",
-      "label": "Background Color Mobile",
-      "default": "#2ac2bd"
     },
     {
       "type": "color",

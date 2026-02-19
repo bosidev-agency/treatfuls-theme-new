@@ -99,7 +99,7 @@
 	{%- endcapture -%}
 
 	{%- assign body_classes = body_classes | append: template_class -%}
-  {%- assign ressource = '' -%}
+  {%- assign resource = '' -%}
 
   {% if template.name == 'product' %}
     {% assign resource = product %}
@@ -107,6 +107,8 @@
     {% assign resource = collection %}
   {% elsif template.name == 'page' %}
     {% assign resource = page %}
+  {% elsif template.name == 'article' %}
+    {% assign resource = article %}
   {% endif %}
 
   {%- render 'color-scheme', resource: resource -%}
