@@ -15,7 +15,7 @@
       "type": "announcement-bar",
       "name": "Announcement Bar",
       "settings": {
-        "text": "Für 10 % hier klicken 💕",
+        "text": "Zum Newsletter anmelden und 10 % erhalten 💕",
         "font_desktop": 16,
         "font_mobile": 14,
         "klaviyo_signup": true,

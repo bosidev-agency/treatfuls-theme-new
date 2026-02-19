@@ -125,22 +125,22 @@
     "home-products": {
       "type": "home-products",
       "blocks": {
+        "product_item_8cmDGJ": {
+          "type": "product_item",
+          "settings": {
+            "product": "matcha-riegel"
+          }
+        },
+        "product_item_DakraY": {
+          "type": "product_item",
+          "settings": {
+            "product": "brownie-riegel"
+          }
+        },
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
           "type": "product_item",
           "settings": {
             "product": "box-full-of-love-bio-vegan"
-          }
-        },
-        "28b053f4-1040-48a6-9229-7fa4f1d54ca5": {
-          "type": "product_item",
-          "settings": {
-            "product": "michivanwant-box-matcha-spread"
-          }
-        },
-        "product_item_mGLG8t": {
-          "type": "product_item",
-          "settings": {
-            "product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan"
           }
         },
         "product_item_fwnbt4": {
@@ -164,7 +164,7 @@
         "product_item_yJ9RiE": {
           "type": "product_item",
           "settings": {
-            "product": "creme-de-la-creme-bundle-21-nussmus-snackballe-alle-sorten-bio-vegan"
+            "product": "himbeer-riegel"
           }
         },
         "product_item_ALK7CL": {
@@ -172,24 +172,17 @@
           "settings": {
             "product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan"
           }
-        },
-        "product_item_6mCijk": {
-          "type": "product_item",
-          "settings": {
-            "product": "singles-box-1-ohne-weisse-haselnuss"
-          }
         }
       },
       "block_order": [
+        "product_item_8cmDGJ",
+        "product_item_DakraY",
         "1cfded86-563d-4d47-bb13-779d107d88ef",
-        "28b053f4-1040-48a6-9229-7fa4f1d54ca5",
-        "product_item_mGLG8t",
         "product_item_fwnbt4",
         "product_item_iM9nAw",
         "product_item_A3669g",
         "product_item_yJ9RiE",
-        "product_item_ALK7CL",
-        "product_item_6mCijk"
+        "product_item_ALK7CL"
       ],
       "settings": {
         "title": "This is what <span>guiltfree</span>looks like",
@@ -310,11 +303,11 @@
     "richtext_QaqNnf": {
       "type": "richtext",
       "settings": {
-        "title": "hungry for a <span>change?</span>",
+        "title": "hungry for a change?",
         "first_text": "Bist du bereit mit uns gemeinsam die Snack-Industrie zu revolutionieren? Wir wollen Snacks die besser sind, als das was <span class=\"tooltip\">der Markt uns gerade bietet</span>. Wir wollen Süßigkeiten die geil schmecken und besser für dich und die Umwelt sind.",
         "img_on_hover": "shopify://shop_images/home-richtext-img-hover.png",
         "second_text": "Wir sind Macher und Träumerinnen zugleich und haben aus diesem Grund treatfuls ins Leben gerufen. Mach mit und probiere und überzeuge dich selbst, wie lecker vegane und natürliche Snacks sein können.",
-        "link_url": "shopify://products/probierbox-alle-sorten-16-stuck-bio-vegan",
+        "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss",
         "link_text": "Jetzt Probierpaket kaufen",
         "background_color": "#2ac2bd",
         "accent_color": "#dbaaeb",
