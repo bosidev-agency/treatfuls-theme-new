@@ -13,9 +13,7 @@
       "type": "recipes-template",
       "settings": {
         "background_color": "#714f2b",
-        "background_color_mobile": "#2ac2bd",
-        "accent_color": "#2ac2bd",
-        "accent_color_mobile": "#f3587f"
+        "accent_color": "#2ac2bd"
       }
     },
     "custom_section_wG6MNK": {

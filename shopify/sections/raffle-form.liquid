@@ -1,0 +1,396 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
+<section
+  class="raffle-form"
+  data-section-id="{{- section.id -}}"
+  data-section-type="raffle-form"
+>
+  <div class="content-wrapper">
+    <div class="container container--lg">
+      <raffle-form
+          data-klaviyo-company-id="{{ section.settings.klaviyo_company_id | escape }}"
+          data-klaviyo-list-id="{{ section.settings.klaviyo_list_id | escape }}"
+        >
+        {% form 'contact' %}
+          <div class="title-wrapper">
+            {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
+              {%- if section.settings.title and form.posted_successfully? == false -%}
+                <h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
+              {%- endif -%}
+
+              {% if form.posted_successfully? %}
+                <div class="form-message form-message--success">
+                  <h3 class="form-message__title title-bg title-bg--sm">{{ section.settings.post_success_message }}</h3>
+
+                  <a class="button" href="{{ routes.root_url }}">
+                    {{ 'contact.form.back_to_home' | t }}
+                  </a>
+                </div>
+              {% else %}
+                {%- if section.settings.subtitle -%}
+                  <div class="title-wrapper__subtitle rte">{{ section.settings.subtitle }}</div>
+                {%- endif -%}
+              {% endif %}
+            {%- endif -%}
+          </div>
+
+          <div class="contact-form__wrapper">
+            <div class="contact-form__form">
+              {% unless form.posted_successfully? %}
+                <div id="ContactForm" class="form-vertical">
+                  {%- if form.errors -%}
+                    <div class="form-message form-message--error">
+                      {{ form.errors | default_errors }}
+                    </div>
+                  {%- endif -%}
+                  <div class="form-group">
+                    <label class="select-box select-box--blue">
+                      <span class="text color-white select-box__label input__label">Anrede *</span>
+                      <select
+                        id="Anrede"
+                        name="contact[Anrede]"
+                        required
+                      >
+                        <option value="Herr">Herr</option>
+                        <option value="Frau">Frau</option>
+                        <option value="Keine Angabe">Keine Angabe</option>
+                      </select>
+                      {%- render 'icon-arrow' -%}
+                    </label>
+
+                    <label class="label">
+                      <span class="text input__label"> Vorname * </span>
+                      <input
+                        type="text"
+                        name="contact[Vorname]"
+                        placeholder="Vorname"
+                        id="Vorname"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autofocus
+                        required
+                      >
+                    </label>
+
+                    <label class="label">
+                      <span class="text input__label"> Nachname * </span>
+                      <input
+                        type="text"
+                        name="contact[Nachname]"
+                        placeholder="Nachname"
+                        id="Nachname"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autofocus
+                        required
+                      >
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="label">
+                      <span class="text input__label"> E-Mail * </span>
+                      <input
+                        type="email"
+                        name="contact[E-Mail]"
+                        placeholder="E-Mail"
+                        id="E-Mail"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autofocus
+                        required
+                      >
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="label">
+                      <span class="text input__label"> Straße * </span>
+                      <input
+                        type="text"
+                        name="contact[Straße]"
+                        placeholder="Straße"
+                        id="Straße"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="street-address"
+                        autofocus
+                        required
+                      >
+                    </label>
+
+                    <label class="label">
+                      <span class="text input__label"> PLZ * </span>
+                      <input
+                        type="text"
+                        name="contact[PLZ]"
+                        placeholder="PLZ"
+                        id="PLZ"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="postal-code"
+                        autofocus
+                        required
+                      >
+                    </label>
+
+                    <label class="label">
+                      <span class="text input__label"> Ort * </span>
+                      <input
+                        type="text"
+                        name="contact[Ort]"
+                        placeholder="Ort"
+                        id="Ort"
+                        class="input input--blue"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="address-level2"
+                        autofocus
+                        required
+                      >
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <link
+                      rel="stylesheet"
+                      href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+                    >
+                    <script type="module">
+                      import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+                      import de from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/de.js';
+                      UC.defineLocale('de', de);
+                      UC.defineComponents(UC);
+                    </script>
+
+                    <!-- Uploadcare File Upload -->
+                    <div class="field__upload">
+                      
+                        <span class="text input__label"> Kassenbon * </span>
+                        <input type="hidden" name="contact[Kassenbon]" id="Kassenbon">
+
+                        <uc-config
+                          ctx-name="my-uploader"
+                          use-cloud-image-editor="false"
+                          source-list="local, camera"
+                          cdn-cname="https://1ad53bygda.ucarecd.net/"
+                          pubkey="3c825a77bb5652bdf2e1"
+                          locale-name="de"
+                          multiple="false"
+                        ></uc-config>
+
+                        <uc-file-uploader-minimal
+                          ctx-name="my-uploader"
+                          class="uc-light"
+                        ></uc-file-uploader-minimal>
+
+                        <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
+                      
+
+                      <div class="contact-form__upload-error hidden">
+                        <p>Bitte laden Sie einen Kassenbon hoch.</p>
+                      </div>
+
+                      <p>
+                        Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *png, *pdf
+                        und *.tiff.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="contact-form__checkbox-wrapper">
+                    <div class="contact-form__checkbox">
+                      <input type="checkbox" id="contact-form-checkbox" name="contact[Checkbox]" required>
+                      <label for="contact-form-checkbox">
+                        * Ich habe die
+                        <span class="contact-form__checkbox-link" data-toggle="Terms">Teilnahmebedingungen</span>
+                        und die
+                        <span class="contact-form__checkbox-link" data-toggle="Privacy">Datenschutzerklärung</span>
+                        gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels
+                        verarbeitet werden.
+                      </label>
+                    </div>
+                    <div class="contact-form__checkbox">
+                      <input type="checkbox" id="NewsletterSignup" name="contact[Newsletter]" checked>
+                      <label for="NewsletterSignup">
+                        Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden.
+                        Meine Einwilligung kann ich jederzeit widerrufen.
+                      </label>
+                    </div>
+                  </div>
+
+                  <modal-popover class="modal-popover modal-popover--large" id="Terms">
+                    <div class="popover__overlay"></div>
+                    <div class="popover__content">
+                      <button class="popover__close-button">
+                        {%- render 'icon-close' -%}
+                      </button>
+                      <div class="popover__content-inner">
+                        {{ section.settings.legal_text }}
+                      </div>
+                    </div>
+                  </modal-popover>
+
+                  <modal-popover class="modal-popover modal-popover--large" id="Privacy">
+                    <div class="popover__overlay"></div>
+                    <div class="popover__content">
+                      <button class="popover__close-button">
+                        {%- render 'icon-close' -%}
+                      </button>
+
+                      <div class="popover__content-inner">
+                          {{ section.settings.privacy_policy }}
+                      </div>
+                    </div>
+                  </modal-popover>
+                </div>
+
+                <div class="contact-form__button-wrapper button-position--{{ section.settings.button_position }}">
+                  <button type="submit" class="button contact-form__button" disabled>
+                    {{ section.settings.button_text }}
+                  </button>
+                </div>
+              {% endunless %}
+            </div>
+          </div>
+        {% endform %}
+      </raffle-form>
+    </div>
+  </div>
+
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Raffle form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Contact us"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "<p>We're here to help you</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "post_success_message",
+      "label": "Post success message",
+      "default": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück."
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Anfrage senden"
+    },
+    {
+      "type": "select",
+      "id": "button_position",
+      "label": "Button position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Klaviyo Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_company_id",
+      "label": "Klaviyo Company ID",
+      "info": "Unter Klaviyo Account → Settings → API Keys"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_list_id",
+      "label": "Klaviyo List ID",
+      "info": "Die List-ID der Newsletter-Liste (z. B. unter Audiences → Liste → Settings)"
+    },
+    {
+      "type": "header",
+      "content": "Legal"
+    },
+    {
+      "type": "richtext",
+      "id": "legal_text",
+      "label": "Terms and conditions",
+      "default": "<p>Die Teilnahmebedingungen öffnen sich sobald auf Teilnahmebedingungen in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "privacy_policy",
+      "label": "Privacy policy",
+      "default": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#5359e5"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raffle form"
+    }
+  ]
+}
+{% endschema %}

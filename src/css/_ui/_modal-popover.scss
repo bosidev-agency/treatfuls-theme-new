@@ -15,6 +15,18 @@
   transition-property: opacity, visibility;
   transition-duration: 0.3s;
 
+  &--large {
+    .popover__content {
+      width: 500px;
+      max-width: 100%;
+      background-color: var(--section-background-color);
+    }
+
+    .popover__content-inner {
+      padding-top: 20px;
+    }
+  }
+
   .popover__overlay {
     display: block;
     position: absolute;
@@ -32,8 +44,8 @@
 
   .popover__close-button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
   }
 
   &[open] {

@@ -7,14 +7,13 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
       "type": "collection",
       "disabled": true,
       "settings": {
         "title": "",
-        "collection": "produkte",
         "items_per_page": 48,
         "show_vendor": false,
         "show_view_all": false,

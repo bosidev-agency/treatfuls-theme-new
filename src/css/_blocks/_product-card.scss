@@ -30,6 +30,10 @@
       padding: 100px 10px 10px 10px;
     }
 
+    .product-card__title {
+      color: rgb(var(--color-text));
+    }
+
     .product-card__bullet-points {
       display: grid;
       gap: 0.5rem;

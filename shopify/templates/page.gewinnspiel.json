@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "title": "treatfuls",
         "subtitle": "<p><strong>Hey du! 👋 Willkommen zu unserer Cookie-Voting-Umfrage.</strong><br/>Du hast „Half Baked – Mandel & Kokos“ probiert? Dann bist du jetzt Teil unseres Produktteams!Wir wollen wissen: Wie hat’s geschmeckt? Was können wir verbessern? Und – soll diese Sorte ins Treatfuls-Sortiment?</p><p>🍪 Deine Meinung fließt direkt in die Produktentscheidung ein.<br/>🎁 Dauer: 1 Minute.</p>",
@@ -21,9 +22,376 @@
         "padding_top": 80,
         "padding_bottom": 40
       }
+    },
+    "hero_kmVjyA": {
+      "type": "hero",
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.57.png",
+        "desktop_image_height": "adapt",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": false,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "center",
+        "vertical_alignment_mobile": "middle",
+        "horizontal_alignment_mobile": "center",
+        "max_width": "100%",
+        "max_width_px": 1200,
+        "title": "",
+        "text": "",
+        "background_color": "rgba(0,0,0,0)",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": false
+      }
+    },
+    "multicolumn_MV4Bxn": {
+      "type": "multicolumn",
+      "blocks": {
+        "item_3MbPyG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.47.png",
+            "heading": "treatfuls Kaufen",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+          }
+        },
+        "item_NhyCtd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.51.png",
+            "heading": "Kassenbon hochladen",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+          }
+        },
+        "item_KYnJNE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.57.png",
+            "heading": "Lastenrad von Dolly gewinnen",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_3MbPyG",
+        "item_NhyCtd",
+        "item_KYnJNE"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "So einfach gehts",
+        "text_alignment": "center",
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_c4gF3r": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_VBbKH6": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Bevor du deinen Kassenbon hochlädst, achte darauf das folgende Punkte gut erkennbar sind:",
+            "content": "<ul><li>Einkaufsort</li><li>Aktionsprodukt (treatfuls Riegel)</li><li>Kaufpreis des Aktionsproduktes </li><li>Gesamtbetrag des Kassenbons</li><li>Gewährte Rabatte der Einkaufsstätte</li><li>Einkaufsdatum und Uhrzeit </li><li>Kassenbonnummer </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_VBbKH6"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "text_alignment": "left",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "raffle_form_r9bdiB": {
+      "type": "raffle-form",
+      "name": "Raffle form",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "post_success_message": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück.",
+        "button_text": "Jetzt teilnehmen",
+        "button_position": "center",
+        "klaviyo_company_id": "",
+        "klaviyo_list_id": "",
+        "legal_text": "<p>Die Teilnahmebedingungen öffnen sich sobald auf Teilnahmebedingungen in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
+        "privacy_policy": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
+        "background_color": "#859972",
+        "accent_color": "#f3587f",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_hATR9f": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_U7xcwG": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "SEO RELEVANTER TEXT",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+          }
+        },
+        "richtext_item_Uyx37f": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "SEO RELEVANTER TEXT",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+          }
+        },
+        "richtext_item_x8GajN": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "SEO RELEVANTER TEXT",
+            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_U7xcwG",
+        "richtext_item_Uyx37f",
+        "richtext_item_x8GajN"
+      ],
+      "name": "SEO Texts",
+      "settings": {
+        "full_width": false,
+        "text_alignment": "left",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "advantages_Lw4Ht3": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_MD4rDr": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_A3xNLF": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_B3qPLB": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_Q7U6gy": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_GqwVtH": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_TWWCTM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_b9PFEC": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        },
+        "advantage_item_AEx67n": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Ohne Zusatzstoffe"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_MD4rDr",
+        "advantage_item_A3xNLF",
+        "advantage_item_B3qPLB",
+        "advantage_item_Q7U6gy",
+        "advantage_item_GqwVtH",
+        "advantage_item_TWWCTM",
+        "advantage_item_b9PFEC",
+        "advantage_item_AEx67n"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
+        "background_color": "#a3c089",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "custom_section_CVPBjc": {
+      "type": "custom-section",
+      "blocks": {
+        "group_KLYjdW": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_qHWRJR": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_Xw3A6j": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_4bFc6T": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "matcha-riegel",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_4bFc6T"
+                  ]
+                },
+                "slide_7tgnap": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_xJDqic": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_xJDqic"
+                  ]
+                },
+                "slide_dDYHL4": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_nUkxef": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "chai-latte-spill-the-tea",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_nUkxef"
+                  ]
+                },
+                "slide_WeeVRU": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_NheaTN": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_NheaTN"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_Xw3A6j",
+                "slide_7tgnap",
+                "slide_dDYHL4",
+                "slide_WeeVRU"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_qHWRJR"
+          ]
+        }
+      },
+      "block_order": [
+        "group_KLYjdW"
+      ],
+      "name": "Product list",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#e56a89",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "hero_kmVjyA",
+    "multicolumn_MV4Bxn",
+    "depr_rich_text_c4gF3r",
+    "raffle_form_r9bdiB",
+    "depr_rich_text_hATR9f",
+    "advantages_Lw4Ht3",
+    "custom_section_CVPBjc"
   ]
 }

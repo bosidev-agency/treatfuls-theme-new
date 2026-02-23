@@ -39,6 +39,7 @@ require("./components/variant-dropdown");
 require("./components/cart-goodies");
 require("./components/product-form");
 require("./components/ingredients");
+require("./components/raffle-form");
 
 /*================ Sections ================*/
 require("./sections/header");

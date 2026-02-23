@@ -1,5 +1,14 @@
 .richtext {
-  padding-top: 50px;
+
+  ul {
+    list-style: disc;
+    list-style-position: inside;
+  }
+
+  .grid {
+    display: grid;
+    gap: 40px;
+  }
 }
 
 .richtext__container {

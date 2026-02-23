@@ -377,3 +377,12 @@ a.button {
     margin-right: 12px;
   }
 }
+
+.button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
