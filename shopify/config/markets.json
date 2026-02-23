@@ -8,10 +8,5 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "collection.json",
-  "context": {
-    "market": "de"
-  },
-  "sections": {
-  }
+  "markets": {}
 }

@@ -14,6 +14,7 @@
       "blocks": {
         "blog_filter_iyKNNV": {
           "type": "blog_filter",
+          "disabled": true,
           "settings": {
             "tag": "vegan",
             "image": "shopify://shop_images/1Beutel_1.webp",
@@ -36,7 +37,12 @@
     },
     "main": {
       "type": "blog-template",
-      "settings": {}
+      "settings": {
+        "items_per_page": 48,
+        "background_color": "#2ac2bd",
+        "accent_color": "#f3587f",
+        "hover_color": "#dbaaeb"
+      }
     }
   },
   "order": [

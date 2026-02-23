@@ -12,8 +12,9 @@
     "main": {
       "type": "recipes-template",
       "settings": {
-        "background_color": "#714f2b",
-        "accent_color": "#2ac2bd"
+        "background_color": "{{ article.metafields.custom.color_scheme.value.product_background.value }}",
+        "accent_color": "{{ article.metafields.custom.color_scheme.value.product_accent.value }}",
+        "hover_color": "{{ article.metafields.custom.color_scheme.value.product_hover_color.value }}"
       }
     },
     "custom_section_wG6MNK": {
@@ -23,7 +24,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "andere",
+            "heading_text": "Schon probiert?",
             "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
@@ -158,7 +159,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#c081a9",
+        "background_color": "#472f1c",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,

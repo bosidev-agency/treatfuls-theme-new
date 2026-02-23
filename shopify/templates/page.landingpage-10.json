@@ -87,7 +87,7 @@
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#dbaaeb",
         "hover_color": "#24a5a1"
       }
@@ -232,11 +232,11 @@
         "heading_kWUKzf",
         "group_Dc9Gp7"
       ],
-      "name": "Product list",
+      "name": "Custom block section",
       "settings": {
-        "background_color": "#dbaaeb",
-        "accent_color": "#e56a89",
-        "hover_color": "",
+        "background_color": "#c081a9",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -832,7 +832,7 @@
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -845,7 +845,7 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/1_37b30cbf-20d2-43f6-8aca-050a7e3b04f9.png",
+            "image": "shopify://shop_images/LP_Visuals-01.webp",
             "image_position": "left",
             "title": "Snacks, wie sie sein sollten.",
             "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
@@ -856,7 +856,7 @@
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/11.png",
+            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
             "image_position": "left",
             "title": "Kids and Mom friendly",
             "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
@@ -870,7 +870,7 @@
             "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
             "image_position": "left",
             "title": "Meet the Snack Squad",
-            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu machen, die sich gut anfühlen und genauso gut schmecken. Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
+            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -883,9 +883,9 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#e56a89",
-        "accent_color": "#dbaaeb",
-        "hover_color": "#c081a9",
+        "background_color": "#c081a9",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -896,7 +896,7 @@
       "settings": {
         "product": "summer-crush-kopie",
         "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#dbaaeb",
+        "background_color": "#859972",
         "accent_color": "#2ac2bd"
       }
     },
@@ -927,8 +927,8 @@
         "advantage_item_mqdQfY": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
           }
         },
         "advantage_item_qxe3cw": {

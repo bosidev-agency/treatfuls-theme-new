@@ -45,196 +45,65 @@
         "show_base_triangular_line": false
       }
     },
-    "featured_product_GbQVWw": {
-      "type": "featured-product",
-      "blocks": {
-        "description_TrMApc": {
-          "type": "description",
-          "settings": {}
-        },
-        "countdown_yp9z36": {
-          "type": "countdown",
-          "settings": {
-            "heading": "",
-            "color": "",
-            "color_time": "",
-            "background_color": ""
-          }
-        },
-        "price_zwAehL": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_button_W846tk": {
-          "type": "buy_button",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_price": false
-          }
-        }
-      },
-      "block_order": [
-        "description_TrMApc",
-        "countdown_yp9z36",
-        "price_zwAehL",
-        "buy_button_W846tk"
-      ],
-      "name": "Featured product",
+    "main_page_jkWgiP": {
+      "type": "main-page",
       "settings": {
-        "product": "valentinstags-black-box-black-box",
-        "heading": "The Black Box of Love",
-        "mobile_heading": "The Black Box of Love",
-        "show_price": true,
-        "reviews_average_rating": "",
-        "reviews_quantity_text": "",
-        "background_color": "#c13666",
-        "accent_color": "#de85a1",
-        "hover_color": "#e56a89"
+        "title": "Was wir unseren Kindern geben, prägt mehr als nur ihren Geschmack.",
+        "subtitle": "<p>Ernährung in der Kindheit und schon in der Schwangerschaft, legt den Grundstein für Gesundheit, Energie und Gewohnheiten fürs Leben.</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#ceb69d",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
-    "custom_section_9AEAFL": {
-      "type": "custom-section",
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
       "blocks": {
-        "heading_kWUKzf": {
-          "type": "heading",
-          "name": "Heading",
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
           "settings": {
-            "heading_text": "Welche Box ist deine Love Language?",
-            "subtitle_text": "",
-            "margin_top": 24,
-            "margin_bottom": 24
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
+            "image_position": "left",
+            "title": "Gesunde Gewohnheiten beginnen früh.",
+            "content": "<p>Was Kinder in den ersten Lebensjahren essen, prägt ihren Geschmack und ihr Essverhalten langfristig und das oft schon ab der Schwangerschaft. Stark gesüßte und verarbeitete Snacks gewöhnen kleine Körper früh an intensive Zuckerreize und können das natürliche Energie und Sättigungsgefühl beeinflussen.</p><p>Ein gesunder Snack für Kinder sollte deshalb ohne zugesetzten Zucker auskommen, natürliche Zutaten enthalten und echte Nährstoffe liefern. Denn starke Blutzuckerschwankungen führen häufig zu kurzen Energiehochs und schnellen Tiefs etwas, das weder Kinder noch Mamas im Alltag brauchen.</p><p>Gesunde Ernährung bedeutet keinen Verzicht, sondern eine bewusste Grundlage für stabile Energie und natürliche Geschmacksentwicklung.</p>",
+            "button_text": "zur Black Box",
+            "button_url": ""
+          }
         },
-        "group_Dc9Gp7": {
-          "type": "group",
-          "name": "Group",
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
           "settings": {
-            "display_type": "flex",
-            "direction": "row",
-            "alignment": "center",
-            "gap": 32,
-            "child_width": "100%",
-            "max_width_enabled": false,
-            "max_width": 1200,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "slider_X7fgak": {
-              "type": "slider",
-              "name": "Slider",
-              "settings": {
-                "hide_desktop": true,
-                "hide_mobile": false,
-                "loop": true,
-                "slides_per_view_desktop": 4,
-                "slides_per_view_mobile": 1,
-                "show_next_slide": true,
-                "gap": 20
-              },
-              "blocks": {
-                "slide_b3rKQL": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_Wdtkzx": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "valentinstags-white-box",
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_Wdtkzx"
-                  ]
-                },
-                "slide_UXkYT6": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_BVnnPr": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "valentinstags-all-year-box",
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_BVnnPr"
-                  ]
-                },
-                "slide_jjKDwy": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_CnqMpU": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "valentinstags-break-up-box",
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_CnqMpU"
-                  ]
-                },
-                "slide_pg6biV": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_wmWiAV": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "valentinstags-black-box-black-box",
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_wmWiAV"
-                  ]
-                }
-              },
-              "block_order": [
-                "slide_b3rKQL",
-                "slide_UXkYT6",
-                "slide_jjKDwy",
-                "slide_pg6biV"
-              ]
-            }
-          },
-          "block_order": [
-            "slider_X7fgak"
-          ]
+            "image": "shopify://shop_images/Baby_mit_Brpwnie.png",
+            "image_position": "right",
+            "title": "Warum Zucker mehr beeinflusst, als wir denken.",
+            "content": "<p>Kinder reagieren besonders sensibel auf stark verarbeitete Zuckerquellen. Industriezucker kann schnelle Blutzuckeranstiege auslösen, gefolgt von Müdigkeit, Unruhe oder erneutem Verlangen nach Süßem. Gleichzeitig beeinflusst er die Entwicklung der Geschmacksvorlieben und kann die natürliche Balance im Darm stören.</p><p>Gerade in den ersten Lebensjahren befindet sich das Verdauungs- und Immunsystem noch im Aufbau. Was regelmäßig gegessen wird, wirkt sich deshalb stärker aus, als viele denken.</p><p>Und genau hier stellt sich eine wichtige Frage:<br/><br/>Wie sieht ein Snack aus, der Kinder wirklich unterstützt – statt sie kurzfristig zu pushen?</p>",
+            "button_text": "Zur X-Mas Box",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
         }
       },
       "block_order": [
-        "heading_kWUKzf",
-        "group_Dc9Gp7"
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
       ],
-      "name": "Custom block section",
+      "name": "Image with text",
       "settings": {
-        "background_color": "#de85a1",
+        "background_color": "#ceb69d",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -827,46 +696,140 @@
       "block_order": [
         "table_EbWcfp"
       ],
-      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "über 50% weniger Zucker 👇🏼",
+        "title": "50 % weniger Zucker als herkömmliche Süßigkeiten.r 👇🏼",
         "footer_note": "",
-        "background_color": "#2ac2bd",
+        "background_color": "#472e1c",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
         "padding_bottom": 40
       }
     },
-    "image_with_text_NHKmKF": {
+    "main_page_bEFW8X": {
+      "type": "main-page",
+      "settings": {
+        "title": "Weniger Zucker ist kein Trend. Es ist eine Entscheidung für langfristige Gesundheit.",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "#ceb69d",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "Sondern ein Snack, der sich anfühlt wie eine Sünde, aber keine ist!",
+        "background_color": "#472e1c",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "image_with_text_k9tbwA": {
       "type": "image-with-text",
       "blocks": {
-        "image_with_text_EUwxUY": {
+        "image_with_text_eCPVQF": {
           "type": "image_with_text",
           "settings": {
             "image": "shopify://shop_images/14.png",
             "image_position": "left",
-            "title": "Made for dark chocolate lovers.",
-            "content": "<p>In dieser Box findest du alle unsere Sorten mit dunkler Schokolade überzogen. Von saftig-schokoladig bis nussig und leicht salzig. Der Brownie-Riegel schmeckt wie ein frisch gebackener Brownie, saftig, schokoladig und mit einem flüssigen Kern, der beim Reinbeißen einfach glücklich macht. Best Date You’ll Ever have ist ein dunkler Erdnussriegel, bei dem eine feine salzige Note alles perfekt ausbalanciert. Call Me Nuts verbindet dunkle Schokolade und Haselnuss zu einem Geschmack, der an eine Süßigkeit erinnert, die wir alle kennen – nur eben ohne Kompromisse. 😉 <br/><br/>Hergestellt aus hochwertigen, <strong>bio-zertifizierten Zutaten</strong>, <strong>100 % vegan</strong> und ohne unnötigen Schnickschnack.</p><p><strong>Verpackt in einer liebevoll gestalteten Valentinstagsbox</strong> ist sie perfekt zum Verschenken oder zum Selbstverwöhnen. 🖤</p>",
+            "title": "Gesunde Gewohnheiten beginnen früh.",
+            "content": "<p>k3rughiuke</p>",
             "button_text": "zur Black Box",
             "button_url": "shopify://products/valentinstags-black-box-black-box"
           }
         },
-        "image_with_text_XgJXRN": {
+        "image_with_text_mwatAT": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
-            "image_position": "left",
+            "image_position": "right",
             "title": "Filling done right",
             "content": "<p>Zimtliebe zum Verschenken. Für alle, die Weihnachten snacken wollen. Unsere X-Mas  Box bringt alles mit, was Weihnachten cozy, crunchy und köstlich macht. Mit cremigem Spread, warmen Chai-Vibes und jeder Menge Zimt ist sie das perfekte Geschenk für alle, die mehr als nur Schoki verschenken wollen, ob an andere oder an dich selbst. <br/><br/>💌 Für 24,99 € bekommst du das ganze Snackpaket in einer festlichen Box.</p>",
             "button_text": "Zur X-Mas Box",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
         },
-        "image_with_text_BjFpid": {
+        "image_with_text_MNinVe": {
           "type": "image_with_text",
           "disabled": true,
           "settings": {
@@ -880,13 +843,163 @@
         }
       },
       "block_order": [
-        "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
+        "image_with_text_eCPVQF",
+        "image_with_text_mwatAT",
+        "image_with_text_MNinVe"
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#c13666",
+        "background_color": "#ceb69d",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "custom_section_9AEAFL": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_kWUKzf": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Welche Box ist deine Love Language?",
+            "subtitle_text": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Dc9Gp7": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_X7fgak": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_b3rKQL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_Wdtkzx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "valentinstags-white-box",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_Wdtkzx"
+                  ]
+                },
+                "slide_UXkYT6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_BVnnPr": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "valentinstags-all-year-box",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_BVnnPr"
+                  ]
+                },
+                "slide_jjKDwy": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_CnqMpU": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "valentinstags-break-up-box",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_CnqMpU"
+                  ]
+                },
+                "slide_pg6biV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_wmWiAV": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "valentinstags-black-box-black-box",
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_wmWiAV"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_b3rKQL",
+                "slide_UXkYT6",
+                "slide_jjKDwy",
+                "slide_pg6biV"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_X7fgak"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_kWUKzf",
+        "group_Dc9Gp7"
+      ],
+      "disabled": true,
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#de85a1",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -975,6 +1088,7 @@
         "image_kTbkJk",
         "image_GGqJ3U"
       ],
+      "disabled": true,
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
         "product": "",
@@ -988,98 +1102,143 @@
         "popup_text_color": ""
       }
     },
-    "advantages_BcfMf9": {
-      "type": "advantages",
+    "featured_product_GbQVWw": {
+      "type": "featured-product",
       "blocks": {
-        "advantage_item_8gBfw3": {
-          "type": "advantage_item",
+        "description_TrMApc": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_yp9z36": {
+          "type": "countdown",
           "settings": {
-            "image": "shopify://shop_images/img-1-smile.png",
-            "text": "Lecker"
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
           }
         },
-        "advantage_item_G8CBAM": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-2-vegan.png",
-            "text": "Vegan"
-          }
+        "price_zwAehL": {
+          "type": "price",
+          "settings": {}
         },
-        "advantage_item_CARaAK": {
-          "type": "advantage_item",
+        "buy_button_W846tk": {
+          "type": "buy_button",
           "settings": {
-            "image": "shopify://shop_images/img-3-organic.png",
-            "text": "Bio-zertifiziert"
-          }
-        },
-        "advantage_item_mqdQfY": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
-          }
-        },
-        "advantage_item_qxe3cw": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
-          }
-        },
-        "advantage_item_hy9grG": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-5-soy.png",
-            "text": "Ohne Soja"
-          }
-        },
-        "advantage_item_XE7riB": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_WEkgHC": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
+            "show_quantity_selector": true,
+            "show_price": false
           }
         }
       },
       "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
+        "description_TrMApc",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten probieren",
+        "mobile_heading": "The Black Box of Love",
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#ceb69d",
+        "accent_color": "#de85a1",
+        "hover_color": "#e56a89"
+      }
+    },
+    "compare_product_reviews_tbrcUD": {
+      "type": "compare-product-reviews",
+      "blocks": {
+        "text_VChbrK": {
+          "type": "text",
+          "settings": {
+            "name": "",
+            "review_title": "",
+            "review_content": ""
+          }
+        },
+        "text_nHmPCK": {
+          "type": "text",
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "text_UVRUG3": {
+          "type": "text",
+          "settings": {
+            "name": "",
+            "review_title": "",
+            "review_content": ""
+          }
+        },
+        "text_Mm9r8z": {
+          "type": "text",
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "text_3qn4ck": {
+          "type": "text",
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "text_UBdERC": {
+          "type": "text",
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "text_Pmcpk7": {
+          "type": "text",
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        }
+      },
+      "block_order": [
+        "text_VChbrK",
+        "text_nHmPCK",
+        "text_UVRUG3",
+        "text_Mm9r8z",
+        "text_3qn4ck",
+        "text_UBdERC",
+        "text_Pmcpk7"
       ],
       "settings": {
-        "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#e35478",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
+        "title": "Eure Bewertungen",
+        "underline_word": "Bewertungen",
+        "text-box": "",
+        "link": "#",
+        "linktext": "Schreibe eine Bewertung"
       }
     }
   },
   "order": [
     "main",
     "hero_eNmaQw",
-    "featured_product_GbQVWw",
-    "custom_section_9AEAFL",
-    "comparison_table_dT7KWy",
+    "main_page_jkWgiP",
     "image_with_text_NHKmKF",
+    "comparison_table_dT7KWy",
+    "main_page_bEFW8X",
+    "advantages_BcfMf9",
+    "image_with_text_k9tbwA",
+    "custom_section_9AEAFL",
     "image_gallery_fYGR9x",
-    "advantages_BcfMf9"
+    "featured_product_GbQVWw",
+    "compare_product_reviews_tbrcUD"
   ]
 }
