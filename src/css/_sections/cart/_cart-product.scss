@@ -13,6 +13,22 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
+
+  .accordion__dsc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .accordion__item {
+    border-bottom: none;
+  }
+
+  .mini-cart__sub-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .cart-product__image-wrap {

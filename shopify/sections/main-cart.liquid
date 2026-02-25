@@ -50,7 +50,9 @@
           <form id="cart-form" action="{{ routes.cart_url }}" novalidate method="post">
             <input type="hidden" name="checkout">
             {%- for item in cart.items -%}
-              {% render 'cart-item', item: item, key: item.key %}
+              {% unless item.parent_relationship.parent %}
+                {% render 'cart-item', key: item.key, item: item, is_mini_cart: true %}
+              {% endunless %}
             {%- endfor -%}
           </form>
         </div>

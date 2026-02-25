@@ -1,9 +1,15 @@
 {%- assign quantity_content = item.product.metafields.custom.quantity_content -%}
 {%- assign weight_content = item.product.metafields.custom.weight_content -%}
 {%- assign unit_name_new = item.product.metafields.custom.unit_name_new -%}
+{% assign bundle_price = 0 %}
 
-<cart-item class="cart-product" class="{% if is_mini_cart %}cart-product--mini{% endif %}">
-  <a {% unless item.final_line_price == 0 %}href="{{ item.url }}"{% endunless %} class="cart-product__image-wrap">
+<cart-item class="cart-product {% if is_mini_cart %}cart-product--mini{% endif %}">
+  <a
+    {% unless item.final_line_price == 0 or item.properties._isBundleParent %}
+      href="{{ item.url }}"
+    {% endunless %}
+    class="cart-product__image-wrap"
+  >
     <picture>
       <source
         srcset="{{ item.image.src | img_url: '190x190' }}"
@@ -22,7 +28,12 @@
   <div class="cart-product__info">
     <div class="cart-product__heading">
       <div class="cart-product__content">
-        <a class="cart-product__title" {% unless item.final_line_price == 0 %}href="{{ item.url }}"{% endunless %}>
+        <a
+          class="cart-product__title"
+          {% unless item.final_line_price == 0 %}
+            href="{{ item.url }}"
+          {% endunless %}
+        >
           {%- if item.product.metafields.custom.short_title != blank -%}
             {{ item.product.metafields.custom.short_title }}
           {%- else -%}
@@ -51,7 +62,22 @@
 
       {%- unless is_mini_cart -%}
         <div class="cart-product__amount">
-          <span class="cart-product__price">{{ item.final_line_price | money }}</span>
+          <span class="cart-product__price">
+            {% if item.properties._isBundleParent %}
+              {% assign bundle_price = item.final_line_price %}
+              {% for subitem in cart.items %}
+                {% if subitem.parent_relationship.parent.properties._bundleId == item.properties._bundleId
+                  and subitem != item
+                %}
+                  {% assign bundle_price = bundle_price | plus: subitem.final_line_price %}
+                {% endif %}
+              {% endfor %}
+
+              {{ bundle_price | money }}
+            {% else %}
+              {{ item.final_line_price | money }}
+            {% endif %}
+          </span>
         </div>
       {%- else -%}
         <div class="cart-product__amount">
@@ -66,26 +92,68 @@
             class="cart-product__price"
             class="{% if item.variant.compare_at_price %}cart-product__price--new{% endif %}"
           >
-            {{ item.final_line_price | money }}
+            {% if item.properties._isBundleParent %}
+              {% assign bundle_price = item.final_line_price %}
+              {% for subitem in cart.items %}
+                {% if subitem.parent_relationship.parent.properties._bundleId
+                  and item.properties._bundleId
+                  and subitem.parent_relationship.parent.properties._bundleId == item.properties._bundleId
+                  and subitem != item
+                %}
+                  {% assign bundle_price = bundle_price | plus: subitem.final_line_price %}
+                {% endif %}
+              {% endfor %}
+
+              {{ bundle_price | money }}
+            {% else %}
+              {{ item.final_line_price | money }}
+            {% endif %}
           </span>
         </div>
       {%- endunless -%}
     </div>
 
+    {% if item.properties._isBundleParent %}
+      <accordion-item class="accordion__item js-accordion__item">
+        <header class="accordion__header js-accordion__header">
+          <span class="accordion__title">Bundle items</span>
+          {%- render 'icon-arrow-down' -%}
+        </header>
+        <div class="accordion__body">
+          <div class="accordion__dsc">
+            {% for subitem in cart.items %}
+              {% if subitem.parent_relationship.parent.properties._bundleId
+                and item.properties._bundleId
+                and subitem.parent_relationship.parent.properties._bundleId == item.properties._bundleId
+                and subitem != item
+              %}
+                <div class="mini-cart__sub-item">
+                  <span>{{ subitem.quantity }}X</span>
+                  {{ subitem.product.featured_image | image_url: width: 50 | image_tag }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </accordion-item>
+    {% endif %}
+
     {% unless item.final_line_price == 0 %}
       <div class="cart-product__footer">
-        <div class="cart-product__quantity">
-          <button class="cart-product__quantity-btn cart-product__quantity-btn--minus" type="button"></button>
+        {% unless item.properties._isBundleParent %}
+          <div class="cart-product__quantity">
+            <button class="cart-product__quantity-btn cart-product__quantity-btn--minus" type="button"></button>
 
-          <input
-            class="cart-product__quantity-input"
-            id="quantity-{{ item.key }}"
-            type="number"
-            value="{{ item.quantity }}"
-          >
+            <input
+              class="cart-product__quantity-input"
+              id="quantity-{{ item.key }}"
+              type="number"
+              value="{{ item.quantity }}"
+            >
 
-          <button class="cart-product__quantity-btn cart-product__quantity-btn--plus" type="button"></button>
-        </div>
+            <button class="cart-product__quantity-btn cart-product__quantity-btn--plus" type="button"></button>
+          </div>
+        {% endunless %}
 
         <button
           type="button"
@@ -97,7 +165,12 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44 2.173v.874h4.513v-.874H8.44zm-1.4-.7v1.574H3.813a.709.709 0 00-.086.005.706.706 0 00-.087-.005H1.267a.7.7 0 100 1.4h1.885l.902 15.92a.7.7 0 00.7.66h11.9a.7.7 0 00.698-.661l.89-15.92h1.885a.7.7 0 100-1.4h-2.354a.706.706 0 00-.096.007.709.709 0 00-.097-.006h-3.227V1.473a.7.7 0 00-.7-.7H7.74a.7.7 0 00-.7.7zM4.554 4.447H16.84l-.849 15.18H5.415l-.86-15.18zM6.883 5.59a.65.65 0 00-.612.686l.667 11.654a.65.65 0 101.298-.075L7.569 6.203a.65.65 0 00-.686-.612zm6.915.612a.65.65 0 111.298.074l-.66 11.653a.65.65 0 01-1.298-.073l.66-11.654zm-3.105-.613a.65.65 0 00-.65.65v11.653a.65.65 0 101.3 0V6.24a.65.65 0 00-.65-.65z" fill="currentColor"/>
             </svg>
           {% else %}
-            <svg class="icon icon-cross icon-cross" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="icon icon-cross icon-cross"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path d="M20 4L4 20m16.001 0l-16-16" stroke="currentColor" stroke-width="1.5"/>
             </svg>
           {% endif %}

@@ -1,0 +1,181 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+</style>
+
+{% assign bundle_config = product.metafields.custom.bundle_config.value %}
+
+<section
+  class="bundle-builder"
+  data-section-id="{{- section.id -}}"
+  data-section-type="bundle-builder"
+>
+  <div class="content-wrapper">
+    <div class="container container--lg">
+      <bundle-builder class="bundle-builder__inner">
+        <div class="bundle-builder__content">
+          <div class="bundle-builder__steps">
+            <div class="bundle-builder__step">
+              <h2 class="h2">Step 1: Box Größe wählen</h2>
+              <div class="bundle-builder__box-inputs">
+                {% for size in bundle_config.size.value %}
+                  <div class="input-radio">
+                    <input type="radio" name="box-size" id="box-{{ size }}" value="{{ size }}">
+                    <label for="box-{{ size }}">{{ size }}</label>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="bundle-builder__step">
+              <h2 class="h2">Step 2: Wähle deine Kartonage</h2>
+              <div class="bundle-builder__box-inputs">              
+                <div class="input-radio">
+                  <input type="radio" name="box-size" id="kartonage-1" value="1">
+                  <label for="kartonage-1">1</label>
+                </div>
+                <div class="input-radio">
+                  <input type="radio" name="box-size" id="kartonage-2" value="2">
+                  <label for="kartonage-2">2</label>
+                </div>
+                <div class="input-radio">
+                  <input type="radio" name="box-size" id="kartonage-3" value="3">
+                  <label for="kartonage-3">3</label>
+                </div>
+                <div class="input-radio">
+                  <input type="radio" name="box-size" id="kartonage-4" value="4">
+                  <label for="kartonage-4">4</label>
+                </div>
+              </div>
+            </div>
+            <div class="bundle-builder__step">
+              <h2 class="h2">Step 3: Sorten wählen</h2>
+              <div class="bundle-builder__products">
+                {% for product_pool in bundle_config.product_pools.value %}
+                  <div class="bundle-builder__product-pool">
+                    <h3>{{ product_pool.name }}</h3>
+                    <div class="bundle-builder__product-pool-products product-list">
+                      {% for variant in product_pool.variants.value %}
+                        {% unless variant.available %}
+                          {% continue %}
+                        {% endunless %}
+                        <div class="bundle-builder__product">
+                          {{ variant.product.featured_image | image_url: width: 200 | image_tag }}
+                          <button class="cart-upsell__button button">+</button>
+                          <template>
+                            <div class="bundle-builder__item" data-variant-id="{{ variant.id }}">
+                              
+                              {{ variant.product.featured_image | image_url: width: 200 | image_tag }}
+
+                              <quantity-selector class="product-form__quantity-wrapper">
+                                <div
+                                  class="quantity-element"
+                                  data-quantity="wrapper"
+                                >
+                                  <button
+                                    type="button"
+                                    class="quantity-element__button js-quantity-button"
+                                    data-quantity="decrement"
+                                  >
+                                    {%- render 'icon-quantity-minus' -%}
+                                  </button>
+
+                                  <label class="quantity-element__label">
+                                    <input
+                                      class="quantity-element__input"
+                                      type="number"
+                                      id="Quantity"
+                                      name="quantity"
+                                      value="1"
+                                      min="{{ variant.inventory_quantity_min }}"
+                                      max="{{ variant.inventory_quantity }}"
+                                      maxlength="2"
+                                      data-quantity="input"
+                                      readonly
+                                      disabled
+                                    >
+                                  </label>
+
+                                  <button
+                                    type="button"
+                                    class="quantity-element__button js-quantity-button"
+                                    data-quantity="increment"
+                                  >
+                                    {%- render 'icon-quantity-plus' -%}
+                                  </button>
+                                </div>
+                              </quantity-selector>
+                              <input type="hidden" name="id" value="{{ variant.id }}">
+                            </div>
+                          </template>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bundle-builder__summary">
+          <h2 class="h2">Summary</h2>
+          {% form 'product', product %}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            <input type="hidden" name="quantity" value="1">
+
+            <div class="bundle-builder__summary-items">
+            </div>
+            <button type="submit" class="button">Add to Cart</button>
+          {% endform %}
+        </div>
+      </bundle-builder>
+    </div>
+  </div>
+
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Bundle Builder",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#dbaaeb"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#2ac2bd"
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "Hover Color",
+      "default": "#f3587f"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder"
+    }
+  ]
+}
+{% endschema %}
