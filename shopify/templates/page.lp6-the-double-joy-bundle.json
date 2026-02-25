@@ -48,8 +48,8 @@
     "main_page_jkWgiP": {
       "type": "main-page",
       "settings": {
-        "title": "Was wir unseren Kindern geben, prägt mehr als nur ihren Geschmack.",
-        "subtitle": "<p>Ernährung in der Kindheit und schon in der Schwangerschaft, legt den Grundstein für Gesundheit, Energie und Gewohnheiten fürs Leben.</p>",
+        "title": "Was wäre, wenn Süßes richtig gut schmeckt  und trotzdem gut tut?",
+        "subtitle": "<p>treatfuls ist die natürliche Alternative zu herkömmlichen Süßigkeiten, 30% weniger Zucker, ohne Industriezucker und mit vollem Geschmack.</p>",
         "subtitle_font_size": 24,
         "background_color": "#ceb69d",
         "accent_color": "",
@@ -67,7 +67,7 @@
             "image": "shopify://shop_images/Noan_mit_treatfuls.png",
             "image_position": "left",
             "title": "Gesunde Gewohnheiten beginnen früh.",
-            "content": "<p>Was Kinder in den ersten Lebensjahren essen, prägt ihren Geschmack und ihr Essverhalten langfristig und das oft schon ab der Schwangerschaft. Stark gesüßte und verarbeitete Snacks gewöhnen kleine Körper früh an intensive Zuckerreize und können das natürliche Energie und Sättigungsgefühl beeinflussen.</p><p>Ein gesunder Snack für Kinder sollte deshalb ohne zugesetzten Zucker auskommen, natürliche Zutaten enthalten und echte Nährstoffe liefern. Denn starke Blutzuckerschwankungen führen häufig zu kurzen Energiehochs und schnellen Tiefs etwas, das weder Kinder noch Mamas im Alltag brauchen.</p><p>Gesunde Ernährung bedeutet keinen Verzicht, sondern eine bewusste Grundlage für stabile Energie und natürliche Geschmacksentwicklung.</p>",
+            "content": "<p>Was Kinder in den ersten Lebensjahren essen, prägt ihren Geschmack und ihr Essverhalten langfristig – und vieles davon beginnt bereits in der Schwangerschaft. In dieser Zeit reagieren Körper besonders sensibel auf Nährstoffe und Zuckerquellen. Gleichzeitig entstehen neue Bedürfnisse: Heißhunger, schnelle Energie, kleine Snacks zwischendurch.</p><p>Nach der Geburt setzt sich genau das fort. Stark gesüßte und stark verarbeitete Produkte gewöhnen Kinder früh an intensive Zuckerreize. Das beeinflusst, was später als „normal süß“ empfunden wird – und wie stabil Energie und Sättigungsgefühl im Alltag bleiben.</p><p>Gerade in Schwangerschaft und früher Kindheit entscheidet sich mehr, als uns bewusst ist.</p>",
             "button_text": "zur Black Box",
             "button_url": ""
           }
@@ -78,7 +78,7 @@
             "image": "shopify://shop_images/Baby_mit_Brpwnie.png",
             "image_position": "right",
             "title": "Warum Zucker mehr beeinflusst, als wir denken.",
-            "content": "<p>Kinder reagieren besonders sensibel auf stark verarbeitete Zuckerquellen. Industriezucker kann schnelle Blutzuckeranstiege auslösen, gefolgt von Müdigkeit, Unruhe oder erneutem Verlangen nach Süßem. Gleichzeitig beeinflusst er die Entwicklung der Geschmacksvorlieben und kann die natürliche Balance im Darm stören.</p><p>Gerade in den ersten Lebensjahren befindet sich das Verdauungs- und Immunsystem noch im Aufbau. Was regelmäßig gegessen wird, wirkt sich deshalb stärker aus, als viele denken.</p><p>Und genau hier stellt sich eine wichtige Frage:<br/><br/>Wie sieht ein Snack aus, der Kinder wirklich unterstützt – statt sie kurzfristig zu pushen?</p>",
+            "content": "<p>Kinder reagieren besonders sensibel auf stark verarbeitete Zuckerquellen. Industriezucker kann schnelle Blutzuckeranstiege auslösen, gefolgt von Müdigkeit, Unruhe oder erneutem Verlangen nach Süßem. Gleichzeitig beeinflusst er die Entwicklung der Geschmacksvorlieben und kann die natürliche Balance einer ausgewogenen Ernährung erschweren.</p><p>Gerade in den ersten Lebensjahren befindet sich das Verdauungs- und Immunsystem noch im Aufbau. Was regelmäßig gegessen wird, wirkt sich deshalb stärker aus, als viele denken.</p><p>Dabei geht es nicht darum, Kindern Süßes zu verbieten – sondern darum, ein Bewusstsein dafür zu schaffen, welche Art von Süße wir ihnen regelmäßig anbieten.</p><p>Und genau hier stellt sich eine wichtige Frage:</p><p>Wie sieht ein Snack aus, der sich wie eine Süßigkeit anfühlt – aber Kinder wirklich unterstützt und Mamas Sicherheit gibt?</p>",
             "button_text": "Zur X-Mas Box",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -103,7 +103,143 @@
       ],
       "name": "Image with text",
       "settings": {
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "#859972",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "Sondern ein Snack, der sich anfühlt wie eine Sünde, aber keine ist!",
         "background_color": "#ceb69d",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "image_with_text_AeEV4B": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_6GAhix": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-01.webp",
+            "image_position": "left",
+            "title": "Warum treatfuls mehr ist als nur ein Snack.",
+            "content": "<p>Kinder lieben Süßes. Das ist ganz normal 😊 Und genau deshalb geht es nicht darum, Süßes zu verbieten, sondern bewusster zu gestalten.</p><p>Wenn ein Snack wie eine Süßigkeit schmeckt und gleichzeitig auch noch richtig was mitbringt, entsteht kein Verzicht – sondern eine bessere Alternative.</p><p>Genau hier setzt treatfuls an ✨</p><p>Im Durchschnitt enthält treatfuls über 30 % weniger Zucker als herkömmliche Süßigkeiten, ohne dass Kinder das Gefühl haben, auf etwas verzichten zu müssen. Die angenehme Süße kommt dabei ausschließlich aus pflanzlichen Zutaten wie Datteln ganz ohne Industriezucker oder Sirupe.</p><p>Und mit der Süße und dem guten Geschmack kommen auch noch natürliche Ballaststoffe dazu – bis zu 20 % des täglichen Bedarfs.*</p><p>Das bedeutet: nicht nur Geschmack, sondern auch Nährstoffe mit Mehrwert. Nicht nur ein schneller Kick, sondern ein Snack, der länger sättigt und sich ausgewogener anfühlt.</p><p>treatfuls ersetzt Süßigkeiten nicht durch Verzicht. Sondern durch eine bewusstere Entscheidung.</p><p>*Die empfohlene tägliche Ballaststoffzufuhr ist abhängig von Alter, Größe und individuellem Bedarf.</p>",
+            "button_text": "zur Black Box",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        },
+        "image_with_text_hfdNcz": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
+            "image_position": "right",
+            "title": "",
+            "content": "",
+            "button_text": "Zur X-Mas Box",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_3qJACD": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_6GAhix",
+        "image_with_text_hfdNcz",
+        "image_with_text_3qJACD"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -699,9 +835,9 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "50 % weniger Zucker als herkömmliche Süßigkeiten.r 👇🏼",
+        "title": "50 % weniger Zucker als herkömmliche Süßigkeiten.👇🏼",
         "footer_note": "",
-        "background_color": "#472e1c",
+        "background_color": "#8e7c6b",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -714,142 +850,7 @@
         "title": "Weniger Zucker ist kein Trend. Es ist eine Entscheidung für langfristige Gesundheit.",
         "subtitle": "",
         "subtitle_font_size": 24,
-        "background_color": "#ceb69d",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
-    "advantages_BcfMf9": {
-      "type": "advantages",
-      "blocks": {
-        "advantage_item_8gBfw3": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-1-smile.png",
-            "text": "Lecker"
-          }
-        },
-        "advantage_item_G8CBAM": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-2-vegan.png",
-            "text": "Vegan"
-          }
-        },
-        "advantage_item_CARaAK": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-3-organic.png",
-            "text": "Bio-zertifiziert"
-          }
-        },
-        "advantage_item_mqdQfY": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Darm4.webp",
-            "text": "Ballaststoffreich"
-          }
-        },
-        "advantage_item_qxe3cw": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
-          }
-        },
-        "advantage_item_hy9grG": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-5-soy.png",
-            "text": "Ohne Soja"
-          }
-        },
-        "advantage_item_XE7riB": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_WEkgHC": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
-          }
-        }
-      },
-      "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
-      ],
-      "settings": {
-        "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "Sondern ein Snack, der sich anfühlt wie eine Sünde, aber keine ist!",
-        "background_color": "#472e1c",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
-      }
-    },
-    "image_with_text_k9tbwA": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_eCPVQF": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "image_position": "left",
-            "title": "Gesunde Gewohnheiten beginnen früh.",
-            "content": "<p>k3rughiuke</p>",
-            "button_text": "zur Black Box",
-            "button_url": "shopify://products/valentinstags-black-box-black-box"
-          }
-        },
-        "image_with_text_mwatAT": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/X.-Mas_Giftingbox.png",
-            "image_position": "right",
-            "title": "Filling done right",
-            "content": "<p>Zimtliebe zum Verschenken. Für alle, die Weihnachten snacken wollen. Unsere X-Mas  Box bringt alles mit, was Weihnachten cozy, crunchy und köstlich macht. Mit cremigem Spread, warmen Chai-Vibes und jeder Menge Zimt ist sie das perfekte Geschenk für alle, die mehr als nur Schoki verschenken wollen, ob an andere oder an dich selbst. <br/><br/>💌 Für 24,99 € bekommst du das ganze Snackpaket in einer festlichen Box.</p>",
-            "button_text": "Zur X-Mas Box",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        },
-        "image_with_text_MNinVe": {
-          "type": "image_with_text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
-            "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_eCPVQF",
-        "image_with_text_mwatAT",
-        "image_with_text_MNinVe"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "background_color": "#ceb69d",
+        "background_color": "#859972",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -1144,7 +1145,7 @@
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#ceb69d",
+        "background_color": "#859972",
         "accent_color": "#de85a1",
         "hover_color": "#e56a89"
       }
@@ -1225,6 +1226,59 @@
         "link": "#",
         "linktext": "Schreibe eine Bewertung"
       }
+    },
+    "image_with_text_k9tbwA": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_eCPVQF": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img-3x.jpg",
+            "image_position": "left",
+            "title": "Warum treatfuls mehr ist als nur ein Snack.",
+            "content": "<p>Bild mit den grünen PULLIS</p>",
+            "button_text": "zur Black Box",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        },
+        "image_with_text_mwatAT": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
+            "image_position": "right",
+            "title": "",
+            "content": "",
+            "button_text": "Zur X-Mas Box",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_MNinVe": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_eCPVQF",
+        "image_with_text_mwatAT",
+        "image_with_text_MNinVe"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -1232,13 +1286,14 @@
     "hero_eNmaQw",
     "main_page_jkWgiP",
     "image_with_text_NHKmKF",
+    "advantages_BcfMf9",
+    "image_with_text_AeEV4B",
     "comparison_table_dT7KWy",
     "main_page_bEFW8X",
-    "advantages_BcfMf9",
-    "image_with_text_k9tbwA",
     "custom_section_9AEAFL",
     "image_gallery_fYGR9x",
     "featured_product_GbQVWw",
-    "compare_product_reviews_tbrcUD"
+    "compare_product_reviews_tbrcUD",
+    "image_with_text_k9tbwA"
   ]
 }
