@@ -9,7 +9,7 @@
 
   .icon-arrow-down {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 0;
     width: 18px;
     height: 11px;
@@ -23,6 +23,11 @@
     padding-right: 28px;
     color: white;
     cursor: pointer;
+  }
+
+  .accordion__header.accordion__item--small  {
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
   .accordion__title {

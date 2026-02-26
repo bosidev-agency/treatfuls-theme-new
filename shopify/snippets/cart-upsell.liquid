@@ -9,6 +9,10 @@
       <div class="cart-upsell__item-wrapper swiper" data-upsell-slider>
         <div class="swiper-wrapper">
           {%- for product in collections[settings.upsell_collection].products -%}
+            {% unless product.available %}
+              {% continue %}
+            {% endunless %}
+            
             {%- assign quantity_content = product.metafields.custom.quantity_content -%}
             {%- assign weight_content = product.metafields.custom.weight_content -%}
 

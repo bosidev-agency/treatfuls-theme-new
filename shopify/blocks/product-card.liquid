@@ -104,7 +104,7 @@
           {% if card_product != blank %}
             {% render 'atc-button', product: card_product %}
           {% endif %}
-          {% if card_product != blank %}
+          {% if card_product != blank and block.settings.show_view_product %}
             <a href="{{ card_product.url }}" class="button product-form__button">{{ 'products.product.view_product' | t }}</a>
           {% endif %}
         </div>
@@ -180,6 +180,12 @@
       "type": "product",
       "id": "card_product",
       "label": "Product"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_product",
+      "label": "Show View Product",
+      "default": true
     },
     {
       "type": "color",

@@ -21,46 +21,56 @@
 >
   <div class="content-wrapper">
     <div class="container container--lg">
-      <bundle-builder class="bundle-builder__inner">
+      <bundle-builder class="bundle-builder__inner" data-bundle-name="{{ bundle_config.name.value }}">
         <div class="bundle-builder__content">
           <div class="bundle-builder__steps">
             <div class="bundle-builder__step">
-              <h2 class="h2">Step 1: Box Größe wählen</h2>
+              <div class="bundle-builder__step-header">
+                <h3 class="h3">Step 1: Box Größe wählen</h3>
+              </div>
               <div class="bundle-builder__box-inputs">
                 {% for size in bundle_config.size.value %}
                   <div class="input-radio">
-                    <input type="radio" name="box-size" id="box-{{ size }}" value="{{ size }}">
-                    <label for="box-{{ size }}">{{ size }}</label>
+                    <input type="radio" name="box-size" id="box-{{ size }}" value="{{ size }}" {% if forloop.first %}checked{% endif %}>
+                    <label for="box-{{ size }}">{{ size }}er Box</label>
                   </div>
                 {% endfor %}
+                <modal-popover class="modal-popover modal-popover--large" id="Alert">
+                  <div class="popover__overlay"></div>
+                  <div class="popover__content">
+                    <button class="popover__close-button">
+                      {%- render 'icon-close' -%}
+                    </button>
+                    <div class="popover__content-inner">
+                      <h3>Durch das wechseln der Box Größe wird der Warenkorb geleert.</h3>
+                      <p>Möchtest du die Box Größe wirklich wechseln?</p>
+                      <div class="button-group">
+                        <button class="button" data-toggle="Alert">Zurück</button>
+                        <button class="button" data-toggle="Alert" data-action="empty-cart">Größe Wechseln</button>
+                      </div>
+                    </div>
+                  </div>
+                </modal-popover>
               </div>
             </div>
             <div class="bundle-builder__step">
-              <h2 class="h2">Step 2: Wähle deine Kartonage</h2>
-              <div class="bundle-builder__box-inputs">              
-                <div class="input-radio">
-                  <input type="radio" name="box-size" id="kartonage-1" value="1">
-                  <label for="kartonage-1">1</label>
-                </div>
-                <div class="input-radio">
-                  <input type="radio" name="box-size" id="kartonage-2" value="2">
-                  <label for="kartonage-2">2</label>
-                </div>
-                <div class="input-radio">
-                  <input type="radio" name="box-size" id="kartonage-3" value="3">
-                  <label for="kartonage-3">3</label>
-                </div>
-                <div class="input-radio">
-                  <input type="radio" name="box-size" id="kartonage-4" value="4">
-                  <label for="kartonage-4">4</label>
+              <div class="bundle-builder__step-header">
+                <h3 class="h3">Step 2: Sorten wählen</h3>
+                <div class="bundle-builder__filters">
+                  <span class="h3 filter-title">Filter:</span>
+                  <div class="filter-pills">
+                    {% for product_pool in bundle_config.product_pools.value %}
+                      <div class="filter-pill">
+                        <input type="checkbox" id="filter-{{ product_pool.name }}" name="bundle-filter" value="{{ product_pool.name }}">
+                        <label for="filter-{{ product_pool.name }}">{{ product_pool.name }}</label>
+                      </div>
+                    {% endfor %}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="bundle-builder__step">
-              <h2 class="h2">Step 3: Sorten wählen</h2>
               <div class="bundle-builder__products">
                 {% for product_pool in bundle_config.product_pools.value %}
-                  <div class="bundle-builder__product-pool">
+                  <div class="bundle-builder__product-pool" data-filter="{{ product_pool.name }}">
                     <h3>{{ product_pool.name }}</h3>
                     <div class="bundle-builder__product-pool-products product-list">
                       {% for variant in product_pool.variants.value %}
@@ -68,12 +78,15 @@
                           {% continue %}
                         {% endunless %}
                         <div class="bundle-builder__product">
-                          {{ variant.product.featured_image | image_url: width: 200 | image_tag }}
+                          <div class="aspect-ratio aspect-ratio--square">
+                            {{ variant.product.featured_image | image_url: width: 400 | image_tag: widths: '200,400', sizes: '(max-width: 768px) 400px, 200px' }}
+                          </div>
                           <button class="cart-upsell__button button">+</button>
                           <template>
-                            <div class="bundle-builder__item" data-variant-id="{{ variant.id }}">
-                              
-                              {{ variant.product.featured_image | image_url: width: 200 | image_tag }}
+                            <div class="bundle-builder__item" data-variant-id="{{ variant.id }}" data-price="{{ variant.price }}">
+                              <div class="aspect-ratio aspect-ratio--square">
+                                {{ variant.product.featured_image | image_url: width: 240 | image_tag: widths: '120,240', sizes: '(max-width: 768px) 60px, 80px' }}
+                              </div>
 
                               <quantity-selector class="product-form__quantity-wrapper">
                                 <div
@@ -126,14 +139,29 @@
           </div>
         </div>
         <div class="bundle-builder__summary">
-          <h2 class="h2">Summary</h2>
+          <div class="bundle-builder__summary-header">
+            <h3 class="h3">Deine Box:</h3>
+            <span class="h3 bundle-builder__price">{{ 0 | money }}</span>
+          </div>
+          <div
+            data-threshold="30"
+            data-current="0"
+            class="shipping-bar"
+            style="--progress: 0"
+          >
+            <span class="shipping-bar__text text--small shipping-bar__text--remaining">Füge noch <span class="shipping-bar__text-amount">30</span> Produkte zur Box hinzu</span>
+            <span class="shipping-bar__text text--small shipping-bar__text--achieved hidden">Jetzt Bundle hinzufügen</span>
+            <span
+              class="shipping-bar__progress shipping-bar__progress--remaining"
+            ></span>
+          </div>
           {% form 'product', product %}
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            <input type="hidden" name="id" value="{{ bundle_config.parent_product.value.id }}">
             <input type="hidden" name="quantity" value="1">
 
             <div class="bundle-builder__summary-items">
             </div>
-            <button type="submit" class="button">Add to Cart</button>
+            <button type="submit" class="button" disabled>Wähle Produkte</button>
           {% endform %}
         </div>
       </bundle-builder>
