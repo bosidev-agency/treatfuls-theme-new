@@ -31,13 +31,13 @@ body {
   background-color: #fff;
   font-family: $font-primary, sans-serif;
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: clip;
 
   #shopify-section-footer {
     margin-top: auto;
