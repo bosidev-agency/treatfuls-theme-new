@@ -972,6 +972,9 @@ bundle-picker .image_side_wwrp {
 }
 
 .raffle-form .form-group label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
 }
 
