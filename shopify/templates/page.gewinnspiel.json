@@ -27,9 +27,9 @@
       "type": "hero",
       "name": "Hero banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.47.png",
+        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-02.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Bildschirmfoto_2026-02-19_um_13.02.47.png",
+        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-01.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -40,7 +40,7 @@
         "max_width_px": 1200,
         "title": "",
         "text": "",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#b46493",
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
         "show_base_triangular_line": false
@@ -54,7 +54,7 @@
           "settings": {
             "image": "shopify://shop_images/3_40ff6ee5-8a0f-47ce-9f35-a5e41618b9da.png",
             "heading": "treatfuls Kaufen",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+            "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
           }
         },
         "item_NhyCtd": {
@@ -62,7 +62,7 @@
           "settings": {
             "image": "shopify://shop_images/1_71658b80-feb0-4960-94b3-88bc807066af.png",
             "heading": "Kassenbon hochladen",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+            "content": "<p>Einfach deinen Kassenbon hochladen und darauf achten, dass die unten aufgeführten Angaben gut sichtbar und deutlich lesbar sind. So steht deiner Teilnahme nichts im Weg!</p>"
           }
         },
         "item_KYnJNE": {
@@ -70,7 +70,7 @@
           "settings": {
             "image": "shopify://shop_images/2_2b44b778-a667-4bb6-b09b-2de04dc2c6ed.png",
             "heading": "Lastenrad von Dolly gewinnen",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>"
+            "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 <br/>On top: Die <strong>ersten 100 Teilnehmer:innen</strong> gewinnen eine Goodiebag mit tollen Brands wie <strong>Jean & Len</strong> .... – schnell sein lohnt sich!</p>"
           }
         }
       },
@@ -122,7 +122,7 @@
         "button_position": "center",
         "klaviyo_company_id": "",
         "klaviyo_list_id": "",
-        "legal_text": "<h5>1. Allgemeines</h5><p>Veranstalter des Gewinnspiels sind die KoRo Handels GmbH, Hauptstr. 26, 10827 Berlin (nachfolgend „KoRo” genannt) sowie die ROSE Bikes GmbH, Schwersweide 4, 46395 Bocholt (nachfolgend “<strong>ROSE Bikes</strong>” genannt, gemeinsam als “Veranstalter” bezeichnet). Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.<br/><br/></p><h5>2. Teilnahmeberechtigungen</h5><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme volljährig (d.h. mindestens 18 Jahre alt) und unbeschränkt geschäftsfähig sind („Teilnehmer“) und deren Wohnort sich in Deutschland oder Österreich befindet.<br/><br/>Jeder Teilnehmer kann nur einmal am Gewinnspiel teilnehmen. Eine regelwidrige oder wiederholte Teilnahme eines Teilnehmers an dem Gewinnspiel hat seinen Ausschluss zur Folge.<br/><br/>Angestellte der Veranstalter und andere an der Umsetzung des Gewinnspiels beteiligte Personen sowie deren Angehörige sind von der Teilnahme ausgeschlossen. Ausgeschlossen werden auch Personen, die sich unerlaubter Hilfsmittel bedienen oder sich anderweitig durch Manipulation (z. B. auch durch den Einsatz von Gewinnspielmaschinen) Vorteile verschaffen. In diesen Fällen können auch nachträglich Gewinne aberkannt und/oder zurückgefordert werden.<br/><br/></p><h5>3. Teilnahmevoraussetzungen</h5><p>Voraussetzung für die Teilnahme am Gewinnspiel ist der Erwerb von mindestens einem KoRo Produkt im Handel während des Aktionszeitraums (05.01.2026 - 15.04.2026). Der Kauf muss nachgewiesen werden, indem ein Foto des Kassenbons auf der Webseite (www.korodrogerie.de/gewinnspiel) hochgeladen wird. Dort muss auch das Kontaktformular ausgefüllt werden. Auf dem Kassenbon müssen der Name des Handels, das Kaufdatum, das Aktionsprodukt, der Kaufpreise und die Kassenbonnummer deutlich erkennbar sein. Ein Kassenbon darf nur einmalig für das Gewinnspiel eingesetzt werden. KoRo behält sich das Recht vor, den originalen Kassenbon zur Verifizierung anzufordern. Kann der Teilnehmer den originalen Kassenbon nicht auf Verlangen vorlegen, wird seine Teilnahme ungültig und er verliert den Anspruch auf den Gewinn.<br/><br/></p><h5>4. Dauer des Gewinnspiels und Preise</h5><p>Das Gewinnspiel beginnt am 05.01.2026 und endet am 15.04.2026. Die Verlosung der Gewinne findet zeitnah nach Ende des Aktionszeitraums statt.<br/><br/>Im Rahmen des Gewinnspiels werden folgende Gewinne verlost:<br/><br/>• 3 ROSE Sneak Plus EQ E-Bikes im Wert von jeweils EUR 3.000. Folgende Modelle können gewonnen werden: Sneak Plus EQ (Modelljahr 2025) und Sneak Plus EQ MidStep (Modelljahr 2025). Die Gewinner dürfen insbesondere über folgende Punkte selbst entscheiden: Rahmenform (HighStep oder MidStep), Farbe (Sage oder Lavender), Größe (beim HighStep S, M und L; beim MidStep S und M).<br/>• 50 KoRo Gutscheine im Wert von jeweils EUR 50<br/>• 20 No Cosmetics Gutscheine im Wert von jeweils EUR 50<br/><br/></p><h5>5. Gewinnermittlung und Gewinnbenachrichtigung</h5><p>Die Ermittlung der Gewinner erfolgt durch Verlosung und findet nur unter denjenigen Teilnehmern statt, die sämtliche für die Teilnahme an dem Gewinnspiel auszufüllenden Pflichtfelder vollständig und richtig ausgefüllt und sich im Übrigen an die Teilnahmebedingungen gehalten haben.<br/><br/>Unter den Einsendungen entscheidet das Los.<br/><br/>Die Gewinner werden zeitnah an die im Kontaktformular angegebene E-Mail-Adresse über den Gewinn benachrichtigt und zur Verifizierung der Kontaktdaten um Bestätigung gebeten. Die Gewinner müssen innerhalb von 72 Stunden nach Benachrichtigung die Postadresse, an die der Gewinn versandt werden soll, an die Mailadresse retailsupport@koro.com mitteilen. Im Falle des Gewinns eines E-Bikes wird die E-Mail-Adresse zur Gewinnauswahl an ROSE Bikes übermittelt. Nach Eingang der Bestätigung bzw. nach Auswahl des E-Bikes wird der Gewinn versendet. Zum Zwecke der Gewinnauswahl und des Gewinnversands der E-Bikes werden die personenbezogenen Daten der Gewinner:innen (Name, Anschrift, Telefonnummer und E-Mail-Adresse) durch KoRo an ROSE Bikes auf der Grundlage von Art. 6 Abs. 1 lit. b und/oder Art. 6 Abs. 1 lit. f DSGVO übermittelt. ROSE Bikes ist für den Versand verantwortlich.<br/><br/>Wird ein möglicher Gewinner nicht erreicht, meldet er sich nicht innerhalb von 72 Stunden nach Absenden der Gewinnbenachrichtigung oder ist die Gewinnbenachrichtigung unzustellbar, verliert der mögliche Gewinner alle Rechte auf den Gewinn und ein anderer Gewinner wird ausgelost.<br/><br/>Die weiteren Gewinne werden von KoRo per E-Mail an die Gewinner zugesandt. Eine Barauszahlung der Sachwerte oder Tausch der Gewinne ist nicht möglich. Die Preise sind nicht übertragbar.<br/><br/></p><h5>6. Änderung und Beendigung des Gewinnspiels</h5><p>KoRo behält sich das Recht vor, das Gewinnspiel ganz oder zeitweise auszusetzen oder vorzeitig zu beenden, sofern dies nach vernünftigen Gesichtspunkten, insbesondere aufgrund technischer oder rechtlicher Gründe, erforderlich ist. Von dieser Möglichkeit kann KoRo insbesondere dann Gebrauch machen, wenn aus technischen Gründen (z. B. Viren im Computersystem, Manipulation oder Fehler in der Hard- und/oder Software) oder aus rechtlichen Gründen eine ordnungsgemäße Durchführung des Gewinnspiels nicht gewährleistet werden kann. Den Teilnehmern entstehen gegenüber den Veranstaltern daraus keinerlei Ansprüche.<br/><br/>Sofern eine derartige Störung der Durchführung des Gewinnspiels durch das Verhalten eines Teilnehmers schuldhaft verursacht wird, können die Veranstalter von diesem den entstandenen Schaden ersetzt verlangen.<br/><br/>KoRo behält sich außerdem das Recht vor, das Gewinnspiel jederzeit ohne Vorankündigung und ohne Angabe von Gründen zu ändern.<br/><br/></p><h5>7. Haftung</h5><p>Die Haftung der Veranstalter, ihrer Organe, Angestellten und Erfüllungsgehilfen aus oder im Zusammenhang mit dem Gewinnspiel, gleich aus welchem Rechtsgrund, ist auf Vorsatz oder grobe Fahrlässigkeit beschränkt, ausgenommen für Personenschäden, für ausdrücklich erklärte Garantien oder für Schäden im Anwendungsbereich des Produkthaftungsgesetzes. Die vorstehende Haftungsbeschränkung gilt insbesondere auch für Schäden, die durch Fehler, Verzögerungen oder Unterbrechungen in der Übermittlung, bei Störungen der technischen Anlagen und des Services, unrichtige Inhalte, Verlust oder Löschung von Daten oder Viren verursacht wurden. Für Sach- und/oder Rechtsmängel an den ausgelobten Gewinnen haften die Veranstalter nicht.<br/><br/></p><h5>8. Datenschutz</h5><p>Die zum Versand des Gewinns erhobenen personenbezogenen Daten eines Teilnehmers werden für die Dauer des Gewinnspielzeitraums und zum Zwecke der Gewinnabwicklung gespeichert. KoRo übermittelt die zur Versendung notwendigen Gewinnerdaten (Name, Anschrift, E-Mail-Adresse und Telefonnummer) an ROSE Bikes zum Zwecke des Gewinnversands. ROSE Bikes verarbeitet diese Daten in eigener datenschutzrechtlicher Verantwortung als unabhängiger Verantwortlicher im Sinne des Art. 4 Nr. 7 DSGVO. ROSE Bikes darf die Daten ausschließlich zum Zweck des Versandes verwenden. Rechtsgrundlage für die Übermittlung ist die Erfüllung des Gewinnspielvertrages (Art. 6 Abs. 1 lit. b DSGVO) und/oder ein berechtigtes Interesse beider Parteien an der Abwicklung des Versands (Art. 6 Abs. 1 lit. f DSGVO). Die Teilnahme an der Umfrage erfolgt freiwillig durch Klick auf die als nicht Pflichtfelder markierten Felder der Umfrage auf der Grundlage einer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).<br/><br/>Jeder Teilnehmer willigt mit seiner Teilnahme in die Erhebung, Verarbeitung und Nutzung seiner Daten in vorgenanntem Umfang ein. Jeder Teilnehmer kann die vorstehende Einwilligung jederzeit gegenüber KoRo widerrufen und Auskunft über die von ihm gespeicherten Daten und/oder deren Löschung verlangen. Mit der Löschung der Daten endet die Teilnahme an dem Gewinnspiel.<br/><br/>Für die Datenverarbeitung durch ROSE Bikes gelten deren<a href=\"https://www.rosebikes.de/datenschutz?sf=1\">eigene Datenschutzbestimmungen</a>.<br/><br/>Jeder Teilnehmer kann sich bei Fragen zur Erhebung, Verarbeitung und Nutzung seiner personenbezogenen Daten an support@korodrogerie.de wenden.<br/><br/>Im Gewinnfall hat der Teilnehmer seinen vollständigen Namen, seine Postadresse und eine Bestätigung seiner Volljährigkeit anzugeben. Diese Daten werden von KoRo ausschließlich zur Durchführung des Gewinnspiels verwendet. Nach Beendigung des Gewinnspiels werden die Daten gelöscht.<br/><br/>Weitere Informationen finden sich in<a href=\"https://www.korodrogerie.de/datenschutz\">unserer Datenschutzerklärung</a>.<br/><br/></p><h5>9. Schlussbestimmungen</h5><p>Es gilt das Recht der Bundesrepublik Deutschland. Der Rechtsweg ist im Hinblick auf die Gewinnermittlung und -übermittlung ausgeschlossen.<br/><br/>Sollten einzelne Bestimmungen der Teilnahmebedingungen ungültig sein oder ungültig werden, bleibt die Gültigkeit der übrigen Teilnahmebedingungen unberührt. An ihre Stelle tritt die gültige Regelung, die dem Zweck der unwirksamen Bestimmung am ehesten entspricht.<br/><br/>Viel Glück und Erfolg wünscht das KoRo-Team!<br/></p>",
+        "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <strong>treatfuls GmbH</strong>,<br/> Birkenstraße 23,<br/> 40233 Düsseldorf, Deutschland<br/> (nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04. bis einschließlich 07.05.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum<br/></strong>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026</strong> (23:59 Uhr).</p><p>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt.</p><p><strong>5. Gewinn<br/></strong>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln</strong></li><li><strong>Die ersten 100 gültigen Teilnehmer:innen erhalten jeweils eine Goodiebag mit Produkten folgender Marken: XY, XY, XY. Die Ermittlung erfolgt nach dem zeitlichen Eingang der vollständigen und gültigen Teilnahme. Maßgeblich ist der Zeitpunkt des Uploads.</strong></li></ul><p><strong><br/><br/></strong></p><p>📌 <strong>Menge der enthaltenen treatfuls Produkte:<br/></strong> 👉 <em>[noch festzulegen: z. B. XX Riegel oder X Trays]</em></p><p>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</p><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per <strong>Zufallsprinzip (Losverfahren)</strong> unter allen gültigen Teilnahmen.</p><p>Der Gewinner wird per <strong>E-Mail</strong> an die im Teilnahmeformular angegebene Adresse benachrichtigt.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation erfolgt durch treatfuls.</p><p><strong>8. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen.</p><p>Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Für Sach- und/oder Rechtsmängel am Gewinn haftet treatfuls nicht.</p><p><strong>9. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>10. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland. <br/>Der Rechtsweg ist ausgeschlossen.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>",
         "privacy_policy": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
         "background_color": "#859972",
         "accent_color": "#f3587f",
@@ -135,22 +135,22 @@
         "richtext_item_U7xcwG": {
           "type": "richtext_item",
           "settings": {
-            "heading": "SEO RELEVANTER TEXT",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
           }
         },
         "richtext_item_Uyx37f": {
           "type": "richtext_item",
           "settings": {
-            "heading": "SEO RELEVANTER TEXT",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
           }
         },
         "richtext_item_x8GajN": {
           "type": "richtext_item",
           "settings": {
-            "heading": "SEO RELEVANTER TEXT",
-            "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
           }
         }
       },
@@ -168,83 +168,150 @@
         "hover_color": "#f3587f"
       }
     },
-    "advantages_Lw4Ht3": {
-      "type": "advantages",
+    "depr_rich_text_ArQRbJ": {
+      "type": "depr-rich-text",
       "blocks": {
-        "advantage_item_MD4rDr": {
-          "type": "advantage_item",
+        "richtext_item_BCXrDC": {
+          "type": "richtext_item",
           "settings": {
-            "image": "shopify://shop_images/img-1-smile.png",
-            "text": "Lecker"
+            "heading": "Finde jetzt eine DM Filliale in deiner Nähe und Gewinne mit etwas Glück ein Lastenrad von Dolly",
+            "content": ""
           }
         },
-        "advantage_item_A3xNLF": {
-          "type": "advantage_item",
+        "richtext_item_mkqefi": {
+          "type": "richtext_item",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/img-2-vegan.png",
-            "text": "Vegan"
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
           }
         },
-        "advantage_item_B3qPLB": {
-          "type": "advantage_item",
+        "richtext_item_BxRfqz": {
+          "type": "richtext_item",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/img-3-organic.png",
-            "text": "Bio-zertifiziert"
-          }
-        },
-        "advantage_item_Q7U6gy": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
-          }
-        },
-        "advantage_item_GqwVtH": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-5-soy.png",
-            "text": "Ohne Soja"
-          }
-        },
-        "advantage_item_TWWCTM": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_b9PFEC": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
-          }
-        },
-        "advantage_item_AEx67n": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
           }
         }
       },
       "block_order": [
-        "advantage_item_MD4rDr",
-        "advantage_item_A3xNLF",
-        "advantage_item_B3qPLB",
-        "advantage_item_Q7U6gy",
-        "advantage_item_GqwVtH",
-        "advantage_item_TWWCTM",
-        "advantage_item_b9PFEC",
-        "advantage_item_AEx67n"
+        "richtext_item_BCXrDC",
+        "richtext_item_mkqefi",
+        "richtext_item_BxRfqz"
       ],
+      "name": "SEO Texts",
       "settings": {
-        "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#a3c089",
+        "full_width": false,
+        "text_alignment": "left",
+        "background_color": "#b46493",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "17721214725c4094b2": {
+      "type": "apps",
+      "blocks": {
+        "s_store_locator_storeify_storelocator_JBQmwz": {
+          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "s_store_locator_storeify_storelocator_JBQmwz"
+      ],
+      "settings": {
+        "background_color": "#b46493",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_cewfrk": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_jb4Vcr": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Keine DM Filliale in deiner Nähe? Kein Problem, dann bestell dir jetzt die Probierbox von treatfuls",
+            "content": ""
+          }
+        },
+        "richtext_item_zxhVxm": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        },
+        "richtext_item_MFQNn3": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_jb4Vcr",
+        "richtext_item_zxhVxm",
+        "richtext_item_MFQNn3"
+      ],
+      "name": "SEO Texts",
+      "settings": {
+        "full_width": false,
+        "text_alignment": "left",
+        "background_color": "#b46493",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "featured_product_BhT6E9": {
+      "type": "featured-product",
+      "blocks": {
+        "description_3F44i8": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_Y74MwP": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_9iiY6w": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_MhPzB7": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_3F44i8",
+        "countdown_Y74MwP",
+        "price_9iiY6w",
+        "buy_button_MhPzB7"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten probieren",
+        "mobile_heading": "The Black Box of Love",
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#859972",
+        "accent_color": "#de85a1",
+        "hover_color": "#e56a89"
       }
     },
     "custom_section_CVPBjc": {
@@ -383,6 +450,85 @@
         "padding_top": 80,
         "padding_bottom": 40
       }
+    },
+    "advantages_Lw4Ht3": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_MD4rDr": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_A3xNLF": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_B3qPLB": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_Q7U6gy": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_GqwVtH": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_TWWCTM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_b9PFEC": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        },
+        "advantage_item_AEx67n": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Ohne Zusatzstoffe"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_MD4rDr",
+        "advantage_item_A3xNLF",
+        "advantage_item_B3qPLB",
+        "advantage_item_Q7U6gy",
+        "advantage_item_GqwVtH",
+        "advantage_item_TWWCTM",
+        "advantage_item_b9PFEC",
+        "advantage_item_AEx67n"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#a3c089",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
     }
   },
   "order": [
@@ -392,7 +538,11 @@
     "depr_rich_text_c4gF3r",
     "raffle_form_r9bdiB",
     "depr_rich_text_hATR9f",
-    "advantages_Lw4Ht3",
-    "custom_section_CVPBjc"
+    "depr_rich_text_ArQRbJ",
+    "17721214725c4094b2",
+    "depr_rich_text_cewfrk",
+    "featured_product_BhT6E9",
+    "custom_section_CVPBjc",
+    "advantages_Lw4Ht3"
   ]
 }
