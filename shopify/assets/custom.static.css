@@ -948,6 +948,10 @@ bundle-picker .image_side_wwrp {
 
 /* MULTI COLUMN */
 
+.multicolumn__item-text {
+  color: rgb(var(--color-text));
+}
+
 .multicolumn__item {
   width: 100%;
   display: flex;
@@ -983,7 +987,14 @@ bundle-picker .image_side_wwrp {
 
 .uc-light {
   margin-block: 20px;
-  --uc-muted: rgba(255, 255, 255, 0.2) !important;
+  --uc-muted: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 5%) !important;
+  --uc-background: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 0%) !important;
+  --uc-foreground: white !important;
+  --uc-secondary-foreground: white !important;
+}
+
+uc-file-item button.uc-remove-btn {
+  color: white !important;
 }
 
 uc-copyright {

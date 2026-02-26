@@ -41,7 +41,10 @@ async function klaviyoEmailOptIn({
       signal,
     }
   );
-  if (!res.ok) throw new Error(`Klaviyo opt-in failed (${res.status})`);
+  if (!res.ok) {
+    const errorBody = await res.text();
+    throw new Error(`Klaviyo opt-in failed (${res.status})`);
+  }
   return res.json();
 }
 
@@ -90,9 +93,10 @@ class RaffleForm extends HTMLElement {
         return;
       }
 
+
       const companyId = this.dataset.klaviyoCompanyId?.trim();
       const listId = this.dataset.klaviyoListId?.trim();
-      const emailInput = this.raffleForm.querySelector('input[name="contact[E-Mail]"]');
+      const emailInput = this.raffleForm.querySelector('input[name="contact[email]"]');
       const email = emailInput?.value?.trim();
 
       const shouldOptIn =
@@ -101,13 +105,14 @@ class RaffleForm extends HTMLElement {
         listId &&
         isValidEmail(email);
 
+
       if (shouldOptIn) {
         event.preventDefault();
         this.submitting = true;
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), KLAVIYO_TIMEOUT_MS);
         try {
-          await klaviyoEmailOptIn({
+          const result = await klaviyoEmailOptIn({
             companyId,
             listId,
             email,
@@ -115,7 +120,7 @@ class RaffleForm extends HTMLElement {
             signal: controller.signal,
           });
         } catch (err) {
-          console.warn("Klaviyo newsletter signup failed:", err);
+          console.error("Klaviyo opt-in failed", err);
         } finally {
           clearTimeout(timeoutId);
           this.submitting = false;

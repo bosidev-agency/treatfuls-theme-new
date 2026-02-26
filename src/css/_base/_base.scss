@@ -4,6 +4,26 @@
 * {
   outline: none;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 25%) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 25%);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 40%);
 }
 
 html,
@@ -17,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: clip;
 
   #shopify-section-footer {
     margin-top: auto;

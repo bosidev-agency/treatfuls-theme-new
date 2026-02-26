@@ -20,10 +20,11 @@
   <div class="content-wrapper">
     <div class="container container--lg">
       <raffle-form
-          data-klaviyo-company-id="{{ section.settings.klaviyo_company_id | escape }}"
-          data-klaviyo-list-id="{{ section.settings.klaviyo_list_id | escape }}"
+          data-klaviyo-company-id="RsF7av"
+          data-klaviyo-list-id="R3wPrx"
         >
         {% form 'contact' %}
+          <input type="hidden" id="Thema" name="contact[Thema]" value="Gewinnspiel DM teilgenommen">
           <div class="title-wrapper">
             {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
               {%- if section.settings.title and form.posted_successfully? == false -%}
@@ -63,8 +64,8 @@
                         name="contact[Anrede]"
                         required
                       >
+                        <option value="Frau" selected>Frau</option>
                         <option value="Herr">Herr</option>
-                        <option value="Frau">Frau</option>
                         <option value="Keine Angabe">Keine Angabe</option>
                       </select>
                       {%- render 'icon-arrow' -%}
@@ -106,7 +107,7 @@
                       <span class="text input__label"> E-Mail * </span>
                       <input
                         type="email"
-                        name="contact[E-Mail]"
+                        name="contact[email]"
                         placeholder="E-Mail"
                         id="E-Mail"
                         class="input input--blue"
@@ -120,11 +121,11 @@
 
                   <div class="form-group">
                     <label class="label">
-                      <span class="text input__label"> Straße * </span>
+                      <span class="text input__label"> Straße & Hausnummer * </span>
                       <input
                         type="text"
-                        name="contact[Straße]"
-                        placeholder="Straße"
+                        name="contact[Straße & Hausnummer]"
+                        placeholder="Straße & Hausnummer"
                         id="Straße"
                         class="input input--blue"
                         autocorrect="off"
@@ -217,7 +218,7 @@
 
                   <div class="contact-form__checkbox-wrapper">
                     <div class="contact-form__checkbox">
-                      <input type="checkbox" id="contact-form-checkbox" name="contact[Checkbox]" required>
+                      <input type="checkbox" id="contact-form-checkbox" name="contact[AGB Akzeptiert]" required>
                       <label for="contact-form-checkbox">
                         * Ich habe die
                         <span class="contact-form__checkbox-link" data-toggle="Terms">Teilnahmebedingungen</span>
@@ -228,7 +229,7 @@
                       </label>
                     </div>
                     <div class="contact-form__checkbox">
-                      <input type="checkbox" id="NewsletterSignup" name="contact[Newsletter]" checked>
+                      <input type="checkbox" id="NewsletterSignup" name="contact[Newsletter Akzeptiert]" checked>
                       <label for="NewsletterSignup">
                         Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden.
                         Meine Einwilligung kann ich jederzeit widerrufen.
@@ -266,6 +267,14 @@
                   <button type="submit" class="button contact-form__button" disabled>
                     {{ section.settings.button_text }}
                   </button>
+                </div>
+              {% else %}
+                <div class="form-message form-message--success title-wrapper">
+                  <h3 class="title-wrapper__title title-bg">Danke für deine Teilnahme!</h3>
+
+                  <a class="button" href="{{ routes.root_url }}">
+                    {{ 'contact.form.back_to_home' | t }}
+                  </a>
                 </div>
               {% endunless %}
             </div>
