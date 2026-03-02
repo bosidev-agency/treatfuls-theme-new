@@ -11,10 +11,168 @@
   "sections": {
     "main": {
       "type": "recipes-template",
-      "settings": {}
+      "settings": {
+        "background_color": "#ceb69d",
+        "accent_color": "#e56a89",
+        "hover_color": "#2ac2bd"
+      }
+    },
+    "custom_section_KH4fVm": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_pXbUrE": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schau mal hier..",
+            "subtitle_text": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Az9AxW": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_hkdgTH": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_4CXPPL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_KWKFaw": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "matcha-riegel",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_KWKFaw"
+                  ]
+                },
+                "slide_CM3Dhj": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_dYMpXG": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_dYMpXG"
+                  ]
+                },
+                "slide_rxi4fi": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_xbkUkX": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "chai-latte-spill-the-tea",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_xbkUkX"
+                  ]
+                },
+                "slide_86y4qQ": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_WWdcAG": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_WWdcAG"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_4CXPPL",
+                "slide_CM3Dhj",
+                "slide_rxi4fi",
+                "slide_86y4qQ"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_hkdgTH"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_pXbUrE",
+        "group_Az9AxW"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#744f37",
+        "accent_color": "#ceb69d",
+        "hover_color": "#e56a89",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_section_KH4fVm"
   ]
 }
