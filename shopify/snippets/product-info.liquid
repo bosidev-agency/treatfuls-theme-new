@@ -65,7 +65,7 @@
                 {%- endif -%}
 
               {%- when 'buy_button' -%}
-                <div class="product-form__buttons">
+                <div class="product-form__buttons {% if section.settings.sticky_button %}sticky-add-to-cart{% endif %}">
                   {% unless product.has_only_default_variant %}
                     <variant-dropdown class="product-form__variant-selector" data-section-id="main-product" data-product-handle="{{ product.handle }}">
                       {% for option in product.options_with_values %}

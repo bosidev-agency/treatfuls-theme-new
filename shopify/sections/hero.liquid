@@ -45,6 +45,14 @@
   {%- assign aspect_ratio_mobile = section.settings.mobile_image_height -%}
 {%- endif -%}
 
+{% assign lazy_loading = 'lazy'%}
+{% assign preload = false %}
+
+{% if section.index == 1 %}
+  {% assign lazy_loading = 'eager' %}
+  {% assign preload = true %}
+{% endif %}
+
 <section
   class="hero"
   data-section-id="{{- section.id -}}"
@@ -59,7 +67,7 @@
         {% if section.settings.desktop_video != blank %}
           {{ section.settings.desktop_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'hero__image hidden-phone' }}
         {% elsif section.settings.desktop_image != blank %}
-          {{ section.settings.desktop_image | image_url: width: section.settings.desktop_image.width | image_tag: class: 'hero__image hidden-phone' }}
+          {{ section.settings.desktop_image | image_url: width: section.settings.desktop_image.width | image_tag: class: 'hero__image hidden-phone', loading: lazy_loading, preload: preload, widths: '720, 900, 1080, 1296, 1512, 1728, 3000', sizes: '100vw' }}
         {% else %}
           {{ 'lifestyle-1' | placeholder_svg_tag: 'hero__image hidden-phone' }}
         {% endif %}
@@ -68,7 +76,7 @@
         {% if section.settings.mobile_video != blank %}
           {{ section.settings.mobile_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, class: 'hero__image hero__image--mobile hidden-desktop' }}
         {% elsif section.settings.mobile_image != blank %}
-          {{ section.settings.mobile_image | image_url: width: section.settings.mobile_image.width | image_tag: class: 'hero__image hero__image--mobile hidden-desktop' }}
+          {{ section.settings.mobile_image | image_url: width: section.settings.mobile_image.width | image_tag: class: 'hero__image hero__image--mobile hidden-desktop', loading: lazy_loading, preload: preload, widths: '360, 540, 720, 900, 1080, 1296, 1512', sizes: '100vw' }}
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'hero__image hero__image--mobile hidden-desktop' }}
         {% endif %}

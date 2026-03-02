@@ -109,17 +109,19 @@ register("product", {
 		this.onQuantityChange = this.initQuantityClick.bind(this);
 		this.quantityKeyupEvents = this.initQuantityKeyup.bind(this);
 
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const threshold = 50; // Distance before reaching the bottom where the element should start to hide
+    if (productFormElement.classList.contains("sticky-add-to-cart")) {
+      window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const threshold = 50; // Distance before reaching the bottom where the element should start to hide
 
-      if (scrollPosition >= documentHeight - threshold) {
-        productFormElement.classList.add('mobile-vanish')
-      } else {
-        productFormElement.classList.remove('mobile-vanish')
-      }
-    })
+        if (scrollPosition >= documentHeight - threshold) {
+          productFormElement.classList.add('mobile-vanish')
+        } else {
+          productFormElement.classList.remove('mobile-vanish')
+        }
+      })
+    }
 
 		this.container.addEventListener("click", this.onQuantityChange);
 		this.container

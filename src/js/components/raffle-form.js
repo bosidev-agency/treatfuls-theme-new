@@ -62,6 +62,14 @@ class RaffleForm extends HTMLElement {
     this.submitButton = this.querySelector('button[type="submit"]');
     this.uploadError = this.querySelector(".contact-form__upload-error");
     this.newsletterSignupCheckbox = this.querySelector('#NewsletterSignup');
+    this.raffleSubmitted = new URL(window.location.href).searchParams.get('contact_posted');
+    this.postSuccessAnchor = this.dataset.postSuccessAnchor;
+
+    if (this.raffleSubmitted) {
+      if (this.postSuccessAnchor) {
+        window.location.hash = this.postSuccessAnchor;
+      }
+    }
 
     this.uploadcare.addEventListener("file-url-changed", (e) => {
       this.reciptInput.value = e.detail.cdnUrl;

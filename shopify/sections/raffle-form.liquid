@@ -22,6 +22,9 @@
       <raffle-form
           data-klaviyo-company-id="RsF7av"
           data-klaviyo-list-id="R3wPrx"
+          {% if section.settings.post_success_anchor != blank %}
+            data-post-success-anchor="{{ section.settings.post_success_anchor }}"
+          {% endif %}
         >
         {% form 'contact' %}
           <input type="hidden" id="Thema" name="contact[Thema]" value="Gewinnspiel DM teilgenommen">
@@ -34,10 +37,6 @@
               {% if form.posted_successfully? %}
                 <div class="form-message form-message--success">
                   <h3 class="form-message__title title-bg title-bg--sm">{{ section.settings.post_success_message }}</h3>
-
-                  <a class="button" href="{{ routes.root_url }}">
-                    {{ 'contact.form.back_to_home' | t }}
-                  </a>
                 </div>
               {% else %}
                 {%- if section.settings.subtitle -%}
@@ -81,7 +80,6 @@
                         class="input input--blue"
                         autocorrect="off"
                         autocapitalize="off"
-                        autofocus
                         required
                       >
                     </label>
@@ -96,7 +94,6 @@
                         class="input input--blue"
                         autocorrect="off"
                         autocapitalize="off"
-                        autofocus
                         required
                       >
                     </label>
@@ -113,7 +110,6 @@
                         class="input input--blue"
                         autocorrect="off"
                         autocapitalize="off"
-                        autofocus
                         required
                       >
                     </label>
@@ -131,7 +127,6 @@
                         autocorrect="off"
                         autocapitalize="off"
                         autocomplete="street-address"
-                        autofocus
                         required
                       >
                     </label>
@@ -147,7 +142,6 @@
                         autocorrect="off"
                         autocapitalize="off"
                         autocomplete="postal-code"
-                        autofocus
                         required
                       >
                     </label>
@@ -163,7 +157,6 @@
                         autocorrect="off"
                         autocapitalize="off"
                         autocomplete="address-level2"
-                        autofocus
                         required
                       >
                     </label>
@@ -271,10 +264,6 @@
               {% else %}
                 <div class="form-message form-message--success title-wrapper">
                   <h3 class="title-wrapper__title title-bg">Danke für deine Teilnahme!</h3>
-
-                  <a class="button" href="{{ routes.root_url }}">
-                    {{ 'contact.form.back_to_home' | t }}
-                  </a>
                 </div>
               {% endunless %}
             </div>
@@ -310,6 +299,12 @@
       "id": "post_success_message",
       "label": "Post success message",
       "default": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück."
+    },
+    {
+      "type": "text",
+      "id": "post_success_anchor",
+      "label": "Post success anchor",
+      "info": "Input an ID of an element, the window will scroll to the element when the form is submitted successfully"
     },
     {
       "type": "header",
