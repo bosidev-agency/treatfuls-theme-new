@@ -15,10 +15,9 @@
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
-          "disabled": true,
           "settings": {
             "text": "👉 Jetzt probieren",
-            "url": "shopify://collections/valentinstag",
+            "url": "shopify://products/singles-box-1-ohne-weisse-haselnuss",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -27,6 +26,7 @@
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "Alnatura Storefinder 👉🏽",
             "url": "https://treatfuls.com/pages/storefinder",
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroelement_wellnestxalnatura_desktop.webp",
+        "desktop_image": "shopify://shop_images/Hero_Section_Desktop_Masse_verschommen.png",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroelement_wellnestxalnatura_mobil.webp",
+        "mobile_image": "shopify://shop_images/Brownie_Hero_2_kleiner.png",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -53,8 +53,8 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Von Snack zu Spa.",
-        "text": "<p>Kauf 2 treatfuls Riegel bei Alnatura, poste eine Instagram Story & gewinne Wellness bei Wellnest.</p>",
+        "title": "Schmeckt wie eine Sünde. Ist aber keine.",
+        "text": "<p>Lust auf mehr?<br/>Finde deine Favoriten mit unserer Probierbox.</p>",
         "background_color": "#b46493",
         "accent_color": "#c081a9",
         "hover_color": "#8a7194",
@@ -190,7 +190,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#859972",
+        "background_color": "#744f37",
         "accent_color": "#2ac2bd",
         "hover_color": "#ceb0d1"
       }
@@ -300,6 +300,88 @@
         "hover_color": "#f3587f"
       }
     },
+    "advantages_A3WHfq": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_UHNiwP": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_LBUxXM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Rewe_Logo_Icon_5c27618d-1517-45aa-aadf-7c996856063c.png",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_GzxyFp": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Alnatura_Logo_Icon_254ebcf1-4bf2-485e-869c-3223422a06e3.png",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_9Bhhwk": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Budni_Logo_Icon_1eb4e2cf-6432-45c8-8bef-3c307a4b9a5d.png",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_Qm4qgK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Billa_Logo_Icon_2.png",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_Dchcmm": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Spar_Logo_Icon_37d31e4a-ae75-4904-96c5-e31d592945f0.png",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_eiRqga": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_dUr6WG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_UHNiwP",
+        "advantage_item_LBUxXM",
+        "advantage_item_GzxyFp",
+        "advantage_item_9Bhhwk",
+        "advantage_item_Qm4qgK",
+        "advantage_item_Dchcmm",
+        "advantage_item_eiRqga",
+        "advantage_item_dUr6WG"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "richtext_QaqNnf": {
       "type": "richtext",
       "settings": {
@@ -321,6 +403,7 @@
     "home-products",
     "home-ticker",
     "advantages_C7eDVR",
+    "advantages_A3WHfq",
     "richtext_QaqNnf"
   ]
 }

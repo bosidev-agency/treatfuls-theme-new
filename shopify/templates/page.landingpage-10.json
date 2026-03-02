@@ -858,7 +858,7 @@
           "settings": {
             "image": "shopify://shop_images/Noan_mit_treatfuls.png",
             "image_position": "left",
-            "title": "Kids and Mom friendly",
+            "title": "Kids & family friendly",
             "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
             "button_text": "Show me the filling",
             "button_url": "shopify://products/summer-crush-kopie"
@@ -983,6 +983,88 @@
         "hover_color": "#f3587f"
       }
     },
+    "advantages_9YyT3C": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_rFRbU3": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_Ch4ekF": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Rewe_Logo_Icon_5c27618d-1517-45aa-aadf-7c996856063c.png",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_DmmXB8": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Alnatura_Logo_Icon_254ebcf1-4bf2-485e-869c-3223422a06e3.png",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_Wj3EAW": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Budni_Logo_Icon_1eb4e2cf-6432-45c8-8bef-3c307a4b9a5d.png",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_wmEGp4": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Billa_Logo_Icon_2.png",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_axVm7j": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Spar_Logo_Icon_37d31e4a-ae75-4904-96c5-e31d592945f0.png",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_9AKQ9h": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_tUYWEF": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_rFRbU3",
+        "advantage_item_Ch4ekF",
+        "advantage_item_DmmXB8",
+        "advantage_item_Wj3EAW",
+        "advantage_item_wmEGp4",
+        "advantage_item_axVm7j",
+        "advantage_item_9AKQ9h",
+        "advantage_item_tUYWEF"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "compare_product_reviews_4JnjWz": {
       "type": "compare-product-reviews",
       "name": "Product reviews",
@@ -1004,6 +1086,7 @@
     "image_with_text_NHKmKF",
     "main_product_ingredients_6KHBRk",
     "advantages_BcfMf9",
+    "advantages_9YyT3C",
     "compare_product_reviews_4JnjWz"
   ]
 }
