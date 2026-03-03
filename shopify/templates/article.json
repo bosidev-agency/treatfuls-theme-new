@@ -12,7 +12,7 @@
     "main": {
       "type": "recipes-template",
       "settings": {
-        "background_color": "#ceb69d",
+        "background_color": "#c081a9",
         "accent_color": "#e56a89",
         "hover_color": "#2ac2bd"
       }
@@ -163,9 +163,9 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#744f37",
-        "accent_color": "#ceb69d",
-        "hover_color": "#e56a89",
+        "background_color": "#e35478",
+        "accent_color": "#c081a9",
+        "hover_color": "#e35478",
         "padding_top": 80,
         "padding_bottom": 40
       }

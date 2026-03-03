@@ -52,7 +52,7 @@
         "item_3MbPyG": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/3_40ff6ee5-8a0f-47ce-9f35-a5e41618b9da.png",
+            "image": "shopify://shop_images/Icons_Riegel_DM.png",
             "heading": "treatfuls Kaufen",
             "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
           }
@@ -60,7 +60,7 @@
         "item_NhyCtd": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/1_71658b80-feb0-4960-94b3-88bc807066af.png",
+            "image": "shopify://shop_images/Kassenbon_treatfuls_dm.png",
             "heading": "Kassenbon hochladen",
             "content": "<p>Einfach deinen Kassenbon hochladen und darauf achten, dass die unten aufgeführten Angaben gut sichtbar und deutlich lesbar sind. So steht deiner Teilnahme nichts im Weg!</p>"
           }
@@ -68,7 +68,7 @@
         "item_KYnJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/2_2b44b778-a667-4bb6-b09b-2de04dc2c6ed.png",
+            "image": "shopify://shop_images/DOLLY_LR_DM.png",
             "heading": "Lastenrad von Dolly gewinnen",
             "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 <br/>On top: Die <strong>ersten 100 Teilnehmer:innen</strong> gewinnen eine Goodiebag mit tollen Brands wie <strong>Jean & Len</strong> .... – schnell sein lohnt sich!</p>"
           }
@@ -105,7 +105,7 @@
       "name": "Rich text",
       "settings": {
         "full_width": false,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -117,7 +117,8 @@
       "settings": {
         "title": "",
         "subtitle": "",
-        "post_success_message": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück.",
+        "post_success_title": "Danke für deine Teilnahme!",
+        "post_success_content": "<p>Das Gewinnsiel ist dlkndljdcanckjdsbc<br/>jdbfbhfvfbv<br/>dkjbkdbhkvbfh<br/>kkhbvcfm vmf vmf mv fmvbfmvjf</p>",
         "post_success_anchor": "",
         "button_text": "Jetzt teilnehmen",
         "button_position": "center",
@@ -125,7 +126,7 @@
         "klaviyo_list_id": "",
         "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <strong>treatfuls GmbH</strong>,<br/> Birkenstraße 23,<br/> 40233 Düsseldorf, Deutschland<br/> (nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04. bis einschließlich 07.05.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum<br/></strong>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026</strong> (23:59 Uhr).</p><p>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt.</p><p><strong>5. Gewinn<br/></strong>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln</strong></li><li><strong>Die ersten 100 gültigen Teilnehmer:innen erhalten jeweils eine Goodiebag mit Produkten folgender Marken: XY, XY, XY. Die Ermittlung erfolgt nach dem zeitlichen Eingang der vollständigen und gültigen Teilnahme. Maßgeblich ist der Zeitpunkt des Uploads.</strong></li></ul><p><strong><br/><br/></strong></p><p>📌 <strong>Menge der enthaltenen treatfuls Produkte:<br/></strong> 👉 <em>[noch festzulegen: z. B. XX Riegel oder X Trays]</em></p><p>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</p><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per <strong>Zufallsprinzip (Losverfahren)</strong> unter allen gültigen Teilnahmen.</p><p>Der Gewinner wird per <strong>E-Mail</strong> an die im Teilnahmeformular angegebene Adresse benachrichtigt.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation erfolgt durch treatfuls.</p><p><strong>8. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen.</p><p>Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Für Sach- und/oder Rechtsmängel am Gewinn haftet treatfuls nicht.</p><p><strong>9. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>10. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland. <br/>Der Rechtsweg ist ausgeschlossen.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>",
         "privacy_policy": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#f3587f"
       }
@@ -190,6 +191,7 @@
         },
         "richtext_item_Uyx37f": {
           "type": "richtext_item",
+          "disabled": true,
           "settings": {
             "heading": "SEO RELEVANT",
             "content": "<p>GEWINNEN GEWINNEN</p>"
@@ -197,6 +199,7 @@
         },
         "richtext_item_x8GajN": {
           "type": "richtext_item",
+          "disabled": true,
           "settings": {
             "heading": "SEO RELEVANT",
             "content": "<p>GEWINNEN GEWINNEN</p>"
@@ -215,6 +218,58 @@
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "image_with_text_3pLCA9": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_9HGmMP": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/about-us-img-3x.jpg",
+            "image_position": "left",
+            "title": "Warum treatfuls mehr ist als nur ein Snack.",
+            "content": "<p>Bild mit den grünen PULLIS</p>",
+            "button_text": "zur Black Box",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        },
+        "image_with_text_TmNGJN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
+            "image_position": "right",
+            "title": "",
+            "content": "",
+            "button_text": "Zur X-Mas Box",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        },
+        "image_with_text_T7HbWQ": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image_position": "left",
+            "title": "Green. Calm. Power.",
+            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_9HGmMP",
+        "image_with_text_TmNGJN",
+        "image_with_text_T7HbWQ"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "depr_rich_text_ArQRbJ": {
@@ -280,13 +335,6 @@
     "depr_rich_text_cewfrk": {
       "type": "depr-rich-text",
       "blocks": {
-        "richtext_item_jb4Vcr": {
-          "type": "richtext_item",
-          "settings": {
-            "heading": "Keine DM Filliale in deiner Nähe? Kein Problem, dann bestell dir jetzt die Probierbox von treatfuls",
-            "content": ""
-          }
-        },
         "richtext_item_zxhVxm": {
           "type": "richtext_item",
           "disabled": true,
@@ -305,10 +353,10 @@
         }
       },
       "block_order": [
-        "richtext_item_jb4Vcr",
         "richtext_item_zxhVxm",
         "richtext_item_MFQNn3"
       ],
+      "disabled": true,
       "name": "SEO Texts",
       "settings": {
         "full_width": false,
@@ -316,6 +364,159 @@
         "background_color": "#b46493",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "custom_section_rh67Ww": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_DN4PxT": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Unsere Bestseller",
+            "subtitle_text": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_GqyFQB": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_aJy6Ap": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_qQiKQa": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_TbJYja": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_TbJYja"
+                  ]
+                },
+                "slide_fTpLgL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_JMipRL": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "summer-crush-kopie",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_JMipRL"
+                  ]
+                },
+                "slide_WQKmQ6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_i68iBa": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_i68iBa"
+                  ]
+                },
+                "slide_9phhyi": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_FWChJc": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_FWChJc"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_qQiKQa",
+                "slide_fTpLgL",
+                "slide_WQKmQ6",
+                "slide_9phhyi"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_aJy6Ap"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_DN4PxT",
+        "group_GqyFQB"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#b46493",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "custom_section_CVPBjc": {
@@ -450,9 +651,10 @@
       "block_order": [
         "group_KLYjdW"
       ],
+      "disabled": true,
       "name": "Product list",
       "settings": {
-        "background_color": "#c081a9",
+        "background_color": "#b46493",
         "accent_color": "#e56a89",
         "hover_color": "",
         "padding_top": 80,
@@ -547,9 +749,11 @@
     "raffle_form_r9bdiB",
     "featured_product_BhT6E9",
     "depr_rich_text_hATR9f",
+    "image_with_text_3pLCA9",
     "depr_rich_text_ArQRbJ",
     "17721214725c4094b2",
     "depr_rich_text_cewfrk",
+    "custom_section_rh67Ww",
     "custom_section_CVPBjc",
     "advantages_Lw4Ht3"
   ]
