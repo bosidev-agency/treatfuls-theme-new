@@ -20,35 +20,28 @@
   <div class="content-wrapper">
     <div class="container container--lg">
       <raffle-form
-          data-klaviyo-company-id="RsF7av"
-          data-klaviyo-list-id="R3wPrx"
-          {% if section.settings.post_success_anchor != blank %}
-            data-post-success-anchor="{{ section.settings.post_success_anchor }}"
-          {% endif %}
-        >
+        data-klaviyo-company-id="RsF7av"
+        data-klaviyo-list-id="R3wPrx"
+        {% if section.settings.post_success_anchor != blank %}
+          data-post-success-anchor="{{ section.settings.post_success_anchor }}"
+        {% endif %}
+      >
         {% form 'contact' %}
           <input type="hidden" id="Thema" name="contact[Thema]" value="Gewinnspiel DM teilgenommen">
-          <div class="title-wrapper">
-            {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
-              {%- if section.settings.title and form.posted_successfully? == false -%}
-                <h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
-              {%- endif -%}
-
-              {% if form.posted_successfully? %}
-                <div class="form-message form-message--success">
-                  <h3 class="form-message__title title-bg title-bg--sm">{{ section.settings.post_success_message }}</h3>
-                </div>
-              {% else %}
-                {%- if section.settings.subtitle -%}
-                  <div class="title-wrapper__subtitle rte">{{ section.settings.subtitle }}</div>
-                {%- endif -%}
-              {% endif %}
-            {%- endif -%}
-          </div>
-
-          <div class="contact-form__wrapper">
-            <div class="contact-form__form">
-              {% unless form.posted_successfully? %}
+          {% if form.posted_successfully? %}
+            <div class="title-wrapper">
+              <div class="form-message form-message--success">
+                {% if section.settings.post_success_title != blank %}
+                  <h2 class="form-message__title title-bg">{{ section.settings.post_success_title }}</h2>
+                {% endif %}
+                {% if section.settings.post_success_content != blank %}
+                  <div class="form-message__title">{{ section.settings.post_success_content }}</div>
+                {% endif %}
+              </div>
+            </div>
+          {% else %}
+            <div class="contact-form__wrapper">
+              <div class="contact-form__form">
                 <div id="ContactForm" class="form-vertical">
                   {%- if form.errors -%}
                     <div class="form-message form-message--error">
@@ -176,27 +169,25 @@
 
                     <!-- Uploadcare File Upload -->
                     <div class="field__upload">
-                      
-                        <span class="text input__label"> Kassenbon * </span>
-                        <input type="hidden" name="contact[Kassenbon]" id="Kassenbon">
+                      <span class="text input__label"> Kassenbon * </span>
+                      <input type="hidden" name="contact[Kassenbon]" id="Kassenbon">
 
-                        <uc-config
-                          ctx-name="my-uploader"
-                          use-cloud-image-editor="false"
-                          source-list="local, camera"
-                          cdn-cname="https://1ad53bygda.ucarecd.net/"
-                          pubkey="3c825a77bb5652bdf2e1"
-                          locale-name="de"
-                          multiple="false"
-                        ></uc-config>
+                      <uc-config
+                        ctx-name="my-uploader"
+                        use-cloud-image-editor="false"
+                        source-list="local, camera"
+                        cdn-cname="https://1ad53bygda.ucarecd.net/"
+                        pubkey="3c825a77bb5652bdf2e1"
+                        locale-name="de"
+                        multiple="false"
+                      ></uc-config>
 
-                        <uc-file-uploader-minimal
-                          ctx-name="my-uploader"
-                          class="uc-light"
-                        ></uc-file-uploader-minimal>
+                      <uc-file-uploader-minimal
+                        ctx-name="my-uploader"
+                        class="uc-light"
+                      ></uc-file-uploader-minimal>
 
-                        <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
-                      
+                      <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
 
                       <div class="contact-form__upload-error hidden">
                         <p>Bitte laden Sie einen Kassenbon hoch.</p>
@@ -250,7 +241,7 @@
                       </button>
 
                       <div class="popover__content-inner">
-                          {{ section.settings.privacy_policy }}
+                        {{ section.settings.privacy_policy }}
                       </div>
                     </div>
                   </modal-popover>
@@ -261,13 +252,9 @@
                     {{ section.settings.button_text }}
                   </button>
                 </div>
-              {% else %}
-                <div class="form-message form-message--success title-wrapper">
-                  <h3 class="title-wrapper__title title-bg">Danke für deine Teilnahme!</h3>
-                </div>
-              {% endunless %}
+              </div>
             </div>
-          </div>
+          {% endif %}
         {% endform %}
       </raffle-form>
     </div>
@@ -295,10 +282,16 @@
       "default": "<p>We're here to help you</p>"
     },
     {
-      "type": "textarea",
-      "id": "post_success_message",
-      "label": "Post success message",
-      "default": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück."
+      "type": "text",
+      "id": "post_success_title",
+      "label": "Post success title",
+      "default": "Danke für deine Teilnahme!"
+    },
+    {
+      "type": "richtext",
+      "id": "post_success_content",
+      "label": "Post success content",
+      "default": "<p>Du bist jetzt im Lostopf!</p>"
     },
     {
       "type": "text",
