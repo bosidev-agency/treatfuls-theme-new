@@ -133,7 +133,7 @@ class MiniCart extends HTMLElement {
   }
 
   updateMiniCartSection(event) {
-    const data = event.detail ? event.detail : event;
+    const data = event.detail.data ? event.detail.data : event;
     const tempDiv = document.createElement("div");
     const tempCarCount = document.createElement("div");
 
@@ -152,8 +152,17 @@ class MiniCart extends HTMLElement {
     // Re-attach the close button listener after content update
     this.attachCloseButtonListener();
 
+    console.log(event.detail);
+
+    if (event.detail && event.detail.cartNotification) {
+      document.documentElement.dispatchEvent(new CustomEvent("show:notification", {
+        bubbles: true,
+      }));
+      return;
+    }
     if (!this.container.classList.contains("minicart__container--open")) {
       this.openCart();
+      return;
     }
   }
 

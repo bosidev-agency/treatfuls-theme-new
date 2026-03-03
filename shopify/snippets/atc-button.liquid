@@ -1,4 +1,4 @@
-<atc-button class="product_content-buttons">
+<atc-button class="product_content-buttons" {% if cart_notification %}data-cart-notification="{{ cart_notification }}"{% endif %}>
   {%- form 'product',
     product,
     class: '',

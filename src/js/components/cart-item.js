@@ -89,7 +89,10 @@ class CartItem extends HTMLElement {
       .then((data) => {
         document.dispatchEvent(
           new CustomEvent("cart:change", {
-            detail: data,
+            detail: {
+              data,
+              cartNotification: false,
+            },
             bubbles: true,
           })
         );

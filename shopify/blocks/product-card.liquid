@@ -102,7 +102,7 @@
         </div>
         <div class="product-card__ctas">
           {% if card_product != blank %}
-            {% render 'atc-button', product: card_product %}
+            {% render 'atc-button', product: card_product, cart_notification: block.settings.show_cart_notification %}
           {% endif %}
           {% if card_product != blank and block.settings.show_view_product %}
             <a href="{{ card_product.url }}" class="button product-form__button">{{ 'products.product.view_product' | t }}</a>
@@ -186,6 +186,12 @@
       "id": "show_view_product",
       "label": "Show View Product",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cart_notification",
+      "label": "Show Cart Notification",
+      "default": false
     },
     {
       "type": "color",

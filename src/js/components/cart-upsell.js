@@ -61,7 +61,10 @@ class CartUpsell extends HTMLElement {
       .then((response) => response.json())
       .then((data) => {
         document.dispatchEvent(new CustomEvent("cart:change", {
-          detail: data,
+          detail: {
+            data,
+            cartNotification: false,
+          },
           bubbles: true,
         }));
       })

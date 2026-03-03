@@ -1,6 +1,6 @@
 import serialize from "form-serialize";
 
-export function addToCartSubmit(event) {
+export function addToCartSubmit(event, cartNotification = false) {
   event.preventDefault();
 
   const form = event.target;
@@ -28,7 +28,10 @@ export function addToCartSubmit(event) {
     .then((data) => {
       document.dispatchEvent(
         new CustomEvent("cart:change", {
-          detail: data,
+          detail: {
+            data,
+            cartNotification,
+          },
           bubbles: true,
         })
       );

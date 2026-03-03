@@ -7,6 +7,10 @@ class AtcButton extends HTMLElement {
     this.init();
   }
 
+  get cartNotification() {
+    return this.getAttribute("data-cart-notification");
+  }
+
   init() {
     this.addListeners()
   }
@@ -14,7 +18,7 @@ class AtcButton extends HTMLElement {
   addListeners() {
     this.form.addEventListener('submit', (event) => {
       event.preventDefault();
-      addToCartSubmit(event);
+      addToCartSubmit(event, this.cartNotification);
     })
   }
 }

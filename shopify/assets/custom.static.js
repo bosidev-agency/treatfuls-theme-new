@@ -402,7 +402,10 @@ class BundleBuilder extends HTMLElement {
       .then((data) => {
         document.dispatchEvent(
           new CustomEvent("cart:change", {
-            detail: data,
+            detail: {
+              data,
+              cartNotification: false,
+            },
             bubbles: true,
           }),
         );
@@ -542,3 +545,31 @@ class QuantitySelector extends HTMLElement {
 }
 
 customElements.define("quantity-selector", QuantitySelector);
+
+
+class CartNotification extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.closeButton = this.querySelector(".cart-notification__close");
+    if (this.closeButton) {
+      this.closeButton.addEventListener("click", this.closeNotification.bind(this));
+    }
+    document.addEventListener("show:notification", this.showNotification.bind(this));
+  }
+
+  showNotification() {
+    this.classList.add("cart-notification--shown");
+    setTimeout(() => {
+      this.closeNotification();
+    }, 3000);
+  }
+
+  closeNotification() {
+    this.classList.remove("cart-notification--shown");
+  }
+}
+
+customElements.define("cart-notification", CartNotification);
