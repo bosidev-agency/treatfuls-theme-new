@@ -65,7 +65,7 @@ class BundleBuilder extends HTMLElement {
     this.submitForm = this.querySelector("form[action='/cart/add']");
     this.submitButton = this.querySelector("button[type='submit']");
     this.summaryItems = this.querySelector(".bundle-builder__summary-items");
-    this.addButtons = this.querySelectorAll(".bundle-builder__product");
+    this.addButtons = this.querySelectorAll(".bundle-builder__product-header");
     this.productPools = Array.from(
       this.querySelectorAll(".bundle-builder__product-pool"),
     );
@@ -147,7 +147,7 @@ class BundleBuilder extends HTMLElement {
   }
 
   handleAddButtonClick(event) {
-    const productEl = event.currentTarget;
+    const productEl = event.currentTarget.closest(".bundle-builder__product");
     const template = productEl.querySelector("template");
     if (!template) return;
     const itemContent = template.content.cloneNode(true);
@@ -168,15 +168,53 @@ class BundleBuilder extends HTMLElement {
         const current = parseInt(quantityInput.value, 10) || 1;
         const max = parseInt(quantityInput.getAttribute("max"), 10) || 99;
         quantityInput.value = Math.min(current + 1, max);
+        this.syncQuantitySelectors(variantId, quantityInput.value, quantityInput);
       }
     } else {
       this.summaryItems.appendChild(itemContent);
+      const productQtySelector = productEl.querySelector(":scope > quantity-selector");
+      if (productQtySelector) productQtySelector.classList.remove("hidden");
+      const addBtn = productEl.querySelector(".cart-upsell__button");
+      if (addBtn) addBtn.classList.add("hidden");
     }
 
     this.updateBundleBuilder();
   }
 
+  syncQuantitySelectors(variantId, newValue, sourceElement) {
+    const productCard = this.querySelector(
+      `.bundle-builder__product[data-variant-id="${variantId}"]`,
+    );
+    const summaryItem = this.summaryItems.querySelector(
+      `.bundle-builder__item[data-variant-id="${variantId}"]`,
+    );
+
+    if (productCard) {
+      const input = productCard.querySelector(
+        ':scope > quantity-selector input[name="quantity"]',
+      );
+      if (input && input !== sourceElement) input.value = newValue;
+    }
+    if (summaryItem) {
+      const input = summaryItem.querySelector('input[name="quantity"]');
+      if (input && input !== sourceElement) input.value = newValue;
+    }
+  }
+
   updateBundleBuilder(event) {
+    const threshold = parseInt(this.itemBar.dataset.threshold, 10) || 0;
+
+    if (event?.detail?.element) {
+      const qtySelector = event.detail.element;
+      const sourceInput = qtySelector.querySelector('input[name="quantity"]');
+      const productEl = qtySelector.closest(".bundle-builder__product");
+      const itemEl = qtySelector.closest(".bundle-builder__item");
+      const variantId = productEl?.dataset.variantId || itemEl?.dataset.variantId;
+      if (variantId && sourceInput) {
+        this.syncQuantitySelectors(variantId, sourceInput.value, sourceInput);
+      }
+    }
+
     this.combinedQuantity = Array.from(
       this.summaryItems.querySelectorAll(".bundle-builder__item"),
     ).reduce(
@@ -186,6 +224,39 @@ class BundleBuilder extends HTMLElement {
         1,
       0,
     );
+
+    if (this.combinedQuantity > threshold && event?.detail?.element) {
+      const changedInput = event.detail.element.querySelector(
+        'input[name*="quantity"]',
+      );
+      if (changedInput) {
+        const overshoot = this.combinedQuantity - threshold;
+        const currentVal = parseInt(changedInput.value, 10) || 1;
+        const min = parseInt(changedInput.getAttribute("min"), 10) || 1;
+        changedInput.value = Math.max(currentVal - overshoot, min);
+
+        const qtySelector = event.detail.element;
+        const productEl = qtySelector.closest(".bundle-builder__product");
+        const itemEl = qtySelector.closest(".bundle-builder__item");
+        const variantId = productEl?.dataset.variantId || itemEl?.dataset.variantId;
+        if (variantId) {
+          this.syncQuantitySelectors(variantId, changedInput.value, changedInput);
+        }
+
+        this.combinedQuantity = Array.from(
+          this.summaryItems.querySelectorAll(".bundle-builder__item"),
+        ).reduce(
+          (acc, item) =>
+            acc +
+              parseInt(
+                item.querySelector('input[name*="quantity"]')?.value,
+                10,
+              ) || 1,
+          0,
+        );
+      }
+    }
+
     const incrementButtons = this.querySelectorAll(
       ".quantity-element__button[data-quantity='increment']",
     );
@@ -236,9 +307,31 @@ class BundleBuilder extends HTMLElement {
       });
     }
     if (event?.detail?.remove) {
-      console.log(event.detail.element);
       const itemEl = event.detail.element.closest(".bundle-builder__item");
-      itemEl.remove();
+      const productEl = event.detail.element.closest(".bundle-builder__product");
+      const variantId = itemEl?.dataset.variantId || productEl?.dataset.variantId;
+
+      if (variantId) {
+        const productCard = this.querySelector(
+          `.bundle-builder__product[data-variant-id="${variantId}"]`,
+        );
+        if (productCard) {
+          const productQtySelector = productCard.querySelector(":scope > quantity-selector");
+          if (productQtySelector) {
+            productQtySelector.classList.add("hidden");
+            const input = productQtySelector.querySelector('input[name="quantity"]');
+            if (input) input.value = 1;
+          }
+          const addBtn = productCard.querySelector(".cart-upsell__button");
+          if (addBtn) addBtn.classList.remove("hidden");
+        }
+
+        const summaryItem = this.summaryItems.querySelector(
+          `.bundle-builder__item[data-variant-id="${variantId}"]`,
+        );
+        if (summaryItem) summaryItem.remove();
+      }
+
       this.updateBundleBuilder();
     }
   }
@@ -335,6 +428,16 @@ class BundleBuilder extends HTMLElement {
 
   handleEmptyCartButtonClick(event) {
     this.summaryItems.innerHTML = "";
+    this.querySelectorAll(".bundle-builder__product").forEach((product) => {
+      const qs = product.querySelector(":scope > quantity-selector");
+      if (qs) {
+        qs.classList.add("hidden");
+        const input = qs.querySelector('input[name="quantity"]');
+        if (input) input.value = 1;
+      }
+      const addBtn = product.querySelector(".cart-upsell__button");
+      if (addBtn) addBtn.classList.remove("hidden");
+    });
     this.itemBar.dataset.threshold = this.lastSelectedSize;
     this.updateBundleBuilder();
   }
@@ -352,6 +455,9 @@ class QuantitySelector extends HTMLElement {
     this.incrementButton = this.querySelector('[data-quantity="increment"]');
     this.decrementButton = this.querySelector('[data-quantity="decrement"]');
 
+    this.quantityInput.addEventListener("input", this.handleQuantityInputChange.bind(this));
+    this.quantityInput.addEventListener("change", this.handleQuantityInputChange.bind(this));
+
     this.incrementButton.addEventListener(
       "click",
       this.handleIncrementButtonClick.bind(this),
@@ -363,6 +469,42 @@ class QuantitySelector extends HTMLElement {
   }
 
   disconnectedCallback() {}
+
+  handleQuantityInputChange(event) {
+    const raw = parseInt(this.quantityInput.value, 10);
+    if (isNaN(raw)) return;
+
+    const max = parseInt(this.quantityInput.getAttribute("max"), 10) || 99;
+
+    if (raw <= 0) {
+      this.quantityInput.value = 0;
+      document.dispatchEvent(
+        new CustomEvent("quantity:changed", {
+          detail: {
+            element: this,
+            quantity: 0,
+            action: "change",
+            remove: true,
+          },
+          bubbles: true,
+        }),
+      );
+      return;
+    }
+
+    this.quantityInput.value = Math.min(raw, max);
+
+    document.dispatchEvent(
+      new CustomEvent("quantity:changed", {
+        detail: {
+          element: this,
+          quantity: this.quantityInput.value,
+          action: "change",
+        },
+        bubbles: true,
+      }),
+    );
+  }
 
   handleIncrementButtonClick(event) {
     const quantity = parseInt(this.quantityInput.value, 10) || 1;

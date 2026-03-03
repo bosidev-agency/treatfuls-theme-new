@@ -57,7 +57,6 @@
               <div class="bundle-builder__step-header">
                 <h3 class="h3">Step 2: Sorten wählen</h3>
                 <div class="bundle-builder__filters">
-                  <span class="h3 filter-title">Filter:</span>
                   <div class="filter-pills">
                     {% for product_pool in bundle_config.product_pools.value %}
                       <div class="filter-pill">
@@ -77,15 +76,57 @@
                         {% unless variant.available %}
                           {% continue %}
                         {% endunless %}
-                        <div class="bundle-builder__product">
-                          <div class="aspect-ratio aspect-ratio--square">
-                            {{ variant.product.featured_image | image_url: width: 400 | image_tag: widths: '200,400', sizes: '(max-width: 768px) 400px, 200px' }}
+                        <div class="bundle-builder__product" data-variant-id="{{ variant.id }}">
+                          <div class="bundle-builder__product-header">
+                            <div class="aspect-ratio aspect-ratio--square">
+                              {{ variant.product.featured_image | image_url: width: 750 | image_tag: widths: '200,400,600,700', sizes: '(max-width: 768px) 400px, 700px' }}
+                              <button class="cart-upsell__button button">+</button>
+                            </div>
+                            <div class="bundle-builder__product-content">
+                              <h4 class="h4">{{ variant.product.metafields.custom.short_title }}</h4>
+                              <span class="h4">{{ variant.price | money }}</span>
+                            </div>
                           </div>
-                          <button class="cart-upsell__button button">+</button>
+                          <quantity-selector class="product-form__quantity-wrapper hidden">
+                            <div
+                              class="quantity-element"
+                              data-quantity="wrapper"
+                            >
+                              <button
+                                type="button"
+                                class="quantity-element__button js-quantity-button"
+                                data-quantity="decrement"
+                              >
+                                {%- render 'icon-quantity-minus' -%}
+                              </button>
+
+                              <label class="quantity-element__label">
+                                <input
+                                  class="quantity-element__input"
+                                  type="number"
+                                  id="Quantity"
+                                  name="quantity"
+                                  value="1"
+                                  min="{{ variant.inventory_quantity_min }}"
+                                  max="{{ variant.inventory_quantity }}"
+                                  maxlength="2"
+                                  data-quantity="input"
+                                >
+                              </label>
+
+                              <button
+                                type="button"
+                                class="quantity-element__button js-quantity-button"
+                                data-quantity="increment"
+                              >
+                                {%- render 'icon-quantity-plus' -%}
+                              </button>
+                            </div>
+                          </quantity-selector>
                           <template>
                             <div class="bundle-builder__item" data-variant-id="{{ variant.id }}" data-price="{{ variant.price }}">
                               <div class="aspect-ratio aspect-ratio--square">
-                                {{ variant.product.featured_image | image_url: width: 240 | image_tag: widths: '120,240', sizes: '(max-width: 768px) 60px, 80px' }}
+                                {{ variant.product.featured_image | image_url: width: 400 | image_tag: widths: '120,240,400,600,700', sizes: '(max-width: 768px) 400px, 700px' }}
                               </div>
 
                               <quantity-selector class="product-form__quantity-wrapper">
@@ -112,8 +153,6 @@
                                       max="{{ variant.inventory_quantity }}"
                                       maxlength="2"
                                       data-quantity="input"
-                                      readonly
-                                      disabled
                                     >
                                   </label>
 

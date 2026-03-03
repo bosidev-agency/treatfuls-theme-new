@@ -40,6 +40,8 @@
 
 .product-form__quantity-wrapper {
   display: inline-block;
+  border-radius: 4px;
+  padding-inline: 10px;
 
   &.product-form__quantity-wrapper--hidden {
     pointer-events: none;

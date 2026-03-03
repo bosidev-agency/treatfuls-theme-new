@@ -188,12 +188,12 @@ svg.icon-triangular-line {
   }
 
   &.container--lg {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 
   @media #{$m-xxl} {
     &.container--lg {
-      max-width: 900px;
+      max-width: 1400px;
     }
 
     &.container--md {
@@ -230,7 +230,7 @@ svg.icon-triangular-line {
     }
 
     &.container--lg {
-      max-width: 70vw;
+      max-width: 1800px;
     }
   }
 

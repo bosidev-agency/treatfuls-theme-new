@@ -929,7 +929,8 @@ bundle-picker .image_side_wwrp {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 300px));
+  justify-content: center;
   gap: 40px;
 }
 
@@ -952,7 +953,7 @@ bundle-picker .image_side_wwrp {
   pointer-events: none;
 }
 
-.disabled {
+.disabled, [disabled] {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -1042,7 +1043,8 @@ uc-copyright {
 .bundle-builder__inner {
   color: rgb(var(--color-text));
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 80px;
   position: relative;
 }
 
@@ -1072,6 +1074,7 @@ uc-copyright {
 
 .bundle-builder__content {
   width: 75%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1085,12 +1088,27 @@ uc-copyright {
 
 .bundle-builder__product {
   position: relative;
-  cursor: pointer;
-  padding: 10px;
-  transition: all 0.1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  touch-action: manipulation;
 }
 
-.bundle-builder__product:hover {
+.bundle-builder__product-header {
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.bundle-builder__product .product-form__quantity-wrapper {
+  background-color: var(--section-accent-color);
+}
+
+.bundle-builder__item .product-form__quantity-wrapper {
+  background-color: var(--section-background-color);
+}
+
+.bundle-builder__product-header:hover {
   background-color: color-mix(in srgb, var(--section-background-color), white 10%);
   box-shadow: color-mix(in srgb, var(--section-background-color), black 10%) 4px 4px 6px 2px;
   border-radius: 8px;
@@ -1131,13 +1149,14 @@ uc-copyright {
 
   .bundle-builder__summary-items {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     overflow-x: auto;
     overflow-y: hidden;
   }
 
   .bundle-builder__item {
     flex-direction: column;
+    position: relative;
     gap: 10px !important;
   }
 
@@ -1146,14 +1165,44 @@ uc-copyright {
   }
 
   .bundle-builder__item .aspect-ratio {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .bundle-builder__item .product-form__quantity-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    background-color: transparent !important;
+    padding: 0;
+  }
+
+  .bundle-builder__item .quantity-element__input {
+    background-color: var(--section-background-color);
+    border-radius: 100%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    min-height: auto;
+  }
+
+  .bundle-builder__item .product-form__quantity-wrapper button {
+    display: none;
   }
 
   .bundle-builder__step-header {
     flex-direction: column;
     align-items: flex-start !important;
     gap: 10px;
+  }
+
+  .bundle-builder__summary {
+    padding: 10px 20px !important;
+  }
+
+  .bundle-builder__summary .button {
+    margin-top: 10px !important;
   }
 }
 
@@ -1233,10 +1282,6 @@ uc-copyright {
 
 .filter-pill input {
   display: none;
-}
-
-.filter-title {
-  margin-right: 20px;
 }
 
 .filter-pills {
