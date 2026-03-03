@@ -118,6 +118,7 @@
         "title": "",
         "subtitle": "",
         "post_success_message": "Danke für deine Anfrage, wir prüfen deine Angaben und melden uns innerhalb der nächsten Tage bei dir zurück.",
+        "post_success_anchor": "",
         "button_text": "Jetzt teilnehmen",
         "button_position": "center",
         "klaviyo_company_id": "",
@@ -127,6 +128,54 @@
         "background_color": "#859972",
         "accent_color": "#f3587f",
         "hover_color": "#f3587f"
+      }
+    },
+    "featured_product_BhT6E9": {
+      "type": "featured-product",
+      "blocks": {
+        "description_3F44i8": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_Y74MwP": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_9iiY6w": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_MhPzB7": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_3F44i8",
+        "countdown_Y74MwP",
+        "price_9iiY6w",
+        "buy_button_MhPzB7"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten probieren",
+        "mobile_heading": "The Black Box of Love",
+        "sticky_button": false,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#859972",
+        "accent_color": "#de85a1",
+        "hover_color": "#e56a89"
       }
     },
     "depr_rich_text_hATR9f": {
@@ -200,6 +249,7 @@
         "richtext_item_mkqefi",
         "richtext_item_BxRfqz"
       ],
+      "disabled": true,
       "name": "SEO Texts",
       "settings": {
         "full_width": false,
@@ -220,6 +270,7 @@
       "block_order": [
         "s_store_locator_storeify_storelocator_JBQmwz"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#b46493",
         "accent_color": "#2ac2bd",
@@ -267,53 +318,6 @@
         "hover_color": "#f3587f"
       }
     },
-    "featured_product_BhT6E9": {
-      "type": "featured-product",
-      "blocks": {
-        "description_3F44i8": {
-          "type": "description",
-          "settings": {}
-        },
-        "countdown_Y74MwP": {
-          "type": "countdown",
-          "settings": {
-            "heading": "",
-            "color": "",
-            "color_time": "",
-            "background_color": ""
-          }
-        },
-        "price_9iiY6w": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_button_MhPzB7": {
-          "type": "buy_button",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_price": false
-          }
-        }
-      },
-      "block_order": [
-        "description_3F44i8",
-        "countdown_Y74MwP",
-        "price_9iiY6w",
-        "buy_button_MhPzB7"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
-        "heading": "Alle Sorten probieren",
-        "mobile_heading": "The Black Box of Love",
-        "show_price": true,
-        "reviews_average_rating": "",
-        "reviews_quantity_text": "",
-        "background_color": "#859972",
-        "accent_color": "#de85a1",
-        "hover_color": "#e56a89"
-      }
-    },
     "custom_section_CVPBjc": {
       "type": "custom-section",
       "blocks": {
@@ -355,6 +359,7 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "matcha-riegel",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -375,6 +380,7 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "himbeer-riegel",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -395,6 +401,7 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "chai-latte-spill-the-tea",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -415,6 +422,7 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "brownie-riegel",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -537,11 +545,11 @@
     "multicolumn_MV4Bxn",
     "depr_rich_text_c4gF3r",
     "raffle_form_r9bdiB",
+    "featured_product_BhT6E9",
     "depr_rich_text_hATR9f",
     "depr_rich_text_ArQRbJ",
     "17721214725c4094b2",
     "depr_rich_text_cewfrk",
-    "featured_product_BhT6E9",
     "custom_section_CVPBjc",
     "advantages_Lw4Ht3"
   ]
