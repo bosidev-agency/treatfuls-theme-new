@@ -151,15 +151,103 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "valentinstags-all-year-box",
-        "heading": "Made to fall in love.",
-        "mobile_heading": "Made to fall in love.",
+        "product": "dm-x-treatfuls-goodiebag-fur-die-ersten-100",
+        "heading": "GOODIEBAG WINNER",
+        "mobile_heading": "GOODIEBAG WINNER",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#dbaaeb",
         "hover_color": "#e35478"
+      }
+    },
+    "advantages_rNtU4V": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_LM4KAR": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Jean&Len"
+          }
+        },
+        "advantage_item_aXwfGB": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Forest Gum"
+          }
+        },
+        "advantage_item_CmdkyU": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Super Pop"
+          }
+        },
+        "advantage_item_kk7XeC": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Lisas Chips"
+          }
+        },
+        "advantage_item_Aq9TVx": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Hej Organics"
+          }
+        },
+        "advantage_item_QByb3n": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "No Ritual Lab"
+          }
+        },
+        "advantage_item_34BJL9": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Just Spices"
+          }
+        },
+        "advantage_item_kHHUhn": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Her One"
+          }
+        },
+        "advantage_item_RPNMkp": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Maniko"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_LM4KAR",
+        "advantage_item_aXwfGB",
+        "advantage_item_CmdkyU",
+        "advantage_item_kk7XeC",
+        "advantage_item_Aq9TVx",
+        "advantage_item_QByb3n",
+        "advantage_item_34BJL9",
+        "advantage_item_kHHUhn",
+        "advantage_item_RPNMkp"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Unsere Partner auf einen Blick",
+        "subtitle": "",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "custom_section_9AEAFL": {
@@ -169,8 +257,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Welche Box ist deine Love Language?",
-            "subtitle_text": "",
+            "heading_text": "Du willst alle Sorten von treatfuls probieren?",
+            "subtitle_text": "Dann schau mal hier...",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -213,7 +301,8 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-black-box-black-box",
+                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -233,7 +322,8 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-white-box",
+                        "card_product": "summer-crush-kopie",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -253,7 +343,8 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-break-up-box",
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -273,7 +364,8 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "valentinstags-all-year-box",
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
+                        "show_view_product": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -304,9 +396,9 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#dbaaeb",
-        "accent_color": "",
-        "hover_color": "",
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#f3587f",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -954,6 +1046,7 @@
         "image_with_text_XgJXRN",
         "image_with_text_BjFpid"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "background_color": "#c081a9",
@@ -1059,64 +1152,60 @@
         "popup_text_color": ""
       }
     },
-    "advantages_BcfMf9": {
+    "advantages_xpRF9h": {
       "type": "advantages",
       "blocks": {
-        "advantage_item_8gBfw3": {
+        "advantage_item_dzk9AJ": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
-        "advantage_item_G8CBAM": {
+        "advantage_item_UE736p": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
-        "advantage_item_CARaAK": {
+        "advantage_item_gabNzp": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
-        "advantage_item_mqdQfY": {
+        "advantage_item_CjHyFJ": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
           }
         },
-        "advantage_item_qxe3cw": {
+        "advantage_item_eVDUU6": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-4-packaging.png",
             "text": "Recyclebare Verpackung"
           }
         },
-        "advantage_item_hy9grG": {
+        "advantage_item_hf6JNd": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-5-soy.png",
             "text": "Ohne Soja"
           }
         },
-        "advantage_item_XE7riB": {
+        "advantage_item_NHcyDT": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-6-gluten-free.png",
             "text": "Ohne Gluten"
           }
         },
-        "advantage_item_WEkgHC": {
+        "advantage_item_D4UFmc": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-7-sugar.png",
             "text": "Ohne raffinierten Zucker"
@@ -1124,20 +1213,20 @@
         }
       },
       "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
+        "advantage_item_dzk9AJ",
+        "advantage_item_UE736p",
+        "advantage_item_gabNzp",
+        "advantage_item_CjHyFJ",
+        "advantage_item_eVDUU6",
+        "advantage_item_hf6JNd",
+        "advantage_item_NHcyDT",
+        "advantage_item_D4UFmc"
       ],
       "settings": {
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#f3587f",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -1148,10 +1237,11 @@
     "hero_eNmaQw",
     "featured_collections_qWR4p8",
     "featured_product_GbQVWw",
+    "advantages_rNtU4V",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
     "image_gallery_f4ehGz",
-    "advantages_BcfMf9"
+    "advantages_xpRF9h"
   ]
 }

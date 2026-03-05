@@ -27,19 +27,19 @@
       "type": "hero",
       "name": "Hero banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-02.webp",
+        "desktop_image": "shopify://shop_images/HERO_DM_TEST.png",
         "desktop_image_height": "adapt",
         "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-01.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
-        "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "center",
+        "vertical_alignment_desktop": "top",
+        "horizontal_alignment_desktop": "right",
         "vertical_alignment_mobile": "middle",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 1200,
-        "title": "",
-        "text": "",
+        "title": "TEST HERO",
+        "text": "<p>OMG DOLLY LASTENRAD ICH WILL ES HABEN KWJDBNK<br/>kjdnddxkhbcd chkdbkcdkndkj<br/>khdbedkedbnked cd cjhdb ch dj cd jdshcbjd<br/>kwjchbewkhbedkb ckhdbckhdsbckhdbckhdkc</p>",
         "background_color": "#b46493",
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
@@ -68,7 +68,7 @@
         "item_KYnJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/DOLLY_LR_DM.png",
+            "image": "shopify://shop_images/treatfuls_Lastenrad.png",
             "heading": "Lastenrad von Dolly gewinnen",
             "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 <br/>On top: Die <strong>ersten 100 Teilnehmer:innen</strong> gewinnen eine Goodiebag mit tollen Brands wie <strong>Jean & Len</strong> .... – schnell sein lohnt sich!</p>"
           }
@@ -228,7 +228,7 @@
           "settings": {
             "image": "shopify://shop_images/about-us-img-3x.jpg",
             "image_position": "left",
-            "title": "Warum treatfuls mehr ist als nur ein Snack.",
+            "title": "PlatzhalterSHOOTING Bilder",
             "content": "<p>Bild mit den grünen PULLIS</p>",
             "button_text": "zur Black Box",
             "button_url": "shopify://products/valentinstags-black-box-black-box"
@@ -239,7 +239,7 @@
           "settings": {
             "image": "shopify://shop_images/LP_Visuals-06.webp",
             "image_position": "right",
-            "title": "",
+            "title": "PlatzhalterSHOOTING Bilder",
             "content": "",
             "button_text": "Zur X-Mas Box",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
@@ -247,12 +247,11 @@
         },
         "image_with_text_T7HbWQ": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
             "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "title": "PlatzhalterSHOOTING Bilder",
+            "content": "",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
