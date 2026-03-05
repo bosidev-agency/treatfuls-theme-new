@@ -1065,7 +1065,7 @@ uc-copyright {
   color: rgb(var(--color-text));
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 120px;
   position: relative;
 }
 
