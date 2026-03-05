@@ -132,8 +132,8 @@
                 and subitem != item
               %}
                 <div class="mini-cart__sub-item">
-                  <span>{{ subitem.quantity }}X</span>
                   {{ subitem.product.featured_image | image_url: width: 50 | image_tag }}
+                  <span class="number-icon">{{ subitem.quantity }}</span>
                 </div>
               {% endif %}
             {% endfor %}

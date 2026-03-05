@@ -16,7 +16,7 @@
           "type": "richtext_item",
           "settings": {
             "heading": "Das perfekte Snack bundle",
-            "content": "<p>Hier kannst du dein persönliches Bundle ganz einfach selbst zusammenstellen.</p><p> In Schritt  1 wählst du die Größe deiner Box aus.</p><p> In Schritt 2 entscheidest du dich für die gewünschte Kartonage.</p><p> In Schritt 3 stellst du deine Box  zusammen. </p><p>Bitte beachte, dass jede Sorte, die du auswählst, jeweils 2-mal in deine Box gelegt wird.</p>"
+            "content": "<p>Hier kannst du dein persönliches Bundle ganz einfach selbst zusammenstellen.</p><ol><li>[1] Du wählst du die Größe deiner Box aus.</li><li>[2] Du  entscheidest du dich für die gewünschte Kartonage.</li><li>[3] Du stellst du deine Box  zusammen. </li></ol><p>Bitte beachte, dass jede Sorte, die du auswählst, jeweils 2-mal in deine Box gelegt wird.</p>"
           }
         }
       },
@@ -26,7 +26,8 @@
       "name": "Rich text",
       "settings": {
         "full_width": false,
-        "text_alignment": "center",
+        "section_width": "container--md",
+        "text_alignment": "left",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -94,6 +95,7 @@
                       "settings": {
                         "card_product": "love-pink-box-kartonage",
                         "show_view_product": false,
+                        "show_cart_notification": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -115,6 +117,7 @@
                       "settings": {
                         "card_product": "all-year-box-kartonage",
                         "show_view_product": false,
+                        "show_cart_notification": true,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },

@@ -18,7 +18,7 @@
   data-section-type="richtext"
 >
   <div class="content-wrapper">
-    <div class="container container--lg">
+    <div class="container {{ section.settings.section_width }}">
       <div class="page-width rich-text">
         <div class="grid">
           {% for block in section.blocks %}
@@ -30,7 +30,7 @@
               {% endif %}
               {% if block.settings.content != blank %}
                 <div class="rte-setting text-{{ section.settings.text_alignment }}">
-                  {{ block.settings.content }}
+                  {{ block.settings.content | replace: "[", "<span class='number-icon'>" | replace: "]", "</span>" }}
                 </div>
               {% endif %}
             </div>
@@ -54,6 +54,26 @@
       "type": "checkbox",
       "id": "full_width",
       "label": "Full width"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section width",
+      "options": [
+        {
+          "value": "container--lg",
+          "label": "Large"
+        },
+        {
+          "value": "container--md",
+          "label": "Medium"
+        },
+        {
+          "value": "container--sm",
+          "label": "Small"
+        }
+      ],
+      "default": "container--lg"
     },
     {
       "type": "text_alignment",

@@ -21,7 +21,13 @@
 >
   <div class="content-wrapper">
     <div class="container container--lg">
-      <bundle-builder class="bundle-builder__inner" data-bundle-name="{{ bundle_config.name.value }}">
+      <bundle-builder
+        class="bundle-builder__inner"
+        data-bundle-name="{{ bundle_config.name.value }}"
+        {% if bundle_config.goodie_threshold.value %}
+          data-goodie-threshold="{{ bundle_config.goodie_threshold.value }}"
+        {% endif %}
+      >
         <div class="bundle-builder__content">
           <div class="bundle-builder__steps">
             <div class="bundle-builder__step">
@@ -31,7 +37,15 @@
               <div class="bundle-builder__box-inputs">
                 {% for size in bundle_config.size.value %}
                   <div class="input-radio">
-                    <input type="radio" name="box-size" id="box-{{ size }}" value="{{ size }}" {% if forloop.first %}checked{% endif %}>
+                    <input
+                      type="radio"
+                      name="box-size"
+                      id="box-{{ size }}"
+                      value="{{ size }}"
+                      {% if forloop.first %}
+                        checked
+                      {% endif %}
+                    >
                     <label for="box-{{ size }}">{{ size }}er Box</label>
                   </div>
                 {% endfor %}
@@ -60,7 +74,12 @@
                   <div class="filter-pills">
                     {% for product_pool in bundle_config.product_pools.value %}
                       <div class="filter-pill">
-                        <input type="checkbox" id="filter-{{ product_pool.name }}" name="bundle-filter" value="{{ product_pool.name }}">
+                        <input
+                          type="checkbox"
+                          id="filter-{{ product_pool.name }}"
+                          name="bundle-filter"
+                          value="{{ product_pool.name }}"
+                        >
                         <label for="filter-{{ product_pool.name }}">{{ product_pool.name }}</label>
                       </div>
                     {% endfor %}
@@ -79,7 +98,11 @@
                         <div class="bundle-builder__product" data-variant-id="{{ variant.id }}">
                           <div class="bundle-builder__product-header">
                             <div class="aspect-ratio aspect-ratio--square">
-                              {{ variant.product.featured_image | image_url: width: 750 | image_tag: widths: '200,400,600,700', sizes: '(max-width: 768px) 400px, 700px' }}
+                              {{
+                                variant.product.featured_image
+                                | image_url: width: 750
+                                | image_tag: widths: '200,400,600,700', sizes: '(max-width: 768px) 400px, 700px'
+                              }}
                               <button class="cart-upsell__button button">+</button>
                             </div>
                             <div class="bundle-builder__product-content">
@@ -124,9 +147,17 @@
                             </div>
                           </quantity-selector>
                           <template>
-                            <div class="bundle-builder__item" data-variant-id="{{ variant.id }}" data-price="{{ variant.price }}">
+                            <div
+                              class="bundle-builder__item"
+                              data-variant-id="{{ variant.id }}"
+                              data-price="{{ variant.price }}"
+                            >
                               <div class="aspect-ratio aspect-ratio--square">
-                                {{ variant.product.featured_image | image_url: width: 400 | image_tag: widths: '120,240,400,600,700', sizes: '(max-width: 768px) 400px, 700px' }}
+                                {{
+                                  variant.product.featured_image
+                                  | image_url: width: 400
+                                  | image_tag: widths: '120,240,400,600,700', sizes: '(max-width: 768px) 400px, 700px'
+                                }}
                               </div>
 
                               <quantity-selector class="product-form__quantity-wrapper">
@@ -188,8 +219,12 @@
             class="shipping-bar"
             style="--progress: 0"
           >
-            <span class="shipping-bar__text text--small shipping-bar__text--remaining">Füge noch <span class="shipping-bar__text-amount">30</span> Produkte zur Box hinzu</span>
-            <span class="shipping-bar__text text--small shipping-bar__text--achieved hidden">Jetzt Bundle hinzufügen</span>
+            <span class="shipping-bar__text text--small shipping-bar__text--remaining"
+              >Füge noch <span class="shipping-bar__text-amount">30</span> Produkte zur Box hinzu</span
+            >
+            <span class="shipping-bar__text text--small shipping-bar__text--achieved hidden"
+              >Jetzt Bundle hinzufügen</span
+            >
             <span
               class="shipping-bar__progress shipping-bar__progress--remaining"
             ></span>
@@ -198,11 +233,42 @@
             <input type="hidden" name="id" value="{{ bundle_config.parent_product.value.id }}">
             <input type="hidden" name="quantity" value="1">
 
-            <div class="bundle-builder__summary-items">
-            </div>
+            <div class="bundle-builder__summary-items"></div>
             <button type="submit" class="button" disabled>Wähle Produkte</button>
           {% endform %}
         </div>
+
+        {% if bundle_config.goodie_threshold.value and bundle_config.goodies.value != blank %}
+          <modal-popover class="modal-popover modal-popover--large" id="Goodies">
+            <div class="popover__overlay"></div>
+            <div class="popover__content">
+              <button class="popover__close-button">
+                {%- render 'icon-close' -%}
+              </button>
+              <div class="popover__content-inner">
+                <h3>Wähle ein Goodie.</h3>
+                {% for goodie in bundle_config.goodies.value %}
+                  <div class="goodie-item">
+                    <div class="goodie-item__image">
+                      {{ goodie.product.featured_image | image_url: width: 600 | image_tag: widths: '100,200,400,600,700,800,900,1000', sizes: '(max-width: 768px) 400px, 1000px' }}
+                    </div>
+                    <div class="goodie-item__content">
+                      <h4 class="h4">
+                        {% if goodie.product.metafields.custom.short_title != blank %}
+                          {{ goodie.product.metafields.custom.short_title }}
+                        {% else %}
+                          {{ goodie.product.title }}
+                        {% endif %}
+                      </h4>
+                      <span class="h4">{{ goodie.product.price | money }}</span>
+                      <button data-add-goodie="{{ goodie.id }}" class="button">In den Warenkorb</button>
+                    </div>
+                  </div>
+                 {% endfor %}
+              </div>
+            </div>
+          </modal-popover>
+        {% endif %}
       </bundle-builder>
     </div>
   </div>

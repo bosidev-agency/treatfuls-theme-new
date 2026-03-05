@@ -36,19 +36,6 @@
 
     .preparation__step {
       display: flex;
-
-      .number-icon {
-        background-color: var(--section-accent-color);
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 26px;
-        border-radius: 50%;
-        margin-right: 24px;
-        flex-shrink: 0;
-      }
     }
   }
 

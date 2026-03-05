@@ -61,6 +61,10 @@ class BundleBuilder extends HTMLElement {
     return this.dataset.bundleName;
   }
 
+  get goodieThreshold() {
+    return this.dataset.goodieThreshold;
+  }
+
   connectedCallback() {
     this.submitForm = this.querySelector("form[action='/cart/add']");
     this.submitButton = this.querySelector("button[type='submit']");
@@ -88,14 +92,28 @@ class BundleBuilder extends HTMLElement {
     );
     this.combinedQuantity = 0;
     this.lastSelectedSize = null;
+    this.formData = null;
+    this.bundleId = null;
+    this.parentItem = null;
     this.filters = Array.from(
       this.querySelectorAll("input[name='bundle-filter']"),
     );
     this.summaryPrice = this.querySelector(".bundle-builder__price");
+    this.goodieModal = this.querySelector("#Goodies");
+    this.goodieButtons = this.goodieModal.querySelectorAll("[data-add-goodie]");
 
     this.addButtons.forEach((button) => {
       button.addEventListener("click", this.handleAddButtonClick.bind(this));
     });
+
+    if (this.goodieButtons) {
+      this.goodieButtons.forEach((button) => {
+        button.addEventListener(
+          "click",
+          this.handleAddGoodieButtonClick.bind(this),
+        );
+      });
+    }
 
     this.submitForm.addEventListener(
       "submit",
@@ -168,11 +186,17 @@ class BundleBuilder extends HTMLElement {
         const current = parseInt(quantityInput.value, 10) || 1;
         const max = parseInt(quantityInput.getAttribute("max"), 10) || 99;
         quantityInput.value = Math.min(current + 1, max);
-        this.syncQuantitySelectors(variantId, quantityInput.value, quantityInput);
+        this.syncQuantitySelectors(
+          variantId,
+          quantityInput.value,
+          quantityInput,
+        );
       }
     } else {
       this.summaryItems.appendChild(itemContent);
-      const productQtySelector = productEl.querySelector(":scope > quantity-selector");
+      const productQtySelector = productEl.querySelector(
+        ":scope > quantity-selector",
+      );
       if (productQtySelector) productQtySelector.classList.remove("hidden");
       const addBtn = productEl.querySelector(".cart-upsell__button");
       if (addBtn) addBtn.classList.add("hidden");
@@ -209,7 +233,8 @@ class BundleBuilder extends HTMLElement {
       const sourceInput = qtySelector.querySelector('input[name="quantity"]');
       const productEl = qtySelector.closest(".bundle-builder__product");
       const itemEl = qtySelector.closest(".bundle-builder__item");
-      const variantId = productEl?.dataset.variantId || itemEl?.dataset.variantId;
+      const variantId =
+        productEl?.dataset.variantId || itemEl?.dataset.variantId;
       if (variantId && sourceInput) {
         this.syncQuantitySelectors(variantId, sourceInput.value, sourceInput);
       }
@@ -238,9 +263,14 @@ class BundleBuilder extends HTMLElement {
         const qtySelector = event.detail.element;
         const productEl = qtySelector.closest(".bundle-builder__product");
         const itemEl = qtySelector.closest(".bundle-builder__item");
-        const variantId = productEl?.dataset.variantId || itemEl?.dataset.variantId;
+        const variantId =
+          productEl?.dataset.variantId || itemEl?.dataset.variantId;
         if (variantId) {
-          this.syncQuantitySelectors(variantId, changedInput.value, changedInput);
+          this.syncQuantitySelectors(
+            variantId,
+            changedInput.value,
+            changedInput,
+          );
         }
 
         this.combinedQuantity = Array.from(
@@ -267,7 +297,7 @@ class BundleBuilder extends HTMLElement {
     );
     this.itemBarCount.textContent =
       this.itemBar.dataset.threshold - this.combinedQuantity;
-    const totalPrice = Array.from(
+    this.totalPrice = Array.from(
       this.summaryItems.querySelectorAll(".bundle-builder__item"),
     ).reduce((acc, item) => {
       const price = parseInt(item.getAttribute("data-price"), 10) || 0;
@@ -275,7 +305,7 @@ class BundleBuilder extends HTMLElement {
         parseInt(item.querySelector('input[name*="quantity"]')?.value, 10) || 1;
       return acc + price * quantity;
     }, 0);
-    this.summaryPrice.innerHTML = formatMoney(totalPrice);
+    this.summaryPrice.innerHTML = formatMoney(this.totalPrice);
     if (this.combinedQuantity >= this.itemBar.dataset.threshold) {
       this.submitButton.disabled = false;
       this.submitButton.textContent = "In den Warenkorb";
@@ -308,18 +338,25 @@ class BundleBuilder extends HTMLElement {
     }
     if (event?.detail?.remove) {
       const itemEl = event.detail.element.closest(".bundle-builder__item");
-      const productEl = event.detail.element.closest(".bundle-builder__product");
-      const variantId = itemEl?.dataset.variantId || productEl?.dataset.variantId;
+      const productEl = event.detail.element.closest(
+        ".bundle-builder__product",
+      );
+      const variantId =
+        itemEl?.dataset.variantId || productEl?.dataset.variantId;
 
       if (variantId) {
         const productCard = this.querySelector(
           `.bundle-builder__product[data-variant-id="${variantId}"]`,
         );
         if (productCard) {
-          const productQtySelector = productCard.querySelector(":scope > quantity-selector");
+          const productQtySelector = productCard.querySelector(
+            ":scope > quantity-selector",
+          );
           if (productQtySelector) {
             productQtySelector.classList.add("hidden");
-            const input = productQtySelector.querySelector('input[name="quantity"]');
+            const input = productQtySelector.querySelector(
+              'input[name="quantity"]',
+            );
             if (input) input.value = 1;
           }
           const addBtn = productCard.querySelector(".cart-upsell__button");
@@ -339,7 +376,7 @@ class BundleBuilder extends HTMLElement {
   handleSubmitForm(event) {
     event.preventDefault();
     const itemEls = this.summaryItems.querySelectorAll(".bundle-builder__item");
-    const _bundleId = new Date().getTime();
+    this.bundleId = new Date().getTime();
     const _bundleSize = Array.from(itemEls).reduce(
       (acc, item) =>
         acc +
@@ -347,19 +384,19 @@ class BundleBuilder extends HTMLElement {
           1),
       0,
     );
-    const parentItem = this.submitForm.querySelector('input[name="id"]');
+    this.parentItem = this.submitForm.querySelector('input[name="id"]');
     const parentQuantity = this.submitForm.querySelector(
       'input[name="quantity"]',
     );
     let items = [];
-    if (parentItem) {
+    if (this.parentItem) {
       items.push({
-        id: parentItem.value,
+        id: this.parentItem.value,
         quantity: parentQuantity.value,
         properties: {
           _isBundleParent: true,
           _bundleName: this.bundleName,
-          _bundleId: _bundleId,
+          _bundleId: this.bundleId,
         },
       });
     }
@@ -374,10 +411,10 @@ class BundleBuilder extends HTMLElement {
             quantity: quantityInput
               ? parseInt(quantityInput.value, 10) || 1
               : 1,
-            parent_id: parentItem ? parentItem.value : null,
+            parent_id: this.parentItem ? this.parentItem.value : null,
             properties: {
               _bundleName: this.bundleName,
-              _bundleId: _bundleId,
+              _bundleId: this.bundleId,
               _bundleSize: _bundleSize,
             },
           };
@@ -385,10 +422,50 @@ class BundleBuilder extends HTMLElement {
       )
       .filter((item) => item.id);
 
-    const formData = {
+    this.formData = {
       items: items,
       sections: "main-cart-mini,cart-count",
     };
+
+    if (this.goodieThreshold && this.totalPrice >= this.goodieThreshold) {
+      this.goodieModal.togglePopover();
+    } else {
+      fetch(`${window.Shopify.routes.root}cart/add.js`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Requested-With": "XMLHttpRequest",
+        },
+        body: JSON.stringify(this.formData),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          document.dispatchEvent(
+            new CustomEvent("cart:change", {
+              detail: {
+                data,
+                cartNotification: false,
+              },
+              bubbles: true,
+            }),
+          );
+        })
+        .catch((error) => console.error("Error adding item to cart:", error));
+    }
+  }
+
+  handleAddGoodieButtonClick(event) {
+    const goodieId = event.currentTarget.dataset.addGoodie;
+
+    this.formData.items.push({
+      id: goodieId,
+      quantity: 1,
+      parent_id: this.parentItem ? this.parentItem.value : null,
+      properties: {
+        _bundleName: this.bundleName,
+        _bundleId: this.bundleId,
+      },
+    });
 
     fetch(`${window.Shopify.routes.root}cart/add.js`, {
       method: "POST",
@@ -396,7 +473,7 @@ class BundleBuilder extends HTMLElement {
         "Content-Type": "application/json",
         "X-Requested-With": "XMLHttpRequest",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(this.formData),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -410,7 +487,7 @@ class BundleBuilder extends HTMLElement {
           }),
         );
       })
-      .catch((error) => console.error("Error adding item to cart:", error));
+      .catch((error) => console.error("Error adding goodie to cart:", error));
   }
 
   handleSizeSelectorChange(event) {
@@ -418,6 +495,10 @@ class BundleBuilder extends HTMLElement {
     this.lastSelectedSize = size;
     if (this.lastSelectedSize < this.itemBar.dataset.threshold) {
       if (this.combinedQuantity > 0) {
+        const oldRadio = this.querySelector(
+          `input[name='box-size'][value='${this.itemBar.dataset.threshold}']`,
+        );
+        if (oldRadio) oldRadio.checked = true;
         this.alertModal.togglePopover();
       } else {
         this.itemBar.dataset.threshold = size;
@@ -430,6 +511,10 @@ class BundleBuilder extends HTMLElement {
   }
 
   handleEmptyCartButtonClick(event) {
+    const newRadio = this.querySelector(
+      `input[name='box-size'][value='${this.lastSelectedSize}']`,
+    );
+    if (newRadio) newRadio.checked = true;
     this.summaryItems.innerHTML = "";
     this.querySelectorAll(".bundle-builder__product").forEach((product) => {
       const qs = product.querySelector(":scope > quantity-selector");
@@ -458,8 +543,14 @@ class QuantitySelector extends HTMLElement {
     this.incrementButton = this.querySelector('[data-quantity="increment"]');
     this.decrementButton = this.querySelector('[data-quantity="decrement"]');
 
-    this.quantityInput.addEventListener("input", this.handleQuantityInputChange.bind(this));
-    this.quantityInput.addEventListener("change", this.handleQuantityInputChange.bind(this));
+    this.quantityInput.addEventListener(
+      "input",
+      this.handleQuantityInputChange.bind(this),
+    );
+    this.quantityInput.addEventListener(
+      "change",
+      this.handleQuantityInputChange.bind(this),
+    );
 
     this.incrementButton.addEventListener(
       "click",
@@ -546,7 +637,6 @@ class QuantitySelector extends HTMLElement {
 
 customElements.define("quantity-selector", QuantitySelector);
 
-
 class CartNotification extends HTMLElement {
   constructor() {
     super();
@@ -555,9 +645,15 @@ class CartNotification extends HTMLElement {
   connectedCallback() {
     this.closeButton = this.querySelector(".cart-notification__close");
     if (this.closeButton) {
-      this.closeButton.addEventListener("click", this.closeNotification.bind(this));
+      this.closeButton.addEventListener(
+        "click",
+        this.closeNotification.bind(this),
+      );
     }
-    document.addEventListener("show:notification", this.showNotification.bind(this));
+    document.addEventListener(
+      "show:notification",
+      this.showNotification.bind(this),
+    );
   }
 
   showNotification() {

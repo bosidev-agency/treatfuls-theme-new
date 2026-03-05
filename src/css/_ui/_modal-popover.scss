@@ -35,6 +35,21 @@
       background-repeat: no-repeat;
       background-size: 100% 40px, 100% 40px, 100% 12px, 100% 12px;
       background-attachment: local, local, scroll, scroll;
+
+      h3 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .goodie-item__content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .button {
+        margin-top: 10px;
+      }
     }
   }
 
