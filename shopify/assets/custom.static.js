@@ -95,12 +95,16 @@ class BundleBuilder extends HTMLElement {
     this.formData = null;
     this.bundleId = null;
     this.parentItem = null;
-    this.filters = Array.from(
-      this.querySelectorAll("input[name='bundle-filter']"),
+    this.poolFilters = Array.from(
+      this.querySelectorAll("input[name='pool-filter']"),
+    );
+    this.metafieldFilters = Array.from(
+      this.querySelectorAll("input[name^='filter-']"),
     );
     this.summaryPrice = this.querySelector(".bundle-builder__price");
     this.goodieModal = this.querySelector("#Goodies");
     this.goodieButtons = this.goodieModal.querySelectorAll("[data-add-goodie]");
+    this.continueButton = this.goodieModal.querySelector("[data-continue]");
 
     this.addButtons.forEach((button) => {
       button.addEventListener("click", this.handleAddButtonClick.bind(this));
@@ -115,6 +119,13 @@ class BundleBuilder extends HTMLElement {
       });
     }
 
+    if (this.continueButton) {
+      this.continueButton.addEventListener(
+        "click",
+        this.handleAddToCart.bind(this),
+      );
+    }
+
     this.submitForm.addEventListener(
       "submit",
       this.handleSubmitForm.bind(this),
@@ -127,7 +138,10 @@ class BundleBuilder extends HTMLElement {
       );
     });
 
-    this.filters.forEach((filter) => {
+    this.poolFilters.forEach((filter) => {
+      filter.addEventListener("change", this.handleFilterChange.bind(this));
+    });
+    this.metafieldFilters.forEach((filter) => {
       filter.addEventListener("change", this.handleFilterChange.bind(this));
     });
 
@@ -144,24 +158,91 @@ class BundleBuilder extends HTMLElement {
 
   disconnectedCallback() {}
 
-  handleFilterChange(event) {
-    const activeFilters = this.filters
-      .filter((filter) => filter.checked)
-      .map((filter) => filter.value);
-    if (activeFilters.length > 0) {
-      this.productPools.forEach((item) => {
-        const itemFilter = item.dataset.filter;
-        if (activeFilters.includes(itemFilter)) {
-          item.classList.remove("hidden");
-        } else {
-          item.classList.add("hidden");
+  handleAddToCart() {
+    fetch(`${window.Shopify.routes.root}cart/add.js`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+      },
+      body: JSON.stringify(this.formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        document.dispatchEvent(
+          new CustomEvent("cart:change", {
+            detail: {
+              data,
+              cartNotification: false,
+            },
+            bubbles: true,
+          }),
+        );
+
+        if (this.goodieModal.matches(":popover-open")) {
+          this.goodieModal.togglePopover();
         }
-      });
-    } else {
-      this.productPools.forEach((item) => {
-        item.classList.remove("hidden");
-      });
-    }
+
+        this.summaryItems.innerHTML = "";
+        this.querySelectorAll(".bundle-builder__product").forEach((product) => {
+          const qs = product.querySelector(":scope > quantity-selector");
+          if (qs) {
+            qs.classList.add("hidden");
+            const input = qs.querySelector('input[name="quantity"]');
+            if (input) input.value = 1;
+          }
+          const addBtn = product.querySelector(".cart-upsell__button");
+          if (addBtn) addBtn.classList.remove("hidden");
+        });
+        this.formData = null;
+        this.updateBundleBuilder();
+      })
+      .catch((error) => console.error("Error adding item to cart:", error));
+  }
+
+  handleFilterChange() {
+    const activePoolFilters = this.poolFilters
+      .filter((f) => f.checked)
+      .map((f) => f.value);
+
+    this.productPools.forEach((pool) => {
+      if (
+        activePoolFilters.length === 0 ||
+        activePoolFilters.includes(pool.dataset.poolFilter)
+      ) {
+        pool.classList.remove("hidden");
+      } else {
+        pool.classList.add("hidden");
+      }
+    });
+
+    const activeMetafilters = {};
+    this.metafieldFilters.forEach((f) => {
+      if (!f.checked) return;
+      if (!activeMetafilters[f.name]) activeMetafilters[f.name] = [];
+      activeMetafilters[f.name].push(f.value);
+    });
+
+    const filterGroups = Object.values(activeMetafilters);
+    const products = this.querySelectorAll(".bundle-builder__product");
+
+    products.forEach((product) => {
+      if (filterGroups.length === 0) {
+        product.classList.remove("hidden");
+        return;
+      }
+
+      const productValues = (product.dataset.filters || "")
+        .split(",")
+        .map((v) => v.trim())
+        .filter(Boolean);
+
+      const matches = filterGroups.every((group) =>
+        group.some((value) => productValues.includes(value)),
+      );
+
+      product.classList.toggle("hidden", !matches);
+    });
   }
 
   handleAddButtonClick(event) {
@@ -430,27 +511,7 @@ class BundleBuilder extends HTMLElement {
     if (this.goodieThreshold && this.totalPrice >= this.goodieThreshold) {
       this.goodieModal.togglePopover();
     } else {
-      fetch(`${window.Shopify.routes.root}cart/add.js`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Requested-With": "XMLHttpRequest",
-        },
-        body: JSON.stringify(this.formData),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          document.dispatchEvent(
-            new CustomEvent("cart:change", {
-              detail: {
-                data,
-                cartNotification: false,
-              },
-              bubbles: true,
-            }),
-          );
-        })
-        .catch((error) => console.error("Error adding item to cart:", error));
+      this.handleAddToCart();
     }
   }
 
@@ -467,27 +528,7 @@ class BundleBuilder extends HTMLElement {
       },
     });
 
-    fetch(`${window.Shopify.routes.root}cart/add.js`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest",
-      },
-      body: JSON.stringify(this.formData),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        document.dispatchEvent(
-          new CustomEvent("cart:change", {
-            detail: {
-              data,
-              cartNotification: false,
-            },
-            bubbles: true,
-          }),
-        );
-      })
-      .catch((error) => console.error("Error adding goodie to cart:", error));
+    this.handleAddToCart();
   }
 
   handleSizeSelectorChange(event) {

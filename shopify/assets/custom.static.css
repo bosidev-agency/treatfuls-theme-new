@@ -1271,6 +1271,23 @@ uc-copyright {
   background-color: var(--section-background-color) !important;
 }
 
+.bundle-builder__inner .swiper-slide {
+  flex-direction: column;
+}
+
+.goodie-popup [data-continue] {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.goodie-popup [data-continue]::before {
+  background-color: var(--section-hover-color) !important;
+}
+
+.goodie-popup [data-continue]::after {
+  background-color: var(--section-accent-color) !important;
+}
+
 @media screen and (min-width: 769px) {
   .bundle-builder__item {
     border-bottom: 1px solid rgb(var(--color-text));
@@ -1326,7 +1343,7 @@ uc-copyright {
   gap: 10px;
 }
 
-.filter-pill:has(input[name='bundle-filter']:checked) {
+.filter-pill:has(input:checked) {
   background-color: color-mix(in srgb, var(--section-accent-color), black 30%);
 }
 

@@ -77,25 +77,52 @@
                         <input
                           type="checkbox"
                           id="filter-{{ product_pool.name }}"
-                          name="bundle-filter"
+                          name="pool-filter"
                           value="{{ product_pool.name }}"
                         >
                         <label for="filter-{{ product_pool.name }}">{{ product_pool.name }}</label>
                       </div>
+                    {% endfor %}
+                    {% for filter in bundle_config.additional_filters.value %}
+                      {% for value in filter.values.value %}
+                        <div class="filter-pill">
+                          <input
+                            type="checkbox"
+                            id="filter-{{ value }}"
+                            name="filter-{{ filter.namespace }}-{{ filter.key }}"
+                            value="{{ value }}"
+                          >
+                          <label for="filter-{{ value }}">{{ value }}</label>
+                        </div>
+                      {% endfor %}
                     {% endfor %}
                   </div>
                 </div>
               </div>
               <div class="bundle-builder__products">
                 {% for product_pool in bundle_config.product_pools.value %}
-                  <div class="bundle-builder__product-pool" data-filter="{{ product_pool.name }}">
+                  <div class="bundle-builder__product-pool" data-pool-filter="{{ product_pool.name }}">
                     <h3>{{ product_pool.name }}</h3>
                     <div class="bundle-builder__product-pool-products product-list">
                       {% for variant in product_pool.variants.value %}
                         {% unless variant.available %}
                           {% continue %}
                         {% endunless %}
-                        <div class="bundle-builder__product" data-variant-id="{{ variant.id }}">
+
+                        {% for filter in bundle_config.additional_filters.value %}
+                          {% assign namespace = filter.data_key | split: '.' | first %}
+                          {% assign key = filter.data_key | split: '.' | last %}
+                          {% assign filter_value = variant.product.metafields[namespace][key] %}
+                          {% if filter_value != blank %}
+                            {% assign filter_value = filter_value %}
+
+                            {% unless forloop.last %}
+                              {% assign filter_value = filter_value | append: ',' %}
+                            {% endunless %}
+                          {% endif %}
+                        {% endfor %}
+
+                        <div class="bundle-builder__product" data-variant-id="{{ variant.id }}" data-filters="{{ filter_value | join: ',' }}">
                           <div class="bundle-builder__product-header">
                             <div class="aspect-ratio aspect-ratio--square">
                               {{
@@ -239,6 +266,13 @@
         </div>
 
         {% if bundle_config.goodie_threshold.value and bundle_config.goodies.value != blank %}
+          {%- capture slider_config -%}
+            {
+              "loop": false,
+              "slidesPerView": 1.5,
+              "spaceBetween": 40
+            }
+          {%- endcapture -%}
           <modal-popover class="modal-popover modal-popover--large" id="Goodies">
             <div class="popover__overlay"></div>
             <div class="popover__content">
@@ -246,25 +280,34 @@
                 {%- render 'icon-close' -%}
               </button>
               <div class="popover__content-inner">
-                <h3>Wähle ein Goodie.</h3>
-                {% for goodie in bundle_config.goodies.value %}
-                  <div class="goodie-item">
-                    <div class="goodie-item__image">
-                      {{ goodie.product.featured_image | image_url: width: 600 | image_tag: widths: '100,200,400,600,700,800,900,1000', sizes: '(max-width: 768px) 400px, 1000px' }}
+                <div class="goodie-popup">
+                  <h3>Dein kostenloses Goodie 🎁</h3>
+                  <slider-element class="swiper" data-swiper-config='{{ slider_config }}'>
+                    <div class="swiper-wrapper">
+                      {% for goodie in bundle_config.goodies.value %}
+                        <div class="swiper-slide">
+                          <div class="goodie-item">
+                            <div class="goodie-item__image">
+                              {{ goodie.product.featured_image | image_url: width: 600 | image_tag: widths: '100,200,400,600,700,800,900,1000', sizes: '(max-width: 768px) 400px, 1000px' }}
+                            </div>
+                            <div class="goodie-item__content">
+                              <h4 class="h4">
+                                {% if goodie.product.metafields.custom.short_title != blank %}
+                                  {{ goodie.product.metafields.custom.short_title }}
+                                {% else %}
+                                  {{ goodie.product.title }}
+                                {% endif %}
+                              </h4>
+                              <span class="h4">{{ goodie.product.price | money }}</span>
+                              <button data-add-goodie="{{ goodie.id }}" class="button">In den Warenkorb</button>
+                            </div>
+                          </div>
+                        </div>
+                      {% endfor %}
                     </div>
-                    <div class="goodie-item__content">
-                      <h4 class="h4">
-                        {% if goodie.product.metafields.custom.short_title != blank %}
-                          {{ goodie.product.metafields.custom.short_title }}
-                        {% else %}
-                          {{ goodie.product.title }}
-                        {% endif %}
-                      </h4>
-                      <span class="h4">{{ goodie.product.price | money }}</span>
-                      <button data-add-goodie="{{ goodie.id }}" class="button">In den Warenkorb</button>
-                    </div>
-                  </div>
-                 {% endfor %}
+                  </slider-element>
+                  <button class="button" data-toggle="Goodies" data-continue>Weiter ohne Goodie</button>
+                </div>
               </div>
             </div>
           </modal-popover>
