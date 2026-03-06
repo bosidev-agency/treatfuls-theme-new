@@ -70,6 +70,7 @@
                       "settings": {
                         "card_product": "matcha-riegel",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -91,6 +92,7 @@
                       "settings": {
                         "card_product": "himbeer-riegel",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -112,6 +114,7 @@
                       "settings": {
                         "card_product": "chai-latte-spill-the-tea",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -133,6 +136,7 @@
                       "settings": {
                         "card_product": "brownie-riegel",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },

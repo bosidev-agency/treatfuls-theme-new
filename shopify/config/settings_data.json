@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "background": "#ceb69d",
-    "accent": "#e56a89",
+    "background": "#859972",
+    "accent": "#c081a9",
     "hover": "#ceb0d1",
     "color_error": "#f3587f",
     "header_background": "#744f37",

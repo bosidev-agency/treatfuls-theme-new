@@ -15,8 +15,8 @@
         "richtext_item_Djphhj": {
           "type": "richtext_item",
           "settings": {
-            "heading": "Das perfekte Snack bundle",
-            "content": "<p>Hier kannst du dein persönliches Bundle ganz einfach selbst zusammenstellen.</p><ol><li>[1] Du wählst du die Größe deiner Box aus.</li><li>[2] Du  entscheidest du dich für die gewünschte Kartonage.</li><li>[3] Du stellst du deine Box  zusammen. </li></ol><p>Bitte beachte, dass jede Sorte, die du auswählst, jeweils 2-mal in deine Box gelegt wird.</p>"
+            "heading": "Dein perfektes Snack Bundle",
+            "content": "<p></p><ol><li>[1] Wähle zuerst die Größe deiner Box 📦</li><li>[2] Wähle deine Lieblingstreats 😋</li><li>[3] Optional: Geschenkverpackung hinzufügen 🎁</li><li>[4] Ab 60 € bekommst du im Checkout ein kostenloses Goodie 🎁</li></ol>"
           }
         }
       },
@@ -37,9 +37,9 @@
       "type": "bundle-builder",
       "name": "Bundle Builder",
       "settings": {
-        "background_color": "{{ product.metafields.custom.color_scheme.value.product_background.value }}",
-        "accent_color": "{{ product.metafields.custom.color_scheme.value.product_accent.value }}",
-        "hover_color": "{{ product.metafields.custom.color_scheme.value.product_hover_color.value }}"
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#f3587f"
       }
     },
     "custom_section_8exgVz": {
@@ -49,8 +49,8 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Verpackungen",
-            "subtitle_text": "Du möchtest eine zusätzliche Box Verpackung?",
+            "heading_text": "Willst du deine treats verschenken? 🎁",
+            "subtitle_text": "Wähle optional eine passende Geschenkbox.",
             "margin_top": 24,
             "margin_bottom": 24
           },
@@ -148,7 +148,7 @@
       "settings": {
         "background_color": "#c081a9",
         "accent_color": "#859972",
-        "hover_color": "#eba3c9",
+        "hover_color": "#f3587f",
         "padding_top": 80,
         "padding_bottom": 40
       }
