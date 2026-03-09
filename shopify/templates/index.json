@@ -16,7 +16,7 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 Jetzt Bundle erstellen",
+            "text": "👉 Deine Box erstellen",
             "url": "https://treatfuls.com/products/create-your-own-bundle",
             "signup_button": false,
             "klaviyo_form": "X578qa"
@@ -42,19 +42,19 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_Section_Desktop_Masse_verschommen.png",
+        "desktop_image": "shopify://shop_images/bundle_generator_desktop_V3.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Brownie_Hero_2_kleiner.png",
+        "mobile_image": "shopify://shop_images/bundle_generator_mobil_V3.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "left",
+        "horizontal_alignment_desktop": "right",
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Create your own Bundle",
-        "text": "<p>Endlich da: Deine eigene Snackbox 😍</p>",
+        "title": "Create your own Box",
+        "text": "<p>Endlich da: <br/>Erstelle deine eigene Snackbox 😍</p>",
         "background_color": "#b46493",
         "accent_color": "#c081a9",
         "hover_color": "#8a7194",
@@ -140,25 +140,25 @@
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
           "type": "product_item",
           "settings": {
-            "product": "box-full-of-love-bio-vegan"
+            "product": "20-x-weisse-schoko-erdnuss-dattelkaramell-riegel-bio-vegan"
           }
         },
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
-            "product": "alle-sorten-probierbox-14-stuck-riegel-balle-zum-probieren-bio-vegan"
+            "product": "singles-box-1-ohne-weisse-haselnuss"
           }
         },
         "product_item_iM9nAw": {
           "type": "product_item",
           "settings": {
-            "product": "selflove-snackbox-bio-vegan"
+            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have"
           }
         },
         "product_item_A3669g": {
           "type": "product_item",
           "settings": {
-            "product": "gemischtes-paket-mit-allen-4-riegeln"
+            "product": "20-x-dunkle-schoko-haselnuss-riegel-bio-vegan"
           }
         },
         "product_item_yJ9RiE": {
@@ -190,7 +190,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#734d38",
+        "background_color": "#e6ce9b",
         "accent_color": "#2ac2bd",
         "hover_color": "#ceb0d1"
       }
