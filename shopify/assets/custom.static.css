@@ -1354,6 +1354,16 @@ uc-copyright {
   margin-bottom: 20px;
 }
 
+.goodie-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goodie-popup--single .swiper-wrapper {
+  justify-content: center;
+}
+
 /* CART NOTIFICATION */
 
 .cart-notification {

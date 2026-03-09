@@ -270,7 +270,7 @@
             {
               "loop": false,
               "slidesPerView": 1.5,
-              "spaceBetween": 40
+              "spaceBetween": {% if bundle_config.goodies.value.size > 1 %}40{% else %}0{% endif %}
             }
           {%- endcapture -%}
           <modal-popover class="modal-popover modal-popover--large" id="Goodies">
@@ -280,7 +280,7 @@
                 {%- render 'icon-close' -%}
               </button>
               <div class="popover__content-inner">
-                <div class="goodie-popup">
+                <div class="goodie-popup {% if bundle_config.goodies.value.size == 1 %}goodie-popup--single{% endif %}">
                   <h3>Dein kostenloses Goodie 🎁</h3>
                   <slider-element class="swiper" data-swiper-config='{{ slider_config }}'>
                     <div class="swiper-wrapper">
@@ -288,7 +288,7 @@
                         <div class="swiper-slide">
                           <div class="goodie-item">
                             <div class="goodie-item__image">
-                              {{ goodie.product.featured_image | image_url: width: 600 | image_tag: widths: '100,200,400,600,700,800,900,1000', sizes: '(max-width: 768px) 400px, 1000px' }}
+                              {{ goodie.product.featured_image | image_url: width: 300 | image_tag: widths: '100,200,300,400,600,700', sizes: '(max-width: 768px) 400px, 1000px' }}
                             </div>
                             <div class="goodie-item__content">
                               <h4 class="h4">
