@@ -108,7 +108,13 @@
         </div>
       </div>
 
-      {% render 'atc-button', product: product%}
+      {% if product.metafields.custom.bundle_config != blank %}
+        <a class="button product-form__button" href="{{ product.url }}">
+          {{ 'collections.product_card.configure_bundle' | t }}
+        </a>
+      {% else %}
+        {% render 'atc-button', product: product%}
+      {% endif %}
     </div>
   </div>
 </div>

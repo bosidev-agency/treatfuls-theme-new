@@ -250,6 +250,7 @@
     },
     "product_card": {
       "add_to_cart": "In den Warenkorb",
+      "configure_bundle": "Bundle konfigurieren",
       "preorder": "Vorbestellen",
       "sold_out": "coming soon",
       "vegan_badge": "Vegan",
