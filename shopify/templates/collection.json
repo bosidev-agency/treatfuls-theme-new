@@ -12,6 +12,15 @@
     "product-grid": {
       "type": "featured-collections",
       "blocks": {
+        "collection_item_mrUHyX": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "1er-mutterprodukte-creat-your-own-bundle",
+            "image": "shopify://shop_images/singles_NEU_-_ohne_KOKOS.webp",
+            "collection_title": "Create your own bundle"
+          }
+        },
         "collection_item_HBNT6z": {
           "type": "collection_item",
           "settings": {
@@ -54,6 +63,7 @@
         }
       },
       "block_order": [
+        "collection_item_mrUHyX",
         "collection_item_HBNT6z",
         "collection_item_AQhgbG",
         "collection_item_njphjp",
