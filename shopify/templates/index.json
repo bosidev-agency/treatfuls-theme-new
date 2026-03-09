@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 Jetzt probieren",
-            "url": "shopify://products/singles-box-1-ohne-weisse-haselnuss",
+            "text": "👉 Jetzt Bundle erstellen",
+            "url": "https://treatfuls.com/products/create-your-own-bundle",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -53,8 +53,8 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Schmeckt wie eine Sünde. Ist aber keine.",
-        "text": "<p>Lust auf mehr?<br/>Finde deine Favoriten mit unserer Probierbox.</p>",
+        "title": "Create your own Bundle",
+        "text": "<p>Endlich da: Deine eigene Snackbox 😍</p>",
         "background_color": "#b46493",
         "accent_color": "#c081a9",
         "hover_color": "#8a7194",
