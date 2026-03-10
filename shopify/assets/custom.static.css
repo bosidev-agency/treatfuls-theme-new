@@ -1320,7 +1320,8 @@ uc-copyright {
   align-items: center;
 }
 
-.filter-pill {
+.filter-pill label {
+  cursor: pointer;
   display: inline-block;
   padding: 8px 16px;
   border-radius: 4px;
@@ -1330,20 +1331,17 @@ uc-copyright {
   cursor: pointer;
 }
 
-.filter-pill label {
-  cursor: pointer;
-}
-
 .filter-pill input {
   display: none;
 }
 
 .filter-pills {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.filter-pill:has(input:checked) {
+.filter-pill:has(input:checked) label {
   background-color: color-mix(in srgb, var(--section-accent-color), black 30%);
 }
 
