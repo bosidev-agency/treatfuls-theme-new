@@ -163,6 +163,60 @@
         "hover_color": "#e35478"
       }
     },
+    "logo_list_Ftyjy9": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_FKAGDJ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/NORITUAL_LAB_LOGO.png",
+            "link": "https://norituallab.de/pages/shop"
+          }
+        },
+        "logo_image_kaidtG": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Maniko_logo.png",
+            "link": "https://www.maniko-nails.de/?utm_source=influencerdach&utm_medium=landingpage&utm_campaign=2026"
+          }
+        },
+        "logo_image_PQYJzC": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_XnicKP": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_dxYLEi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Faire_White_Logo.png",
+            "link": "https://treatfuls.faire.com"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_FKAGDJ",
+        "logo_image_kaidtG",
+        "logo_image_PQYJzC",
+        "logo_image_XnicKP",
+        "logo_image_dxYLEi"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Unsere Partner",
+        "subtitle": "<p>Scrolle und finde deine Lieblings mafke aus der Goodiebag wenn du auf das Lofo klickst, kommst dz auf duie eweilige seite </p>",
+        "font_size_adjustment": 100,
+        "background_color": "#c081a9",
+        "accent_color": "",
+        "hover_color": ""
+      }
+    },
     "advantages_rNtU4V": {
       "type": "advantages",
       "blocks": {
@@ -241,6 +295,7 @@
         "advantage_item_kHHUhn",
         "advantage_item_RPNMkp"
       ],
+      "disabled": true,
       "settings": {
         "hide_on_mobile": false,
         "title": "Unsere Partner auf einen Blick",
@@ -303,6 +358,7 @@
                       "settings": {
                         "card_product": "singles-box-1-ohne-weisse-haselnuss",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -324,6 +380,7 @@
                       "settings": {
                         "card_product": "summer-crush-kopie",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -345,6 +402,7 @@
                       "settings": {
                         "card_product": "brownie-riegel",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -366,6 +424,7 @@
                       "settings": {
                         "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
                         "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -1237,6 +1296,7 @@
     "hero_eNmaQw",
     "featured_collections_qWR4p8",
     "featured_product_GbQVWw",
+    "logo_list_Ftyjy9",
     "advantages_rNtU4V",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",

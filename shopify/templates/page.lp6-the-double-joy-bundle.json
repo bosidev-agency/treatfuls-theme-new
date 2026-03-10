@@ -49,9 +49,9 @@
       "type": "main-page",
       "settings": {
         "title": "Was wäre, wenn Süßes richtig gut schmeckt  und trotzdem gut tut?",
-        "subtitle": "<p>treatfuls ist die natürliche Alternative zu herkömmlichen Süßigkeiten, 30% weniger Zucker, ohne Industriezucker und mit vollem Geschmack.</p>",
+        "subtitle": "<p>treatfuls ist die natürliche Alternative zu herkömmlichen Süßigkeiten,  ∅ 30% weniger Zucker, ohne Industriezucker und mit vollem Geschmack.</p>",
         "subtitle_font_size": 24,
-        "background_color": "#ceb69d",
+        "background_color": "#859972",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -188,7 +188,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "Sondern ein Snack, der sich anfühlt wie eine Sünde, aber keine ist!",
-        "background_color": "#ceb69d",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -837,7 +837,7 @@
         "product": "himbeer-riegel",
         "title": "50 % weniger Zucker als herkömmliche Süßigkeiten.👇🏼",
         "footer_note": "",
-        "background_color": "#8e7c6b",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -909,6 +909,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-white-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -929,6 +931,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-all-year-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -949,6 +953,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-break-up-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -969,6 +975,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-black-box-black-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -1142,6 +1150,7 @@
         "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "Alle Sorten probieren",
         "mobile_heading": "The Black Box of Love",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -1273,7 +1282,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
