@@ -55,10 +55,10 @@
         "max_width_px": 700,
         "title": "Create your own Box",
         "text": "<p>Endlich da: <br/>Erstelle deine eigene Snackbox 😍</p>",
-        "background_color": "#b46493",
+        "background_color": "#e6ce9b",
         "accent_color": "#c081a9",
         "hover_color": "#8a7194",
-        "show_base_triangular_line": false
+        "show_base_triangular_line": true
       }
     },
     "featured_collections_EUemmF": {
