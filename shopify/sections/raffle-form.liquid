@@ -20,242 +20,334 @@
   <div class="content-wrapper">
     <div class="container container--lg">
       <raffle-form
-        data-klaviyo-company-id="RsF7av"
-        data-klaviyo-list-id="R3wPrx"
         {% if section.settings.post_success_anchor != blank %}
           data-post-success-anchor="{{ section.settings.post_success_anchor }}"
         {% endif %}
       >
-        {% form 'contact' %}
-          <input type="hidden" id="Thema" name="contact[Thema]" value="Gewinnspiel DM teilgenommen">
-          {% if form.posted_successfully? %}
-            <div class="title-wrapper">
-              <div class="form-message form-message--success">
-                {% if section.settings.post_success_title != blank %}
-                  <h2 class="form-message__title title-bg">{{ section.settings.post_success_title }}</h2>
-                {% endif %}
-                {% if section.settings.post_success_content != blank %}
-                  <div class="form-message__title">{{ section.settings.post_success_content }}</div>
-                {% endif %}
-              </div>
-            </div>
-          {% else %}
-            <div class="contact-form__wrapper">
-              <div class="contact-form__form">
-                <div id="ContactForm" class="form-vertical">
-                  {%- if form.errors -%}
-                    <div class="form-message form-message--error">
-                      {{ form.errors | default_errors }}
-                    </div>
-                  {%- endif -%}
-                  <div class="form-group">
-                    <label class="select-box select-box--blue">
-                      <span class="text color-white select-box__label input__label">Anrede *</span>
-                      <select
-                        id="Anrede"
-                        name="contact[Anrede]"
-                        required
-                      >
-                        <option value="Frau" selected>Frau</option>
-                        <option value="Herr">Herr</option>
-                        <option value="Keine Angabe">Keine Angabe</option>
-                      </select>
-                      {%- render 'icon-arrow' -%}
-                    </label>
-
-                    <label class="label">
-                      <span class="text input__label"> Vorname * </span>
-                      <input
-                        type="text"
-                        name="contact[Vorname]"
-                        placeholder="Vorname"
-                        id="Vorname"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        required
-                      >
-                    </label>
-
-                    <label class="label">
-                      <span class="text input__label"> Nachname * </span>
-                      <input
-                        type="text"
-                        name="contact[Nachname]"
-                        placeholder="Nachname"
-                        id="Nachname"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        required
-                      >
-                    </label>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="label">
-                      <span class="text input__label"> E-Mail * </span>
-                      <input
-                        type="email"
-                        name="contact[email]"
-                        placeholder="E-Mail"
-                        id="E-Mail"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        required
-                      >
-                    </label>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="label">
-                      <span class="text input__label"> Straße & Hausnummer * </span>
-                      <input
-                        type="text"
-                        name="contact[Straße & Hausnummer]"
-                        placeholder="Straße & Hausnummer"
-                        id="Straße"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        autocomplete="street-address"
-                        required
-                      >
-                    </label>
-
-                    <label class="label">
-                      <span class="text input__label"> PLZ * </span>
-                      <input
-                        type="text"
-                        name="contact[PLZ]"
-                        placeholder="PLZ"
-                        id="PLZ"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        autocomplete="postal-code"
-                        required
-                      >
-                    </label>
-
-                    <label class="label">
-                      <span class="text input__label"> Ort * </span>
-                      <input
-                        type="text"
-                        name="contact[Ort]"
-                        placeholder="Ort"
-                        id="Ort"
-                        class="input input--blue"
-                        autocorrect="off"
-                        autocapitalize="off"
-                        autocomplete="address-level2"
-                        required
-                      >
-                    </label>
-                  </div>
-
-                  <div class="form-group">
-                    <link
-                      rel="stylesheet"
-                      href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+        <div class="title-wrapper raffle-form__success-message hidden">
+          <div class="form-message form-message--success">
+            {% if section.settings.post_success_title != blank %}
+              <h2 class="form-message__title title-bg">{{ section.settings.post_success_title }}</h2>
+            {% endif %}
+            {% if section.settings.post_success_content != blank %}
+              <div class="form-message__title">{{ section.settings.post_success_content }}</div>
+            {% endif %}
+          </div>
+        </div>
+        <form method="post" action="/apps/raffle-form">
+          <div class="contact-form__wrapper">
+            <div class="contact-form__form">
+              <div id="ContactForm" class="form-vertical">
+                <div class="form-group">
+                  <label class="select-box select-box--blue">
+                    <span class="text color-white select-box__label input__label">Anrede *</span>
+                    <select
+                      id="Anrede"
+                      name="Anrede"
+                      required
                     >
-                    <script type="module">
-                      import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
-                      import de from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/de.js';
-                      UC.defineLocale('de', de);
-                      UC.defineComponents(UC);
-                    </script>
+                      <option value="Frau" selected>Frau</option>
+                      <option value="Herr">Herr</option>
+                      <option value="Keine Angabe">Keine Angabe</option>
+                    </select>
+                    {%- render 'icon-arrow' -%}
+                  </label>
 
-                    <!-- Uploadcare File Upload -->
-                    <div class="field__upload">
-                      <span class="text input__label"> Kassenbon * </span>
-                      <input type="hidden" name="contact[Kassenbon]" id="Kassenbon">
+                  <label class="label">
+                    <span class="text input__label"> Vorname * </span>
+                    <input
+                      type="text"
+                      name="Vorname"
+                      placeholder="Vorname"
+                      id="Vorname"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      required
+                    >
+                  </label>
 
-                      <uc-config
-                        ctx-name="my-uploader"
-                        use-cloud-image-editor="false"
-                        source-list="local, camera"
-                        cdn-cname="https://1ad53bygda.ucarecd.net/"
-                        pubkey="3c825a77bb5652bdf2e1"
-                        locale-name="de"
-                        multiple="false"
-                      ></uc-config>
-
-                      <uc-file-uploader-minimal
-                        ctx-name="my-uploader"
-                        class="uc-light"
-                      ></uc-file-uploader-minimal>
-
-                      <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
-
-                      <div class="contact-form__upload-error hidden">
-                        <p>Bitte laden Sie einen Kassenbon hoch.</p>
-                      </div>
-
-                      <p>
-                        Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *png, *pdf
-                        und *.tiff.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="contact-form__checkbox-wrapper">
-                    <div class="contact-form__checkbox">
-                      <input type="checkbox" id="contact-form-checkbox" name="contact[AGB Akzeptiert]" required>
-                      <label for="contact-form-checkbox">
-                        * Ich habe die
-                        <span class="contact-form__checkbox-link" data-toggle="Terms">Teilnahmebedingungen</span>
-                        und die
-                        <span class="contact-form__checkbox-link" data-toggle="Privacy">Datenschutzerklärung</span>
-                        gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels
-                        verarbeitet werden.
-                      </label>
-                    </div>
-                    <div class="contact-form__checkbox">
-                      <input type="checkbox" id="NewsletterSignup" name="contact[Newsletter Akzeptiert]" checked>
-                      <label for="NewsletterSignup">
-                        Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden.
-                        Meine Einwilligung kann ich jederzeit widerrufen.
-                      </label>
-                    </div>
-                  </div>
-
-                  <modal-popover class="modal-popover modal-popover--large" id="Terms">
-                    <div class="popover__overlay"></div>
-                    <div class="popover__content">
-                      <button class="popover__close-button">
-                        {%- render 'icon-close' -%}
-                      </button>
-                      <div class="popover__content-inner">
-                        {{ section.settings.legal_text }}
-                      </div>
-                    </div>
-                  </modal-popover>
-
-                  <modal-popover class="modal-popover modal-popover--large" id="Privacy">
-                    <div class="popover__overlay"></div>
-                    <div class="popover__content">
-                      <button class="popover__close-button">
-                        {%- render 'icon-close' -%}
-                      </button>
-
-                      <div class="popover__content-inner">
-                        {{ section.settings.privacy_policy }}
-                      </div>
-                    </div>
-                  </modal-popover>
+                  <label class="label">
+                    <span class="text input__label"> Nachname * </span>
+                    <input
+                      type="text"
+                      name="Nachname"
+                      placeholder="Nachname"
+                      id="Nachname"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      required
+                    >
+                  </label>
                 </div>
 
-                <div class="contact-form__button-wrapper button-position--{{ section.settings.button_position }}">
-                  <button type="submit" class="button contact-form__button" disabled>
-                    {{ section.settings.button_text }}
-                  </button>
+                <div class="form-group">
+                  <label class="label">
+                    <span class="text input__label"> E-Mail * </span>
+                    <input
+                      type="email"
+                      name="E-Mail"
+                      placeholder="E-Mail"
+                      id="E-Mail"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      required
+                    >
+                  </label>
                 </div>
+
+                <div class="form-group">
+                  <label class="label">
+                    <span class="text input__label"> Straße & Hausnummer * </span>
+                    <input
+                      type="text"
+                      name="Straße & Hausnummer"
+                      placeholder="Straße & Hausnummer"
+                      id="Straße"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="street-address"
+                      required
+                    >
+                  </label>
+
+                  <label class="label">
+                    <span class="text input__label"> PLZ * </span>
+                    <input
+                      type="text"
+                      name="PLZ"
+                      placeholder="PLZ"
+                      id="PLZ"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="postal-code"
+                      required
+                    >
+                  </label>
+
+                  <label class="label">
+                    <span class="text input__label"> Ort * </span>
+                    <input
+                      type="text"
+                      name="Ort"
+                      placeholder="Ort"
+                      id="Ort"
+                      class="input input--blue"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="address-level2"
+                      required
+                    >
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+                  >
+                  <script type="module">
+                    import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+                    import de from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/de.js';
+                    UC.defineLocale('de', de);
+                    UC.defineComponents(UC);
+                  </script>
+
+                  <!-- Uploadcare File Upload -->
+                  <div class="field__upload">
+                    <span class="text input__label"> Kassenbon * </span>
+                    <input type="hidden" name="Kassenbon" id="Kassenbon">
+
+                    <uc-config
+                      ctx-name="my-uploader"
+                      use-cloud-image-editor="false"
+                      source-list="local, camera"
+                      cdn-cname="https://1ad53bygda.ucarecd.net/"
+                      pubkey="3c825a77bb5652bdf2e1"
+                      locale-name="de"
+                      multiple="false"
+                    ></uc-config>
+
+                    <uc-file-uploader-minimal
+                      ctx-name="my-uploader"
+                      class="uc-light"
+                    ></uc-file-uploader-minimal>
+
+                    <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
+
+                    <div class="contact-form__upload-error hidden">
+                      <p>Bitte laden Sie einen Kassenbon hoch.</p>
+                    </div>
+
+                    <p class="text--small">
+                      Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *png, *pdf und
+                      *.tiff.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="additional-question">
+                  <span class="additional-question__title">1. Kennst du treatfuls bereits?</span>
+                  <div class="form-group">
+                    <div class="input-radio">
+                      <input
+                        type="radio"
+                        name="Frage 1"
+                        id="question_1_answer_1"
+                        value="Nein, heute zum ersten Mal gesehen"
+                      >
+                      <label for="question_1_answer_1" class="text input__label">Nein, heute zum ersten Mal gesehen</label>
+                    </div>
+                    <div class="input-radio">
+                      <input type="radio" name="Frage 1" id="question_1_answer_2" value="Ja, aus dem Handel">
+                      <label for="question_1_answer_2" class="text input__label">Ja, aus dem Handel</label>
+                    </div>
+                    <div class="input-radio">
+                      <input
+                        type="radio"
+                        name="Frage 1"
+                        id="question_1_answer_3"
+                        value="Ja, von Instagram / Social Media"
+                      >
+                      <label for="question_1_answer_3" class="text input__label">Ja, von Instagram / Social Media</label>
+                    </div>
+                    <div class="input-radio">
+                      <input type="radio" name="Frage 1" id="question_1_answer_4" value="Ja, von Google / Online">
+                      <label for="question_1_answer_4" class="text input__label">Ja, von Google / Online</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-question">
+                  <span class="additional-question__title">2. Was hat dich überzeugt treatfuls zu kaufen?</span>
+                  <div class="form-group">
+                    <label class="label">
+                      <input
+                        type="textarea"
+                        name="Frage 2"
+                        id="treatfuls_known"
+                        class="input input--blue"
+                        placeholder="Was hat dich überzeugt treatfuls zu kaufen?"
+                      >
+                    </label>
+                  </div>
+                </div>
+                <div class="additional-question">
+                  <span class="additional-question__title">3. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten?</span>
+                  <div class="form-group">
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 3"
+                        id="question_3_answer_1"
+                        value="Wenig / kein Industriezucker"
+                      >
+                      <label for="question_3_answer_1" class="text input__label">Wenig / kein Industriezucker</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 3" id="question_3_answer_2" value="Natürliche Zutaten">
+                      <label for="question_3_answer_2" class="text input__label">Natürliche Zutaten</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 3" id="question_3_answer_3" value="Ballaststoffe / Nährwerte">
+                      <label for="question_3_answer_3" class="text input__label">Ballaststoffe / Nährwerte</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 3"
+                        id="question_3_answer_4"
+                        value="Geschmackssorten, die mich ansprechen"
+                      >
+                      <label for="question_3_answer_4" class="text input__label">Geschmackssorten, die mich ansprechen</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 3"
+                        id="question_3_answer_5"
+                        value="Markenauftritt / Verpackung"
+                      >
+                      <label for="question_3_answer_5" class="text input__label">Markenauftritt / Verpackung</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 3" id="question_3_answer_6" value="Preis">
+                      <label for="question_3_answer_6" class="text input__label">Preis</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 3" id="question_3_answer_7" value="Bio / Nachhaltigkeit">
+                      <label for="question_3_answer_7" class="text input__label">Bio / Nachhaltigkeit</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 3" id="question_3_answer_8" value="Preis">
+                      <label for="question_3_answer_8" class="text input__label">Preis</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-form__checkbox-wrapper">
+                  <div class="contact-form__checkbox">
+                    <input type="checkbox" id="contact-form-checkbox" name="AGB Akzeptiert" required value="yes">
+                    <label for="contact-form-checkbox" class="text input__label">
+                      * Ich habe die
+                      <span class="contact-form__checkbox-link" data-toggle="Terms">Teilnahmebedingungen</span>
+                      und die
+                      <span class="contact-form__checkbox-link" data-toggle="Privacy">Datenschutzerklärung</span>
+                      gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels
+                      verarbeitet werden.
+                    </label>
+                  </div>
+                  <div class="contact-form__checkbox">
+                    <input type="checkbox" id="NewsletterSignup" name="Newsletter Akzeptiert" checked value="yes">
+                    <label for="NewsletterSignup" class="text input__label">
+                      Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden.
+                      Meine Einwilligung kann ich jederzeit widerrufen.
+                    </label>
+                  </div>
+                </div>
+
+                <modal-popover class="modal-popover modal-popover--large" id="Terms">
+                  <div class="popover__overlay"></div>
+                  <div class="popover__content">
+                    <button class="popover__close-button">
+                      {%- render 'icon-close' -%}
+                    </button>
+                    <div class="popover__content-inner">
+                      {{ section.settings.legal_text }}
+                    </div>
+                  </div>
+                </modal-popover>
+
+                <modal-popover class="modal-popover modal-popover--large" id="Privacy">
+                  <div class="popover__overlay"></div>
+                  <div class="popover__content">
+                    <button class="popover__close-button">
+                      {%- render 'icon-close' -%}
+                    </button>
+
+                    <div class="popover__content-inner">
+                      {{ section.settings.privacy_policy }}
+                    </div>
+                  </div>
+                </modal-popover>
+              </div>
+
+              <div class="raffle-form__error-message hidden">
+                <h4 class="raffle-form__error-message-text">Fehler: Es gab Probleme bei der Übermittlung der Daten.</h4>
+              </div>
+
+              <div class="contact-form__button-wrapper button-position--{{ section.settings.button_position }}">
+                <button type="submit" class="button contact-form__button" disabled>
+                  {{ section.settings.button_text }}
+                </button>
               </div>
             </div>
-          {% endif %}
-        {% endform %}
+          </div>
+        </form>
       </raffle-form>
     </div>
   </div>

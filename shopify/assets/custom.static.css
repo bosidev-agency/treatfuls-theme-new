@@ -1,3 +1,8 @@
+/* UTILITY CLASSES */
+.text--small {
+  font-size: 16px;
+}
+
 .popup.popup--open {
   visibility: visible;
   opacity: 1;
@@ -1027,6 +1032,26 @@ ol li {
 
 .raffle-form .field__upload {
   width: 100%;
+}
+
+.additional-question {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.additional-question__title {
+  margin-bottom: 10px;
+}
+
+.additional-question .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.raffle-form__error-message-text {
+  color: var(--error-color);
 }
 
 .contact-form__checkbox-link {

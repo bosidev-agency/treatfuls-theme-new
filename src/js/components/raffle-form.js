@@ -1,53 +1,3 @@
-const KLAVIYO_TIMEOUT_MS = 2500;
-
-function isValidEmail(value) {
-  return typeof value === "string" && value.trim().length > 0 && value.includes("@");
-}
-
-async function klaviyoEmailOptIn({
-  companyId,
-  listId,
-  email,
-  source = "newsletter",
-  signal,
-}) {
-  const res = await fetch(
-    `https://a.klaviyo.com/client/subscriptions?company_id=${encodeURIComponent(companyId)}`,
-    {
-      method: "POST",
-      headers: {
-        "content-type": "application/vnd.api+json",
-        revision: "2024-07-15",
-      },
-      body: JSON.stringify({
-        data: {
-          type: "subscription",
-          attributes: {
-            profile: {
-              data: {
-                type: "profile",
-                attributes: {
-                  email: email,
-                },
-              },
-            },
-            custom_source: source,
-          },
-          relationships: {
-            list: { data: { type: "list", id: listId } },
-          },
-        },
-      }),
-      signal,
-    }
-  );
-  if (!res.ok) {
-    const errorBody = await res.text();
-    throw new Error(`Klaviyo opt-in failed (${res.status})`);
-  }
-  return res.json();
-}
-
 class RaffleForm extends HTMLElement {
   constructor() {
     super();
@@ -56,20 +6,15 @@ class RaffleForm extends HTMLElement {
   connectedCallback() {
     this.uploadcare = this.querySelector("uc-upload-ctx-provider");
     this.raffleForm = this.querySelector(
-      'form[action="/contact#contact_form"]',
+      'form[action="/apps/raffle-form"]',
     );
-    this.reciptInput = this.querySelector('input[name="contact[Kassenbon]"]');
+    this.reciptInput = this.querySelector('input[name="Kassenbon"]');
     this.submitButton = this.querySelector('button[type="submit"]');
     this.uploadError = this.querySelector(".contact-form__upload-error");
     this.newsletterSignupCheckbox = this.querySelector('#NewsletterSignup');
-    this.raffleSubmitted = new URL(window.location.href).searchParams.get('contact_posted');
     this.postSuccessAnchor = this.dataset.postSuccessAnchor;
-
-    if (this.raffleSubmitted) {
-      if (this.postSuccessAnchor) {
-        window.location.hash = this.postSuccessAnchor;
-      }
-    }
+    this.successMessage = this.querySelector(".raffle-form__success-message");
+    this.errorMessage = this.querySelector(".raffle-form__error-message");
 
     this.uploadcare.addEventListener("file-url-changed", (e) => {
       this.reciptInput.value = e.detail.cdnUrl;
@@ -81,62 +26,45 @@ class RaffleForm extends HTMLElement {
       this.submitButton.disabled = true;
     });
 
-    this.raffleForm.addEventListener("submit", async (event) => {
-      // Allow programmatic submit to proceed (after Klaviyo call)
-      if (this.programmaticSubmit) {
-        this.programmaticSubmit = false;
-        this.submitting = false;
-        return;
-      }
-
-      // One-time submit guard: prevent double submits
-      if (this.submitting) {
-        event.preventDefault();
-        return;
-      }
-
-      if (this.reciptInput.value === "") {
-        event.preventDefault();
-        this.uploadError.classList.remove("hidden");
-        return;
-      }
-
-
-      const companyId = this.dataset.klaviyoCompanyId?.trim();
-      const listId = this.dataset.klaviyoListId?.trim();
-      const emailInput = this.raffleForm.querySelector('input[name="contact[email]"]');
-      const email = emailInput?.value?.trim();
-
-      const shouldOptIn =
-        this.newsletterSignupCheckbox?.checked &&
-        companyId &&
-        listId &&
-        isValidEmail(email);
-
-
-      if (shouldOptIn) {
-        event.preventDefault();
-        this.submitting = true;
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), KLAVIYO_TIMEOUT_MS);
-        try {
-          const result = await klaviyoEmailOptIn({
-            companyId,
-            listId,
-            email,
-            source: "raffle",
-            signal: controller.signal,
-          });
-        } catch (err) {
-          console.error("Klaviyo opt-in failed", err);
-        } finally {
-          clearTimeout(timeoutId);
-          this.submitting = false;
-          this.programmaticSubmit = true;
-          this.raffleForm.requestSubmit();
-        }
-      }
+    this.raffleForm.addEventListener("submit", (event) => {
+      this.handleSubmit(event);
     });
+  }
+
+  async handleSubmit(event) {
+    event.preventDefault();
+    
+    const form = event.currentTarget;
+    this.submitButton.disabled = true;
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+      });
+      const result = await response.json();
+      
+      if (result.success) {
+        this.showSuccessMessage();
+      } else {
+        this.showErrorMessage(result.message);
+      }
+
+      this.closest("section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  }
+
+  showSuccessMessage() {
+    this.successMessage.classList.remove("hidden");
+    this.raffleForm.classList.add("hidden");
+    this.submitButton.disabled = false;
+  }
+
+  showErrorMessage(message) {
+    this.errorMessage.classList.remove("hidden");
+    this.submitButton.disabled = false;
+    this.errorMessage.querySelector(".raffle-form__error-message-text").textContent = 'Fehler: ' + message;
   }
 }
 
