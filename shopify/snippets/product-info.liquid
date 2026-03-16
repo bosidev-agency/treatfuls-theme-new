@@ -59,6 +59,14 @@
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
+              {%- when 'title' -%}
+                {%- assign product_title = product.metafields.my_fields.pdp_title -%}
+                
+                {%- if product_title -%}
+                  <h1 class="product-info__title title-bg title-bg--sm">{{ product_title }}</h1>
+                {%- else -%}
+                  <h1 class="product-info__title h2">{{ product.title }}</h1>
+                {% endif %}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product-info__description text">{{ product.description }}</div>
