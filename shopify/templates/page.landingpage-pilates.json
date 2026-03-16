@@ -47,16 +47,30 @@
         "show_base_triangular_line": false
       }
     },
+    "main_page_fK6BWV": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "POST Pilates Snack",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "image_with_text_izV9bQ": {
       "type": "image-with-text",
       "blocks": {
         "image_with_text_Ef4hFQ": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Pilates.png",
+            "image": "shopify://shop_images/LP_Visuals.webp",
             "image_position": "left",
             "title": "It’s a treat, not a cheat.",
-            "content": "<p>Nach dem Pilates hast du Lust auf einen Snack?</p><p>Du möchtest dir etwas gönnen –<br/><br/>aber <strong>ohne Industriezucker</strong>?</p><p>Du achtest darauf, was du deinem Körper gibst?</p><p>Ballaststoffe sind dir wichtig?</p><p>Du willst etwas <strong>Leckeres</strong>, das sich trotzdem gut anfühlt?</p><p>Ein Snack, der süß ist aber sich nicht wie ein Cheat anfühlt?</p><p>Und auf Schokolade willst du <strong>trotzdem nicht verzichten</strong>?</p>",
+            "content": "<p>Nach dem Pilates Lust auf einen Snack?<br/><br/>Aber ohne Industriezucker?<br/>Ballaststoffe sind dir wichtig?<br/>Du willst etwas Leckeres, das sich trotzdem gut anfühlt?<br/>Ein Snack, der süß ist, aber sich nicht wie ein Cheat anfühlt?<br/>Und auf Schokolade willst du auch nicht verzichten?</p>",
             "button_text": "",
             "button_url": "shopify://collections/vorrat-veganuary"
           }
@@ -64,10 +78,10 @@
         "image_with_text_WfpNYY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/LP_Visuals.webp",
+            "image": "shopify://shop_images/nut_your_basic_brownie_aesthetisch.png",
             "image_position": "left",
-            "title": "Warum treatfuls mehr ist als nur ein Snack",
-            "content": "<p>Nach einer Pilates-Session fühlt man sich einfach gut. Leicht, bewegt, irgendwie mehr bei sich selbst. Aber mal ehrlich? Lust auf etwas Süßes hat man doch trotzdem. Nur eben nicht auf einen Snack voller Industriezucker.</p><p>Genau dafür gibt es treatfuls ✨</p><p>Die Riegel enthalten im Durchschnitt über 40 % weniger Zucker als herkömmliche Süßigkeiten und bekommen ihre Süße ganz natürlich aus Datteln. Der Geschmack kommt aus Nüssen, die zusätzlich gesunde Fette liefern und Energie geben.</p><p></p><p>Außerdem bringt treatfuls noch etwas mit, was vielen Snacks fehlt: Ballaststoffe. Ein Filled Bar deckt bis zu 20 % des täglichen Bedarfs und kann so zu einer ballaststoffreichen Ernährung beitragen, was unter anderem für eine gute Verdauung wichtig ist.</p><p></p><p>Und langweilig wird es auch nicht: es ist für jeden was dabei, von fruchtiger Himbeere über Kokos bis hin zu Haselnus,  alles überzogen mit weißer oder dunkler Schokolade.</p><p></p><p>Kurz gesagt:</p><p>Es schmeckt wie eine kleine Sünde.</p><p>Ist aber eigentlich einfach nur ein gesunder Snack.</p>",
+            "title": "Der perfekte Snack nach dem Workout",
+            "content": "<p>Der Snack für nach dem Pilates. Süß, natürlich und ohne Industriezucker.<br/><br/>✨ 40 % weniger Zucker <br/>🌴 Natürliche Süße aus Datteln<br/>🌾 Ballaststoffreich <br/>🥜 Gesunde Fette  <br/>⚡️ Natürliche Energie<br/>🍫 weiße oder dunkler Schokolade<br/>🍓 Viele leckere Sorten</p>",
             "button_text": "",
             "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -75,12 +89,12 @@
         "image_with_text_yRCHF3": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Spicy_but_grounded_aesthetisch.png",
+            "image": "shopify://shop_images/new_filled_bars_auf_einem_FOto.png",
             "image_position": "left",
-            "title": "und hier noch Infos aufs bild",
-            "content": "<p>ein satz dazu  1) Call to action</p>",
+            "title": "Finde deinen Lieblings-treat.",
+            "content": "<p>Von fruchtig bis schokoladig, entdecke alle treatfuls Riegel.</p>",
             "button_text": "jetzt alle Sorten probieren",
-            "button_url": ""
+            "button_url": "shopify://collections/produkte"
           }
         }
       },
@@ -696,163 +710,6 @@
         "padding_bottom": 40
       }
     },
-    "custom_section_9AEAFL": {
-      "type": "custom-section",
-      "blocks": {
-        "heading_kWUKzf": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "heading_text": "unsere fav Produkte",
-            "subtitle_text": "",
-            "margin_top": 24,
-            "margin_bottom": 24
-          },
-          "blocks": {}
-        },
-        "group_Dc9Gp7": {
-          "type": "group",
-          "name": "Group",
-          "settings": {
-            "display_type": "flex",
-            "direction": "row",
-            "alignment": "center",
-            "gap": 32,
-            "child_width": "100%",
-            "max_width_enabled": false,
-            "max_width": 1200,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "slider_X7fgak": {
-              "type": "slider",
-              "name": "Slider",
-              "settings": {
-                "hide_desktop": true,
-                "hide_mobile": false,
-                "loop": true,
-                "slides_per_view_desktop": 4,
-                "slides_per_view_mobile": 1,
-                "show_next_slide": true,
-                "gap": 20
-              },
-              "blocks": {
-                "slide_b3rKQL": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_Wdtkzx": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_Wdtkzx"
-                  ]
-                },
-                "slide_UXkYT6": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_BVnnPr": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "matcha-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_BVnnPr"
-                  ]
-                },
-                "slide_jjKDwy": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_CnqMpU": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "himbeer-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_CnqMpU"
-                  ]
-                },
-                "slide_pg6biV": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_wmWiAV": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "create-your-own-bundle",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_wmWiAV"
-                  ]
-                }
-              },
-              "block_order": [
-                "slide_b3rKQL",
-                "slide_UXkYT6",
-                "slide_jjKDwy",
-                "slide_pg6biV"
-              ]
-            }
-          },
-          "block_order": [
-            "slider_X7fgak"
-          ]
-        }
-      },
-      "block_order": [
-        "heading_kWUKzf",
-        "group_Dc9Gp7"
-      ],
-      "name": "Custom block section",
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
     "featured_product_GbQVWw": {
       "type": "featured-product",
       "blocks": {
@@ -892,7 +749,7 @@
         "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "Lust auf mehr?",
         "mobile_heading": "Lust auf mehr?",
-        "sticky_button": true,
+        "sticky_button": false,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -907,8 +764,8 @@
         "image_YHHx9t": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/64.png",
-            "content": "",
+            "image": "shopify://shop_images/Matcha_flew.png",
+            "content": "<p>treatfuls ist ein gesunder Snack ohne Industriezucker, der seine natürliche Süße aus Datteln bekommt und eine bessere Alternative zu herkömmlichen Süßigkeiten ist.</p>",
             "content_position_y": 80,
             "content_position_x": 20,
             "grid_number": "1",
@@ -925,8 +782,8 @@
         "image_ziKmbU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/17.png",
-            "content": "",
+            "image": "shopify://shop_images/LP_Visuals-03.webp",
+            "content": "<p>treatfuls Riegel sind ein gesunder Snack ohne Industriezucker, natürlich gesüßt mit Datteln und mit über 40 % weniger Zucker als herkömmliche Süßigkeiten.</p>",
             "content_position_y": 40,
             "content_position_x": 50,
             "grid_number": "1",
@@ -944,7 +801,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/15.png",
-            "content": "",
+            "content": "<p>treatfuls sind ballaststoffreiche Snackriegel ohne Industriezucker, die ihre natürliche Süße aus Datteln erhalten und eine bessere Alternative zu klassischen Süßigkeiten bieten.</p>",
             "content_position_y": 70,
             "content_position_x": 50,
             "grid_number": "1",
@@ -961,8 +818,8 @@
         "image_yR8GAg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/63.png",
-            "content": "",
+            "image": "shopify://shop_images/Goodiebag.png",
+            "content": "<p>treatfuls Riegel sind ein gesunder Snack ohne Industriezucker, natürlich gesüßt mit Datteln und perfekt für den süßen Moment zwischendurch.</p>",
             "content_position_y": 55,
             "content_position_x": 85,
             "grid_number": "1",
@@ -996,38 +853,38 @@
         "popup_text_color": ""
       }
     },
-    "advantages_BcfMf9": {
+    "advantages_37XrAh": {
       "type": "advantages",
       "blocks": {
-        "advantage_item_8gBfw3": {
+        "advantage_item_yHfUyb": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
-        "advantage_item_G8CBAM": {
+        "advantage_item_dr9wUN": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
-        "advantage_item_CARaAK": {
+        "advantage_item_YQpxJV": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
-        "advantage_item_mqdQfY": {
+        "advantage_item_RdrhDX": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
           }
         },
-        "advantage_item_qxe3cw": {
+        "advantage_item_HDHrQn": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1035,7 +892,7 @@
             "text": "Recyclebare Verpackung"
           }
         },
-        "advantage_item_hy9grG": {
+        "advantage_item_rAHwcT": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1043,7 +900,7 @@
             "text": "Ohne Soja"
           }
         },
-        "advantage_item_XE7riB": {
+        "advantage_item_kbKnb7": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1051,7 +908,7 @@
             "text": "Ohne Gluten"
           }
         },
-        "advantage_item_WEkgHC": {
+        "advantage_item_RyJT3U": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1061,20 +918,20 @@
         }
       },
       "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
+        "advantage_item_yHfUyb",
+        "advantage_item_dr9wUN",
+        "advantage_item_YQpxJV",
+        "advantage_item_RdrhDX",
+        "advantage_item_HDHrQn",
+        "advantage_item_rAHwcT",
+        "advantage_item_kbKnb7",
+        "advantage_item_RyJT3U"
       ],
       "settings": {
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#a3c089",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#859972",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -1093,12 +950,12 @@
   "order": [
     "main",
     "hero_eNmaQw",
+    "main_page_fK6BWV",
     "image_with_text_izV9bQ",
     "comparison_table_dT7KWy",
-    "custom_section_9AEAFL",
     "featured_product_GbQVWw",
     "image_gallery_d8EpDC",
-    "advantages_BcfMf9",
+    "advantages_37XrAh",
     "main_product_ingredients_wVVqEM"
   ]
 }

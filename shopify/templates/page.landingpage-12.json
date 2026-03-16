@@ -81,9 +81,10 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "valentinstags-break-up-box",
-        "heading": "Sweeter than your ex.",
+        "product": "",
+        "heading": "PR Bereic",
         "mobile_heading": "Sweeter than your ex.",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
@@ -144,6 +145,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-white-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -164,6 +167,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-black-box-black-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -184,6 +189,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-all-year-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -204,6 +211,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "valentinstags-break-up-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -232,6 +241,7 @@
         "heading_kWUKzf",
         "group_Dc9Gp7"
       ],
+      "disabled": true,
       "name": "Custom block section",
       "settings": {
         "background_color": "#e35478",
@@ -1077,7 +1087,7 @@
       "settings": {
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
         "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
