@@ -11,7 +11,31 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "blocks": {
+        "title_yc9f3N": {
+          "type": "title",
+          "settings": {}
+        },
+        "description_mMCf3t": {
+          "type": "description",
+          "settings": {}
+        },
+        "buy_button_PCq8qG": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": true
+          }
+        }
+      },
+      "block_order": [
+        "title_yc9f3N",
+        "description_mMCf3t",
+        "buy_button_PCq8qG"
+      ],
       "settings": {
+        "sticky_button": true,
+        "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "{{ product.metafields.custom.background_color.value }}",
