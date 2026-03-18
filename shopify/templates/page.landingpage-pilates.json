@@ -70,7 +70,7 @@
             "image": "shopify://shop_images/LP_Visuals.webp",
             "image_position": "left",
             "title": "It’s a treat, not a cheat.",
-            "content": "<p>Nach dem Pilates Lust auf einen Snack?<br/><br/>Aber ohne Industriezucker?<br/>Ballaststoffe sind dir wichtig?<br/>Du willst etwas Leckeres, das sich trotzdem gut anfühlt?<br/>Ein Snack, der süß ist, aber sich nicht wie ein Cheat anfühlt?<br/>Und auf Schokolade willst du auch nicht verzichten?</p>",
+            "content": "<p>Nach dem Pilates Lust auf einen Snack?<br/><br/>Aber ohne Industriezucker?<br/>Ballaststoffe sind dir wichtig?<br/>Du willst etwas Leckeres, das sich trotzdem gut anfühlt?<br/>Ein Snack, der süß ist, aber sich nicht wie ein Cheat anfühlt?<br/>Und auf Schokolade willst du auch nicht verzichten?<br/><br/></p><p>✨ <strong>Dann ist treatfuls der perfekte Snack für dich </strong>✨ </p>",
             "button_text": "",
             "button_url": "shopify://collections/vorrat-veganuary"
           }
@@ -80,8 +80,8 @@
           "settings": {
             "image": "shopify://shop_images/nut_your_basic_brownie_aesthetisch.png",
             "image_position": "left",
-            "title": "Der perfekte Snack nach dem Workout",
-            "content": "<p>Der Snack für nach dem Pilates. Süß, natürlich und ohne Industriezucker.<br/><br/>✨ 40 % weniger Zucker <br/>🌴 Natürliche Süße aus Datteln<br/>🌾 Ballaststoffreich <br/>🥜 Gesunde Fette  <br/>⚡️ Natürliche Energie<br/>🍫 weiße oder dunkler Schokolade<br/>🍓 Viele leckere Sorten</p>",
+            "title": "Der Snack nach dem Workout",
+            "content": "<p>✨ 40 % weniger Zucker<br/>🌴 Natürliche Süße aus Datteln<br/>🌾 Ballaststoffreich <br/>🥜 Gesunde Fette  <br/>⚡️ Natürliche Energie<br/>🍫 weiße oder dunkler Schokolade<br/>🍓 Viele leckere Sorten</p>",
             "button_text": "",
             "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -92,8 +92,8 @@
             "image": "shopify://shop_images/new_filled_bars_auf_einem_FOto.png",
             "image_position": "left",
             "title": "Finde deinen Lieblings-treat.",
-            "content": "<p>Von fruchtig bis schokoladig, entdecke alle treatfuls Riegel.</p>",
-            "button_text": "jetzt alle Sorten probieren",
+            "content": "<p>⚡ Natürliche Energie aus Datteln: <br/>Datteln liefern schnell verfügbare Kohlenhydrate sowie Kalium und Magnesium, die deine Muskeln unterstützen.<br/><br/>🥜 Gesunde Fette & pflanzliches Protein aus Nüssen Sorgen für langanhaltende Energie und unterstützen die Regeneration nach dem Workout.<br/><br/>🌾 Ballaststoffe aus Datteln und Nüssen helfen dabei, Energie gleichmäßiger freizusetzen, ohne Zucker-Crash.</p>",
+            "button_text": "👉🏽Alle Sorten probieren",
             "button_url": "shopify://collections/produkte"
           }
         }

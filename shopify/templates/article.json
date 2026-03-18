@@ -68,7 +68,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "matcha-riegel",
+                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",

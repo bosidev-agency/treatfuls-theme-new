@@ -45,6 +45,19 @@
         "show_base_triangular_line": false
       }
     },
+    "main_page_LTa8we": {
+      "type": "main-page",
+      "settings": {
+        "title": "treatfuls für Presse & Medien",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "#c081a9",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "featured_product_GbQVWw": {
       "type": "featured-product",
       "blocks": {
@@ -79,6 +92,7 @@
         "price_zwAehL",
         "buy_button_W846tk"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "product": "",
@@ -856,43 +870,29 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/in_my_salty_era.png",
+            "image": "shopify://shop_images/LP_Visuals-03.webp",
             "image_position": "left",
-            "title": "Break up, but make it sweet.",
-            "content": "<p>Die <strong>Valentines Break-up Box</strong> ist für alle, die Valentinstag bewusst anders feiern, dafür aber mit richtig guten Snacks, die genau jetzt passen.</p><p>In dieser Box findest du fünf treats mit klarer Message: <strong>Sweeter than your ex</strong>, <strong>healthier than your last relationship</strong> und ein cremiger <strong>In my salty era</strong> Spread. Süß, nussig und mit einer feinen salzigen Note.</p><p>Gesüßt wird ausschließlich mit Datteln – für echten Geschmack und Snacks, die sich gut anfühlen.</p><p><strong>Verpackt in einer liebevoll gestalteten Valentinstagsbox</strong> ist sie perfekt für deinen Solo-Valentinstag, einen Abend mit Freund:innen oder als kleine Erinnerung daran, sich selbst nicht zu vergessen.</p>",
-            "button_text": "zur Breakup Box",
-            "button_url": "shopify://products/valentinstags-break-up-box"
+            "title": "",
+            "content": "<p><strong>Schön, dass du hier bist.</strong><br/><br/>Wenn du über treatfuls berichten möchtest, Bildmaterial suchst oder einfach mehr über unsere Marke erfahren willst, bist du hier genau richtig. <br/><br/>In unserem PRMediaKit findest du Logos, Bilder und weitere Infos zu treatfuls.</p><p>Für Presseanfragen oder Interviews schreib uns jederzeit gern.<br/></p><p></p>",
+            "button_text": "PR MediaKit",
+            "button_url": "https://drive.google.com/drive/folders/1TU6e-tsA_fdXDTgQPeWK0LtwT1BScywc"
           }
         },
-        "image_with_text_XgJXRN": {
+        "image_with_text_KkY4VQ": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Himbeer_flew.png",
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
             "image_position": "left",
-            "title": "Kids and Mom friendly",
-            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
-            "button_text": "Show me the filling",
-            "button_url": "shopify://products/summer-crush-kopie"
-          }
-        },
-        "image_with_text_BjFpid": {
-          "type": "image_with_text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
-            "image_position": "left",
-            "title": "Meet the Snack Squad",
-            "content": "<p>treatfuls wurde nicht im Labor entwickelt, sondern mit Herz, viel Humor und der festen Überzeugung, dass Snacks besser sein können. Jedes Produkt, jede Sorte, jede Idee entsteht gemeinsam, nicht am Schreibtisch, sondern in der Küche, wo treatfuls geboren wurde: mit Löffel, Liebe und ganz viel Dattelpaste.</p>",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "title": "",
+            "content": "<p><span style=\"text-decoration:underline\">Pressekontakt: </span><br/><br/>Julia Krempin<br/><a href=\"mailto:krempinjulia@gmail.com\" target=\"_blank\">krempinjulia@gmail.com</a></p>",
+            "button_text": "",
+            "button_url": ""
           }
         }
       },
       "block_order": [
         "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
+        "image_with_text_KkY4VQ"
       ],
       "name": "Image with text",
       "settings": {
@@ -1010,38 +1010,38 @@
         "accent_color": "#2ac2bd"
       }
     },
-    "advantages_BcfMf9": {
+    "advantages_NF9MnV": {
       "type": "advantages",
       "blocks": {
-        "advantage_item_8gBfw3": {
+        "advantage_item_JBWPDL": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
-        "advantage_item_G8CBAM": {
+        "advantage_item_E9aALY": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
-        "advantage_item_CARaAK": {
+        "advantage_item_GzF3nw": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
-        "advantage_item_mqdQfY": {
+        "advantage_item_h83VfV": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
           }
         },
-        "advantage_item_qxe3cw": {
+        "advantage_item_mKkbwr": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1049,7 +1049,7 @@
             "text": "Recyclebare Verpackung"
           }
         },
-        "advantage_item_hy9grG": {
+        "advantage_item_zrbydL": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1057,7 +1057,7 @@
             "text": "Ohne Soja"
           }
         },
-        "advantage_item_XE7riB": {
+        "advantage_item_9FaP4J": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1065,7 +1065,7 @@
             "text": "Ohne Gluten"
           }
         },
-        "advantage_item_WEkgHC": {
+        "advantage_item_GDj4KP": {
           "type": "advantage_item",
           "disabled": true,
           "settings": {
@@ -1075,19 +1075,19 @@
         }
       },
       "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
+        "advantage_item_JBWPDL",
+        "advantage_item_E9aALY",
+        "advantage_item_GzF3nw",
+        "advantage_item_h83VfV",
+        "advantage_item_mKkbwr",
+        "advantage_item_zrbydL",
+        "advantage_item_9FaP4J",
+        "advantage_item_GDj4KP"
       ],
       "settings": {
         "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
         "background_color": "#e35478",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -1109,13 +1109,14 @@
   "order": [
     "main",
     "hero_eNmaQw",
+    "main_page_LTa8we",
     "featured_product_GbQVWw",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
     "image_gallery_EPcCKR",
     "main_product_ingredients_Kgi9bT",
-    "advantages_BcfMf9",
+    "advantages_NF9MnV",
     "compare_product_reviews_4JnjWz"
   ]
 }

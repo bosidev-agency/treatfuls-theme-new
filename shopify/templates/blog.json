@@ -27,10 +27,10 @@
       ],
       "name": "Blog filter",
       "settings": {
-        "heading_desktop": "Alle Rezepte",
-        "heading_mobile": "Alle Rezepte",
-        "background_color": "#dbaaeb",
-        "background_color_mobile": "#2ac2bd",
+        "heading_desktop": "Oster Rezepte",
+        "heading_mobile": "Oster Rezepte",
+        "background_color": "#e6ce9b",
+        "background_color_mobile": "#e6ce9b",
         "accent_color": "#2ac2bd",
         "accent_color_mobile": "#f3587f"
       }

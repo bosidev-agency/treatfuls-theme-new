@@ -1203,6 +1203,7 @@
         "image_with_text_mwatAT",
         "image_with_text_MNinVe"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "background_color": "#c081a9",

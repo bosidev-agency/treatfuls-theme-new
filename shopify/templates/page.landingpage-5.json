@@ -81,14 +81,15 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "all-year-gifting-box",
-        "heading": "Sweet things inside.",
-        "mobile_heading": "Sweet things inside.",
+        "product": "osterbox-treatfuls",
+        "heading": "Die perfekten Ostersnacks 🐣",
+        "mobile_heading": "Die perfekten Ostersnacks 🐣",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c13666",
-        "accent_color": "#830606",
+        "background_color": "#c081a9",
+        "accent_color": "#e6ce9b",
         "hover_color": "#e35478"
       }
     },
@@ -143,7 +144,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "singles-box-1",
+                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -163,7 +166,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "gute-vorsatze-vorrat-alle-sorten-bio-vegan",
+                        "card_product": "summer-crush-kopie",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -183,7 +188,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "selflove-snackbox-bio-vegan",
+                        "card_product": "matcha-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -203,7 +210,9 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "20x-alle-11-sorten",
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -234,7 +243,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#e56a89",
+        "background_color": "#e6ce9b",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -1065,9 +1074,9 @@
       ],
       "settings": {
         "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#c13666",
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
