@@ -160,7 +160,7 @@
                   <!-- Uploadcare File Upload -->
                   <div class="field__upload">
                     <span class="text input__label"> Kassenbon * </span>
-                    <input type="hidden" name="Kassenbon" id="Kassenbon">
+                    <input type="hidden" name="Kassenbon" id="Kassenbon" data-require-upload>
 
                     <uc-config
                       ctx-name="my-uploader"
@@ -190,8 +190,11 @@
                   </div>
                 </div>
 
-                <div class="additional-question">
-                  <span class="additional-question__title">1. Kennst du treatfuls bereits?</span>
+                <div class="additional-question" data-require-selection>
+                  <span class="additional-question__title">1. Kennst du treatfuls bereits? *</span>
+                  <p class="text hidden" data-selection-group-error role="alert">
+                    Bitte wähle eine Antwort.
+                  </p>
                   <div class="form-group">
                     <div class="input-radio">
                       <input
@@ -211,81 +214,106 @@
                         type="radio"
                         name="Frage 1"
                         id="question_1_answer_3"
-                        value="Ja, von Instagram / Social Media"
+                        value="Ja, von Social Media (Instagram, Pinterest, TikTok)"
                       >
-                      <label for="question_1_answer_3" class="text input__label">Ja, von Instagram / Social Media</label>
+                      <label for="question_1_answer_3" class="text input__label">Ja, von Social Media (Instagram, Pinterest, TikTok)</label>
                     </div>
                     <div class="input-radio">
-                      <input type="radio" name="Frage 1" id="question_1_answer_4" value="Ja, von Google / Online">
-                      <label for="question_1_answer_4" class="text input__label">Ja, von Google / Online</label>
+                      <input type="radio" name="Frage 1" id="question_1_answer_4" value="Ja, von Influencern">
+                      <label for="question_1_answer_4" class="text input__label">Ja, von Influencern</label>
+                    </div>
+                    <div class="input-radio">
+                      <input type="radio" name="Frage 1" id="question_1_answer_5" value="Ja, von Google / Online">
+                      <label for="question_1_answer_5" class="text input__label">Ja, von Google / Online</label>
+                    </div>
+                    <div class="input-radio">
+                      <input type="radio" name="Frage 1" id="question_1_answer_6" value="Ja, aus Cafés, Sportstudios">
+                      <label for="question_1_answer_6" class="text input__label">Ja, aus Cafés, Sportstudios</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-question" data-require-selection>
+                  <span class="additional-question__title">2. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten? (Mehrfachauswahl möglich) *</span>
+                  <p class="text hidden" data-selection-group-error role="alert">
+                    Bitte wähle mindestens eine Option oder trage etwas bei „Anderes“ ein.
+                  </p>
+                  <div class="form-group">
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 2"
+                        id="question_2_answer_1"
+                        value="Wenig / kein Industriezucker"
+                      >
+                      <label for="question_2_answer_1" class="text input__label">Wenig / kein Industriezucker</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 2" id="question_2_answer_2" value="Natürliche Zutaten">
+                      <label for="question_2_answer_2" class="text input__label">Natürliche Zutaten</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 2" id="question_2_answer_3" value="Ballaststoffe / Nährwerte">
+                      <label for="question_2_answer_3" class="text input__label">Ballaststoffe / Nährwerte</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 2"
+                        id="question_2_answer_4"
+                        value="Geschmackssorten, die mich ansprechen"
+                      >
+                      <label for="question_2_answer_4" class="text input__label">Geschmackssorten, die mich ansprechen</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input
+                        type="checkbox"
+                        name="Frage 2"
+                        id="question_2_answer_5"
+                        value="Markenauftritt / Verpackung"
+                      >
+                      <label for="question_2_answer_5" class="text input__label">Markenauftritt / Verpackung</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 2" id="question_2_answer_6" value="Preis">
+                      <label for="question_2_answer_6" class="text input__label">Preis</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 2" id="question_2_answer_7" value="Bio / Nachhaltigkeit">
+                      <label for="question_2_answer_7" class="text input__label">Bio / Nachhaltigkeit</label>
+                    </div>
+                    <div class="input-checkbox">
+                      <input type="checkbox" name="Frage 2" id="question_2_answer_8" value="Glutenfrei">
+                      <label for="question_2_answer_8" class="text input__label">Glutenfrei</label>
+                    </div>
+                    <div class="form-group">
+                      <label class="label">
+                        <input
+                          type="text"
+                          name="Frage 2"
+                          id="question_2_answer_9"
+                          class="input input--blue"
+                          placeholder="Anderes"
+                          autocomplete="off"
+                          data-selection-alternative
+                        >
+                      </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="additional-question">
-                  <span class="additional-question__title">2. Was hat dich überzeugt treatfuls zu kaufen?</span>
+                  <span class="additional-question__title">3. Was hat dich überzeugt treatfuls zu kaufen?</span>
                   <div class="form-group">
                     <label class="label">
                       <input
                         type="textarea"
-                        name="Frage 2"
+                        name="Frage 3"
                         id="treatfuls_known"
                         class="input input--blue"
                         placeholder="Was hat dich überzeugt treatfuls zu kaufen?"
                       >
                     </label>
-                  </div>
-                </div>
-                <div class="additional-question">
-                  <span class="additional-question__title">3. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten?</span>
-                  <div class="form-group">
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 3"
-                        id="question_3_answer_1"
-                        value="Wenig / kein Industriezucker"
-                      >
-                      <label for="question_3_answer_1" class="text input__label">Wenig / kein Industriezucker</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 3" id="question_3_answer_2" value="Natürliche Zutaten">
-                      <label for="question_3_answer_2" class="text input__label">Natürliche Zutaten</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 3" id="question_3_answer_3" value="Ballaststoffe / Nährwerte">
-                      <label for="question_3_answer_3" class="text input__label">Ballaststoffe / Nährwerte</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 3"
-                        id="question_3_answer_4"
-                        value="Geschmackssorten, die mich ansprechen"
-                      >
-                      <label for="question_3_answer_4" class="text input__label">Geschmackssorten, die mich ansprechen</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 3"
-                        id="question_3_answer_5"
-                        value="Markenauftritt / Verpackung"
-                      >
-                      <label for="question_3_answer_5" class="text input__label">Markenauftritt / Verpackung</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 3" id="question_3_answer_6" value="Preis">
-                      <label for="question_3_answer_6" class="text input__label">Preis</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 3" id="question_3_answer_7" value="Bio / Nachhaltigkeit">
-                      <label for="question_3_answer_7" class="text input__label">Bio / Nachhaltigkeit</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 3" id="question_3_answer_8" value="Preis">
-                      <label for="question_3_answer_8" class="text input__label">Preis</label>
-                    </div>
                   </div>
                 </div>
 
