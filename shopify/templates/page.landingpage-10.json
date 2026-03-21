@@ -309,7 +309,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
-                    "image": "{{ closest.product.featured_image }}",
+                    "image": "{{ closest.product.metafields.custom.alternate_product_card_image.value }}",
                     "text": "{{ closest.product.metafields.custom.short_title.value }}",
                     "liquid": "pro 100 g"
                   },

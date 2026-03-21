@@ -67,7 +67,7 @@
             "image": "shopify://shop_images/Noan_mit_treatfuls.png",
             "image_position": "left",
             "title": "Gesunde Gewohnheiten beginnen früh.",
-            "content": "<p>Was Kinder in den ersten Lebensjahren essen, prägt ihren Geschmack und ihr Essverhalten langfristig – vieles davon beginnt bereits in der Schwangerschaft.</p><p><br/>- Frühzeitige Prägung durch Nährstoffe und Zuckerquellen<br/>- Mehr Sensibilität für schnelle Energie & Heißhunger<br/>- Starker Einfluss durch gesüßte und verarbeitete Produkte nach der Geburt<br/>- Frühe Gewöhnung an intensive Zuckerreize<br/></p><ul><li><br/>Auswirkungen auf Energie, Sättigung & das Verständnis von „normal süß“<br/></li></ul><p>Gerade in Schwangerschaft und früher Kindheit wird mehr entschieden, als uns bewusst ist.</p>",
+            "content": "<p>Was Kinder in den ersten Lebensjahren essen, prägt ihren Geschmack und ihr Essverhalten langfristig – erste Einflüsse entstehen sogar schon in der Schwangerschaft.<br/><br/>So entwickelt sich früh ein Gefühl dafür, was als „normal süß“ gilt und wie stabil Energie und Sättigung im Alltag bleiben.</p>",
             "button_text": "",
             "button_url": ""
           }
@@ -78,7 +78,7 @@
             "image": "shopify://shop_images/Noan_DOLLY.png",
             "image_position": "right",
             "title": "Warum Zucker mehr beeinflusst, als wir denken.",
-            "content": "<p>Kinder reagieren besonders sensibel auf stark verarbeitete Zuckerquellen, mit Auswirkungen, die oft unterschätzt werden.<br/><br/>- Schnelle Blutzuckeranstiege → Müdigkeit, Unruhe, erneutes Verlangen<br/>- Prägung der Geschmacksvorlieben schon in frühen Jahren<br/>- Erschwerte Balance einer natürlichen, ausgewogenen Ernährung<br/>- Stärkerer Einfluss, da Verdauungs- & Immunsystem noch in Entwicklung sind<br/><br/>Es geht nicht darum unseren kleinen Naschmäusen, Süßes zu verbieten, sondern bewusst zu wählen, welche Art von Süße wir anbieten 😋</p>",
+            "content": "<p>Kinder reagieren besonders sensibel auf stark verarbeitete Zuckerquellen, mit Auswirkungen, die oft unterschätzt werden. Dazu gehören schnelle Blutzuckeranstiege, Müdigkeit, Unruhe und erneutes Verlangen.<br/><br/>Das prägt schon früh ihre Geschmacksvorlieben und erschwert eine natürliche Balance im Alltag.</p><p>Es geht dennoch nicht darum, unseren kleinen Naschmäusen Süßes zu verbieten, sondern bewusst zu wählen, welche Art von Süße wir anbieten 😊</p>",
             "button_text": "",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -1150,7 +1150,7 @@
       "settings": {
         "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "Alle Sorten probieren",
-        "mobile_heading": "The Black Box of Love",
+        "mobile_heading": "Alle Sorten probieren",
         "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",

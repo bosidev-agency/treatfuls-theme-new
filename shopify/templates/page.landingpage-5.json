@@ -93,6 +93,101 @@
         "hover_color": "#e35478"
       }
     },
+    "image_gallery_jpAA4C": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_iA8HfU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_c008eeca-e9e0-4048-954c-d436e19aef3f.png",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_tQxFjV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_Aa4zyg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_1088d876-0aa2-4faa-9ba5-31126790ac38.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_dhM98M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_29e72ae8-1dfd-4a52-baf0-de6171eaf0ee.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_iA8HfU",
+        "image_tQxFjV",
+        "image_Aa4zyg",
+        "image_dhM98M"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "osterbox-treatfuls",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#e6ce9b",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
     "custom_section_9AEAFL": {
       "type": "custom-section",
       "blocks": {
@@ -243,7 +338,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#e6ce9b",
+        "background_color": "#c081a9",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -902,102 +997,6 @@
         "padding_bottom": 40
       }
     },
-    "image_gallery_jpAA4C": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_iA8HfU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Sweetmas_Giftingbox_4-5.png",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_tQxFjV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_gift.jpg",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_Aa4zyg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Onlineshop_the_double_joy.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_dhM98M": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Sweetmas_Box_im_Nikolaus_Schuh.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_iA8HfU",
-        "image_tQxFjV",
-        "image_Aa4zyg",
-        "image_dhM98M"
-      ],
-      "disabled": true,
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "all-year-gifting-box",
-        "heading": "",
-        "show_atc_button": false,
-        "grid_container_quantity": "1",
-        "background_color": "#830606",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
-      }
-    },
     "advantages_BcfMf9": {
       "type": "advantages",
       "blocks": {
@@ -1076,7 +1075,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
-        "background_color": "#c081a9",
+        "background_color": "#e6ce9b",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -1096,10 +1095,10 @@
     "main",
     "hero_eNmaQw",
     "featured_product_GbQVWw",
+    "image_gallery_jpAA4C",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "image_gallery_jpAA4C",
     "advantages_BcfMf9",
     "main_product_ingredients_FwTzyE"
   ]

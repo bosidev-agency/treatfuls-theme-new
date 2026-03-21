@@ -81,7 +81,7 @@
             "image": "shopify://shop_images/nut_your_basic_brownie_aesthetisch.png",
             "image_position": "left",
             "title": "Der Snack nach dem Workout",
-            "content": "<p>✨ 40 % weniger Zucker<br/>🌴 Natürliche Süße aus Datteln<br/>🌾 Ballaststoffreich <br/>🥜 Gesunde Fette  <br/>⚡️ Natürliche Energie<br/>🍫 weiße oder dunkler Schokolade<br/>🍓 Viele leckere Sorten</p>",
+            "content": "<p>✨ 40 % weniger Zucker<br/>🌴 Natürliche Süße aus Datteln<br/>🌾 Ballaststoffreich <br/>🥜 Gesunde Fette  <br/>⚡️ Natürliche Energie<br/>🍫 weiße oder dunkle Schokolade<br/>🍓 Viele leckere Sorten</p>",
             "button_text": "",
             "button_url": "https://treatfuls.com/products/summer-crush-kopie?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -842,7 +842,7 @@
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
-        "product": "gifting-boxen-bundle",
+        "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
@@ -940,7 +940,7 @@
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "michivanwant-box-matcha-spread",
+        "product": "singles-box-1-ohne-weisse-haselnuss",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd"
