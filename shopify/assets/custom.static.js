@@ -103,8 +103,10 @@ class BundleBuilder extends HTMLElement {
     );
     this.summaryPrice = this.querySelector(".bundle-builder__price");
     this.goodieModal = this.querySelector("#Goodies");
-    this.goodieButtons = this.goodieModal.querySelectorAll("[data-add-goodie]");
-    this.continueButton = this.goodieModal.querySelector("[data-continue]");
+    if (this.goodieModal) {
+      this.goodieButtons = this.goodieModal.querySelectorAll("[data-add-goodie]");
+      this.continueButton = this.goodieModal.querySelector("[data-continue]");
+    }
 
     this.addButtons.forEach((button) => {
       button.addEventListener("click", this.handleAddButtonClick.bind(this));
