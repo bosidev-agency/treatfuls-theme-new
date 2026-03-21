@@ -181,7 +181,7 @@ class BundleBuilder extends HTMLElement {
           }),
         );
 
-        if (this.goodieModal.matches(":popover-open")) {
+        if (this.goodieModal && this.goodieModal.matches(":popover-open")) {
           this.goodieModal.togglePopover();
         }
 
