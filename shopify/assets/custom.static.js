@@ -510,7 +510,7 @@ class BundleBuilder extends HTMLElement {
       sections: "main-cart-mini,cart-count",
     };
 
-    if (this.goodieThreshold && this.totalPrice >= this.goodieThreshold) {
+    if (this.goodieThreshold && this.goodieModal && this.totalPrice >= this.goodieThreshold) {
       this.goodieModal.togglePopover();
     } else {
       this.handleAddToCart();
