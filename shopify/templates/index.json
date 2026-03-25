@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 Deine Box erstellen",
-            "url": "https://treatfuls.com/products/create-your-own-bundle",
+            "text": "👉 Jetzt entdecken",
+            "url": "shopify://products/osterbox-treatfuls",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -42,9 +42,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/bundle_generator_desktop_V3.webp",
+        "desktop_image": "shopify://shop_images/Osterkorb_desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/bundle_generator_mobil_V3.webp",
+        "mobile_image": "shopify://shop_images/Osterkorb_mobil.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -53,8 +53,8 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "Create your own Box",
-        "text": "<p>Endlich da: <br/>Erstelle deine eigene Snackbox 😍</p>",
+        "title": "In dieser Box steckt mehr, als du denkst",
+        "text": "<h4>In 30 Boxen verstecken sich 15 % & 20 % Gutscheine. Ready to find yours? 🐣</h4>",
         "background_color": "#e6ce9b",
         "accent_color": "#c081a9",
         "hover_color": "#8a7194",
@@ -128,13 +128,13 @@
         "product_item_8cmDGJ": {
           "type": "product_item",
           "settings": {
-            "product": "chai-latte-spill-the-tea"
+            "product": "brownie-riegel"
           }
         },
         "product_item_DakraY": {
           "type": "product_item",
           "settings": {
-            "product": "brownie-riegel"
+            "product": "osterbox-treatfuls"
           }
         },
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
@@ -170,7 +170,7 @@
         "product_item_ALK7CL": {
           "type": "product_item",
           "settings": {
-            "product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan"
+            "product": "matcha-riegel"
           }
         }
       },
@@ -191,7 +191,7 @@
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
         "background_color": "#e6ce9b",
-        "accent_color": "#2ac2bd",
+        "accent_color": "#c081a9",
         "hover_color": "#ceb0d1"
       }
     },
@@ -217,6 +217,7 @@
         "79893080-8679-4ecc-b984-44037aa372e8",
         "516bcf2f-264d-4de0-80a9-94bb5edd64ce"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#2ac2bd"
       }
@@ -295,7 +296,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
-        "background_color": "#5359e5",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -377,7 +378,7 @@
         "hide_on_mobile": false,
         "title": "Hier gibt’s treatfuls",
         "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
-        "background_color": "#859972",
+        "background_color": "#e6ce9b",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -391,7 +392,7 @@
         "second_text": "Wir sind Macher und Träumerinnen zugleich und haben aus diesem Grund treatfuls ins Leben gerufen. Mach mit und probiere und überzeuge dich selbst, wie lecker vegane und natürliche Snacks sein können.",
         "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss",
         "link_text": "Jetzt Probierpaket kaufen",
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#dbaaeb",
         "hover_color": "#f3587f"
       }
