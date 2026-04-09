@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 Jetzt entdecken",
-            "url": "shopify://products/osterbox-treatfuls",
+            "text": "👉 Let’s mix",
+            "url": "https://treatfuls.com/products/create-your-own-bundle",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -42,21 +42,21 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Osterkorb_desktop.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_desktop_singles_V2.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Osterkorb_mobil.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_mobil_singles_V2.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "right",
+        "horizontal_alignment_desktop": "left",
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "In dieser Box steckt mehr, als du denkst",
-        "text": "<h4>In 30 Boxen verstecken sich 15 % & 20 % Gutscheine. Ready to find yours? 🐣</h4>",
-        "background_color": "#e6ce9b",
-        "accent_color": "#c081a9",
+        "title": "Create your own bundle",
+        "text": "<p>Dein Bundle. Deine Regeln. Deine Favorites.</p>",
+        "background_color": "#a1bf89",
+        "accent_color": "#a1bf89",
         "hover_color": "#8a7194",
         "show_base_triangular_line": true
       }
@@ -134,7 +134,7 @@
         "product_item_DakraY": {
           "type": "product_item",
           "settings": {
-            "product": "osterbox-treatfuls"
+            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship"
           }
         },
         "1cfded86-563d-4d47-bb13-779d107d88ef": {
@@ -190,7 +190,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#e6ce9b",
+        "background_color": "#a1bf89",
         "accent_color": "#c081a9",
         "hover_color": "#ceb0d1"
       }

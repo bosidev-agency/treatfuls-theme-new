@@ -27,9 +27,9 @@
       "type": "hero",
       "name": "Hero banner",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-04.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-04_3.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-03.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-03_2.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
@@ -37,9 +37,9 @@
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
-        "max_width_px": 1200,
-        "title": "",
-        "text": "",
+        "max_width_px": 800,
+        "title": "Snack it. Win it. Ride it.",
+        "text": "<h4>Hol dir treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad.</h4>",
         "background_color": "#b46493",
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
@@ -70,7 +70,7 @@
           "settings": {
             "image": "shopify://shop_images/treatfuls_Lastenrad.png",
             "heading": "Lastenrad von Dolly gewinnen",
-            "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 <br/>On top: Die <strong>ersten 100 Teilnehmer:innen</strong> gewinnen eine Goodiebag mit tollen Brands wie <strong>Jean & Len</strong> .... – schnell sein lohnt sich!</p>"
+            "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 </p>"
           }
         }
       },
@@ -119,7 +119,7 @@
         "title": "",
         "subtitle": "",
         "post_success_title": "Danke für deine Teilnahme!",
-        "post_success_content": "<p>Das Gewinnsiel ist dlkndljdcanckjdsbc<br/>jdbfbhfvfbv<br/>dkjbkdbhkvbfh<br/>kkhbvcfm vmf vmf mv fmvbfmvjf</p>",
+        "post_success_content": "<p>Du bist jetzt im Lostopf – und das Rennen ist offiziell ins Rollen gebracht 🚲✨<br/>Das Gewinnspiel rund um das Dolly Lastenrad läuft vom 23.04. bis zum 07.05.<br/>Ab dem 08.05. wird der Gewinner ausgelost.<br/><br/>Wenn das Glück auf dich rollt, übernimmt Dolly die komplette Abwicklung und den Versand.</p><p>Viel Glück, wir drücken dir die Daumen! 🍀</p>",
         "post_success_anchor": "",
         "button_text": "Jetzt teilnehmen",
         "button_position": "center",
@@ -127,9 +127,60 @@
         "klaviyo_list_id": "",
         "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <strong>treatfuls GmbH</strong>,<br/> Birkenstraße 23,<br/> 40233 Düsseldorf, Deutschland<br/> (nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04. bis einschließlich 07.05.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum<br/></strong>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026</strong> (23:59 Uhr).</p><p>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt.</p><p><strong>5. Gewinn<br/></strong>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln</strong></li><li><strong>Die ersten 100 gültigen Teilnehmer:innen erhalten jeweils eine Goodiebag mit Produkten folgender Marken: XY, XY, XY. Die Ermittlung erfolgt nach dem zeitlichen Eingang der vollständigen und gültigen Teilnahme. Maßgeblich ist der Zeitpunkt des Uploads.</strong></li></ul><p><strong><br/><br/></strong></p><p>📌 <strong>Menge der enthaltenen treatfuls Produkte:<br/></strong> 👉 <em>[noch festzulegen: z. B. XX Riegel oder X Trays]</em></p><p>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</p><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per <strong>Zufallsprinzip (Losverfahren)</strong> unter allen gültigen Teilnahmen.</p><p>Der Gewinner wird per <strong>E-Mail</strong> an die im Teilnahmeformular angegebene Adresse benachrichtigt.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation erfolgt durch treatfuls.</p><p><strong>8. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen.</p><p>Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Für Sach- und/oder Rechtsmängel am Gewinn haftet treatfuls nicht.</p><p><strong>9. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>10. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland. <br/>Der Rechtsweg ist ausgeschlossen.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>",
         "privacy_policy": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
-        "background_color": "#c081a9",
-        "accent_color": "#f3587f",
+        "background_color": "#859972",
+        "accent_color": "#424141",
         "hover_color": "#f3587f"
+      }
+    },
+    "image_with_text_3pLCA9": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_TmNGJN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-06.webp",
+            "image_position": "left",
+            "title": "Platzhalter DOLLY X treatfuls Bild",
+            "content": "<p>Hier text über Lastenrad, mit Janina absprechen </p>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "image_with_text_T7HbWQ": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Gruenderinnen_im_Lastenrad.webp",
+            "image_position": "left",
+            "title": "Unsere Reise zu dm",
+            "content": "<p>Wir sind Magdalena und Tugce, die Gründerinnen von treatfuls – zwei Freundinnen, die Naschen und bewussten Genuss miteinander verbinden wollten und seit heute sind wir mit unseren Produkten in über 2.000 dm Filialen deutschlandweit.<br/><br/>Wir hätten das niemals gedacht und haben es nur mit eurer Hilfe geschafft. Und mit euch werden wir noch so viel weiter gehen, denn das ist erst der Anfang von allem, was noch kommt.</p>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "image_with_text_9HGmMP": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/DM_LP.webp",
+            "image_position": "left",
+            "title": "Mehr als nur Snacks",
+            "content": "<p>Bei treatfuls geht es nicht einfach nur um Snacks, es geht um kleine Momente, die bleiben. Um Geschmack, der überrascht. Und um Produkte, in die wir richtig viel Zeit, Liebe und Detailarbeit stecken.<br/><br/>Unser Matcha Spread ist genau daraus entstanden: aus der Idee, etwas zu schaffen, das es so noch nicht gab. Als einer der ersten Matcha Spreads überhaupt haben wir lange daran gefeilt, bis er diese unvergleichlich cremigeTextur hatte und genau die Balance, die ihn besonders macht.</p>",
+            "button_text": "",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_TmNGJN",
+        "image_with_text_T7HbWQ",
+        "image_with_text_9HGmMP"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#a3c089",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "featured_product_BhT6E9": {
@@ -170,7 +221,7 @@
       "settings": {
         "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "Alle Sorten probieren",
-        "mobile_heading": "The Black Box of Love",
+        "mobile_heading": "Alle Sorten probieren",
         "sticky_button": false,
         "show_price": true,
         "reviews_average_rating": "",
@@ -186,8 +237,8 @@
         "richtext_item_U7xcwG": {
           "type": "richtext_item",
           "settings": {
-            "heading": "SEO RELEVANT",
-            "content": "<p>GEWINNEN GEWINNEN</p>"
+            "heading": "Einfach losrollen – mit treatfuls und DOLLY",
+            "content": "<p>Ein DOLLY Lastenrad mit elektrischem Antrieb bringt dich und deine Familie flexibel durch den Alltag, egal ob in der Stadt, im Vorort oder auf dem Land. Dank E-Unterstützung wird selbst das Fahren mit Kindern oder schweren Einkäufen angenehm leicht.</p><p>Das DOLLY Lastenrad kombiniert Komfort und Funktionalität: viel Platz, einfache Handhabung und ein Fahrgefühl, das auch bei voller Beladung überzeugt. Für viele ist es die ideale Lösung, wenn sie nach einer praktischen Alternative zum Auto suchen.</p><p>Sichere dir jetzt deine Chance, einfach zwei treatfuls Produkte bei dm kaufen und am Gewinnspiel teilnehmen.</p>"
           }
         },
         "richtext_item_Uyx37f": {
@@ -217,60 +268,9 @@
         "full_width": false,
         "section_width": "container--lg",
         "text_alignment": "left",
-        "background_color": "#c081a9",
+        "background_color": "#a3c089",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "image_with_text_3pLCA9": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_9HGmMP": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/about-us-img-3x.jpg",
-            "image_position": "left",
-            "title": "PlatzhalterSHOOTING Bilder",
-            "content": "<p>Bild mit den grünen PULLIS</p>",
-            "button_text": "zur Black Box",
-            "button_url": "shopify://products/valentinstags-black-box-black-box"
-          }
-        },
-        "image_with_text_TmNGJN": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/LP_Visuals-06.webp",
-            "image_position": "right",
-            "title": "PlatzhalterSHOOTING Bilder",
-            "content": "",
-            "button_text": "Zur X-Mas Box",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        },
-        "image_with_text_T7HbWQ": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
-            "image_position": "left",
-            "title": "PlatzhalterSHOOTING Bilder",
-            "content": "",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_9HGmMP",
-        "image_with_text_TmNGJN",
-        "image_with_text_T7HbWQ"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
       }
     },
     "depr_rich_text_ArQRbJ": {
@@ -758,9 +758,9 @@
     "multicolumn_MV4Bxn",
     "depr_rich_text_c4gF3r",
     "raffle_form_r9bdiB",
+    "image_with_text_3pLCA9",
     "featured_product_BhT6E9",
     "depr_rich_text_hATR9f",
-    "image_with_text_3pLCA9",
     "depr_rich_text_ArQRbJ",
     "17721214725c4094b2",
     "depr_rich_text_cewfrk",

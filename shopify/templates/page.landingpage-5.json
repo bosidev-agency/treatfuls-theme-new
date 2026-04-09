@@ -45,52 +45,21 @@
         "show_base_triangular_line": false
       }
     },
-    "featured_product_GbQVWw": {
-      "type": "featured-product",
+    "1775665721a00e34e8": {
+      "type": "apps",
       "blocks": {
-        "description_TrMApc": {
-          "type": "description",
+        "s_store_locator_storeify_storelocator_kKQXDt": {
+          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
           "settings": {}
-        },
-        "countdown_yp9z36": {
-          "type": "countdown",
-          "settings": {
-            "heading": "",
-            "color": "",
-            "color_time": "",
-            "background_color": ""
-          }
-        },
-        "price_zwAehL": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_button_W846tk": {
-          "type": "buy_button",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_price": false
-          }
         }
       },
       "block_order": [
-        "description_TrMApc",
-        "countdown_yp9z36",
-        "price_zwAehL",
-        "buy_button_W846tk"
+        "s_store_locator_storeify_storelocator_kKQXDt"
       ],
-      "name": "Featured product",
       "settings": {
-        "product": "osterbox-treatfuls",
-        "heading": "Die perfekten Ostersnacks 🐣",
-        "mobile_heading": "Die perfekten Ostersnacks 🐣",
-        "sticky_button": true,
-        "show_price": true,
-        "reviews_average_rating": "",
-        "reviews_quantity_text": "",
-        "background_color": "#c081a9",
-        "accent_color": "#e6ce9b",
-        "hover_color": "#e35478"
+        "background_color": "#5359e5",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "image_gallery_jpAA4C": {
@@ -175,6 +144,7 @@
         "image_Aa4zyg",
         "image_dhM98M"
       ],
+      "disabled": true,
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
         "product": "osterbox-treatfuls",
@@ -1084,7 +1054,7 @@
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "all-year-gifting-box",
+        "product": "",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#e35478",
         "accent_color": "#2ac2bd"
@@ -1094,7 +1064,7 @@
   "order": [
     "main",
     "hero_eNmaQw",
-    "featured_product_GbQVWw",
+    "1775665721a00e34e8",
     "image_gallery_jpAA4C",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
