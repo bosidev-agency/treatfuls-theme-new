@@ -53,6 +53,10 @@
   {% assign preload = true %}
 {% endif %}
 
+{% capture blocks %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
 <section
   class="hero"
   data-section-id="{{- section.id -}}"
@@ -81,6 +85,8 @@
           {{ 'image' | placeholder_svg_tag: 'hero__image hero__image--mobile hidden-desktop' }}
         {% endif %}
       {% endif %}
+
+      {{ blocks }}
     </div>
     <div class="hero__content-text hero__content-text--{{ section.settings.horizontal_alignment_desktop }} hero__content-text--{{ section.settings.vertical_alignment_desktop }} hero__content-text-mobile--{{ section.settings.horizontal_alignment_mobile }} hero__content-text-mobile--{{ section.settings.vertical_alignment_mobile }}">
       {% if section.settings.title != blank %}
@@ -89,7 +95,8 @@
       {% if section.settings.text != blank %}
         <div class="hero__text">{{ section.settings.text }}</div>
       {% endif %}
-      {% content_for 'blocks' %}
+      
+      {{ blocks }}
     </div>
   </div>
 
@@ -104,7 +111,7 @@
 {
   "name": "Hero banner",
   "class": "index-section index-section--flush",
-  "max_blocks": 2,
+  "max_blocks": 4,
   "settings": [
     {
       "type": "header",
@@ -353,11 +360,14 @@
       "id": "show_base_triangular_line",
       "label": "Show base triangular line",
       "default": false
-    }
+    }, 
   ],
   "blocks": [
     {
       "type": "button",
+    },
+    {
+      "type": "_invisible-link",
     }
   ],
   "presets": [

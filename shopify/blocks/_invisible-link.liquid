@@ -1,0 +1,108 @@
+{% if block.settings.invisible_link != blank %}
+  <style>
+    #shopify-block-{{ block.id }} {
+      width: {{ block.settings.invisible_link_dimensions_desktop }}%;
+      top: {{ block.settings.invisible_link_vertical_position_desktop }}%;
+      left: {{ block.settings.invisible_link_horizontal_position_desktop }}%;
+
+      @media (max-width: 768px) {
+        width: {{ block.settings.invisible_link_dimensions_mobile }}%;
+        top: {{ block.settings.invisible_link_vertical_position_mobile }}%;
+        left: {{ block.settings.invisible_link_horizontal_position_mobile }}%;
+      }
+
+      {% if request.design_mode %}
+        .invisible-link__content {
+          border: 2px solid {{ block.settings.test_color }};
+        }
+      {% endif %}
+    }
+  </style>
+
+  <a href="{{ block.settings.invisible_link }}" id="shopify-block-{{ block.id }}" class="invisible-link" {{ block.shopify.attributes }}>
+    <div class="invisible-link__content"></div>
+  </a>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Invisible link",
+  "tag": null,
+  "settings": [
+    {
+      "type": "color",
+      "id": "test_color",
+      "label": "Test color",
+      "info": "This color will be used to test the invisible link in the theme editor and is not visible in the live store.",
+      "default": "#FF0000"
+ 
+    },
+    {
+      "type": "url",
+      "id": "invisible_link",
+      "label": "Invisible link"
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_dimensions_desktop",
+      "label": "Invisible link dimensions desktop",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1,
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_dimensions_mobile",
+      "label": "Invisible link dimensions mobile",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1,
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_vertical_position_desktop",
+      "label": "Invisible link vertical position desktop",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_horizontal_position_desktop",
+      "label": "Invisible link horizontal position desktop",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_vertical_position_mobile",
+      "label": "Invisible link vertical position mobile",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "invisible_link_horizontal_position_mobile",
+      "label": "Invisible link horizontal position mobile",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Invisible link"
+    }
+  ]
+}
+{% endschema %}
