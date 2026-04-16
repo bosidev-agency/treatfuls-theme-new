@@ -61,6 +61,36 @@
         "padding_bottom": 40
       }
     },
+    "main_page_CqP367": {
+      "type": "main-page",
+      "settings": {
+        "title": "Dir hats geschmeckt? Finde treatfuls bei DM",
+        "subtitle": "<p><br/>Vom <strong>23.04. bis 07.05.</strong> bei DM erhältlich.<br/>Aber fair warning: Wenn weg, dann weg 😌</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "1776238794b65229a3": {
+      "type": "apps",
+      "blocks": {
+        "s_store_locator_storeify_storelocator_dGNGQJ": {
+          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "s_store_locator_storeify_storelocator_dGNGQJ"
+      ],
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "image_with_text_izV9bQ": {
       "type": "image-with-text",
       "blocks": {
@@ -105,8 +135,8 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#859972",
-        "accent_color": "#c081a9",
+        "background_color": "#c081a9",
+        "accent_color": "#859972",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
@@ -701,9 +731,9 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "Über 50 % weniger Zucker.Und trotzdem richtig lecker.",
+        "title": "Über 50 % weniger Zucker. Und trotzdem richtig lecker.",
         "footer_note": "",
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -753,7 +783,7 @@
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "#c081a9",
         "hover_color": "#24a5a1"
       }
@@ -846,7 +876,7 @@
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f",
         "popup_background_color": "",
@@ -931,7 +961,7 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -951,6 +981,8 @@
     "main",
     "hero_eNmaQw",
     "main_page_fK6BWV",
+    "main_page_CqP367",
+    "1776238794b65229a3",
     "image_with_text_izV9bQ",
     "comparison_table_dT7KWy",
     "featured_product_GbQVWw",

@@ -169,20 +169,21 @@
         "logo_image_FKAGDJ": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/NORITUAL_LAB_LOGO.png",
+            "image": "shopify://shop_images/LOGO_PARTNER_6.webp",
             "link": "https://norituallab.de/pages/shop"
           }
         },
         "logo_image_kaidtG": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify://shop_images/Maniko_logo.png",
+            "image": "shopify://shop_images/LOGO_PARTNER_9.webp",
             "link": "https://www.maniko-nails.de/?utm_source=influencerdach&utm_medium=landingpage&utm_campaign=2026"
           }
         },
         "logo_image_PQYJzC": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_1.webp",
             "link": ""
           }
         },
@@ -191,21 +192,13 @@
           "settings": {
             "link": ""
           }
-        },
-        "logo_image_dxYLEi": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Faire_White_Logo.png",
-            "link": "https://treatfuls.faire.com"
-          }
         }
       },
       "block_order": [
         "logo_image_FKAGDJ",
         "logo_image_kaidtG",
         "logo_image_PQYJzC",
-        "logo_image_XnicKP",
-        "logo_image_dxYLEi"
+        "logo_image_XnicKP"
       ],
       "name": "Logo list",
       "settings": {

@@ -45,6 +45,19 @@
         "show_base_triangular_line": false
       }
     },
+    "main_page_wqaCcB": {
+      "type": "main-page",
+      "settings": {
+        "title": "Neugierig geworden? Finde treatfuls bei DM",
+        "subtitle": "<p><br/>Vom <strong>23.04. bis 07.05.</strong> bei DM erhältlich.<br/>Aber fair warning: Wenn weg, dann weg 😌</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#859972",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "1775665721a00e34e8": {
       "type": "apps",
       "blocks": {
@@ -57,9 +70,104 @@
         "s_store_locator_storeify_storelocator_kKQXDt"
       ],
       "settings": {
-        "background_color": "#5359e5",
+        "background_color": "#859972",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "image_gallery_3QHd8f": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_CkYacU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DRB0277_1.jpg",
+            "content": "",
+            "content_position_y": 80,
+            "content_position_x": 20,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_ytxgLP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DRB0464_1.jpg",
+            "content": "",
+            "content_position_y": 40,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_EgQxQg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "content": "",
+            "content_position_y": 70,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_qMzmYY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DRB0279_1.jpg",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 85,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_CkYacU",
+        "image_ytxgLP",
+        "image_EgQxQg",
+        "image_qMzmYY"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "gifting-boxen-bundle",
+        "heading": "",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
       }
     },
     "image_gallery_jpAA4C": {
@@ -308,7 +416,7 @@
       ],
       "name": "Custom block section",
       "settings": {
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,
@@ -1045,31 +1153,22 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
-        "background_color": "#e6ce9b",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "main_product_ingredients_FwTzyE": {
-      "type": "main-product-ingredients",
-      "name": "Ingredients",
-      "settings": {
-        "product": "",
-        "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#e35478",
-        "accent_color": "#2ac2bd"
       }
     }
   },
   "order": [
     "main",
     "hero_eNmaQw",
+    "main_page_wqaCcB",
     "1775665721a00e34e8",
+    "image_gallery_3QHd8f",
     "image_gallery_jpAA4C",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "advantages_BcfMf9",
-    "main_product_ingredients_FwTzyE"
+    "advantages_BcfMf9"
   ]
 }
