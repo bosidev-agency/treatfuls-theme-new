@@ -25,6 +25,26 @@
     },
     "hero_kmVjyA": {
       "type": "hero",
+      "blocks": {
+        "invisible_link_HaeCLy": {
+          "type": "_invisible-link",
+          "name": "Invisible link",
+          "settings": {
+            "test_color": "#FF0000",
+            "invisible_link": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=top_home_cta",
+            "invisible_link_dimensions_desktop": 10,
+            "invisible_link_dimensions_mobile": 18,
+            "invisible_link_vertical_position_desktop": 31,
+            "invisible_link_horizontal_position_desktop": 44,
+            "invisible_link_vertical_position_mobile": 56,
+            "invisible_link_horizontal_position_mobile": 77
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "invisible_link_HaeCLy"
+      ],
       "name": "Hero banner",
       "settings": {
         "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-04_3.webp",
@@ -70,7 +90,7 @@
           "settings": {
             "image": "shopify://shop_images/treatfuls_Lastenrad.png",
             "heading": "Lastenrad von Dolly gewinnen",
-            "content": "<p>Sichere dir die Chance auf ein stylisches <strong>Dolly Lastenrad, </strong>vielleicht rollst schon bald du damit los! 🚲 </p>"
+            "content": "<p>Sichere dir die Chance auf ein stylisches <a href=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\" target=\"_blank\" title=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\"><strong>Dolly Lastenrad</strong></a><strong>, </strong>vielleicht rollst schon bald du damit los! 🚲 </p>"
           }
         }
       },
