@@ -1,5 +1,5 @@
 /* stylelint-disable */
-.button {
+.button, #klaviyo-bis-button-container button {
 	position: relative;
 	overflow: hidden;
 	z-index: 0;
@@ -105,4 +105,13 @@
   font-weight: normal;
   border-radius: 0;
   line-height: inherit;
+}
+
+#klaviyo-bis-button-container {
+  margin: 0 !important;
+}
+
+#klaviyo-bis-button-container button {
+  height: auto;
+  box-sizing: border-box;
 }

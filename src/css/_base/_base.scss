@@ -5,7 +5,12 @@
   outline: none;
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 25%) transparent;
+  scrollbar-color: color-mix(
+      in srgb,
+      var(--section-background-color, #c4c4c4),
+      black 25%
+    )
+    transparent;
 }
 
 *::-webkit-scrollbar {
@@ -18,12 +23,20 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 25%);
+  background-color: color-mix(
+    in srgb,
+    var(--section-background-color, #c4c4c4),
+    black 25%
+  );
   border-radius: 3px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: color-mix(in srgb, var(--section-background-color, #c4c4c4), black 40%);
+  background-color: color-mix(
+    in srgb,
+    var(--section-background-color, #c4c4c4),
+    black 40%
+  );
 }
 
 html,
@@ -54,14 +67,16 @@ body {
 
 .shopify-section:not(.shopify-section-group-header-group):not(
     #shopify-section-announcement-bar
-  ):not(#shopify-section-header):not(#shopify-section-footer) {
+  ):not(#shopify-section-header):not(#shopify-section-footer),
+#klaviyo-bis-button-container button {
   background-color: var(--section-background-color);
 }
 
 .shopify-section:not(.shopify-section-group-header-group):not(
     #shopify-section-announcement-bar
   ):not(#shopify-section-header):not(#shopify-section-footer)
-  .button::after {
+  .button::after,
+#klaviyo-bis-button-container button::after {
   background-color: var(--section-hover-color);
 }
 
@@ -73,6 +88,7 @@ body {
     #shopify-section-announcement-bar
   ):not(#shopify-section-header):not(#shopify-section-footer)
   .button::before,
+#klaviyo-bis-button-container button::before,
 .shopify-section:not(.shopify-section-group-header-group):not(
     #shopify-section-announcement-bar
   ):not(#shopify-section-header):not(#shopify-section-footer)
@@ -398,7 +414,7 @@ a.button {
   }
 }
 
-.button[disabled] {
+.button[disabled], .klaviyo-bis-button-container button[disabled] {
   opacity: 0.5;
   cursor: not-allowed;
 }
