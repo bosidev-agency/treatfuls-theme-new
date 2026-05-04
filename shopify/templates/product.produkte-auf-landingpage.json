@@ -1,0 +1,553 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_yc9f3N": {
+          "type": "title",
+          "settings": {}
+        },
+        "description_mMCf3t": {
+          "type": "description",
+          "settings": {}
+        },
+        "buy_button_PCq8qG": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": true
+          }
+        }
+      },
+      "block_order": [
+        "title_yc9f3N",
+        "description_mMCf3t",
+        "buy_button_PCq8qG"
+      ],
+      "settings": {
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "{{ product.metafields.custom.background_color.value }}",
+        "accent_color": "{{ product.metafields.custom.accent_color.value }}",
+        "hover_color": "{{ product.metafields.custom.hover_color.value }}"
+      }
+    },
+    "image_gallery_CTGC6X": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_hkQqPw": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_LDWGh4": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6b6Whi": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_6DCXXk": {
+          "type": "image",
+          "settings": {
+            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_hkQqPw",
+        "image_LDWGh4",
+        "image_6b6Whi",
+        "image_6DCXXk"
+      ],
+      "disabled": true,
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "",
+        "heading": "",
+        "show_atc_button": true,
+        "grid_container_quantity": "1",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
+    "custom_section_xmpmY8": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_abf9Nd": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_TnNa9J": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_EyQpaF": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_Nrnkad": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_kbz8cd": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "matcha-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_kbz8cd"
+                  ]
+                },
+                "slide_yjnT9x": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_GCry7M": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_GCry7M"
+                  ]
+                },
+                "slide_maENTJ": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_rxftjx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "chai-latte-spill-the-tea",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_rxftjx"
+                  ]
+                },
+                "slide_cT6FqG": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_niRyXY": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_niRyXY"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_Nrnkad",
+                "slide_yjnT9x",
+                "slide_maENTJ",
+                "slide_cT6FqG"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_EyQpaF"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_abf9Nd",
+        "group_TnNa9J"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "main_product_ingredients": {
+      "type": "main-product-ingredients",
+      "settings": {
+        "product": "",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "{{ product.metafields.custom.accent_color.value }}",
+        "accent_color": "{{ product.metafields.custom.background_color.value }}"
+      }
+    },
+    "advantages": {
+      "type": "advantages",
+      "blocks": {
+        "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "e004a74c-a36a-44c7-b2a2-bd6859ece912": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "481cf990-f8c9-4949-b40c-95dfcf923edf": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "d45fe6f2-1704-4dc6-a123-33beb7e857b3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "81513617-39d3-48cb-b383-42d5a0f019fd": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "07747c04-c64f-454d-b22f-e67f32c4045d": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "8581f446-2cf4-400e-ab7a-09e3a9966d9f": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        },
+        "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Ohne Zusatzstoffe"
+          }
+        }
+      },
+      "block_order": [
+        "cd0713e6-e4ea-4e90-8cc5-54ba5f4a2756",
+        "e004a74c-a36a-44c7-b2a2-bd6859ece912",
+        "481cf990-f8c9-4949-b40c-95dfcf923edf",
+        "d45fe6f2-1704-4dc6-a123-33beb7e857b3",
+        "81513617-39d3-48cb-b383-42d5a0f019fd",
+        "07747c04-c64f-454d-b22f-e67f32c4045d",
+        "8581f446-2cf4-400e-ab7a-09e3a9966d9f",
+        "b0320aa1-5a6d-4909-ab2b-f306fe0e69cc"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Unsere Riegel bieten viele Vorteile",
+        "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen",
+        "background_color": "{{ product.metafields.custom.background_color.value }}",
+        "accent_color": "{{ product.metafields.custom.accent_color.value }}",
+        "hover_color": "{{ product.metafields.custom.hover_color.value }}"
+      }
+    },
+    "compare_product_reviews": {
+      "type": "compare-product-reviews",
+      "blocks": {
+        "text_FgLqia": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "",
+            "review_title": "",
+            "review_content": ""
+          }
+        },
+        "text_eeiGkC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "",
+            "review_title": "",
+            "review_content": ""
+          }
+        },
+        "aa617827-5535-4d4b-a335-b84f4c3b4b27": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "c3fbd356-cf27-49d8-ae72-878d6f919592": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "89088c16-9028-4a04-98c9-2df8e95dd102": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "b1694818-0b81-42c8-ac0e-020a9ca87756": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        },
+        "3bd524cf-72c4-47af-8ff2-8b3b5f87b9a9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "name": "Adrianna",
+            "review_title": "Lorem ipsum dolor sit amet",
+            "review_content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor"
+          }
+        }
+      },
+      "block_order": [
+        "text_FgLqia",
+        "text_eeiGkC",
+        "aa617827-5535-4d4b-a335-b84f4c3b4b27",
+        "c3fbd356-cf27-49d8-ae72-878d6f919592",
+        "89088c16-9028-4a04-98c9-2df8e95dd102",
+        "b1694818-0b81-42c8-ac0e-020a9ca87756",
+        "3bd524cf-72c4-47af-8ff2-8b3b5f87b9a9"
+      ],
+      "settings": {
+        "title": "Eure Bewertungen",
+        "underline_word": "Bewertungen",
+        "text-box": "",
+        "link": "#",
+        "linktext": "Schreibe eine Bewertung"
+      }
+    },
+    "faq_QEXxKQ": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_8wgtnn": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sneak peak 👀🤫🤭",
+            "content": "Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver) , Cashew-Matcha-Füllung (15%) [Cashewmus (60%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, Matchapulver (3%)], glutenfreies Hafermehl, Mandeln, Dattelsirup, Tapiokafaser, Mandelmus, Meersalz, Vanilleextrakt.\n Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Macadamia-Cashew-Himbeerfüllung (16%) (Cashewmus (64%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, gefriergetrocknete Himbeeren), glutenfreies Hafermehl, Mandeln (11,2%), Dattelsirup, Tapiokafaser, Mandelmus (3,8%), Meersalz, Vanilleextrakt. \n Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Dattelpaste, weißer kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Haselnuss-Füllung (15%) (Haselnuss (42%), Dattelpulver, Cashewmus, Kakaobutter), glutenfreies Hafermehl, Haselnuss (8,4%), Dattelsirup, Mandelmus, Tapiokafaser, Chai-Gewürzmischung (1,45%) (Zimt, Ingwerpulver, Kardamom, Muskatnuss, Nelkenpulver, Korianderpulver, Piment), Kakaobutter, Meersalz, Vanilleextrakt.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_pPyERt": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Sind das komplett neue Sorten oder nur bestehende?",
+            "content": "Komplett neu.\nNoch nicht gelauncht, noch nirgends zu kaufen, noch nie gezeigt.\nDu bist ganz offiziell Early Taster 🎉",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_6WTzgU": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Kann ich eine bestimmte Sorte auswählen?",
+            "content": "Nope – it’s called Mystery Box for a reason.\nAber eins ist sicher: Du wirst alle vier lieben.\nTrust the treat. ✨",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_dG9GKw": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie viele Produkte sind drin?",
+            "content": "4 brandneue Snacks. 4 Geschmacks-Überraschungen.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_UghL9L": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie lange gibt’s die Mystery Box?",
+            "content": "Nur solange der geheime Vorrat reicht.\nWir sagen’s mal so: treat now or cry later. 😅",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_cANe4p": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Ist das eine Pre-Launch Box?",
+            "content": "YES – du bekommst die neuen Sorten vor dem offiziellen Launch.\nDu bist Teil unseres geheimen Testpanels… ohne Laborkittel.\nNur mit Geschmacksknospen.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_8wgtnn",
+        "faq_item_pPyERt",
+        "faq_item_6WTzgU",
+        "faq_item_dG9GKw",
+        "faq_item_UghL9L",
+        "faq_item_cANe4p"
+      ],
+      "disabled": true,
+      "name": "FAQ",
+      "settings": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Hier haben wir Fragen gesammelt die wir häufig gestellt bekommen.",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_gallery_CTGC6X",
+    "custom_section_xmpmY8",
+    "main_product_ingredients",
+    "advantages",
+    "compare_product_reviews",
+    "faq_QEXxKQ"
+  ]
+}

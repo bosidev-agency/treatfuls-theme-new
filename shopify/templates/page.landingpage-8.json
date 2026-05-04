@@ -152,8 +152,8 @@
       "name": "Featured product",
       "settings": {
         "product": "dm-x-treatfuls-goodiebag-fur-die-ersten-100",
-        "heading": "GOODIEBAG WINNER",
-        "mobile_heading": "GOODIEBAG WINNER",
+        "heading": "DEINE GOODIEBAG 💚",
+        "mobile_heading": "DEINE GOODIEBAG 💚",
         "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
@@ -166,11 +166,32 @@
     "logo_list_Ftyjy9": {
       "type": "logo-list",
       "blocks": {
+        "logo_image_6TtBz4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Kraftlinglogo.webp",
+            "link": "https://kraftlinge.com/?srsltid=AfmBOorAYA3kQPSbL6gKzrS8k6LXcIwtVcxmLKh8ChWeSyxMwvFXNF3d"
+          }
+        },
         "logo_image_FKAGDJ": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/LOGO_PARTNER_6.webp",
-            "link": "https://norituallab.de/pages/shop"
+            "link": "https://www.jeanlen.de/"
+          }
+        },
+        "logo_image_qhfhTf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_8.webp",
+            "link": "https://www.forestgum.de/"
+          }
+        },
+        "logo_image_XnicKP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/SUPER_POP_LOGO_NEU.webp",
+            "link": "https://super-pop.de/collections/super-pop-drinks"
           }
         },
         "logo_image_kaidtG": {
@@ -180,30 +201,74 @@
             "link": "https://www.maniko-nails.de/?utm_source=influencerdach&utm_medium=landingpage&utm_campaign=2026"
           }
         },
+        "logo_image_WT7nJx": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_3.webp",
+            "link": ""
+          }
+        },
         "logo_image_PQYJzC": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/LOGO_PARTNER_1.webp",
-            "link": ""
+            "link": "https://her.one/collections/unsere-bestseller"
           }
         },
-        "logo_image_XnicKP": {
+        "logo_image_44KmBk": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_5.webp",
+            "link": "https://vitacoco.com/?srsltid=AfmBOopSf8lBXXX6qEr65veFjM1yCl4J3x9H1vbZFJDrWLwVMUKD2ldN"
+          }
+        },
+        "logo_image_inimXK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_7.webp",
+            "link": "https://lisaschips.de/collections/all"
+          }
+        },
+        "logo_image_b3NNEb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_10.webp",
+            "link": "https://norituallab.de/pages/shop"
+          }
+        },
+        "logo_image_EB63Py": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_PARTNER_4.webp",
+            "link": "https://Justspices.de"
+          }
+        },
+        "logo_image_XCpwar": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Treatfuls_Logo.webp",
             "link": ""
           }
         }
       },
       "block_order": [
+        "logo_image_6TtBz4",
         "logo_image_FKAGDJ",
+        "logo_image_qhfhTf",
+        "logo_image_XnicKP",
         "logo_image_kaidtG",
+        "logo_image_WT7nJx",
         "logo_image_PQYJzC",
-        "logo_image_XnicKP"
+        "logo_image_44KmBk",
+        "logo_image_inimXK",
+        "logo_image_b3NNEb",
+        "logo_image_EB63Py",
+        "logo_image_XCpwar"
       ],
       "name": "Logo list",
       "settings": {
-        "title": "Unsere Partner",
-        "subtitle": "<p>Scrolle und finde deine Lieblings mafke aus der Goodiebag wenn du auf das Lofo klickst, kommst dz auf duie eweilige seite </p>",
+        "title": "THE BRANDS INSIDE",
+        "subtitle": "<p>✨ <strong>Entdecke unsere Goodiebag-Partner <br/>✨</strong><em>Klicke auf die Logos & swipe dich durch unsere Lieblingsbrands</em></p>",
         "font_size_adjustment": 100,
         "background_color": "#c081a9",
         "accent_color": "",

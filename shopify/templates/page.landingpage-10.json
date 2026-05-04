@@ -144,7 +144,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "matcha-riegel",
+                        "card_product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",
@@ -188,7 +188,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "chai-latte-spill-the-tea",
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",

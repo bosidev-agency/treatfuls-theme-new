@@ -1,0 +1,371 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_product_Ut3KxJ": {
+      "type": "featured-product",
+      "blocks": {
+        "description_F49DXA": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_TKmmqA": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_LGPzV9": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_EnJknn": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_F49DXA",
+        "countdown_TKmmqA",
+        "price_LGPzV9",
+        "buy_button_EnJknn"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten. Einmal snacken, alles checken",
+        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#c081a9",
+        "accent_color": "#e35478",
+        "hover_color": "#dbaaeb"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "hero_eNmaQw": {
+      "type": "hero",
+      "disabled": true,
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image_height": "adapt",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": true,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "center",
+        "vertical_alignment_mobile": "middle",
+        "horizontal_alignment_mobile": "center",
+        "max_width": "100%",
+        "max_width_px": 1200,
+        "title": "Hero banner",
+        "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+        "background_color": "rgba(0,0,0,0)",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": false
+      }
+    },
+    "featured_product_GbQVWw": {
+      "type": "featured-product",
+      "blocks": {
+        "description_TrMApc": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_yp9z36": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_zwAehL": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_W846tk": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_TrMApc",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
+      ],
+      "disabled": true,
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten. Einmal snacken, alles checken",
+        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#859972",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1"
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Magda_Tugce_DM.webp",
+            "image_position": "left",
+            "title": "treatfuls bei dm kaufen",
+            "content": "<p>Wir sind treatfuls, wir machen Snacks, die besser für dich sind, ohne auf Genuss zu verzichten.<br/><br/>Unsere Riegel bestehen aus Datteln statt Industriezucker und sind <strong>vegan, bio und glutenfrei</strong>.<br/><br/>Und das Beste?<br/>Sie schmecken wie eine kleine Sünde… sind aber keine 💗🍫<br/><br/>Perfekt für alle, die sich bewusst ernähren wollen und trotzdem nicht auf richtig guten Geschmack verzichten möchten.<br/><br/>Nur für kurze Zeit erhältlich – was weg ist, ist weg!</p>",
+            "button_text": "👉 Jetzt bei dm kaufen",
+            "button_url": "https://www.dm.de/search?query=treatfuls&searchProviderType=dm-products&brandName=treatfuls&searchType=brand-search"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Einfach_Losrollen_mit_Dolly_und_treatfuls.webp",
+            "image_position": "left",
+            "title": "Snack dich zum Lastenrad",
+            "content": "<p>Kaufe zwei treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad, vielleicht rollst du schon bald damit durch die Gegend 🚲</p>",
+            "button_text": "👉 Jetzt teilnehmen",
+            "button_url": "shopify://pages/treatfulsxdmgewinnspiel"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
+            "image_position": "left",
+            "title": "Meet the Snack Squad",
+            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#e35478",
+        "accent_color": "#c081a9",
+        "hover_color": "#dbaaeb",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_tFw6BH": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_39PhKw": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
+            "text": "dm"
+          }
+        },
+        "advantage_item_wkpbqe": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_3daBr8": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-05.webp",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_fwBMWU": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-02.webp",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_7CnJeW": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-04.webp",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_AK9kcn": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-03.webp",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_tnchpD": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-06.webp",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_TeGdwi": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_39PhKw",
+        "advantage_item_wkpbqe",
+        "advantage_item_3daBr8",
+        "advantage_item_fwBMWU",
+        "advantage_item_7CnJeW",
+        "advantage_item_AK9kcn",
+        "advantage_item_tnchpD",
+        "advantage_item_TeGdwi"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#e35478",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    }
+  },
+  "order": [
+    "featured_product_Ut3KxJ",
+    "main",
+    "hero_eNmaQw",
+    "featured_product_GbQVWw",
+    "image_with_text_NHKmKF",
+    "advantages_tFw6BH",
+    "advantages_BcfMf9"
+  ]
+}

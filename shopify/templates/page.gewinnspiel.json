@@ -30,7 +30,7 @@
           "type": "_invisible-link",
           "name": "Invisible link",
           "settings": {
-            "test_color": "#FF0000",
+            "test_color": "#ff0000",
             "invisible_link": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=top_home_cta",
             "invisible_link_dimensions_desktop": 10,
             "invisible_link_dimensions_mobile": 18,
@@ -58,8 +58,8 @@
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 800,
-        "title": "Snack it. Win it. Ride it.",
-        "text": "<h4>Hol dir treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad.</h4>",
+        "title": "Snack it. Win it. Ride it",
+        "text": "<h4>Hol dir 2 treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad 😍</h4>",
         "background_color": "#b46493",
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
@@ -73,8 +73,8 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Icons_Riegel_DM.png",
-            "heading": "treatfuls Kaufen",
-            "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
+            "heading": "2 treatfuls kaufen",
+            "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls-Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
           }
         },
         "item_NhyCtd": {
@@ -139,14 +139,14 @@
         "title": "",
         "subtitle": "",
         "post_success_title": "Danke für deine Teilnahme!",
-        "post_success_content": "<p>Du bist jetzt im Lostopf – und das Rennen ist offiziell ins Rollen gebracht 🚲✨<br/>Das Gewinnspiel rund um das Dolly Lastenrad läuft vom 23.04. bis zum 07.05.<br/>Ab dem 08.05. wird der Gewinner ausgelost.<br/><br/>Wenn das Glück auf dich rollt, übernimmt Dolly die komplette Abwicklung und den Versand.</p><p>Viel Glück, wir drücken dir die Daumen! 🍀</p>",
+        "post_success_content": "<p>Du bist jetzt im Lostopf und das Rennen ist offiziell ins Rollen gebracht 🚲✨<br/>Das Gewinnspiel rund um das Dolly Lastenrad läuft vom 23.04. bis zum 07.05.<br/>Ab dem 12.05 wird der Gewinner ausgelost.<br/><br/>Wenn das Glück auf dich rollt, übernimmt Dolly die komplette Abwicklung und den Versand.</p><p>Viel Glück, wir drücken dir die Daumen! 🍀</p>",
         "post_success_anchor": "",
         "button_text": "Jetzt teilnehmen",
         "button_position": "center",
         "klaviyo_company_id": "",
         "klaviyo_list_id": "",
-        "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <strong>treatfuls GmbH</strong>,<br/> Birkenstraße 23,<br/> 40233 Düsseldorf, Deutschland<br/> (nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04. bis einschließlich 07.05.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum<br/></strong>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026</strong> (23:59 Uhr).</p><p>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt.</p><p><strong>5. Gewinn<br/></strong>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln</strong></li><li><strong>Die ersten 100 gültigen Teilnehmer:innen erhalten jeweils eine Goodiebag mit Produkten folgender Marken: XY, XY, XY. Die Ermittlung erfolgt nach dem zeitlichen Eingang der vollständigen und gültigen Teilnahme. Maßgeblich ist der Zeitpunkt des Uploads.</strong></li></ul><p><strong><br/><br/></strong></p><p>📌 <strong>Menge der enthaltenen treatfuls Produkte:<br/></strong> 👉 <em>[noch festzulegen: z. B. XX Riegel oder X Trays]</em></p><p>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</p><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per <strong>Zufallsprinzip (Losverfahren)</strong> unter allen gültigen Teilnahmen.</p><p>Der Gewinner wird per <strong>E-Mail</strong> an die im Teilnahmeformular angegebene Adresse benachrichtigt.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation erfolgt durch treatfuls.</p><p><strong>8. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen.</p><p>Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit. Für Sach- und/oder Rechtsmängel am Gewinn haftet treatfuls nicht.</p><p><strong>9. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>10. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland. <br/>Der Rechtsweg ist ausgeschlossen.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>",
-        "privacy_policy": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>",
+        "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <br/><strong>snacks with benefits GmbH</strong>,<br/>Birkenstraße 23,<br/>40233 Düsseldorf, Deutschland<br/>DE340236535<br/>(nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04.2026. bis einschließlich 07.05.2026.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum</strong></p><p>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026.</strong> (23:59 Uhr).<br/>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt. Maßgeblich ist der Zeitpunkt des Eingangs der vollständigen Teilnahme auf den Servern von treatfuls.</p><p><strong>5. Gewinn</strong></p><p>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln pro Sorte ein Tray (ein Tray beinhaltet 20 treatfuls Riegel)</strong></li><li>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</li></ul><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per Zufallsprinzip (Losverfahren) unter allen gültigen Teilnahmen. Es findet keine automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO statt.</p><p>Der Gewinner wird per E-Mail an die im Teilnahmeformular angegebene Adresse benachrichtigt. treatfuls übernimmt keine Verantwortung für unrichtige Kontaktangaben der Teilnehmenden oder dafür, dass die Gewinnbenachrichtigung durch Spam-Filter oder sonstige technische Umstände nicht zugestellt wird.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation und -abwicklung erfolgt durch die <strong>Dolly Bakfiets B.V., Oregondreef 4, 3565 BG Utrecht, Niederlande</strong>, die im Auftrag von treatfuls als Auftragsverarbeiter gemäß Art. 28 DSGVO tätig wird. Die Weitergabe der hierfür erforderlichen personenbezogenen Daten (Name und Lieferadresse) an Dolly Bakfiets B.V. erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO und ist in der Datenschutzerklärung von treatfuls näher beschrieben.</p><p>treatfuls haftet nicht für Verlust oder Beschädigung des Gewinns auf dem Versandweg, sofern Dolly Bakfiets B.V. sorgfältig Versanddienstleister ausgewählt und beauftragt hat. Bei Problemen mit dem Versand wenden sich Gewinner:innen bitte zunächst an: <strong>hey@treatfuls.com</strong>.</p><p><strong>8. Vorzeitige Beendigung und Änderungsvorbehalt</strong></p><p>treatfuls behält sich das Recht vor, das Gewinnspiel jederzeit ohne Vorankündigung und ohne Angabe von Gründen vorzeitig zu beenden, zu unterbrechen oder die Teilnahmebedingungen zu ändern, sofern dies aus technischen oder rechtlichen Gründen erforderlich ist. In diesem Fall entstehen keine Ansprüche der Teilnehmenden gegenüber treatfuls.</p><p><strong>9. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen. Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Ansprüche nach dem Produkthaftungsgesetz.</p><p>treatfuls haftet nicht für technische Störungen, die eine Teilnahme am Gewinnspiel beeinträchtigen oder verhindern, sofern treatfuls diese nicht zu vertreten hat. In diesen Fällen besteht kein Anspruch auf Nachholung der Teilnahme.</p><p><strong>10. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>11. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p><p>Der Rechtsweg ist hinsichtlich der Entscheidung über die Gewinnermittlung und die Vergabe des Gewinns ausgeschlossen. Im Übrigen bleibt der ordentliche Rechtsweg unberührt.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Die unwirksame Bestimmung ist durch eine wirksame Regelung zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>",
+        "privacy_policy": "<p>1. Allgemeine Hinweise </p><p>Soweit nachstehend keine anderen Angaben gemacht werden, ist die Bereitstellung deiner personenbezogenen Daten weder gesetzlich noch vertraglich vorgeschrieben und nicht für einen Vertragsabschluss erforderlich. Du bist zur Bereitstellung der Daten nicht verpflichtet. Eine Nichtbereitstellung hat grundsätzlich keine negativen Folgen. Dies gilt nur, soweit bei den nachfolgenden Verarbeitungsvorgängen keine anderweitige Angabe gemacht wird.</p><p>„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.<br/><br/></p><p>2. Verantwortlicher</p><p>Verantwortlicher für die Datenverarbeitung ist:</p><p>snacks with benefits GmbH<br/>Birkenstraße 23<br/>40233 Düsseldorf<br/>Deutschland</p><p>E-Mail: <a href=\"mailto:hey@treatfuls.com\"><span style=\"text-decoration:underline\">hey@treatfuls.com</span><br/><br/></a></p><p>3. Zugriffsdaten und Server-Logfiles</p><p>Du kannst unsere Website besuchen, ohne Angaben zu deiner Person zu machen.</p><p>Bei jedem Zugriff auf unsere Website werden durch unseren Webhoster bzw. IT-Dienstleister Nutzungsdaten durch deinen Internetbrowser übermittelt und in sogenannten Server-Logfiles gespeichert. Zu diesen Daten gehören insbesondere:</p><ul><li>Name der aufgerufenen Seite</li><li>Datum und Uhrzeit des Zugriffs</li><li>IP-Adresse</li><li>übertragene Datenmenge</li><li>anfragender Provider</li><li>verwendeter Browser und Betriebssystem</li></ul><p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus unserem überwiegenden berechtigten Interesse an der Gewährleistung eines störungsfreien Betriebs unserer Website sowie zur Verbesserung unseres Angebots.</p><p>Die Server-Logfiles werden regelmäßig gelöscht, spätestens nach [❓ bitte bestätigen: z. B. 7 oder 14 Tagen].</p><p>Datenübermittlung in Drittländer</p><p>Deine Daten können dabei gegebenenfalls in Drittstaaten außerhalb der Europäischen Union übermittelt werden. Sofern für das jeweilige Drittland ein Angemessenheitsbeschluss der EU-Kommission besteht, erfolgt die Übermittlung auf dieser Grundlage.<br/>Soweit kein Angemessenheitsbeschluss vorliegt (z. B. bei Übermittlungen in die USA), stützen wir die Datenübermittlung auf Standardvertragsklauseln gemäß Art. 46 DSGVO.<br/><br/></p><p>4. Kontaktaufnahme per E-Mail</p><p>Wenn du per E-Mail initiativ mit uns in Kontakt trittst, erheben wir die von dir mitgeteilten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zum Zweck der Bearbeitung und Beantwortung deiner Anfrage.</p><ul><li>Dient die Kontaktaufnahme der Durchführung vorvertraglicher Maßnahmen oder betrifft sie einen bestehenden Vertrag, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</li><li>Erfolgt die Kontaktaufnahme aus anderen Gründen, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung der Anfrage).</li></ul><p>Du hast in diesem Fall das Recht, der Verarbeitung deiner personenbezogenen Daten aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit zu widersprechen.</p><p>Deine Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten bestehen, sofern du nicht ausdrücklich in eine weitergehende Verarbeitung eingewilligt hast.’<br/><br/></p><p>5. Gewinnspiele</p><p>Im Rahmen von Gewinnspielen verarbeiten wir personenbezogene Daten der teilnehmenden Personen.</p><p>Verarbeitete Daten</p><ul><li>Anrede</li><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Postanschrift</li><li>hochgeladener Kaufnachweis (z. B. Kassenbon)</li><li>Datum und Uhrzeit der Teilnahme</li></ul><p>Zwecke der Verarbeitung</p><ul><li>Durchführung und Organisation des Gewinnspiels</li><li>Prüfung der Teilnahmeberechtigung</li><li>Ermittlung und Benachrichtigung der Gewinner:innen</li><li>Übergabe oder Versand der Gewinne</li><li>Bearbeitung von Rückfragen</li></ul><p>Rechtsgrundlagen</p><ul><li>Art. 6 Abs. 1 lit. b DSGVO (Durchführung des Gewinnspiels)</li><li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. für Marketingzwecke)</li></ul><p>Weitere Informationen finden sich in den jeweiligen Teilnahmebedingungen des Gewinnspiels.<br/><br/></p><p>6. Newsletter und Marketingkommunikation</p><p>Wenn du dich für unseren Newsletter anmeldest oder im Rahmen eines Gewinnspiels in den Erhalt von Marketing-E-Mails einwilligst, verarbeiten wir deine personenbezogenen Daten zum Zweck der Zusendung von Informationen, Angeboten und Neuigkeiten von treatfuls.</p><p>Der Versand erfolgt ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO im Double-Opt-in-Verfahren.</p><p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, z. B. über den Abmeldelink in jeder E-Mail oder per Nachricht an gewinnspiel@treatfuls.com</p><p>7. Cookies und Einwilligungsmanagement</p><p>Unsere Website verwendet Cookies und ähnliche Technologien.</p><p>Notwendige Cookies</p><p>Diese sind erforderlich, um die grundlegenden Funktionen der Website sicherzustellen.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 TDDDG.</p><p>Optionale Cookies (Tracking / Marketing)</p><p>Optionale Cookies werden nur gesetzt, wenn du über unser Cookie-Banner ausdrücklich eingewilligt hast.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p><p>Du kannst deine Einwilligung jederzeit über die Cookie-Einstellungen widerrufen.</p><p>8. Social Media</p><p>Wir unterhalten Onlinepräsenzen auf sozialen Netzwerken (z. B. Instagram, TikTok).<br/>Beim Besuch unserer Social-Media-Seiten gelten die Datenschutzbestimmungen der jeweiligen Plattformen. Teilweise besteht eine gemeinsame Verantwortlichkeit gemäß Art. 26 DSGVO.<em><br/><br/></em></p><p>9. Speicherdauer</p><p>Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.<br/><br/></p><p>10. Rechte der betroffenen Personen</p><p>Du hast insbesondere folgende Rechte:</p><ul><li>Auskunft (Art. 15 DSGVO)</li><li>Berichtigung (Art. 16 DSGVO)</li><li>Löschung (Art. 17 DSGVO)</li><li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li><li>Datenübertragbarkeit (Art. 20 DSGVO)</li><li>Widerspruch gegen bestimmte Verarbeitungen (Art. 21 DSGVO)</li></ul><p>11. Beschwerderecht</p><p>Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>",
         "background_color": "#859972",
         "accent_color": "#424141",
         "hover_color": "#f3587f"
@@ -155,26 +155,15 @@
     "image_with_text_3pLCA9": {
       "type": "image-with-text",
       "blocks": {
-        "image_with_text_TmNGJN": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/LP_Visuals-06.webp",
-            "image_position": "left",
-            "title": "Platzhalter DOLLY X treatfuls Bild",
-            "content": "<p>Hier text über Lastenrad, mit Janina absprechen </p>",
-            "button_text": "",
-            "button_url": ""
-          }
-        },
         "image_with_text_T7HbWQ": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Gruenderinnen_im_Lastenrad.webp",
+            "image": "shopify://shop_images/Magda_Tugce_DM.webp",
             "image_position": "left",
             "title": "Unsere Reise zu dm",
             "content": "<p>Wir sind Magdalena und Tugce, die Gründerinnen von treatfuls – zwei Freundinnen, die Naschen und bewussten Genuss miteinander verbinden wollten und seit heute sind wir mit unseren Produkten in über 2.000 dm Filialen deutschlandweit.<br/><br/>Wir hätten das niemals gedacht und haben es nur mit eurer Hilfe geschafft. Und mit euch werden wir noch so viel weiter gehen, denn das ist erst der Anfang von allem, was noch kommt.</p>",
-            "button_text": "",
-            "button_url": ""
+            "button_text": "👉🏽 dm Storefinder",
+            "button_url": "https://treatfuls.com/pages/treatfulsStorefinder-bei-dm"
           }
         },
         "image_with_text_9HGmMP": {
@@ -187,18 +176,29 @@
             "button_text": "",
             "button_url": "shopify://products/valentinstags-black-box-black-box"
           }
+        },
+        "image_with_text_TmNGJN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/NOAN_X_DOLLY.webp",
+            "image_position": "left",
+            "title": "Eltern-Lifehack: Snacks, Snacks, Snacks",
+            "content": "<p>Jede Mama und jeder Papa weiß, dass ohne Snacks gar nichts geht. Auch keine Fahrt mit dem Lastenrad. Deshalb fühlte sich die Zusammenarbeit von Dolly, treatfuls und dm einfach von Anfang an ideal an. Gesunde Inhaltsstoffe, richtig guter Geschmack, frische Luft und Bewegung, das ist 100% Alltagsglück.</p>",
+            "button_text": "Jetzt Dolly probefahren!",
+            "button_url": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=mid_home_cta"
+          }
         }
       },
       "block_order": [
-        "image_with_text_TmNGJN",
         "image_with_text_T7HbWQ",
-        "image_with_text_9HGmMP"
+        "image_with_text_9HGmMP",
+        "image_with_text_TmNGJN"
       ],
       "name": "Image with text",
       "settings": {
         "background_color": "#a3c089",
-        "accent_color": "",
-        "hover_color": "",
+        "accent_color": "#c081a9",
+        "hover_color": "#ceb0d1",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -251,6 +251,72 @@
         "hover_color": "#e56a89"
       }
     },
+    "image_with_text_WaqAAw": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_3PGVDQ": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/NOAN_X_DOLLY.webp",
+            "image_position": "left",
+            "title": "Eltern-Lifehack: Snacks, Snacks, Snacks",
+            "content": "<p>Jede Mama und jeder Papa weiß, dass ohne Snacks gar nichts geht. Auch keine Fahrt mit dem Lastenrad. Deshalb fühlte die Zusammenarbeit von Dolly, Treatfuls und dm einfach von Anfang an ideal. Gesunde Inhaltsstoffe, oberleckerer Geschmack, frische Luft und Bewegung – das ist 100% Alltagsglück.</p>",
+            "button_text": "Zum Dolly-Dealerlocator",
+            "button_url": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=mid_home_cta"
+          }
+        },
+        "image_with_text_PNkkqG": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Gruenderinnen_im_Lastenrad.webp",
+            "image_position": "left",
+            "title": "Unsere Reise zu dm",
+            "content": "<p>Wir sind Magdalena und Tugce, die Gründerinnen von treatfuls – zwei Freundinnen, die Naschen und bewussten Genuss miteinander verbinden wollten und seit heute sind wir mit unseren Produkten in über 2.000 dm Filialen deutschlandweit.<br/><br/>Wir hätten das niemals gedacht und haben es nur mit eurer Hilfe geschafft. Und mit euch werden wir noch so viel weiter gehen, denn das ist erst der Anfang von allem, was noch kommt.</p>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "image_with_text_3PAc8i": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/DM_LP.webp",
+            "image_position": "left",
+            "title": "Mehr als nur Snacks",
+            "content": "<p>Bei treatfuls geht es nicht einfach nur um Snacks, es geht um kleine Momente, die bleiben. Um Geschmack, der überrascht. Und um Produkte, in die wir richtig viel Zeit, Liebe und Detailarbeit stecken.<br/><br/>Unser Matcha Spread ist genau daraus entstanden: aus der Idee, etwas zu schaffen, das es so noch nicht gab. Als einer der ersten Matcha Spreads überhaupt haben wir lange daran gefeilt, bis er diese unvergleichlich cremigeTextur hatte und genau die Balance, die ihn besonders macht.</p>",
+            "button_text": "",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        },
+        "image_with_text_HFQVpN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Einfach_Losrollen_mit_Dolly_und_treatfuls.webp",
+            "image_position": "right",
+            "title": "Einfach losrollen - mit treatfuls und DOLLY",
+            "content": "<p>Ein Dolly ist nicht einfach nur ein Cargobike: Es ist dein Buddy im Alltagsverkehr, deine beste Begleitung für Kita-Touren und Supermarkt-Stops. Dank kraftvollem Bosch-Motor bringt dich dein DOLLY Lastenrad flexibel durch den Alltag - egal ob in der Stadt, im Vorort oder auf dem Land. Extra viel Platz für Familie, Fahrspaß und gute Laune! Sichere dir jetzt deine Chance auf ein Dolly-Lastenrad: Einfach zwei treatfuls Produkte bei dm kaufen und am Gewinnspiel teilnehmen! Du willst es erstmal Probefahren? Hier entlang</p>",
+            "button_text": "Zum Dolly-Dealerlocator",
+            "button_url": "https://dolly-bikes.com/de/haendler-finden/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=bottom_dealer_cta"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_3PGVDQ",
+        "image_with_text_PNkkqG",
+        "image_with_text_3PAc8i",
+        "image_with_text_HFQVpN"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#a3c089",
+        "accent_color": "#c081a9",
+        "hover_color": "#ceb0d1",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "depr_rich_text_hATR9f": {
       "type": "depr-rich-text",
       "blocks": {
@@ -283,6 +349,7 @@
         "richtext_item_Uyx37f",
         "richtext_item_x8GajN"
       ],
+      "disabled": true,
       "name": "SEO Texts",
       "settings": {
         "full_width": false,
@@ -780,6 +847,7 @@
     "raffle_form_r9bdiB",
     "image_with_text_3pLCA9",
     "featured_product_BhT6E9",
+    "image_with_text_WaqAAw",
     "depr_rich_text_hATR9f",
     "depr_rich_text_ArQRbJ",
     "17721214725c4094b2",

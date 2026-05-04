@@ -75,13 +75,98 @@
         "hover_color": "#f3587f"
       }
     },
+    "hero_jdgPF9": {
+      "type": "hero",
+      "blocks": {
+        "invisible_link_YWrmxQ": {
+          "type": "_invisible-link",
+          "name": "Invisible link",
+          "settings": {
+            "test_color": "#ff0000",
+            "invisible_link": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=top_home_cta",
+            "invisible_link_dimensions_desktop": 10,
+            "invisible_link_dimensions_mobile": 18,
+            "invisible_link_vertical_position_desktop": 31,
+            "invisible_link_horizontal_position_desktop": 44,
+            "invisible_link_vertical_position_mobile": 56,
+            "invisible_link_horizontal_position_mobile": 77
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "invisible_link_YWrmxQ"
+      ],
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-04_3.webp",
+        "desktop_image_height": "adapt",
+        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-03_2.webp",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": false,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "right",
+        "vertical_alignment_mobile": "top",
+        "horizontal_alignment_mobile": "center",
+        "max_width": "100%",
+        "max_width_px": 800,
+        "title": "Snack it. Win it. Ride it.",
+        "text": "<h4>Hol dir 2 treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad 😍</h4>",
+        "background_color": "#859972",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": true
+      }
+    },
+    "multicolumn_KzKDXr": {
+      "type": "multicolumn",
+      "blocks": {
+        "item_DgpFn8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Riegel_DM.png",
+            "heading": "2 treatfuls kaufen",
+            "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls-Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
+          }
+        },
+        "item_hGHkV4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Kassenbon_treatfuls_dm.png",
+            "heading": "Kassenbon hochladen",
+            "content": "<p>Einfach deinen Kassenbon hochladen und darauf achten, dass die unten aufgeführten Angaben gut sichtbar und deutlich lesbar sind. So steht deiner Teilnahme nichts im Weg!</p>"
+          }
+        },
+        "item_iGTgFm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Lastenrad.png",
+            "heading": "Lastenrad von Dolly gewinnen",
+            "content": "<p>Sichere dir die Chance auf ein stylisches <a href=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\" target=\"_blank\" title=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\"><strong>Dolly Lastenrad</strong></a><strong>, </strong>vielleicht rollst schon bald du damit los! 🚲 </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_DgpFn8",
+        "item_hGHkV4",
+        "item_iGTgFm"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "So einfach gehts",
+        "text_alignment": "center",
+        "background_color": "#859972",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
     "image_gallery_3QHd8f": {
       "type": "image-gallery",
       "blocks": {
         "image_CkYacU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DRB0277_1.jpg",
+            "image": "shopify://shop_images/Gruenderinnen_im_Lastenrad.webp",
             "content": "",
             "content_position_y": 80,
             "content_position_x": 20,
@@ -117,7 +202,7 @@
         "image_EgQxQg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/15.png",
+            "image": "shopify://shop_images/DRB0277_1.jpg",
             "content": "",
             "content_position_y": 70,
             "content_position_x": 50,
@@ -135,7 +220,7 @@
         "image_qMzmYY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/DRB0279_1.jpg",
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 85,
@@ -159,7 +244,7 @@
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
-        "product": "gifting-boxen-bundle",
+        "product": "singles-box-1-ohne-weisse-haselnuss",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
@@ -168,6 +253,54 @@
         "hover_color": "#f3587f",
         "popup_background_color": "",
         "popup_text_color": ""
+      }
+    },
+    "featured_product_P3kVtL": {
+      "type": "featured-product",
+      "blocks": {
+        "description_KrDDKk": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_m7NiRM": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_VEEP77": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_m6tjFA": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_KrDDKk",
+        "countdown_m7NiRM",
+        "price_VEEP77",
+        "buy_button_m6tjFA"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten probieren",
+        "mobile_heading": "Alle Sorten probieren",
+        "sticky_button": false,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#859972",
+        "accent_color": "#de85a1",
+        "hover_color": "#e56a89"
       }
     },
     "image_gallery_jpAA4C": {
@@ -414,6 +547,7 @@
         "heading_kWUKzf",
         "group_Dc9Gp7"
       ],
+      "disabled": true,
       "name": "Custom block section",
       "settings": {
         "background_color": "#859972",
@@ -1075,64 +1209,60 @@
         "padding_bottom": 40
       }
     },
-    "advantages_BcfMf9": {
+    "advantages_Ry7pk9": {
       "type": "advantages",
       "blocks": {
-        "advantage_item_8gBfw3": {
+        "advantage_item_Amnazd": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-1-smile.png",
             "text": "Lecker"
           }
         },
-        "advantage_item_G8CBAM": {
+        "advantage_item_NrGdwp": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-2-vegan.png",
             "text": "Vegan"
           }
         },
-        "advantage_item_CARaAK": {
+        "advantage_item_mQ46mk": {
           "type": "advantage_item",
           "settings": {
             "image": "shopify://shop_images/img-3-organic.png",
             "text": "Bio-zertifiziert"
           }
         },
-        "advantage_item_mqdQfY": {
+        "advantage_item_bF7Uqw": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-8-additives.png",
-            "text": "Ohne Zusatzstoffe"
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
           }
         },
-        "advantage_item_qxe3cw": {
+        "advantage_item_UzWB6t": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-4-packaging.png",
             "text": "Recyclebare Verpackung"
           }
         },
-        "advantage_item_hy9grG": {
+        "advantage_item_4mgLzW": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-5-soy.png",
             "text": "Ohne Soja"
           }
         },
-        "advantage_item_XE7riB": {
+        "advantage_item_kLUcGF": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-6-gluten-free.png",
             "text": "Ohne Gluten"
           }
         },
-        "advantage_item_WEkgHC": {
+        "advantage_item_zgL3Nn": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-7-sugar.png",
             "text": "Ohne raffinierten Zucker"
@@ -1140,18 +1270,18 @@
         }
       },
       "block_order": [
-        "advantage_item_8gBfw3",
-        "advantage_item_G8CBAM",
-        "advantage_item_CARaAK",
-        "advantage_item_mqdQfY",
-        "advantage_item_qxe3cw",
-        "advantage_item_hy9grG",
-        "advantage_item_XE7riB",
-        "advantage_item_WEkgHC"
+        "advantage_item_Amnazd",
+        "advantage_item_NrGdwp",
+        "advantage_item_mQ46mk",
+        "advantage_item_bF7Uqw",
+        "advantage_item_UzWB6t",
+        "advantage_item_4mgLzW",
+        "advantage_item_kLUcGF",
+        "advantage_item_zgL3Nn"
       ],
       "settings": {
         "hide_on_mobile": false,
-        "title": "nicht noch so ein gesunder Riegel…",
+        "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
@@ -1164,11 +1294,14 @@
     "hero_eNmaQw",
     "main_page_wqaCcB",
     "1775665721a00e34e8",
+    "hero_jdgPF9",
+    "multicolumn_KzKDXr",
     "image_gallery_3QHd8f",
+    "featured_product_P3kVtL",
     "image_gallery_jpAA4C",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "advantages_BcfMf9"
+    "advantages_Ry7pk9"
   ]
 }
