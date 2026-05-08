@@ -133,7 +133,7 @@ class MiniCart extends HTMLElement {
   }
 
   updateMiniCartSection(event) {
-    const data = event.detail.data ? event.detail.data : event;
+    const data = event?.detail?.data ? event.detail.data : event;
     const tempDiv = document.createElement("div");
     const tempCarCount = document.createElement("div");
 
