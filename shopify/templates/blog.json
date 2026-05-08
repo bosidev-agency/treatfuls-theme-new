@@ -27,10 +27,10 @@
       ],
       "name": "Blog filter",
       "settings": {
-        "heading_desktop": "Osterrezepte",
-        "heading_mobile": "Osterrezepte",
-        "background_color": "#edd4a6",
-        "background_color_mobile": "#edd4a6",
+        "heading_desktop": "Rezepte zum Verlieben",
+        "heading_mobile": "Rezepte zum Verlieben",
+        "background_color": "#ceb0d1",
+        "background_color_mobile": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "accent_color_mobile": "#f3587f"
       }

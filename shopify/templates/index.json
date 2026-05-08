@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 zum Gewinnspiel",
-            "url": "https://treatfuls.com/pages/treatfulsxdmgewinnspiel",
+            "text": "👉 Jetzt bestellen",
+            "url": "shopify://products/muttertagsboxtreatsinside",
             "signup_button": false,
             "klaviyo_form": "X578qa"
           },
@@ -42,23 +42,23 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_dm_Phase_2_desktsdop.webp",
+        "desktop_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_desktop_Kopie_ad5d8904-6cf3-4925-b055-8dbdab55337e.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/treatfuls_dm_Phase_2_mobil.webp",
+        "mobile_image": "shopify://shop_images/Heroelement_Matcha_in_heaven_mobil_2_Kopie_cfb22758-e35c-41b2-9b64-51e48efa5697.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "left",
+        "horizontal_alignment_desktop": "right",
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
         "max_width": "100%",
         "max_width_px": 700,
-        "title": "dm called. We delivered.",
-        "text": "<p>Such dir deine dm-Filiale aus und gewinne mit etwas Glück ein Dolly Lastenrad 😍</p>",
+        "title": "",
+        "text": "<h2>Für die beste Mama? Nur die besten treats.</h2>",
         "background_color": "#859972",
         "accent_color": "#ceb0d1",
         "hover_color": "#8a7194",
-        "show_base_triangular_line": true
+        "show_base_triangular_line": false
       }
     },
     "featured_collections_EUemmF": {
@@ -190,7 +190,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#859972",
+        "background_color": "#ceb0d1",
         "accent_color": "#c081a9",
         "hover_color": "#ceb0d1"
       }
@@ -377,7 +377,7 @@
         "hide_on_mobile": false,
         "title": "Hier gibt’s treatfuls",
         "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
-        "background_color": "#a1bf89",
+        "background_color": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

@@ -41,9 +41,10 @@
         "button_ttYK4H",
         "button_Pjtgii"
       ],
+      "disabled": true,
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/cookieImage_jt0z0fjt0z0fjt0z.png",
+        "desktop_image": "shopify://shop_images/cookieImage_o6a6k5o6a6k5o6a6.png",
         "desktop_image_height": "4/1",
         "mobile_image": "shopify://shop_images/cookieImage_jt0z0fjt0z0fjt0z.png",
         "mobile_image_height": "1/1",
@@ -66,9 +67,9 @@
       "type": "main-page",
       "settings": {
         "title": "",
-        "subtitle": "<p><strong>Hey du! 👋 Willkommen zu unserer Cookie-Voting-Umfrage.</strong><br/>Du hast den Half-Baked-Cookie mit Mandel & Kokos probiert? Dann bist du jetzt Teil unseres Produktteams! Wir wollen wissen: Wie hat’s geschmeckt? Was können wir verbessern? Und soll diese Sorte ins treatfuls-Sortiment?</p><p>🍪 Deine Meinung fließt direkt in die Produktentscheidung ein.<br/>🎁 Dauer: 1 Minute.</p>",
+        "subtitle": "<p>Hey du! 👋 Danke, dass du Teil unseres Produkttester-Teams werden möchtest 💛<br/><br/>Wir freuen uns riesig über dein Interesse, gemeinsam mit dir an neuen Produkten & Features zu arbeiten. Damit wir dich bestmöglich passenden Tests und Kategorien zuordnen können, beantworte die Fragen bitte ehrlich und mit ein wenig Zeit ✨</p><p>So können wir sicherstellen, dass unsere Produkttester:innen genau die Produkte erhalten, die wirklich zu ihnen passen.</p><p>🎁 <strong>Alle Personen, die in unser Produkttester-Team aufgenommen werden, erhalten als Dankeschön eine exklusive Goodiebag.<br/><br/><br/></strong></p>",
         "subtitle_font_size": 17,
-        "background_color": "#6b84c0",
+        "background_color": "#c081a9",
         "accent_color": "",
         "hover_color": "",
         "padding_top": 80,

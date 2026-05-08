@@ -93,163 +93,6 @@
         "hover_color": "#24a5a1"
       }
     },
-    "custom_section_9AEAFL": {
-      "type": "custom-section",
-      "blocks": {
-        "heading_kWUKzf": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "heading_text": "Schon verknallt?",
-            "subtitle_text": "Dann schau mal hier…",
-            "margin_top": 24,
-            "margin_bottom": 24
-          },
-          "blocks": {}
-        },
-        "group_Dc9Gp7": {
-          "type": "group",
-          "name": "Group",
-          "settings": {
-            "display_type": "flex",
-            "direction": "row",
-            "alignment": "center",
-            "gap": 32,
-            "child_width": "100%",
-            "max_width_enabled": false,
-            "max_width": 1200,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "slider_X7fgak": {
-              "type": "slider",
-              "name": "Slider",
-              "settings": {
-                "hide_desktop": true,
-                "hide_mobile": false,
-                "loop": true,
-                "slides_per_view_desktop": 4,
-                "slides_per_view_mobile": 1,
-                "show_next_slide": true,
-                "gap": 20
-              },
-              "blocks": {
-                "slide_b3rKQL": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_Wdtkzx": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_Wdtkzx"
-                  ]
-                },
-                "slide_UXkYT6": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_BVnnPr": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "himbeer-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_BVnnPr"
-                  ]
-                },
-                "slide_jjKDwy": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_CnqMpU": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_CnqMpU"
-                  ]
-                },
-                "slide_pg6biV": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_wmWiAV": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "brownie-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_wmWiAV"
-                  ]
-                }
-              },
-              "block_order": [
-                "slide_b3rKQL",
-                "slide_UXkYT6",
-                "slide_jjKDwy",
-                "slide_pg6biV"
-              ]
-            }
-          },
-          "block_order": [
-            "slider_X7fgak"
-          ]
-        }
-      },
-      "block_order": [
-        "heading_kWUKzf",
-        "group_Dc9Gp7"
-      ],
-      "name": "Custom block section",
-      "settings": {
-        "background_color": "#c081a9",
-        "accent_color": "#859972",
-        "hover_color": "#eba3c9",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
     "comparison_table_dT7KWy": {
       "type": "comparison-table",
       "blocks": {
@@ -841,7 +684,7 @@
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -892,7 +735,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#859972",
         "hover_color": "#eba3c9",
         "padding_top": 80,
@@ -905,8 +748,246 @@
       "settings": {
         "product": "summer-crush-kopie",
         "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#859972",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd"
+      }
+    },
+    "custom_section_9AEAFL": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_kWUKzf": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Dc9Gp7": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_X7fgak": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_b3rKQL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_Wdtkzx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_Wdtkzx"
+                  ]
+                },
+                "slide_UXkYT6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_BVnnPr": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_BVnnPr"
+                  ]
+                },
+                "slide_jjKDwy": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_CnqMpU": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_CnqMpU"
+                  ]
+                },
+                "slide_pg6biV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_wmWiAV": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_wmWiAV"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_b3rKQL",
+                "slide_UXkYT6",
+                "slide_jjKDwy",
+                "slide_pg6biV"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_X7fgak"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_kWUKzf",
+        "group_Dc9Gp7"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_WMqFa9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_Yx8hhM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
+            "text": "dm"
+          }
+        },
+        "advantage_item_jbiWDf": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_L9iH7J": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-05.webp",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_zKbph3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-02.webp",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_6UNBwa": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-04.webp",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_mKgYE9": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-03.webp",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_pwNhCi": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-06.webp",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_6qjfnR": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_Yx8hhM",
+        "advantage_item_jbiWDf",
+        "advantage_item_L9iH7J",
+        "advantage_item_zKbph3",
+        "advantage_item_6UNBwa",
+        "advantage_item_mKgYE9",
+        "advantage_item_pwNhCi",
+        "advantage_item_6qjfnR"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "background_color": "#ceb0d1",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "advantages_BcfMf9": {
@@ -992,88 +1073,6 @@
         "hover_color": "#f3587f"
       }
     },
-    "advantages_9YyT3C": {
-      "type": "advantages",
-      "blocks": {
-        "advantage_item_rFRbU3": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
-            "text": "Edeka"
-          }
-        },
-        "advantage_item_Ch4ekF": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Rewe_Logo_Icon_5c27618d-1517-45aa-aadf-7c996856063c.png",
-            "text": "Rewe"
-          }
-        },
-        "advantage_item_DmmXB8": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Alnatura_Logo_Icon_254ebcf1-4bf2-485e-869c-3223422a06e3.png",
-            "text": "Alnatura"
-          }
-        },
-        "advantage_item_Wj3EAW": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Budni_Logo_Icon_1eb4e2cf-6432-45c8-8bef-3c307a4b9a5d.png",
-            "text": "Budnikowsky"
-          }
-        },
-        "advantage_item_wmEGp4": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Billa_Logo_Icon_2.png",
-            "text": "BILLA"
-          }
-        },
-        "advantage_item_axVm7j": {
-          "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/Spar_Logo_Icon_37d31e4a-ae75-4904-96c5-e31d592945f0.png",
-            "text": "SPAR"
-          }
-        },
-        "advantage_item_9AKQ9h": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_tUYWEF": {
-          "type": "advantage_item",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/img-7-sugar.png",
-            "text": "Ohne raffinierten Zucker"
-          }
-        }
-      },
-      "block_order": [
-        "advantage_item_rFRbU3",
-        "advantage_item_Ch4ekF",
-        "advantage_item_DmmXB8",
-        "advantage_item_Wj3EAW",
-        "advantage_item_wmEGp4",
-        "advantage_item_axVm7j",
-        "advantage_item_9AKQ9h",
-        "advantage_item_tUYWEF"
-      ],
-      "settings": {
-        "hide_on_mobile": false,
-        "title": "Hier gibt’s treatfuls",
-        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
-        "background_color": "#859972",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
-      }
-    },
     "compare_product_reviews_4JnjWz": {
       "type": "compare-product-reviews",
       "name": "Product reviews",
@@ -1090,12 +1089,12 @@
     "main",
     "hero_eNmaQw",
     "featured_product_GbQVWw",
-    "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
     "main_product_ingredients_6KHBRk",
+    "custom_section_9AEAFL",
+    "advantages_WMqFa9",
     "advantages_BcfMf9",
-    "advantages_9YyT3C",
     "compare_product_reviews_4JnjWz"
   ]
 }
