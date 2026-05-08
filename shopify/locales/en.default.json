@@ -186,6 +186,11 @@
       "mini_cart_empty_title": "Your Cart is Empty",
       "mini_cart_empty_subtitle": "You’re missing out is all we’re saying."
     },
+    "goodie": {
+      "goodie_amount": "Free Goodie from {{ threshold }}",
+      "goodie_html": "Goodie unlocked",
+      "goodie_remaining_html": "🍬 Only <strong>{{ remaining_amount }}</strong> until the <strong>free Goodie</strong>"
+    },
     "label": {
       "discounted_total": "Discounted total",
       "product": "Product",
