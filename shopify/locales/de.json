@@ -199,9 +199,9 @@
       "free_shipping_remaining_html": "🚚     Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Versand</strong>"
     },
     "goodie": {
-      "goodie_amount": "Kostenfreies Goodie ab {{ threshold }}",
+      "goodie_amount": "Kostenfreies Goodie für die ersten Bestellungen 🩷",
       "goodie_html": "Goodie freigeschaltet",
-      "goodie_remaining_html": "🍬 Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Goodie</strong>"
+      "goodie_remaining_html": "🍬 kostenloses Goodie"
     },
     "label": {
       "discounted_total": "Gesamtrabatt",

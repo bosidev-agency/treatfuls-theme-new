@@ -71,10 +71,10 @@
       "settings": {
         "heading_desktop": "Produkte",
         "heading_mobile": "Produktübersicht",
-        "background_color": "#dbaaeb",
-        "background_color_mobile": "#2ac2bd",
-        "accent_color": "#2ac2bd",
-        "accent_color_mobile": "#f3587f"
+        "background_color": "#ceb0d1",
+        "background_color_mobile": "#ceb0d1",
+        "accent_color": "#c081a9",
+        "accent_color_mobile": "#c081a9"
       }
     },
     "f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee": {
@@ -84,7 +84,7 @@
         "items_per_page": 48,
         "show_vendor": false,
         "show_view_all": false,
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb"
       }

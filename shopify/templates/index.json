@@ -306,6 +306,7 @@
       "blocks": {
         "advantage_item_eiRqga": {
           "type": "advantage_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
             "text": "dm"
