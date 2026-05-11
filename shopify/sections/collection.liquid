@@ -9,6 +9,16 @@
     {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
+
+    {%- if section.settings.product_card_hover_color != 'rgba(0,0,0,0)' and section.settings.product_card_hover_color != blank -%}
+      --product-card-hover-color: {{ section.settings.product_card_hover_color }};
+    {%- endif -%}
+    {%- if section.settings.product_card_badges_background_color != 'rgba(0,0,0,0)' and section.settings.product_card_badges_background_color != blank -%}
+      --product-card-badges-background-color: {{ section.settings.product_card_badges_background_color }};
+    {%- endif -%}
+    {%- if section.settings.product_card_badges_text_color != 'rgba(0,0,0,0)' and section.settings.product_card_badges_text_color != blank -%}
+      --product-card-badges-text-color: {{ section.settings.product_card_badges_text_color }};
+    {%- endif -%}
   }
 </style>
 
@@ -155,6 +165,28 @@
       "id": "hover_color",
       "label": "Hover Color",
       "default": "#dbaaeb"
+    },
+    {
+      "type": "header",
+      "content": "Product Card Colors"
+    },
+    {
+      "type": "color",
+      "id": "product_card_hover_color",
+      "label": "Product Card Hover Color",
+      "default": "#1d8884"
+    },
+    {
+      "type": "color",
+      "id": "product_card_badges_background_color",
+      "label": "Product Card Badges Background Color",
+      "default": "#6ad4d1"
+    },
+    {
+      "type": "color",
+      "id": "product_card_badges_text_color",
+      "label": "Product Card Badges Text Color",
+      "default": "#1d8884"
     }
   ],
   "presets": [

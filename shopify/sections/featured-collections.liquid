@@ -23,6 +23,10 @@
       {%- else -%}
         --section-accent-color: {{ section.settings.accent_color }};
       {%- endif -%}
+
+      {%- if section.settings.collection_pill_background_color_mobile != 'rgba(0,0,0,0)' and section.settings.collection_pill_background_color_mobile != blank -%}
+        --collection-pill-background-color-mobile: {{ section.settings.collection_pill_background_color_mobile }};
+      {%- endif -%}
     }
   }
 </style>
@@ -182,6 +186,16 @@
       "id": "accent_color_mobile",
       "label": "Accent Color Mobile",
       "default": "#f3587f"
+    },
+    {
+      "type": "header",
+      "content": "Collection Pill Colors (MOBILE)"
+    },
+    {
+      "type": "color",
+      "id": "collection_pill_background_color_mobile",
+      "label": "Collection Pill Background Color Mobile",
+      "default": "#2ac2bd"
     }
   ],
   "blocks": [
