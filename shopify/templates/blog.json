@@ -41,7 +41,10 @@
         "items_per_page": 48,
         "background_color": "#2ac2bd",
         "accent_color": "#f3587f",
-        "hover_color": "#dbaaeb"
+        "hover_color": "#dbaaeb",
+        "product_card_hover_color": "#5cdfdb",
+        "product_card_badges_background_color": "#5cdfdb",
+        "product_card_badges_text_color": "#1d8884"
       }
     }
   },
