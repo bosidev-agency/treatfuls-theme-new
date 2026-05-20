@@ -119,7 +119,8 @@
         "background_color": "#1ba7a2",
         "background_color_mobile": "#2ac2bd",
         "accent_color": "#f3587f",
-        "accent_color_mobile": "#f3587f"
+        "accent_color_mobile": "#f3587f",
+        "collection_pill_background_color_mobile": "#2ac2bd"
       }
     },
     "home-products": {
@@ -192,7 +193,7 @@
         "adjust_colors_to_current_slide": false,
         "background_color": "#ceb0d1",
         "accent_color": "#c081a9",
-        "hover_color": "#ceb0d1"
+        "hover_color": "#e56a89"
       }
     },
     "home-ticker": {
@@ -306,7 +307,6 @@
       "blocks": {
         "advantage_item_eiRqga": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
             "text": "dm"

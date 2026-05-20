@@ -21,11 +21,9 @@
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 75,
-    "start_date": "10.05.2026 11:00",
-    "end_date": "13.05.2026 18:00",
-    "goodies": [
-      "goodie-apfel-zimt-cookie"
-    ],
+    "start_date": "",
+    "end_date": "",
+    "goodies": [],
     "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
