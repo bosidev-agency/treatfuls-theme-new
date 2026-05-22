@@ -18,7 +18,7 @@ class AccordionItem extends HTMLElement {
 
   connectedCallback() {
     this.accordionHeader = this.querySelector(".js-accordion__header");
-    this.accordionBody = this.querySelector(".accordion__dsc");
+    this.accordionBody = this.querySelector(".accordion__body");
     this.handleClickAccordionHeader =
       this.handleClickAccordionHeader.bind(this);
     this.setSize = this.setSize.bind(this);
