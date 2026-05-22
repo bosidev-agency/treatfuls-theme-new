@@ -1,4 +1,119 @@
 <style>
+  {%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
+  {% if nav_collection_ids contains collection.id %}
+  /* Titel-Überschriften weiß */
+  #shopify-section-{{ section.id }} .title-bg,
+  #shopify-section-{{ section.id }} .home-products__title,
+  #shopify-section-{{ section.id }} h2.title-bg {
+    color: #ffffff !important;
+  }
+  /* Header in Nude färben */
+  .header {
+    background-color: #F5F0EB !important;
+  }
+  /* Header Navigation und Icons weiß */
+  .header-nav__link,
+  .header-nav__link svg,
+  .header-nav__link svg path,
+  .header-nav__menu a {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+  /* Hamburger Menü Striche weiß */
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: #ffffff !important;
+  }
+  /* Spezifisch für Lupe/Suche Icon */
+  .header-nav__link--static svg,
+  .header-nav__link--static svg path,
+  [data-toggle="predictive-search-container"] svg,
+  [data-toggle="predictive-search-container"] svg path {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+  }
+  /* "Alle Produkte" und andere Pill-Texte weiß */
+  #shopify-section-{{ section.id }} .collection-swiper__link span {
+    color: #ffffff !important;
+  }
+  /* === DESKTOP STYLING === */
+  @media screen and (min-width: 992px) {
+    /* Alle Pills: kein Kasten, kein Rahmen */
+    .featured-collections collection-slider a .collection-swiper__link {
+      background: transparent !important;
+      border: none !important;
+    }
+    /* Aktive Pill: fett und weiß unterstrichen */
+    .featured-collections collection-slider a.active .collection-swiper__link span {
+      font-weight: bold !important;
+      text-decoration: underline !important;
+      text-decoration-color: #ffffff !important;
+      text-underline-offset: 4px !important;
+    }
+    /* Inaktive Pills: normal, kein Unterstrich */
+    .featured-collections collection-slider a:not(.active) .collection-swiper__link span {
+      font-weight: normal !important;
+      text-decoration: none !important;
+    }
+  }
+
+  /* === MOBILE STYLING === */
+  @media screen and (max-width: 991px) {
+    /* Inaktive Pills: umrandet (nur Rahmen) */
+    .featured-collections collection-slider a:not(.active) .collection-swiper__link {
+      background: transparent !important;
+      border: 2px solid #C081A9 !important;
+    }
+    /* Aktive Pill: ausgefüllt und fett */
+    .featured-collections collection-slider a.active .collection-swiper__link {
+      background: #C081A9 !important;
+      border: 2px solid #C081A9 !important;
+    }
+    .featured-collections collection-slider a.active .collection-swiper__link span {
+      font-weight: bold !important;
+    }
+  }
+  /* Swiper-Pfeile: Lila Badge, weißer Pfeil */
+  #shopify-section-{{ section.id }} .swiper-container-wrapper .swiper-button-prev,
+  #shopify-section-{{ section.id }} .swiper-container-wrapper .swiper-button-next {
+    background: #C081A9 !important;
+    background-color: #C081A9 !important;
+    color: #ffffff !important;
+  }
+  #shopify-section-{{ section.id }} .swiper-container-wrapper .swiper-button-prev::after,
+  #shopify-section-{{ section.id }} .swiper-container-wrapper .swiper-button-next::after {
+    color: #ffffff !important;
+  }
+    /* Unterer Zacken-Divider in lila #ceb0d1 - gehört zur lila Section */
+    #shopify-section-template--29080884609288__product-grid
+      .base-triangular-line,
+    #shopify-section-template--29080884609288__product-grid
+      .base-triangular-line
+      svg,
+    #shopify-section-template--29080884609288__product-grid
+      .base-triangular-line
+      svg
+      path {
+      color: #ceb0d1 !important;
+      fill: #ceb0d1 !important;
+    }
+
+    @media screen and (min-width: 992px) {
+      #shopify-section-template--29080884609288__product-grid {
+        --section-background-color: #ceb0d1;
+        --section-accent-color: #c081a9;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      #shopify-section-template--29080884609288__product-grid {
+        --section-background-color: #ceb0d1;
+        --section-accent-color: #c081a9;
+        --collection-pill-background-color-mobile: #c081a9;
+      }
+    }
+  {% endif %}
   @media screen and (min-width: 992px) {
     #shopify-section-{{ section.id }} {
       {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
@@ -32,8 +147,9 @@
 </style>
 
 {% comment %} TODO: Rename this section {% endcomment %}
+{%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
 <section
-  class="featured-collections"
+  class="featured-collections{% if nav_collection_ids contains collection.id %} triangular-balance{% endif %}"
   data-section-id="{{- section.id -}}"
   data-section-type="featured-collections"
 >
@@ -141,6 +257,42 @@
     {%- render 'icon-triangular-line' -%}
   </div>
 </section>
+
+<script>
+(function() {
+  // Slider-Position beim Klicken auf einen Collection-Link speichern
+  const slider = document.querySelector('#shopify-section-{{ section.id }} collection-slider');
+  if (slider) {
+    const links = slider.querySelectorAll('a[href*="/collections/"]');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const slide = this.closest('.swiper-slide');
+        const slides = Array.from(slider.querySelectorAll('.swiper-slide'));
+        const index = slides.indexOf(slide);
+        if (index >= 0) {
+          sessionStorage.setItem('collectionSliderIndex', index);
+        }
+      });
+    });
+
+    // Gespeicherte Position beim Laden wiederherstellen
+    const savedIndex = sessionStorage.getItem('collectionSliderIndex');
+    if (savedIndex !== null) {
+      // Mehrere Versuche, falls Swiper noch nicht initialisiert
+      const tryRestore = (attempts = 0) => {
+        const swiperInstance = slider.swiper;
+        if (swiperInstance) {
+          swiperInstance.slideTo(parseInt(savedIndex, 10), 0);
+          sessionStorage.removeItem('collectionSliderIndex');
+        } else if (attempts < 20) {
+          setTimeout(() => tryRestore(attempts + 1), 100);
+        }
+      };
+      tryRestore();
+    }
+  }
+})();
+</script>
 
 {% schema %}
 {

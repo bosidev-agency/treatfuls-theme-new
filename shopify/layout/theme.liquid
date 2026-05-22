@@ -1,3 +1,4 @@
+<!-- FV_1779435374_FV_{{shop.metafields.fudge.rid.value}} -->
 <!doctype html> 
 <html class="no-js" lang="{{- shop.locale -}}">
 	<head>
@@ -115,19 +116,137 @@
 
   {%- render 'color-scheme', resource: resource -%}
 
-	<body class="{{ body_classes }}">
-      	<!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFCVWZ5"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-    {% sections 'header-group' %}
+		<body class="{{ body_classes }}">
+	      	<!-- Google Tag Manager (noscript) -->
+	        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFCVWZ5"
+	        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	        <!-- End Google Tag Manager (noscript) -->
+	    {% sections 'header-group' %}
 
-		{{ content_for_layout }}
+			{{ content_for_layout }}
 
-		{%- section 'footer' -%}
+			{%- section 'footer' -%}
 
-		{%- section 'main-cart-mini' -%}
-    {%- render 'cart-notification' -%}
+			{%- section 'main-cart-mini' -%}
+	    {%- render 'cart-notification' -%}
+	    
+	    {%- if template.name == 'collection' -%}
+	    <style>
+		      /* Header in lila #ceb0d1 färben */
+		      .header {
+		        background-color: #ceb0d1 !important;
+		      }
+		      /* Header Navigation Links weiß */
+		      .header-nav__link,
+		      .header-nav__menu a {
+		        color: #ffffff !important;
+		      }
+		      /* Icons weiß erzwingen */
+		      .header-nav__link svg,
+		      .header-nav__link svg path,
+		      .header-nav__link svg circle,
+		      .header-nav__link svg line {
+		        stroke: #ffffff !important;
+		        fill: none !important;
+		      }
+		      .header-nav__link svg circle[fill],
+		      .header-nav__link svg circle[r="1"] {
+		        fill: #ffffff !important;
+		        stroke: none !important;
+		      }
+		      /* Hamburger Menü Striche weiß */
+		      .hamburger-inner,
+		      .hamburger-inner::before,
+		      .hamburger-inner::after {
+		        background-color: #ffffff !important;
+		      }
+		      /* Pill-Texte in featured-collections weiß */
+		      .collection-swiper__link span,
+		      .title-bg {
+		        color: #ffffff !important;
+		      }
+		      /* Featured Collections Section in lila #ceb0d1 */
+		      .featured-collections {
+		        background-color: #ceb0d1 !important;
+		      }
+		      /* Triangular Zacken in lila #ceb0d1 für alle Collection-Seiten AUSSER alle-produkte */
+		      .template:not(.template-collection--alle-produkte) .base-triangular-line {
+		        color: #ceb0d1 !important;
+		      }
+		      /* Zacken lila für alle-produkte Collection Template */
+		      .template-collection--alle-produkte .base-triangular-line,
+		      .template-collection--alle-produkte .base-triangular-line svg,
+		      .template-collection--alle-produkte .base-triangular-line svg path {
+		        color: #ceb0d1 !important;
+		        fill: #ceb0d1 !important;
+		      }
+	      /* Collection Section (Produkt-Grid) weiß */
+	      .collection-template,
+	      .products_listing {
+	        background-color: #FFFFFF !important;
+	      }
+	      /* Produktnamen schwarz */
+	      .product-card__title,
+	      .grid-view-item__title {
+	        color: #2d2d2d !important;
+	      }
+	      /* Product Hover Accent in Nude - CSS Variablen */
+	      .products_listing,
+	      .collection-template,
+	      #shopify-section-f507b3a2-8d74-41d4-a1c9-d3dc0f20e0ee {
+	        --product-card-hover-color: #F5F0EB !important;
+	        --section-accent-color: #F5F0EB !important;
+	      }
+	      /* Product Hover Accent in Nude - Fallback */
+	      .product-card:hover,
+	      .grid-view-item:hover,
+	      .product-card--hover,
+	      .product-card__link:hover {
+	        background-color: #F5F0EB !important;
+	      }
+	      /* CTA Button (Preis/Warenkorb) in Lila #C081A9 via CSS-Variable */
+	      .products_listing {
+	        --section-accent-color: #C081A9 !important;
+	      }
+	      /* CTA Button (Preis/Warenkorb) in Lila #C081A9 - Fallback */
+	      .products_listing .product_content-buttons .product-form__button,
+	      .products_listing atc-button .button,
+	      .products_listing .product_content-buttons button,
+	      .products_listing .product-form__button[type="submit"] {
+	        background-color: #C081A9 !important;
+	        border-color: #C081A9 !important;
+	        color: #FFFFFF !important;
+	      }
+	      .products_listing .product-form__button-price {
+	        color: #FFFFFF !important;
+	      }
+	      /* Labels (Vegan, Bio, etc.) in Nude #F5F0EB */
+	      .products_listing__label {
+	        background-color: #F5F0EB !important;
+	      }
+	      /* Lila Schatten vom Slider-Button entfernen */
+	      .featured-collections .swiper-button-next {
+	        background: rgba(255,255,255,0.9) !important;
+	        box-shadow: none !important;
+	      }
+	      .featured-collections .swiper-button-prev {
+	        background: rgba(255,255,255,0.9) !important;
+	        box-shadow: none !important;
+	      }
+		    </style>
+		    {%- endif -%}
+
+		    {%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
+		    {%- if nav_collection_ids contains collection.id %}
+		    <style>
+		      /* Featured Collections Titel-Überschriften weiß - höchste Priorität */
+		      #shopify-section-template--29080884609288__product-grid .title-bg,
+		      #shopify-section-template--29080884609288__product-grid .home-products__title,
+		      #shopify-section-template--29080884609288__product-grid h2.title-bg {
+		        color: #ffffff !important;
+		      }
+		    </style>
+		    {%- endif -%}
 
 		{%- if template.directory == 'customers' -%}
 			<script src="{{- 'shopify_common.js' | shopify_asset_url -}}" defer></script>

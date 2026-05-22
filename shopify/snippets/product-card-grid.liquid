@@ -68,11 +68,18 @@
           <div class="products_listing__information-wrapper">
             <div class="products_listing__information-labels">
               {%- if custom_card_badge -%}
-                <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }};color:{{ custom_card_badge.text_color }};">
+                <div class="products_listing__label products_listing__label--custom" style="background-color:{{ custom_card_badge.background_color }} !important;color:{{ custom_card_badge.text_color }} !important;">
                   {%- if custom_card_badge.emoji -%}
                     <style>
                       .products_listing ul.grid li.grid__item:hover .products_listing__label--custom {
-                        border: 1px solid {{ custom_card_badge.text_color }};
+                        border: 1px solid {{ custom_card_badge.text_color }} !important;
+                      }
+                      @media screen and (max-width: 768px) {
+                        .products_listing ul.grid li.grid__item:hover .products_listing__label--custom,
+                        .products_listing ul.grid li.grid__item:active .products_listing__label--custom,
+                        .products_listing ul.grid li.grid__item:focus-within .products_listing__label--custom {
+                          border: 1px solid {{ custom_card_badge.text_color }} !important;
+                        }
                       }
                     </style>
                     <span class="products_listing__label--emoji">

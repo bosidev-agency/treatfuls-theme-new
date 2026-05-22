@@ -19,8 +19,109 @@
     {%- if section.settings.product_card_badges_text_color != 'rgba(0,0,0,0)' and section.settings.product_card_badges_text_color != blank -%}
       --product-card-badges-text-color: {{ section.settings.product_card_badges_text_color }};
     {%- endif -%}
+    {% if template.name == 'collection' and template.suffix == 'alle-produkte' %}
+      --color-text: #2d2d2d;
+      --color-text-title: #2d2d2d;
+    {% endif %}
+    {% if template.name == 'collection' and template.suffix == nil %}
+      {%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
+      {% if nav_collection_ids contains collection.id %}
+        --color-text: #2d2d2d;
+        --color-text-title: #2d2d2d;
+      {% endif %}
+    {% endif %}
   }
 </style>
+{% if template.name == 'collection' and template.suffix == 'alle-produkte' %}
+<style>
+  #shopify-section-{{ section.id }} .product-card__title,
+  #shopify-section-{{ section.id }} .grid-view-item__title {
+    color: #2d2d2d !important;
+  }
+  /* Header in Nude färben */
+  .header {
+    background-color: #F5F0EB !important;
+  }
+  /* Header Navigation und Icons schwarz */
+  .header-nav__link,
+  .header-nav__link svg,
+  .header-nav__link svg path,
+  .header-nav__link a {
+    color: #000000 !important;
+    fill: #000000 !important;
+  }
+  /* Hamburger Menü Striche schwarz */
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: #000000 !important;
+  }
+  /* Spezifisch für Lupe/Suche Icon */
+  .header-nav__link--static svg,
+  .header-nav__link--static svg path,
+  [data-toggle="predictive-search-container"] svg,
+  [data-toggle="predictive-search-container"] svg path {
+    fill: #000000 !important;
+    color: #000000 !important;
+  }
+    /* Zacken-Divider weiß für Übergang zum Footer */
+    #shopify-section-{{ section.id }} .base-triangular-line,
+    #shopify-section-{{ section.id }} .base-triangular-line svg,
+    #shopify-section-{{ section.id }} .base-triangular-line svg path {
+      color: #FFFFFF !important;
+      fill: #FFFFFF !important;
+    }
+    /* Mobile: Schwarzer Rand um Labels bei Touch/Hover (damit sie auf nude Hintergrund sichtbar bleiben) */
+    @media screen and (max-width: 768px) {
+      .products_listing ul.grid li.grid__item:hover .products_listing__label,
+      .products_listing ul.grid li.grid__item:active .products_listing__label,
+      .products_listing ul.grid li.grid__item:focus-within .products_listing__label {
+        border: 1px solid #000000 !important;
+      }
+    }
+  </style>
+{% endif %}
+
+{% if template.name == 'collection' and template.suffix == nil %}
+  {%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
+  {% if nav_collection_ids contains collection.id %}
+  <style>
+    /* Header in Nude färben */
+    .header {
+      background-color: #F5F0EB !important;
+    }
+    /* Header Navigation und Icons schwarz */
+    .header-nav__link,
+    .header-nav__link svg,
+    .header-nav__link svg path,
+    .header-nav__link a {
+      color: #000000 !important;
+      fill: #000000 !important;
+    }
+    /* Hamburger Menü Striche schwarz */
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: #000000 !important;
+    }
+    /* Spezifisch für Lupe/Suche Icon */
+    .header-nav__link--static svg,
+    .header-nav__link--static svg path,
+    [data-toggle="predictive-search-container"] svg,
+    [data-toggle="predictive-search-container"] svg path {
+      fill: #000000 !important;
+      color: #000000 !important;
+    }
+    /* Zacken-Divider weiß für Übergang zum Footer */
+    #shopify-section-{{ section.id }} .base-triangular-line,
+    #shopify-section-{{ section.id }} .base-triangular-line svg,
+    #shopify-section-{{ section.id }} .base-triangular-line svg path {
+      color: #FFFFFF !important;
+      fill: #FFFFFF !important;
+    }
+  </style>
+  {% endif %}
+{% endif %}
 
 {% comment %} TODO: Cleanup this section {% endcomment %}
 {%- assign collection_sort_by = collection.sort_by | default: collection.default_sort_by -%}

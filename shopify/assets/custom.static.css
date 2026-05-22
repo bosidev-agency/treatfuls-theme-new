@@ -1427,3 +1427,29 @@ uc-copyright {
   align-items: center;
   justify-content: center;
 }
+
+/* Desktop Logo Horizontal */
+@media screen and (min-width: 800px) {
+  .header__column--logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-wrapper {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  .header__logo-wrapper svg {
+    width: 200px;
+    height: auto;
+  }
+
+  /* Reduzierter Abstand zwischen Header und Content */
+  .triangular-balance {
+    padding-top: 60px !important;
+  }
+}

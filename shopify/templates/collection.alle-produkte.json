@@ -11,6 +11,9 @@
   "sections": {
     "product-grid": {
       "type": "featured-collections",
+      "custom_css": [
+        ".title-bg { color: #2d2d2d !important; }"
+      ],
       "blocks": {
         "product_item_4b63Wq": {
           "type": "product_item",
