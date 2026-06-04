@@ -11,9 +11,6 @@
   "sections": {
     "product-grid": {
       "type": "featured-collections",
-      "custom_css": [
-        ".title-bg { color: #2d2d2d !important; }"
-      ],
       "blocks": {
         "product_item_4b63Wq": {
           "type": "product_item",
@@ -71,11 +68,14 @@
         "collection_item_LLzRme",
         "collection_item_zt4DCn"
       ],
+      "custom_css": [
+        ".title-bg {color: #2d2d2d !important;}"
+      ],
       "settings": {
-        "heading_desktop": "Produkte",
+        "heading_desktop": "Produktübersicht",
         "heading_mobile": "Produktübersicht",
-        "background_color": "#F5F0EB",
-        "background_color_mobile": "#F5F0EB",
+        "background_color": "#f5f0eb",
+        "background_color_mobile": "#f5f0eb",
         "accent_color": "#c081a9",
         "accent_color_mobile": "#c081a9",
         "collection_pill_background_color_mobile": "#c081a9"

@@ -1,6 +1,15 @@
 <style>
   {%- assign nav_collection_ids = '283713765570,564020248840,519402258696,537731006728,519351828744' -%}
   {% if nav_collection_ids contains collection.id %}
+  /* Drastisch reduzierter Abstand zwischen Header und Content */
+  #shopify-section-{{ section.id }}.triangular-balance,
+  #shopify-section-{{ section.id }} .triangular-balance {
+    padding-top: 10px !important;
+  }
+  /* Abstand zwischen Zacken-Divider und Collection Section */
+  #shopify-section-{{ section.id }} .base-triangular-line {
+    margin-bottom: 20px;
+  }
   /* Titel-Überschriften weiß */
   #shopify-section-{{ section.id }} .title-bg,
   #shopify-section-{{ section.id }} .home-products__title,

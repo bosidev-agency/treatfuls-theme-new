@@ -45,7 +45,8 @@
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Wyślemy Ci wiadomość e-mail tuż przed otwarciem!",
       "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"/admin\" class=\"text-link\">Zaloguj się tutaj</a>",
-      "password_link": "Wejdź, wpisując hasło"
+      "password_link": "Wejdź, wpisując hasło",
+      "powered_by_shopify_html": "Ten sklep jest zasilany przez {{ shopify }}"
     },
     "social": {
       "share_on_facebook": "Udostępnij",
@@ -88,7 +89,8 @@
       "newsletter_email": "Zapisz się do naszej listy mailingowej",
       "email_placeholder": "Adres e-mail",
       "confirmation": "Dziękujemy za subskrypcję!",
-      "submit": "Subskrybuj"
+      "submit": "Subskrybuj",
+      "newsletter_opt_in": "Wyrażam zgodę na otrzymywanie newslettera treatfuls."
     },
     "filters": {
       "show_more": "Pokaż więcej",
@@ -170,6 +172,12 @@
         "few": "Liczba komentarzy: {{ count }}",
         "many": "Liczba komentarzy: {{ count }}"
       }
+    },
+    "recipe": {
+      "preparation": "Przygotowanie",
+      "ingredients": "Składniki",
+      "person_quantity": "Osoby",
+      "article_card_cta": "Do przepisu"
     }
   },
   "cart": {
@@ -189,7 +197,14 @@
       "empty": "Twój koszyk jest obecnie pusty.",
       "cookies_required": "Włącz pliki cookie, aby korzystać z koszyka",
       "continue_shopping": "Kontynuuj zakupy",
-      "cart_error": "Wystąpił błąd podczas aktualizowania Twojego koszyka. Spróbuj ponownie."
+      "cart_error": "Wystąpił błąd podczas aktualizowania Twojego koszyka. Spróbuj ponownie.",
+      "cart_subtotal": "Koszty wysyłki i kody rabatowe zostaną naliczone przy kasie.",
+      "mini_cart_item": "{{ item_count }} produktów w koszyku",
+      "mini_cart_empty_title": "Twój koszyk jest pusty",
+      "mini_cart_empty_subtitle": "Nic nie znalazłeś? 🤔",
+      "free_shipping_amount": "Darmowa dostawa od {{ free_shipping_amount }}",
+      "free_shipping_html": "🎉     Twoja wysyłka jest <strong>darmowa!</strong>",
+      "free_shipping_remaining_html": "🚚     Zostało Ci tylko <strong>{{ remaining_amount }}</strong> do <strong>darmowej dostawy</strong>"
     },
     "label": {
       "discounted_total": "Łączny rabat",
@@ -215,6 +230,11 @@
         "few": "{{ count }} pozycji(-e)",
         "many": "{{ count }} pozycji(-e)"
       }
+    },
+    "goodie": {
+      "goodie_amount": "Darmowy dodatek do pierwszych zamówień 🩷",
+      "goodie_html": "Dodatkowa zawartość odblokowana",
+      "goodie_remaining_html": "🍬 darmowy smakołyk"
     }
   },
   "collections": {
@@ -239,6 +259,16 @@
     "filters": {
       "title_tags": "Filtruj według",
       "all_tags": "Wszystkie produkty"
+    },
+    "product_card": {
+      "add_to_cart": "Dodaj do koszyka",
+      "configure_bundle": "Konfiguruj pakiet",
+      "preorder": "Zamów w przedsprzedaży",
+      "sold_out": "wkrótce",
+      "vegan_badge": "Wegański",
+      "bio_badge": "Życiorys",
+      "view_product": "Zobacz produkt",
+      "view_gift_card": "Wybierz kupon"
     }
   },
   "contact": {
@@ -249,7 +279,13 @@
       "message": "Wiadomość",
       "submit": "Wyślij",
       "post_success": "Dziękujemy za skontaktowanie się z nami. Skontaktujemy się z Tobą tak szybko, jak to możliwe.",
-      "error_heading": "Dostosuj następujące dane:"
+      "error_heading": "Dostosuj następujące dane:",
+      "first_name": "Imię",
+      "last_name": "Nazwisko",
+      "order_number": "Numer zamówienia",
+      "b2b_submit": "Wyślij zapytanie",
+      "post_success_html": "<span>Dziękujemy</span> za Twoje zapytanie, sprawdzimy Twoje dane i skontaktujemy się z Tobą w ciągu najbliższych dni.",
+      "back_to_home": "Powrót do strony głównej"
     }
   },
   "customer": {
@@ -391,7 +427,8 @@
       "create_account": "Utwórz konto"
     },
     "footer": {
-      "social_platform": "{{ name }} na {{ platform }}"
+      "social_platform": "{{ name }} na {{ platform }}",
+      "all_rights_served": "Wszelkie prawa zastrzeżone."
     }
   },
   "products": {
@@ -414,7 +451,29 @@
       "availability": "Dostępność",
       "from_lowest_price_html": "z {{ lowest_price }}",
       "view_in_space": "Zobacz w swojej przestrzeni",
-      "view_in_space_label": "Widok w Twojej przestrzeni, wczytuje przedmiot do okna rzeczywistości rozszerzonej"
+      "view_in_space_label": "Widok w Twojej przestrzeni, wczytuje przedmiot do okna rzeczywistości rozszerzonej",
+      "ingredients": "Składniki",
+      "nutrition_table": "Tabela wartości odżywczych",
+      "nutrition_grams": "100g",
+      "nutrition_portion_html": "{{ weight }}g <br><span>(Opakowanie zawiera 2 porcje.<br> 1 porcja = {{ weight }} g)</span>",
+      "energy": "Wartość energetyczna",
+      "fat": "Tłuszcz",
+      "sat_fat": "- w tym kwasy tłuszczowe nasycone / Saturates",
+      "carbs": "Węglowodany / Carbohydrate",
+      "sugar": "- w tym cukry",
+      "fibre": "Błonnik",
+      "protein": "Białko",
+      "salt": "Sól",
+      "view_product": "Zobacz produkt",
+      "information": "Informacje",
+      "nutrients": "Wartości odżywcze"
+    },
+    "pre_order": {
+      "note": "Wskazówka",
+      "shipping": "Czas dostawy",
+      "pre_order": "Zamówienie w przedsprzedaży",
+      "pre_order_atc": "Zamów w przedsprzedaży",
+      "shipping_info": "Czas dostawy zamówienia w przedsprzedaży: {{ date }}"
     }
   },
   "gift_cards": {

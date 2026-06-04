@@ -1447,9 +1447,17 @@ uc-copyright {
     width: 200px;
     height: auto;
   }
+}
+
+/* Reduzierter Abstand zwischen Header und Content - Desktop */
+@media screen and (min-width: 992px) {
+  .triangular-balance {
+    padding-top: 10px !important;
+  }
+}
 
   /* Reduzierter Abstand zwischen Header und Content */
   .triangular-balance {
-    padding-top: 60px !important;
+    padding-top: 10px !important;
   }
 }
