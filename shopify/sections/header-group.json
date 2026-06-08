@@ -15,7 +15,7 @@
       "type": "announcement-bar",
       "name": "Announcement Bar",
       "settings": {
-        "text": "🌱 Crazy cravings. Clean ingredients. 💗",
+        "text": "🌱 Crazy cravings. Clean ingredients.💗",
         "font_desktop": 16,
         "font_mobile": 14,
         "klaviyo_signup": true,
