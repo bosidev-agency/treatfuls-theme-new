@@ -2,7 +2,7 @@
   @params
   product - product object *required
 {%- endcomment -%}
- <product-form>
+<product-form>
   {%- if product != blank -%}
     {%- assign current_variant = product.selected_or_first_available_variant -%}
 
@@ -101,14 +101,63 @@
     {%- endcapture -%}
 
     {%- capture form_submit -%}
-      {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
-        <span class="product-info__shipping">
-          {{ "products.pre_order.shipping_info" | t: date: product.metafields.custom.preorder_date }}
-        </span>
+      {% if product.metafields.custom.product_content != blank %}
+        {% capture product_content %}
+          [
+            {% for content in product.metafields.custom.product_content.value.content.value %}
+              {
+                "id": "{{ content.product }}",
+                "quantity": {{ content.quantity }}
+              }{% if forloop.last == false %},{% endif %}
+            {% endfor %}
+          ]
+        {% endcapture %}
+      
+        <script type="application/json">
+          {{ product_content }} 
+        </script>
 
-        <input type="hidden" id="PreorderNote" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
-        <input type="hidden" id="PreorderShipping" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
-      {%- endif -%}
+        <input
+          type="hidden"
+          name="properties[_bundleData]"
+          value="{{ product_content | escape }}"
+        >
+
+        {% assign has_preorder = false %}
+        {% assign pre_order_product = nil %}
+        {% assign is_out_of_stock = false %}
+
+        {% for content in product.metafields.custom.product_content.value.content.value %}
+          {% assign content_product = content.product.value %}
+          
+          {% if content_product.product.metafields.custom.preorder_date != blank %}
+            {% assign has_preorder = true %}
+            {% assign pre_order_product = content_product.product.value.product %}
+          {% endif %}
+          {% if content_product.available == false or content_product.quantity < content_product.inventory_quantity %}
+            {% assign is_out_of_stock = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if product.metafields.custom.product_content != blank %}
+        {% if is_out_of_stock == false and has_preorder %}
+          <span class="product-info__shipping">
+            {{ "products.pre_order.shipping_info" | t: date: pre_order_product.metafields.custom.preorder_date }}
+          </span>
+    
+          <input type="hidden" id="PreorderNote" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+          <input type="hidden" id="PreorderShipping" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ pre_order_product.metafields.custom.preorder_date }}" data-product-property>
+        {% endif %}
+      {% else %}
+        {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
+          <span class="product-info__shipping">
+            {{ "products.pre_order.shipping_info" | t: date: product.metafields.custom.preorder_date }}
+          </span>
+    
+          <input type="hidden" id="PreorderNote" name="properties[{{ 'products.pre_order.note' | t }}]" value="{{ 'products.pre_order.pre_order' | t }}" data-product-property>
+          <input type="hidden" id="PreorderShipping" name="properties[{{ 'products.pre_order.shipping' | t }}]" value="{{ product.metafields.custom.preorder_date }}" data-product-property>
+        {%- endif -%}
+      {% endif %}
       <button
         class="button product-form__button"
         type="submit"
@@ -122,15 +171,27 @@
           class="product-form__button-text product-form__button-text--add-to-card"
           data-submit-button-text
         >
-          {%- if current_variant.available == true -%}
-            {% if product.metafields.custom.preorder_date != blank %}
-              {{ "products.pre_order.pre_order_atc" | t }}
-            {% else %}
-              {{ "products.product.add_to_cart" | t }}
-            {% endif %}
-          {%- else -%}
-            {{ "products.product.sold_out" | t }}
-          {%- endif -%}
+          {% if product.metafields.custom.product_content != blank %}
+            {%- if is_out_of_stock == false and current_variant.available -%}
+              {% if has_preorder %}
+                {{ "products.pre_order.pre_order_atc" | t }}
+              {% else %}
+                {{ "products.product.add_to_cart" | t }}
+              {% endif %}
+            {%- else -%}
+              {{ "products.product.sold_out" | t }}
+            {%- endif -%}
+          {% else %}
+            {%- if current_variant.available == true -%}
+              {% if product.metafields.custom.preorder_date != blank %}
+                {{ "products.pre_order.pre_order_atc" | t }}
+              {% else %}
+                {{ "products.product.add_to_cart" | t }}
+              {% endif %}
+            {%- else -%}
+              {{ "products.product.sold_out" | t }}
+            {%- endif -%}
+          {% endif %}
         </span>
       </button>
     {%- endcapture -%}

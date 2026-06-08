@@ -1,4 +1,9 @@
-<atc-button class="product_content-buttons" {% if cart_notification %}data-cart-notification="{{ cart_notification }}"{% endif %}>
+<atc-button
+  class="product_content-buttons"
+  {% if cart_notification %}
+    data-cart-notification="{{ cart_notification }}"
+  {% endif %}
+>
   {%- form 'product',
     product,
     class: '',
@@ -7,26 +12,88 @@
     data-enable-history-state: 'true',
     data-productid: product.id
   -%}
-    {%- if product.metafields.custom.preorder_date != blank -%}
-      <span class="product-info__shipping">
-        {{ 'products.pre_order.shipping_info' | t: date: product.metafields.custom.preorder_date }}
-      </span>
+    {% if product.metafields.custom.product_content != blank %}
+      {% capture product_content %}
+      [
+        {% for content in product.metafields.custom.product_content.value.content.value %}
+          {
+            "id": "{{ content.product }}",
+            "quantity": {{ content.quantity }}
+          }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      ]
+    {% endcapture %}
+
+      <script type="application/json">
+        {{ product_content  }}
+      </script>
 
       <input
         type="hidden"
-        id="PreorderNote"
-        name="properties[{{ 'products.pre_order.note' | t }}]"
-        value="{{ 'products.pre_order.pre_order' | t }}"
-        data-product-property
+        name="properties[_bundleData]"
+        value="{{ product_content | escape }}"
       >
-      <input
-        type="hidden"
-        id="PreorderShipping"
-        name="properties[{{ 'products.pre_order.shipping' | t }}]"
-        value="{{ product.metafields.custom.preorder_date }}"
-        data-product-property
-      >
-    {%- endif -%}
+
+      {% assign has_preorder = false %}
+      {% assign pre_order_product = null %}
+      {% assign is_out_of_stock = false %}
+
+      {% for content in product.metafields.custom.product_content.value.content.value %}
+        {% assign content_product = content.product.value %}
+
+        {% if content_product.product.metafields.custom.preorder_date != blank %}
+          {% assign has_preorder = true %}
+          {% assign pre_order_product = content_product.product.value.product %}
+        {% endif %}
+        {% if content_product.available == false or content_product.quantity < content_product.inventory_quantity %}
+          {% assign is_out_of_stock = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if product.metafields.custom.product_content != blank %}
+      {% if is_out_of_stock == false and has_preorder %}
+        <span class="product-info__shipping">
+          {{ 'products.pre_order.shipping_info' | t: date: pre_order_product.metafields.custom.preorder_date }}
+        </span>
+
+        <input
+          type="hidden"
+          id="PreorderNote"
+          name="properties[{{ 'products.pre_order.note' | t }}]"
+          value="{{ 'products.pre_order.pre_order' | t }}"
+          data-product-property
+        >
+        <input
+          type="hidden"
+          id="PreorderShipping"
+          name="properties[{{ 'products.pre_order.shipping' | t }}]"
+          value="{{ pre_order_product.metafields.custom.preorder_date }}"
+          data-product-property
+        >
+      {% endif %}
+    {% else %}
+      {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
+        <span class="product-info__shipping">
+          {{ 'products.pre_order.shipping_info' | t: date: product.metafields.custom.preorder_date }}
+        </span>
+
+        <input
+          type="hidden"
+          id="PreorderNote"
+          name="properties[{{ 'products.pre_order.note' | t }}]"
+          value="{{ 'products.pre_order.pre_order' | t }}"
+          data-product-property
+        >
+        <input
+          type="hidden"
+          id="PreorderShipping"
+          name="properties[{{ 'products.pre_order.shipping' | t }}]"
+          value="{{ product.metafields.custom.preorder_date }}"
+          data-product-property
+        >
+      {%- endif -%}
+    {% endif %}
 
     <label class="quantity-element__label">
       <input
@@ -59,32 +126,47 @@
       </a>
     {% else %}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-      
-      <button
-        class="button product-form__button"
-        type="submit"
-        name="add"
-        {% unless product.available == true %}
-          disabled
-        {% endunless %}
-        data-submit-button
-      >
-        <span
-          class="product-form__button-text product-form__button-text--add-to-card"
-          data-submit-button-text
+      <div class="product-form__wrapper">
+        <div class="error-message hidden"></div>
+        <button
+          class="button product-form__button"
+          type="submit"
+          name="add"
+          {% unless product.available == true %}
+            disabled
+          {% endunless %}
+          data-submit-button
         >
-          {%- if product.variants.first.available == true -%}
-            <span class="product-form__button-price" style="margin-right:5px;">{{ product.price | money }}</span>
-            {% if product.metafields.custom.preorder_date != blank -%}
-              {{- 'collections.product_card.preorder' | t -}}
-            {%- else -%}
-              {{- 'collections.product_card.add_to_cart' | t -}}
-            {%- endif %}
-          {%- else -%}
-            {{ 'collections.product_card.sold_out' | t }}
-          {%- endif -%}
-        </span>
-      </button>
+          <span
+            class="product-form__button-text product-form__button-text--add-to-card"
+            data-submit-button-text
+          >
+            {% if product.metafields.custom.product_content != blank %}
+              {%- if is_out_of_stock == false and product.variants.first.available -%}
+                <span class="product-form__button-price" style="margin-right:5px;">{{ product.price | money }}</span>
+                {% if has_preorder %}
+                  {{- 'collections.product_card.preorder' | t -}}
+                {% else %}
+                  {{- 'collections.product_card.add_to_cart' | t -}}
+                {% endif %}
+              {%- else -%}
+                {{ 'collections.product_card.sold_out' | t }}
+              {%- endif -%}
+            {% else %}
+              {%- if product.variants.first.available == true -%}
+                <span class="product-form__button-price" style="margin-right:5px;">{{ product.price | money }}</span>
+                {% if product.metafields.custom.preorder_date != blank %}
+                  {{- 'collections.product_card.preorder' | t -}}
+                {% else %}
+                  {{- 'collections.product_card.add_to_cart' | t -}}
+                {% endif %}
+              {%- else -%}
+                {{ 'collections.product_card.sold_out' | t }}
+              {%- endif -%}
+            {% endif %}
+          </span>
+        </button>
+      </div>
     {% endunless %}
   {%- endform -%}
 </atc-button>

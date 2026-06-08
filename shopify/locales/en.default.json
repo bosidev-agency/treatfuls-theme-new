@@ -440,7 +440,8 @@
       "salt": "Salz \/ Salt",
       "view_product": "View product",
       "information": "Information",
-      "nutrients": "Nutrients"
+      "nutrients": "Nutrients",
+      "out_of_stock": "Not enough inventory"
     },
     "pre_order": {
       "note": "Note",

@@ -452,7 +452,8 @@
       "salt": "Salz / Salt",
       "view_product": "Produkt ansehen",
       "information": "Informationen",
-      "nutrients": "Nährwerte"
+      "nutrients": "Nährwerte",
+      "out_of_stock": "Nicht genügend Bestand"
     },
     "pre_order": {
       "note": "Hinweis",

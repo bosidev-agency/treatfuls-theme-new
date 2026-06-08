@@ -152,8 +152,6 @@ class MiniCart extends HTMLElement {
     // Re-attach the close button listener after content update
     this.attachCloseButtonListener();
 
-    console.log(event.detail);
-
     if (event.detail && event.detail.cartNotification) {
       document.documentElement.dispatchEvent(new CustomEvent("show:notification", {
         bubbles: true,

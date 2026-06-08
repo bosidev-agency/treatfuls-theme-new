@@ -2,56 +2,135 @@
   {%- if mobile -%}
     <cart-upsell>
   {%- endif -%}
-    <div class="cart-upsell__wrapper">
-      <div class="cart-upsell__heading">
-        <h3>{{ settings.upsell_heading }}</h3>
-      </div>
-      <div class="cart-upsell__item-wrapper swiper" data-upsell-slider>
-        <div class="swiper-wrapper">
-          {%- for product in collections[settings.upsell_collection].products -%}
-            {% unless product.available %}
-              {% continue %}
-            {% endunless %}
-            
-            {%- assign quantity_content = product.metafields.custom.quantity_content -%}
-            {%- assign weight_content = product.metafields.custom.weight_content -%}
+  <div class="cart-upsell__wrapper">
+    <div class="cart-upsell__heading">
+      <h3>{{ settings.upsell_heading }}</h3>
+    </div>
+    <div class="cart-upsell__item-wrapper swiper" data-upsell-slider>
+      <div class="swiper-wrapper">
+        {%- for product in collections[settings.upsell_collection].products -%}
+          {% unless product.available %}
+            {% continue %}
+          {% endunless %}
 
-            {%- assign is_in_cart = false -%}
+          {%- assign quantity_content = product.metafields.custom.quantity_content -%}
+          {%- assign weight_content = product.metafields.custom.weight_content -%}
 
-            {%- for item in cart.items -%}
-              {%- if item.product_id == product.id -%}
-                {%- assign is_in_cart = true -%}
-              {%- endif -%}
-            {%- endfor -%}
+          {%- assign is_in_cart = false -%}
 
-            {%- unless is_in_cart -%}
-              <div class="cart-upsell__item {% if mobile %}swiper-slide{% endif %}">
-                <div class="cart-upsell__item-top-part">
-                  <div class="cart-upsell__item-image-wrapper cart-product__image-wrap">
-                    <a href="{{ product.url }}">
-                      <picture>
-                        <source srcset="{{ product.featured_image | img_url: '1208x' }} 1x, {{ product.featured_image | img_url: '2416x' }} 2x"
-                                media="(min-width: 2560px)">
+          {%- for item in cart.items -%}
+            {%- if item.product_id == product.id -%}
+              {%- assign is_in_cart = true -%}
+            {%- endif -%}
+          {%- endfor -%}
 
-                        <source srcset="{{ product.featured_image | img_url: '1008x' }} 1x, {{ product.featured_image | img_url: '2016x' }} 2x"
-                                media="(min-width: 1920px)">
+          {%- unless is_in_cart -%}
+            <div class="cart-upsell__item {% if mobile %}swiper-slide{% endif %}">
+              <div class="cart-upsell__item-top-part">
+                <div class="cart-upsell__item-image-wrapper cart-product__image-wrap">
+                  <a href="{{ product.url }}">
+                    <picture>
+                      <source
+                        srcset="{{ product.featured_image | img_url: '1208x' }} 1x, {{ product.featured_image | img_url: '2416x' }} 2x"
+                        media="(min-width: 2560px)"
+                      >
 
-                        <source srcset="{{ product.featured_image | img_url: '672x' }} 1x, {{ product.featured_image | img_url: '1344x' }} 2x"
-                                media="(min-width: 991px)">
+                      <source
+                        srcset="{{ product.featured_image | img_url: '1008x' }} 1x, {{ product.featured_image | img_url: '2016x' }} 2x"
+                        media="(min-width: 1920px)"
+                      >
 
-                        <source srcset="{{ product.featured_image | img_url: '704x' }} 1x, {{ product.featured_image | img_url: '1408x' }} 2x"
-                                media="(min-width: 768px)">
-                        <img src="{{ product.featured_image | img_url: 'master' }}"
-                            srcset="{{ product.featured_image | img_url: '357x' }} 1x, {{ product.featured_image | img_url: '714x' }} 2x"
-                            alt="{{- title | default: 'general.404.title' | t -}}"
-                        />
-                      </picture>
-                    </a>
-                    {% form 'product', product %}
-                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                      <input type="hidden" name="quantity" value="1">
+                      <source
+                        srcset="{{ product.featured_image | img_url: '672x' }} 1x, {{ product.featured_image | img_url: '1344x' }} 2x"
+                        media="(min-width: 991px)"
+                      >
 
-                      {%- if product.metafields.custom.preorder_date != blank -%}       
+                      <source
+                        srcset="{{ product.featured_image | img_url: '704x' }} 1x, {{ product.featured_image | img_url: '1408x' }} 2x"
+                        media="(min-width: 768px)"
+                      >
+                      <img
+                        src="{{ product.featured_image | img_url: 'master' }}"
+                        srcset="{{ product.featured_image | img_url: '357x' }} 1x, {{ product.featured_image | img_url: '714x' }} 2x"
+                        alt="{{- title | default: 'general.404.title' | t -}}"
+                      >
+                    </picture>
+                  </a>
+                  {% form 'product', product %}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="quantity" value="1">
+
+                    {% if product.metafields.custom.product_content != blank %}
+                      {%- capture product_content -%}
+                          [
+                            {%- for content in product.metafields.custom.product_content.value.content.value -%}
+                              {
+                                "id": "{{ content.product }}",
+                                "quantity": {{ content.quantity }}
+                              }{%- if forloop.last == false -%},{%- endif -%}
+                            {%- endfor -%}
+                          ]
+                        {%- endcapture -%}
+
+                      <script type="application/json">
+                        {{ product_content }}
+                      </script>
+
+                      <input
+                        type="hidden"
+                        name="properties[_bundleData]"
+                        value="{{ product_content | strip_newlines | escape }}"
+                      >
+
+                      {% assign has_preorder = false %}
+                      {% assign pre_order_product = null %}
+                      {% assign is_out_of_stock = false %}
+
+                      {% for content in product.metafields.custom.product_content.value.content.value %}
+                        {% assign content_product = content.product.value %}
+
+                        {% if content_product.product.metafields.custom.preorder_date != blank %}
+                          {% assign has_preorder = true %}
+                          {% assign pre_order_product = content_product.product.value.product %}
+                        {% endif %}
+                        {% if content_product.available == false
+                          or content_product.quantity < content_product.inventory_quantity
+                        %}
+                          {% assign is_out_of_stock = true %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}
+
+                    {% if product.metafields.custom.product_content != blank %}
+                      {% if is_out_of_stock == false and has_preorder %}
+                        <span class="product-info__shipping">
+                          {{
+                            'products.pre_order.shipping_info'
+                            | t: date: pre_order_product.metafields.custom.preorder_date
+                          }}
+                        </span>
+
+                        <input
+                          type="hidden"
+                          id="PreorderNote"
+                          name="properties[{{ 'products.pre_order.note' | t }}]"
+                          value="{{ 'products.pre_order.pre_order' | t }}"
+                          data-product-property
+                        >
+                        <input
+                          type="hidden"
+                          id="PreorderShipping"
+                          name="properties[{{ 'products.pre_order.shipping' | t }}]"
+                          value="{{ pre_order_product.metafields.custom.preorder_date }}"
+                          data-product-property
+                        >
+                      {% endif %}
+                    {% else %}
+                      {%- if current_variant.available == true and product.metafields.custom.preorder_date != blank -%}
+                        <span class="product-info__shipping">
+                          {{ 'products.pre_order.shipping_info' | t: date: product.metafields.custom.preorder_date }}
+                        </span>
+
                         <input
                           type="hidden"
                           id="PreorderNote"
@@ -67,39 +146,38 @@
                           data-product-property
                         >
                       {%- endif -%}
+                    {% endif %}
 
-                      <button type="submit" class="cart-upsell__button button">
-                        +
-                      </button>
-                    {% endform %}
-                  </div>
-                  
-                  <div class="cart-upsell__content-wrapper">
-                    <span class="cart-upsell__item-title">
-                      {%- if product.metafields.custom.short_title != blank -%}
-                        {{ product.metafields.custom.short_title }}
-                      {%- else -%}
-                        {{ product.title }}
+                    <button type="submit" class="cart-upsell__button button">+</button>
+                  {% endform %}
+                </div>
+
+                <div class="cart-upsell__content-wrapper">
+                  <span class="cart-upsell__item-title">
+                    {%- if product.metafields.custom.short_title != blank -%}
+                      {{ product.metafields.custom.short_title }}
+                    {%- else -%}
+                      {{ product.title }}
+                    {%- endif -%}
+                  </span>
+                  <div class="cart-upsell__content">
+                    <span class="cart-upsell__product-contents">
+                      {%- if quantity_content != blank and weight_content != blank -%}
+                        {{ quantity_content }} x {{ weight_content.value | split: ' ' }}
                       {%- endif -%}
                     </span>
-                    <div class="cart-upsell__content">
-                      <span class="cart-upsell__product-contents">
-                        {%- if quantity_content != blank and weight_content != blank -%}
-                          {{ quantity_content }} x {{ weight_content.value | split: ' ' }}
-                        {%- endif -%}
-                      </span>
-                      <span class="cart-upsell__product-price">
-                        {{ product.price | money }}
-                      </span>
-                    </div>
+                    <span class="cart-upsell__product-price">
+                      {{ product.price | money }}
+                    </span>
                   </div>
                 </div>
               </div>
-            {%- endunless -%}
-          {%- endfor -%}
-        </div>
+            </div>
+          {%- endunless -%}
+        {%- endfor -%}
       </div>
     </div>
+  </div>
   {%- if mobile -%}
     </cart-upsell>
   {%- endif -%}

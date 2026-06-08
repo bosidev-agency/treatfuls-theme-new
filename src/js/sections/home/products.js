@@ -70,8 +70,6 @@ register("home-products", {
             return;
           }
 
-          console.log('change')
-
 					setTimeout(() => {
 						const currentSlide =
 							container.querySelector(`.swiper-slide-active`);

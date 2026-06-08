@@ -1,0 +1,27 @@
+<script type="application/json">
+  {
+    "cart": {
+      "items": [
+        {% for item in cart.items %}
+          {
+            "id": {{ item.id }},
+            "quantity": {{ item.quantity }},
+            "inventory_quantity": {{ item.variant.inventory_quantity }}
+            {% if item.item_components.size > 0 %}
+              ,
+              "components": [
+                {% for component in item.item_components %}
+                  {
+                    "id": {{ component.id }},
+                    "quantity": {{ component.quantity }},
+                    "inventory_quantity": {{ component.variant.inventory_quantity }}
+                  }{% if forloop.last == false %},{% endif %}
+                {% endfor %}
+              ]
+            {% endif %}
+          }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+      ]
+    }
+  }
+</script>

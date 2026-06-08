@@ -3,7 +3,7 @@
 {%- assign unit_name_new = item.product.metafields.custom.unit_name_new -%}
 {% assign bundle_price = 0 %}
 
-<cart-item class="cart-product {% if is_mini_cart %}cart-product--mini{% endif %}">
+<cart-item class="cart-product {% if is_mini_cart %}cart-product--mini{% endif %}" data-line="{{ item.index }}">
   <a
     {% unless item.final_line_price == 0 or item.properties._isBundleParent %}
       href="{{ item.url }}"
@@ -177,5 +177,7 @@
         {% endif %}
       </button>
     </div>
+
+    <div class="error-message hidden"></div>
   </div>
 </cart-item>
