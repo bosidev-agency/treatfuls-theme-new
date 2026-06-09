@@ -9,32 +9,19 @@
  */
 {
   "sections": {
-    "main_page_LF6G7A": {
-      "type": "main-page",
-      "settings": {
-        "title": "Wiederrufsantrag einreichen",
-        "subtitle": "<p>Fülle das folgende Formular aus, um deinen Wiederrufsantrag einzureichen</p><p><strong><br/><br/><br/></strong></p>",
-        "subtitle_font_size": 17,
-        "background_color": "#859972",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
     "178091261034816982": {
       "type": "apps",
       "blocks": {
         "eu_widerruf_button_form_inline_eaijtw": {
           "type": "shopify://apps/eu-widerruf-button/blocks/form-inline/019b2ca9-9838-7858-9694-3a8051afa76e",
           "settings": {
-            "show_heading": false,
-            "heading": "",
-            "description": "",
+            "show_heading": true,
+            "heading": "-",
+            "description": "-",
             "iframe_height": 500,
-            "primary_color": "#c081a9",
-            "background_color": "#ffffff",
-            "text_color": "#27272a",
+            "primary_color": "#859972",
+            "background_color": "#ceb0d1",
+            "text_color": "#ffffff",
             "border_radius": "8px",
             "max_width": "700px",
             "show_order_lookup": true,
@@ -47,14 +34,13 @@
         "eu_widerruf_button_form_inline_eaijtw"
       ],
       "settings": {
-        "background_color": "#c081a9",
+        "background_color": "#859972",
         "accent_color": "#859972",
         "hover_color": "#f3587f"
       }
     }
   },
   "order": [
-    "main_page_LF6G7A",
     "178091261034816982"
   ]
 }

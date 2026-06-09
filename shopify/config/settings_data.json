@@ -165,6 +165,23 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "13762318497758424536": {
+        "type": "shopify://apps/eu-widerruf-button/blocks/button_css_embed/019b2ca9-9838-7858-9694-3a8051afa76e",
+        "disabled": false,
+        "settings": {
+          "target_url": "/pages/widerruf-formular",
+          "button_style": "filled",
+          "bg_color": "rgba(0,0,0,0)",
+          "text_color": "#1a96a2",
+          "border_color": "#ffffff",
+          "padding_vertical": 0,
+          "padding_horizontal": 0,
+          "font_size": 24,
+          "font_weight": "400",
+          "border_radius": 35,
+          "hover_effect": "none"
+        }
       }
     }
   }

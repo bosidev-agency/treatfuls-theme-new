@@ -1,0 +1,1149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "hero_eNmaQw": {
+      "type": "hero",
+      "disabled": true,
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image_height": "adapt",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": true,
+        "vertical_alignment_desktop": "middle",
+        "horizontal_alignment_desktop": "center",
+        "vertical_alignment_mobile": "middle",
+        "horizontal_alignment_mobile": "center",
+        "max_width": "100%",
+        "max_width_px": 1200,
+        "title": "Hero banner",
+        "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+        "background_color": "rgba(0,0,0,0)",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": false
+      }
+    },
+    "featured_product_gT9P9a": {
+      "type": "featured-product",
+      "blocks": {
+        "description_wtiwJY": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_RN8ip3": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_BnPjqa": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_pFFVP4": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_wtiwJY",
+        "countdown_RN8ip3",
+        "price_BnPjqa",
+        "buy_button_pFFVP4"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "2-schultute-treatfuls-2026-bio-vegan",
+        "heading": "",
+        "mobile_heading": "",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#ceb0d1",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1"
+      }
+    },
+    "featured_product_GbQVWw": {
+      "type": "featured-product",
+      "blocks": {
+        "description_TrMApc": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_yp9z36": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_zwAehL": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_W846tk": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_TrMApc",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "schultute-2026-bio-vegan-kopie",
+        "heading": "",
+        "mobile_heading": "",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#859972",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1"
+      }
+    },
+    "comparison_table_dT7KWy": {
+      "type": "comparison-table",
+      "blocks": {
+        "table_EbWcfp": {
+          "type": "table",
+          "name": "Table",
+          "settings": {},
+          "blocks": {
+            "table_row_3VeDUX": {
+              "type": "table-row",
+              "name": "Table Row",
+              "settings": {},
+              "blocks": {
+                "table_cell_EdLPEn": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_bq8KLa": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "image": "shopify://shop_images/Yogurette_2.webp",
+                    "text": "Herkömmliche Süßigkeiten",
+                    "liquid": "pro 100 g"
+                  },
+                  "blocks": {}
+                },
+                "table_cell_dPaGtF": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "image": "shopify://shop_images/Bildschirmfoto_2025-08-26_um_15.22.54.png",
+                    "text": "Gummibärchen",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_CDQdBf": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "image": "{{ closest.product.metafields.custom.alternate_product_card_image.value }}",
+                    "text": "{{ closest.product.metafields.custom.short_title.value }}",
+                    "liquid": "pro 100 g"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_EdLPEn",
+                "table_cell_bq8KLa",
+                "table_cell_dPaGtF",
+                "table_cell_CDQdBf"
+              ]
+            },
+            "table_row_FdtTwp": {
+              "type": "table-row",
+              "name": "Vegan",
+              "settings": {},
+              "blocks": {
+                "table_cell_aTMDDn": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Bio",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_qWj77V": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_BVHMme": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_JxzWU7": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_aTMDDn",
+                "table_cell_qWj77V",
+                "table_cell_BVHMme",
+                "table_cell_JxzWU7"
+              ]
+            },
+            "table_row_qRweF6": {
+              "type": "table-row",
+              "name": "Bio",
+              "settings": {},
+              "blocks": {
+                "table_cell_AAjPcr": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Vegan",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_hxF3jG": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_nTLj3N": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_dpiL8N": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_AAjPcr",
+                "table_cell_hxF3jG",
+                "table_cell_nTLj3N",
+                "table_cell_dpiL8N"
+              ]
+            },
+            "table_row_rjxCg9": {
+              "type": "table-row",
+              "name": "Produkttyp",
+              "settings": {},
+              "blocks": {
+                "table_cell_TzTnmn": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Kalorien",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_yDAyMi": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Riegel",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_cVqDAD": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "2.382 kJ / 571 kcal",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_d699NA": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "1884 kJ / 450 kcal",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_TzTnmn",
+                "table_cell_yDAyMi",
+                "table_cell_cVqDAD",
+                "table_cell_d699NA"
+              ]
+            },
+            "table_row_egiqnF": {
+              "type": "table-row",
+              "name": "Ohne Gluten",
+              "settings": {},
+              "blocks": {
+                "table_cell_GHLpmM": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Ballaststoffe",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_WK3B9x": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "0 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_gayeYF": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_TUFaPV": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "11,7 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_GHLpmM",
+                "table_cell_WK3B9x",
+                "table_cell_gayeYF",
+                "table_cell_TUFaPV"
+              ]
+            },
+            "table_row_ndaVMJ": {
+              "type": "table-row",
+              "name": "Ohne Zusatzstoffe",
+              "settings": {},
+              "blocks": {
+                "table_cell_8GHQzx": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Kohlenhydrate",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_KEkDjp": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "56,8 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_6RnUHj": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_BXDkdE": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "47,8 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_8GHQzx",
+                "table_cell_KEkDjp",
+                "table_cell_6RnUHj",
+                "table_cell_BXDkdE"
+              ]
+            },
+            "table_row_JkGcKx": {
+              "type": "table-row",
+              "name": "Nachhaltig",
+              "settings": {},
+              "blocks": {
+                "table_cell_P9TewY": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "davon Zucker",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_LCrXgC": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "55,4 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_mY7zCQ": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_wABQzt": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "22,1 g",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_P9TewY",
+                "table_cell_LCrXgC",
+                "table_cell_mY7zCQ",
+                "table_cell_wABQzt"
+              ]
+            },
+            "table_row_q9hQGQ": {
+              "type": "table-row",
+              "name": "Ohne Raffinierten Zucker",
+              "settings": {},
+              "blocks": {
+                "table_cell_yKteyA": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Ohne Raffinierten Zucker ?",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_DweEEz": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_Rh6dGT": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "disabled": true,
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "❌",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_PV6BxK": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_yKteyA",
+                "table_cell_DweEEz",
+                "table_cell_Rh6dGT",
+                "table_cell_PV6BxK"
+              ]
+            },
+            "table_row_J8iF9r": {
+              "type": "table-row",
+              "name": "Footer",
+              "disabled": true,
+              "settings": {},
+              "blocks": {
+                "table_cell_wCg8FN": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_6magYA": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_XFtVXG": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_VxNXVe": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "#6ad4d1",
+                    "sticky": true,
+                    "text": "",
+                    "liquid": "<atc-button>\n              {% form 'product', closest.product, class: 'product-form' %}\n                <input type=\"hidden\" name=\"id\" value=\"{{ closest.product.selected_or_first_available_variant.id }}\">\n                <input type=\"hidden\" name=\"quantity\" value=\"1\">\n                <button\n          class=\"button product-form__button\"\n          type=\"submit\"\n          name=\"add\"\n          data-submit-button\n        >\n          <span\n            class=\"product-form__button-text product-form__button-text--add-to-card\"\n            data-submit-button-text\n          >\n            {%- if closest.product.variants.first.available == true -%}\n              <span class=\"product-form__button-price\" style=\"margin-right:5px;\">{{ closest.product.price | money}}</span> {% if closest.product.metafields.custom.preorder_date != blank %}{{ \"collections.product_card.preorder\" | t }}{% else %}{{ \"collections.product_card.add_to_cart\" | t }}{% endif %}\n            {%- else -%}\n              {{ \"collections.product_card.sold_out\" | t }}\n            {%- endif -%}\n          </span>\n        </button>\n              {% endform %}\n            </atc-button>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_wCg8FN",
+                "table_cell_6magYA",
+                "table_cell_XFtVXG",
+                "table_cell_VxNXVe"
+              ]
+            }
+          },
+          "block_order": [
+            "table_row_3VeDUX",
+            "table_row_FdtTwp",
+            "table_row_qRweF6",
+            "table_row_rjxCg9",
+            "table_row_egiqnF",
+            "table_row_ndaVMJ",
+            "table_row_JkGcKx",
+            "table_row_q9hQGQ",
+            "table_row_J8iF9r"
+          ]
+        }
+      },
+      "block_order": [
+        "table_EbWcfp"
+      ],
+      "name": "Comparison Table",
+      "settings": {
+        "product": "himbeer-riegel",
+        "title": "über 50% weniger Zucker 👇🏼",
+        "footer_note": "",
+        "background_color": "#c081a9",
+        "accent_color": "#f3587f",
+        "hover_color": "#dbaaeb",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals-01.webp",
+            "image_position": "left",
+            "title": "Snacks, wie sie sein sollten.",
+            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
+            "button_text": "Try them all",
+            "button_url": "shopify://collections/produkte"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
+            "image_position": "left",
+            "title": "Kids & family friendly",
+            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
+            "button_text": "Show me the filling",
+            "button_url": "shopify://products/summer-crush-kopie"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
+            "image_position": "left",
+            "title": "Meet the Snack Squad",
+            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "main_product_ingredients_6KHBRk": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "summer-crush-kopie",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd"
+      }
+    },
+    "custom_section_9AEAFL": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_kWUKzf": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Dc9Gp7": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_X7fgak": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_b3rKQL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_Wdtkzx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_Wdtkzx"
+                  ]
+                },
+                "slide_UXkYT6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_BVnnPr": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_BVnnPr"
+                  ]
+                },
+                "slide_jjKDwy": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_CnqMpU": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_CnqMpU"
+                  ]
+                },
+                "slide_pg6biV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_wmWiAV": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_wmWiAV"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_b3rKQL",
+                "slide_UXkYT6",
+                "slide_jjKDwy",
+                "slide_pg6biV"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_X7fgak"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_kWUKzf",
+        "group_Dc9Gp7"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_WMqFa9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_Yx8hhM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
+            "text": "dm"
+          }
+        },
+        "advantage_item_jbiWDf": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_L9iH7J": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-05.webp",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_zKbph3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-02.webp",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_6UNBwa": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-04.webp",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_mKgYE9": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-03.webp",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_pwNhCi": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-06.webp",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_6qjfnR": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_Yx8hhM",
+        "advantage_item_jbiWDf",
+        "advantage_item_L9iH7J",
+        "advantage_item_zKbph3",
+        "advantage_item_6UNBwa",
+        "advantage_item_mKgYE9",
+        "advantage_item_pwNhCi",
+        "advantage_item_6qjfnR"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "background_color": "#ceb0d1",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "compare_product_reviews_4JnjWz": {
+      "type": "compare-product-reviews",
+      "name": "Product reviews",
+      "settings": {
+        "title": "",
+        "underline_word": "",
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click Here"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_eNmaQw",
+    "featured_product_gT9P9a",
+    "featured_product_GbQVWw",
+    "comparison_table_dT7KWy",
+    "image_with_text_NHKmKF",
+    "main_product_ingredients_6KHBRk",
+    "custom_section_9AEAFL",
+    "advantages_WMqFa9",
+    "advantages_BcfMf9",
+    "compare_product_reviews_4JnjWz"
+  ]
+}
