@@ -736,8 +736,8 @@
       "name": "Image with text",
       "settings": {
         "background_color": "#859972",
-        "accent_color": "#859972",
-        "hover_color": "#eba3c9",
+        "accent_color": "#DBAAEB",
+        "hover_color": "#24A5A1",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -803,7 +803,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have",
+                        "card_product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",

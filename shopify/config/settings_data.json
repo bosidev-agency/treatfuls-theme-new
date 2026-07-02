@@ -21,9 +21,11 @@
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 75,
-    "start_date": "",
-    "end_date": "",
-    "goodies": [],
+    "start_date": "30.06.2026 09:00",
+    "end_date": "13.07.2026 23:59",
+    "goodies": [
+      "in-my-salty-era"
+    ],
     "checkout_logo_image": "shopify://shop_images/logo-checkout.png",
     "checkout_logo_position": "center",
     "checkout_accent_color": "#2ac2bd",
@@ -66,7 +68,7 @@
         ],
         "settings": {
           "copyright_text": "<a href=\"https://appsoluts.de\" style=\"color: #ffffff\">_app:soluts/*</a> is presenting this 😋 snackable website 🌐<br><br>\n© 2026, snacks with benefits GmbH. Alle Rechte vorbehalten.",
-          "klaviyo_id": "SfJmkt"
+          "klaviyo_id": "WBgurh"
         }
       },
       "main-cart-mini": {
@@ -125,7 +127,7 @@
           "klaviyo_popup_9MMAiH": {
             "type": "klaviyo_popup",
             "settings": {
-              "klaviyo_form": "SfJmkt"
+              "klaviyo_form": "TfqHKY"
             }
           },
           "klaviyo_popup_T7UJC9": {

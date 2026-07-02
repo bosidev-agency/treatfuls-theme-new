@@ -82,15 +82,15 @@
       "name": "Featured product",
       "settings": {
         "product": "2-schultute-treatfuls-2026-bio-vegan",
-        "heading": "",
-        "mobile_heading": "",
+        "heading": "Schultüte für kleine Abenteurer",
+        "mobile_heading": "Schultüte für kleine Abenteurer",
         "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#ceb0d1",
-        "accent_color": "#dbaaeb",
-        "hover_color": "#24a5a1"
+        "background_color": "#04a198",
+        "accent_color": "#e8a2c8",
+        "hover_color": "#c081a9"
       }
     },
     "featured_product_GbQVWw": {
@@ -130,15 +130,68 @@
       "name": "Featured product",
       "settings": {
         "product": "schultute-2026-bio-vegan-kopie",
-        "heading": "",
-        "mobile_heading": "",
+        "heading": "Schultüte für kleine Schulhelden",
+        "mobile_heading": "Schultüte für kleine Schulhelden",
         "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#859972",
-        "accent_color": "#dbaaeb",
+        "background_color": "#a3c089",
+        "accent_color": "#f3587f",
         "hover_color": "#24a5a1"
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Mit_ForestGum.webp",
+            "image_position": "left",
+            "title": "🎁 Extra Goodie zum Schulstart",
+            "content": "<p>Die ersten Schultüten bekommen eine Forest Gum Gummibärchen Packung gratis dazu.Nur solange der Vorrat reicht. <br/><br/>Also lieber nicht zu lange warten. 👀</p>",
+            "button_text": "",
+            "button_url": "shopify://collections/produkte"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
+            "image_position": "left",
+            "title": "Kids & family friendly",
+            "content": "",
+            "button_text": "Show me the filling",
+            "button_url": "shopify://products/summer-crush-kopie"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
+            "image_position": "left",
+            "title": "Meet the Snack Squad",
+            "content": "",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
       }
     },
     "comparison_table_dT7KWy": {
@@ -739,64 +792,13 @@
         "padding_bottom": 40
       }
     },
-    "image_with_text_NHKmKF": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_EUwxUY": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/LP_Visuals-01.webp",
-            "image_position": "left",
-            "title": "Snacks, wie sie sein sollten.",
-            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
-            "button_text": "Try them all",
-            "button_url": "shopify://collections/produkte"
-          }
-        },
-        "image_with_text_XgJXRN": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
-            "image_position": "left",
-            "title": "Kids & family friendly",
-            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
-            "button_text": "Show me the filling",
-            "button_url": "shopify://products/summer-crush-kopie"
-          }
-        },
-        "image_with_text_BjFpid": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
-            "image_position": "left",
-            "title": "Meet the Snack Squad",
-            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "#859972",
-        "hover_color": "#eba3c9",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
     "main_product_ingredients_6KHBRk": {
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
         "product": "summer-crush-kopie",
         "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#c081a9",
+        "background_color": "#04a198",
         "accent_color": "#2ac2bd"
       }
     },
@@ -1138,8 +1140,8 @@
     "hero_eNmaQw",
     "featured_product_gT9P9a",
     "featured_product_GbQVWw",
-    "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
+    "comparison_table_dT7KWy",
     "main_product_ingredients_6KHBRk",
     "custom_section_9AEAFL",
     "advantages_WMqFa9",

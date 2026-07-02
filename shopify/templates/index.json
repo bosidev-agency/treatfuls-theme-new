@@ -12,14 +12,30 @@
     "hero_GRwq8M": {
       "type": "hero",
       "blocks": {
+        "invisible_link_p9xHqa": {
+          "type": "_invisible-link",
+          "name": "Invisible link",
+          "disabled": true,
+          "settings": {
+            "test_color": "#ff0000",
+            "invisible_link": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=VMszKS",
+            "invisible_link_dimensions_desktop": 10,
+            "invisible_link_dimensions_mobile": 30,
+            "invisible_link_vertical_position_desktop": 61,
+            "invisible_link_horizontal_position_desktop": 20,
+            "invisible_link_vertical_position_mobile": 18,
+            "invisible_link_horizontal_position_mobile": 37
+          },
+          "blocks": {}
+        },
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉 Jetzt bestellen",
-            "url": "shopify://products/matcha-vorratsbox-bio-vegan-glutenfrei",
-            "signup_button": false,
-            "klaviyo_form": "X578qa"
+            "text": "👉 Jetzt anmelden",
+            "url": "",
+            "signup_button": true,
+            "klaviyo_form": "TfqHKY"
           },
           "blocks": {}
         },
@@ -37,26 +53,27 @@
         }
       },
       "block_order": [
+        "invisible_link_p9xHqa",
         "button_M3XbEb",
         "button_gWRaVG"
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Heroelement_Matcha_01_Kopie_b6bd2712-78a6-40ca-8111-71845246bdc2.webp",
+        "desktop_image": "shopify://shop_images/Hero_SummerSale_Desktop_V1.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Heroelement_Matcha-02_Kopie.webp",
+        "mobile_image": "shopify://shop_images/Hero_SummerSale_Mobil_V1_2_1.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
-        "vertical_alignment_desktop": "middle",
+        "vertical_alignment_desktop": "bottom",
         "horizontal_alignment_desktop": "left",
         "vertical_alignment_mobile": "top",
         "horizontal_alignment_mobile": "center",
-        "max_width": "100%",
+        "max_width": "fixed",
         "max_width_px": 700,
-        "title": "Matcha cravings?",
-        "text": "<h2>We got the Spread.</h2>",
+        "title": "",
+        "text": "",
         "background_color": "#859972",
-        "accent_color": "#ceb0d1",
+        "accent_color": "#c081a9",
         "hover_color": "#8a7194",
         "show_base_triangular_line": false
       }
@@ -307,6 +324,7 @@
       "blocks": {
         "advantage_item_eiRqga": {
           "type": "advantage_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
             "text": "dm"
