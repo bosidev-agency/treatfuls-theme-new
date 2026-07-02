@@ -42,7 +42,9 @@
         {%- endif -%}
       </div>
       <div class="rte">
-        {{ page.content }}
+        {% if page.content != blank %}
+          {{ page.content }}
+        {% endif %}
       </div>
     </div>
   </div>
