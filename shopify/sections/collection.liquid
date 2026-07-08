@@ -32,19 +32,7 @@
     {% endif %}
   }
   
-  /* Abstand zwischen Zacken-Divider und "Sortieren nach" - NUR Desktop */
-  @media screen and (min-width: 992px) {
-    #shopify-section-{{ section.id }} .products_listing.collection-template {
-      padding-top: 80px !important;
-    }
-  }
-  
-  /* Abstand zwischen Zacken-Divider und "Sortieren nach" - NUR Mobile */
-  @media screen and (max-width: 991px) {
-    #shopify-section-{{ section.id }} .products_listing.collection-template {
-      padding-top: 40px !important;
-    }
-  }
+
 </style>
 {% if template.name == 'collection' and template.suffix == 'alle-produkte' %}
 <style>
