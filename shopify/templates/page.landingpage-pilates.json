@@ -76,15 +76,6 @@
     },
     "1776238794b65229a3": {
       "type": "apps",
-      "blocks": {
-        "s_store_locator_storeify_storelocator_dGNGQJ": {
-          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "s_store_locator_storeify_storelocator_dGNGQJ"
-      ],
       "settings": {
         "background_color": "#859972",
         "accent_color": "#2ac2bd",
