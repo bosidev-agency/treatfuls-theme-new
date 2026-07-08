@@ -24,7 +24,7 @@
 	text-align: center;
 
 	@media #{$no-m-xl} {
-		padding-bottom: 1vh;
+		padding-bottom: 40px;
 	}
 
 	@media #{$no-l} {
@@ -33,7 +33,7 @@
 
 	@media #{$no-fw} {
 		max-width: 39.65vw;
-		padding-bottom: 0;
+		padding-bottom: 40px;
 	}
 
 	@media #{$m-xl} {
@@ -65,12 +65,12 @@
 	transition: opacity 0.25s ease-in-out;
 
 	@media #{$no-l} {
-		margin-top: 1vh;
+		margin-top: 40px;
 	}
 
 	@media #{$no-fw} {
 		max-width: 20vw;
-		margin-top: 4vw;
+		margin-top: 40px;
 	}
 
 	@media #{$m-xxl} {
