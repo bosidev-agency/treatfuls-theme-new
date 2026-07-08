@@ -30,10 +30,10 @@
         "desktop_image_height": "adapt",
         "mobile_image_height": "adapt",
         "hide_on_mobile": true,
-        "vertical_alignment_desktop": "middle",
-        "horizontal_alignment_desktop": "center",
-        "vertical_alignment_mobile": "middle",
-        "horizontal_alignment_mobile": "center",
+        "content_vertical_position_desktop": 50,
+        "content_horizontal_position_desktop": 50,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
         "max_width": "100%",
         "max_width_px": 1200,
         "title": "Hero banner",
@@ -94,15 +94,6 @@
     },
     "1768310214d3f63ba2": {
       "type": "apps",
-      "blocks": {
-        "s_store_locator_storeify_storelocator_tcV3kU": {
-          "type": "shopify://apps/s-store-locator/blocks/storeify-storelocator/e7003487-cc51-4321-9488-2c47c07a5b17",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "s_store_locator_storeify_storelocator_tcV3kU"
-      ],
       "settings": {
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",

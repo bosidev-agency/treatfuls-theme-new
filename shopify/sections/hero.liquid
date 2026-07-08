@@ -21,11 +21,20 @@
 
   #shopify-section-{{ section.id }} .hero__content-text {
     color: rgb(var(--color-text));
+    top: {{ section.settings.content_vertical_position_desktop }}%;
+    left: {{ section.settings.content_horizontal_position_desktop }}%;
+    transform: translate(-{{ section.settings.content_horizontal_position_desktop }}%, -{{ section.settings.content_vertical_position_desktop }}%);
     {% if section.settings.max_width == 'fixed' %}
       max-width: {{ section.settings.max_width_px }}px;
     {% else %}
       max-width: 100%;
     {% endif %}
+
+    @media (max-width: 768px) {
+      top: {{ section.settings.content_vertical_position_mobile }}%;
+      left: {{ section.settings.content_horizontal_position_mobile }}%;
+      transform: translate(-{{ section.settings.content_horizontal_position_mobile }}%, -{{ section.settings.content_vertical_position_mobile }}%);
+    }
   }
 
   #shopify-section-{{ section.id }} .hero__content-image {
@@ -88,7 +97,7 @@
 
       {{ blocks }}
     </div>
-    <div class="hero__content-text hero__content-text--{{ section.settings.horizontal_alignment_desktop }} hero__content-text--{{ section.settings.vertical_alignment_desktop }} hero__content-text-mobile--{{ section.settings.horizontal_alignment_mobile }} hero__content-text-mobile--{{ section.settings.vertical_alignment_mobile }}">
+    <div class="hero__content-text hero__content-text--align-{{ section.settings.content_text_alignment_desktop }} hero__content-text--align-m-{{ section.settings.content_text_alignment_mobile }}">
       {% if section.settings.title != blank %}
         <h2 class="hero__title title-bg">{{ section.settings.title }}</h2>
       {% endif %}
@@ -216,29 +225,49 @@
       "content": "Text settings"
     },
     {
-      "type": "select",
-      "id": "vertical_alignment_desktop",
-      "label": "Alignment desktop",
-      "default": "middle",
-      "options": [
-        {
-          "value": "top",
-          "label": "Top"
-        },
-        {
-          "value": "middle",
-          "label": "Middle"
-        },
-        {
-          "value": "bottom",
-          "label": "Bottom"
-        }
-      ]
+      "type": "range",
+      "id": "content_vertical_position_desktop",
+      "label": "Content vertical position desktop",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "content_horizontal_position_desktop",
+      "label": "Content horizontal position desktop",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "content_vertical_position_mobile",
+      "label": "Content vertical position mobile",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1
+    },
+    {
+      "type": "range",
+      "id": "content_horizontal_position_mobile",
+      "label": "Content horizontal position mobile",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "unit": "%",
+      "step": 1
     },
     {
       "type": "select",
-      "id": "horizontal_alignment_desktop",
-      "label": "Horizontal alignment desktop",
+      "id": "content_text_alignment_desktop",
+      "label": "Text alignment desktop",
       "default": "center",
       "options": [
         {
@@ -257,28 +286,8 @@
     },
     {
       "type": "select",
-      "id": "vertical_alignment_mobile",
-      "label": "Alignment mobile",
-      "default": "middle",
-      "options": [
-        {
-          "value": "top",
-          "label": "Top"
-        },
-        {
-          "value": "middle",
-          "label": "Middle"
-        },
-        {
-          "value": "bottom",
-          "label": "Bottom"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "horizontal_alignment_mobile",
-      "label": "Horizontal alignment mobile",
+      "id": "content_text_alignment_mobile",
+      "label": "Text alignment mobile",
       "default": "center",
       "options": [
         {
