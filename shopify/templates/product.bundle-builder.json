@@ -93,7 +93,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "love-pink-box-kartonage",
+                        "card_product": "treatfuls-kartonage-kopie",
                         "show_view_product": false,
                         "show_cart_notification": true,
                         "background_color": "#ffffff",
@@ -115,7 +115,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "all-year-box-kartonage",
+                        "card_product": "treatfuls-schultute-pink",
                         "show_view_product": false,
                         "show_cart_notification": true,
                         "background_color": "#ffffff",
