@@ -16,6 +16,10 @@
     flex-direction: column;
     gap: 24px;
 
+    @media #{$m-xl} {
+      padding: 20px;
+    }
+
     .button {
       max-width: 438px;
       width: 100%;
