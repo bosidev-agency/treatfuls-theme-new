@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "title": "",
         "subtitle": "",
@@ -19,6 +18,59 @@
         "background_color": "",
         "accent_color": "",
         "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/7.webp",
+            "image_position": "left",
+            "title": "",
+            "content": "<p><strong>Hey, wir sind Magdalena und Tugce, die Gründerinnen von treatfuls. 💛</strong><br/><br/>Jeden Tag tüfteln wir an neuen Ideen, entwickeln unsere Produkte weiter und überlegen, welche Sorten als Nächstes zu euch kommen. Dabei haben wir immer eines im Blick: treatfuls soll genau die Marke sein, die ihr euch wünscht. Deshalb beziehen wir euch bei wichtigen Entscheidungen mit ein, denn eure Meinung ist für uns als Startup unglaublich wertvoll.</p>",
+            "button_text": "",
+            "button_url": "https://www.dm.de/search?query=treatfuls&searchProviderType=dm-products&brandName=treatfuls&searchType=brand-search"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Einfach_Losrollen_mit_Dolly_und_treatfuls.webp",
+            "image_position": "left",
+            "title": "Snack dich zum Lastenrad",
+            "content": "<p>Kaufe zwei treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad, vielleicht rollst du schon bald damit durch die Gegend 🚲</p>",
+            "button_text": "👉 Jetzt teilnehmen",
+            "button_url": "shopify://pages/treatfulsxdmgewinnspiel"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
+            "image_position": "left",
+            "title": "Meet the Snack Squad",
+            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
+            "button_text": "Ready to matcha",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#c081a9",
+        "hover_color": "#a0c087",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -33,10 +85,14 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
-        "content_vertical_position_mobile": 50,
-        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_desktop": "center",
         "max_width": "100%",
         "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
         "title": "Hero banner",
         "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
         "background_color": "rgba(0,0,0,0)",
@@ -94,63 +150,12 @@
         "hover_color": "#24a5a1"
       }
     },
-    "image_with_text_NHKmKF": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_EUwxUY": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Magda_Tugce_DM.webp",
-            "image_position": "left",
-            "title": "treatfuls bei dm kaufen",
-            "content": "<p>Wir sind treatfuls, wir machen Snacks, die besser für dich sind, ohne auf Genuss zu verzichten.<br/><br/>Unsere Riegel bestehen aus Datteln statt Industriezucker und sind <strong>vegan, bio und glutenfrei</strong>.<br/><br/>Und das Beste?<br/>Sie schmecken wie eine kleine Sünde… sind aber keine 💗🍫<br/><br/>Perfekt für alle, die sich bewusst ernähren wollen und trotzdem nicht auf richtig guten Geschmack verzichten möchten.<br/><br/>Nur für kurze Zeit erhältlich – was weg ist, ist weg!</p>",
-            "button_text": "👉 Jetzt bei dm kaufen",
-            "button_url": "https://www.dm.de/search?query=treatfuls&searchProviderType=dm-products&brandName=treatfuls&searchType=brand-search"
-          }
-        },
-        "image_with_text_XgJXRN": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Einfach_Losrollen_mit_Dolly_und_treatfuls.webp",
-            "image_position": "left",
-            "title": "Snack dich zum Lastenrad",
-            "content": "<p>Kaufe zwei treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad, vielleicht rollst du schon bald damit durch die Gegend 🚲</p>",
-            "button_text": "👉 Jetzt teilnehmen",
-            "button_url": "shopify://pages/treatfulsxdmgewinnspiel"
-          }
-        },
-        "image_with_text_BjFpid": {
-          "type": "image_with_text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
-            "image_position": "left",
-            "title": "Meet the Snack Squad",
-            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "#c081a9",
-        "hover_color": "#a0c087",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
     "advantages_tFw6BH": {
       "type": "advantages",
       "blocks": {
         "advantage_item_39PhKw": {
           "type": "advantage_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
             "text": "dm"
@@ -313,9 +318,9 @@
   },
   "order": [
     "main",
+    "image_with_text_NHKmKF",
     "hero_eNmaQw",
     "featured_product_GbQVWw",
-    "image_with_text_NHKmKF",
     "advantages_tFw6BH",
     "advantages_BcfMf9"
   ]

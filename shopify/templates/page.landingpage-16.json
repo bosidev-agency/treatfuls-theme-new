@@ -49,245 +49,14 @@
         "show_base_triangular_line": false
       }
     },
-    "main_page_wqaCcB": {
-      "type": "main-page",
-      "settings": {
-        "title": "Storefinder",
-        "subtitle": "",
-        "subtitle_font_size": 24,
-        "background_color": "#859972",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
-      }
-    },
-    "1779112706b77bec33": {
-      "type": "apps",
-      "blocks": {
-        "mapsy_mapsy_store_locator_UhD7FW": {
-          "type": "shopify://apps/mapsy/blocks/mapsy-store-locator/019b8e98-73cd-7bf6-982e-7b07568cf7df",
-          "settings": {
-            "use_fixed_height": false,
-            "fixed_height": 600,
-            "custom_css": "/* Wegbeschreibung: Text und Icon */\n.mapsy-container [data-type=\"directions\"],\n.mapsy-container [data-type=\"directions\"] .mapsy-location-detail-text {\n  color: #666 !important;\n}\n\n/* Gleichbleibende Schriftgröße auf breiten Bildschirmen */\n.mapsy-container {\n  font-size: 16px;\n}\n\n/* Einheitliche Schrift für Adresse und Wegbeschreibung */\n.mapsy-container .mapsy-location-address,\n.mapsy-container [data-type=\"directions\"],\n.mapsy-container [data-type=\"directions\"] .mapsy-location-detail-text {\n  font-family: Arial, Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n}"
-          }
-        }
-      },
-      "block_order": [
-        "mapsy_mapsy_store_locator_UhD7FW"
-      ],
-      "custom_css": [],
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
-      }
-    },
-    "1775665721a00e34e8": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "background_color": "#859972",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
-      }
-    },
-    "hero_jdgPF9": {
-      "type": "hero",
-      "blocks": {
-        "invisible_link_YWrmxQ": {
-          "type": "_invisible-link",
-          "name": "Invisible link",
-          "settings": {
-            "test_color": "#ff0000",
-            "invisible_link": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=top_home_cta",
-            "invisible_link_dimensions_desktop": 10,
-            "invisible_link_dimensions_mobile": 18,
-            "invisible_link_vertical_position_desktop": 31,
-            "invisible_link_horizontal_position_desktop": 44,
-            "invisible_link_vertical_position_mobile": 56,
-            "invisible_link_horizontal_position_mobile": 77
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "invisible_link_YWrmxQ"
-      ],
-      "disabled": true,
-      "name": "Hero banner",
-      "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-04_3.webp",
-        "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-03_2.webp",
-        "mobile_image_height": "adapt",
-        "hide_on_mobile": false,
-        "content_vertical_position_desktop": 50,
-        "content_horizontal_position_desktop": 100,
-        "content_text_alignment_desktop": "right",
-        "max_width": "100%",
-        "max_width_px": 800,
-        "content_vertical_position_mobile": 0,
-        "content_horizontal_position_mobile": 50,
-        "content_text_alignment_mobile": "center",
-        "max_width_mobile": "100%",
-        "max_width_mobile_px": 1200,
-        "title": "Snack it. Win it. Ride it.",
-        "text": "<h4>Hol dir 2 treatfuls bei dm und sichere dir die Chance auf ein Dolly Lastenrad 😍</h4>",
-        "background_color": "#859972",
-        "accent_color": "rgba(0,0,0,0)",
-        "hover_color": "rgba(0,0,0,0)",
-        "show_base_triangular_line": true
-      }
-    },
-    "multicolumn_KzKDXr": {
-      "type": "multicolumn",
-      "blocks": {
-        "item_DgpFn8": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Icons_Riegel_DM.png",
-            "heading": "2 treatfuls kaufen",
-            "content": "<p>Kaufe im Zeitraum <strong>23.04.–07.05.</strong> zwei deiner Lieblings-treatfuls-Produkte bei <strong>dm</strong> und sichere dir deine Chance auf tolle Gewinne. Einfach zugreifen, genießen und mitmachen!</p>"
-          }
-        },
-        "item_hGHkV4": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Kassenbon_treatfuls_dm.png",
-            "heading": "Kassenbon hochladen",
-            "content": "<p>Einfach deinen Kassenbon hochladen und darauf achten, dass die unten aufgeführten Angaben gut sichtbar und deutlich lesbar sind. So steht deiner Teilnahme nichts im Weg!</p>"
-          }
-        },
-        "item_iGTgFm": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/treatfuls_Lastenrad.png",
-            "heading": "Lastenrad von Dolly gewinnen",
-            "content": "<p>Sichere dir die Chance auf ein stylisches <a href=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\" target=\"_blank\" title=\"https://dolly-bikes.com/de/product/dolly-joy/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=product_dolly_joy_cta\"><strong>Dolly Lastenrad</strong></a><strong>, </strong>vielleicht rollst schon bald du damit los! 🚲 </p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_DgpFn8",
-        "item_hGHkV4",
-        "item_iGTgFm"
-      ],
-      "disabled": true,
-      "name": "Multicolumn",
-      "settings": {
-        "heading": "So einfach gehts",
-        "text_alignment": "center",
-        "background_color": "#859972",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
-      }
-    },
-    "image_gallery_3QHd8f": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_CkYacU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Gruenderinnen_im_Lastenrad.webp",
-            "content": "",
-            "content_position_y": 80,
-            "content_position_x": 20,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_ytxgLP": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DRB0464_1.jpg",
-            "content": "",
-            "content_position_y": 40,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_EgQxQg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/DRB0277_1.jpg",
-            "content": "",
-            "content_position_y": 70,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_qMzmYY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 85,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_CkYacU",
-        "image_ytxgLP",
-        "image_EgQxQg",
-        "image_qMzmYY"
-      ],
-      "disabled": true,
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
-        "heading": "",
-        "show_atc_button": false,
-        "grid_container_quantity": "1",
-        "background_color": "#c081a9",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
-      }
-    },
-    "featured_product_P3kVtL": {
+    "featured_product_GbQVWw": {
       "type": "featured-product",
       "blocks": {
-        "description_KrDDKk": {
+        "description_TrMApc": {
           "type": "description",
           "settings": {}
         },
-        "countdown_m7NiRM": {
+        "countdown_yp9z36": {
           "type": "countdown",
           "settings": {
             "heading": "",
@@ -296,11 +65,11 @@
             "background_color": ""
           }
         },
-        "price_VEEP77": {
+        "price_zwAehL": {
           "type": "price",
           "settings": {}
         },
-        "buy_button_m6tjFA": {
+        "buy_button_W846tk": {
           "type": "buy_button",
           "settings": {
             "show_quantity_selector": true,
@@ -309,277 +78,23 @@
         }
       },
       "block_order": [
-        "description_KrDDKk",
-        "countdown_m7NiRM",
-        "price_VEEP77",
-        "buy_button_m6tjFA"
+        "description_TrMApc",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
       ],
       "name": "Featured product",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
-        "heading": "Alle Sorten probieren",
-        "mobile_heading": "Alle Sorten probieren",
-        "sticky_button": false,
+        "product": "wochenbettbox",
+        "heading": "Alle Sorten. Einmal snacken, alles checken",
+        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#c081a9",
-        "accent_color": "#de85a1",
-        "hover_color": "#e56a89"
-      }
-    },
-    "image_gallery_jpAA4C": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_iA8HfU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_c008eeca-e9e0-4048-954c-d436e19aef3f.png",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_tQxFjV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LP_Visuals-06.webp",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_Aa4zyg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_1088d876-0aa2-4faa-9ba5-31126790ac38.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_dhM98M": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_29e72ae8-1dfd-4a52-baf0-de6171eaf0ee.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_iA8HfU",
-        "image_tQxFjV",
-        "image_Aa4zyg",
-        "image_dhM98M"
-      ],
-      "disabled": true,
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "osterbox-treatfuls",
-        "heading": "",
-        "show_atc_button": false,
-        "grid_container_quantity": "1",
-        "background_color": "#e6ce9b",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f",
-        "popup_background_color": "",
-        "popup_text_color": ""
-      }
-    },
-    "custom_section_9AEAFL": {
-      "type": "custom-section",
-      "blocks": {
-        "heading_kWUKzf": {
-          "type": "heading",
-          "name": "Heading",
-          "settings": {
-            "heading_text": "Mehr treats. Mehr Auswahl.",
-            "subtitle_text": "",
-            "margin_top": 24,
-            "margin_bottom": 24
-          },
-          "blocks": {}
-        },
-        "group_Dc9Gp7": {
-          "type": "group",
-          "name": "Group",
-          "settings": {
-            "display_type": "flex",
-            "direction": "row",
-            "alignment": "center",
-            "gap": 32,
-            "child_width": "100%",
-            "max_width_enabled": false,
-            "max_width": 1200,
-            "margin_top": 0,
-            "margin_bottom": 0
-          },
-          "blocks": {
-            "slider_X7fgak": {
-              "type": "slider",
-              "name": "Slider",
-              "settings": {
-                "hide_desktop": true,
-                "hide_mobile": false,
-                "loop": true,
-                "slides_per_view_desktop": 4,
-                "slides_per_view_mobile": 1,
-                "show_next_slide": true,
-                "gap": 20
-              },
-              "blocks": {
-                "slide_b3rKQL": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_Wdtkzx": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_Wdtkzx"
-                  ]
-                },
-                "slide_UXkYT6": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_BVnnPr": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "summer-crush-kopie",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_BVnnPr"
-                  ]
-                },
-                "slide_jjKDwy": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_CnqMpU": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "matcha-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_CnqMpU"
-                  ]
-                },
-                "slide_pg6biV": {
-                  "type": "slide",
-                  "name": "Slide",
-                  "settings": {},
-                  "blocks": {
-                    "product_card_wmWiAV": {
-                      "type": "product-card",
-                      "name": "Product Card",
-                      "settings": {
-                        "card_product": "brownie-riegel",
-                        "show_view_product": true,
-                        "show_cart_notification": false,
-                        "background_color": "#ffffff",
-                        "text_color": "#000000"
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "product_card_wmWiAV"
-                  ]
-                }
-              },
-              "block_order": [
-                "slide_b3rKQL",
-                "slide_UXkYT6",
-                "slide_jjKDwy",
-                "slide_pg6biV"
-              ]
-            }
-          },
-          "block_order": [
-            "slider_X7fgak"
-          ]
-        }
-      },
-      "block_order": [
-        "heading_kWUKzf",
-        "group_Dc9Gp7"
-      ],
-      "disabled": true,
-      "name": "Custom block section",
-      "settings": {
         "background_color": "#859972",
-        "accent_color": "",
-        "hover_color": "",
-        "padding_top": 80,
-        "padding_bottom": 40
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1"
       }
     },
     "comparison_table_dT7KWy": {
@@ -641,7 +156,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
-                    "image": "{{ closest.product.featured_image }}",
+                    "image": "{{ closest.product.metafields.custom.alternate_product_card_image.value }}",
                     "text": "{{ closest.product.metafields.custom.short_title.value }}",
                     "liquid": "pro 100 g"
                   },
@@ -1168,13 +683,12 @@
       "block_order": [
         "table_EbWcfp"
       ],
-      "disabled": true,
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
         "title": "über 50% weniger Zucker 👇🏼",
         "footer_note": "",
-        "background_color": "#2ac2bd",
+        "background_color": "#c081a9",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
@@ -1187,33 +701,32 @@
         "image_with_text_EUwxUY": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Online_Shop_Produktfotos.png",
+            "image": "shopify://shop_images/LP_Visuals-01.webp",
             "image_position": "left",
-            "title": "Snack me softly",
-            "content": "<p>Unsere White temptation<em> </em>Tüte ist der Traum für alle, die nicht widerstehen können, wenn es weiß, cremig und richtig gut wird. Vollgepackt mit unseren beliebtesten Riegeln mit weißer veganer Schoki.  In dieser Geschenk-Tüte warten gleich 18 Riegel für 44,99€ auf dich: zart, crunchy, verführerisch. Perfekt zum Teilen, Snacken oder einfach selbst behalten. Ideal für alle, die vegane weiße Schoki lieben und Wert auf faire Zutaten, Zero-Bullshit und guten Geschmack legen.<br/><br/>💌 Und falls du sie doch nicht teilen willst: We feel you.</p>",
-            "button_text": "Zur White Tüte",
-            "button_url": "shopify://products/white-winter-treats"
+            "title": "Snacks, wie sie sein sollten.",
+            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
+            "button_text": "Try them all",
+            "button_url": "shopify://collections/produkte"
           }
         },
         "image_with_text_XgJXRN": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/AK_2025_6.webp",
+            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
             "image_position": "left",
-            "title": "24 Tage. 0 Kompromisse.",
-            "content": "<p>Unser Adventskalender ist gemacht für alle, die sich an 24 Tagen nicht mit weniger als richtig gutem Geschmack zufriedengeben<strong>.</strong> Hinter jeder Tür wartet ein neuer Snackmoment. Von cremig bis crunchy, von zart bis naughty: Jeden Tag eine neue Überraschung für Soul & Snackschublade. Liebevoll verpackt und mit richtig viel treatfuls-Attitüde. <br/><br/></p><p>🎄 Für 112,99 € und ja, wir verstehen, wenn du vorher reinschaust.</p>",
-            "button_text": "Jetzt Türchen sichern",
-            "button_url": "shopify://products/adventskalender"
+            "title": "Kids & family friendly",
+            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
+            "button_text": "Show me the filling",
+            "button_url": "shopify://products/summer-crush-kopie"
           }
         },
         "image_with_text_BjFpid": {
           "type": "image_with_text",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/treatfuls_too_matcha_to_handle_63c6b1bc-e8a9-4ab2-9a05-de4e724eb54b.webp",
+            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
             "image_position": "left",
-            "title": "Green. Calm. Power.",
-            "content": "<p>Too Matcha to Handle ist dein grüner Power-Snack für zwischendurch. Mit echtem Matchapulver liefert er natürliche Energie und hilft dir, fokussiert und klar durch den Tag zu kommen. Die cremige Füllung aus Cashew und Macadamia sorgt für sanfte Wachheit, der weiße Überzug rundet alles mit einer angenehmen Süße ab. Vegan, bio, dattelgesüßt und glutenfrei, für bewusste Snackmomente mit Wirkung und Geschmack.</p>",
+            "title": "Meet the Snack Squad",
+            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
             "button_text": "Ready to matcha",
             "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
           }
@@ -1224,70 +737,238 @@
         "image_with_text_XgJXRN",
         "image_with_text_BjFpid"
       ],
-      "disabled": true,
       "name": "Image with text",
       "settings": {
-        "background_color": "#c13666",
-        "accent_color": "",
-        "hover_color": "",
+        "background_color": "#859972",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1",
         "padding_top": 80,
         "padding_bottom": 40
       }
     },
-    "advantages_Ry7pk9": {
+    "main_product_ingredients_6KHBRk": {
+      "type": "main-product-ingredients",
+      "name": "Ingredients",
+      "settings": {
+        "product": "summer-crush-kopie",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd"
+      }
+    },
+    "custom_section_9AEAFL": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_kWUKzf": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Dc9Gp7": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_X7fgak": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_b3rKQL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_Wdtkzx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_Wdtkzx"
+                  ]
+                },
+                "slide_UXkYT6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_BVnnPr": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_BVnnPr"
+                  ]
+                },
+                "slide_jjKDwy": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_CnqMpU": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_CnqMpU"
+                  ]
+                },
+                "slide_pg6biV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_wmWiAV": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_wmWiAV"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_b3rKQL",
+                "slide_UXkYT6",
+                "slide_jjKDwy",
+                "slide_pg6biV"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_X7fgak"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_kWUKzf",
+        "group_Dc9Gp7"
+      ],
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_WMqFa9": {
       "type": "advantages",
       "blocks": {
-        "advantage_item_Amnazd": {
+        "advantage_item_Yx8hhM": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-1-smile.png",
-            "text": "Lecker"
+            "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
+            "text": "dm"
           }
         },
-        "advantage_item_NrGdwp": {
+        "advantage_item_jbiWDf": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_L9iH7J": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-2-vegan.png",
-            "text": "Vegan"
+            "image": "shopify://shop_images/Icons_Parnter_OS-05.webp",
+            "text": "Rewe"
           }
         },
-        "advantage_item_mQ46mk": {
+        "advantage_item_zKbph3": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-3-organic.png",
-            "text": "Bio-zertifiziert"
+            "image": "shopify://shop_images/Icons_Parnter_OS-02.webp",
+            "text": "Alnatura"
           }
         },
-        "advantage_item_bF7Uqw": {
+        "advantage_item_6UNBwa": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/Darm4.webp",
-            "text": "Ballaststoffreich"
+            "image": "shopify://shop_images/Icons_Parnter_OS-04.webp",
+            "text": "Budnikowsky"
           }
         },
-        "advantage_item_UzWB6t": {
+        "advantage_item_mKgYE9": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-4-packaging.png",
-            "text": "Recyclebare Verpackung"
+            "image": "shopify://shop_images/Icons_Parnter_OS-03.webp",
+            "text": "BILLA"
           }
         },
-        "advantage_item_4mgLzW": {
+        "advantage_item_pwNhCi": {
           "type": "advantage_item",
           "settings": {
-            "image": "shopify://shop_images/img-5-soy.png",
-            "text": "Ohne Soja"
+            "image": "shopify://shop_images/Icons_Parnter_OS-06.webp",
+            "text": "SPAR"
           }
         },
-        "advantage_item_kLUcGF": {
+        "advantage_item_6qjfnR": {
           "type": "advantage_item",
-          "settings": {
-            "image": "shopify://shop_images/img-6-gluten-free.png",
-            "text": "Ohne Gluten"
-          }
-        },
-        "advantage_item_zgL3Nn": {
-          "type": "advantage_item",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/img-7-sugar.png",
             "text": "Ohne raffinierten Zucker"
@@ -1295,39 +976,129 @@
         }
       },
       "block_order": [
-        "advantage_item_Amnazd",
-        "advantage_item_NrGdwp",
-        "advantage_item_mQ46mk",
-        "advantage_item_bF7Uqw",
-        "advantage_item_UzWB6t",
-        "advantage_item_4mgLzW",
-        "advantage_item_kLUcGF",
-        "advantage_item_zgL3Nn"
+        "advantage_item_Yx8hhM",
+        "advantage_item_jbiWDf",
+        "advantage_item_L9iH7J",
+        "advantage_item_zKbph3",
+        "advantage_item_6UNBwa",
+        "advantage_item_mKgYE9",
+        "advantage_item_pwNhCi",
+        "advantage_item_6qjfnR"
       ],
       "settings": {
         "hide_on_mobile": false,
-        "title": "nicht noch so ein Bio-Riegel…",
-        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
         "background_color": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "compare_product_reviews_4JnjWz": {
+      "type": "compare-product-reviews",
+      "name": "Product reviews",
+      "settings": {
+        "title": "",
+        "underline_word": "",
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click Here"
       }
     }
   },
   "order": [
     "main",
     "hero_eNmaQw",
-    "main_page_wqaCcB",
-    "1779112706b77bec33",
-    "1775665721a00e34e8",
-    "hero_jdgPF9",
-    "multicolumn_KzKDXr",
-    "image_gallery_3QHd8f",
-    "featured_product_P3kVtL",
-    "image_gallery_jpAA4C",
-    "custom_section_9AEAFL",
+    "featured_product_GbQVWw",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
-    "advantages_Ry7pk9"
+    "main_product_ingredients_6KHBRk",
+    "custom_section_9AEAFL",
+    "advantages_WMqFa9",
+    "advantages_BcfMf9",
+    "compare_product_reviews_4JnjWz"
   ]
 }

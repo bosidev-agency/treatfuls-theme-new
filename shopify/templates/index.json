@@ -31,21 +31,21 @@
         "button_M3XbEb": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
-            "text": "👉 Jetzt anmelden",
-            "url": "",
+            "text": "👉 Jetzt los snacken",
+            "url": "shopify://collections/produkte",
             "signup_button": true,
-            "klaviyo_form": "TfqHKY"
+            "klaviyo_form": ""
           },
           "blocks": {}
         },
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
-          "disabled": true,
           "settings": {
-            "text": "Alnatura Storefinder 👉🏽",
-            "url": "https://treatfuls.com/pages/storefinder",
+            "text": "👉 Ab zur Box",
+            "url": "shopify://products/back-to-school-box",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -59,25 +59,27 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_SummerSale_Desktop_V2_1.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_her_back_to_school_desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Hero_SummerSale_Mobil_V2.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_her_back_to_school_mobil_1.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
-        "content_vertical_position_desktop": 81,
-        "content_horizontal_position_desktop": 5,
-        "content_vertical_position_mobile": 32,
-        "content_horizontal_position_mobile": 50,
-        "content_text_alignment_desktop": "left",
-        "content_text_alignment_mobile": "center",
+        "content_vertical_position_desktop": 50,
+        "content_horizontal_position_desktop": 45,
+        "content_text_alignment_desktop": "right",
         "max_width": "fixed",
         "max_width_px": 700,
+        "content_vertical_position_mobile": 51,
+        "content_horizontal_position_mobile": 56,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "fixed",
+        "max_width_mobile_px": 400,
         "title": "",
-        "text": "",
-        "background_color": "#859972",
-        "accent_color": "#c081a9",
+        "text": "<h3>Wir wollen keinen Stress machen, <br/>aber es gibt nur 50 Boxen 👀</h3>",
+        "background_color": "#C6B1D0",
+        "accent_color": "#D04D75",
         "hover_color": "#8a7194",
-        "show_base_triangular_line": false
+        "show_base_triangular_line": true
       }
     },
     "featured_collections_EUemmF": {
@@ -205,7 +207,7 @@
         "product_item_ALK7CL"
       ],
       "settings": {
-        "title": "This is what <span>guiltfree</span>looks like",
+        "title": "This is what <span>guiltfree</span> looks like",
         "title-second": "powered by  <span>plants loved</span> by everyone",
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
