@@ -61,3 +61,32 @@
 		max-width: none;
 	}
 }
+
+.advantages__button-wrapper {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+	text-align: center;
+
+	@media #{$no-m} {
+		padding-top: 50px;
+	}
+}
+
+.advantages__button {
+	width: 100%;
+	max-width: 438px;
+	text-align: center;
+
+	@media #{$no-fw} {
+		max-width: 20vw;
+	}
+
+	@media #{$m-xxl} {
+		max-width: 278px;
+	}
+
+	@media #{$m-l} {
+		max-width: 203px;
+	}
+}

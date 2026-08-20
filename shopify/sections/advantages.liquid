@@ -73,6 +73,12 @@
     </div>
 
     {{ slider }}
+
+    {%- if sec_sett.button_text != blank and sec_sett.button_url != blank -%}
+      <div class="advantages__button-wrapper">
+        <a href="{{- sec_sett.button_url -}}" class="button advantages__button">{{- sec_sett.button_text -}}</a>
+      </div>
+    {%- endif -%}
   </div>
 
   <div class="base-triangular-line">
@@ -102,6 +108,16 @@
 			"id": "subtitle",
 			"label": "Subtitle",
 			"default": "Hier ist Platz für eine kurze Beschreibung eurer Vorteile."
+		},
+		{
+			"type": "text",
+			"id": "button_text",
+			"label": "Button text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button link"
 		},
     {
       "type": "header",
