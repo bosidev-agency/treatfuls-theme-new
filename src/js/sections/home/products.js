@@ -1,6 +1,9 @@
 import { register } from "@shopify/theme-sections";
 import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
 import { getRandomBetween } from "../../utils/helpers";
+
+Swiper.use([Navigation]);
 
 const selectors = {
 	dataTitles: "[data-home-products-title]",
@@ -39,22 +42,28 @@ register("home-products", {
 			loop: true,
 			centeredSlides: true,
 			initialSlide: randomNumber,
+			grabCursor: true,
+			modules: [Navigation],
+			navigation: {
+				nextEl: container.querySelector(".home-products__nav--next"),
+				prevEl: container.querySelector(".home-products__nav--prev")
+			},
 			breakpoints: {
-				// when window width is >= 320px
 				300: {
-					slidesPerView: 1.5
+					slidesPerView: 1.5,
+					centeredSlides: true,
+					spaceBetween: 0
 				},
 				767: {
-					slidesPerView: 1.7
+					slidesPerView: 1.7,
+					centeredSlides: true,
+					spaceBetween: 0
 				},
-				1710: {
-					slidesPerView: 1.85
-				},
-				1900: {
-					slidesPerView: 2
-				},
-				2000: {
-					slidesPerView: 2.1
+				992: {
+					slidesPerView: 4,
+					slidesPerGroup: 1,
+					centeredSlides: false,
+					spaceBetween: 40
 				}
 			},
 			on: {

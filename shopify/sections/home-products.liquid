@@ -28,7 +28,8 @@
 		{%- endif -%}
 
 		{%- if section.blocks.size > 0 -%}
-			<div class="swiper-container-wrapper">
+			<div class="swiper-container-wrapper container container--lg">
+				<div class="home-products__nav home-products__nav--prev swiper-button-prev"></div>
 				<div class="swiper-container js-home-products-slider home-products__slider opacity-0">
 					<div class="swiper-wrapper">
 						{%- for block in section.blocks limit: 10 -%}
@@ -46,8 +47,7 @@
                 </style>
               {%- endif -%}
 
-							<div 
-                class="swiper-slide"
+							<div
                 class="swiper-slide"
                 data-slide-color='{
                   "background": "{% if product.metafields.custom.background_color %}{{ product.metafields.custom.background_color }}{% else %}{{ section.settings.background_color }}{% endif %}",
@@ -91,6 +91,7 @@
 						{% endfor %}
 					</div>
 				</div>
+				<div class="home-products__nav home-products__nav--next swiper-button-next"></div>
 			</div>
 		{%- endif -%}
 	</div>
