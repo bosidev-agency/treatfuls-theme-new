@@ -718,6 +718,17 @@
           "type": "description",
           "settings": {}
         },
+        "text_field_qyXmWW": {
+          "type": "text_field",
+          "settings": {
+            "label": "💌 Deine Love Note Du schickst die Box direkt an deinen Herzensmenschen? Ein paar Worte von dir, handgeschrieben von uns. Hinterlass deine Nachricht hier, den Rest übernehmen wir 💌",
+            "property_key": "",
+            "placeholder": "Schreibe deinen Text hier rein …",
+            "required": false,
+            "max_characters": 140,
+            "block_design": false
+          }
+        },
         "countdown_yp9z36": {
           "type": "countdown",
           "settings": {
@@ -741,6 +752,7 @@
       },
       "block_order": [
         "description_TrMApc",
+        "text_field_qyXmWW",
         "countdown_yp9z36",
         "price_zwAehL",
         "buy_button_W846tk"
@@ -766,40 +778,40 @@
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/15.jpg",
-            "title": "Compostable pack",
-            "content": "<p>A snack wrap that looks premium and still breaks down after you’re done.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "title": "Hello, hot stuff",
+            "content": "<p>Das flauschige Extra, das wir deiner treatfuls Wochenbettbox einfach obendrauf schenken.</p>",
+            "link_text": "mehr zu Hugo Frosch",
+            "link_url": "https://hugo-frosch.de/"
           }
         },
         "content_item_NMwiLF": {
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/14.jpg",
-            "title": "Vegan taste",
-            "content": "<p>Plant-based snacks that don’t taste like a compromise.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "title": "But first, tea",
+            "content": "<p>Pfirsich & Kamille von Cupper als kleines Extra mit dabei.</p>",
+            "link_text": "mehr zu Cupper",
+            "link_url": "https://cupper-teas.de/?srsltid=AfmBOorF8UhUnYFpzruJ-qCDZtp9r16Sf7I9ziqx9NwcsQbelXBTbBhQ"
           }
         },
         "content_item_CttPcU": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Wochenbettbox2.webp",
+            "image": "shopify://shop_images/Small_Human_diaries.jpg",
             "title": "Better ingredients",
-            "content": "<p>Short, honest recipes with ingredients you can actually pronounce.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "content": "<p>Unsere vier treatfuls Sorten sorgen für den Snack-Vorrat</p>",
+            "link_text": "treatfuls entdecken",
+            "link_url": "https://treatfuls.com/collections/produkte"
           }
         },
         "content_item_jeKyCV": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Wochenbett-box-Hugo-frosch.webp",
-            "title": "Snack differently",
-            "content": "<p>Treats that are kinder to you and a little kinder to the planet.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "image": "shopify://shop_images/Love_note.jpg",
+            "title": "From you, with love",
+            "content": "<p>Snacks, Tee, Wärmflasche & deine persönliche Love Note, alles in einer Box, fertig zum Verschenken.</p>",
+            "link_text": "Wochenbettbox verschenken",
+            "link_url": "shopify://products/wochenbettbox"
           }
         }
       },
@@ -815,8 +827,8 @@
         "link_text": "",
         "link_url": "/",
         "background_color": "#dbaaeb",
-        "accent_color": "#C081A9",
-        "hover_color": "#E35478"
+        "accent_color": "#c081a9",
+        "hover_color": "#e35478"
       }
     },
     "main_product_ingredients_6KHBRk": {
