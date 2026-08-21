@@ -722,7 +722,7 @@
           "type": "text_field",
           "settings": {
             "label": "💌 Deine Love Note Du schickst die Box direkt an deinen Herzensmenschen? Ein paar Worte von dir, handgeschrieben von uns. Hinterlass deine Nachricht hier, den Rest übernehmen wir 💌",
-            "property_key": "",
+            "property_key": "Nachricht",
             "placeholder": "Schreibe deinen Text hier rein …",
             "required": false,
             "max_characters": 140,
