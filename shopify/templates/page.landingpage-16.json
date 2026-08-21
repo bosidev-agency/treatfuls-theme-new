@@ -23,6 +23,70 @@
         "padding_bottom": 40
       }
     },
+    "main_page_xfzKQa": {
+      "type": "main-page",
+      "settings": {
+        "title": "Perfekt fürs Wochenbett 💗",
+        "subtitle": "<p><strong><br/>Die treatfuls Wochenbettbox mit 20 Riegeln & Postkarte für deine persönliche Love note.<br/></strong>🎁 Wärmflasche + Tee? Schenken wir dir dazu.</p>",
+        "subtitle_font_size": 17,
+        "background_color": "#c081a9",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals_Wochenbett_Benefits3.webp",
+            "image_position": "left",
+            "title": "Kleine Pause, großer treat 💗",
+            "content": "<p>🍫 Perfekt portioniert – 2 × 20 g für die kleine Snackpause zwischendurch<br/><br/>🌴 Natürlich süß durch Datteln – ganz ohne raffinierten Zucker<br/><br/>😋 Schmeckt wie ein Cheat. Ist aber keiner. – richtig schokoladig & kompromisslos lecker<br/><br/>🌱 Gute Zutaten, kein Bullshit – bio, vegan & ohne unnötige Zusatzstoffe<br/><br/>🌾 Ballaststoffquelle – Ballaststoffe stecken natürlicherweise in Nüssen, Datteln und Vollkorn</p>",
+            "button_text": "",
+            "button_url": "shopify://collections/produkte"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/wochenbett3.webp",
+            "image_position": "right",
+            "title": "Eine kleine Teepause nur für dich. 🫖💗",
+            "content": "<p>🌼 Pfirsich & Kamille – mild-fruchtig für kleine Wohlfühlmomente<br/><br/>🌿 100 % natürliche Bio-Zutaten<br/><br/>🤝 Fairtrade & plastikfreie Teebeutel<br/><br/>🫖 Für die kleinen Pausen dazwischen – eine warme Tasse zum Durchatmen, wenn der neue Alltag gerade alles andere als ruhig ist.<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "shopify://products/summer-crush-kopie"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Frosch_waermflasche.jpg",
+            "image_position": "left",
+            "title": "Wärme, die einfach gut tut. 💗",
+            "content": "<p>🔥 Wohltuende Wärme – für kleine Wärmemomente im Wochenbett<br/><br/>🇩🇪 Made in Germany – hochwertig produziert & sicherheitsgeprüft<br/><br/>🌱 Über 90 % nachwachsende Rohstoffe – nachhaltiger als eine klassische Wärmflasche<br/><br/>♻️ Ressourcenschonend hergestellt – mit 50 % weniger Material und rund 60 % Energieersparnis bei der Produktion<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "hero_eNmaQw": {
       "type": "hero",
       "disabled": true,
@@ -47,54 +111,6 @@
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
         "show_base_triangular_line": false
-      }
-    },
-    "featured_product_GbQVWw": {
-      "type": "featured-product",
-      "blocks": {
-        "description_TrMApc": {
-          "type": "description",
-          "settings": {}
-        },
-        "countdown_yp9z36": {
-          "type": "countdown",
-          "settings": {
-            "heading": "",
-            "color": "",
-            "color_time": "",
-            "background_color": ""
-          }
-        },
-        "price_zwAehL": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_button_W846tk": {
-          "type": "buy_button",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_price": false
-          }
-        }
-      },
-      "block_order": [
-        "description_TrMApc",
-        "countdown_yp9z36",
-        "price_zwAehL",
-        "buy_button_W846tk"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "product": "wochenbettbox",
-        "heading": "Alle Sorten. Einmal snacken, alles checken",
-        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
-        "sticky_button": true,
-        "show_price": true,
-        "reviews_average_rating": "",
-        "reviews_quantity_text": "",
-        "background_color": "#859972",
-        "accent_color": "#dbaaeb",
-        "hover_color": "#24a5a1"
       }
     },
     "comparison_table_dT7KWy": {
@@ -686,74 +702,225 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "über 50% weniger Zucker 👇🏼",
+        "title": "Süß snacken. Ohne den ganzen Bullshit🍫",
         "footer_note": "",
-        "background_color": "#c081a9",
+        "background_color": "#d04d75",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
         "padding_bottom": 40
       }
     },
-    "image_with_text_NHKmKF": {
-      "type": "image-with-text",
+    "featured_product_GbQVWw": {
+      "type": "featured-product",
       "blocks": {
-        "image_with_text_EUwxUY": {
-          "type": "image_with_text",
+        "description_TrMApc": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_yp9z36": {
+          "type": "countdown",
           "settings": {
-            "image": "shopify://shop_images/LP_Visuals-01.webp",
-            "image_position": "left",
-            "title": "Snacks, wie sie sein sollten.",
-            "content": "<p>treatfuls ist die gesündere Alternative zu Süßigkeiten, ohne Verzicht. Unsere Snacks bestehen aus 100 % natürlichen Bio-Zutaten, sind vegan, glutenfrei und kommen ohne Soja oder raffinierten Zucker aus. Wir süßen nur mit Datteln für echten Geschmack, stabile Energie und ein gutes Bauchgefühl.<br/><br/>Genuss mit gutem Gewissen, ganz ohne künstlichen Kram. Was du snackst, sollte nicht nur schmecken, sondern dir guttun und der Welt auch.</p>",
-            "button_text": "Try them all",
-            "button_url": "shopify://collections/produkte"
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
           }
         },
-        "image_with_text_XgJXRN": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Noan_mit_treatfuls.png",
-            "image_position": "left",
-            "title": "Kids & family friendly",
-            "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
-            "button_text": "Show me the filling",
-            "button_url": "shopify://products/summer-crush-kopie"
-          }
+        "price_zwAehL": {
+          "type": "price",
+          "settings": {}
         },
-        "image_with_text_BjFpid": {
-          "type": "image_with_text",
+        "buy_button_W846tk": {
+          "type": "buy_button",
           "settings": {
-            "image": "shopify://shop_images/Teamfoto_LaunchEvent.png",
-            "image_position": "left",
-            "title": "Meet the Snack Squad",
-            "content": "<p>Manchmal beginnt etwas ganz Großes mit einer kleinen Idee. Und mit zwei Frauen, die an guten Geschmack und echte Zutaten glauben. Treatfuls wurde von Magdalena & Tugce  gegründet, aus dem Wunsch heraus, Snacks zu entwickeln, die sich gut anfühlen und genauso gut schmecken. </p><p>Was in der eigenen Küche begann, wurde Schritt für Schritt zu einer Vision. Und so wurde aus einer Idee treatfuls – ein Snack, den man mit gutem Gewissen genießen kann.</p>",
-            "button_text": "Ready to matcha",
-            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+            "show_quantity_selector": true,
+            "show_price": false
           }
         }
       },
       "block_order": [
-        "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
+        "description_TrMApc",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
       ],
-      "name": "Image with text",
+      "name": "Featured product",
       "settings": {
-        "background_color": "#859972",
-        "accent_color": "#dbaaeb",
-        "hover_color": "#24a5a1",
-        "padding_top": 80,
-        "padding_bottom": 40
+        "product": "wochenbettbox",
+        "heading": "Ein Geschenk, das nicht rumsteht, sondern gebraucht wird.",
+        "mobile_heading": "Alle Hände voll zu tun",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#c081a9",
+        "accent_color": "#d04d75",
+        "hover_color": "#dbaaeb"
       }
     },
     "main_product_ingredients_6KHBRk": {
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "summer-crush-kopie",
+        "product": "wochenbettbox",
         "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#c081a9",
+        "background_color": "#e35478",
         "accent_color": "#2ac2bd"
+      }
+    },
+    "home_products_tJ37jh": {
+      "type": "home-products",
+      "blocks": {
+        "product_item_Cd9Dna": {
+          "type": "product_item",
+          "settings": {
+            "product": "cute-but-nuts-vorratsbox-bio-vegan-glutenfrei"
+          }
+        },
+        "product_item_LfGPRV": {
+          "type": "product_item",
+          "settings": {
+            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship"
+          }
+        },
+        "product_item_Wmjj6N": {
+          "type": "product_item",
+          "settings": {
+            "product": "20-x-weisse-schoko-erdnuss-dattelkaramell-riegel-bio-vegan"
+          }
+        },
+        "product_item_NULGUA": {
+          "type": "product_item",
+          "settings": {
+            "product": "singles-box-1-ohne-weisse-haselnuss"
+          }
+        },
+        "product_item_kxYYT3": {
+          "type": "product_item",
+          "settings": {
+            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have"
+          }
+        },
+        "product_item_Aj9fDq": {
+          "type": "product_item",
+          "settings": {
+            "product": "20-x-dunkle-schoko-haselnuss-riegel-bio-vegan"
+          }
+        },
+        "product_item_BqapNh": {
+          "type": "product_item",
+          "settings": {
+            "product": "himbeer-riegel"
+          }
+        },
+        "product_item_p3QVKh": {
+          "type": "product_item",
+          "settings": {
+            "product": "matcha-riegel"
+          }
+        }
+      },
+      "block_order": [
+        "product_item_Cd9Dna",
+        "product_item_LfGPRV",
+        "product_item_Wmjj6N",
+        "product_item_NULGUA",
+        "product_item_kxYYT3",
+        "product_item_Aj9fDq",
+        "product_item_BqapNh",
+        "product_item_p3QVKh"
+      ],
+      "settings": {
+        "title": "This is what <span>guiltfree</span> looks like",
+        "title-second": "powered by  <span>plants loved</span> by everyone",
+        "title-third": "healthy <span>never tasted</span> this naughty",
+        "link_text": "Jetzt kaufen",
+        "adjust_colors_to_current_slide": false,
+        "background_color": "#ceb0d1",
+        "accent_color": "#c081a9",
+        "hover_color": "#e56a89"
+      }
+    },
+    "advantages_LBgPHq": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_dLhzwx": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_GVyQYW": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_aL6Umn": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_erKqKN": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_gEArdw": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_rKLhCg": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_bgJFWx": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_Uj7Jz4": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_dLhzwx",
+        "advantage_item_GVyQYW",
+        "advantage_item_aL6Umn",
+        "advantage_item_erKqKN",
+        "advantage_item_gEArdw",
+        "advantage_item_rKLhCg",
+        "advantage_item_bgJFWx",
+        "advantage_item_Uj7Jz4"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "custom_section_9AEAFL": {
@@ -904,6 +1071,7 @@
         "heading_kWUKzf",
         "group_Dc9Gp7"
       ],
+      "disabled": true,
       "name": "Custom block section",
       "settings": {
         "background_color": "#859972",
@@ -985,10 +1153,13 @@
         "advantage_item_pwNhCi",
         "advantage_item_6qjfnR"
       ],
+      "disabled": true,
       "settings": {
         "hide_on_mobile": false,
         "title": "Hier gibt’s treatfuls",
         "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "button_text": "",
+        "button_url": "",
         "background_color": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -1068,10 +1239,13 @@
         "advantage_item_XE7riB",
         "advantage_item_WEkgHC"
       ],
+      "disabled": true,
       "settings": {
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -1081,7 +1255,7 @@
       "type": "compare-product-reviews",
       "name": "Product reviews",
       "settings": {
-        "title": "",
+        "title": "Das sagen unsere treatfuls Lover. 💗",
         "underline_word": "",
         "text-box": "Title",
         "link": "",
@@ -1091,11 +1265,14 @@
   },
   "order": [
     "main",
-    "hero_eNmaQw",
-    "featured_product_GbQVWw",
-    "comparison_table_dT7KWy",
+    "main_page_xfzKQa",
     "image_with_text_NHKmKF",
+    "hero_eNmaQw",
+    "comparison_table_dT7KWy",
+    "featured_product_GbQVWw",
     "main_product_ingredients_6KHBRk",
+    "home_products_tJ37jh",
+    "advantages_LBgPHq",
     "custom_section_9AEAFL",
     "advantages_WMqFa9",
     "advantages_BcfMf9",
