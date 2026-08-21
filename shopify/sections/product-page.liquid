@@ -210,6 +210,54 @@
         }
       ]
     },
+    {
+      "type": "text_field",
+      "name": "Text field",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Shown as a labeled input. The entered text is saved as a line item property on the cart and order."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "property_key",
+          "label": "Line item key",
+          "info": "Used as the line item property name. Falls back to the label when empty."
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "max_characters",
+          "min": 10,
+          "max": 260,
+          "step": 5,
+          "label": "Maximum characters",
+          "default": 140
+        },
+        {
+          "type": "checkbox",
+          "id": "block_design",
+          "label": "Block design",
+          "info": "Uses the section hover color as background, with theme padding and border radius",
+          "default": false
+        }
+      ]
+    }
   ],
 	"presets": [
 		{

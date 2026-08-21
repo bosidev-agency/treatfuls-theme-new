@@ -72,6 +72,29 @@
   font-size: 110%;
 }
 
+.product-form__property {
+  margin-bottom: 20px;
+
+  @media #{$m-xl} {
+    margin-bottom: 10px;
+  }
+
+  &.product-form__property--designed {
+    background-color: var(--section-hover-color);
+    padding: 16px;
+    border-radius: var(--border-radius);
+
+    .input.input--blue {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 62px var(--section-hover-color) inset !important;
+      }
+    }
+  }
+}
+
 .product-form__variant-selector {
   margin-bottom: 20px;
   display: block;

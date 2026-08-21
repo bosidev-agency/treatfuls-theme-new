@@ -327,6 +327,39 @@
                   {%- endif -%}
                 {%- endif -%}
 
+              {%- when 'text_field' -%}
+                {%- liquid
+                  assign property_key = block.settings.label
+                  if block.settings.property_key != blank
+                    assign property_key = block.settings.property_key
+                  endif
+                -%}
+                <div class="product-form__property{% if block.settings.block_design %} product-form__property--designed{% endif %}" {{ block.shopify_attributes }}>
+                  {%- if block.settings.label != blank -%}
+                    <label class="label" for="LineItemProperty-{{ section.id }}-{{ block.id }}">
+                      <span class="text input__label">
+                        {{- block.settings.label -}}
+                        {%- if block.settings.required %} *{% endif -%}
+                      </span>
+                      <input
+                        type="text"
+                        class="input input--blue"
+                        id="LineItemProperty-{{ section.id }}-{{ block.id }}"
+                        name="properties[{{ property_key | escape }}]"
+                        {% if block.settings.placeholder != blank %}
+                          placeholder="{{ block.settings.placeholder | escape }}"
+                        {% endif %}
+                        autocorrect="off"
+                        autocapitalize="off"
+                        maxlength="{{ block.settings.max_characters }}"
+                        {% if block.settings.required %}
+                          required
+                        {% endif %}
+                      >
+                    </label>
+                  {%- endif -%}
+                </div>
+
               {% when 'price' %}
                 <div class="product-form__price">
                   <span class="product-form__meta-price h3" data-price-wrapper>
