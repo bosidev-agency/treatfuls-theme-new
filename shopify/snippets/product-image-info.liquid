@@ -1,0 +1,41 @@
+{% doc %}
+Renders an info icon with a hover tooltip for a product gallery image.
+Looks up text from the custom.image_info metafield using IMAGE_POSITION:TEXT format.
+
+@param {product} product - The product
+@param {number} image_index - 1-based gallery image position
+@example
+{% render 'product-image-info', product: product, image_index: forloop.index %}
+{% enddoc %}
+
+{% liquid
+  assign image_info_text = ''
+  assign image_infos = product.metafields.custom.image_info.value
+  assign current_index = image_index | plus: 0
+  assign clip_id = 'icon-info-clip-' | append: product.id | append: '-' | append: current_index
+
+  if image_infos != blank
+    for info_entry in image_infos
+      assign position_key = info_entry | split: ':' | first | strip
+      assign position_number = position_key | plus: 0
+
+      if position_number == current_index
+        assign position_prefix = position_key | append: ':'
+        assign image_info_text = info_entry | remove_first: position_prefix | strip
+        break
+      endif
+    endfor
+  endif
+%}
+
+{%- if image_info_text != blank -%}
+  <div class="product-gallery__image-info">
+    <button type="button" class="product-gallery__image-info-trigger" aria-describedby="product-image-info-{{ clip_id }}">
+      <span class="visually-hidden">{{ 'products.product.information' | t }}</span>
+      {% render 'icon-info', clip_id: clip_id %}
+    </button>
+    <p class="product-gallery__image-info-tooltip" id="product-image-info-{{ clip_id }}" role="tooltip">
+      {{ image_info_text | escape }}
+    </p>
+  </div>
+{%- endif -%}
