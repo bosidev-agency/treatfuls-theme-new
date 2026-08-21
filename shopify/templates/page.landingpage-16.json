@@ -172,7 +172,7 @@
                     "cell_type": "th",
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": true,
-                    "image": "{{ closest.product.metafields.custom.alternate_product_card_image.value }}",
+                    "image": "shopify://shop_images/treatfuls_Berry_Slider.webp",
                     "text": "{{ closest.product.metafields.custom.short_title.value }}",
                     "liquid": "pro 100 g"
                   },
@@ -759,6 +759,66 @@
         "hover_color": "#dbaaeb"
       }
     },
+    "info_slider_Njmp4J": {
+      "type": "info-slider",
+      "blocks": {
+        "content_item_8c4Xw3": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/15.jpg",
+            "title": "Compostable pack",
+            "content": "<p>A snack wrap that looks premium and still breaks down after you’re done.</p>",
+            "link_text": "Mehr erfahren",
+            "link_url": "/"
+          }
+        },
+        "content_item_NMwiLF": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/14.jpg",
+            "title": "Vegan taste",
+            "content": "<p>Plant-based snacks that don’t taste like a compromise.</p>",
+            "link_text": "Mehr erfahren",
+            "link_url": "/"
+          }
+        },
+        "content_item_CttPcU": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/Wochenbettbox2.webp",
+            "title": "Better ingredients",
+            "content": "<p>Short, honest recipes with ingredients you can actually pronounce.</p>",
+            "link_text": "Mehr erfahren",
+            "link_url": "/"
+          }
+        },
+        "content_item_jeKyCV": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/Wochenbett-box-Hugo-frosch.webp",
+            "title": "Snack differently",
+            "content": "<p>Treats that are kinder to you and a little kinder to the planet.</p>",
+            "link_text": "Mehr erfahren",
+            "link_url": "/"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_8c4Xw3",
+        "content_item_NMwiLF",
+        "content_item_CttPcU",
+        "content_item_jeKyCV"
+      ],
+      "name": "Info slider",
+      "settings": {
+        "title": "<span>Alles auf einen Blick</span>",
+        "link_text": "",
+        "link_url": "/",
+        "background_color": "#dbaaeb",
+        "accent_color": "#C081A9",
+        "hover_color": "#E35478"
+      }
+    },
     "main_product_ingredients_6KHBRk": {
       "type": "main-product-ingredients",
       "name": "Ingredients",
@@ -1270,6 +1330,7 @@
     "hero_eNmaQw",
     "comparison_table_dT7KWy",
     "featured_product_GbQVWw",
+    "info_slider_Njmp4J",
     "main_product_ingredients_6KHBRk",
     "home_products_tJ37jh",
     "advantages_LBgPHq",
