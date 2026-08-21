@@ -1,0 +1,260 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
+      --section-background-color: {{ section.settings.background_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-accent-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-hover-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+  }
+
+  #shopify-section-{{ section.id }} .info-slider__cta-button {
+    {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
+      --section-accent-color: {{ section.settings.hover_color }};
+    {%- endif -%}
+    {%- if section.settings.accent_color != 'rgba(0,0,0,0)' and section.settings.accent_color != blank -%}
+      --section-hover-color: {{ section.settings.accent_color }};
+    {%- endif -%}
+  }
+</style>
+
+{%- assign sec_sett = section.settings -%}
+
+<section
+	class="info-slider"
+	data-section-id="{{- section.id -}}"
+	data-section-type="info-slider"
+>
+	<div class="info-slider__container">
+		{%- if sec_sett.title != blank -%}
+			<h2 class="title-bg info-slider__title">{{ sec_sett.title }}</h2>
+		{%- endif -%}
+
+		{%- if section.blocks.size > 0 -%}
+			<div class="swiper-container-wrapper container container--lg{% if section.blocks.size <= 4 %} info-slider__wrapper--no-nav{% endif %}">
+				<div class="info-slider__nav info-slider__nav--prev swiper-button-prev"></div>
+				<div class="swiper-container js-info-slider info-slider__slider opacity-0">
+					<div class="swiper-wrapper">
+						{%- for block in section.blocks limit: 10 -%}
+							{%- assign b_sett = block.settings -%}
+							{%- assign slide_image = b_sett.image -%}
+
+							<div class="swiper-slide" {{ block.shopify_attributes }}>
+								{%- if slide_image != blank -%}
+									{%- if b_sett.link_url != blank -%}
+										<a href="{{- b_sett.link_url -}}">
+									{%- endif -%}
+										<picture>
+											<source
+												srcset="{{ slide_image | image_url: width: 1364 }} 1x, {{ slide_image | image_url: width: 2728 }} 2x"
+												media="(min-width: 1920px)">
+											<source
+												srcset="{{ slide_image | image_url: width: 906 }} 1x, {{ slide_image | image_url: width: 1812 }} 2x, {{ slide_image | image_url: width: 2061 }} 3x"
+												media="(min-width: 1710px)">
+											<source
+												srcset="{{ slide_image | image_url: width: 690 }} 1x, {{ slide_image | image_url: width: 1380 }} 2x, {{ slide_image | image_url: width: 2070 }} 3x"
+												media="(min-width: 1550px)">
+											<source
+												srcset="{{ slide_image | image_url: width: 610 }} 1x, {{ slide_image | image_url: width: 1220 }} 2x, {{ slide_image | image_url: width: 1830 }} 3x"
+												media="(min-width: 1250px)">
+											<source
+												srcset="{{ slide_image | image_url: width: 458 }} 1x, {{ slide_image | image_url: width: 916 }} 2x, {{ slide_image | image_url: width: 1374 }} 3x"
+												media="(min-width: 575px)">
+											<img
+												src="{{ slide_image | image_url: width: 265 }}"
+												srcset="{{ slide_image | image_url: width: 265 }} 1x, {{ slide_image | image_url: width: 530 }} 2x, {{ slide_image | image_url: width: 795 }} 3x"
+												alt="{{ slide_image.alt | default: b_sett.title | escape }}"
+												width="{{ slide_image.width }}"
+												height="{{ slide_image.height }}"
+											>
+										</picture>
+									{%- if b_sett.link_url != blank -%}
+										</a>
+									{%- endif -%}
+								{%- else -%}
+									{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+								{%- endif -%}
+
+								{%- if b_sett.title != blank -%}
+									<h3 class="info-slider__slide-title">{{- b_sett.title -}}</h3>
+								{%- endif -%}
+
+								{%- if b_sett.content != blank -%}
+									<div class="info-slider__slide-content rte">{{ b_sett.content }}</div>
+								{%- endif -%}
+
+								{%- if b_sett.link_text != blank and b_sett.link_url != blank -%}
+									<a
+										href="{{- b_sett.link_url -}}"
+										class="button info-slider__button"
+									>
+										{{- b_sett.link_text -}}
+									</a>
+								{%- endif -%}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="info-slider__nav info-slider__nav--next swiper-button-next"></div>
+			</div>
+		{%- endif -%}
+
+		{%- if sec_sett.link_text != blank and sec_sett.link_url != blank -%}
+			<div class="info-slider__cta">
+				<a href="{{- sec_sett.link_url -}}" class="button info-slider__cta-button">{{- sec_sett.link_text -}}</a>
+			</div>
+		{%- endif -%}
+	</div>
+	<div class="base-triangular-line">
+		{%- render 'icon-triangular-line' -%}
+	</div>
+</section>
+
+
+{% schema %}
+{
+	"name": "Info slider",
+	"max_blocks": 10,
+	"settings": [
+		{
+			"type": "header",
+			"content": "Title"
+		},
+		{
+			"type": "textarea",
+			"id": "title",
+			"label": "Title",
+			"info": "Need wrap words to see background, <span><span>example</span></span>",
+			"default": "OMG, a compostable packaging that <span><span>doesn’t</span></span> <span><span>look compostable</span></span>"
+		},
+		{
+			"type": "header",
+			"content": "Button below slider"
+		},
+		{
+			"type": "text",
+			"id": "link_text",
+			"label": "Link text",
+			"default": "Jetzt kaufen"
+		},
+		{
+			"type": "url",
+			"id": "link_url",
+			"label": "Link URL"
+		},
+		{
+			"type": "header",
+			"content": "Colors"
+		},
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color",
+			"default": "#dbaaeb"
+		},
+		{
+			"type": "color",
+			"id": "accent_color",
+			"label": "Accent Color",
+			"default": "#2ac2bd"
+		},
+		{
+			"type": "color",
+			"id": "hover_color",
+			"label": "Hover Color",
+			"default": "#f3587f"
+		}
+	],
+	"blocks": [
+		{
+			"type": "content_item",
+			"name": "Slide",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title",
+					"default": "Slide title"
+				},
+				{
+					"type": "richtext",
+					"id": "content",
+					"label": "Content",
+					"default": "<p>Short supporting text for this slide.</p>"
+				},
+				{
+					"type": "text",
+					"id": "link_text",
+					"label": "Link text",
+					"default": "Jetzt kaufen"
+				},
+				{
+					"type": "url",
+					"id": "link_url",
+					"label": "Link URL"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Info slider",
+			"category": "Homepage",
+			"settings": {
+				"title": "OMG, a compostable packaging that <span><span>doesn’t</span></span> <span><span>look compostable</span></span>",
+				"link_text": "Jetzt kaufen",
+				"link_url": "/",
+				"background_color": "#dbaaeb",
+				"accent_color": "#2ac2bd",
+				"hover_color": "#f3587f"
+			},
+			"blocks": [
+				{
+					"type": "content_item",
+					"settings": {
+						"title": "Compostable pack",
+						"content": "<p>A snack wrap that looks premium and still breaks down after you’re done.</p>",
+						"link_text": "Mehr erfahren",
+						"link_url": "/"
+					}
+				},
+				{
+					"type": "content_item",
+					"settings": {
+						"title": "Vegan taste",
+						"content": "<p>Plant-based snacks that don’t taste like a compromise.</p>",
+						"link_text": "Mehr erfahren",
+						"link_url": "/"
+					}
+				},
+				{
+					"type": "content_item",
+					"settings": {
+						"title": "Better ingredients",
+						"content": "<p>Short, honest recipes with ingredients you can actually pronounce.</p>",
+						"link_text": "Mehr erfahren",
+						"link_url": "/"
+					}
+				},
+				{
+					"type": "content_item",
+					"settings": {
+						"title": "Snack differently",
+						"content": "<p>Treats that are kinder to you and a little kinder to the planet.</p>",
+						"link_text": "Mehr erfahren",
+						"link_url": "/"
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}

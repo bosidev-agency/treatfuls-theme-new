@@ -49,6 +49,7 @@ require("./sections/product-page");
 require("./sections/ingredients");
 require("./sections/home/richtext");
 require("./sections/home/products");
+require("./sections/home/info-slider");
 require("./sections/home/ticker");
 require("./sections/collections");
 require("./sections/advantages");
