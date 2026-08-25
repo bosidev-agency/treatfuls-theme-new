@@ -36,22 +36,23 @@
         "padding_bottom": 40
       }
     },
-    "image_with_text_NHKmKF": {
+    "image_with_text_BMAdzF": {
       "type": "image-with-text",
       "blocks": {
-        "image_with_text_EUwxUY": {
+        "image_with_text_ffbV6B": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/LP_Visuals_Wochenbett_Benefits3.webp",
+            "image": "shopify://shop_images/Wochenbettbox2.webp",
             "image_position": "left",
-            "title": "Kleine Pause, großer treat 💗",
-            "content": "<p>🍫 Perfekt portioniert – 2 × 20 g für die kleine Snackpause zwischendurch<br/><br/>🌴 Natürlich süß durch Datteln – ganz ohne raffinierten Zucker<br/><br/>😋 Schmeckt wie ein Cheat. Ist aber keiner. – richtig schokoladig & kompromisslos lecker<br/><br/>🌱 Gute Zutaten, kein Bullshit – bio, vegan & ohne unnötige Zusatzstoffe<br/><br/>🌾 Ballaststoffquelle – Ballaststoffe stecken natürlicherweise in Nüssen, Datteln und Vollkorn</p>",
-            "button_text": "",
-            "button_url": "shopify://collections/produkte"
+            "title": "Your gift is sorted",
+            "content": "<p>Wenig Schlaf, viel Neues - und wenn die Cravings kicken, kommt treatfuls ins Spiel: schnell zur Hand, natürlich süß durch Datteln und ein kleiner Energielieferant für zwischendurch.</p><p><br/>Dazu gibt’s Cupper Tea für die kleine Pause und eine Hugo Frosch Wärmflasche für Wärme, wenn der Körper sie gerade braucht.</p><p>Kurz gesagt: ziemlich viel Gutes in einer Box. 💌</p>",
+            "button_text": "Box verschenken 💌",
+            "button_url": "#shopify-section-template--30061088768264__featured_product_GbQVWw"
           }
         },
-        "image_with_text_XgJXRN": {
+        "image_with_text_WFGK8b": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/wochenbett3.webp",
             "image_position": "right",
@@ -61,8 +62,9 @@
             "button_url": "shopify://products/summer-crush-kopie"
           }
         },
-        "image_with_text_BjFpid": {
+        "image_with_text_cFf6ft": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Frosch_waermflasche.jpg",
             "image_position": "left",
@@ -74,17 +76,41 @@
         }
       },
       "block_order": [
-        "image_with_text_EUwxUY",
-        "image_with_text_XgJXRN",
-        "image_with_text_BjFpid"
+        "image_with_text_ffbV6B",
+        "image_with_text_WFGK8b",
+        "image_with_text_cFf6ft"
       ],
       "name": "Image with text",
       "settings": {
         "background_color": "#c081a9",
         "accent_color": "#dbaaeb",
-        "hover_color": "#24a5a1",
+        "hover_color": "#d04d75",
         "padding_top": 80,
         "padding_bottom": 40
+      }
+    },
+    "depr_rich_text_L7eMCV": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_TBJBB8": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Was der Körper im Wochenbett braucht",
+            "content": "<p>Die erste Zeit nach der Geburt ist intensiv. Der Körper erholt sich, der Hormonhaushalt reguliert sich neu, und die ganze Aufmerksamkeit liegt bei einem Neugeborenen. <br/>Wenig Schlaf, viele neue Aufgaben, der Alltag ist alles andere als ruhig. Ernährung spielt dabei eine zentrale Rolle: Der Körper profitiert von regelmäßigen Mahlzeiten, ausreichend Flüssigkeit und nährstoffreichen Lebensmitteln. Besonders Ballaststoffe, komplexe Kohlenhydrate und Fette sind Teil einer ausgewogenen Ernährung, sie tragen dazu bei, den Körper zu versorgen, wenn Ruhe oft Mangelware ist.<br/><br/>Praktisch ist auch wichtig: Im Wochenbett sind Hände voll, Zeit knapp. Schnelle, unkomplizierte Snacks für zwischendurch ermöglichen es, die Ernährung nicht ganz aus den Augen zu verlieren, ohne dass gekocht, vorbereitet oder überhaupt viel überlegt werden muss.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_TBJBB8"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#dbaaeb",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "hero_eNmaQw": {
@@ -138,6 +164,19 @@
                   },
                   "blocks": {}
                 },
+                "table_cell_CDQdBf": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "image": "shopify://shop_images/treatfuls_Berry_Slider.webp",
+                    "text": "{{ closest.product.metafields.custom.short_title.value }}",
+                    "liquid": "pro 100 g"
+                  },
+                  "blocks": {}
+                },
                 "table_cell_bq8KLa": {
                   "type": "table-cell",
                   "name": "Table Cell",
@@ -164,26 +203,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_CDQdBf": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "th",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "image": "shopify://shop_images/treatfuls_Berry_Slider.webp",
-                    "text": "{{ closest.product.metafields.custom.short_title.value }}",
-                    "liquid": "pro 100 g"
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_EdLPEn",
+                "table_cell_CDQdBf",
                 "table_cell_bq8KLa",
-                "table_cell_dPaGtF",
-                "table_cell_CDQdBf"
+                "table_cell_dPaGtF"
               ]
             },
             "table_row_FdtTwp": {
@@ -199,6 +225,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "Bio",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_JxzWU7": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -227,25 +265,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_JxzWU7": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "✅",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_aTMDDn",
+                "table_cell_JxzWU7",
                 "table_cell_qWj77V",
-                "table_cell_BVHMme",
-                "table_cell_JxzWU7"
+                "table_cell_BVHMme"
               ]
             },
             "table_row_qRweF6": {
@@ -261,6 +287,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "Vegan",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_dpiL8N": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -289,25 +327,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_dpiL8N": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "✅",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_AAjPcr",
+                "table_cell_dpiL8N",
                 "table_cell_hxF3jG",
-                "table_cell_nTLj3N",
-                "table_cell_dpiL8N"
+                "table_cell_nTLj3N"
               ]
             },
             "table_row_rjxCg9": {
@@ -340,18 +366,6 @@
                   },
                   "blocks": {}
                 },
-                "table_cell_cVqDAD": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": false,
-                    "text": "2.382 kJ / 571 kcal",
-                    "liquid": ""
-                  },
-                  "blocks": {}
-                },
                 "table_cell_d699NA": {
                   "type": "table-cell",
                   "name": "Table Cell",
@@ -363,13 +377,25 @@
                     "liquid": ""
                   },
                   "blocks": {}
+                },
+                "table_cell_cVqDAD": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "2.382 kJ / 571 kcal",
+                    "liquid": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_TzTnmn",
                 "table_cell_yDAyMi",
-                "table_cell_cVqDAD",
-                "table_cell_d699NA"
+                "table_cell_d699NA",
+                "table_cell_cVqDAD"
               ]
             },
             "table_row_egiqnF": {
@@ -385,6 +411,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "Ballaststoffe",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_TUFaPV": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "11,7 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -413,25 +451,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_TUFaPV": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "11,7 g",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_GHLpmM",
+                "table_cell_TUFaPV",
                 "table_cell_WK3B9x",
-                "table_cell_gayeYF",
-                "table_cell_TUFaPV"
+                "table_cell_gayeYF"
               ]
             },
             "table_row_ndaVMJ": {
@@ -447,6 +473,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "Kohlenhydrate",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_BXDkdE": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "47,8 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -475,25 +513,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_BXDkdE": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "47,8 g",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_8GHQzx",
+                "table_cell_BXDkdE",
                 "table_cell_KEkDjp",
-                "table_cell_6RnUHj",
-                "table_cell_BXDkdE"
+                "table_cell_6RnUHj"
               ]
             },
             "table_row_JkGcKx": {
@@ -509,6 +535,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "davon Zucker",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_wABQzt": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "22,1 g",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -537,25 +575,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_wABQzt": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "22,1 g",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_P9TewY",
+                "table_cell_wABQzt",
                 "table_cell_LCrXgC",
-                "table_cell_mY7zCQ",
-                "table_cell_wABQzt"
+                "table_cell_mY7zCQ"
               ]
             },
             "table_row_q9hQGQ": {
@@ -571,6 +597,18 @@
                     "background_color": "rgba(0,0,0,0)",
                     "sticky": false,
                     "text": "Ohne Raffinierten Zucker ?",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_PV6BxK": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "✅",
                     "liquid": ""
                   },
                   "blocks": {}
@@ -599,25 +637,13 @@
                     "liquid": ""
                   },
                   "blocks": {}
-                },
-                "table_cell_PV6BxK": {
-                  "type": "table-cell",
-                  "name": "Table Cell",
-                  "settings": {
-                    "cell_type": "td",
-                    "background_color": "rgba(0,0,0,0)",
-                    "sticky": true,
-                    "text": "✅",
-                    "liquid": ""
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "table_cell_yKteyA",
+                "table_cell_PV6BxK",
                 "table_cell_DweEEz",
-                "table_cell_Rh6dGT",
-                "table_cell_PV6BxK"
+                "table_cell_Rh6dGT"
               ]
             },
             "table_row_J8iF9r": {
@@ -702,13 +728,37 @@
       "name": "Comparison Table",
       "settings": {
         "product": "himbeer-riegel",
-        "title": "Süß snacken. Ohne den ganzen Bullshit🍫",
+        "title": "Hier kommt treatfuls ins Spiel... Süß snacken. Ohne den ganzen Bullshit🍫",
         "footer_note": "",
         "background_color": "#d04d75",
         "accent_color": "#f3587f",
         "hover_color": "#dbaaeb",
         "padding_top": 80,
         "padding_bottom": 40
+      }
+    },
+    "depr_rich_text_ANY89p": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_APjbVB": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Für volle Hände & kleine Pausen",
+            "content": "<ul><li>2 × 20 g Portionen: perfekt portioniert für zwischendurch</li><li>Sofort zur Hand: keine Vorbereitung, kein Kochen</li><li>Natürlich süß durch Datteln, wenn Cravings fürs Süße kicken</li><li>Dazu gibt’s Cupper Tea für die kleine Pause und eine Hugo Frosch Wärmflasche für Wärme, wenn der Körper sie gerade braucht.<br/><br/>Praktisch ist auch wichtig: <br/>Im Wochenbett sind Hände voll, Zeit knapp. Schnelle, unkomplizierte Snacks für zwischendurch ermöglichen es, die Ernährung nicht ganz aus den Augen zu verlieren, ohne dass du kochen, vorbereiten oder überhaupt viel überleggen musst.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_APjbVB"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#d04d75",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "featured_product_GbQVWw": {
@@ -771,6 +821,57 @@
         "hover_color": "#dbaaeb"
       }
     },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/LP_Visuals_Wochenbett_Benefits3.webp",
+            "image_position": "left",
+            "title": "Kleine Pause, großer treat 💗",
+            "content": "<p>🌴 Natürlich süß durch Datteln: ganz ohne raffinierten Zucker und perfekt, wenn zwischendurch neue Energie gefragt ist<br/><br/>🥜 Nüsse statt Schnickschnack: mit natürlich enthaltenen Fetten<br/><br/>🌱 Gute Zutaten, kein Bullshit: bio, vegan & ohne unnötige Zusatzstoffe<br/><br/>🌾 Ballaststoffquelle: Ballaststoffe stecken natürlicherweise in Nüssen und Datteln<br/><br/>🍫 Perfekt portioniert: 2 × 20 g für die kleine Snackpause zwischendurch</p>",
+            "button_text": "",
+            "button_url": "shopify://collections/produkte"
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/wochenbett3.webp",
+            "image_position": "right",
+            "title": "Eine kleine Teepause nur für dich. 🫖💗",
+            "content": "<p>🌼 Pfirsich & Kamille: mild-fruchtig für kleine Wohlfühlmomente<br/><br/>🌿 100 % natürliche Bio-Zutaten<br/><br/>🤝 Fairtrade & plastikfreie Teebeutel<br/><br/>🫖 Für die kleinen Pausen dazwischen: eine warme Tasse zum Durchatmen, wenn der neue Alltag gerade alles andere als ruhig ist<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "shopify://products/summer-crush-kopie"
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Frosch_waermflasche.jpg",
+            "image_position": "left",
+            "title": "Wärme, die einfach gut tut. 💗",
+            "content": "<p>🔥 Wohltuende Wärme: für kleine Wärmemomente im Wochenbett<br/><br/>🇩🇪 Made in Germany: hochwertig produziert & sicherheitsgeprüft<br/><br/>🌱 Über 90 % nachwachsende Rohstoffe: nachhaltiger als eine klassische Wärmflasche<br/><br/>♻️ Ressourcenschonend hergestellt: mit 50 % weniger Material und rund 60 % Energieersparnis bei der Produktion<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#d04d75",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "info_slider_Njmp4J": {
       "type": "info-slider",
       "blocks": {
@@ -781,7 +882,7 @@
             "title": "Hello, hot stuff",
             "content": "<p>Das flauschige Extra, das wir deiner treatfuls Wochenbettbox einfach obendrauf schenken.</p>",
             "link_text": "mehr zu Hugo Frosch",
-            "link_url": "https://hugo-frosch.de/"
+            "link_url": "https://hugo-frosch.de/waermflaschen/"
           }
         },
         "content_item_NMwiLF": {
@@ -799,7 +900,7 @@
           "settings": {
             "image": "shopify://shop_images/Small_Human_diaries.jpg",
             "title": "Better ingredients",
-            "content": "<p>Unsere vier treatfuls Sorten sorgen für den Snack-Vorrat</p>",
+            "content": "<p>Unsere fünf treatfuls Sorten sorgen für den Snack-Vorrat</p>",
             "link_text": "treatfuls entdecken",
             "link_url": "https://treatfuls.com/collections/produkte"
           }
@@ -809,9 +910,9 @@
           "settings": {
             "image": "shopify://shop_images/Love_note.jpg",
             "title": "From you, with love",
-            "content": "<p>Snacks, Tee, Wärmflasche & deine persönliche Love Note, alles in einer Box, fertig zum Verschenken.</p>",
-            "link_text": "Wochenbettbox verschenken",
-            "link_url": "shopify://products/wochenbettbox"
+            "content": "<p>Snacks, Tee, Wärmflasche & deine persönliche Love Note, alles in einer Box.</p>",
+            "link_text": "Box verschenken",
+            "link_url": "#shopify-section-template--30061088768264__featured_product_GbQVWw"
           }
         }
       },
@@ -829,6 +930,31 @@
         "background_color": "#dbaaeb",
         "accent_color": "#c081a9",
         "hover_color": "#e35478"
+      }
+    },
+    "depr_rich_text_E89Bmg": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_ftTb4i": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Was ist im Wochenbett wichtig?",
+            "content": "<p>Das<strong> </strong>Wochenbett bezeichnet die ersten Wochen nach der Geburt, eine intensive Zeit, in der der Körper sich erholt und sich gleichzeitig ein komplett neuer Alltag mit Baby einspielt. Ruhe, Unterstützung und möglichst wenig zusätzlicher Stress stehen jetzt ganz oben auf der Liste.</p><p>Auch die Ernährung im Wochenbett spielt eine wichtige Rolle: Regelmäßige Mahlzeiten, ausreichend Flüssigkeit und nährstoffreiche Lebensmittel versorgen den Körper mit Energie. Gerade bei wenig Schlaf und vollen Händen können unkomplizierte Snacks für zwischendurch praktisch sein. Lebensmittel mit Kohlenhydraten, Ballaststoffen und Fetten können dabei Teil einer ausgewogenen Ernährung sein.</p><p><br/>Und mindestens genauso wichtig: Hilfe annehmen. Ob Essen vorbeibringen, Haushalt übernehmen oder einfach da sein, im Wochenbett darf Unterstützung vor allem eines: den neuen Alltag ein kleines bisschen leichter machen. 💗</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_ftTb4i"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
       }
     },
     "main_product_ingredients_6KHBRk": {
@@ -903,6 +1029,7 @@
         "product_item_BqapNh",
         "product_item_p3QVKh"
       ],
+      "disabled": true,
       "settings": {
         "title": "This is what <span>guiltfree</span> looks like",
         "title-second": "powered by  <span>plants loved</span> by everyone",
@@ -1327,7 +1454,7 @@
       "type": "compare-product-reviews",
       "name": "Product reviews",
       "settings": {
-        "title": "Das sagen unsere treatfuls Lover. 💗",
+        "title": "Das sagen unsere treatfuls Lover 💗",
         "underline_word": "",
         "text-box": "Title",
         "link": "",
@@ -1338,11 +1465,15 @@
   "order": [
     "main",
     "main_page_xfzKQa",
-    "image_with_text_NHKmKF",
+    "image_with_text_BMAdzF",
+    "depr_rich_text_L7eMCV",
     "hero_eNmaQw",
     "comparison_table_dT7KWy",
+    "depr_rich_text_ANY89p",
     "featured_product_GbQVWw",
+    "image_with_text_NHKmKF",
     "info_slider_Njmp4J",
+    "depr_rich_text_E89Bmg",
     "main_product_ingredients_6KHBRk",
     "home_products_tJ37jh",
     "advantages_LBgPHq",
