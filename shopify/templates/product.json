@@ -20,6 +20,14 @@
           "type": "description",
           "settings": {}
         },
+        "variant_picker_kT8n2P": {
+          "type": "variant_picker",
+          "settings": {
+            "heading": "",
+            "show_selected_label": true,
+            "show_titles": false
+          }
+        },
         "buy_button_PCq8qG": {
           "type": "buy_button",
           "settings": {
@@ -31,6 +39,7 @@
       "block_order": [
         "title_yc9f3N",
         "description_mMCf3t",
+        "variant_picker_kT8n2P",
         "buy_button_PCq8qG"
       ],
       "settings": {

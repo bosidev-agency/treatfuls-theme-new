@@ -172,6 +172,34 @@
       "settings": []
     },
     {
+      "type": "variant_picker",
+      "name": "Variant picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Shows connected products from the custom.product_connection metafield as image options. Hidden when the metafield is empty or has fewer than two products."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_selected_label",
+          "label": "Show selected product name",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_titles",
+          "label": "Show title under each image",
+          "default": false
+        }
+      ]
+    },
+    {
       "type": "price",
       "name": "Price",
       "limit": 1,

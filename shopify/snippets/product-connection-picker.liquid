@@ -1,0 +1,236 @@
+{% doc %}
+Renders connected products from the custom.product_connection metaobject as an image picker.
+Each option links to that product's page.
+
+@param {product} product - The current product
+@param {object} block - The section block
+@example
+{% render 'product-connection-picker', product: product, block: block %}
+{% enddoc %}
+
+{% liquid
+  assign connection = product.metafields.custom.product_connection.value
+  assign connected_products = connection.products.value
+  assign visible_count = 0
+
+  if connected_products != blank
+    for connected_product in connected_products
+      if connected_product != blank
+        assign visible_count = visible_count | plus: 1
+      endif
+    endfor
+  endif
+%}
+
+{%- if visible_count > 1 -%}
+  {%- liquid
+    if product.metafields.custom.short_title != blank
+      assign current_title = product.metafields.custom.short_title
+    else
+      assign current_title = product.title
+    endif
+
+    if block.settings.heading != blank
+      assign picker_label = block.settings.heading
+    else
+      assign picker_label = 'products.product.variant_picker' | t
+    endif
+  -%}
+
+  <div
+    class="product-connection-picker"
+    role="group"
+    aria-label="{{ picker_label | escape }}"
+    {{ block.shopify_attributes }}
+  >
+    {%- if block.settings.heading != blank or block.settings.show_selected_label -%}
+      <div class="product-connection-picker__header">
+        {%- if block.settings.heading != blank -%}
+          <span class="product-connection-picker__heading">{{ block.settings.heading }}</span>
+        {%- endif -%}
+        {%- if block.settings.show_selected_label -%}
+          <span class="product-connection-picker__current">{{ current_title }}</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <ul class="product-connection-picker__list">
+      {%- for connected_product in connected_products -%}
+        {%- if connected_product != blank -%}
+          {%- liquid
+            if connected_product.metafields.custom.short_title != blank
+              assign option_title = connected_product.metafields.custom.short_title
+            else
+              assign option_title = connected_product.title
+            endif
+
+            assign is_current = false
+            if connected_product.id == product.id
+              assign is_current = true
+            endif
+
+            if is_current
+              assign image_loading = 'eager'
+            else
+              assign image_loading = 'lazy'
+            endif
+          -%}
+
+          <li class="product-connection-picker__item">
+            {%- if is_current -%}
+              <span
+                class="product-connection-picker__option product-connection-picker__option--selected"
+                aria-current="page"
+              >
+                {%- if connected_product.featured_image != blank -%}
+                  {{
+                    connected_product.featured_image
+                    | image_url: width: 160
+                    | image_tag:
+                      alt: option_title,
+                      class: 'product-connection-picker__image',
+                      loading: image_loading,
+                      widths: '80, 160, 240'
+                  }}
+                {%- else -%}
+                  <span class="product-connection-picker__placeholder">{{ option_title | truncate: 1, '' }}</span>
+                {%- endif -%}
+                {%- if block.settings.show_titles -%}
+                  <span class="product-connection-picker__title">{{ option_title }}</span>
+                {%- endif -%}
+              </span>
+            {%- else -%}
+              <a
+                class="product-connection-picker__option"
+                href="{{ connected_product.url }}"
+                aria-label="{{ option_title | escape }}"
+              >
+                {%- if connected_product.featured_image != blank -%}
+                  {{
+                    connected_product.featured_image
+                    | image_url: width: 160
+                    | image_tag:
+                      alt: option_title,
+                      class: 'product-connection-picker__image',
+                      loading: image_loading,
+                      widths: '80, 160, 240'
+                  }}
+                {%- else -%}
+                  <span class="product-connection-picker__placeholder">{{ option_title | truncate: 1, '' }}</span>
+                {%- endif -%}
+                {%- if block.settings.show_titles -%}
+                  <span class="product-connection-picker__title">{{ option_title }}</span>
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .product-connection-picker {
+    margin-bottom: 20px;
+  }
+
+  .product-connection-picker__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  .product-connection-picker__heading {
+    font-weight: 700;
+  }
+
+  .product-connection-picker__current {
+    opacity: 0.9;
+  }
+
+  .product-connection-picker__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .product-connection-picker__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 72px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .product-connection-picker__option--selected {
+    cursor: default;
+  }
+
+  .product-connection-picker__image,
+  .product-connection-picker__placeholder {
+    box-sizing: border-box;
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border: 2px solid rgb(255 255 255 / 35%);
+    border-radius: var(--border-radius);
+    background-color: rgb(255 255 255 / 12%);
+    transition: border-color 0.2s ease;
+  }
+
+  .product-connection-picker__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .product-connection-picker__option:hover .product-connection-picker__image,
+  .product-connection-picker__option:hover .product-connection-picker__placeholder,
+  .product-connection-picker__option--selected .product-connection-picker__image,
+  .product-connection-picker__option--selected .product-connection-picker__placeholder {
+    border-color: #ffffff;
+  }
+
+  .product-connection-picker__option:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+    border-radius: var(--border-radius);
+  }
+
+  .product-connection-picker__title {
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .product-connection-picker {
+      margin-bottom: 10px;
+    }
+
+    .product-connection-picker__option,
+    .product-connection-picker__image,
+    .product-connection-picker__placeholder {
+      width: 56px;
+    }
+
+    .product-connection-picker__image,
+    .product-connection-picker__placeholder {
+      height: 56px;
+    }
+  }
+{% endstylesheet %}

@@ -72,6 +72,9 @@
                   <div class="product-info__description text">{{ product.description }}</div>
                 {%- endif -%}
 
+              {%- when 'variant_picker' -%}
+                {%- render 'product-connection-picker', product: product, block: block -%}
+
               {%- when 'buy_button' -%}
                 <div class="product-form__buttons {% if section.settings.sticky_button %}sticky-add-to-cart{% endif %}">
                   {% unless product.has_only_default_variant %}
