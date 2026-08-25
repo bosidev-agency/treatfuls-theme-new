@@ -65,6 +65,22 @@ class BundleBuilder extends HTMLElement {
     return this.dataset.goodieThreshold;
   }
 
+  get parentVariantGid() {
+    return this.dataset.parentId;
+  }
+
+  get parentProductVariantId() {
+    return this.dataset.parentProductId;
+  }
+
+  boxDataProperty(itemSize) {
+    return JSON.stringify({
+      uniqueId: this.uniqueId,
+      itemSize,
+      parentId: this.parentVariantGid,
+    });
+  }
+
   connectedCallback() {
     this.submitForm = this.querySelector("form[action='/cart/add']");
     this.submitButton = this.querySelector("button[type='submit']");
@@ -93,8 +109,7 @@ class BundleBuilder extends HTMLElement {
     this.combinedQuantity = 0;
     this.lastSelectedSize = null;
     this.formData = null;
-    this.bundleId = null;
-    this.parentItem = null;
+    this.uniqueId = null;
     this.poolFilters = Array.from(
       this.querySelectorAll("input[name='pool-filter']"),
     );
@@ -459,54 +474,40 @@ class BundleBuilder extends HTMLElement {
   handleSubmitForm(event) {
     event.preventDefault();
     const itemEls = this.summaryItems.querySelectorAll(".bundle-builder__item");
-    this.bundleId = new Date().getTime();
-    const _bundleSize = Array.from(itemEls).reduce(
-      (acc, item) =>
-        acc +
-        (parseInt(item.querySelector('input[name*="quantity"]')?.value, 10) ||
-          1),
-      0,
-    );
-    this.parentItem = this.submitForm.querySelector('input[name="id"]');
-    const parentQuantity = this.submitForm.querySelector(
-      'input[name="quantity"]',
-    );
-    let items = [];
-    if (this.parentItem) {
+    this.uniqueId = String(Date.now());
+
+    const items = [];
+
+    if (this.parentProductVariantId) {
       items.push({
-        id: this.parentItem.value,
-        quantity: parentQuantity.value,
+        id: this.parentProductVariantId,
+        quantity: 1,
         properties: {
-          _isBundleParent: true,
-          _bundleName: this.bundleName,
-          _bundleId: this.bundleId,
+          _boxData: this.boxDataProperty(1),
         },
       });
     }
-    items = items
-      .concat(
-        Array.from(itemEls).map((el) => {
-          const idInput = el.querySelector('input[name*="id"]');
-          const quantityInput = el.querySelector('input[name*="quantity"]');
 
-          return {
-            id: idInput ? idInput.value : null,
-            quantity: quantityInput
-              ? parseInt(quantityInput.value, 10) || 1
-              : 1,
-            parent_id: this.parentItem ? this.parentItem.value : null,
-            properties: {
-              _bundleName: this.bundleName,
-              _bundleId: this.bundleId,
-              _bundleSize: _bundleSize,
-            },
-          };
-        }),
-      )
-      .filter((item) => item.id);
+    Array.from(itemEls).forEach((el) => {
+      const idInput = el.querySelector('input[name*="id"]');
+      const quantityInput = el.querySelector('input[name*="quantity"]');
+      const quantity = quantityInput
+        ? parseInt(quantityInput.value, 10) || 1
+        : 1;
+
+      if (!idInput?.value) return;
+
+      items.push({
+        id: idInput.value,
+        quantity,
+        properties: {
+          _boxData: this.boxDataProperty(quantity),
+        },
+      });
+    });
 
     this.formData = {
-      items: items,
+      items,
       sections: "main-cart-mini,cart-count",
     };
 
@@ -523,10 +524,8 @@ class BundleBuilder extends HTMLElement {
     this.formData.items.push({
       id: goodieId,
       quantity: 1,
-      parent_id: this.parentItem ? this.parentItem.value : null,
       properties: {
-        _bundleName: this.bundleName,
-        _bundleId: this.bundleId,
+        _boxData: this.boxDataProperty(1),
       },
     });
 
