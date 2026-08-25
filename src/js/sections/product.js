@@ -326,33 +326,37 @@ register("product", {
 		if (slider && sliderThumbnail) {
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
 				slidesPerView: slidesPerView,
-        spaceBetween: 10,
-        direction: "horizontal",
-
+				spaceBetween: 10,
+				direction: "horizontal",
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				watchSlidesProgress: true,
+				slideToClickedSlide: true,
+				watchOverflow: true,
 				breakpoints: {
 					300: {
-            direction: "horizontal",
-            slidesPerView: slidesPerViewMobile,
-            spaceBetween: 5,
+						direction: "horizontal",
+						slidesPerView: slidesPerViewMobile,
+						spaceBetween: 5
 					},
-          576: {
-            direction: "horizontal",
-            slidesPerView: slidesPerViewTablet,
-            spaceBetween: 5,
+					576: {
+						direction: "horizontal",
+						slidesPerView: slidesPerViewTablet,
+						spaceBetween: 5
 					},
 					992: {
 						direction: "vertical",
-            slidesPerView: slidesPerView,
-            spaceBetween: 15,
+						slidesPerView: slidesPerView,
+						spaceBetween: 15
 					},
-          1250: {
-            direction: "vertical",
-            slidesPerView: slidesPerView,
-            spaceBetween: 20,
-          },
-          1920: {
-            direction: "vertical",
-						spaceBetween: 20,
+					1250: {
+						direction: "vertical",
+						slidesPerView: slidesPerView,
+						spaceBetween: 20
+					},
+					1920: {
+						direction: "vertical",
+						spaceBetween: 20
 					}
 				}
 			});
@@ -365,11 +369,7 @@ register("product", {
 			});
 
 			this.slider.on("slideChangeTransitionStart", () => {
-				this.sliderThumbnail.slideTo(this.slider.activeIndex);
-			});
-
-			this.sliderThumbnail.on("transitionStart", () => {
-				this.slider.slideTo(this.sliderThumbnail.activeIndex);
+				this.sliderThumbnail.slideTo(this.slider.activeIndex, undefined, false);
 			});
 		}
 	},

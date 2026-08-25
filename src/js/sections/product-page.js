@@ -28,7 +28,10 @@ const constants = {
 	OPACITY_CLASS: "opacity-0",
 	VISIBILITY_HIDDEN: "visibility-hidden",
 	QUANTITY_INCREMENT: "increment",
-	QUANTITY_DECREMENT: "decrement"
+	QUANTITY_DECREMENT: "decrement",
+	THUMBNAIL_SIZE: 64,
+	THUMBNAIL_GAP: 10,
+	THUMBNAIL_MOBILE_MAX: 991
 };
 
 const selectors = {
@@ -162,6 +165,11 @@ register("product-page", {
 		this.container
 			.querySelector(selectors.quantityInput)
 			.removeEventListener("keyup", this.quantityKeyupEvents);
+
+		if (this.onThumbnailsResize) {
+			window.removeEventListener("resize", this.onThumbnailsResize);
+			this.onThumbnailsResize = null;
+		}
 
 		this.productForm.destroy();
 		this.destroySliders();
@@ -338,6 +346,33 @@ register("product-page", {
 		}
 	},
 
+	fitThumbnailViewport(sliderThumbnail, slider) {
+		if (window.innerWidth > constants.THUMBNAIL_MOBILE_MAX) {
+			sliderThumbnail.style.width = "";
+			return;
+		}
+
+		const gap = constants.THUMBNAIL_GAP;
+		const size = constants.THUMBNAIL_SIZE;
+		const wrapper = sliderThumbnail.parentElement;
+		const columnWidth = wrapper ? wrapper.clientWidth : 0;
+		const imageWidth = slider ? slider.clientWidth : 0;
+		const available =
+			imageWidth > 0 && imageWidth <= columnWidth
+				? imageWidth
+				: columnWidth * 0.8;
+		const count =
+			Number(sliderThumbnail.dataset.slideLength) ||
+			sliderThumbnail.querySelectorAll(".swiper-slide").length;
+		const maxVisible = Math.max(
+			1,
+			Math.floor((available + gap) / (size + gap))
+		);
+		const visible = Math.min(count, maxVisible);
+
+		sliderThumbnail.style.width = `${visible * (size + gap) - gap}px`;
+	},
+
 	initSliders() {
 		const slider = this.container.querySelector(selectors.productGallery);
 		const sliderThumbnail = this.container.querySelector(
@@ -345,19 +380,32 @@ register("product-page", {
 		);
 
 		if (slider && sliderThumbnail) {
+			this.fitThumbnailViewport(sliderThumbnail, slider);
+
 			this.sliderThumbnail = new Swiper(sliderThumbnail, {
-				slidesPerView: 'auto',
+				slidesPerView: "auto",
+				spaceBetween: constants.THUMBNAIL_GAP,
 				direction: "vertical",
-        spaceBetween: 10,
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				watchSlidesProgress: true,
+				slideToClickedSlide: true,
+				watchOverflow: true,
 				breakpoints: {
 					300: {
 						direction: "horizontal",
+						centeredSlides: true,
+						centeredSlidesBounds: true
 					},
 					576: {
 						direction: "horizontal",
+						centeredSlides: true,
+						centeredSlidesBounds: true
 					},
 					992: {
 						direction: "vertical",
+						centeredSlides: true,
+						centeredSlidesBounds: true
 					}
 				}
 			});
@@ -370,12 +418,24 @@ register("product-page", {
 			});
 
 			this.slider.on("slideChangeTransitionStart", () => {
-				this.sliderThumbnail.slideTo(this.slider.activeIndex);
+				this.sliderThumbnail.slideTo(this.slider.activeIndex, undefined, false);
 			});
 
-			this.sliderThumbnail.on("transitionStart", () => {
-				this.slider.slideTo(this.sliderThumbnail.activeIndex);
-			});
+			this.onThumbnailsResize = () => {
+				this.fitThumbnailViewport(sliderThumbnail, slider);
+
+				if (this.sliderThumbnail) {
+					this.sliderThumbnail.update();
+					this.sliderThumbnail.slideTo(
+						this.slider ? this.slider.activeIndex : 0,
+						0,
+						false
+					);
+				}
+			};
+
+			window.addEventListener("resize", this.onThumbnailsResize);
+			requestAnimationFrame(this.onThumbnailsResize);
 		}
 	},
 
