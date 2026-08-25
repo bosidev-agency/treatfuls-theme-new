@@ -81,6 +81,14 @@ class BundleBuilder extends HTMLElement {
     });
   }
 
+  boxLineProperties(itemSize) {
+    return {
+      _boxData: this.boxDataProperty(itemSize),
+      _setId: this.uniqueId,
+      _groupQuantity: String(itemSize),
+    };
+  }
+
   connectedCallback() {
     this.submitForm = this.querySelector("form[action='/cart/add']");
     this.submitButton = this.querySelector("button[type='submit']");
@@ -482,9 +490,7 @@ class BundleBuilder extends HTMLElement {
       items.push({
         id: this.parentProductVariantId,
         quantity: 1,
-        properties: {
-          _boxData: this.boxDataProperty(1),
-        },
+        properties: this.boxLineProperties(1),
       });
     }
 
@@ -500,9 +506,7 @@ class BundleBuilder extends HTMLElement {
       items.push({
         id: idInput.value,
         quantity,
-        properties: {
-          _boxData: this.boxDataProperty(quantity),
-        },
+        properties: this.boxLineProperties(quantity),
       });
     });
 
@@ -524,9 +528,7 @@ class BundleBuilder extends HTMLElement {
     this.formData.items.push({
       id: goodieId,
       quantity: 1,
-      properties: {
-        _boxData: this.boxDataProperty(1),
-      },
+      properties: this.boxLineProperties(1),
     });
 
     this.handleAddToCart();
