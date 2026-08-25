@@ -1,5 +1,5 @@
 {% doc %}
-Renders connected products from the custom.product_connection metaobject as an image picker.
+Renders connected products from the custom.produktverknupfung product list metafield as an image picker.
 Each option links to that product's page.
 
 @param {product} product - The current product
@@ -9,8 +9,7 @@ Each option links to that product's page.
 {% enddoc %}
 
 {% liquid
-  assign connection = product.metafields.custom.product_connection.value
-  assign connected_products = connection.products.value
+  assign connected_products = product.metafields.custom.produktverknupfung.value
   assign visible_count = 0
 
   if connected_products != blank
@@ -30,10 +29,17 @@ Each option links to that product's page.
       assign current_title = product.title
     endif
 
-    if block.settings.heading != blank
+    if block.settings.option_name != blank
+      assign picker_label = block.settings.option_name
+    elsif block.settings.heading != blank
       assign picker_label = block.settings.heading
     else
       assign picker_label = 'products.product.variant_picker' | t
+    endif
+
+    assign show_current = false
+    if block.settings.show_selected_label or block.settings.option_name != blank
+      assign show_current = true
     endif
   -%}
 
@@ -43,13 +49,18 @@ Each option links to that product's page.
     aria-label="{{ picker_label | escape }}"
     {{ block.shopify_attributes }}
   >
-    {%- if block.settings.heading != blank or block.settings.show_selected_label -%}
+    {%- if block.settings.heading != blank or show_current -%}
       <div class="product-connection-picker__header">
         {%- if block.settings.heading != blank -%}
           <span class="product-connection-picker__heading">{{ block.settings.heading }}</span>
         {%- endif -%}
-        {%- if block.settings.show_selected_label -%}
-          <span class="product-connection-picker__current">{{ current_title }}</span>
+        {%- if show_current -%}
+          <span class="product-connection-picker__current">
+            {%- if block.settings.option_name != blank -%}
+              <span class="product-connection-picker__option-name">{{ block.settings.option_name }}:</span>
+            {%- endif -%}
+            {{ current_title }}
+          </span>
         {%- endif -%}
       </div>
     {%- endif -%}
@@ -146,6 +157,11 @@ Each option links to that product's page.
 
   .product-connection-picker__heading {
     font-weight: 700;
+  }
+
+  .product-connection-picker__option-name {
+    font-weight: 700;
+    margin-inline-end: 0.3em;
   }
 
   .product-connection-picker__current {
