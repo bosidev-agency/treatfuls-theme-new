@@ -1,10 +1,5 @@
 import { register } from "@shopify/theme-sections";
 import Swiper from "swiper";
-import { debounce } from "../utils/helpers";
-
-const constants = {
-	MOBILE_BREAKPOINT: 767
-};
 
 const selectors = {
 	advantagesSlider: "[data-advantages-slider]"
@@ -12,34 +7,46 @@ const selectors = {
 
 register("advantages", {
 	slider: null,
-	onResizeGallery: null,
+	mediaQuery: null,
+	onMediaChange: null,
 	onLoad() {
 		this.init();
 	},
 	onUnload() {
-		window.removeEventListener("resize", this.onResizeGallery);
-		if (this.slider) {
-			this.slider.destroy();
+		if (this.mediaQuery && this.onMediaChange) {
+			this.mediaQuery.removeEventListener("change", this.onMediaChange);
 		}
+		this.destroySlider();
 	},
 	init() {
-		this.onResizeGallery = debounce(this.handleCallGallery, 200).bind(this);
-		window.addEventListener("resize", this.onResizeGallery);
-		this.renderSlider();
+		this.mediaQuery = window.matchMedia("(max-width: 767px)");
+		this.onMediaChange = this.handleMediaChange.bind(this);
+		this.mediaQuery.addEventListener("change", this.onMediaChange);
+		this.handleMediaChange(this.mediaQuery);
 	},
 
 	destroySlider() {
 		if (this.slider && typeof this.slider.destroy === "function") {
-			this.slider.destroy();
+			this.slider.destroy(true, true);
 			this.slider = null;
 		}
 	},
 
-	initSlider(selector) {
-		this.slider = new Swiper(selector, {
+	initSlider() {
+		if (this.slider) {
+			return;
+		}
+
+		const sliderEl = this.container.querySelector(selectors.advantagesSlider);
+
+		if (!sliderEl) {
+			return;
+		}
+
+		this.slider = new Swiper(sliderEl, {
 			loop: true,
 			slidesPerView: "auto",
-      centeredSlides: true,
+			centeredSlides: true,
 			breakpoints: {
 				300: {
 					slidesPerView: 2.2
@@ -49,24 +56,16 @@ register("advantages", {
 				},
 				500: {
 					slidesPerView: 3.5
-				},
-				768: {
-					slidesPerView: 8
 				}
 			}
 		});
 	},
 
-	renderSlider() {
-		if (window.innerWidth <= constants.MOBILE_BREAKPOINT && !this.slider) {
-			setTimeout(() => {
-				this.initSlider(selectors.advantagesSlider);
-			}, 0);
+	handleMediaChange(e) {
+		if (e.matches) {
+			this.initSlider();
+		} else {
+			this.destroySlider();
 		}
-	},
-
-	handleCallGallery() {
-		this.destroySlider();
-		this.renderSlider();
 	}
 });
