@@ -12,7 +12,11 @@
   }
 </style>
 
-{% assign bundle_config = product.metafields.custom.bundle_config.value %}
+{% liquid
+  assign bundle_config = product.metafields.custom.bundle_config.value
+  assign config_parent = bundle_config.parent_product.value
+  assign parent_product_variant = config_parent.variants.first | default: config_parent
+%}
 
 <section
   class="bundle-builder"
@@ -24,6 +28,8 @@
       <bundle-builder
         class="bundle-builder__inner"
         data-bundle-name="{{ bundle_config.name.value }}"
+        data-parent-id="gid://shopify/ProductVariant/{{ product.variants.first.id }}"
+        data-parent-product-id="{{ parent_product_variant.id }}"
         {% if bundle_config.goodie_threshold.value %}
           data-goodie-threshold="{{ bundle_config.goodie_threshold.value }}"
         {% endif %}
@@ -257,7 +263,7 @@
             ></span>
           </div>
           {% form 'product', product %}
-            <input type="hidden" name="id" value="{{ bundle_config.parent_product.value.id }}">
+            <input type="hidden" name="id" value="{{ parent_product_variant.id }}">
             <input type="hidden" name="quantity" value="1">
 
             <div class="bundle-builder__summary-items"></div>

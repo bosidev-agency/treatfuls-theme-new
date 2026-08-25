@@ -8,12 +8,21 @@
 	}
 
 	@media #{$no-m-xl} {
-		.swiper-wrapper {
-			flex-wrap: wrap;
+		.swiper:not(.swiper-initialized) {
+			overflow: visible;
 		}
 
-		.advantages__slide {
+		.swiper:not(.swiper-initialized) .swiper-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			transform: none;
+			width: auto;
+		}
+
+		.swiper:not(.swiper-initialized) .advantages__slide {
 			width: 25%;
+			margin: 0;
+			transform: none;
 		}
 	}
 

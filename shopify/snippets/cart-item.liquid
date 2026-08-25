@@ -10,20 +10,14 @@
     {% endunless %}
     class="cart-product__image-wrap"
   >
-    <picture>
-      <source
-        srcset="{{ item.image.src | img_url: '190x190' }}"
-        media="(min-width: 2560px)"
-      >
-      <source
-        srcset="{{ item.image.src | img_url: '150x150' }}"
-        media="(min-width: 1920px)"
-      >
-      <img
-        src="{{ item.image.src | img_url: '120x120' }}"
-        alt="{{ item.image.alt }}"
-      >
-    </picture>
+    {{
+      item.image
+      | image_url: width: 190
+      | image_tag:
+        widths: '120, 150, 190',
+        sizes: '(min-width: 2560px) 190px, (min-width: 1920px) 150px, 120px',
+        alt: item.image.alt
+    }}
   </a>
   <div class="cart-product__info">
     <div class="cart-product__heading">
@@ -117,7 +111,7 @@
       {%- endunless -%}
     </div>
 
-    {% if item.properties._isBundleParent %}
+    {% if item.item_components.size > 0 or item.properties._isBundleParent %}
       <accordion-item class="accordion__item js-accordion__item">
         <header class="accordion__header js-accordion__header accordion__item--small">
           <span class="accordion__title">Boxinhalt</span>
@@ -125,18 +119,35 @@
         </header>
         <div class="accordion__body">
           <div class="accordion__dsc">
-            {% for subitem in cart.items %}
-              {% if subitem.parent_relationship.parent.properties._bundleId
-                and item.properties._bundleId
-                and subitem.parent_relationship.parent.properties._bundleId == item.properties._bundleId
-                and subitem != item
-              %}
+            {% if item.item_components.size > 0 %}
+              {% for component in item.item_components %}
                 <div class="mini-cart__sub-item">
-                  {{ subitem.product.featured_image | image_url: width: 50 | image_tag }}
-                  <span class="number-icon">{{ subitem.quantity }}</span>
+                  {{
+                    component.product.featured_image
+                    | image_url: width: 150
+                    | image_tag: width: 50, height: 50, widths: '50, 100, 150', sizes: '50px'
+                  }}
+                  <span class="number-icon">{{ component.quantity }}</span>
                 </div>
-              {% endif %}
-            {% endfor %}
+              {% endfor %}
+            {% else %}
+              {% for subitem in cart.items %}
+                {% if subitem.parent_relationship.parent.properties._bundleId
+                  and item.properties._bundleId
+                  and subitem.parent_relationship.parent.properties._bundleId == item.properties._bundleId
+                  and subitem != item
+                %}
+                  <div class="mini-cart__sub-item">
+                    {{
+                      subitem.product.featured_image
+                      | image_url: width: 150
+                      | image_tag: width: 50, height: 50, widths: '50, 100, 150', sizes: '50px'
+                    }}
+                    <span class="number-icon">{{ subitem.quantity }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
           </div>
         </div>
       </accordion-item>

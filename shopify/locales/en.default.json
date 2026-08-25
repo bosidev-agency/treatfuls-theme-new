@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "accessibility": {
@@ -35,7 +44,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
+      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}",
       "password_link": "Enter using password"
     },
@@ -87,7 +96,7 @@
       "method": "Payment methods"
     },
     "country": {
-      "dropdown_label": "Country\/region"
+      "dropdown_label": "Country/region"
     },
     "language": {
       "dropdown_label": "Language"
@@ -103,7 +112,7 @@
       "pause_slideshow": "Pause slideshow",
       "rotate_slideshow": "Play slideshow",
       "load_slide": "Load slide {{ slide_number }}",
-      "navigation_instructions": "Use left\/right arrows to navigate the slideshow or swipe left\/right if using a mobile device"
+      "navigation_instructions": "Use left/right arrows to navigate the slideshow or swipe left/right if using a mobile device"
     },
     "featured_product": {
       "title": "Featured product",
@@ -114,7 +123,7 @@
     "map": {
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
       "auth_error_html": "There was a problem authenticating your Google Maps account.",
       "section_heading": "Location"
     },
@@ -167,14 +176,14 @@
     "general": {
       "title": "Your cart",
       "note": "Add a note to your order",
-      "removed_item_html": "Removed <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> from your cart.",
+      "removed_item_html": "Removed <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> from your cart.",
       "remove": "Remove",
       "subtotal": "Subtotal",
       "savings": "You're saving",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "update": "Update",
       "checkout": "Check out",
       "empty": "Your cart is currently empty.",
@@ -184,7 +193,10 @@
       "cart_subtotal": "Subtotal",
       "mini_cart_item": "Item",
       "mini_cart_empty_title": "Your Cart is Empty",
-      "mini_cart_empty_subtitle": "You’re missing out is all we’re saying."
+      "mini_cart_empty_subtitle": "You’re missing out is all we’re saying.",
+      "free_shipping_amount": "Kostenloser Versand ab einem Warenkorb von {{ free_shipping_amount }}",
+      "free_shipping_html": "🎉     Dein Versand ist <strong>kostenlos!</strong>",
+      "free_shipping_remaining_html": "🚚     Nur noch <strong>{{ remaining_amount }}</strong> bis zum <strong>kostenlosen Versand</strong>"
     },
     "goodie": {
       "goodie_amount": "Free Goodie from {{ threshold }}",
@@ -237,7 +249,7 @@
       "all_tags": "All products"
     },
     "product_card": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "In den Warenkorb",
       "configure_bundle": "Configure bundle",
       "preorder": "Preorder now",
       "sold_out": "coming soon",
@@ -289,9 +301,9 @@
       "address1": "Address",
       "address2": "Apartment, suite, etc.",
       "city": "City",
-      "country": "Country\/Region",
+      "country": "Country/Region",
       "province": "Province",
-      "zip": "Postal\/Zip Code",
+      "zip": "Postal/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -415,13 +427,13 @@
       "from_lowest_price_html": "from {{ lowest_price }}",
       "sale_price": "Sale price",
       "quantity": "Quantity",
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "In den Warenkorb",
       "loader_label": "Adding product to your cart",
       "back_to_collection": "Back to",
       "vendor": "Vendor",
       "quantity_minimum_message": "Quantity must be 1 or more",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "unit_price_label": "Unit price",
       "view_cart": "View cart",
       "view_in_space": "View in your space",
@@ -429,15 +441,15 @@
       "ingredients": "Ingredients",
       "nutrition_table": "Nährwerttabelle",
       "nutrition_grams": "100gr",
-      "nutrition_portion_html": "{{ weight }}g <br><span>(Die Packung enthält 2 Portionen.<br> 1 Portion = {{ weight }} g)<\/span>",
-      "energy": "Energie\/Energy value",
-      "fat": "Fett\/Fat",
-      "sat_fat": "- davon gesättigte Fettsäuren \/ Saturates",
-      "carbs": "Kohlenhydrate\/Carbohydrate",
-      "sugar": "- davon Zucker \/ Sugar",
-      "fibre": "Ballaststoffe \/ Fibre",
-      "protein": "Eiweiß \/ Protein",
-      "salt": "Salz \/ Salt",
+      "nutrition_portion_html": "{{ weight }}g <br><span>(Die Packung enthält 2 Portionen.<br> 1 Portion = {{ weight }} g)</span>",
+      "energy": "Energie/Energy value",
+      "fat": "Fett/Fat",
+      "sat_fat": "- davon gesättigte Fettsäuren / Saturates",
+      "carbs": "Kohlenhydrate/Carbohydrate",
+      "sugar": "- davon Zucker / Sugar",
+      "fibre": "Ballaststoffe / Fibre",
+      "protein": "Eiweiß / Protein",
+      "salt": "Salz / Salt",
       "view_product": "View product",
       "variant_picker": "Varieties",
       "information": "Information",
@@ -458,8 +470,8 @@
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
       "pick_up_currently_unavailable": "Pickup currently unavailable",
-      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>"
     }
   },
   "gift_cards": {
