@@ -1,0 +1,60 @@
+{% stylesheet %}
+  .additional-question .input-choice {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .additional-question .input-choice input[type="checkbox"],
+  .additional-question .input-choice input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(var(--color-text), 0.5);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .additional-question .input-choice input:checked {
+    background: var(--section-accent-color);
+  }
+
+  .raffle-form .additional-question .input-choice label {
+    flex-direction: row;
+    width: auto;
+  }
+{% endstylesheet %}
+
+<div class="input-choice">
+  <input
+    type="checkbox"
+    data-raffle-answer
+    value="{{ block.settings.label }}"
+    id="raffle-{{ block.id }}"
+  >
+  <label for="raffle-{{ block.id }}" class="text input__label">{{ block.settings.label }}</label>
+</div>
+
+{% schema %}
+{
+  "name": "Answer",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Answer"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Answer"
+    }
+  ]
+}
+{% endschema %}

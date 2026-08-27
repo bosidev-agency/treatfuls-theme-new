@@ -1,0 +1,121 @@
+{% liquid
+  assign field_name = block.settings.field_name | default: block.settings.title
+  assign input_type = block.settings.input_type
+%}
+
+<div
+  class="additional-question"
+  id="raffle-q-{{ block.id }}"
+  data-raffle-field-name="{{ field_name }}"
+  data-raffle-input-type="{{ input_type }}"
+  {% if block.settings.required %}
+    data-require-selection
+  {% endif %}
+>
+  {% if block.settings.title != blank %}
+    <h3 class="additional-question__title">
+      {{ block.settings.title }}
+      {% if block.settings.required %} *{% endif %}
+    </h3>
+  {% endif %}
+  {% if block.settings.required %}
+    <p class="text hidden" data-selection-group-error role="alert">
+      {{ block.settings.error_message }}
+    </p>
+  {% endif %}
+  <div class="form-group">
+    {% content_for 'blocks' %}
+    {% if block.settings.allow_other %}
+      <div class="form-group">
+        <label class="label">
+          <input
+            type="text"
+            name="{{ field_name }}"
+            id="raffle-other-{{ block.id }}"
+            class="input input--blue"
+            placeholder="{{ block.settings.other_placeholder }}"
+            autocomplete="off"
+            data-selection-alternative
+          >
+        </label>
+      </div>
+    {% endif %}
+  </div>
+</div>
+<script>
+  (function (group) {
+    if (!group) return;
+    var name = group.getAttribute("data-raffle-field-name");
+    var type = group.getAttribute("data-raffle-input-type") || "radio";
+    group.querySelectorAll("[data-raffle-answer]").forEach(function (input) {
+      input.name = name;
+      input.type = type;
+      var wrap = input.closest(".input-choice");
+      if (wrap) wrap.classList.add("input-" + type);
+    });
+  })(document.getElementById("raffle-q-{{ block.id }}"));
+</script>
+
+{% schema %}
+{
+  "name": "Raffle question",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Question"
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name (sent to app)",
+      "info": "Shared by all answers. Posted to /apps/raffle-form. Must match what the app expects."
+    },
+    {
+      "type": "select",
+      "id": "input_type",
+      "label": "Type",
+      "options": [
+        { "value": "radio", "label": "Single choice" },
+        { "value": "checkbox", "label": "Multiple choice" }
+      ],
+      "default": "radio"
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "error_message",
+      "label": "Error message",
+      "default": "Bitte wähle eine Antwort."
+    },
+    {
+      "type": "checkbox",
+      "id": "allow_other",
+      "label": "Allow other (free text)",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "other_placeholder",
+      "label": "Other placeholder",
+      "default": "Anderes",
+      "visible_if": "{{ block.settings.allow_other }}"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_raffle-answer"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raffle question"
+    }
+  ]
+}
+{% endschema %}

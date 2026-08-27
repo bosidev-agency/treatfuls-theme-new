@@ -1,0 +1,74 @@
+{% stylesheet %}
+  .select-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .raffle-input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .group .raffle-input {
+    margin-bottom: 0;
+  }
+{% endstylesheet %}
+
+{% liquid
+  assign field_name = block.settings.field_name | default: block.settings.label
+  assign input_id = 'raffle-' | append: block.id
+%}
+
+<label class="select-box select-box--blue raffle-input">
+  <span class="text color-white select-box__label input__label">
+    {{ block.settings.label }}
+    {% if block.settings.required %} *{% endif %}
+  </span>
+  <select
+    id="{{ input_id }}"
+    name="{{ field_name }}"
+    {% if block.settings.required %}
+      required
+    {% endif %}
+  >
+    {% content_for 'blocks' %}
+  </select>
+  {%- render 'icon-arrow' -%}
+</label>
+
+{% schema %}
+{
+  "name": "Raffle select",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name (sent to app)",
+      "info": "The key posted to /apps/raffle-form. Must match what the app expects."
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_option"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raffle select"
+    }
+  ]
+}
+{% endschema %}

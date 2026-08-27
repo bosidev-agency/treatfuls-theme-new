@@ -35,333 +35,19 @@
           </div>
         </div>
         <form method="post" action="/apps/raffle-form">
+          {% if section.settings.klaviyo_list_id != blank %}
+            <input type="hidden" name="klaviyo_list_id" value="{{ section.settings.klaviyo_list_id }}">
+          {% endif %}
+          {% if section.settings.google_sheet_id != blank %}
+            <input type="hidden" name="google_sheet_id" value="{{ section.settings.google_sheet_id }}">
+          {% endif %}
+          {% if section.settings.google_sheet_name != blank %}
+            <input type="hidden" name="google_sheet_name" value="{{ section.settings.google_sheet_name }}">
+          {% endif %}
           <div class="contact-form__wrapper">
             <div class="contact-form__form">
               <div id="ContactForm" class="form-vertical">
-                <div class="form-group">
-                  <label class="select-box select-box--blue">
-                    <span class="text color-white select-box__label input__label">Anrede *</span>
-                    <select
-                      id="Anrede"
-                      name="Anrede"
-                      required
-                    >
-                      <option value="Frau" selected>Frau</option>
-                      <option value="Herr">Herr</option>
-                      <option value="Keine Angabe">Keine Angabe</option>
-                    </select>
-                    {%- render 'icon-arrow' -%}
-                  </label>
-
-                  <label class="label">
-                    <span class="text input__label"> Vorname * </span>
-                    <input
-                      type="text"
-                      name="Vorname"
-                      placeholder="Vorname"
-                      id="Vorname"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      required
-                    >
-                  </label>
-
-                  <label class="label">
-                    <span class="text input__label"> Nachname * </span>
-                    <input
-                      type="text"
-                      name="Nachname"
-                      placeholder="Nachname"
-                      id="Nachname"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      required
-                    >
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label class="label">
-                    <span class="text input__label"> E-Mail * </span>
-                    <input
-                      type="email"
-                      name="E-Mail"
-                      placeholder="E-Mail"
-                      id="E-Mail"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      required
-                    >
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <label class="label">
-                    <span class="text input__label"> Straße & Hausnummer * </span>
-                    <input
-                      type="text"
-                      name="Straße & Hausnummer"
-                      placeholder="Straße & Hausnummer"
-                      id="Straße"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="street-address"
-                      required
-                    >
-                  </label>
-
-                  <label class="label">
-                    <span class="text input__label"> PLZ * </span>
-                    <input
-                      type="text"
-                      name="PLZ"
-                      placeholder="PLZ"
-                      id="PLZ"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="postal-code"
-                      required
-                    >
-                  </label>
-
-                  <label class="label">
-                    <span class="text input__label"> Ort * </span>
-                    <input
-                      type="text"
-                      name="Ort"
-                      placeholder="Ort"
-                      id="Ort"
-                      class="input input--blue"
-                      autocorrect="off"
-                      autocapitalize="off"
-                      autocomplete="address-level2"
-                      required
-                    >
-                  </label>
-                </div>
-
-                <div class="form-group">
-                  <link
-                    rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
-                  >
-                  <script type="module">
-                    import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
-                    import de from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/de.js';
-                    UC.defineLocale('de', de);
-                    UC.defineComponents(UC);
-                  </script>
-
-                  <!-- Uploadcare File Upload -->
-                  <div class="field__upload">
-                    <span class="text input__label"> Kassenbon * </span>
-                    <input type="hidden" name="Kassenbon" id="Kassenbon" data-require-upload>
-
-                    <uc-config
-                      ctx-name="my-uploader"
-                      use-cloud-image-editor="false"
-                      source-list="local, camera"
-                      cdn-cname="https://1ad53bygda.ucarecd.net/"
-                      pubkey="3c825a77bb5652bdf2e1"
-                      locale-name="de"
-                      multiple="false"
-                    ></uc-config>
-
-                    <uc-file-uploader-minimal
-                      ctx-name="my-uploader"
-                      class="uc-light"
-                    ></uc-file-uploader-minimal>
-
-                    <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
-
-                    <div class="contact-form__upload-error hidden">
-                      <p>Bitte laden Sie einen Kassenbon hoch.</p>
-                    </div>
-
-                    <p class="text--small">
-                      Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *.png, *.pdf,
-                      *.tiff und *.heic/*.heif.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="additional-question" data-require-selection>
-                  <h3 class="additional-question__title">1. Kennst du treatfuls bereits? *</h3>
-                  <p class="text hidden" data-selection-group-error role="alert">
-                    Bitte wähle eine Antwort.
-                  </p>
-                  <div class="form-group">
-                    <div class="input-radio">
-                      <input
-                        type="radio"
-                        name="Frage 1"
-                        id="question_1_answer_1"
-                        value="Nein, heute zum ersten Mal gesehen"
-                      >
-                      <label for="question_1_answer_1" class="text input__label">Nein, heute zum ersten Mal gesehen</label>
-                    </div>
-                    <div class="input-radio">
-                      <input type="radio" name="Frage 1" id="question_1_answer_2" value="Ja, aus dem Handel">
-                      <label for="question_1_answer_2" class="text input__label">Ja, aus dem Handel</label>
-                    </div>
-                    <div class="input-radio">
-                      <input
-                        type="radio"
-                        name="Frage 1"
-                        id="question_1_answer_3"
-                        value="Ja, von Social Media (Instagram, Pinterest, TikTok)"
-                      >
-                      <label for="question_1_answer_3" class="text input__label">Ja, von Social Media (Instagram, Pinterest, TikTok)</label>
-                    </div>
-                    <div class="input-radio">
-                      <input type="radio" name="Frage 1" id="question_1_answer_4" value="Ja, von Influencern">
-                      <label for="question_1_answer_4" class="text input__label">Ja, von Influencern</label>
-                    </div>
-                    <div class="input-radio">
-                      <input type="radio" name="Frage 1" id="question_1_answer_5" value="Ja, von Google / Online">
-                      <label for="question_1_answer_5" class="text input__label">Ja, von Google / Online</label>
-                    </div>
-                    <div class="input-radio">
-                      <input type="radio" name="Frage 1" id="question_1_answer_6" value="Ja, aus Cafés, Sportstudios">
-                      <label for="question_1_answer_6" class="text input__label">Ja, aus Cafés, Sportstudios</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="additional-question" data-require-selection>
-                  <h3 class="additional-question__title">2. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten? (Mehrfachauswahl möglich) *</h3>
-                  <p class="text hidden" data-selection-group-error role="alert">
-                    Bitte wähle mindestens eine Option oder trage etwas bei „Anderes“ ein.
-                  </p>
-                  <div class="form-group">
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 2"
-                        id="question_2_answer_1"
-                        value="Wenig / kein Industriezucker"
-                      >
-                      <label for="question_2_answer_1" class="text input__label">Wenig / kein Industriezucker</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 2" id="question_2_answer_2" value="Natürliche Zutaten">
-                      <label for="question_2_answer_2" class="text input__label">Natürliche Zutaten</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 2" id="question_2_answer_3" value="Ballaststoffe / Nährwerte">
-                      <label for="question_2_answer_3" class="text input__label">Ballaststoffe / Nährwerte</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 2"
-                        id="question_2_answer_4"
-                        value="Geschmackssorten, die mich ansprechen"
-                      >
-                      <label for="question_2_answer_4" class="text input__label">Geschmackssorten, die mich ansprechen</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox"
-                        name="Frage 2"
-                        id="question_2_answer_5"
-                        value="Markenauftritt / Verpackung"
-                      >
-                      <label for="question_2_answer_5" class="text input__label">Markenauftritt / Verpackung</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 2" id="question_2_answer_6" value="Preis">
-                      <label for="question_2_answer_6" class="text input__label">Preis</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 2" id="question_2_answer_7" value="Bio / Nachhaltigkeit">
-                      <label for="question_2_answer_7" class="text input__label">Bio / Nachhaltigkeit</label>
-                    </div>
-                    <div class="input-checkbox">
-                      <input type="checkbox" name="Frage 2" id="question_2_answer_8" value="Glutenfrei">
-                      <label for="question_2_answer_8" class="text input__label">Glutenfrei</label>
-                    </div>
-                    <div class="form-group">
-                      <label class="label">
-                        <input
-                          type="text"
-                          name="Frage 2"
-                          id="question_2_answer_9"
-                          class="input input--blue"
-                          placeholder="Anderes"
-                          autocomplete="off"
-                          data-selection-alternative
-                        >
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="additional-question">
-                  <h3 class="additional-question__title">3. Was hat dich überzeugt treatfuls zu kaufen?</h3>
-                  <div class="form-group">
-                    <label class="label">
-                      <input
-                        type="textarea"
-                        name="Frage 3"
-                        id="treatfuls_known"
-                        class="input input--blue"
-                        placeholder="Was hat dich überzeugt treatfuls zu kaufen?"
-                      >
-                    </label>
-                  </div>
-                </div>
-
-                <div class="contact-form__checkbox-wrapper">
-                  <div class="contact-form__checkbox">
-                    <input type="checkbox" id="contact-form-checkbox" name="AGB Akzeptiert" required value="yes">
-                    <label for="contact-form-checkbox" class="text input__label">
-                      * Ich habe die
-                      <span class="contact-form__checkbox-link" data-toggle="Terms">Teilnahmebedingungen</span>
-                      und die
-                      <span class="contact-form__checkbox-link" data-toggle="Privacy">Datenschutzerklärung</span>
-                      gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels
-                      verarbeitet werden.
-                    </label>
-                  </div>
-                  <div class="contact-form__checkbox">
-                    <input type="checkbox" id="NewsletterSignup" name="Newsletter Akzeptiert" checked value="yes">
-                    <label for="NewsletterSignup" class="text input__label">
-                      Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden.
-                      Meine Einwilligung kann ich jederzeit widerrufen.
-                    </label>
-                  </div>
-                </div>
-
-                <modal-popover class="modal-popover modal-popover--large" id="Terms">
-                  <div class="popover__overlay"></div>
-                  <div class="popover__content">
-                    <button class="popover__close-button">
-                      {%- render 'icon-close' -%}
-                    </button>
-                    <div class="popover__content-inner">
-                      {{ section.settings.legal_text }}
-                    </div>
-                  </div>
-                </modal-popover>
-
-                <modal-popover class="modal-popover modal-popover--large" id="Privacy">
-                  <div class="popover__overlay"></div>
-                  <div class="popover__content">
-                    <button class="popover__close-button">
-                      {%- render 'icon-close' -%}
-                    </button>
-
-                    <div class="popover__content-inner">
-                      {{ section.settings.privacy_policy }}
-                    </div>
-                  </div>
-                </modal-popover>
+                {% content_for 'blocks' %}
               </div>
 
               <div class="raffle-form__error-message hidden">
@@ -385,6 +71,17 @@
   </div>
 </section>
 
+{% stylesheet %}
+  .raffle-form .group label,
+  .raffle-form .group .raffle-input {
+    width: 100%;
+  }
+
+  .raffle-form .contact-form__checkbox {
+    margin-top: 12px;
+  }
+{% endstylesheet %}
+
 {% schema %}
 {
   "name": "Raffle form",
@@ -400,24 +97,6 @@
       "id": "subtitle",
       "label": "Subtitle",
       "default": "<p>We're here to help you</p>"
-    },
-    {
-      "type": "text",
-      "id": "post_success_title",
-      "label": "Post success title",
-      "default": "Danke für deine Teilnahme!"
-    },
-    {
-      "type": "richtext",
-      "id": "post_success_content",
-      "label": "Post success content",
-      "default": "<p>Du bist jetzt im Lostopf!</p>"
-    },
-    {
-      "type": "text",
-      "id": "post_success_anchor",
-      "label": "Post success anchor",
-      "info": "Input an ID of an element, the window will scroll to the element when the form is submitted successfully"
     },
     {
       "type": "header",
@@ -451,35 +130,47 @@
     },
     {
       "type": "header",
-      "content": "Klaviyo Newsletter"
-    },
-    {
-      "type": "text",
-      "id": "klaviyo_company_id",
-      "label": "Klaviyo Company ID",
-      "info": "Unter Klaviyo Account → Settings → API Keys"
+      "content": "App destinations"
     },
     {
       "type": "text",
       "id": "klaviyo_list_id",
       "label": "Klaviyo List ID",
-      "info": "Die List-ID der Newsletter-Liste (z. B. unter Audiences → Liste → Settings)"
+      "info": "Die List-ID der Newsletter-Liste."
+    },
+    {
+      "type": "text",
+      "id": "google_sheet_id",
+      "label": "Google Sheet ID",
+      "info": "The spreadsheet ID from the sheet URL."
+    },
+    {
+      "type": "text",
+      "id": "google_sheet_name",
+      "label": "Google Sheet tab name",
+      "info": "The tab name inside the spreadsheet (e.g. Sheet1)."
     },
     {
       "type": "header",
-      "content": "Legal"
+      "content": "Success message"
+    },
+    {
+      "type": "text",
+      "id": "post_success_title",
+      "label": "Post success title",
+      "default": "Danke für deine Teilnahme!"
     },
     {
       "type": "richtext",
-      "id": "legal_text",
-      "label": "Terms and conditions",
-      "default": "<p>Die Teilnahmebedingungen öffnen sich sobald auf Teilnahmebedingungen in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>"
+      "id": "post_success_content",
+      "label": "Post success content",
+      "default": "<p>Du bist jetzt im Lostopf!</p>"
     },
     {
-      "type": "richtext",
-      "id": "privacy_policy",
-      "label": "Privacy policy",
-      "default": "<p>Die Datenschutzerklärung öffnet sich sobald auf Datenschutzerklärung in dem Check Box text geklickt wird, damit man nicht nach unten geleitet wird sondern wieder nach oben und die Seite nicht verlassen wird</p>"
+      "type": "text",
+      "id": "post_success_anchor",
+      "label": "Post success anchor",
+      "info": "Input an ID of an element, the window will scroll to the element when the form is submitted successfully"
     },
     {
       "type": "header",
@@ -504,9 +195,198 @@
       "default": "#f3587f"
     }
   ],
+  "blocks": [
+    { "type": "group" },
+    { "type": "raffle-input" },
+    { "type": "raffle-select" },
+    { "type": "raffle-question" },
+    { "type": "file-upload" },
+    { "type": "raffle-consent" }
+  ],
   "presets": [
     {
-      "name": "Raffle form"
+      "name": "Raffle form",
+      "blocks": [
+        {
+          "type": "group",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "margin_bottom": 20
+          },
+          "blocks": [
+            {
+              "type": "raffle-select",
+              "settings": {
+                "label": "Anrede",
+                "field_name": "Anrede",
+                "required": true
+              },
+              "blocks": [
+                { "type": "_option", "settings": { "label": "Frau" } },
+                { "type": "_option", "settings": { "label": "Herr" } },
+                { "type": "_option", "settings": { "label": "Keine Angabe" } }
+              ]
+            },
+            {
+              "type": "raffle-input",
+              "settings": {
+                "type": "text",
+                "label": "Vorname",
+                "placeholder": "Vorname",
+                "field_name": "Vorname",
+                "required": true
+              }
+            },
+            {
+              "type": "raffle-input",
+              "settings": {
+                "type": "text",
+                "label": "Nachname",
+                "placeholder": "Nachname",
+                "field_name": "Nachname",
+                "required": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "raffle-input",
+          "settings": {
+            "type": "email",
+            "label": "E-Mail",
+            "placeholder": "E-Mail",
+            "field_name": "E-Mail",
+            "autocomplete": "email",
+            "required": true
+          }
+        },
+        {
+          "type": "group",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "margin_bottom": 20
+          },
+          "blocks": [
+            {
+              "type": "raffle-input",
+              "settings": {
+                "type": "text",
+                "label": "Straße & Hausnummer",
+                "placeholder": "Straße & Hausnummer",
+                "field_name": "Straße & Hausnummer",
+                "autocomplete": "street-address",
+                "required": true
+              }
+            },
+            {
+              "type": "raffle-input",
+              "settings": {
+                "type": "text",
+                "label": "PLZ",
+                "placeholder": "PLZ",
+                "field_name": "PLZ",
+                "autocomplete": "postal-code",
+                "required": true
+              }
+            },
+            {
+              "type": "raffle-input",
+              "settings": {
+                "type": "text",
+                "label": "Ort",
+                "placeholder": "Ort",
+                "field_name": "Ort",
+                "autocomplete": "address-level2",
+                "required": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "file-upload",
+          "settings": {
+            "label": "Kassenbon",
+            "field_name": "Kassenbon",
+            "required": true
+          }
+        },
+        {
+          "type": "raffle-question",
+          "settings": {
+            "title": "1. Kennst du treatfuls bereits?",
+            "field_name": "Frage 1",
+            "input_type": "radio",
+            "required": true,
+            "error_message": "Bitte wähle eine Antwort."
+          },
+          "blocks": [
+            { "type": "_raffle-answer", "settings": { "label": "Nein, heute zum ersten Mal gesehen" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ja, aus dem Handel" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ja, von Social Media (Instagram, Pinterest, TikTok)" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ja, von Influencern" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ja, von Google / Online" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ja, aus Cafés, Sportstudios" } }
+          ]
+        },
+        {
+          "type": "raffle-question",
+          "settings": {
+            "title": "2. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten? (Mehrfachauswahl möglich)",
+            "field_name": "Frage 2",
+            "input_type": "checkbox",
+            "required": true,
+            "error_message": "Bitte wähle mindestens eine Option oder trage etwas bei „Anderes“ ein.",
+            "allow_other": true,
+            "other_placeholder": "Anderes"
+          },
+          "blocks": [
+            { "type": "_raffle-answer", "settings": { "label": "Wenig / kein Industriezucker" } },
+            { "type": "_raffle-answer", "settings": { "label": "Natürliche Zutaten" } },
+            { "type": "_raffle-answer", "settings": { "label": "Ballaststoffe / Nährwerte" } },
+            { "type": "_raffle-answer", "settings": { "label": "Geschmackssorten, die mich ansprechen" } },
+            { "type": "_raffle-answer", "settings": { "label": "Markenauftritt / Verpackung" } },
+            { "type": "_raffle-answer", "settings": { "label": "Preis" } },
+            { "type": "_raffle-answer", "settings": { "label": "Bio / Nachhaltigkeit" } },
+            { "type": "_raffle-answer", "settings": { "label": "Glutenfrei" } }
+          ]
+        },
+        {
+          "type": "raffle-input",
+          "settings": {
+            "type": "textarea",
+            "label": "3. Was hat dich überzeugt treatfuls zu kaufen?",
+            "placeholder": "Was hat dich überzeugt treatfuls zu kaufen?",
+            "field_name": "Frage 3",
+            "required": false
+          }
+        },
+        {
+          "type": "raffle-consent",
+          "settings": {
+            "label": "* Ich habe die {terms} und die {privacy} gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels verarbeitet werden.",
+            "field_name": "AGB Akzeptiert",
+            "required": true,
+            "checked": false
+          }
+        },
+        {
+          "type": "raffle-consent",
+          "settings": {
+            "label": "Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden. Meine Einwilligung kann ich jederzeit widerrufen.",
+            "field_name": "Newsletter Akzeptiert",
+            "required": false,
+            "checked": true
+          }
+        }
+      ]
     }
   ]
 }

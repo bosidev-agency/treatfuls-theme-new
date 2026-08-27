@@ -47,6 +47,48 @@ class RaffleForm extends HTMLElement {
     return [...fields].every((el) => Boolean(el.value?.trim()));
   }
 
+  static firstEmptyUploadField(form) {
+    return [...form.querySelectorAll("[data-require-upload]")].find(
+      (el) => !el.value?.trim(),
+    );
+  }
+
+  static uploadFieldError(field) {
+    return field
+      ?.closest(".field__upload")
+      ?.querySelector(".contact-form__upload-error");
+  }
+
+  static syncQuestionAnswers(root) {
+    root.querySelectorAll("[data-raffle-field-name]").forEach((group) => {
+      const name = group.dataset.raffleFieldName;
+      const type = group.dataset.raffleInputType || "radio";
+      group.querySelectorAll("[data-raffle-answer]").forEach((input) => {
+        input.name = name;
+        input.type = type;
+        input.closest(".input-choice")?.classList.add(`input-${type}`);
+      });
+    });
+  }
+
+  bindUploaders() {
+    this.querySelectorAll("uc-upload-ctx-provider").forEach((provider) => {
+      const field = provider
+        .closest(".field__upload")
+        ?.querySelector("[data-require-upload], input[type='hidden']");
+
+      provider.addEventListener("file-url-changed", (e) => {
+        if (field) field.value = e.detail.cdnUrl || "";
+        this.updateSubmitButtonState();
+      });
+
+      provider.addEventListener("file-removed", () => {
+        if (field) field.value = "";
+        this.updateSubmitButtonState();
+      });
+    });
+  }
+
   updateSubmitButtonState() {
     const form = this.raffleForm;
     if (!form || !this.submitButton) return;
@@ -59,35 +101,26 @@ class RaffleForm extends HTMLElement {
     if (selectionOk) {
       RaffleForm.hideSelectionGroupErrors(form);
     }
-    if (uploadOk && this.uploadError) {
-      this.uploadError.classList.add("hidden");
-    }
+    form.querySelectorAll("[data-require-upload]").forEach((el) => {
+      if (el.value?.trim()) {
+        RaffleForm.uploadFieldError(el)?.classList.add("hidden");
+      }
+    });
   }
 
   connectedCallback() {
-    this.uploadcare = this.querySelector("uc-upload-ctx-provider");
     this.raffleForm = this.querySelector(
       'form[action="/apps/raffle-form"]',
     );
-    this.reciptInput = this.querySelector('input[name="Kassenbon"]');
     this.submitButton = this.querySelector('button[type="submit"]');
-    this.uploadError = this.querySelector(".contact-form__upload-error");
-    this.newsletterSignupCheckbox = this.querySelector("#NewsletterSignup");
     this.postSuccessAnchor = this.dataset.postSuccessAnchor;
     this.successMessage = this.querySelector(".raffle-form__success-message");
     this.errorMessage = this.querySelector(".raffle-form__error-message");
 
-    this.uploadcare.addEventListener("file-url-changed", (e) => {
-      if (this.reciptInput) {
-        this.reciptInput.value = e.detail.cdnUrl || "";
-      }
-      this.updateSubmitButtonState();
-    });
+    if (!this.raffleForm) return;
 
-    this.uploadcare.addEventListener("file-removed", () => {
-      if (this.reciptInput) this.reciptInput.value = "";
-      this.updateSubmitButtonState();
-    });
+    RaffleForm.syncQuestionAnswers(this);
+    this.bindUploaders();
 
     this.raffleForm.addEventListener("input", () => {
       this.updateSubmitButtonState();
@@ -123,9 +156,10 @@ class RaffleForm extends HTMLElement {
       return;
     }
 
-    if (!RaffleForm.allUploadRequirementsMet(form)) {
-      this.uploadError?.classList.remove("hidden");
-      this.querySelector(".field__upload")?.scrollIntoView({
+    const emptyUpload = RaffleForm.firstEmptyUploadField(form);
+    if (emptyUpload) {
+      RaffleForm.uploadFieldError(emptyUpload)?.classList.remove("hidden");
+      emptyUpload.closest(".field__upload")?.scrollIntoView({
         behavior: "smooth",
         block: "center",
       });

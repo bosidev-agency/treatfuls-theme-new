@@ -1,0 +1,119 @@
+{% liquid
+  assign field_name = block.settings.field_name | default: block.settings.label
+  assign input_id = 'raffle-' | append: block.id
+  assign terms_id = 'Terms-' | append: block.id
+  assign privacy_id = 'Privacy-' | append: block.id
+%}
+
+{%- capture terms_link -%}
+<span class="contact-form__checkbox-link" data-toggle="{{ terms_id }}">{{ block.settings.terms_link_text }}</span>
+{%- endcapture -%}
+{%- capture privacy_link -%}
+<span class="contact-form__checkbox-link" data-toggle="{{ privacy_id }}">{{ block.settings.privacy_link_text }}</span>
+{%- endcapture -%}
+{% assign label = block.settings.label | replace: '{terms}', terms_link | replace: '{privacy}', privacy_link %}
+
+<div class="contact-form__checkbox">
+  <input
+    type="checkbox"
+    id="{{ input_id }}"
+    name="{{ field_name }}"
+    value="yes"
+    {% if block.settings.required %}
+      required
+    {% endif %}
+    {% if block.settings.checked %}
+      checked
+    {% endif %}
+  >
+  <label for="{{ input_id }}" class="text input__label">
+    {{ label }}
+  </label>
+</div>
+
+{% if block.settings.legal_text != blank %}
+  <modal-popover class="modal-popover modal-popover--large" id="{{ terms_id }}">
+    <div class="popover__overlay"></div>
+    <div class="popover__content">
+      <button class="popover__close-button" type="button">
+        {%- render 'icon-close' -%}
+      </button>
+      <div class="popover__content-inner">
+        {{ block.settings.legal_text }}
+      </div>
+    </div>
+  </modal-popover>
+{% endif %}
+
+{% if block.settings.privacy_policy != blank %}
+  <modal-popover class="modal-popover modal-popover--large" id="{{ privacy_id }}">
+    <div class="popover__overlay"></div>
+    <div class="popover__content">
+      <button class="popover__close-button" type="button">
+        {%- render 'icon-close' -%}
+      </button>
+      <div class="popover__content-inner">
+        {{ block.settings.privacy_policy }}
+      </div>
+    </div>
+  </modal-popover>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Raffle consent",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "label",
+      "label": "Label",
+      "info": "Use {terms} and {privacy} to insert links that open the terms and privacy modals."
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name (sent to app)",
+      "info": "The key posted to /apps/raffle-form. Must match what the app expects."
+    },
+    {
+      "type": "text",
+      "id": "terms_link_text",
+      "label": "Terms link text",
+      "default": "Teilnahmebedingungen"
+    },
+    {
+      "type": "text",
+      "id": "privacy_link_text",
+      "label": "Privacy link text",
+      "default": "Datenschutzerklärung"
+    },
+    {
+      "type": "richtext",
+      "id": "legal_text",
+      "label": "Terms and conditions"
+    },
+    {
+      "type": "richtext",
+      "id": "privacy_policy",
+      "label": "Privacy policy"
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "checked",
+      "label": "Checked by default",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raffle consent"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,116 @@
+{% stylesheet %}
+  .raffle-input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .group .raffle-input {
+    margin-bottom: 0;
+  }
+{% endstylesheet %}
+
+{% liquid
+  assign field_name = block.settings.field_name | default: block.settings.label
+  assign input_id = 'raffle-' | append: block.id
+%}
+
+{% if block.settings.type == 'textarea' %}
+  <div class="additional-question raffle-input">
+    {% if block.settings.label != blank %}
+      <h3 class="additional-question__title">
+        {{ block.settings.label }}
+        {% if block.settings.required %} *{% endif %}
+      </h3>
+    {% endif %}
+    <div class="form-group">
+      <label class="label">
+        <textarea
+          name="{{ field_name }}"
+          id="{{ input_id }}"
+          class="input input--blue"
+          placeholder="{{ block.settings.placeholder }}"
+          {% if block.settings.autocomplete != blank %}
+            autocomplete="{{ block.settings.autocomplete }}"
+          {% endif %}
+          {% if block.settings.required %}
+            required
+          {% endif %}
+        ></textarea>
+      </label>
+    </div>
+  </div>
+{% else %}
+  <label class="label raffle-input">
+    <span class="text input__label">
+      {{ block.settings.label }}
+      {% if block.settings.required %} *{% endif %}
+    </span>
+    <input
+      type="{{ block.settings.type }}"
+      name="{{ field_name }}"
+      placeholder="{{ block.settings.placeholder }}"
+      id="{{ input_id }}"
+      class="input input--blue"
+      autocorrect="off"
+      autocapitalize="off"
+      {% if block.settings.autocomplete != blank %}
+        autocomplete="{{ block.settings.autocomplete }}"
+      {% endif %}
+      {% if block.settings.required %}
+        required
+      {% endif %}
+    >
+  </label>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Raffle input",
+  "settings": [
+    {
+      "type": "select",
+      "id": "type",
+      "label": "Type",
+      "options": [
+        { "value": "text", "label": "Text" },
+        { "value": "email", "label": "Email" },
+        { "value": "textarea", "label": "Textarea" }
+      ],
+      "default": "text"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Placeholder"
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name (sent to app)",
+      "info": "The key posted to /apps/raffle-form. Must match what the app expects."
+    },
+    {
+      "type": "text",
+      "id": "autocomplete",
+      "label": "Autocomplete",
+      "info": "Optional HTML autocomplete value, e.g. email, street-address, postal-code"
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Raffle input"
+    }
+  ]
+}
+{% endschema %}

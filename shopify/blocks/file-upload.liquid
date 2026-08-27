@@ -1,0 +1,114 @@
+{% liquid
+  assign field_name = block.settings.field_name | default: block.settings.label
+  assign ctx_name = 'file-upload-' | append: block.id
+  assign input_id = 'raffle-' | append: block.id
+%}
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+>
+<script type="module">
+  import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+  import de from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/de.js';
+  UC.defineLocale('de', de);
+  UC.defineComponents(UC);
+</script>
+
+<div class="form-group">
+  <div class="field__upload">
+    <span class="text input__label">
+      {{ block.settings.label }}
+      {% if block.settings.required %} *{% endif %}
+    </span>
+    <input
+      type="hidden"
+      name="{{ field_name }}"
+      id="{{ input_id }}"
+      {% if block.settings.required %}
+        data-require-upload
+      {% endif %}
+    >
+
+    <uc-config
+      ctx-name="{{ ctx_name }}"
+      use-cloud-image-editor="false"
+      source-list="local, camera"
+      cdn-cname="{{ block.settings.cdn_cname }}"
+      pubkey="{{ block.settings.pubkey }}"
+      locale-name="de"
+      multiple="false"
+    ></uc-config>
+
+    <uc-file-uploader-minimal
+      ctx-name="{{ ctx_name }}"
+      class="uc-light"
+    ></uc-file-uploader-minimal>
+
+    <uc-upload-ctx-provider ctx-name="{{ ctx_name }}"></uc-upload-ctx-provider>
+
+    <div class="contact-form__upload-error hidden">
+      <p>{{ block.settings.error_message }}</p>
+    </div>
+
+    {% if block.settings.help_text != blank %}
+      <p class="text--small">{{ block.settings.help_text }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "File upload",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+      "default": "File upload"
+    },
+    {
+      "type": "text",
+      "id": "field_name",
+      "label": "Field name (sent to app)",
+      "info": "The key posted to /apps/raffle-form. Must match what the app expects.",
+      "default": "File upload"
+    },
+    {
+      "type": "textarea",
+      "id": "help_text",
+      "label": "Help text",
+      "default": "Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *.png, *.pdf, *.tiff und *.heic/*.heif."
+    },
+    {
+      "type": "text",
+      "id": "error_message",
+      "label": "Error message",
+      "default": "Bitte laden Sie eine Datei hoch."
+    },
+    {
+      "type": "checkbox",
+      "id": "required",
+      "label": "Required",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "pubkey",
+      "label": "Uploadcare public key",
+      "default": "3c825a77bb5652bdf2e1"
+    },
+    {
+      "type": "text",
+      "id": "cdn_cname",
+      "label": "Uploadcare CDN host",
+      "default": "https://1ad53bygda.ucarecd.net/"
+    }
+  ],
+  "presets": [
+    {
+      "name": "File upload"
+    }
+  ]
+}
+{% endschema %}
