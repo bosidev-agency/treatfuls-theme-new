@@ -59,7 +59,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/treatfuls_her_back_to_school_desktop.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_150_her_back_to_school_desktop.webp",
         "desktop_image_height": "adapt",
         "mobile_image": "shopify://shop_images/treatfuls_her_back_to_school_mobil_1.webp",
         "mobile_image_height": "adapt",
@@ -405,8 +405,8 @@
         "button_text": "Ab zum Storefinder",
         "button_url": "https://treatfuls.com/pages/treatfulsstorefinder-treatfuls",
         "background_color": "#ceb0d1",
-        "accent_color": "#D04D75",
-        "hover_color": "#C081A9"
+        "accent_color": "#d04d75",
+        "hover_color": "#c081a9"
       }
     },
     "richtext_QaqNnf": {

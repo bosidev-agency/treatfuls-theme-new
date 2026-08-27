@@ -24,6 +24,7 @@
           "type": "variant_picker",
           "settings": {
             "heading": "",
+            "option_name": "Entdecke weitere Sorten",
             "show_selected_label": true,
             "show_titles": false
           }
@@ -227,6 +228,8 @@
         "hide_on_mobile": false,
         "title": "Unsere Riegel bieten viele Vorteile",
         "subtitle": "wir verwenden ausschließlich Bio-Zutaten für unsere yummy veganen Rezepturen",
+        "button_text": "",
+        "button_url": "",
         "background_color": "{{ product.metafields.custom.background_color.value }}",
         "accent_color": "{{ product.metafields.custom.accent_color.value }}",
         "hover_color": "{{ product.metafields.custom.hover_color.value }}"
