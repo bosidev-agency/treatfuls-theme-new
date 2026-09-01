@@ -14,16 +14,12 @@
 {% assign product = section.settings.product | default: product %}
 
 {%- assign ingredient_highlights = product.metafields.custom.ingredient_highlights.value -%}
+{%- assign product_contents = product.metafields.custom.product_content.value.content.value -%}
+{%- assign content_item_count = product_contents | size -%}
+{%- assign has_multiple_items = false -%}
 
-{%- assign has_bundle_items = false -%}
-{%- assign bundle_item_count = 0 -%}
-
-{%- if product.metafields.custom.bundle_products.value != blank -%}
-  {%- assign has_bundle_items = true -%}
-
-  {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
-    {%- assign bundle_item_count = bundle_item_count | plus: 1 -%}
-  {%- endfor -%}
+{%- if content_item_count > 1 -%}
+  {%- assign has_multiple_items = true -%}
 {%- endif -%}
 
 {%- capture slider -%}
@@ -74,26 +70,32 @@
           </header>
           <div
             class="accordion__body"
-            {% if has_bundle_items %}
-              style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"
+            {% if has_multiple_items %}
+              style="--accordion-body-max-height:{{ content_item_count | times: 1000 }}px"
             {% endif %}
           >
             <div class="accordion__dsc text color-white">
-              {%- if product.metafields.custom.bundle_products.value != blank -%}
-                {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
-                  <h3>
-                    {%- if bundle_product.metafields.custom.short_title != blank
-                      and bundle_product.metafields.custom.unit_name_new != blank
-                    -%}
-                      {{ bundle_product.metafields.custom.short_title }}
-                      {{ bundle_product.metafields.custom.unit_name_new }}
-                    {%- else -%}
-                      {{ bundle_product.title }}
-                    {%- endif -%}
-                  </h3>
-                  {{ bundle_product.metafields.custom.ingredients }}
-                  <br>
-                  <br>
+              {%- if product_contents != blank -%}
+                {%- for content in product_contents -%}
+                  {%- assign child_variant = content.product.value -%}
+                  {%- assign child_product = child_variant.product -%}
+                  {%- if child_product == blank -%}
+                    {%- continue -%}
+                  {%- endif -%}
+                  {%- if has_multiple_items -%}
+                    <h3>
+                      {%- if child_product.metafields.custom.short_title != blank -%}
+                        {{ child_product.metafields.custom.short_title }}
+                      {%- else -%}
+                        {{ child_product.title }}
+                      {%- endif -%}
+                    </h3>
+                  {%- endif -%}
+                  {{ child_product.metafields.custom.ingredients }}
+                  {%- if has_multiple_items -%}
+                    <br>
+                    <br>
+                  {%- endif -%}
                 {%- endfor -%}
               {%- else -%}
                 {{ product.metafields.custom.ingredients }}
@@ -108,20 +110,27 @@
           </header>
           <div
             class="accordion__body"
-            {% if has_bundle_items %}
-              style="--accordion-body-max-height:{{ bundle_item_count | times: 1000 }}px"
+            {% if has_multiple_items %}
+              style="--accordion-body-max-height:{{ content_item_count | times: 1000 }}px"
             {% endif %}
           >
             <div class="accordion__dsc text color-white">
-              {%- if product.metafields.custom.bundle_products.value != blank -%}
-                {%- for bundle_product in product.metafields.custom.bundle_products.value -%}
-                  {%- assign nutrition_values = bundle_product.metafields.custom.nutrition_values.value -%}
-                  {% assign nutrition_weight_single_portion = bundle_product.metafields.custom.weight_content.value | split: ' ' | first | plus: 0 | divided_by: 2 %}
-                  {%- unless forloop.first -%}
-                    <br>
-                    <br>
-                  {%- endunless -%}
-                  <h3>{{ nutrition_values.produktname }}</h3>
+              {%- if product_contents != blank -%}
+                {%- for content in product_contents -%}
+                  {%- assign child_variant = content.product.value -%}
+                  {%- assign child_product = child_variant.product -%}
+                  {%- if child_product == blank -%}
+                    {%- continue -%}
+                  {%- endif -%}
+                  {%- assign nutrition_values = child_product.metafields.custom.nutrition_values.value -%}
+                  {%- assign nutrition_weight_single_portion = child_product.metafields.custom.weight_content.value | split: ' ' | first | plus: 0 | divided_by: 2 -%}
+                  {%- if has_multiple_items -%}
+                    {%- unless forloop.first -%}
+                      <br>
+                      <br>
+                    {%- endunless -%}
+                    <h3>{{ nutrition_values.produktname }}</h3>
+                  {%- endif -%}
                   <table>
                     <tr>
                       <td></td>
