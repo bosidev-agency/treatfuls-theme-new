@@ -108,6 +108,10 @@ class BundleBuilder extends HTMLElement {
     this.itemBar = this.querySelector(".shipping-bar");
     this.itemBarProgress = this.querySelector(".shipping-bar__progress");
     this.itemBarCount = this.querySelector(".shipping-bar__text-amount");
+    if (this.currentSize) {
+      this.itemBar.dataset.threshold = this.currentSize;
+      this.itemBarCount.textContent = this.currentSize;
+    }
     this.itemBarTextRemaining = this.querySelector(
       ".shipping-bar__text--remaining",
     );
