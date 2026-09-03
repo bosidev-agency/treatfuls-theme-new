@@ -198,7 +198,7 @@
               "type": "raffle-input",
               "name": "Vorname",
               "settings": {
-                "type": "text",
+                "type": "vorname",
                 "label": "Vorname",
                 "placeholder": "Vorname",
                 "field_name": "Vorname",
@@ -211,7 +211,7 @@
               "type": "raffle-input",
               "name": "Nachname",
               "settings": {
-                "type": "text",
+                "type": "nachname",
                 "label": "Nachname",
                 "placeholder": "Nachname",
                 "field_name": "Nachname",

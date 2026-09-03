@@ -12,9 +12,27 @@
 {% liquid
   assign field_name = block.settings.field_name | default: block.settings.label
   assign input_id = 'raffle-' | append: block.id
+  assign field_type = block.settings.type
+  assign html_input_type = 'text'
+  assign html_autocomplete = block.settings.autocomplete
+
+  case field_type
+    when 'email'
+      assign html_input_type = 'email'
+    when 'vorname'
+      assign html_input_type = 'text'
+      if html_autocomplete == blank
+        assign html_autocomplete = 'given-name'
+      endif
+    when 'nachname'
+      assign html_input_type = 'text'
+      if html_autocomplete == blank
+        assign html_autocomplete = 'family-name'
+      endif
+  endcase
 %}
 
-{% if block.settings.type == 'textarea' %}
+{% if field_type == 'textarea' %}
   <div class="additional-question raffle-input">
     {% if block.settings.label != blank %}
       <h3 class="additional-question__title">
@@ -40,21 +58,28 @@
     </div>
   </div>
 {% else %}
+  {% if field_type == 'email' %}
+    <input type="hidden" name="_email_field_key" value="{{ field_name }}">
+  {% elsif field_type == 'vorname' %}
+    <input type="hidden" name="_first_name_field_key" value="{{ field_name }}">
+  {% elsif field_type == 'nachname' %}
+    <input type="hidden" name="_last_name_field_key" value="{{ field_name }}">
+  {% endif %}
   <label class="label raffle-input">
     <span class="text input__label">
       {{ block.settings.label }}
       {% if block.settings.required %} *{% endif %}
     </span>
     <input
-      type="{{ block.settings.type }}"
+      type="{{ html_input_type }}"
       name="{{ field_name }}"
       placeholder="{{ block.settings.placeholder }}"
       id="{{ input_id }}"
       class="input input--blue"
       autocorrect="off"
       autocapitalize="off"
-      {% if block.settings.autocomplete != blank %}
-        autocomplete="{{ block.settings.autocomplete }}"
+      {% if html_autocomplete != blank %}
+        autocomplete="{{ html_autocomplete }}"
       {% endif %}
       {% if block.settings.required %}
         required
@@ -74,6 +99,8 @@
       "options": [
         { "value": "text", "label": "Text" },
         { "value": "email", "label": "Email" },
+        { "value": "vorname", "label": "Vorname" },
+        { "value": "nachname", "label": "Nachname" },
         { "value": "textarea", "label": "Textarea" }
       ],
       "default": "text"
@@ -92,13 +119,13 @@
       "type": "text",
       "id": "field_name",
       "label": "Field name (sent to app)",
-      "info": "The key posted to /apps/raffle-form. Must match what the app expects."
+      "info": "The key posted to /apps/raffle-form and used as the Google Sheet column header."
     },
     {
       "type": "text",
       "id": "autocomplete",
       "label": "Autocomplete",
-      "info": "Optional HTML autocomplete value, e.g. email, street-address, postal-code"
+      "info": "Optional HTML autocomplete value, e.g. street-address, postal-code"
     },
     {
       "type": "checkbox",

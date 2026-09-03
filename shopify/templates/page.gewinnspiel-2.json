@@ -329,11 +329,11 @@
               "type": "raffle-input",
               "name": "Vorname",
               "settings": {
-                "type": "text",
+                "type": "vorname",
                 "label": "dein Vorname",
                 "placeholder": "Vorname",
                 "field_name": "Vorname Kunde",
-                "autocomplete": "",
+                "autocomplete": "given-name",
                 "required": true
               },
               "blocks": {}
@@ -342,11 +342,11 @@
               "type": "raffle-input",
               "name": "Nachname",
               "settings": {
-                "type": "text",
+                "type": "nachname",
                 "label": "deinen Nachname",
                 "placeholder": "Nachname",
                 "field_name": "Nachname Kunde",
-                "autocomplete": "",
+                "autocomplete": "family-name",
                 "required": true
               },
               "blocks": {}
