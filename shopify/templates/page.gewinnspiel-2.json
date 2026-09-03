@@ -29,10 +29,10 @@
         "image_with_text_T7HbWQ": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
+            "image": "shopify://shop_images/Rewe_Magda_und_Dana.jpg",
             "image_position": "left",
-            "title": "WIR BRAUCHEN EURE HILFE",
-            "content": "<p>Wir sind Magda und Dana und wir brauchen eure Hilfe! Da wir nicht wissen in welchen Rewe fillialen wir gelistet sind und das ist ganz schön doof.. Daher brauchen wir euch </p>",
+            "title": "Wir brauchen eure Hilfe 🕵️‍♀️💛",
+            "content": "<p>Wir sind Magdalena & Dana und wir haben ein Problem. 👀<br/><br/>Immer wieder fragt ihr uns, <strong>in welchen REWE Märkten ihr treatfuls finden könnt.</strong> Und genau das würden wir euch so gerne sagen.<br/><br/><strong>Aber: </strong>Wir können unmöglich selbst jede einzelne Filiale in jeder Stadt checken. Und genau deshalb schaffen wir das <strong>nicht ohne euch.</strong> 💛<br/><br/>Wenn ihr treatfuls bei REWE entdeckt, schickt uns einfach <strong>ein Foto + die Adresse der Filiale</strong> und helft uns dabei, nach und nach alle treatfuls Spots zu finden.</p><p>Als Dankeschön bekommt ihr eine <strong>Mysterybox mit einer brandneuen Sorte, die noch niemand kennt.</strong> 👀🎁<br/><br/><strong>Ready for the treatfuls hunt?</strong></p>",
             "button_text": "",
             "button_url": ""
           }
@@ -69,7 +69,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#DBAAEB",
+        "background_color": "#859972",
         "accent_color": "#c081a9",
         "hover_color": "#ceb0d1",
         "padding_top": 80,
@@ -131,7 +131,7 @@
         "item_3MbPyG": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
+            "image": "shopify://shop_images/Bild_Upload_Icon_7fd26fda-f26e-4081-b9a0-98ca80b9aca0.png",
             "heading": "Bild hochladen",
             "content": "<p>Lade ein BIld con treatfuks in einem Rewe Markt hoch</p>"
           }
@@ -139,7 +139,7 @@
         "item_NhyCtd": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
+            "image": "shopify://shop_images/Outline_rewe_Markt_finden.png",
             "heading": "Rewe Markt Adresse",
             "content": "<p>Gebe die Adresse des Rewe Marktes ein</p>"
           }
@@ -147,30 +147,22 @@
         "item_KYnJNE": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
+            "image": "shopify://shop_images/Mystery.png",
             "heading": "Gewinne eine Mystery Box",
             "content": "<p>Gewinne eine GRATIS Mystery Box mit BRANDNEUEN PRODUKTEn die noch keiner kennt </p>"
-          }
-        },
-        "item_FdcVMB": {
-          "type": "item",
-          "settings": {
-            "heading": "",
-            "content": ""
           }
         }
       },
       "block_order": [
         "item_3MbPyG",
         "item_NhyCtd",
-        "item_KYnJNE",
-        "item_FdcVMB"
+        "item_KYnJNE"
       ],
       "name": "Multicolumn",
       "settings": {
         "heading": "So einfach gehts",
         "text_alignment": "center",
-        "background_color": "#D04D75",
+        "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
@@ -203,6 +195,81 @@
     "raffle_form_r9bdiB": {
       "type": "raffle-form",
       "blocks": {
+        "group_address": {
+          "type": "group",
+          "name": "Address",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "raffle_input_street": {
+              "type": "raffle-input",
+              "name": "Straße & Hausnummer",
+              "settings": {
+                "type": "text",
+                "label": "Straße (vom Rewe Markt)",
+                "placeholder": "Straße & Hausnummer",
+                "field_name": "Straße (vom Rewe Markt)",
+                "autocomplete": "street-address",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_plz": {
+              "type": "raffle-input",
+              "name": "PLZ",
+              "settings": {
+                "type": "text",
+                "label": "PLZ (von dem REWE Markt)",
+                "placeholder": "PLZ",
+                "field_name": "PLZ (von dem REWE Markt)",
+                "autocomplete": "postal-code",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_ort": {
+              "type": "raffle-input",
+              "name": "Ort",
+              "settings": {
+                "type": "text",
+                "label": "Ort (von dem REWE Markt )",
+                "placeholder": "Ort",
+                "field_name": "Ort (von dem REWE Markt )",
+                "autocomplete": "address-level2",
+                "required": true
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "raffle_input_street",
+            "raffle_input_plz",
+            "raffle_input_ort"
+          ]
+        },
+        "raffle_upload_kassenbon": {
+          "type": "file-upload",
+          "name": "File upload",
+          "settings": {
+            "label": "Bild von treatfuls im Rewe Markt",
+            "field_name": "Bild von treatfuls im Rewe Markt",
+            "help_text": "Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *.png, *.pdf, *.tiff und *.heic/*.heif.",
+            "error_message": "Bitte laden Sie einen Kassenbon hoch.",
+            "required": true,
+            "pubkey": "23bca10dd5e001cdf6bc",
+            "cdn_cname": "https://1lsd38ii4v.ucarecd.net/"
+          },
+          "blocks": {}
+        },
         "group_name": {
           "type": "group",
           "name": "Name",
@@ -222,8 +289,8 @@
               "type": "raffle-select",
               "name": "Anrede",
               "settings": {
-                "label": "Anrede",
-                "field_name": "Anrede",
+                "label": "deine Anrede",
+                "field_name": "Anrede Kunde",
                 "required": true
               },
               "blocks": {
@@ -263,9 +330,9 @@
               "name": "Vorname",
               "settings": {
                 "type": "text",
-                "label": "Vorname",
+                "label": "dein Vorname",
                 "placeholder": "Vorname",
-                "field_name": "Vorname",
+                "field_name": "Vorname Kunde",
                 "autocomplete": "",
                 "required": true
               },
@@ -276,9 +343,9 @@
               "name": "Nachname",
               "settings": {
                 "type": "text",
-                "label": "Nachname",
+                "label": "deinen Nachname",
                 "placeholder": "Nachname",
-                "field_name": "Nachname",
+                "field_name": "Nachname Kunde",
                 "autocomplete": "",
                 "required": true
               },
@@ -291,20 +358,7 @@
             "raffle_input_nachname"
           ]
         },
-        "raffle_input_email": {
-          "type": "raffle-input",
-          "name": "E-Mail",
-          "settings": {
-            "type": "email",
-            "label": "E-Mail",
-            "placeholder": "E-Mail",
-            "field_name": "E-Mail",
-            "autocomplete": "email",
-            "required": true
-          },
-          "blocks": {}
-        },
-        "group_address": {
+        "group_xNFmXF": {
           "type": "group",
           "name": "Address",
           "settings": {
@@ -319,40 +373,40 @@
             "margin_bottom": 20
           },
           "blocks": {
-            "raffle_input_street": {
+            "raffle_input_TqdyaD": {
               "type": "raffle-input",
               "name": "Straße & Hausnummer",
               "settings": {
                 "type": "text",
-                "label": "Rewe Markt Straße",
-                "placeholder": "Straße & Hausnummer",
-                "field_name": "Straße & Hausnummer",
+                "label": "Deine Adresse",
+                "placeholder": "Deine Adresse",
+                "field_name": "Deine Adresse",
                 "autocomplete": "street-address",
                 "required": true
               },
               "blocks": {}
             },
-            "raffle_input_plz": {
+            "raffle_input_pmqFYp": {
               "type": "raffle-input",
               "name": "PLZ",
               "settings": {
                 "type": "text",
-                "label": "PLZ",
+                "label": "deine PLZ",
                 "placeholder": "PLZ",
-                "field_name": "PLZ",
+                "field_name": "deine PLZ",
                 "autocomplete": "postal-code",
                 "required": true
               },
               "blocks": {}
             },
-            "raffle_input_ort": {
+            "raffle_input_G7NhtN": {
               "type": "raffle-input",
               "name": "Ort",
               "settings": {
                 "type": "text",
-                "label": "Ort",
+                "label": "Ort an dem du lebst",
                 "placeholder": "Ort",
-                "field_name": "Ort",
+                "field_name": "Ort an dem du lebst",
                 "autocomplete": "address-level2",
                 "required": true
               },
@@ -360,22 +414,21 @@
             }
           },
           "block_order": [
-            "raffle_input_street",
-            "raffle_input_plz",
-            "raffle_input_ort"
+            "raffle_input_TqdyaD",
+            "raffle_input_pmqFYp",
+            "raffle_input_G7NhtN"
           ]
         },
-        "raffle_upload_kassenbon": {
-          "type": "file-upload",
-          "name": "File upload",
+        "raffle_input_email": {
+          "type": "raffle-input",
+          "name": "E-Mail",
           "settings": {
-            "label": "Kassenbon",
-            "field_name": "Kassenbon",
-            "help_text": "Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *.png, *.pdf, *.tiff und *.heic/*.heif.",
-            "error_message": "Bitte laden Sie einen Kassenbon hoch.",
-            "required": true,
-            "pubkey": "3c825a77bb5652bdf2e1",
-            "cdn_cname": "https://1ad53bygda.ucarecd.net/"
+            "type": "email",
+            "label": "deine E-Mail Adresse",
+            "placeholder": "E-Mail",
+            "field_name": "E-Mail Adresse Kunde",
+            "autocomplete": "email",
+            "required": true
           },
           "blocks": {}
         },
@@ -383,20 +436,28 @@
           "type": "raffle-question",
           "name": "Frage 1",
           "settings": {
-            "title": "1. Kennst du treatfuls bereits?",
-            "field_name": "Frage 1",
+            "title": "1. Wo hast du treatfuls zum allerersten Mal entdeckt oder kennengelernt?",
+            "field_name": "Wo hast du treatfuls zum allerersten Mal entdeckt oder kennengelernt?",
             "input_type": "radio",
-            "required": true,
+            "required": false,
             "error_message": "Bitte wähle eine Antwort.",
-            "allow_other": false,
+            "allow_other": true,
             "other_placeholder": "Anderes"
           },
           "blocks": {
+            "raffle_answer_RgN6YU": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "dm Filiale"
+              },
+              "blocks": {}
+            },
             "q1_a1": {
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Nein, heute zum ersten Mal gesehen"
+                "label": "dm Online / App"
               },
               "blocks": {}
             },
@@ -404,7 +465,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ja, aus dem Handel"
+                "label": "Rewe"
               },
               "blocks": {}
             },
@@ -412,7 +473,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ja, von Social Media (Instagram, Pinterest, TikTok)"
+                "label": "Alnatura"
               },
               "blocks": {}
             },
@@ -420,7 +481,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ja, von Influencern"
+                "label": "Billa"
               },
               "blocks": {}
             },
@@ -428,7 +489,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ja, von Google / Online"
+                "label": "Budni"
               },
               "blocks": {}
             },
@@ -436,28 +497,38 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ja, aus Cafés, Sportstudios"
+                "label": "Spar"
+              },
+              "blocks": {}
+            },
+            "raffle_answer_Gfp7Vk": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Social Media"
               },
               "blocks": {}
             }
           },
           "block_order": [
+            "raffle_answer_RgN6YU",
             "q1_a1",
             "q1_a2",
             "q1_a3",
             "q1_a4",
             "q1_a5",
-            "q1_a6"
+            "q1_a6",
+            "raffle_answer_Gfp7Vk"
           ]
         },
         "raffle_question_2": {
           "type": "raffle-question",
           "name": "Frage 2",
           "settings": {
-            "title": "2. Worauf achtest du beim Kauf eines Snacks / Riegels am meisten? (Mehrfachauswahl möglich)",
-            "field_name": "Frage 2",
+            "title": "2. Wo hast du zum allerersten Mal treatfuls gekauft?",
+            "field_name": "Wo hast du zum allerersten Mal treatfuls gekauft?",
             "input_type": "checkbox",
-            "required": true,
+            "required": false,
             "error_message": "Bitte wähle mindestens eine Option oder trage etwas bei „Anderes“ ein.",
             "allow_other": true,
             "other_placeholder": "Anderes"
@@ -467,7 +538,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Wenig / kein Industriezucker"
+                "label": "dm Filliale"
               },
               "blocks": {}
             },
@@ -475,7 +546,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Natürliche Zutaten"
+                "label": "dm Online / App"
               },
               "blocks": {}
             },
@@ -483,7 +554,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Ballaststoffe / Nährwerte"
+                "label": "Rewe"
               },
               "blocks": {}
             },
@@ -491,7 +562,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Geschmackssorten, die mich ansprechen"
+                "label": "Alnatura"
               },
               "blocks": {}
             },
@@ -499,7 +570,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Markenauftritt / Verpackung"
+                "label": "Billa"
               },
               "blocks": {}
             },
@@ -507,7 +578,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Preis"
+                "label": "Budni"
               },
               "blocks": {}
             },
@@ -515,7 +586,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Bio / Nachhaltigkeit"
+                "label": "Spar"
               },
               "blocks": {}
             },
@@ -523,7 +594,7 @@
               "type": "_raffle-answer",
               "name": "Answer",
               "settings": {
-                "label": "Glutenfrei"
+                "label": "Social Media"
               },
               "blocks": {}
             }
@@ -585,10 +656,11 @@
         }
       },
       "block_order": [
-        "group_name",
-        "raffle_input_email",
         "group_address",
         "raffle_upload_kassenbon",
+        "group_name",
+        "group_xNFmXF",
+        "raffle_input_email",
         "raffle_question_1",
         "raffle_question_2",
         "raffle_input_frage3",
@@ -602,12 +674,12 @@
         "button_text": "Jetzt teilnehmen",
         "button_position": "center",
         "klaviyo_list_id": "",
-        "google_sheet_id": "ypNWGQvP7",
-        "google_sheet_name": "",
-        "post_success_title": "Danke für deine Teilnahme!",
-        "post_success_content": "<p>Du bist jetzt im Lostopf und das Rennen ist offiziell ins Rollen gebracht 🚲✨<br/>Das Gewinnspiel rund um das Dolly Lastenrad läuft vom 23.04. bis zum 07.05.<br/>Ab dem 12.05 wird der Gewinner ausgelost.<br/><br/>Wenn das Glück auf dich rollt, übernimmt Dolly die komplette Abwicklung und den Versand.</p><p>Viel Glück, wir drücken dir die Daumen! 🍀</p>",
+        "google_sheet_id": "1-ypNWGQvP7-eIsLMI1TTjJSCC4ENyUPQidz2vICV57w",
+        "google_sheet_name": "Schnitzeljagt Rewe",
+        "post_success_title": "Danke für deine Teilnahme! 💛",
+        "post_success_content": "<p>Mission erfüllt. 🕵️‍♀️🍫<br/>Du hast deinen REWE gefunden, damit bist du offiziell bei unserer <strong>treatfuls Schnitzeljagd</strong> dabei.</p><p>Und jetzt kommt der beste Teil:<br/><strong>Im Oktober schicken wir dir automatisch eine treatfuls Mysterybox nach Hause.</strong> 🎁</p><p>Was drin ist? Verraten wir natürlich noch nicht. 👀<br/>Nur so viel: Dich erwartet eine <strong>brandneue Sorte, die bisher noch niemand kennt.</strong></p><p>Danke, dass du uns beim Aufspüren unserer treatfuls REWE-Spots hilfst. 💌</p>",
         "post_success_anchor": "",
-        "background_color": "#C081A9",
+        "background_color": "#859972",
         "accent_color": "#424141",
         "hover_color": "#f3587f"
       }
@@ -646,6 +718,7 @@
         "price_9iiY6w",
         "buy_button_MhPzB7"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "product": "singles-box-1-ohne-weisse-haselnuss",
@@ -655,7 +728,7 @@
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
-        "background_color": "#DBAAEB",
+        "background_color": "#dbaaeb",
         "accent_color": "#de85a1",
         "hover_color": "#e56a89"
       }
@@ -715,9 +788,9 @@
         "title": "Help Us",
         "link_text": "Jetzt kaufen",
         "link_url": "/",
-        "background_color": "#C081A9",
-        "accent_color": "#2ac2bd",
-        "hover_color": "#f3587f"
+        "background_color": "#c081a9",
+        "accent_color": "#d04d75",
+        "hover_color": "#dbaaeb"
       }
     },
     "depr_rich_text_hATR9f": {
@@ -1230,7 +1303,7 @@
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
         "button_text": "",
         "button_url": "",
-        "background_color": "#D04D75",
+        "background_color": "#d04d75",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

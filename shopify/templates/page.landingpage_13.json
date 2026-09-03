@@ -35,10 +35,10 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
-        "content_vertical_position_mobile": 50,
-        "content_horizontal_position_mobile": 50,
         "max_width": "100%",
         "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
         "title": "",
         "text": "",
         "background_color": "#c081a9",
@@ -875,7 +875,7 @@
             "title": "matcha made in heaven",
             "content": "<p>Die Basis: feine Cashewkerne und Macadamianüsse, kombiniert mit cremigem Kokos- und Reismilchpulver, einem Hauch Dattelsüße, edlem Matcha-Pulver und einer Prise Salz für die perfekte Balance. Das Ergebnis ist samtig, natürlich süß und überraschend rund im Geschmack, perfekt fürs Croissant, Crêpe oder direkt vom Löffel. Und natürlich Vegan, bio , ohne raffinierten Zucker.</p>",
             "button_text": "Matcha? Let’s go 👇🏽",
-            "button_url": "shopify://collections/vorrat-veganuary"
+            "button_url": "shopify://collections/vorrat-auffuellen"
           }
         },
         "image_with_text_BjFpid": {
