@@ -9,6 +9,16 @@
     {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
+    {%- if section.settings.discount_badge_background != 'rgba(0,0,0,0)' and section.settings.discount_badge_background != blank -%}
+      --discount-badge-background: {{ section.settings.discount_badge_background }};
+    {%- else -%}
+      --discount-badge-background: var(--section-accent-color);
+    {%- endif -%}
+    {%- if section.settings.discount_badge_text_color != 'rgba(0,0,0,0)' and section.settings.discount_badge_text_color != blank -%}
+      --discount-badge-text-color: {{ section.settings.discount_badge_text_color }};
+    {%- else -%}
+      --discount-badge-text-color: rgb(var(--color-text));
+    {%- endif -%}
   }
 </style>
 
@@ -16,7 +26,9 @@
   assign bundle_config = product.metafields.custom.bundle_config.value
   assign config_parent = bundle_config.parent_product.value
   assign parent_product_variant = config_parent.variants.first | default: config_parent
-  assign default_box_size = bundle_config.size.value | first
+  assign quantity_options = bundle_config.quantities.value
+  assign default_quantity_option = quantity_options | first
+  assign default_box_size = default_quantity_option.quantity.value
 %}
 
 <section
@@ -42,18 +54,25 @@
                 <h3 class="h3">Step 1: Box Größe wählen</h3>
               </div>
               <div class="bundle-builder__box-inputs">
-                {% for size in bundle_config.size.value %}
+                {% for quantity_option in quantity_options %}
+                  {% assign size = quantity_option.quantity.value %}
+                  {% assign percentage_off = quantity_option.percentage_off.value | plus: 0 %}
                   <div class="input-radio">
                     <input
                       type="radio"
                       name="box-size"
                       id="box-{{ size }}"
                       value="{{ size }}"
+                      data-percentage-off="{{ quantity_option.percentage_off.value }}"
+                      data-property-pointer="{{ quantity_option.property_pointer.value }}"
                       {% if forloop.first %}
                         checked
                       {% endif %}
                     >
                     <label for="box-{{ size }}">{{ size }}er Box</label>
+                    {% if percentage_off > 0 %}
+                      <span class="bundle-builder__discount-badge">-{{ percentage_off }}%</span>
+                    {% endif %}
                   </div>
                 {% endfor %}
                 <modal-popover class="modal-popover modal-popover--large" id="Alert">
@@ -245,7 +264,9 @@
         <div class="bundle-builder__summary">
           <div class="bundle-builder__summary-header">
             <h3 class="h3">Deine Box:</h3>
-            <span class="h3 bundle-builder__price">{{ 0 | money }}</span>
+            <span class="h3 bundle-builder__price">
+              <span class="bundle-builder__price-current">{{ 0 | money }}</span>
+            </span>
           </div>
           <div
             data-threshold="{{ default_box_size }}"
@@ -353,6 +374,16 @@
       "id": "hover_color",
       "label": "Hover Color",
       "default": "#f3587f"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_background",
+      "label": "Discount Badge Background"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_text_color",
+      "label": "Discount Badge Text Color"
     }
   ],
   "presets": [

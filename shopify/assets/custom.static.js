@@ -74,11 +74,24 @@ class BundleBuilder extends HTMLElement {
   }
 
   boxDataProperty(itemSize) {
-    return JSON.stringify({
+    const selectedSize = this.querySelector("input[name='box-size']:checked");
+    const propertyPointer = (
+      selectedSize?.dataset.propertyPointer ||
+      this.propertyPointer ||
+      ""
+    ).trim();
+
+    const boxData = {
       uniqueId: this.uniqueId,
       itemSize,
       parentId: this.parentVariantGid,
-    });
+    };
+
+    if (propertyPointer) {
+      boxData.boxDiscount = propertyPointer;
+    }
+
+    return JSON.stringify(boxData);
   }
 
   boxLineProperties(itemSize) {
@@ -87,6 +100,38 @@ class BundleBuilder extends HTMLElement {
       _setId: this.uniqueId,
       _groupQuantity: String(itemSize),
     };
+  }
+
+  syncSizeConfig(radio) {
+    if (!radio) return;
+    this.currentSize = radio.value;
+    this.percentageOff = parseInt(radio.dataset.percentageOff, 10) || 0;
+    this.propertyPointer = radio.dataset.propertyPointer || "";
+  }
+
+  renderSummaryPrice() {
+    const hasDiscount = this.percentageOff > 0;
+    const displayPrice = hasDiscount
+      ? Math.round((this.totalPrice * (100 - this.percentageOff)) / 100)
+      : this.totalPrice;
+
+    const compareMarkup =
+      hasDiscount && this.totalPrice > 0
+        ? `<s class="bundle-builder__price-compare">${formatMoney(this.totalPrice)}</s>`
+        : "";
+    const badgeMarkup = hasDiscount
+      ? `<span class="bundle-builder__discount-badge">-${this.percentageOff}%</span>`
+      : "";
+
+    this.summaryPrice.classList.toggle(
+      "bundle-builder__price--on-sale",
+      hasDiscount && this.totalPrice > 0,
+    );
+    this.summaryPrice.innerHTML = `
+      ${compareMarkup}
+      <span class="bundle-builder__price-current">${formatMoney(displayPrice)}</span>
+      ${badgeMarkup}
+    `;
   }
 
   connectedCallback() {
@@ -102,9 +147,7 @@ class BundleBuilder extends HTMLElement {
     this.emptyCartButton = this.alertModal.querySelector(
       "[data-action='empty-cart']",
     );
-    this.currentSize = this.querySelector(
-      "input[name='box-size']:checked",
-    ).value;
+    this.syncSizeConfig(this.querySelector("input[name='box-size']:checked"));
     this.itemBar = this.querySelector(".shipping-bar");
     this.itemBarProgress = this.querySelector(".shipping-bar__progress");
     this.itemBarCount = this.querySelector(".shipping-bar__text-amount");
@@ -183,6 +226,8 @@ class BundleBuilder extends HTMLElement {
       "quantity:changed",
       this.updateBundleBuilder.bind(this),
     );
+
+    this.updateBundleBuilder();
   }
 
   disconnectedCallback() {}
@@ -415,7 +460,7 @@ class BundleBuilder extends HTMLElement {
         parseInt(item.querySelector('input[name*="quantity"]')?.value, 10) || 1;
       return acc + price * quantity;
     }, 0);
-    this.summaryPrice.innerHTML = formatMoney(this.totalPrice);
+    this.renderSummaryPrice();
     if (this.combinedQuantity >= this.itemBar.dataset.threshold) {
       this.submitButton.disabled = false;
       this.submitButton.textContent = "In den Warenkorb";
@@ -550,10 +595,12 @@ class BundleBuilder extends HTMLElement {
         this.alertModal.togglePopover();
       } else {
         this.itemBar.dataset.threshold = size;
+        this.syncSizeConfig(event.currentTarget);
         this.updateBundleBuilder();
       }
     } else {
       this.itemBar.dataset.threshold = this.lastSelectedSize;
+      this.syncSizeConfig(event.currentTarget);
       this.updateBundleBuilder();
     }
   }
@@ -562,7 +609,10 @@ class BundleBuilder extends HTMLElement {
     const newRadio = this.querySelector(
       `input[name='box-size'][value='${this.lastSelectedSize}']`,
     );
-    if (newRadio) newRadio.checked = true;
+    if (newRadio) {
+      newRadio.checked = true;
+      this.syncSizeConfig(newRadio);
+    }
     this.summaryItems.innerHTML = "";
     this.querySelectorAll(".bundle-builder__product").forEach((product) => {
       const qs = product.querySelector(":scope > quantity-selector");
