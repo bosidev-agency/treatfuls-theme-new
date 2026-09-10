@@ -12,6 +12,17 @@
     "hero_GRwq8M": {
       "type": "hero",
       "blocks": {
+        "button_CmAtWE": {
+          "type": "button",
+          "name": "Button",
+          "settings": {
+            "text": "👉🏽 Schatzsuche starten",
+            "url": "https://treatfuls.com/pages/schnitzeljagd-rewe",
+            "signup_button": false,
+            "klaviyo_form": ""
+          },
+          "blocks": {}
+        },
         "invisible_link_p9xHqa": {
           "type": "_invisible-link",
           "name": "Invisible link",
@@ -43,6 +54,7 @@
         "button_gWRaVG": {
           "type": "button",
           "name": "Button",
+          "disabled": true,
           "settings": {
             "text": "👉 Ab zur Box",
             "url": "https://treatfuls.com/pages/treatfuls-wochenbettbox",
@@ -53,15 +65,16 @@
         }
       },
       "block_order": [
+        "button_CmAtWE",
         "invisible_link_p9xHqa",
         "button_M3XbEb",
         "button_gWRaVG"
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_Wochenbett_Desktop_2_1.webp",
+        "desktop_image": "shopify://shop_images/Rewe_Schnitzeljagd-01.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Hero_Wochenbett_mobil_2.webp",
+        "mobile_image": "shopify://shop_images/Rewe_Schnitzeljagd-02.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "content_vertical_position_desktop": 47,
@@ -69,14 +82,14 @@
         "content_text_alignment_desktop": "left",
         "max_width": "fixed",
         "max_width_px": 700,
-        "content_vertical_position_mobile": 13,
+        "content_vertical_position_mobile": 11,
         "content_horizontal_position_mobile": 50,
         "content_text_alignment_mobile": "center",
         "max_width_mobile": "fixed",
         "max_width_mobile_px": 400,
-        "title": "Fürs Wochenbett. Mit Liebe & Snacks. 💕",
-        "text": "<p>Die Wochenbettbox mit Snacks, Wärme & Love Note – zum Verschenken oder Selbstgönnen.</p>",
-        "background_color": "#D04D75",
+        "title": "",
+        "text": "<h4>Auf zur treatfuls Schnitzeljagd! 🗺️📍</h4>",
+        "background_color": "#d04d75",
         "accent_color": "#d04d75",
         "hover_color": "#8a7194",
         "show_base_triangular_line": true
@@ -212,7 +225,7 @@
         "title-third": "healthy <span>never tasted</span> this naughty",
         "link_text": "Jetzt kaufen",
         "adjust_colors_to_current_slide": false,
-        "background_color": "#D04D75",
+        "background_color": "#d04d75",
         "accent_color": "#c081a9",
         "hover_color": "#e56a89"
       }

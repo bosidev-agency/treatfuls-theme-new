@@ -32,7 +32,7 @@
             "image": "shopify://shop_images/Rewe_Magda_und_Dana.jpg",
             "image_position": "left",
             "title": "Wir brauchen eure Hilfe 🕵️‍♀️💛",
-            "content": "<p>Wir sind Magdalena & Dana und wir haben ein Problem. 👀<br/><br/>Immer wieder fragt ihr uns, <strong>in welchen REWE Märkten ihr treatfuls finden könnt.</strong> Und genau das würden wir euch so gerne sagen.<br/><br/><strong>Aber: </strong>Wir können unmöglich selbst jede einzelne Filiale in jeder Stadt checken. Und genau deshalb schaffen wir das <strong>nicht ohne euch.</strong> 💛<br/><br/>Wenn ihr treatfuls bei REWE entdeckt, schickt uns einfach <strong>ein Foto + die Adresse der Filiale</strong> und helft uns dabei, nach und nach alle treatfuls Spots zu finden.</p><p>Als Dankeschön bekommt ihr eine <strong>Mysterybox mit einer brandneuen Sorte, die noch niemand kennt.</strong> 👀🎁<br/><br/><strong>Ready for the treatfuls hunt?</strong></p>",
+            "content": "<p>Wir sind Magdalena & Dana und wir haben ein Problem. 👀<br/><br/>Immer wieder fragt ihr uns, <strong>in welchen REWE Märkten ihr treatfuls finden könnt.</strong> Und genau das würden wir euch so gerne sagen.<br/><br/><strong>Aber: </strong>Wir können unmöglich selbst jede einzelne Filiale in jeder Stadt checken. Und genau deshalb schaffen wir das <strong>nicht ohne euch.</strong> 💛<br/><br/>Wenn ihr treatfuls bei REWE entdeckt, schickt uns einfach <strong>ein Foto + die Adresse der Filiale</strong> und helft uns dabei, nach und nach alle treatfuls Spots zu finden.</p><p>Als Dankeschön bekommt ihr eine <strong>Mysterybox mit einer brandneuen Sorte, die noch niemand kennt.</strong> 👀🎁<br/><br/>Bereit für die treatfuls Schnitzeljagd? 👀</p>",
             "button_text": "",
             "button_url": ""
           }
@@ -131,25 +131,25 @@
         "item_3MbPyG": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Bild_Upload_Icon_7fd26fda-f26e-4081-b9a0-98ca80b9aca0.png",
-            "heading": "Bild hochladen",
-            "content": "<p>Lade ein BIld con treatfuks in einem Rewe Markt hoch</p>"
+            "image": "shopify://shop_images/Trays_im_Regal.png",
+            "heading": "👀 Gefunden!",
+            "content": "<p>Lade ein Foto von treatfuls in deinem REWE hoch.</p>"
           }
         },
         "item_NhyCtd": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Outline_rewe_Markt_finden.png",
-            "heading": "Rewe Markt Adresse",
-            "content": "<p>Gebe die Adresse des Rewe Marktes ein</p>"
+            "image": "shopify://shop_images/Rewe_Adresse_einfuegen.png",
+            "heading": "📍 Wo war’s?",
+            "content": "<p>Trag die Adresse der REWE Filiale ein.</p>"
           }
         },
         "item_KYnJNE": {
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/Mystery.png",
-            "heading": "Gewinne eine Mystery Box",
-            "content": "<p>Gewinne eine GRATIS Mystery Box mit BRANDNEUEN PRODUKTEn die noch keiner kennt </p>"
+            "heading": "🎁 Treat yourself.",
+            "content": "<p>Im Oktober bekommst du eine gratis Mystery Box mit einer brandneuen Sorte, die noch niemand kennt. </p>"
           }
         }
       },
@@ -215,7 +215,7 @@
               "name": "Straße & Hausnummer",
               "settings": {
                 "type": "text",
-                "label": "Straße (vom Rewe Markt)",
+                "label": "Straße (von dem Rewe Markt)",
                 "placeholder": "Straße & Hausnummer",
                 "field_name": "Straße (vom Rewe Markt)",
                 "autocomplete": "street-address",
@@ -289,7 +289,7 @@
               "type": "raffle-select",
               "name": "Anrede",
               "settings": {
-                "label": "deine Anrede",
+                "label": "Deine Anrede",
                 "field_name": "Anrede Kunde",
                 "required": true
               },
@@ -330,9 +330,9 @@
               "name": "Vorname",
               "settings": {
                 "type": "vorname",
-                "label": "dein Vorname",
-                "placeholder": "Vorname",
-                "field_name": "Vorname Kunde",
+                "label": "Deinen Vorname",
+                "placeholder": "Deinen Vorname",
+                "field_name": "Deinen Vorname",
                 "autocomplete": "given-name",
                 "required": true
               },
@@ -343,9 +343,9 @@
               "name": "Nachname",
               "settings": {
                 "type": "nachname",
-                "label": "deinen Nachname",
-                "placeholder": "Nachname",
-                "field_name": "Nachname Kunde",
+                "label": "Deinen Nachname",
+                "placeholder": "Deinen Nachname",
+                "field_name": "Deinen Nachname",
                 "autocomplete": "family-name",
                 "required": true
               },
@@ -391,9 +391,9 @@
               "name": "PLZ",
               "settings": {
                 "type": "text",
-                "label": "deine PLZ",
-                "placeholder": "PLZ",
-                "field_name": "deine PLZ",
+                "label": "Deine PLZ",
+                "placeholder": "Deine PLZ",
+                "field_name": "Deine PLZ",
                 "autocomplete": "postal-code",
                 "required": true
               },
@@ -404,9 +404,9 @@
               "name": "Ort",
               "settings": {
                 "type": "text",
-                "label": "Ort an dem du lebst",
-                "placeholder": "Ort",
-                "field_name": "Ort an dem du lebst",
+                "label": "Dein Wohnort",
+                "placeholder": "Dein Wohnort",
+                "field_name": "Dein Ort",
                 "autocomplete": "address-level2",
                 "required": true
               },
@@ -424,9 +424,9 @@
           "name": "E-Mail",
           "settings": {
             "type": "email",
-            "label": "deine E-Mail Adresse",
-            "placeholder": "E-Mail",
-            "field_name": "E-Mail Adresse Kunde",
+            "label": "Deine E-Mail Adresse",
+            "placeholder": "Deine E-Mail",
+            "field_name": "Deine E-Mail",
             "autocomplete": "email",
             "required": true
           },
@@ -628,12 +628,12 @@
           "type": "raffle-consent",
           "name": "AGB",
           "settings": {
-            "label": "* Ich habe die {terms} und die {privacy} gelesen und bin damit einverstanden, dass meine Daten zur Durchführung des Gewinnspiels verarbeitet werden.",
+            "label": "* Ich habe die {terms} und die {privacy} gelesen und bin damit einverstanden, dass meine Daten zur Durchführung der Aktion „REWE Schnitzeljagt\" verarbeitet werden.",
             "field_name": "AGB Akzeptiert",
             "terms_link_text": "Teilnahmebedingungen",
             "privacy_link_text": "Datenschutzerklärung",
-            "legal_text": "<p><strong>1. Allgemeines</strong></p><p>Veranstalter des Gewinnspiels ist die <br/><strong>snacks with benefits GmbH</strong>,<br/>Birkenstraße 23,<br/>40233 Düsseldorf, Deutschland<br/>DE340236535<br/>(nachfolgend „treatfuls“ genannt).</p><p>Die Teilnahme am Gewinnspiel richtet sich ausschließlich nach diesen Teilnahmebedingungen.</p><p><strong>2. Teilnahmeberechtigung</strong></p><p>Teilnahmeberechtigt sind natürliche Personen, die zum Zeitpunkt der Teilnahme:</p><ul><li>das <strong>18. Lebensjahr vollendet</strong> haben,<br/><br/></li><li>ihren <strong>Wohnsitz in Deutschland</strong> haben,<br/><br/></li><li>unbeschränkt geschäftsfähig sind.<br/><br/></li></ul><p>Jede Person darf <strong>nur einmal</strong> am Gewinnspiel teilnehmen.<br/>Mehrfachteilnahmen oder der Versuch, mehrfach teilzunehmen, führen zum <strong>Ausschluss vom Gewinnspiel</strong>.</p><p>Von der Teilnahme ausgeschlossen sind Mitarbeitende von treatfuls sowie alle Personen, die an der Konzeption oder Umsetzung des Gewinnspiels beteiligt sind.</p><p>treatfuls behält sich das Recht vor, Teilnehmende bei Verstößen gegen diese Teilnahmebedingungen oder bei Manipulationsversuchen (z. B. durch falsche Angaben oder technische Manipulationen) vom Gewinnspiel auszuschließen. Gewinne können in diesen Fällen auch nachträglich aberkannt werden.</p><p><strong>3. Teilnahmevoraussetzungen</strong></p><p>Die Teilnahme am Gewinnspiel setzt voraus:</p><ul><li>den Kauf von mindestens zwei treatfuls Produkten<br/><br/></li><li>in einer dm-Drogeriemarkt-Filiale in Deutschland<br/><br/></li><li>innerhalb des Aktionszeitraums vom 23.04.2026. bis einschließlich 07.05.2026.<br/><br/></li></ul><p>Der Kauf ist durch das <strong>Hochladen eines Fotos des Kassenbons</strong> über das Teilnahmeformular nachzuweisen.</p><p>Auf dem Kassenbon müssen <strong>gut lesbar und eindeutig erkennbar</strong> sein:</p><ul><li>der Name des Händlers (dm-Drogeriemarkt),<br/><br/></li><li>das Kaufdatum,<br/><br/></li><li>die gekauften treatfuls Produkte,<br/><br/></li><li>der Kaufpreis,<br/><br/></li><li><strong>die Kassenbonnummer</strong>.<br/><br/></li></ul><p>Ein Kassenbon darf <strong>nur einmal</strong> für die Teilnahme am Gewinnspiel verwendet werden.</p><p>treatfuls behält sich das Recht vor, den Original-Kassenbon zur Überprüfung anzufordern. Kann dieser auf Anfrage nicht vorgelegt werden oder sind die Angaben unvollständig, unleserlich oder nicht eindeutig zuordenbar, wird die Teilnahme vom Gewinnspiel ausgeschlossen.</p><p><strong>4. Aktionszeitraum</strong></p><p>Das Gewinnspiel beginnt am <strong>23.042026.</strong> und endet am <strong>07.05.2026.</strong> (23:59 Uhr).<br/>Teilnahmen außerhalb dieses Zeitraums werden nicht berücksichtigt. Maßgeblich ist der Zeitpunkt des Eingangs der vollständigen Teilnahme auf den Servern von treatfuls.</p><p><strong>5. Gewinn</strong></p><p>Im Rahmen des Gewinnspiels wird folgender Gewinn verlost:</p><ul><li><strong>1× Dolly Lastenrad</strong> mit dem Aufdruck<br/> <strong>„Too matcha to handle“</strong>,<br/> <strong>vollgepackt mit treatfuls Riegeln pro Sorte ein Tray (ein Tray beinhaltet 20 treatfuls Riegel)</strong></li><li>Eine Barauszahlung des Gewinns oder ein Umtausch ist ausgeschlossen. Der Gewinn ist nicht übertragbar.</li></ul><p><strong>6. Gewinnermittlung und Benachrichtigung</strong></p><p>Die Ermittlung des Gewinners erfolgt nach Ende des Aktionszeitraums per Zufallsprinzip (Losverfahren) unter allen gültigen Teilnahmen. Es findet keine automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO statt.</p><p>Der Gewinner wird per E-Mail an die im Teilnahmeformular angegebene Adresse benachrichtigt. treatfuls übernimmt keine Verantwortung für unrichtige Kontaktangaben der Teilnehmenden oder dafür, dass die Gewinnbenachrichtigung durch Spam-Filter oder sonstige technische Umstände nicht zugestellt wird.</p><p>Der Gewinner muss sich <strong>innerhalb von 7 Tagen</strong> nach Versand der Gewinnbenachrichtigung zurückmelden. Erfolgt innerhalb dieser Frist keine Rückmeldung, verfällt der Gewinn und es wird ein neuer Gewinner ausgelost.</p><p><strong>7. Übergabe / Versand des Gewinns</strong></p><p>Der Gewinn wird an die vom Gewinner angegebene Adresse innerhalb Deutschlands versendet. Die Versandorganisation und -abwicklung erfolgt durch die <strong>Dolly Bakfiets B.V., Oregondreef 4, 3565 BG Utrecht, Niederlande</strong>, die im Auftrag von treatfuls als Auftragsverarbeiter gemäß Art. 28 DSGVO tätig wird. Die Weitergabe der hierfür erforderlichen personenbezogenen Daten (Name und Lieferadresse) an Dolly Bakfiets B.V. erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO und ist in der Datenschutzerklärung von treatfuls näher beschrieben.</p><p>treatfuls haftet nicht für Verlust oder Beschädigung des Gewinns auf dem Versandweg, sofern Dolly Bakfiets B.V. sorgfältig Versanddienstleister ausgewählt und beauftragt hat. Bei Problemen mit dem Versand wenden sich Gewinner:innen bitte zunächst an: <strong>hey@treatfuls.com</strong>.</p><p><strong>8. Vorzeitige Beendigung und Änderungsvorbehalt</strong></p><p>treatfuls behält sich das Recht vor, das Gewinnspiel jederzeit ohne Vorankündigung und ohne Angabe von Gründen vorzeitig zu beenden, zu unterbrechen oder die Teilnahmebedingungen zu ändern, sofern dies aus technischen oder rechtlichen Gründen erforderlich ist. In diesem Fall entstehen keine Ansprüche der Teilnehmenden gegenüber treatfuls.</p><p><strong>9. Haftung</strong></p><p>treatfuls haftet nur für Schäden, die durch vorsätzliches oder grob fahrlässiges Verhalten verursacht wurden. Die Haftung für leichte Fahrlässigkeit ist – soweit gesetzlich zulässig – ausgeschlossen. Dies gilt nicht für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Ansprüche nach dem Produkthaftungsgesetz.</p><p>treatfuls haftet nicht für technische Störungen, die eine Teilnahme am Gewinnspiel beeinträchtigen oder verhindern, sofern treatfuls diese nicht zu vertreten hat. In diesen Fällen besteht kein Anspruch auf Nachholung der Teilnahme.</p><p><strong>10. Datenschutz</strong></p><p>Informationen zur Verarbeitung personenbezogener Daten im Rahmen des Gewinnspiels finden sich im Abschnitt <strong>„Gewinnspiel“</strong> der Datenschutzerklärung von treatfuls.</p><p><strong>11. Schlussbestimmungen</strong></p><p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p><p>Der Rechtsweg ist hinsichtlich der Entscheidung über die Gewinnermittlung und die Vergabe des Gewinns ausgeschlossen. Im Übrigen bleibt der ordentliche Rechtsweg unberührt.</p><p>Sollten einzelne Bestimmungen dieser Teilnahmebedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Die unwirksame Bestimmung ist durch eine wirksame Regelung zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt.</p>",
-            "privacy_policy": "<p>1. Allgemeine Hinweise </p><p>Soweit nachstehend keine anderen Angaben gemacht werden, ist die Bereitstellung deiner personenbezogenen Daten weder gesetzlich noch vertraglich vorgeschrieben und nicht für einen Vertragsabschluss erforderlich. Du bist zur Bereitstellung der Daten nicht verpflichtet. Eine Nichtbereitstellung hat grundsätzlich keine negativen Folgen. Dies gilt nur, soweit bei den nachfolgenden Verarbeitungsvorgängen keine anderweitige Angabe gemacht wird.</p><p>„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.<br/><br/></p><p>2. Verantwortlicher</p><p>Verantwortlicher für die Datenverarbeitung ist:</p><p>snacks with benefits GmbH<br/>Birkenstraße 23<br/>40233 Düsseldorf<br/>Deutschland</p><p>E-Mail: <a href=\"mailto:hey@treatfuls.com\"><span style=\"text-decoration:underline\">hey@treatfuls.com</span><br/><br/></a></p><p>3. Zugriffsdaten und Server-Logfiles</p><p>Du kannst unsere Website besuchen, ohne Angaben zu deiner Person zu machen.</p><p>Bei jedem Zugriff auf unsere Website werden durch unseren Webhoster bzw. IT-Dienstleister Nutzungsdaten durch deinen Internetbrowser übermittelt und in sogenannten Server-Logfiles gespeichert. Zu diesen Daten gehören insbesondere:</p><ul><li>Name der aufgerufenen Seite</li><li>Datum und Uhrzeit des Zugriffs</li><li>IP-Adresse</li><li>übertragene Datenmenge</li><li>anfragender Provider</li><li>verwendeter Browser und Betriebssystem</li></ul><p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus unserem überwiegenden berechtigten Interesse an der Gewährleistung eines störungsfreien Betriebs unserer Website sowie zur Verbesserung unseres Angebots.</p><p>Die Server-Logfiles werden regelmäßig gelöscht, spätestens nach [❓ bitte bestätigen: z. B. 7 oder 14 Tagen].</p><p>Datenübermittlung in Drittländer</p><p>Deine Daten können dabei gegebenenfalls in Drittstaaten außerhalb der Europäischen Union übermittelt werden. Sofern für das jeweilige Drittland ein Angemessenheitsbeschluss der EU-Kommission besteht, erfolgt die Übermittlung auf dieser Grundlage.<br/>Soweit kein Angemessenheitsbeschluss vorliegt (z. B. bei Übermittlungen in die USA), stützen wir die Datenübermittlung auf Standardvertragsklauseln gemäß Art. 46 DSGVO.<br/><br/></p><p>4. Kontaktaufnahme per E-Mail</p><p>Wenn du per E-Mail initiativ mit uns in Kontakt trittst, erheben wir die von dir mitgeteilten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zum Zweck der Bearbeitung und Beantwortung deiner Anfrage.</p><ul><li>Dient die Kontaktaufnahme der Durchführung vorvertraglicher Maßnahmen oder betrifft sie einen bestehenden Vertrag, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</li><li>Erfolgt die Kontaktaufnahme aus anderen Gründen, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung der Anfrage).</li></ul><p>Du hast in diesem Fall das Recht, der Verarbeitung deiner personenbezogenen Daten aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit zu widersprechen.</p><p>Deine Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten bestehen, sofern du nicht ausdrücklich in eine weitergehende Verarbeitung eingewilligt hast.’<br/><br/></p><p>5. Gewinnspiele</p><p>Im Rahmen von Gewinnspielen verarbeiten wir personenbezogene Daten der teilnehmenden Personen.</p><p>Verarbeitete Daten</p><ul><li>Anrede</li><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Postanschrift</li><li>hochgeladener Kaufnachweis (z. B. Kassenbon)</li><li>Datum und Uhrzeit der Teilnahme</li></ul><p>Zwecke der Verarbeitung</p><ul><li>Durchführung und Organisation des Gewinnspiels</li><li>Prüfung der Teilnahmeberechtigung</li><li>Ermittlung und Benachrichtigung der Gewinner:innen</li><li>Übergabe oder Versand der Gewinne</li><li>Bearbeitung von Rückfragen</li></ul><p>Rechtsgrundlagen</p><ul><li>Art. 6 Abs. 1 lit. b DSGVO (Durchführung des Gewinnspiels)</li><li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. für Marketingzwecke)</li></ul><p>Weitere Informationen finden sich in den jeweiligen Teilnahmebedingungen des Gewinnspiels.<br/><br/></p><p>6. Newsletter und Marketingkommunikation</p><p>Wenn du dich für unseren Newsletter anmeldest oder im Rahmen eines Gewinnspiels in den Erhalt von Marketing-E-Mails einwilligst, verarbeiten wir deine personenbezogenen Daten zum Zweck der Zusendung von Informationen, Angeboten und Neuigkeiten von treatfuls.</p><p>Der Versand erfolgt ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO im Double-Opt-in-Verfahren.</p><p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, z. B. über den Abmeldelink in jeder E-Mail oder per Nachricht an gewinnspiel@treatfuls.com</p><p>7. Cookies und Einwilligungsmanagement</p><p>Unsere Website verwendet Cookies und ähnliche Technologien.</p><p>Notwendige Cookies</p><p>Diese sind erforderlich, um die grundlegenden Funktionen der Website sicherzustellen.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 TDDDG.</p><p>Optionale Cookies (Tracking / Marketing)</p><p>Optionale Cookies werden nur gesetzt, wenn du über unser Cookie-Banner ausdrücklich eingewilligt hast.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p><p>Du kannst deine Einwilligung jederzeit über die Cookie-Einstellungen widerrufen.</p><p>8. Social Media</p><p>Wir unterhalten Onlinepräsenzen auf sozialen Netzwerken (z. B. Instagram, TikTok).<br/>Beim Besuch unserer Social-Media-Seiten gelten die Datenschutzbestimmungen der jeweiligen Plattformen. Teilweise besteht eine gemeinsame Verantwortlichkeit gemäß Art. 26 DSGVO.<em><br/><br/></em></p><p>9. Speicherdauer</p><p>Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.<br/><br/></p><p>10. Rechte der betroffenen Personen</p><p>Du hast insbesondere folgende Rechte:</p><ul><li>Auskunft (Art. 15 DSGVO)</li><li>Berichtigung (Art. 16 DSGVO)</li><li>Löschung (Art. 17 DSGVO)</li><li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li><li>Datenübertragbarkeit (Art. 20 DSGVO)</li><li>Widerspruch gegen bestimmte Verarbeitungen (Art. 21 DSGVO)</li></ul><p>11. Beschwerderecht</p><p>Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>",
+            "legal_text": "<h6>1. Veranstalter</h6><h6>snacks with benefits GmbH (treatfuls), Birkenstraße 23, 40233 Düsseldorf, Deutschland, E-Mail: <a href=\"mailto:hey@treatfuls.com\">hey@treatfuls.com</a></h6><h6>2. Art der Aktion</h6><h6>Bei dieser Aktion handelt es sich nicht um ein Gewinnspiel und nicht um eine Verlosung. Jede Person, die die Teilnahmevoraussetzungen (Ziffer 4) vollständig erfüllt, erhält die Belohnung nach Ziffer 6. Es findet kein Losverfahren und keine Auswahl statt.</h6><h6>Gilt nur, solange die Menge der Mystery Boxen nicht begrenzt wird – siehe Abschnitt D im Prüfhinweis-Dokument.</h6><h6>3. Teilnahmeberechtigung</h6><h6>Teilnahmeberechtigt sind natürliche Personen mit Wohnsitz in Deutschland, die das 18. Lebensjahr vollendet haben. Mitarbeitende von treatfuls sowie deren Angehörige sind ausgeschlossen.</h6><h6>4. Teilnahmezeitraum und Voraussetzungen</h6><h6>Die Aktion läuft vom 10.09.2026 bis zum 10.10.2026. Für eine gültige Teilnahme muss die teilnehmende Person über das Formular:</h6><ol><li><h6>ein Foto einreichen, das treatfuls-Produkte sichtbar in einer <strong>echten, aktuell betriebenen REWE-Filiale</strong> zeigt (kein Fotomontage, kein Renderbild, kein Bild aus dem Internet). <strong>Ohne Foto ist keine Teilnahme möglich.</strong></h6></li><li><h6>die vollständige, korrekte Adresse dieser REWE-Filiale angeben; sie muss zu einem real existierenden Markt gehören und zum eingereichten Foto passen.</h6></li><li><h6>die persönlichen Daten vollständig und wahrheitsgemäß angeben.</h6></li></ol><h6>treatfuls prüft jede Teilnahme auf Plausibilität, insbesondere ob Filiale und Foto zusammenpassen.</h6><h6>5. Mehrfachteilnahme und Anzahl der Belohnungen</h6><h6>Teilnahme in mehreren Filialen ist möglich; mehrere Meldungen zur selben Filiale zählen als eine Teilnahme. Unabhängig von der Anzahl gültiger Teilnahmen erhält jede Person <strong>maximal eine</strong> Mystery Box.</h6><h6>6. Belohnung, Versand, kein Ersatz</h6><h6>Bei erfüllten Voraussetzungen wird automatisch im Oktober 2026 eine kostenlose Mystery Box mit einer neuen, noch nicht veröffentlichten Sorte versendet – ohne gesonderte Bestellung. Versand nur innerhalb Deutschlands, ein genauer Tag wird nicht zugesichert.</h6><h6>Maßgeblich sind ausschließlich die im Formular angegebenen Daten. treatfuls prüft oder korrigiert fehlerhafte Adress- oder Kontaktangaben nicht. Kommt die Box wegen falscher Angaben nicht an, geht das zulasten der teilnehmenden Person; kein Anspruch auf erneuten Versand oder Ersatz.</h6><h6>Eine Barauszahlung oder anderweitige Ersatzleistung ist ausgeschlossen.</h6><h6>7. Ausschluss bei Missbrauch</h6><h6>Ausgeschlossen werden Personen mit falschen Angaben, gefälschten/fremden Fotos oder sonstigem Missbrauch. treatfuls kann die Teilnahme nachträglich für ungültig erklären und eine bereits versendete Box zurückfordern.</h6><h6>8. Vorbehalt bei Lieferengpässen</h6><h6>Bei Produktions- oder Lieferengpässen, die treatfuls nicht zu vertreten hat, kann der Versand verschoben oder die Sorte durch eine gleichwertige ersetzt werden.</h6><h6>9. Haftung</h6><h6>treatfuls haftet unbeschränkt für Vorsatz, grobe Fahrlässigkeit, nach dem Produkthaftungsgesetz sowie bei Verletzung von Leben, Körper oder Gesundheit; im Übrigen nur bei Verletzung wesentlicher Vertragspflichten, begrenzt auf den vorhersehbaren Schaden. </h6><h6>10. Änderung/Beendigung, Schlussbestimmungen</h6><h6>treatfuls kann die Aktion aus wichtigem Grund vorzeitig beenden oder die Bedingungen anpassen; bereits erfüllte Teilnahmen bleiben unberührt. Es gilt deutsches Recht, soweit gesetzlich zulässig; zwingende Verbraucherschutzrechte bleiben unberührt.</h6><h6>11. Datenschutz</h6><h6>Informationen zur Datenverarbeitung findest du in unserer Datenschutzerklärung (Ergänzung zur Aktion \"REWE Schnitzeljagd\").</h6><h6>12. Kontakt</h6><h6><a href=\"mailto:hey@treatfuls.com\">hey@treatfuls.com</a></h6>",
+            "privacy_policy": "<p>1. Allgemeine Hinweise </p><p>Soweit nachstehend keine anderen Angaben gemacht werden, ist die Bereitstellung deiner personenbezogenen Daten weder gesetzlich noch vertraglich vorgeschrieben und nicht für einen Vertragsabschluss erforderlich. Du bist zur Bereitstellung der Daten nicht verpflichtet. Eine Nichtbereitstellung hat grundsätzlich keine negativen Folgen. Dies gilt nur, soweit bei den nachfolgenden Verarbeitungsvorgängen keine anderweitige Angabe gemacht wird.</p><p>„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.<br/><br/></p><p>2. Verantwortlicher</p><p>Verantwortlicher für die Datenverarbeitung ist:</p><p>snacks with benefits GmbH<br/>Birkenstraße 23<br/>40233 Düsseldorf<br/>Deutschland</p><p>E-Mail: <a href=\"mailto:hey@treatfuls.com\"><span style=\"text-decoration:underline\">hey@treatfuls.com</span><br/><br/></a></p><p>3. Zugriffsdaten und Server-Logfiles</p><p>Du kannst unsere Website besuchen, ohne Angaben zu deiner Person zu machen.</p><p>Bei jedem Zugriff auf unsere Website werden durch unseren Webhoster bzw. IT-Dienstleister Nutzungsdaten durch deinen Internetbrowser übermittelt und in sogenannten Server-Logfiles gespeichert. Zu diesen Daten gehören insbesondere:</p><ul><li>Name der aufgerufenen Seite</li><li>Datum und Uhrzeit des Zugriffs</li><li>IP-Adresse</li><li>übertragene Datenmenge</li><li>anfragender Provider</li><li>verwendeter Browser und Betriebssystem</li></ul><p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus unserem überwiegenden berechtigten Interesse an der Gewährleistung eines störungsfreien Betriebs unserer Website sowie zur Verbesserung unseres Angebots.</p><p>Die Server-Logfiles werden regelmäßig gelöscht, spätestens nach [❓ bitte bestätigen: z. B. 7 oder 14 Tagen].</p><p>Datenübermittlung in Drittländer</p><p>Deine Daten können dabei gegebenenfalls in Drittstaaten außerhalb der Europäischen Union übermittelt werden. Sofern für das jeweilige Drittland ein Angemessenheitsbeschluss der EU-Kommission besteht, erfolgt die Übermittlung auf dieser Grundlage.<br/>Soweit kein Angemessenheitsbeschluss vorliegt (z. B. bei Übermittlungen in die USA), stützen wir die Datenübermittlung auf Standardvertragsklauseln gemäß Art. 46 DSGVO.<br/><br/></p><p>4. Kontaktaufnahme per E-Mail</p><p>Wenn du per E-Mail initiativ mit uns in Kontakt trittst, erheben wir die von dir mitgeteilten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zum Zweck der Bearbeitung und Beantwortung deiner Anfrage.</p><ul><li>Dient die Kontaktaufnahme der Durchführung vorvertraglicher Maßnahmen oder betrifft sie einen bestehenden Vertrag, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</li><li>Erfolgt die Kontaktaufnahme aus anderen Gründen, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung der Anfrage).</li></ul><p>Du hast in diesem Fall das Recht, der Verarbeitung deiner personenbezogenen Daten aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit zu widersprechen.</p><p>Deine Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten bestehen, sofern du nicht ausdrücklich in eine weitergehende Verarbeitung eingewilligt hast.’<br/><br/></p><p>5. Gewinnspiele</p><p>Im Rahmen von Gewinnspielen verarbeiten wir personenbezogene Daten der teilnehmenden Personen.</p><p>Verarbeitete Daten</p><ul><li>Anrede</li><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Postanschrift</li><li>hochgeladener Kaufnachweis (z. B. Kassenbon)</li><li>Datum und Uhrzeit der Teilnahme</li></ul><p>Zwecke der Verarbeitung</p><ul><li>Durchführung und Organisation des Gewinnspiels</li><li>Prüfung der Teilnahmeberechtigung</li><li>Ermittlung und Benachrichtigung der Gewinner:innen</li><li>Übergabe oder Versand der Gewinne</li><li>Bearbeitung von Rückfragen</li></ul><p>Rechtsgrundlagen</p><ul><li>Art. 6 Abs. 1 lit. b DSGVO (Durchführung des Gewinnspiels)</li><li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. für Marketingzwecke)</li></ul><p>Weitere Informationen finden sich in den jeweiligen Teilnahmebedingungen des Gewinnspiels.<br/><br/>6. Aktion \"REWE Schnitzeljagd\"<br/><br/>Im Rahmen dieser Aktion verarbeiten wir folgende Daten der teilnehmenden Personen: Anrede, Vor- und Nachname, Straße und Hausnummer, PLZ und Wohnort, E-Mail-Adresse, die von dir angegebene REWE-Filialadresse sowie das von dir hochgeladene Foto.<br/><br/>Zweck: Prüfung der Teilnahmevoraussetzungen und Versand der Mystery Box.<br/><br/>Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung der im Rahmen der Aktion gegenüber dir bestehenden Pflichten) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Prüfung und Missbrauchsvermeidung).<br/><br/>Das hochgeladene Foto wird zur Prüfung deiner Teilnahmeberechtigung verwendet. treatfuls kann dein Foto zusätzlich auf seinen Social-Media-Kanälen veröffentlichen. Diese Einwilligung ist freiwillig, für die Teilnahme an der Aktion nicht erforderlich und kann jederzeit mit Wirkung für die Zukunft widerrufen werden, z. B. per E-Mail an <a href=\"mailto:customerlove@treatfuls.com\" target=\"_blank\">customerlove@treatfuls.com</a><br/><br/>Deine E-Mail-Adresse wird nicht werblich genutzt, es sei denn, du hast hierfür gesondert eingewilligt.<br/><br/>Der Versanddienstleister ist DHL. Für den Versand der Mysterybox werden die hierfür erforderlichen personenbezogenen Daten, insbesondere Vorname, Nachname und Adresse, an DHL weitergegeben.<br/><br/>Speicherdauer: bis zur Durchführung und Abwicklung der Aktion, spätestens 01.11.2026 nach Aktionsende, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p><p>7. Newsletter und Marketingkommunikation</p><p>Wenn du dich für unseren Newsletter anmeldest oder im Rahmen eines Gewinnspiels in den Erhalt von Marketing-E-Mails einwilligst, verarbeiten wir deine personenbezogenen Daten zum Zweck der Zusendung von Informationen, Angeboten und Neuigkeiten von treatfuls.</p><p>Der Versand erfolgt ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO im Double-Opt-in-Verfahren.</p><p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, z. B. über den Abmeldelink in jeder E-Mail oder per Nachricht an gewinnspiel@treatfuls.com</p><p>8. Cookies und Einwilligungsmanagement</p><p>Unsere Website verwendet Cookies und ähnliche Technologien.</p><p>Notwendige Cookies</p><p>Diese sind erforderlich, um die grundlegenden Funktionen der Website sicherzustellen.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 TDDDG.</p><p>Optionale Cookies (Tracking / Marketing)</p><p>Optionale Cookies werden nur gesetzt, wenn du über unser Cookie-Banner ausdrücklich eingewilligt hast.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p><p>Du kannst deine Einwilligung jederzeit über die Cookie-Einstellungen widerrufen.</p><p>9. Social Media</p><p>Wir unterhalten Onlinepräsenzen auf sozialen Netzwerken (z. B. Instagram, TikTok).<br/>Beim Besuch unserer Social-Media-Seiten gelten die Datenschutzbestimmungen der jeweiligen Plattformen. Teilweise besteht eine gemeinsame Verantwortlichkeit gemäß Art. 26 DSGVO.<em><br/><br/></em></p><p>10. Speicherdauer</p><p>Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.<br/><br/></p><p>11. Rechte der betroffenen Personen</p><p>Du hast insbesondere folgende Rechte:</p><ul><li>Auskunft (Art. 15 DSGVO)</li><li>Berichtigung (Art. 16 DSGVO)</li><li>Löschung (Art. 17 DSGVO)</li><li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li><li>Datenübertragbarkeit (Art. 20 DSGVO)</li><li>Widerspruch gegen bestimmte Verarbeitungen (Art. 21 DSGVO)</li></ul><p>12. Beschwerderecht</p><p>Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>",
             "required": true,
             "checked": false
           },
@@ -739,41 +739,41 @@
         "content_item_KUpV7a": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
-            "title": "Compostable pack",
-            "content": "<p>A snack wrap that looks premium and still breaks down after you’re done.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "image": "shopify://shop_images/singles_box.webp",
+            "title": "try them all",
+            "content": "<p>12 Riegel, jede Sorte einmal, perfekt zum Durchprobieren und Lieblings-treat finden.</p>",
+            "link_text": "👉🏽 Probier dich durch",
+            "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss"
           }
         },
         "content_item_Nca7P3": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
-            "title": "Vegan taste",
-            "content": "<p>Plant-based snacks that don’t taste like a compromise.</p>",
-            "link_text": "Mehr erfahren",
+            "image": "shopify://shop_images/Wochenbettbox2.webp",
+            "title": "a little love, delivered",
+            "content": "<p>Das perfekte Geschenk fürs Wochenbett – voller kleiner treats für große Momente.</p>",
+            "link_text": "👉🏽 Liebe verschenken",
             "link_url": "/"
           }
         },
         "content_item_zwJyHR": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
-            "title": "Better ingredients",
-            "content": "<p>Short, honest recipes with ingredients you can actually pronounce.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "image": "shopify://shop_images/3.webp",
+            "title": "filled & obsessed",
+            "content": "<p>Alle gefüllten Riegel in einer Box – creamy, crunchy und dangerously good.</p>",
+            "link_text": "👉🏽Filled Bars entdecken",
+            "link_url": "shopify://products/summer-crush-kopie"
           }
         },
         "content_item_8XDTqG": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/Magda_und_Dana.jpg",
-            "title": "Snack differently",
-            "content": "<p>Treats that are kinder to you and a little kinder to the planet.</p>",
-            "link_text": "Mehr erfahren",
-            "link_url": "/"
+            "image": "shopify://shop_images/Alle_Treatfulsriegel.png",
+            "title": "meet the whole gang",
+            "content": "<p>Alle treatfuls Sorten auf einen Blick – für alle, die sich einfach noch nicht entscheiden können.</p>",
+            "link_text": "👉🏽 Alle Sorten ansehen",
+            "link_url": "shopify://collections/riegel"
           }
         }
       },
@@ -785,8 +785,8 @@
       ],
       "name": "Info slider",
       "settings": {
-        "title": "Help Us",
-        "link_text": "Jetzt kaufen",
+        "title": "find your favorite 💘",
+        "link_text": "",
         "link_url": "/",
         "background_color": "#c081a9",
         "accent_color": "#d04d75",
