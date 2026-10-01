@@ -24,7 +24,7 @@
 		"fulfillment_service": {{- item.fulfillment_service | json -}},
 		"gift_card": {{- item.gift_card | json -}},
 		"grams": {{- item.grams | json -}},
-		"image": {%- include 'object-image-json' with image: item.image -%},
+		"image": {%- include 'object-image-json' with image, image: item.image -%},
 		"key": {{- item.key | json -}},
 		"line_level_discount_allocations": {{- item.line_level_discount_allocations | json -}},
 		"line_level_total_discount": {{- item.line_level_total_discount | json -}},
@@ -32,7 +32,7 @@
 		"options_with_values": {{- item.options_with_values | json -}},
 		"original_line_price": {{- item.original_line_price | json -}},
 		"original_price": {{- item.original_price | json -}},
-		"product": {%- include 'object-product-json' with product: item.product, include_recharge: include_recharge -%},
+		"product": {%- include 'object-product-json' with product, product: item.product, include_recharge: include_recharge -%},
 		"product_id": {{- item.product_id | json -}},
 		"properties": {
 			{{- properties_json -}}
@@ -46,9 +46,29 @@
 		"unit_price": {{- item.unit_price | json -}},
 		"unit_price_measurement": {{- item.unit_price_measurement | json -}},
 		"url": {{- item.url | json -}},
-		"variant": {%- include 'object-variant-json' with variant: item.variant, include_recharge: include_recharge -%},
+		"variant": {%- include 'object-variant-json' with variant, variant: item.variant, include_recharge: include_recharge -%},
 		"variant_id": {{- item.variant_id | json -}},
 		"vendor": {{- item.vendor | json -}},
 		"id": {{- item.id | json -}}
 	}
 {%- else -%}null{%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- include 'object-image-json' with image: item.image -%}"
+  to: "{%- include 'object-image-json' with image, image: item.image -%}"
+  position: 910..975
+- from: "{%- include 'object-product-json' with product: item.product, include_recharge:
+    include_recharge -%}"
+  to: "{%- include 'object-product-json' with product, product: item.product, include_recharge:
+    include_recharge -%}"
+  position: 1422..1531
+- from: "{%- include 'object-variant-json' with variant: item.variant, include_recharge:
+    include_recharge -%}"
+  to: "{%- include 'object-variant-json' with variant, variant: item.variant, include_recharge:
+    include_recharge -%}"
+  position: 2108..2217
+{% endcomment %}

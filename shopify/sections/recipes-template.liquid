@@ -31,14 +31,14 @@
             <div class="recipe__details">
               {% if article.metafields.custom.zeit != blank %}
                 <div class="icon-with-text">
-                  {%- render 'icon-clock' | width: 30 | height: 30 -%}
+                  {%- render 'icon-clock', width: 30, height: 30 -%}
                   <span class="text text--l">{{ article.metafields.custom.zeit }}</span>
                 </div>
               {% endif %}
 
               {% if article.metafields.custom.schwierigkeit != blank %}
                 <div class="icon-with-text">
-                  {%- render 'icon-recipe' | width: 30 | height: 30 -%}
+                  {%- render 'icon-recipe', width: 30, height: 30 -%}
                   <span class="text text--l">{{ article.metafields.custom.schwierigkeit }}</span>
                 </div>
               {% endif %}
@@ -299,3 +299,16 @@
   }
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'icon-clock' | width: 30 | height: 30 -%}"
+  to: "{%- render 'icon-clock', width: 30, height: 30 -%}"
+  position: 1455..1505
+- from: "{%- render 'icon-recipe' | width: 30 | height: 30 -%}"
+  to: "{%- render 'icon-recipe', width: 30, height: 30 -%}"
+  position: 1780..1831
+{% endcomment %}

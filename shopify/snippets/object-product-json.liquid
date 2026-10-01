@@ -10,7 +10,7 @@
 		{%- endif -%}
 
 		{%- capture variant_json -%}
-			{%- render 'object-variant-json' with variant: variant, include_recharge: include_recharge -%}
+			{%- render 'object-variant-json' with variant, variant: variant, include_recharge: include_recharge -%}
 		{%- endcapture -%}
 
 		{%- if variant_json == "null" -%}
@@ -27,7 +27,7 @@
 		{%- endif -%}
 
 		{%- capture image_json -%}
-			{%- render 'object-image-json' with image: image -%}
+			{%- render 'object-image-json' with image, image: image -%}
 		{%- endcapture -%}
 
 		{%- if image_json == "null" -%}
@@ -71,14 +71,14 @@
 
 	{
 		"available": {{- product.available | json -}},
-		"first_available_variant": {%- render 'object-variant-json' with variant: product.first_available_variant -%},
+		"first_available_variant": {%- render 'object-variant-json' with variant, variant: product.first_available_variant -%},
 		"compared_at_price": {{- product.compared_at_price | json -}},
 		"compared_at_price_max": {{- product.compared_at_price_max | json -}},
 		"compared_at_price_min": {{- product.compared_at_price_min | json -}},
 		"content": {{- product.content | json -}},
 		"created_at": "{{- product.created_at -}}",
 		"description": {{- product.description | json -}},
-		"featured_image": {%- render 'object-image-json' with image: product.featured_image -%},
+		"featured_image": {%- render 'object-image-json' with image, image: product.featured_image -%},
 		"handle": {{- product.handle | json -}},
 		"has_only_default_variant": {{- product.has_only_default_variant | json -}},
 		"options": {{- product.options_with_values | json -}},
@@ -104,3 +104,26 @@
 		}
 	}
 {%- else -%}null{%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'object-variant-json' with variant: variant, include_recharge:
+    include_recharge -%}"
+  to: "{%- render 'object-variant-json' with variant, variant: variant, include_recharge:
+    include_recharge -%}"
+  position: 343..446
+- from: "{%- render 'object-image-json' with image: image -%}"
+  to: "{%- render 'object-image-json' with image, image: image -%}"
+  position: 837..896
+- from: "{%- render 'object-variant-json' with variant: product.first_available_variant
+    -%}"
+  to: "{%- render 'object-variant-json' with variant, variant: product.first_available_variant
+    -%}"
+  position: 2808..2899
+- from: "{%- render 'object-image-json' with image: product.featured_image -%}"
+  to: "{%- render 'object-image-json' with image, image: product.featured_image -%}"
+  position: 3276..3352
+{% endcomment %}

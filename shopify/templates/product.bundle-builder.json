@@ -39,7 +39,9 @@
       "settings": {
         "background_color": "#859972",
         "accent_color": "#c081a9",
-        "hover_color": "#f3587f"
+        "hover_color": "#f3587f",
+        "discount_badge_background": "#FF8A00",
+        "discount_badge_text_color": ""
       }
     },
     "custom_section_8exgVz": {

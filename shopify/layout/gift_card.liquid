@@ -21,7 +21,7 @@
 
 		<meta name="description" content="{{- 'gift_cards.issued.subtext' | t -}}">
 
-		{%- render 'head-theme-meta' with layout: 'gift_cart' -%}
+		{%- render 'head-theme-meta' with layout, layout: 'gift_cart' -%}
 
 		<link rel="stylesheet" href="{{- 'bundle.css' | asset_url -}}">
 
@@ -35,3 +35,13 @@
 		<script src="{{- 'bundle.js' | asset_url -}}" defer></script>
 	</body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'head-theme-meta' with layout: 'gift_cart' -%}"
+  to: "{%- render 'head-theme-meta' with layout, layout: 'gift_cart' -%}"
+  position: 935..1000
+{% endcomment %}

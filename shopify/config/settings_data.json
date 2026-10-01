@@ -21,8 +21,8 @@
     "favicon": "shopify://shop_images/fav_ico.png",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": 75,
-    "start_date": "30.06.2026 09:00",
-    "end_date": "19.07.2026 23:59",
+    "start_date": "13.09.2026 05:00",
+    "end_date": "16.09.2026 23:59",
     "goodies": [
       "in-my-salty-era"
     ],
@@ -127,11 +127,12 @@
           "klaviyo_popup_9MMAiH": {
             "type": "klaviyo_popup",
             "settings": {
-              "klaviyo_form": "TfqHKY"
+              "klaviyo_form": "VthrqC"
             }
           },
           "klaviyo_popup_T7UJC9": {
             "type": "klaviyo_popup",
+            "disabled": true,
             "settings": {
               "klaviyo_form": "WjYcDJ"
             }

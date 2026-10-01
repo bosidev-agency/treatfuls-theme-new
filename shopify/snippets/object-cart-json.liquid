@@ -9,7 +9,7 @@
 	{%- endif -%}
 
 	{%- capture item_json -%}
-		{%- include 'object-line-item-json' with item: item, include_recharge: include_recharge -%}
+		{%- include 'object-line-item-json' with item, item: item, include_recharge: include_recharge -%}
 	{%- endcapture -%}
 
 	{%- if item_json == "null" -%}
@@ -33,3 +33,15 @@
 	"total_price": {{- cart.total_price | json -}},
 	"total_weight": {{- cart.total_weight | json -}}
 }
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- include 'object-line-item-json' with item: item, include_recharge: include_recharge
+    -%}"
+  to: "{%- include 'object-line-item-json' with item, item: item, include_recharge:
+    include_recharge -%}"
+  position: 284..381
+{% endcomment %}

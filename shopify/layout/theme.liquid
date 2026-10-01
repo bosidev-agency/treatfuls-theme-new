@@ -58,7 +58,7 @@
 		{%- endif -%}
 
 		{%- render 'social-meta-tags' -%}
-		{%- render 'head-theme-meta' with layout: 'theme' -%}
+		{%- render 'head-theme-meta' with layout, layout: 'theme' -%}
 
 		{%- render 'custom-variables.css' -%}
     {%- render 'css-variables' -%}
@@ -283,3 +283,13 @@
 
 </style>
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'head-theme-meta' with layout: 'theme' -%}"
+  to: "{%- render 'head-theme-meta' with layout, layout: 'theme' -%}"
+  position: 2240..2301
+{% endcomment %}

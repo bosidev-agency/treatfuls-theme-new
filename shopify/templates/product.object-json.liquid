@@ -1,6 +1,18 @@
 {%- layout none -%}
 {%- capture result -%}
-	{%- include 'object-product-json' with product: product, include_recharge: true -%}
+	{%- include 'object-product-json' with product, product: product, include_recharge: true -%}
 {%- endcapture -%}
 
 <script data-json-response type="application/json">{{- result -}}</script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- include 'object-product-json' with product: product, include_recharge:
+    true -%}"
+  to: "{%- include 'object-product-json' with product, product: product, include_recharge:
+    true -%}"
+  position: 44..136
+{% endcomment %}

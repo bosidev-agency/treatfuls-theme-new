@@ -13,8 +13,8 @@
 		"available": {{- variant.available | json -}},
 		"barcode": "{{- variant.barcode -}}",
 		"compare_at_price": {{- variant.compare_at_price | json -}},
-		"featured_image": {%- render 'object-image-json' with image: variant.featured_image -%},
-		"image": {%- render 'object-image-json' with image: variant.image -%},
+		"featured_image": {%- render 'object-image-json' with image, image: variant.featured_image -%},
+		"image": {%- render 'object-image-json' with image, image: variant.image -%},
 		"id": {{- variant.id | json -}},
 		"url": {{- variant.url | json -}},
 		"inventory_management": {{- variant.inventory_management | json -}},
@@ -44,3 +44,16 @@
 		}
 	}
 {%- else -%}null{%- endif -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'object-image-json' with image: variant.featured_image -%}"
+  to: "{%- render 'object-image-json' with image, image: variant.featured_image -%}"
+  position: 488..564
+- from: "{%- render 'object-image-json' with image: variant.image -%}"
+  to: "{%- render 'object-image-json' with image, image: variant.image -%}"
+  position: 577..644
+{% endcomment %}

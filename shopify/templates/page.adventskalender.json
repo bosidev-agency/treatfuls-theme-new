@@ -12,14 +12,14 @@
     "product_teaser_cHpidz": {
       "type": "signup-with-image",
       "settings": {
-        "title": "",
-        "title_mobile": "",
-        "subtitle": "",
+        "title": "hallo",
+        "title_mobile": "hallo",
+        "subtitle": "hallp",
         "image": "shopify://shop_images/treatfuls_digital_flyer_4zu5_V2.gif",
-        "content_title": "Wir feiern Launchparty",
+        "content_title": "wkuhkshkahs",
         "content": "<p>Am <strong>11.10.</strong> verwandeln wir unseren Innenhof in den place-to-be für alle treatful lovers. Mit deiner Anmeldung sicherst du dir nicht nur deinen Platz, sondern auch deinen <strong>gratis Matcha</strong> – limitiert und exklusiv für alle, die vorab dabei sind.</p><ul><li>Was dich erwartet:<br/><br/>✨ <strong>Vier brandneue Sorten</strong> zum Probieren – bevor sie irgendwo anders erhältlich sind<br/>✨ Ein Matcha aufs Haus – garantiert durch deine Anmeldung<br/>✨ Specials & kleine Überraschungen nur für diesen Tag<br/>✨ Musik, good vibes & ein Abend voller treatful energy<br/>✨ Shop the vibe – zum ersten Mal auch jede Sorte einzeln erhältlich</li><li></li></ul><p>Also: <strong>anmelden, Platz sichern, Matcha genießen & mit uns feiern.</strong> 💚</p>",
-        "klaviyo_id": "X3H7FL",
-        "background_color": "#a4b88c",
+        "klaviyo_id": "VthrqC",
+        "background_color": "#978cb6",
         "accent_color": "#aa3e59",
         "hover_color": "#f3587f"
       }

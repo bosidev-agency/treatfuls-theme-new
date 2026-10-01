@@ -52,11 +52,11 @@
     "main_page_wqaCcB": {
       "type": "main-page",
       "settings": {
-        "title": "Storefinder",
-        "subtitle": "",
+        "title": "<span>treatfuls Storefinder</span>",
+        "subtitle": "<p>good snacks are closer than you think📍</p>",
         "subtitle_font_size": 24,
         "background_color": "#859972",
-        "accent_color": "",
+        "accent_color": "#C081A9",
         "hover_color": "",
         "padding_top": 80,
         "padding_bottom": 40
@@ -324,7 +324,7 @@
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "#c081a9",
-        "accent_color": "#D04D75",
+        "accent_color": "#d04d75",
         "hover_color": "#e56a89"
       }
     },
