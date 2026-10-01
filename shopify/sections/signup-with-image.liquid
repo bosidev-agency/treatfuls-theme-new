@@ -9,6 +9,10 @@
     {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
+
+    .signup-with-image__content .title-wrapper {
+      text-align: {{ section.settings.content_position }};
+    }
   }
 </style>
 
@@ -50,7 +54,7 @@
                 {%- endif -%}
 
                 {%- if section.settings.content -%}
-                  <span class="title-wrapper__subtitle title-wrapper__subtitle--sm text-left">{{ section.settings.content }}</span>
+                  <span class="title-wrapper__subtitle title-wrapper__subtitle--sm">{{ section.settings.content }}</span>
                 {%- endif -%}
               </div>
             {%- endif -%}
@@ -115,6 +119,26 @@
 				"id": "content",
 				"label": "Content"
 			},
+      {
+        "type": "select",
+        "id": "content_position",
+        "label": "Content Position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      },
       {
 				"type": "text",
 				"id": "klaviyo_id",
