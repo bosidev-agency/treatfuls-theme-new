@@ -51,15 +51,15 @@
 	<div class="content-wrapper">
 		{%- if section.settings.title or section.settings.subtitle -%}
 			<div class="title-wrapper">
-				{%- if section.settings.title -%}
+				{%- if section.settings.title != blank -%}
 					<h1 class="title-wrapper__title title-bg">{{ section.settings.title }}</h1>
 				{%- endif -%}
 
-				{%- if section.settings.title_mobile -%}
+				{%- if section.settings.title_mobile != blank -%}
 					<h2 class="title-wrapper__title title-wrapper__title--mobile title-bg">{{ section.settings.title_mobile }}</h2>
 				{%- endif -%}
 
-				{%- if section.settings.subtitle -%}
+				{%- if section.settings.subtitle != blank -%}
 					<p class="title-wrapper__subtitle">{{ section.settings.subtitle }}</p>
 				{%- endif -%}
 			</div>
@@ -79,11 +79,11 @@
           <div class="signup-with-image__content">
             {%- if section.settings.content_title != blank or section.settings.content != blank or section.settings.button_text != blank -%}
               <div class="title-wrapper">
-                {%- if section.settings.content_title -%}
+                {%- if section.settings.content_title != blank -%}
                   <h3 class="title-wrapper__title title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
                 {%- endif -%}
 
-                {%- if section.settings.content -%}
+                {%- if section.settings.content != blank -%}
                   <span class="title-wrapper__subtitle title-wrapper__subtitle--sm">{{ section.settings.content }}</span>
                 {%- endif -%}
 
