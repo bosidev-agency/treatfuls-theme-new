@@ -13,6 +13,16 @@
     .signup-with-image__content .title-wrapper {
       text-align: {{ section.settings.content_position }};
     }
+
+    .signup-with-image__content .title-wrapper .button {
+      {%- if section.settings.content_position == 'right' -%}
+        align-self: flex-end;
+      {%- elsif section.settings.content_position == 'center' -%}
+        align-self: center;
+      {%- else -%}
+        align-self: flex-start;
+      {%- endif -%}
+    }
   }
 </style>
 
@@ -44,10 +54,15 @@
       <div class="container container--lg container--two-columns">
         {%- if section.settings.image != blank -%}
           <div class="signup-with-image__image-wrapper">
-            <img src="{{ section.settings.image | image_url: width: section.settings.image.width, height: section.settings.image.height }}">
+            <img
+              src="{{ section.settings.image | image_url: width: section.settings.image.width, height: section.settings.image.height }}"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+              alt="{{ section.settings.image.alt | escape }}"
+            >
           </div>
           <div class="signup-with-image__content">
-            {%- if section.settings.content_title != blank or section.settings.content != blank -%}
+            {%- if section.settings.content_title != blank or section.settings.content != blank or section.settings.button_text != blank -%}
               <div class="title-wrapper">
                 {%- if section.settings.content_title -%}
                   <h3 class="title-wrapper__title title-bg title-bg--xs">{{ section.settings.content_title }}</h3>
@@ -55,6 +70,10 @@
 
                 {%- if section.settings.content -%}
                   <span class="title-wrapper__subtitle title-wrapper__subtitle--sm">{{ section.settings.content }}</span>
+                {%- endif -%}
+
+                {%- if section.settings.button_text != blank -%}
+                  <a href="{{ section.settings.button_url }}" class="button button--space">{{ section.settings.button_text }}</a>
                 {%- endif -%}
               </div>
             {%- endif -%}
@@ -118,6 +137,16 @@
 				"type": "richtext",
 				"id": "content",
 				"label": "Content"
+			},
+      {
+				"type": "text",
+				"id": "button_text",
+				"label": "Button Text"
+			},
+      {
+				"type": "url",
+				"id": "button_url",
+				"label": "Button URL"
 			},
       {
         "type": "select",
