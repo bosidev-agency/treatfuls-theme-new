@@ -23,6 +23,19 @@
         align-self: flex-start;
       {%- endif -%}
     }
+
+    {%- if section.settings.image != blank -%}
+      .signup-with-image__image-wrapper {
+        align-self: start;
+        aspect-ratio: {{ section.settings.image.aspect_ratio }};
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    {%- endif -%}
   }
 </style>
 
@@ -54,12 +67,14 @@
       <div class="container container--lg container--two-columns">
         {%- if section.settings.image != blank -%}
           <div class="signup-with-image__image-wrapper">
-            <img
-              src="{{ section.settings.image | image_url: width: section.settings.image.width, height: section.settings.image.height }}"
-              width="{{ section.settings.image.width }}"
-              height="{{ section.settings.image.height }}"
-              alt="{{ section.settings.image.alt | escape }}"
-            >
+            {{
+              section.settings.image
+              | image_url: width: section.settings.image.width
+              | image_tag:
+                class: 'signup-with-image__image',
+                widths: '360, 540, 720, 900, 1080, 1296, 1512, 1728, 2000',
+                sizes: '(min-width: 750px) 50vw, 100vw'
+            }}
           </div>
           <div class="signup-with-image__content">
             {%- if section.settings.content_title != blank or section.settings.content != blank or section.settings.button_text != blank -%}

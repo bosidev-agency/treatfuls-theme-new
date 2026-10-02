@@ -27,6 +27,16 @@
     }
   }
 
+  &__image-wrapper {
+    align-self: start;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
   img {
     height: 100%;
     width: 100%;
