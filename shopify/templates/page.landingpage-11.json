@@ -33,10 +33,14 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
+        "content_text_alignment_desktop": "center",
         "max_width": "100%",
         "max_width_px": 1200,
         "content_vertical_position_mobile": 50,
         "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
         "title": "Hero banner",
         "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
         "background_color": "rgba(0,0,0,0)",
@@ -79,17 +83,90 @@
         "price_zwAehL",
         "buy_button_W846tk"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "product": "michivanwant-box-matcha-spread",
         "heading": "Creamy. Dreamy. Matcha.",
         "mobile_heading": "Creamy. Dreamy. Matcha",
+        "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
         "reviews_quantity_text": "",
         "background_color": "#859972",
         "accent_color": "#c081a9",
         "hover_color": "#24a5a1"
+      }
+    },
+    "info_slider_VfRE6H": {
+      "type": "info-slider",
+      "blocks": {
+        "content_item_gHkAt7": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/2_81b37cd9-a710-446c-946b-85663bf50282.png",
+            "title": "Slide title",
+            "content": "<p>man braucht das einfach es ist mega wihif&nbsp;</p>",
+            "link_text": "Jetzt kaufen",
+            "link_url": "shopify://collections/produkte"
+          }
+        },
+        "content_item_8w4MUz": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "title": "But first, tea",
+            "content": "<p>Pfirsich & Kamille von Cupper als kleines Extra mit dabei.</p>",
+            "link_text": "mehr zu Cupper",
+            "link_url": "https://cupper-teas.de/?srsltid=AfmBOorF8UhUnYFpzruJ-qCDZtp9r16Sf7I9ziqx9NwcsQbelXBTbBhQ"
+          }
+        },
+        "content_item_tz8gip": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "title": "Better ingredients",
+            "content": "<p>Unsere fünf treatfuls Sorten sorgen für den Snack-Vorrat</p>",
+            "link_text": "treatfuls entdecken",
+            "link_url": "https://treatfuls.com/collections/produkte"
+          }
+        },
+        "content_item_nDMydJ": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/3_3ec947e6-8c1e-47f6-830e-507fcc70c2ee.png",
+            "title": "From you, with love",
+            "content": "<p>Snacks, Tee, Wärmflasche & deine persönliche Love Note, alles in einer Box.</p>",
+            "link_text": "Box verschenken",
+            "link_url": "#shopify-section-template--30061088768264__featured_product_GbQVWw"
+          }
+        },
+        "content_item_reyVj8": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/Berry_Merch_0ba80bc4-f3bc-4aba-bd43-58e70b9a4495.png",
+            "title": "Hello, hot stuff",
+            "content": "<p>Das flauschige Extra, das wir deiner treatfuls Wochenbettbox einfach obendrauf schenken.</p>",
+            "link_text": "mehr zu Hugo Frosch",
+            "link_url": "https://hugo-frosch.de/waermflaschen/"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_gHkAt7",
+        "content_item_8w4MUz",
+        "content_item_tz8gip",
+        "content_item_nDMydJ",
+        "content_item_reyVj8"
+      ],
+      "name": "Info slider",
+      "settings": {
+        "title": "<span>Alles auf einen Blick</span>",
+        "link_text": "",
+        "link_url": "/",
+        "background_color": "#B5ACD4",
+        "accent_color": "#c081a9",
+        "hover_color": "#e35478"
       }
     },
     "comparison_table_dT7KWy": {
@@ -698,7 +775,7 @@
           "type": "heading",
           "name": "Heading",
           "settings": {
-            "heading_text": "Michis Lieblinge",
+            "heading_text": "",
             "subtitle_text": "",
             "margin_top": 24,
             "margin_bottom": 24
@@ -743,6 +820,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "matcha-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -763,6 +842,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "20-x-white-covered-zimt-treats-bio-xmas-is-nuts-and-cinnamon-and-stars",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -783,6 +864,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -803,6 +886,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "vegan-snack-love-bundle-alle-sorten-in-einem-bio-vegan",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -831,6 +916,7 @@
         "heading_kWUKzf",
         "group_Dc9Gp7"
       ],
+      "disabled": true,
       "name": "Custom block section",
       "settings": {
         "background_color": "#c081a9",
@@ -885,9 +971,9 @@
       ],
       "name": "Image with text",
       "settings": {
-        "background_color": "#859972",
+        "background_color": "#814D81",
         "accent_color": "#c081a9",
-        "hover_color": "",
+        "hover_color": "#D04D75",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -1030,6 +1116,7 @@
         "image_with_text_zpicPq",
         "image_with_text_B3yYVY"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "background_color": "#859972",
@@ -1117,19 +1204,11 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
-        "background_color": "#a3c089",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#814D81",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "main_product_ingredients_wVVqEM": {
-      "type": "main-product-ingredients",
-      "name": "Ingredients",
-      "settings": {
-        "product": "michivanwant-box-matcha-spread",
-        "title": "Wir verwenden nur beste Zutaten",
-        "background_color": "#c081a9",
-        "accent_color": "#2ac2bd"
       }
     }
   },
@@ -1137,12 +1216,12 @@
     "main",
     "hero_eNmaQw",
     "featured_product_GbQVWw",
+    "info_slider_VfRE6H",
     "comparison_table_dT7KWy",
     "custom_section_9AEAFL",
     "image_with_text_NHKmKF",
     "image_gallery_d8EpDC",
     "image_with_text_rxFGj9",
-    "advantages_BcfMf9",
-    "main_product_ingredients_wVVqEM"
+    "advantages_BcfMf9"
   ]
 }

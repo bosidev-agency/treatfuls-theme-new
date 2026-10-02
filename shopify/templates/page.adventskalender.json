@@ -12,17 +12,19 @@
     "product_teaser_cHpidz": {
       "type": "signup-with-image",
       "settings": {
-        "title": "<span>treatfuls Launchparty</span>",
+        "title": "treatfuls Launchparty",
         "title_mobile": "",
         "subtitle": "Something new is coming. 👀💜",
-        "image": "shopify://shop_images/Einladung_Ube_Launch.gif",
+        "image": "shopify://shop_images/Ube_Launch_2.0.png",
         "content_title": "",
-        "content": "<p>Am <strong>Samstag, den 10.10. von 13:30–17:30 Uhr</strong> feiern wir den Launch unserer neuen Sorte und du bist eingeladen.<br/><br/>Was dich erwartet:<br/>🍫 <strong>Unsere neue Sorte vor allen anderen probieren</strong>&nbsp;<br/>🍵 Ein ganz besonderer <strong>Matcha</strong><br/>🥞 Frische <strong>Crêpes mit unseren Spreads</strong>&nbsp;<br/>🥄 <strong>Live Tastings</strong> & jede Menge treatful zum Durchprobieren<br/>🧵 <strong>DIY Station hosted by ArtNight</strong> – gestalte deine eigenen Armbänder & Keychains<br/>🎡 <strong>Glücksrad</strong> mit kleinen Überraschungen<br/>🥖 Besonderes <strong>Sauerteigbrot</strong> zum Probieren<br/>👕 <strong>Exklusiver treatful Merch</strong> – mit brandneuen T-Shirts, die es nur zur Launchparty gibt<br/>🎁 <strong>Goodiebag voller Faves</strong> von Trend it up, Schaebens, Yogi Tea, Swiss-O-Par, Emmi-Nail, LOOSH, Forest Gum & vielen mehr<br/>👜 Plus unser <strong>brandneuer treatful Jutebeutel<br/><br/>Komm vorbei, probier dich durch & feier den Launch mit uns 💚</strong></p><p><strong>Melde dich vorher an & sichere dir deinen gratis Matcha 👇🏽</strong></p>",
+        "content": "<p>Am <strong>Samstag, den 10.10. von 13:30–17:30 Uhr</strong> feiern wir den Launch unserer neuen Sorte und du bist eingeladen.<br/><br/><strong>Kronprinzenstraße 97, 40217 Düsseldorf</strong><br/><br/>Was dich erwartet:<br/>🍫 <strong>Unsere neue Sorte vor allen anderen probieren</strong>&nbsp;<br/>🍵 Ein ganz besonderer <strong>Matcha</strong><br/>🥞 Frische <strong>Crêpes mit unseren Spreads</strong>&nbsp;<br/>🥄 <strong>Live Tastings</strong> & jede Menge treatfuls zum Durchprobieren<br/>🧵 <strong>DIY Station hosted by ArtNight</strong> – gestalte deine eigenen Armbänder & Keychains<br/>🎡 <strong>Glücksrad</strong> mit kleinen Überraschungen<br/>🥖 Besonderes <strong>Sauerteigbrot</strong> zum Probieren<br/>👕 <strong>Exklusiver treatfuls Merch</strong> – mit brandneuen T-Shirts, die es nur zur Launchparty gibt<br/>🎁 <strong>Goodiebag voller Faves</strong> von Trend it up, Schaebens, Yogi Tea, Swiss-O-Par, Emmi-Nail, LOOSH, Forest Gum & vielen mehr<br/>👜 Plus unser <strong>brandneuer treatful Jutebeutel<br/><br/>Komm vorbei, probier dich durch & feier den Launch mit uns 💚<br/><br/>Melde dich vorher an & sichere dir deinen gratis Matcha 👇🏽</strong></p>",
+        "button_text": "Sign up here",
+        "button_url": "https://manage.kmail-lists.com/subscriptions/subscribe?a=RsF7av&g=VthrqC",
         "content_position": "left",
-        "klaviyo_id": "X3H7FL",
+        "klaviyo_id": "",
         "background_color": "#978cb6",
-        "accent_color": "#C081A9",
-        "hover_color": "#f3587f"
+        "accent_color": "#c081a9",
+        "hover_color": "#814d81"
       }
     }
   },
