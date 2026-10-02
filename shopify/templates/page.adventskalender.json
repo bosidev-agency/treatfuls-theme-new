@@ -12,15 +12,16 @@
     "product_teaser_cHpidz": {
       "type": "signup-with-image",
       "settings": {
-        "title": "hallo",
-        "title_mobile": "hallo",
-        "subtitle": "hallp",
-        "image": "shopify://shop_images/treatfuls_digital_flyer_4zu5_V2.gif",
-        "content_title": "wkuhkshkahs",
-        "content": "<p>Am <strong>11.10.</strong> verwandeln wir unseren Innenhof in den place-to-be für alle treatful lovers. Mit deiner Anmeldung sicherst du dir nicht nur deinen Platz, sondern auch deinen <strong>gratis Matcha</strong> – limitiert und exklusiv für alle, die vorab dabei sind.</p><ul><li>Was dich erwartet:<br/><br/>✨ <strong>Vier brandneue Sorten</strong> zum Probieren – bevor sie irgendwo anders erhältlich sind<br/>✨ Ein Matcha aufs Haus – garantiert durch deine Anmeldung<br/>✨ Specials & kleine Überraschungen nur für diesen Tag<br/>✨ Musik, good vibes & ein Abend voller treatful energy<br/>✨ Shop the vibe – zum ersten Mal auch jede Sorte einzeln erhältlich</li><li></li></ul><p>Also: <strong>anmelden, Platz sichern, Matcha genießen & mit uns feiern.</strong> 💚</p>",
-        "klaviyo_id": "VthrqC",
+        "title": "<span>treatfuls Launchparty</span>",
+        "title_mobile": "",
+        "subtitle": "Something new is coming. 👀💜",
+        "image": "shopify://shop_images/Einladung_Ube_Launch.gif",
+        "content_title": "",
+        "content": "<p>Am <strong>Samstag, den 10.10. von 13:30–17:30 Uhr</strong> feiern wir den Launch unserer neuen Sorte und du bist eingeladen.<br/><br/>Was dich erwartet:<br/>🍫 <strong>Unsere neue Sorte vor allen anderen probieren</strong>&nbsp;<br/>🍵 Ein ganz besonderer <strong>Matcha</strong><br/>🥞 Frische <strong>Crêpes mit unseren Spreads</strong>&nbsp;<br/>🥄 <strong>Live Tastings</strong> & jede Menge treatful zum Durchprobieren<br/>🧵 <strong>DIY Station hosted by ArtNight</strong> – gestalte deine eigenen Armbänder & Keychains<br/>🎡 <strong>Glücksrad</strong> mit kleinen Überraschungen<br/>🥖 Besonderes <strong>Sauerteigbrot</strong> zum Probieren<br/>👕 <strong>Exklusiver treatful Merch</strong> – mit brandneuen T-Shirts, die es nur zur Launchparty gibt<br/>🎁 <strong>Goodiebag voller Faves</strong> von Trend it up, Schaebens, Yogi Tea, Swiss-O-Par, Emmi-Nail, LOOSH, Forest Gum & vielen mehr<br/>👜 Plus unser <strong>brandneuer treatful Jutebeutel<br/><br/>Komm vorbei, probier dich durch & feier den Launch mit uns 💚</strong></p><p><strong>Melde dich vorher an & sichere dir deinen gratis Matcha 👇🏽</strong></p>",
+        "content_position": "left",
+        "klaviyo_id": "X3H7FL",
         "background_color": "#978cb6",
-        "accent_color": "#aa3e59",
+        "accent_color": "#C081A9",
         "hover_color": "#f3587f"
       }
     }
