@@ -101,70 +101,81 @@
     "info_slider_VfRE6H": {
       "type": "info-slider",
       "blocks": {
-        "content_item_gHkAt7": {
+        "content_item_mTrbia": {
           "type": "content_item",
           "settings": {
-            "image": "shopify://shop_images/2_81b37cd9-a710-446c-946b-85663bf50282.png",
-            "title": "Slide title",
-            "content": "<p>man braucht das einfach es ist mega wihif&nbsp;</p>",
-            "link_text": "Jetzt kaufen",
-            "link_url": "shopify://products/merch-healthier-than-your-last-relationship"
+            "image": "shopify://shop_images/Will_ube_mine.png",
+            "title": "will ube mine?",
+            "content": "",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-will-ube-mine"
           }
         },
         "content_item_8w4MUz": {
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/5.png",
-            "title": "But first, tea",
-            "content": "<p>Pfirsich & Kamille von Cupper als kleines Extra mit dabei.</p>",
-            "link_text": "mehr zu Cupper",
-            "link_url": "https://cupper-teas.de/?srsltid=AfmBOorF8UhUnYFpzruJ-qCDZtp9r16Sf7I9ziqx9NwcsQbelXBTbBhQ"
+            "title": "too matcha to handle",
+            "content": "",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-too-matcha-to-handle"
           }
         },
         "content_item_tz8gip": {
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/4.png",
-            "title": "Better ingredients",
-            "content": "<p>Unsere fünf treatfuls Sorten sorgen für den Snack-Vorrat</p>",
-            "link_text": "treatfuls entdecken",
-            "link_url": "https://treatfuls.com/collections/produkte"
+            "title": "best date you´ll ever have",
+            "content": "",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-best-date-you-ll-ever-have"
           }
         },
         "content_item_nDMydJ": {
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/3_3ec947e6-8c1e-47f6-830e-507fcc70c2ee.png",
-            "title": "From you, with love",
-            "content": "<p>Snacks, Tee, Wärmflasche & deine persönliche Love Note, alles in einer Box.</p>",
-            "link_text": "Box verschenken",
-            "link_url": "#shopify-section-template--30061088768264__featured_product_GbQVWw"
+            "title": "sweeter than your ex",
+            "content": "",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-sweeter-than-your-ex"
           }
         },
         "content_item_reyVj8": {
           "type": "content_item",
           "settings": {
             "image": "shopify://shop_images/Berry_Merch_0ba80bc4-f3bc-4aba-bd43-58e70b9a4495.png",
-            "title": "Hello, hot stuff",
-            "content": "<p>Das flauschige Extra, das wir deiner treatfuls Wochenbettbox einfach obendrauf schenken.</p>",
-            "link_text": "mehr zu Hugo Frosch",
-            "link_url": "https://hugo-frosch.de/waermflaschen/"
+            "title": "berrylicious babe!",
+            "content": "",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-berryliciouse-babe"
+          }
+        },
+        "content_item_gHkAt7": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/2_81b37cd9-a710-446c-946b-85663bf50282.png",
+            "title": "",
+            "content": "<h4>healthier than your &nbsp;last relationship</h4>",
+            "link_text": "Jetzt vorbestellen",
+            "link_url": "shopify://products/merch-healthier-than-your-last-relationship"
           }
         }
       },
       "block_order": [
-        "content_item_gHkAt7",
+        "content_item_mTrbia",
         "content_item_8w4MUz",
         "content_item_tz8gip",
         "content_item_nDMydJ",
-        "content_item_reyVj8"
+        "content_item_reyVj8",
+        "content_item_gHkAt7"
       ],
       "name": "Info slider",
       "settings": {
-        "title": "<span>Alles auf einen Blick</span>",
+        "title": "exklusiver <span>treatfuls Merch</span>",
         "link_text": "",
         "link_url": "/",
-        "background_color": "#B5ACD4",
+        "background_color": "#b5acd4",
         "accent_color": "#c081a9",
         "hover_color": "#e35478"
       }
@@ -969,11 +980,12 @@
         "image_with_text_XgJXRN",
         "image_with_text_BjFpid"
       ],
+      "disabled": true,
       "name": "Image with text",
       "settings": {
-        "background_color": "#814D81",
+        "background_color": "#814d81",
         "accent_color": "#c081a9",
-        "hover_color": "#D04D75",
+        "hover_color": "#d04d75",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -984,7 +996,7 @@
         "image_YHHx9t": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/64.png",
+            "image": "shopify://shop_images/Ube_Merch_Bild.png",
             "content": "",
             "content_position_y": 80,
             "content_position_x": 20,
@@ -1002,7 +1014,7 @@
         "image_ziKmbU": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/17.png",
+            "image": "shopify://shop_images/Gemini_Generated_Image_9at7zx9at7zx9at7.jpg",
             "content": "",
             "content_position_y": 40,
             "content_position_x": 50,
@@ -1020,7 +1032,7 @@
         "image_i7T8hL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/15.png",
+            "image": "shopify://shop_images/ube_Riegel.png",
             "content": "",
             "content_position_y": 70,
             "content_position_x": 50,
@@ -1038,7 +1050,7 @@
         "image_yR8GAg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/63.png",
+            "image": "shopify://shop_images/2_b4a5498b-9c69-4ea7-af8f-1050e575262c.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 85,
@@ -1062,7 +1074,7 @@
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
-        "product": "gifting-boxen-bundle",
+        "product": "merch-will-ube-mine",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
@@ -1206,7 +1218,7 @@
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
         "button_text": "",
         "button_url": "",
-        "background_color": "#814D81",
+        "background_color": "#814d81",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }

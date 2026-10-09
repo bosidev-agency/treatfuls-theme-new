@@ -33,16 +33,81 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
-        "content_vertical_position_mobile": 50,
-        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_desktop": "center",
         "max_width": "100%",
         "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
         "title": "Hero banner",
         "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
         "background_color": "rgba(0,0,0,0)",
         "accent_color": "rgba(0,0,0,0)",
         "hover_color": "rgba(0,0,0,0)",
         "show_base_triangular_line": false
+      }
+    },
+    "featured_product_jXtweN": {
+      "type": "featured-product",
+      "blocks": {
+        "description_riiMHW": {
+          "type": "description",
+          "settings": {}
+        },
+        "text_field_wjUN3E": {
+          "type": "text_field",
+          "disabled": true,
+          "settings": {
+            "label": "💌 Deine Love Note Du schickst die Box direkt an deinen Herzensmenschen? Ein paar Worte von dir, handgeschrieben von uns. Hinterlass deine Nachricht hier, den Rest übernehmen wir 💌",
+            "property_key": "Nachricht",
+            "placeholder": "Schreibe deinen Text hier rein …",
+            "required": false,
+            "max_characters": 140,
+            "block_design": false
+          }
+        },
+        "countdown_yBRWUF": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_h99Wpb": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_anYrXQ": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_riiMHW",
+        "text_field_wjUN3E",
+        "countdown_yBRWUF",
+        "price_h99Wpb",
+        "buy_button_anYrXQ"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "product": "adventskalender-2026",
+        "heading": "Ein Geschenk, das nicht rumsteht, sondern gebraucht wird.",
+        "mobile_heading": "Alle Hände voll zu tun",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#c081a9",
+        "accent_color": "#d04d75",
+        "hover_color": "#dbaaeb"
       }
     },
     "featured_collections_qWR4p8": {
@@ -112,54 +177,8 @@
         "background_color": "#dbaaeb",
         "background_color_mobile": "#2ac2bd",
         "accent_color": "#2ac2bd",
-        "accent_color_mobile": "#f3587f"
-      }
-    },
-    "featured_product_GbQVWw": {
-      "type": "featured-product",
-      "blocks": {
-        "description_TrMApc": {
-          "type": "description",
-          "settings": {}
-        },
-        "countdown_yp9z36": {
-          "type": "countdown",
-          "settings": {
-            "heading": "",
-            "color": "",
-            "color_time": "",
-            "background_color": ""
-          }
-        },
-        "price_zwAehL": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_button_W846tk": {
-          "type": "buy_button",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_price": false
-          }
-        }
-      },
-      "block_order": [
-        "description_TrMApc",
-        "countdown_yp9z36",
-        "price_zwAehL",
-        "buy_button_W846tk"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "product": "santa-s-favorite-bundle-alle-x-mas-boxen-in-einem-bundle",
-        "heading": "Einmal alles, bitte.",
-        "mobile_heading": "Einmal alles, bitte.",
-        "show_price": true,
-        "reviews_average_rating": "",
-        "reviews_quantity_text": "",
-        "background_color": "#713242",
-        "accent_color": "#e35478",
-        "hover_color": "#e35478"
+        "accent_color_mobile": "#f3587f",
+        "collection_pill_background_color_mobile": "#2ac2bd"
       }
     },
     "custom_section_9AEAFL": {
@@ -214,6 +233,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "all-year-gifting-box",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -234,6 +255,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "x-mas-gifting-box-grun",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -254,6 +277,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "white-winter-treats",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -274,6 +299,8 @@
                       "name": "Product Card",
                       "settings": {
                         "card_product": "xmas-box-weisse-tute",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
                         "background_color": "#ffffff",
                         "text_color": "#000000"
                       },
@@ -969,7 +996,6 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/double_joy.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
@@ -1136,6 +1162,8 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein Bio-Riegel…",
         "subtitle": "sondern der beste Snack, an dem sich dein Gaumen zu Lebzeiten erfreuen wird*. Unsere Treats sind hergestellt aus und geschichtet mit den besten Zutaten + umrandet von Fair-Trade Schoko und eingepackt in recyclebarer Verpackung + bedruckt mit witzigen Sprüchen + kreiert mit viel Herzblut + Leidenschaft + Unmengen von Spaß.",
+        "button_text": "",
+        "button_url": "",
         "background_color": "#e56a89",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -1145,8 +1173,8 @@
   "order": [
     "main",
     "hero_eNmaQw",
+    "featured_product_jXtweN",
     "featured_collections_qWR4p8",
-    "featured_product_GbQVWw",
     "custom_section_9AEAFL",
     "comparison_table_dT7KWy",
     "image_with_text_NHKmKF",
