@@ -127,12 +127,17 @@
         {% assign pre_order_product = nil %}
         {% assign is_out_of_stock = false %}
 
+        {% if product.metafields.custom.preorder_date != blank %}
+          {% assign has_preorder = true %}
+          {% assign pre_order_product = product %}
+        {% endif %}
+
         {% for content in product.metafields.custom.product_content.value.content.value %}
           {% assign content_product = content.product.value %}
-          
-          {% if content_product.product.metafields.custom.preorder_date != blank %}
+
+          {% if product.metafields.custom.preorder_date == blank and content_product.product.metafields.custom.preorder_date != blank %}
             {% assign has_preorder = true %}
-            {% assign pre_order_product = content_product.product.value.product %}
+            {% assign pre_order_product = content_product.product %}
           {% endif %}
           {% if content_product.available == false or content_product.quantity < content_product.inventory_quantity %}
             {% assign is_out_of_stock = true %}
