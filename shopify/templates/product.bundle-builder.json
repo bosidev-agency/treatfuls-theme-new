@@ -40,7 +40,7 @@
         "background_color": "#859972",
         "accent_color": "#c081a9",
         "hover_color": "#f3587f",
-        "discount_badge_background": "#FF8A00",
+        "discount_badge_background": "#ff8a00",
         "discount_badge_text_color": ""
       }
     },
@@ -117,7 +117,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "all-year-box-kartonage",
+                        "card_product": "hart-cover-magnetische-box",
                         "show_view_product": false,
                         "show_cart_notification": true,
                         "background_color": "#ffffff",

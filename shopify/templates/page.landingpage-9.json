@@ -996,6 +996,7 @@
         "image_aRwhDh": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ube_mercch.png",
             "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
