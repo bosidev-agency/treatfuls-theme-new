@@ -37,11 +37,18 @@
       "type": "bundle-builder",
       "name": "Bundle Builder",
       "settings": {
-        "background_color": "#859972",
+        "background_color": "#f5f0eb",
         "accent_color": "#c081a9",
         "hover_color": "#f3587f",
+        "product_background_color": "#ffffff",
+        "text_color": "#000000",
+        "progress_bar_remaining_color": "#EE004B",
+        "milestone_reached_color": "#EE004B",
+        "rating_star_color": "#EE004B",
+        "summary_button_accent_color": "#EE004B",
+        "summary_button_hover_color": "#FF0396",
         "discount_badge_background": "#ff8a00",
-        "discount_badge_text_color": ""
+        "discount_badge_text_color": "#FFFFFF"
       }
     },
     "custom_section_8exgVz": {

@@ -74,12 +74,7 @@ class BundleBuilder extends HTMLElement {
   }
 
   boxDataProperty(itemSize) {
-    const selectedSize = this.querySelector("input[name='box-size']:checked");
-    const propertyPointer = (
-      selectedSize?.dataset.propertyPointer ||
-      this.propertyPointer ||
-      ""
-    ).trim();
+    const propertyPointer = (this.propertyPointer || "").trim();
 
     const boxData = {
       uniqueId: this.uniqueId,
@@ -102,11 +97,71 @@ class BundleBuilder extends HTMLElement {
     };
   }
 
-  syncSizeConfig(radio) {
-    if (!radio) return;
-    this.currentSize = radio.value;
-    this.percentageOff = parseInt(radio.dataset.percentageOff, 10) || 0;
-    this.propertyPointer = radio.dataset.propertyPointer || "";
+  sumItemQuantities() {
+    return Array.from(
+      this.summaryItems.querySelectorAll(".bundle-builder__item"),
+    ).reduce((acc, item) => {
+      const quantity = parseInt(
+        item.querySelector('input[name*="quantity"]')?.value,
+        10,
+      );
+      return acc + (Number.isNaN(quantity) ? 0 : quantity);
+    }, 0);
+  }
+
+  applyActiveTier(quantity) {
+    let active = null;
+    this.tiers.forEach((tier) => {
+      if (quantity >= tier.quantity) active = tier;
+    });
+    this.percentageOff = active ? active.percentageOff : 0;
+    this.propertyPointer = active ? active.propertyPointer : "";
+  }
+
+  segmentProgress(index, quantity) {
+    const end = this.tiers[index].quantity;
+    const start = index === 0 ? 0 : this.tiers[index - 1].quantity;
+    if (quantity >= end) return 1;
+    if (quantity <= start || end <= start) return 0;
+    return (quantity - start) / (end - start);
+  }
+
+  renderMilestones() {
+    if (!this.milestones) return;
+    this.tiers.forEach((tier, index) => {
+      tier.element.classList.toggle(
+        "is-reached",
+        this.combinedQuantity >= tier.quantity,
+      );
+      if (!tier.segment) return;
+      tier.segment.style.setProperty(
+        "--segment-progress",
+        String(this.segmentProgress(index, this.combinedQuantity)),
+      );
+    });
+  }
+
+  clearVariant(variantId) {
+    const productCard = this.querySelector(
+      `.bundle-builder__product[data-variant-id="${variantId}"]`,
+    );
+    if (productCard) {
+      const productQtySelector = productCard.querySelector(
+        ".bundle-builder__product-actions > quantity-selector",
+      );
+      if (productQtySelector) {
+        productQtySelector.classList.add("hidden");
+        const input = productQtySelector.querySelector('input[name="quantity"]');
+        if (input) input.value = 1;
+      }
+      const addBtn = productCard.querySelector(".bundle-builder__add");
+      if (addBtn) addBtn.classList.remove("hidden");
+    }
+
+    const summaryItem = this.summaryItems.querySelector(
+      `.bundle-builder__item[data-variant-id="${variantId}"]`,
+    );
+    if (summaryItem) summaryItem.remove();
   }
 
   renderSummaryPrice() {
@@ -138,31 +193,29 @@ class BundleBuilder extends HTMLElement {
     this.submitForm = this.querySelector("form[action='/cart/add']");
     this.submitButton = this.querySelector("button[type='submit']");
     this.summaryItems = this.querySelector(".bundle-builder__summary-items");
-    this.addButtons = this.querySelectorAll(".bundle-builder__product-header");
+    this.addButtons = this.querySelectorAll(".bundle-builder__add");
     this.productPools = Array.from(
       this.querySelectorAll(".bundle-builder__product-pool"),
     );
-    this.sizeSelectors = this.querySelectorAll("input[name='box-size']");
-    this.alertModal = this.querySelector("#Alert");
-    this.emptyCartButton = this.alertModal.querySelector(
-      "[data-action='empty-cart']",
-    );
-    this.syncSizeConfig(this.querySelector("input[name='box-size']:checked"));
-    this.itemBar = this.querySelector(".shipping-bar");
-    this.itemBarProgress = this.querySelector(".shipping-bar__progress");
-    this.itemBarCount = this.querySelector(".shipping-bar__text-amount");
-    if (this.currentSize) {
-      this.itemBar.dataset.threshold = this.currentSize;
-      this.itemBarCount.textContent = this.currentSize;
+    this.milestones = this.querySelector(".bundle-builder__milestones");
+    this.milestoneItems = this.querySelector(".bundle-builder__milestones-items");
+    this.tiers = Array.from(this.querySelectorAll(".bundle-builder__milestone"))
+      .map((element) => ({
+        element,
+        segment: element.querySelector(".bundle-builder__milestone-segment"),
+        quantity: parseInt(element.dataset.quantity, 10) || 0,
+        percentageOff: parseInt(element.dataset.percentageOff, 10) || 0,
+        propertyPointer: (element.dataset.propertyPointer || "").trim(),
+      }))
+      .sort((a, b) => a.quantity - b.quantity);
+    if (this.milestoneItems) {
+      this.tiers.forEach((tier) => this.milestoneItems.appendChild(tier.element));
     }
-    this.itemBarTextRemaining = this.querySelector(
-      ".shipping-bar__text--remaining",
-    );
-    this.itemBarTextAchieved = this.querySelector(
-      ".shipping-bar__text--achieved",
-    );
+    this.minQuantity = this.tiers[0]?.quantity || 0;
+    this.maxQuantity = this.tiers[this.tiers.length - 1]?.quantity || 0;
+    this.percentageOff = 0;
+    this.propertyPointer = "";
     this.combinedQuantity = 0;
-    this.lastSelectedSize = null;
     this.formData = null;
     this.uniqueId = null;
     this.poolFilters = Array.from(
@@ -203,24 +256,12 @@ class BundleBuilder extends HTMLElement {
       this.handleSubmitForm.bind(this),
     );
 
-    this.sizeSelectors.forEach((selector) => {
-      selector.addEventListener(
-        "change",
-        this.handleSizeSelectorChange.bind(this),
-      );
-    });
-
     this.poolFilters.forEach((filter) => {
       filter.addEventListener("change", this.handleFilterChange.bind(this));
     });
     this.metafieldFilters.forEach((filter) => {
       filter.addEventListener("change", this.handleFilterChange.bind(this));
     });
-
-    this.emptyCartButton.addEventListener(
-      "click",
-      this.handleEmptyCartButtonClick.bind(this),
-    );
 
     document.addEventListener(
       "quantity:changed",
@@ -259,13 +300,13 @@ class BundleBuilder extends HTMLElement {
 
         this.summaryItems.innerHTML = "";
         this.querySelectorAll(".bundle-builder__product").forEach((product) => {
-          const qs = product.querySelector(":scope > quantity-selector");
+          const qs = product.querySelector(".bundle-builder__product-actions > quantity-selector");
           if (qs) {
             qs.classList.add("hidden");
             const input = qs.querySelector('input[name="quantity"]');
             if (input) input.value = 1;
           }
-          const addBtn = product.querySelector(".cart-upsell__button");
+          const addBtn = product.querySelector(".bundle-builder__add");
           if (addBtn) addBtn.classList.remove("hidden");
         });
         this.formData = null;
@@ -320,6 +361,8 @@ class BundleBuilder extends HTMLElement {
   }
 
   handleAddButtonClick(event) {
+    if (this.maxQuantity > 0 && this.combinedQuantity >= this.maxQuantity) return;
+
     const productEl = event.currentTarget.closest(".bundle-builder__product");
     const template = productEl.querySelector("template");
     if (!template) return;
@@ -350,10 +393,10 @@ class BundleBuilder extends HTMLElement {
     } else {
       this.summaryItems.appendChild(itemContent);
       const productQtySelector = productEl.querySelector(
-        ":scope > quantity-selector",
+        ".bundle-builder__product-actions > quantity-selector",
       );
       if (productQtySelector) productQtySelector.classList.remove("hidden");
-      const addBtn = productEl.querySelector(".cart-upsell__button");
+      const addBtn = productEl.querySelector(".bundle-builder__add");
       if (addBtn) addBtn.classList.add("hidden");
     }
 
@@ -370,7 +413,7 @@ class BundleBuilder extends HTMLElement {
 
     if (productCard) {
       const input = productCard.querySelector(
-        ':scope > quantity-selector input[name="quantity"]',
+        '.bundle-builder__product-actions > quantity-selector input[name="quantity"]',
       );
       if (input && input !== sourceElement) input.value = newValue;
     }
@@ -381,8 +424,6 @@ class BundleBuilder extends HTMLElement {
   }
 
   updateBundleBuilder(event) {
-    const threshold = parseInt(this.itemBar.dataset.threshold, 10) || 0;
-
     if (event?.detail?.element) {
       const qtySelector = event.detail.element;
       const sourceInput = qtySelector.querySelector('input[name="quantity"]');
@@ -395,102 +436,76 @@ class BundleBuilder extends HTMLElement {
       }
     }
 
-    this.combinedQuantity = Array.from(
-      this.summaryItems.querySelectorAll(".bundle-builder__item"),
-    ).reduce(
-      (acc, item) =>
-        acc +
-          parseInt(item.querySelector('input[name*="quantity"]')?.value, 10) ||
-        1,
-      0,
-    );
+    this.combinedQuantity = this.sumItemQuantities();
 
-    if (this.combinedQuantity > threshold && event?.detail?.element) {
+    if (
+      this.maxQuantity > 0 &&
+      this.combinedQuantity > this.maxQuantity &&
+      event?.detail?.element
+    ) {
       const changedInput = event.detail.element.querySelector(
         'input[name*="quantity"]',
       );
       if (changedInput) {
-        const overshoot = this.combinedQuantity - threshold;
-        const currentVal = parseInt(changedInput.value, 10) || 1;
-        const min = parseInt(changedInput.getAttribute("min"), 10) || 1;
-        changedInput.value = Math.max(currentVal - overshoot, min);
-
+        const overshoot = this.combinedQuantity - this.maxQuantity;
+        const currentVal = parseInt(changedInput.value, 10) || 0;
+        const nextVal = Math.max(currentVal - overshoot, 0);
         const qtySelector = event.detail.element;
         const productEl = qtySelector.closest(".bundle-builder__product");
         const itemEl = qtySelector.closest(".bundle-builder__item");
         const variantId =
           productEl?.dataset.variantId || itemEl?.dataset.variantId;
-        if (variantId) {
-          this.syncQuantitySelectors(
-            variantId,
-            changedInput.value,
-            changedInput,
-          );
+
+        if (nextVal === 0 && variantId) {
+          this.clearVariant(variantId);
+        } else {
+          changedInput.value = String(nextVal);
+          if (variantId) {
+            this.syncQuantitySelectors(
+              variantId,
+              changedInput.value,
+              changedInput,
+            );
+          }
         }
 
-        this.combinedQuantity = Array.from(
-          this.summaryItems.querySelectorAll(".bundle-builder__item"),
-        ).reduce(
-          (acc, item) =>
-            acc +
-              parseInt(
-                item.querySelector('input[name*="quantity"]')?.value,
-                10,
-              ) || 1,
-          0,
-        );
+        this.combinedQuantity = this.sumItemQuantities();
       }
     }
 
     const incrementButtons = this.querySelectorAll(
       ".quantity-element__button[data-quantity='increment']",
     );
-    this.itemBar.dataset.current = this.combinedQuantity;
-    this.itemBar.style.setProperty(
-      "--progress",
-      this.combinedQuantity / this.itemBar.dataset.threshold,
-    );
-    this.itemBarCount.textContent =
-      this.itemBar.dataset.threshold - this.combinedQuantity;
     this.totalPrice = Array.from(
       this.summaryItems.querySelectorAll(".bundle-builder__item"),
     ).reduce((acc, item) => {
       const price = parseInt(item.getAttribute("data-price"), 10) || 0;
-      const quantity =
-        parseInt(item.querySelector('input[name*="quantity"]')?.value, 10) || 1;
-      return acc + price * quantity;
-    }, 0);
-    this.renderSummaryPrice();
-    if (this.combinedQuantity >= this.itemBar.dataset.threshold) {
-      this.submitButton.disabled = false;
-      this.submitButton.textContent = "In den Warenkorb";
-
-      this.itemBarProgress.classList.add("shipping-bar__progress--achieved");
-      this.itemBarProgress.classList.remove(
-        "shipping-bar__progress--remaining",
+      const quantity = parseInt(
+        item.querySelector('input[name*="quantity"]')?.value,
+        10,
       );
-      this.itemBarTextRemaining.classList.add("hidden");
-      this.itemBarTextAchieved.classList.remove("hidden");
-      this.addButtons.forEach((button) => {
-        button.classList.add("disabled");
-      });
-      incrementButtons.forEach((button) => {
-        button.disabled = true;
-      });
-    } else {
-      this.submitButton.disabled = true;
-      this.submitButton.textContent = "Wähle Produkte";
-      this.itemBarProgress.classList.add("shipping-bar__progress--remaining");
-      this.itemBarProgress.classList.remove("shipping-bar__progress--achieved");
-      this.itemBarTextRemaining.classList.remove("hidden");
-      this.itemBarTextAchieved.classList.add("hidden");
-      this.addButtons.forEach((button) => {
-        button.classList.remove("disabled");
-      });
-      incrementButtons.forEach((button) => {
-        button.disabled = false;
-      });
-    }
+      return acc + price * (Number.isNaN(quantity) ? 0 : quantity);
+    }, 0);
+    this.applyActiveTier(this.combinedQuantity);
+    this.renderMilestones();
+    this.renderSummaryPrice();
+
+    const canSubmit =
+      this.combinedQuantity >= this.minQuantity && this.combinedQuantity > 0;
+    const atMax =
+      this.maxQuantity > 0 && this.combinedQuantity >= this.maxQuantity;
+
+    this.submitButton.disabled = !canSubmit;
+    this.submitButton.textContent = canSubmit
+      ? "In den Warenkorb"
+      : "Wähle Produkte";
+    this.addButtons.forEach((button) => {
+      button.disabled = atMax;
+    });
+    incrementButtons.forEach((button) => {
+      button.disabled = atMax;
+    });
+
     if (event?.detail?.remove) {
       const itemEl = event.detail.element.closest(".bundle-builder__item");
       const productEl = event.detail.element.closest(
@@ -499,30 +514,7 @@ class BundleBuilder extends HTMLElement {
       const variantId =
         itemEl?.dataset.variantId || productEl?.dataset.variantId;
 
-      if (variantId) {
-        const productCard = this.querySelector(
-          `.bundle-builder__product[data-variant-id="${variantId}"]`,
-        );
-        if (productCard) {
-          const productQtySelector = productCard.querySelector(
-            ":scope > quantity-selector",
-          );
-          if (productQtySelector) {
-            productQtySelector.classList.add("hidden");
-            const input = productQtySelector.querySelector(
-              'input[name="quantity"]',
-            );
-            if (input) input.value = 1;
-          }
-          const addBtn = productCard.querySelector(".cart-upsell__button");
-          if (addBtn) addBtn.classList.remove("hidden");
-        }
-
-        const summaryItem = this.summaryItems.querySelector(
-          `.bundle-builder__item[data-variant-id="${variantId}"]`,
-        );
-        if (summaryItem) summaryItem.remove();
-      }
+      if (variantId) this.clearVariant(variantId);
 
       this.updateBundleBuilder();
     }
@@ -530,6 +522,12 @@ class BundleBuilder extends HTMLElement {
 
   handleSubmitForm(event) {
     event.preventDefault();
+    if (
+      this.combinedQuantity < this.minQuantity ||
+      (this.maxQuantity > 0 && this.combinedQuantity > this.maxQuantity)
+    ) {
+      return;
+    }
     const itemEls = this.summaryItems.querySelectorAll(".bundle-builder__item");
     this.uniqueId = String(Date.now());
 
@@ -583,50 +581,6 @@ class BundleBuilder extends HTMLElement {
     this.handleAddToCart();
   }
 
-  handleSizeSelectorChange(event) {
-    const size = parseInt(event.currentTarget.value, 10);
-    this.lastSelectedSize = size;
-    if (this.lastSelectedSize < this.itemBar.dataset.threshold) {
-      if (this.combinedQuantity > 0) {
-        const oldRadio = this.querySelector(
-          `input[name='box-size'][value='${this.itemBar.dataset.threshold}']`,
-        );
-        if (oldRadio) oldRadio.checked = true;
-        this.alertModal.togglePopover();
-      } else {
-        this.itemBar.dataset.threshold = size;
-        this.syncSizeConfig(event.currentTarget);
-        this.updateBundleBuilder();
-      }
-    } else {
-      this.itemBar.dataset.threshold = this.lastSelectedSize;
-      this.syncSizeConfig(event.currentTarget);
-      this.updateBundleBuilder();
-    }
-  }
-
-  handleEmptyCartButtonClick(event) {
-    const newRadio = this.querySelector(
-      `input[name='box-size'][value='${this.lastSelectedSize}']`,
-    );
-    if (newRadio) {
-      newRadio.checked = true;
-      this.syncSizeConfig(newRadio);
-    }
-    this.summaryItems.innerHTML = "";
-    this.querySelectorAll(".bundle-builder__product").forEach((product) => {
-      const qs = product.querySelector(":scope > quantity-selector");
-      if (qs) {
-        qs.classList.add("hidden");
-        const input = qs.querySelector('input[name="quantity"]');
-        if (input) input.value = 1;
-      }
-      const addBtn = product.querySelector(".cart-upsell__button");
-      if (addBtn) addBtn.classList.remove("hidden");
-    });
-    this.itemBar.dataset.threshold = this.lastSelectedSize;
-    this.updateBundleBuilder();
-  }
 }
 
 customElements.define("bundle-builder", BundleBuilder);

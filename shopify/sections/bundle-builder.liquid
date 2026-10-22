@@ -9,6 +9,13 @@
     {%- if section.settings.hover_color != 'rgba(0,0,0,0)' and section.settings.hover_color != blank -%}
       --section-hover-color: {{ section.settings.hover_color }};
     {%- endif -%}
+    {%- if section.settings.product_background_color != 'rgba(0,0,0,0)' and section.settings.product_background_color != blank -%}
+      --bundle-product-background-color: {{ section.settings.product_background_color }};
+    {%- endif -%}
+    {%- if section.settings.text_color != 'rgba(0,0,0,0)' and section.settings.text_color != blank -%}
+      --color-text: {{ section.settings.text_color.red }}, {{ section.settings.text_color.green }}, {{ section.settings.text_color.blue }};
+      --bundle-quantity-color: {{ section.settings.text_color }};
+    {%- endif -%}
     {%- if section.settings.discount_badge_background != 'rgba(0,0,0,0)' and section.settings.discount_badge_background != blank -%}
       --discount-badge-background: {{ section.settings.discount_badge_background }};
     {%- else -%}
@@ -19,6 +26,22 @@
     {%- else -%}
       --discount-badge-text-color: rgb(var(--color-text));
     {%- endif -%}
+    {%- if section.settings.progress_bar_remaining_color != 'rgba(0,0,0,0)' and section.settings.progress_bar_remaining_color != blank -%}
+      --bundle-progress-remaining: {{ section.settings.progress_bar_remaining_color }};
+    {%- endif -%}
+    {%- if section.settings.milestone_reached_color != 'rgba(0,0,0,0)' and section.settings.milestone_reached_color != blank -%}
+      --bundle-milestone-reached: {{ section.settings.milestone_reached_color }};
+      --bundle-milestone-reached-text: #fff;
+    {%- endif -%}
+    {%- if section.settings.rating_star_color != 'rgba(0,0,0,0)' and section.settings.rating_star_color != blank -%}
+      --bundle-star-color: {{ section.settings.rating_star_color }};
+    {%- endif -%}
+    {%- if section.settings.summary_button_accent_color != 'rgba(0,0,0,0)' and section.settings.summary_button_accent_color != blank -%}
+      --bundle-summary-button-accent: {{ section.settings.summary_button_accent_color }};
+    {%- endif -%}
+    {%- if section.settings.summary_button_hover_color != 'rgba(0,0,0,0)' and section.settings.summary_button_hover_color != blank -%}
+      --bundle-summary-button-hover: {{ section.settings.summary_button_hover_color }};
+    {%- endif -%}
   }
 </style>
 
@@ -27,8 +50,21 @@
   assign config_parent = bundle_config.parent_product.value
   assign parent_product_variant = config_parent.variants.first | default: config_parent
   assign quantity_options = bundle_config.quantities.value
-  assign default_quantity_option = quantity_options | first
-  assign default_box_size = default_quantity_option.quantity.value
+  assign tier_sort_keys = ''
+  assign tier_count = 0
+  assign min_tier_size = blank
+
+  for quantity_option in quantity_options
+    assign tier_size = quantity_option.quantity.value | plus: 0
+    if min_tier_size == blank or tier_size < min_tier_size
+      assign min_tier_size = tier_size
+    endif
+    assign tier_key = tier_size | prepend: '0000' | slice: -4, 4
+    assign tier_sort_keys = tier_sort_keys | append: tier_key | append: ','
+    assign tier_count = tier_count | plus: 1
+  endfor
+
+  assign sorted_tier_keys = tier_sort_keys | split: ',' | sort
 %}
 
 <section
@@ -51,51 +87,7 @@
           <div class="bundle-builder__steps">
             <div class="bundle-builder__step">
               <div class="bundle-builder__step-header">
-                <h3 class="h3">Step 1: Box Größe wählen</h3>
-              </div>
-              <div class="bundle-builder__box-inputs">
-                {% for quantity_option in quantity_options %}
-                  {% assign size = quantity_option.quantity.value %}
-                  {% assign percentage_off = quantity_option.percentage_off.value | plus: 0 %}
-                  <div class="input-radio">
-                    <input
-                      type="radio"
-                      name="box-size"
-                      id="box-{{ size }}"
-                      value="{{ size }}"
-                      data-percentage-off="{{ quantity_option.percentage_off.value }}"
-                      data-property-pointer="{{ quantity_option.property_pointer.value }}"
-                      {% if forloop.first %}
-                        checked
-                      {% endif %}
-                    >
-                    <label for="box-{{ size }}">{{ size }}er Box</label>
-                    {% if percentage_off > 0 %}
-                      <span class="bundle-builder__discount-badge">-{{ percentage_off }}%</span>
-                    {% endif %}
-                  </div>
-                {% endfor %}
-                <modal-popover class="modal-popover modal-popover--large" id="Alert">
-                  <div class="popover__overlay"></div>
-                  <div class="popover__content">
-                    <button class="popover__close-button">
-                      {%- render 'icon-close' -%}
-                    </button>
-                    <div class="popover__content-inner">
-                      <h3>Durch das wechseln der Box Größe wird der Warenkorb geleert.</h3>
-                      <p>Möchtest du die Box Größe wirklich wechseln?</p>
-                      <div class="button-group">
-                        <button class="button" data-toggle="Alert">Zurück</button>
-                        <button class="button" data-toggle="Alert" data-action="empty-cart">Größe Wechseln</button>
-                      </div>
-                    </div>
-                  </div>
-                </modal-popover>
-              </div>
-            </div>
-            <div class="bundle-builder__step">
-              <div class="bundle-builder__step-header">
-                <h3 class="h3">Step 2: Sorten wählen</h3>
+                <h3 class="h3">Sorten wählen</h3>
                 <div class="bundle-builder__filters">
                   <div class="filter-pills">
                     {% for product_pool in bundle_config.product_pools.value %}
@@ -156,13 +148,45 @@
                                 | image_url: width: 750
                                 | image_tag: widths: '200,400,600,700', sizes: '(max-width: 768px) 400px, 700px'
                               }}
-                              <button class="cart-upsell__button button">+</button>
                             </div>
                             <div class="bundle-builder__product-content">
+                              {% liquid
+                                assign manual_rating = variant.product.metafields.custom.rating.value
+                                assign review_rating_number = 0
+                                assign star_rating = 0
+                                if manual_rating != blank
+                                  assign review_rating_number = manual_rating.rating | plus: 0.0
+                                  assign review_scale = manual_rating.scale_max | plus: 0.0
+                                  if review_scale > 0
+                                    assign star_rating = review_rating_number | times: 5.0 | divided_by: review_scale
+                                  else
+                                    assign star_rating = review_rating_number
+                                  endif
+                                else
+                                  assign review_badge = variant.product.metafields.judgeme.badge
+                                  if review_badge contains "data-average-rating='"
+                                    assign review_rating = review_badge | split: "data-average-rating='" | last | split: "'" | first
+                                    assign review_rating_number = review_rating | plus: 0.0
+                                    assign star_rating = review_rating_number
+                                  endif
+                                endif
+                              %}
+                              {% if review_rating_number > 0 %}
+                                <div class="bundle-builder__product-reviews">
+                                  {% render 'fudge-star-rating',
+                                    rating: star_rating,
+                                    height: 12,
+                                    color: 'var(--bundle-star-color, var(--section-accent-color))'
+                                  %}
+                                  <span class="bundle-builder__product-rating">{{ review_rating_number | round: 1 | replace: '.', ',' }}</span>
+                                </div>
+                              {% endif %}
                               <h4 class="h4">{{ variant.product.metafields.custom.short_title }}</h4>
                               <span class="h4">{{ variant.price | money }}</span>
                             </div>
                           </div>
+                          <div class="bundle-builder__product-actions">
+                            <button type="button" class="button button--fw bundle-builder__add">Hinzufügen</button>
                           <quantity-selector class="product-form__quantity-wrapper hidden">
                             <div
                               class="quantity-element"
@@ -199,6 +223,7 @@
                               </button>
                             </div>
                           </quantity-selector>
+                          </div>
                           <template>
                             <div
                               class="bundle-builder__item"
@@ -268,22 +293,44 @@
               <span class="bundle-builder__price-current">{{ 0 | money }}</span>
             </span>
           </div>
-          <div
-            data-threshold="{{ default_box_size }}"
-            data-current="0"
-            class="shipping-bar"
-            style="--progress: 0"
-          >
-            <span class="shipping-bar__text text--small shipping-bar__text--remaining"
-              >Füge noch <span class="shipping-bar__text-amount">{{ default_box_size }}</span> Produkte zur Box hinzu</span
-            >
-            <span class="shipping-bar__text text--small shipping-bar__text--achieved hidden"
-              >Jetzt Bundle hinzufügen</span
-            >
-            <span
-              class="shipping-bar__progress shipping-bar__progress--remaining"
-            ></span>
-          </div>
+          {% if tier_count > 0 %}
+            <div class="bundle-builder__milestones">
+              <div class="bundle-builder__milestones-items">
+                {% if min_tier_size > 1 %}
+                  <div class="bundle-builder__milestone-lead" aria-hidden="true"></div>
+                {% endif %}
+                {% for tier_key in sorted_tier_keys %}
+                  {% if tier_key == blank %}
+                    {% continue %}
+                  {% endif %}
+                  {% assign tier_size = tier_key | plus: 0 %}
+                  {% assign is_first_tier = forloop.first %}
+                  {% for quantity_option in quantity_options %}
+                    {% assign option_size = quantity_option.quantity.value | plus: 0 %}
+                    {% if option_size != tier_size %}
+                      {% continue %}
+                    {% endif %}
+                    {% assign percentage_off = quantity_option.percentage_off.value | plus: 0 %}
+                    <div
+                      class="bundle-builder__milestone{% if is_first_tier and min_tier_size > 1 %} bundle-builder__milestone--from-lead{% endif %}"
+                      data-quantity="{{ option_size }}"
+                      data-percentage-off="{{ percentage_off }}"
+                      data-property-pointer="{{ quantity_option.property_pointer.value | escape }}"
+                    >
+                      {% if is_first_tier == false or min_tier_size > 1 %}
+                        <span class="bundle-builder__milestone-segment" style="--segment-progress: 0" aria-hidden="true">
+                          <span class="bundle-builder__milestone-segment-fill"></span>
+                        </span>
+                      {% endif %}
+                      <span class="bundle-builder__milestone-badge">{{ percentage_off }}%</span>
+                      <span class="bundle-builder__milestone-qty">{{ option_size }} Stück</span>
+                    </div>
+                    {% break %}
+                  {% endfor %}
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
           {% form 'product', product %}
             <input type="hidden" name="id" value="{{ parent_product_variant.id }}">
             <input type="hidden" name="quantity" value="1">
@@ -361,29 +408,76 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
+      "info": "Section background. Also used for the progress bar when that color is empty.",
       "default": "#dbaaeb"
     },
     {
       "type": "color",
       "id": "accent_color",
       "label": "Accent Color",
+      "info": "Summary box, filters, and the ring around size goals.",
       "default": "#2ac2bd"
     },
     {
       "type": "color",
       "id": "hover_color",
       "label": "Hover Color",
+      "info": "Hover color for buttons in this section.",
       "default": "#f3587f"
     },
     {
       "type": "color",
+      "id": "product_background_color",
+      "label": "Product Background Color",
+      "info": "Background of each product card."
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "info": "Text color, including the quantity numbers."
+    },
+    {
+      "type": "color",
+      "id": "progress_bar_remaining_color",
+      "label": "Progress Bar (Not Reached)",
+      "info": "Unfilled progress bar and unreached goals, shown at 30% opacity."
+    },
+    {
+      "type": "color",
+      "id": "milestone_reached_color",
+      "label": "Reached Goal",
+      "info": "Solid color of a goal once that size is reached. Uses the progress color if empty."
+    },
+    {
+      "type": "color",
+      "id": "rating_star_color",
+      "label": "Rating Stars",
+      "info": "Color of the stars on product cards."
+    },
+    {
+      "type": "color",
+      "id": "summary_button_accent_color",
+      "label": "Add to Cart Accent",
+      "info": "Normal color of the button in the selection box."
+    },
+    {
+      "type": "color",
+      "id": "summary_button_hover_color",
+      "label": "Add to Cart Hover",
+      "info": "Hover color of the button in the selection box."
+    },
+    {
+      "type": "color",
       "id": "discount_badge_background",
-      "label": "Discount Badge Background"
+      "label": "Discount Badge Background",
+      "info": "Background of discount badges. Uses the accent color if empty."
     },
     {
       "type": "color",
       "id": "discount_badge_text_color",
-      "label": "Discount Badge Text Color"
+      "label": "Discount Badge Text Color",
+      "info": "Text on discount badges. Uses the text color if empty."
     }
   ],
   "presets": [
