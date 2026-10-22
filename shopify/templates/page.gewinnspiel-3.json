@@ -1,0 +1,1425 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "treatfuls",
+        "subtitle": "<p><strong>Hey du! 👋 Willkommen zu unserer Cookie-Voting-Umfrage.</strong><br/>Du hast „Half Baked – Mandel & Kokos“ probiert? Dann bist du jetzt Teil unseres Produktteams!Wir wollen wissen: Wie hat’s geschmeckt? Was können wir verbessern? Und – soll diese Sorte ins Treatfuls-Sortiment?</p><p>🍪 Deine Meinung fließt direkt in die Produktentscheidung ein.<br/>🎁 Dauer: 1 Minute.</p>",
+        "subtitle_font_size": 24,
+        "background_color": "#9d4054",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_3pLCA9": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_T7HbWQ": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1_121b3fcb-7a28-4693-8a5f-e6cad3a50bcb.png",
+            "image_position": "left",
+            "title": "djnwekjdnkwejnd",
+            "content": "<p>shbxkjnxkqjwnsldqwnmdlewd</p>",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "image_with_text_9HGmMP": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/DM_LP.webp",
+            "image_position": "left",
+            "title": "Mehr als nur Snacks",
+            "content": "<p>Bei treatfuls geht es nicht einfach nur um Snacks, es geht um kleine Momente, die bleiben. Um Geschmack, der überrascht. Und um Produkte, in die wir richtig viel Zeit, Liebe und Detailarbeit stecken.<br/><br/>Unser Matcha Spread ist genau daraus entstanden: aus der Idee, etwas zu schaffen, das es so noch nicht gab. Als einer der ersten Matcha Spreads überhaupt haben wir lange daran gefeilt, bis er diese unvergleichlich cremigeTextur hatte und genau die Balance, die ihn besonders macht.</p>",
+            "button_text": "",
+            "button_url": "shopify://products/valentinstags-black-box-black-box"
+          }
+        },
+        "image_with_text_TmNGJN": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/NOAN_X_DOLLY.webp",
+            "image_position": "left",
+            "title": "Eltern-Lifehack: Snacks, Snacks, Snacks",
+            "content": "<p>Jede Mama und jeder Papa weiß, dass ohne Snacks gar nichts geht. Auch keine Fahrt mit dem Lastenrad. Deshalb fühlte sich die Zusammenarbeit von Dolly, treatfuls und dm einfach von Anfang an ideal an. Gesunde Inhaltsstoffe, richtig guter Geschmack, frische Luft und Bewegung, das ist 100% Alltagsglück.</p>",
+            "button_text": "Jetzt Dolly probefahren!",
+            "button_url": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=mid_home_cta"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_T7HbWQ",
+        "image_with_text_9HGmMP",
+        "image_with_text_TmNGJN"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#b4add4",
+        "accent_color": "#c081a9",
+        "hover_color": "#ceb0d1",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "hero_kmVjyA": {
+      "type": "hero",
+      "blocks": {
+        "invisible_link_HaeCLy": {
+          "type": "_invisible-link",
+          "name": "Invisible link",
+          "disabled": true,
+          "settings": {
+            "test_color": "#ff0000",
+            "invisible_link": "https://dolly-bikes.com/de/?utm_source=treatfuls&utm_medium=landingpage&utm_campaign=treatfuls_lp&utm_content=top_home_cta",
+            "invisible_link_dimensions_desktop": 10,
+            "invisible_link_dimensions_mobile": 18,
+            "invisible_link_vertical_position_desktop": 31,
+            "invisible_link_horizontal_position_desktop": 44,
+            "invisible_link_vertical_position_mobile": 56,
+            "invisible_link_horizontal_position_mobile": 77
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "invisible_link_HaeCLy"
+      ],
+      "disabled": true,
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/treatfuls_mystery_box_V1.webp",
+        "desktop_image_height": "4/1",
+        "mobile_image": "shopify://shop_images/treatfuls_dm-gewinnspiel-03_2.webp",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": false,
+        "content_vertical_position_desktop": 50,
+        "content_horizontal_position_desktop": 100,
+        "content_text_alignment_desktop": "right",
+        "max_width": "100%",
+        "max_width_px": 800,
+        "content_vertical_position_mobile": 0,
+        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
+        "title": "",
+        "text": "",
+        "background_color": "#b46493",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": false
+      }
+    },
+    "multicolumn_MV4Bxn": {
+      "type": "multicolumn",
+      "blocks": {
+        "item_3MbPyG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/6_bc575097-f200-4ab3-895c-03f71e1efb01.png",
+            "heading": "👀 Gefunden!",
+            "content": "<p>Lade ein Foto von treatfuls in deinem REWE hoch.</p>"
+          }
+        },
+        "item_NhyCtd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/7_8e3adf17-137a-4fd1-8c56-2cd4eaa9a76b.png",
+            "heading": "📍 Wo war’s?",
+            "content": "<p>Trag die Adresse der REWE Filiale ein.</p>"
+          }
+        },
+        "item_KYnJNE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Mystery.png",
+            "heading": "🎁 Treat yourself.",
+            "content": "<p>Im Oktober bekommst du eine gratis Mystery Box mit einer brandneuen Sorte, die noch niemand kennt. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_3MbPyG",
+        "item_NhyCtd",
+        "item_KYnJNE"
+      ],
+      "name": "Multicolumn",
+      "settings": {
+        "heading": "So einfach gehts",
+        "text_alignment": "center",
+        "background_color": "#814d81",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_c4gF3r": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_VBbKH6": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Bevor du deinen Kassenbon hochlädst, achte darauf das folgende Punkte gut erkennbar sind:",
+            "content": "<ul><li>Einkaufsort</li><li>Aktionsprodukt (treatfuls Riegel)</li><li>Kaufpreis des Aktionsproduktes </li><li>Gesamtbetrag des Kassenbons</li><li>Gewährte Rabatte der Einkaufsstätte</li><li>Einkaufsdatum und Uhrzeit </li><li>Kassenbonnummer </li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_VBbKH6"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "raffle_form_r9bdiB": {
+      "type": "raffle-form",
+      "blocks": {
+        "group_address": {
+          "type": "group",
+          "name": "Address",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "raffle_input_street": {
+              "type": "raffle-input",
+              "name": "Straße & Hausnummer",
+              "settings": {
+                "type": "text",
+                "label": "Straße (von dem Rewe Markt)",
+                "placeholder": "Straße & Hausnummer",
+                "field_name": "Straße (vom Rewe Markt)",
+                "autocomplete": "street-address",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_plz": {
+              "type": "raffle-input",
+              "name": "PLZ",
+              "settings": {
+                "type": "text",
+                "label": "PLZ (von dem REWE Markt)",
+                "placeholder": "PLZ",
+                "field_name": "PLZ (von dem REWE Markt)",
+                "autocomplete": "postal-code",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_ort": {
+              "type": "raffle-input",
+              "name": "Ort",
+              "settings": {
+                "type": "text",
+                "label": "Ort (von dem REWE Markt )",
+                "placeholder": "Ort",
+                "field_name": "Ort (von dem REWE Markt )",
+                "autocomplete": "address-level2",
+                "required": true
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "raffle_input_street",
+            "raffle_input_plz",
+            "raffle_input_ort"
+          ]
+        },
+        "raffle_upload_kassenbon": {
+          "type": "file-upload",
+          "name": "File upload",
+          "settings": {
+            "label": "Bild von treatfuls im Rewe Markt",
+            "field_name": "Bild von treatfuls im Rewe Markt",
+            "help_text": "Nur eine Datei kann hochgeladen werden. Folgende Formate werden akzeptiert: *.jpg, *.png, *.pdf, *.tiff und *.heic/*.heif.",
+            "error_message": "Bitte laden Sie einen Kassenbon hoch.",
+            "required": true,
+            "pubkey": "23bca10dd5e001cdf6bc",
+            "cdn_cname": "https://1lsd38ii4v.ucarecd.net/"
+          },
+          "blocks": {}
+        },
+        "group_name": {
+          "type": "group",
+          "name": "Name",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "raffle_select_anrede": {
+              "type": "raffle-select",
+              "name": "Anrede",
+              "settings": {
+                "label": "Deine Anrede",
+                "field_name": "Anrede Kunde",
+                "required": true
+              },
+              "blocks": {
+                "option_frau": {
+                  "type": "_option",
+                  "name": "Frau",
+                  "settings": {
+                    "label": "Frau"
+                  },
+                  "blocks": {}
+                },
+                "option_herr": {
+                  "type": "_option",
+                  "name": "Herr",
+                  "settings": {
+                    "label": "Herr"
+                  },
+                  "blocks": {}
+                },
+                "option_keine": {
+                  "type": "_option",
+                  "name": "Keine Angabe",
+                  "settings": {
+                    "label": "Keine Angabe"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "option_frau",
+                "option_herr",
+                "option_keine"
+              ]
+            },
+            "raffle_input_vorname": {
+              "type": "raffle-input",
+              "name": "Vorname",
+              "settings": {
+                "type": "vorname",
+                "label": "Deinen Vorname",
+                "placeholder": "Deinen Vorname",
+                "field_name": "Deinen Vorname",
+                "autocomplete": "given-name",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_nachname": {
+              "type": "raffle-input",
+              "name": "Nachname",
+              "settings": {
+                "type": "nachname",
+                "label": "Deinen Nachname",
+                "placeholder": "Deinen Nachname",
+                "field_name": "Deinen Nachname",
+                "autocomplete": "family-name",
+                "required": true
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "raffle_select_anrede",
+            "raffle_input_vorname",
+            "raffle_input_nachname"
+          ]
+        },
+        "group_xNFmXF": {
+          "type": "group",
+          "name": "Address",
+          "settings": {
+            "display_type": "grid",
+            "direction": "row",
+            "alignment": "flex-start",
+            "gap": 20,
+            "child_width": "1fr 1fr 1fr",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 20
+          },
+          "blocks": {
+            "raffle_input_TqdyaD": {
+              "type": "raffle-input",
+              "name": "Straße & Hausnummer",
+              "settings": {
+                "type": "text",
+                "label": "Deine Adresse",
+                "placeholder": "Deine Adresse",
+                "field_name": "Deine Adresse",
+                "autocomplete": "street-address",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_pmqFYp": {
+              "type": "raffle-input",
+              "name": "PLZ",
+              "settings": {
+                "type": "text",
+                "label": "Deine PLZ",
+                "placeholder": "Deine PLZ",
+                "field_name": "Deine PLZ",
+                "autocomplete": "postal-code",
+                "required": true
+              },
+              "blocks": {}
+            },
+            "raffle_input_G7NhtN": {
+              "type": "raffle-input",
+              "name": "Ort",
+              "settings": {
+                "type": "text",
+                "label": "Dein Wohnort",
+                "placeholder": "Dein Wohnort",
+                "field_name": "Dein Ort",
+                "autocomplete": "address-level2",
+                "required": true
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "raffle_input_TqdyaD",
+            "raffle_input_pmqFYp",
+            "raffle_input_G7NhtN"
+          ]
+        },
+        "raffle_input_email": {
+          "type": "raffle-input",
+          "name": "E-Mail",
+          "settings": {
+            "type": "email",
+            "label": "Deine E-Mail Adresse",
+            "placeholder": "Deine E-Mail",
+            "field_name": "Deine E-Mail",
+            "autocomplete": "email",
+            "required": true
+          },
+          "blocks": {}
+        },
+        "raffle_question_1": {
+          "type": "raffle-question",
+          "name": "Frage 1",
+          "settings": {
+            "title": "1. Wo hast du treatfuls zum allerersten Mal entdeckt oder kennengelernt?",
+            "field_name": "Wo hast du treatfuls zum allerersten Mal entdeckt oder kennengelernt?",
+            "input_type": "radio",
+            "required": false,
+            "error_message": "Bitte wähle eine Antwort.",
+            "allow_other": true,
+            "other_placeholder": "Anderes"
+          },
+          "blocks": {
+            "raffle_answer_RgN6YU": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "dm Filiale"
+              },
+              "blocks": {}
+            },
+            "q1_a1": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "dm Online / App"
+              },
+              "blocks": {}
+            },
+            "q1_a2": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Rewe"
+              },
+              "blocks": {}
+            },
+            "q1_a3": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Alnatura"
+              },
+              "blocks": {}
+            },
+            "q1_a4": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Billa"
+              },
+              "blocks": {}
+            },
+            "q1_a5": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Budni"
+              },
+              "blocks": {}
+            },
+            "q1_a6": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Spar"
+              },
+              "blocks": {}
+            },
+            "raffle_answer_Gfp7Vk": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Social Media"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "raffle_answer_RgN6YU",
+            "q1_a1",
+            "q1_a2",
+            "q1_a3",
+            "q1_a4",
+            "q1_a5",
+            "q1_a6",
+            "raffle_answer_Gfp7Vk"
+          ]
+        },
+        "raffle_question_2": {
+          "type": "raffle-question",
+          "name": "Frage 2",
+          "settings": {
+            "title": "2. Wo hast du zum allerersten Mal treatfuls gekauft?",
+            "field_name": "Wo hast du zum allerersten Mal treatfuls gekauft?",
+            "input_type": "checkbox",
+            "required": false,
+            "error_message": "Bitte wähle mindestens eine Option oder trage etwas bei „Anderes“ ein.",
+            "allow_other": true,
+            "other_placeholder": "Anderes"
+          },
+          "blocks": {
+            "q2_a1": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "dm Filliale"
+              },
+              "blocks": {}
+            },
+            "q2_a2": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "dm Online / App"
+              },
+              "blocks": {}
+            },
+            "q2_a3": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Rewe"
+              },
+              "blocks": {}
+            },
+            "q2_a4": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Alnatura"
+              },
+              "blocks": {}
+            },
+            "q2_a5": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Billa"
+              },
+              "blocks": {}
+            },
+            "q2_a6": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Budni"
+              },
+              "blocks": {}
+            },
+            "q2_a7": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Spar"
+              },
+              "blocks": {}
+            },
+            "q2_a8": {
+              "type": "_raffle-answer",
+              "name": "Answer",
+              "settings": {
+                "label": "Social Media"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "q2_a1",
+            "q2_a2",
+            "q2_a3",
+            "q2_a4",
+            "q2_a5",
+            "q2_a6",
+            "q2_a7",
+            "q2_a8"
+          ]
+        },
+        "raffle_input_frage3": {
+          "type": "raffle-input",
+          "name": "Frage 3",
+          "disabled": true,
+          "settings": {
+            "type": "textarea",
+            "label": "3. Was hat dich überzeugt treatfuls zu kaufen?",
+            "placeholder": "Was hat dich überzeugt treatfuls zu kaufen?",
+            "field_name": "Frage 3",
+            "autocomplete": "",
+            "required": false
+          },
+          "blocks": {}
+        },
+        "raffle_consent_agb": {
+          "type": "raffle-consent",
+          "name": "AGB",
+          "settings": {
+            "label": "* Ich habe die {terms} und die {privacy} gelesen und bin damit einverstanden, dass meine Daten zur Durchführung der Aktion „REWE Schnitzeljagt\" verarbeitet werden.",
+            "field_name": "AGB Akzeptiert",
+            "terms_link_text": "Teilnahmebedingungen",
+            "privacy_link_text": "Datenschutzerklärung",
+            "legal_text": "<h6>1. Veranstalter</h6><h6>snacks with benefits GmbH (treatfuls), Birkenstraße 23, 40233 Düsseldorf, Deutschland, E-Mail: <a href=\"mailto:hey@treatfuls.com\">hey@treatfuls.com</a></h6><h6>2. Art der Aktion</h6><h6>Bei dieser Aktion handelt es sich nicht um ein Gewinnspiel und nicht um eine Verlosung. Jede Person, die die Teilnahmevoraussetzungen (Ziffer 4) vollständig erfüllt, erhält die Belohnung nach Ziffer 6. Es findet kein Losverfahren und keine Auswahl statt.</h6><h6>Gilt nur, solange die Menge der Mystery Boxen nicht begrenzt wird – siehe Abschnitt D im Prüfhinweis-Dokument.</h6><h6>3. Teilnahmeberechtigung</h6><h6>Teilnahmeberechtigt sind natürliche Personen mit Wohnsitz in Deutschland, die das 18. Lebensjahr vollendet haben. Mitarbeitende von treatfuls sowie deren Angehörige sind ausgeschlossen.</h6><h6>4. Teilnahmezeitraum und Voraussetzungen</h6><h6>Die Aktion läuft vom 10.09.2026 bis zum 10.10.2026. Für eine gültige Teilnahme muss die teilnehmende Person über das Formular:</h6><ol><li><h6>ein Foto einreichen, das treatfuls-Produkte sichtbar in einer <strong>echten, aktuell betriebenen REWE-Filiale</strong> zeigt (kein Fotomontage, kein Renderbild, kein Bild aus dem Internet). <strong>Ohne Foto ist keine Teilnahme möglich.</strong></h6></li><li><h6>die vollständige, korrekte Adresse dieser REWE-Filiale angeben; sie muss zu einem real existierenden Markt gehören und zum eingereichten Foto passen.</h6></li><li><h6>die persönlichen Daten vollständig und wahrheitsgemäß angeben.</h6></li></ol><h6>treatfuls prüft jede Teilnahme auf Plausibilität, insbesondere ob Filiale und Foto zusammenpassen.</h6><h6>5. Mehrfachteilnahme und Anzahl der Belohnungen</h6><h6>Teilnahme in mehreren Filialen ist möglich; mehrere Meldungen zur selben Filiale zählen als eine Teilnahme. Unabhängig von der Anzahl gültiger Teilnahmen erhält jede Person <strong>maximal eine</strong> Mystery Box.</h6><h6>6. Belohnung, Versand, kein Ersatz</h6><h6>Bei erfüllten Voraussetzungen wird automatisch im Oktober 2026 eine kostenlose Mystery Box mit einer neuen, noch nicht veröffentlichten Sorte versendet – ohne gesonderte Bestellung. Versand nur innerhalb Deutschlands, ein genauer Tag wird nicht zugesichert.</h6><h6>Maßgeblich sind ausschließlich die im Formular angegebenen Daten. treatfuls prüft oder korrigiert fehlerhafte Adress- oder Kontaktangaben nicht. Kommt die Box wegen falscher Angaben nicht an, geht das zulasten der teilnehmenden Person; kein Anspruch auf erneuten Versand oder Ersatz.</h6><h6>Eine Barauszahlung oder anderweitige Ersatzleistung ist ausgeschlossen.</h6><h6>7. Ausschluss bei Missbrauch</h6><h6>Ausgeschlossen werden Personen mit falschen Angaben, gefälschten/fremden Fotos oder sonstigem Missbrauch. treatfuls kann die Teilnahme nachträglich für ungültig erklären und eine bereits versendete Box zurückfordern.</h6><h6>8. Vorbehalt bei Lieferengpässen</h6><h6>Bei Produktions- oder Lieferengpässen, die treatfuls nicht zu vertreten hat, kann der Versand verschoben oder die Sorte durch eine gleichwertige ersetzt werden.</h6><h6>9. Haftung</h6><h6>treatfuls haftet unbeschränkt für Vorsatz, grobe Fahrlässigkeit, nach dem Produkthaftungsgesetz sowie bei Verletzung von Leben, Körper oder Gesundheit; im Übrigen nur bei Verletzung wesentlicher Vertragspflichten, begrenzt auf den vorhersehbaren Schaden. </h6><h6>10. Änderung/Beendigung, Schlussbestimmungen</h6><h6>treatfuls kann die Aktion aus wichtigem Grund vorzeitig beenden oder die Bedingungen anpassen; bereits erfüllte Teilnahmen bleiben unberührt. Es gilt deutsches Recht, soweit gesetzlich zulässig; zwingende Verbraucherschutzrechte bleiben unberührt.</h6><h6>11. Datenschutz</h6><h6>Informationen zur Datenverarbeitung findest du in unserer Datenschutzerklärung (Ergänzung zur Aktion \"REWE Schnitzeljagd\").</h6><h6>12. Kontakt</h6><h6><a href=\"mailto:hey@treatfuls.com\">hey@treatfuls.com</a></h6>",
+            "privacy_policy": "<p>1. Allgemeine Hinweise </p><p>Soweit nachstehend keine anderen Angaben gemacht werden, ist die Bereitstellung deiner personenbezogenen Daten weder gesetzlich noch vertraglich vorgeschrieben und nicht für einen Vertragsabschluss erforderlich. Du bist zur Bereitstellung der Daten nicht verpflichtet. Eine Nichtbereitstellung hat grundsätzlich keine negativen Folgen. Dies gilt nur, soweit bei den nachfolgenden Verarbeitungsvorgängen keine anderweitige Angabe gemacht wird.</p><p>„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.<br/><br/></p><p>2. Verantwortlicher</p><p>Verantwortlicher für die Datenverarbeitung ist:</p><p>snacks with benefits GmbH<br/>Birkenstraße 23<br/>40233 Düsseldorf<br/>Deutschland</p><p>E-Mail: <a href=\"mailto:hey@treatfuls.com\"><span style=\"text-decoration:underline\">hey@treatfuls.com</span><br/><br/></a></p><p>3. Zugriffsdaten und Server-Logfiles</p><p>Du kannst unsere Website besuchen, ohne Angaben zu deiner Person zu machen.</p><p>Bei jedem Zugriff auf unsere Website werden durch unseren Webhoster bzw. IT-Dienstleister Nutzungsdaten durch deinen Internetbrowser übermittelt und in sogenannten Server-Logfiles gespeichert. Zu diesen Daten gehören insbesondere:</p><ul><li>Name der aufgerufenen Seite</li><li>Datum und Uhrzeit des Zugriffs</li><li>IP-Adresse</li><li>übertragene Datenmenge</li><li>anfragender Provider</li><li>verwendeter Browser und Betriebssystem</li></ul><p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO aus unserem überwiegenden berechtigten Interesse an der Gewährleistung eines störungsfreien Betriebs unserer Website sowie zur Verbesserung unseres Angebots.</p><p>Die Server-Logfiles werden regelmäßig gelöscht, spätestens nach [❓ bitte bestätigen: z. B. 7 oder 14 Tagen].</p><p>Datenübermittlung in Drittländer</p><p>Deine Daten können dabei gegebenenfalls in Drittstaaten außerhalb der Europäischen Union übermittelt werden. Sofern für das jeweilige Drittland ein Angemessenheitsbeschluss der EU-Kommission besteht, erfolgt die Übermittlung auf dieser Grundlage.<br/>Soweit kein Angemessenheitsbeschluss vorliegt (z. B. bei Übermittlungen in die USA), stützen wir die Datenübermittlung auf Standardvertragsklauseln gemäß Art. 46 DSGVO.<br/><br/></p><p>4. Kontaktaufnahme per E-Mail</p><p>Wenn du per E-Mail initiativ mit uns in Kontakt trittst, erheben wir die von dir mitgeteilten personenbezogenen Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zum Zweck der Bearbeitung und Beantwortung deiner Anfrage.</p><ul><li>Dient die Kontaktaufnahme der Durchführung vorvertraglicher Maßnahmen oder betrifft sie einen bestehenden Vertrag, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</li><li>Erfolgt die Kontaktaufnahme aus anderen Gründen, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung der Anfrage).</li></ul><p>Du hast in diesem Fall das Recht, der Verarbeitung deiner personenbezogenen Daten aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit zu widersprechen.</p><p>Deine Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten bestehen, sofern du nicht ausdrücklich in eine weitergehende Verarbeitung eingewilligt hast.’<br/><br/></p><p>5. Gewinnspiele</p><p>Im Rahmen von Gewinnspielen verarbeiten wir personenbezogene Daten der teilnehmenden Personen.</p><p>Verarbeitete Daten</p><ul><li>Anrede</li><li>Vor- und Nachname</li><li>E-Mail-Adresse</li><li>Postanschrift</li><li>hochgeladener Kaufnachweis (z. B. Kassenbon)</li><li>Datum und Uhrzeit der Teilnahme</li></ul><p>Zwecke der Verarbeitung</p><ul><li>Durchführung und Organisation des Gewinnspiels</li><li>Prüfung der Teilnahmeberechtigung</li><li>Ermittlung und Benachrichtigung der Gewinner:innen</li><li>Übergabe oder Versand der Gewinne</li><li>Bearbeitung von Rückfragen</li></ul><p>Rechtsgrundlagen</p><ul><li>Art. 6 Abs. 1 lit. b DSGVO (Durchführung des Gewinnspiels)</li><li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. für Marketingzwecke)</li></ul><p>Weitere Informationen finden sich in den jeweiligen Teilnahmebedingungen des Gewinnspiels.<br/><br/>6. Aktion \"REWE Schnitzeljagd\"<br/><br/>Im Rahmen dieser Aktion verarbeiten wir folgende Daten der teilnehmenden Personen: Anrede, Vor- und Nachname, Straße und Hausnummer, PLZ und Wohnort, E-Mail-Adresse, die von dir angegebene REWE-Filialadresse sowie das von dir hochgeladene Foto.<br/><br/>Zweck: Prüfung der Teilnahmevoraussetzungen und Versand der Mystery Box.<br/><br/>Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung der im Rahmen der Aktion gegenüber dir bestehenden Pflichten) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Prüfung und Missbrauchsvermeidung).<br/><br/>Das hochgeladene Foto wird zur Prüfung deiner Teilnahmeberechtigung verwendet. treatfuls kann dein Foto zusätzlich auf seinen Social-Media-Kanälen veröffentlichen. Diese Einwilligung ist freiwillig, für die Teilnahme an der Aktion nicht erforderlich und kann jederzeit mit Wirkung für die Zukunft widerrufen werden, z. B. per E-Mail an <a href=\"mailto:customerlove@treatfuls.com\" target=\"_blank\">customerlove@treatfuls.com</a><br/><br/>Deine E-Mail-Adresse wird nicht werblich genutzt, es sei denn, du hast hierfür gesondert eingewilligt.<br/><br/>Der Versanddienstleister ist DHL. Für den Versand der Mysterybox werden die hierfür erforderlichen personenbezogenen Daten, insbesondere Vorname, Nachname und Adresse, an DHL weitergegeben.<br/><br/>Speicherdauer: bis zur Durchführung und Abwicklung der Aktion, spätestens 01.11.2026 nach Aktionsende, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p><p>7. Newsletter und Marketingkommunikation</p><p>Wenn du dich für unseren Newsletter anmeldest oder im Rahmen eines Gewinnspiels in den Erhalt von Marketing-E-Mails einwilligst, verarbeiten wir deine personenbezogenen Daten zum Zweck der Zusendung von Informationen, Angeboten und Neuigkeiten von treatfuls.</p><p>Der Versand erfolgt ausschließlich auf Grundlage deiner ausdrücklichen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO im Double-Opt-in-Verfahren.</p><p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, z. B. über den Abmeldelink in jeder E-Mail oder per Nachricht an gewinnspiel@treatfuls.com</p><p>8. Cookies und Einwilligungsmanagement</p><p>Unsere Website verwendet Cookies und ähnliche Technologien.</p><p>Notwendige Cookies</p><p>Diese sind erforderlich, um die grundlegenden Funktionen der Website sicherzustellen.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 TDDDG.</p><p>Optionale Cookies (Tracking / Marketing)</p><p>Optionale Cookies werden nur gesetzt, wenn du über unser Cookie-Banner ausdrücklich eingewilligt hast.<br/>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p><p>Du kannst deine Einwilligung jederzeit über die Cookie-Einstellungen widerrufen.</p><p>9. Social Media</p><p>Wir unterhalten Onlinepräsenzen auf sozialen Netzwerken (z. B. Instagram, TikTok).<br/>Beim Besuch unserer Social-Media-Seiten gelten die Datenschutzbestimmungen der jeweiligen Plattformen. Teilweise besteht eine gemeinsame Verantwortlichkeit gemäß Art. 26 DSGVO.<em><br/><br/></em></p><p>10. Speicherdauer</p><p>Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.<br/><br/></p><p>11. Rechte der betroffenen Personen</p><p>Du hast insbesondere folgende Rechte:</p><ul><li>Auskunft (Art. 15 DSGVO)</li><li>Berichtigung (Art. 16 DSGVO)</li><li>Löschung (Art. 17 DSGVO)</li><li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li><li>Datenübertragbarkeit (Art. 20 DSGVO)</li><li>Widerspruch gegen bestimmte Verarbeitungen (Art. 21 DSGVO)</li></ul><p>12. Beschwerderecht</p><p>Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>",
+            "required": true,
+            "checked": false
+          },
+          "blocks": {}
+        },
+        "raffle_consent_newsletter": {
+          "type": "raffle-consent",
+          "name": "Newsletter",
+          "settings": {
+            "label": "Ich möchte per E-Mail über Neuigkeiten, Angebote und Aktionen von treatfuls informiert werden. Meine Einwilligung kann ich jederzeit widerrufen.",
+            "field_name": "Newsletter Akzeptiert",
+            "terms_link_text": "Teilnahmebedingungen",
+            "privacy_link_text": "Datenschutzerklärung",
+            "legal_text": "",
+            "privacy_policy": "",
+            "required": false,
+            "checked": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_address",
+        "raffle_upload_kassenbon",
+        "group_name",
+        "group_xNFmXF",
+        "raffle_input_email",
+        "raffle_question_1",
+        "raffle_question_2",
+        "raffle_input_frage3",
+        "raffle_consent_agb",
+        "raffle_consent_newsletter"
+      ],
+      "name": "Raffle form",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "button_text": "Jetzt teilnehmen",
+        "button_position": "center",
+        "klaviyo_list_id": "",
+        "google_sheet_id": "1-ypNWGQvP7-eIsLMI1TTjJSCC4ENyUPQidz2vICV57w",
+        "google_sheet_name": "Schnitzeljagt Rewe",
+        "post_success_title": "Danke für deine Teilnahme! 💛",
+        "post_success_content": "<p>Mission erfüllt. 🕵️‍♀️🍫<br/>Du hast deinen REWE gefunden, damit bist du offiziell bei unserer <strong>treatfuls Schnitzeljagd</strong> dabei.</p><p>Und jetzt kommt der beste Teil:<br/><strong>Im Oktober schicken wir dir automatisch eine treatfuls Mysterybox nach Hause.</strong> 🎁</p><p>Was drin ist? Verraten wir natürlich noch nicht. 👀<br/>Nur so viel: Dich erwartet eine <strong>brandneue Sorte, die bisher noch niemand kennt.</strong></p><p>Danke, dass du uns beim Aufspüren unserer treatfuls REWE-Spots hilfst. 💌</p>",
+        "post_success_anchor": "",
+        "background_color": "#b4add4",
+        "accent_color": "#b4add4",
+        "hover_color": "#f3587f"
+      }
+    },
+    "image_gallery_UVw3a4": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_NHyVti": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DRB4078.jpg",
+            "content": "",
+            "content_position_y": 55,
+            "content_position_x": 25,
+            "grid_number": "1",
+            "column_start": "1",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "5",
+            "row_start_mobile": "1",
+            "row_span_mobile": "2"
+          }
+        },
+        "image_RDRNdF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ube_Riegel.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "1",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "2",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_yc6Ny6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ube_Schaum.png",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "4",
+            "column_span": "6",
+            "row_start": "2",
+            "row_span": "1",
+            "column_start_mobile": "6",
+            "column_span_mobile": "7",
+            "row_start_mobile": "1",
+            "row_span_mobile": "1"
+          }
+        },
+        "image_A9hNwy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DRB4235.jpg",
+            "content": "",
+            "content_position_y": 50,
+            "content_position_x": 50,
+            "grid_number": "1",
+            "column_start": "10",
+            "column_span": "3",
+            "row_start": "1",
+            "row_span": "2",
+            "column_start_mobile": "1",
+            "column_span_mobile": "12",
+            "row_start_mobile": "3",
+            "row_span_mobile": "2"
+          }
+        }
+      },
+      "block_order": [
+        "image_NHyVti",
+        "image_RDRNdF",
+        "image_yc6Ny6",
+        "image_A9hNwy"
+      ],
+      "name": "Image Gallery Grid (24-cell)",
+      "settings": {
+        "product": "1-x-cute-but-nuts-spread-haselnuss-einzel-spread",
+        "heading": "December just got a whole lot sweeter! 🍫",
+        "show_atc_button": false,
+        "grid_container_quantity": "1",
+        "background_color": "#814d81",
+        "accent_color": "#ceb0d1",
+        "hover_color": "#814d81",
+        "popup_background_color": "",
+        "popup_text_color": ""
+      }
+    },
+    "featured_product_BhT6E9": {
+      "type": "featured-product",
+      "blocks": {
+        "description_3F44i8": {
+          "type": "description",
+          "settings": {}
+        },
+        "countdown_Y74MwP": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_9iiY6w": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_MhPzB7": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_3F44i8",
+        "countdown_Y74MwP",
+        "price_9iiY6w",
+        "buy_button_MhPzB7"
+      ],
+      "disabled": true,
+      "name": "Featured product",
+      "settings": {
+        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "heading": "Alle Sorten probieren",
+        "mobile_heading": "Alle Sorten probieren",
+        "sticky_button": false,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#dbaaeb",
+        "accent_color": "#de85a1",
+        "hover_color": "#e56a89"
+      }
+    },
+    "info_slider_VNYRfC": {
+      "type": "info-slider",
+      "blocks": {
+        "content_item_KUpV7a": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/singles_box.webp",
+            "title": "try them all",
+            "content": "<p>12 Riegel, jede Sorte einmal, perfekt zum Durchprobieren und Lieblings-treat finden.</p>",
+            "link_text": "👉🏽 Probier dich durch",
+            "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss"
+          }
+        },
+        "content_item_Nca7P3": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/Wochenbettbox2.webp",
+            "title": "a little love, delivered",
+            "content": "<p>Das perfekte Geschenk fürs Wochenbett – voller kleiner treats für große Momente.</p>",
+            "link_text": "👉🏽 Liebe verschenken",
+            "link_url": "/"
+          }
+        },
+        "content_item_zwJyHR": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/3.webp",
+            "title": "filled & obsessed",
+            "content": "<p>Alle gefüllten Riegel in einer Box – creamy, crunchy und dangerously good.</p>",
+            "link_text": "👉🏽Filled Bars entdecken",
+            "link_url": "shopify://products/summer-crush-kopie"
+          }
+        },
+        "content_item_8XDTqG": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/Alle_Treatfulsriegel.png",
+            "title": "meet the whole gang",
+            "content": "<p>Alle treatfuls Sorten auf einen Blick – für alle, die sich einfach noch nicht entscheiden können.</p>",
+            "link_text": "👉🏽 Alle Sorten ansehen",
+            "link_url": "shopify://collections/riegel"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_KUpV7a",
+        "content_item_Nca7P3",
+        "content_item_zwJyHR",
+        "content_item_8XDTqG"
+      ],
+      "name": "Info slider",
+      "settings": {
+        "title": "find your favorite 💘",
+        "link_text": "",
+        "link_url": "/",
+        "background_color": "#c081a9",
+        "accent_color": "#d04d75",
+        "hover_color": "#dbaaeb"
+      }
+    },
+    "depr_rich_text_hATR9f": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_U7xcwG": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Einfach losrollen – mit treatfuls und DOLLY",
+            "content": "<p>Ein DOLLY Lastenrad mit elektrischem Antrieb bringt dich und deine Familie flexibel durch den Alltag, egal ob in der Stadt, im Vorort oder auf dem Land. Dank E-Unterstützung wird selbst das Fahren mit Kindern oder schweren Einkäufen angenehm leicht.</p><p>Das DOLLY Lastenrad kombiniert Komfort und Funktionalität: viel Platz, einfache Handhabung und ein Fahrgefühl, das auch bei voller Beladung überzeugt. Für viele ist es die ideale Lösung, wenn sie nach einer praktischen Alternative zum Auto suchen.</p><p>Sichere dir jetzt deine Chance, einfach zwei treatfuls Produkte bei dm kaufen und am Gewinnspiel teilnehmen.</p>"
+          }
+        },
+        "richtext_item_Uyx37f": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        },
+        "richtext_item_x8GajN": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_U7xcwG",
+        "richtext_item_Uyx37f",
+        "richtext_item_x8GajN"
+      ],
+      "disabled": true,
+      "name": "SEO Texts",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "left",
+        "background_color": "#a3c089",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_ArQRbJ": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_BCXrDC": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Finde jetzt eine DM Filliale in deiner Nähe und Gewinne mit etwas Glück ein Lastenrad von Dolly",
+            "content": ""
+          }
+        },
+        "richtext_item_mkqefi": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        },
+        "richtext_item_BxRfqz": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_BCXrDC",
+        "richtext_item_mkqefi",
+        "richtext_item_BxRfqz"
+      ],
+      "disabled": true,
+      "name": "SEO Texts",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "left",
+        "background_color": "#b46493",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "17721214725c4094b2": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "background_color": "#b46493",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "depr_rich_text_cewfrk": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_zxhVxm": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        },
+        "richtext_item_MFQNn3": {
+          "type": "richtext_item",
+          "disabled": true,
+          "settings": {
+            "heading": "SEO RELEVANT",
+            "content": "<p>GEWINNEN GEWINNEN</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_zxhVxm",
+        "richtext_item_MFQNn3"
+      ],
+      "disabled": true,
+      "name": "SEO Texts",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "left",
+        "background_color": "#b46493",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "custom_section_rh67Ww": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_DN4PxT": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Unsere Bestseller",
+            "subtitle_text": "",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_GqyFQB": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_aJy6Ap": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_qQiKQa": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_TbJYja": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_TbJYja"
+                  ]
+                },
+                "slide_fTpLgL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_JMipRL": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "summer-crush-kopie",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_JMipRL"
+                  ]
+                },
+                "slide_WQKmQ6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_i68iBa": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_i68iBa"
+                  ]
+                },
+                "slide_9phhyi": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_FWChJc": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_FWChJc"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_qQiKQa",
+                "slide_fTpLgL",
+                "slide_WQKmQ6",
+                "slide_9phhyi"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_aJy6Ap"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_DN4PxT",
+        "group_GqyFQB"
+      ],
+      "disabled": true,
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#b46493",
+        "accent_color": "#859972",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "custom_section_CVPBjc": {
+      "type": "custom-section",
+      "blocks": {
+        "group_KLYjdW": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_qHWRJR": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_Xw3A6j": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_4bFc6T": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "matcha-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_4bFc6T"
+                  ]
+                },
+                "slide_7tgnap": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_xJDqic": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_xJDqic"
+                  ]
+                },
+                "slide_dDYHL4": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_nUkxef": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "chai-latte-spill-the-tea",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_nUkxef"
+                  ]
+                },
+                "slide_WeeVRU": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_NheaTN": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_NheaTN"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_Xw3A6j",
+                "slide_7tgnap",
+                "slide_dDYHL4",
+                "slide_WeeVRU"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_qHWRJR"
+          ]
+        }
+      },
+      "block_order": [
+        "group_KLYjdW"
+      ],
+      "disabled": true,
+      "name": "Product list",
+      "settings": {
+        "background_color": "#b46493",
+        "accent_color": "#e56a89",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_Lw4Ht3": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_MD4rDr": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_A3xNLF": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_B3qPLB": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_Q7U6gy": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_GqwVtH": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_TWWCTM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_b9PFEC": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        },
+        "advantage_item_AEx67n": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-8-additives.png",
+            "text": "Ohne Zusatzstoffe"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_MD4rDr",
+        "advantage_item_A3xNLF",
+        "advantage_item_B3qPLB",
+        "advantage_item_Q7U6gy",
+        "advantage_item_GqwVtH",
+        "advantage_item_TWWCTM",
+        "advantage_item_b9PFEC",
+        "advantage_item_AEx67n"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 30% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#d04d75",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_3pLCA9",
+    "hero_kmVjyA",
+    "multicolumn_MV4Bxn",
+    "depr_rich_text_c4gF3r",
+    "raffle_form_r9bdiB",
+    "image_gallery_UVw3a4",
+    "featured_product_BhT6E9",
+    "info_slider_VNYRfC",
+    "depr_rich_text_hATR9f",
+    "depr_rich_text_ArQRbJ",
+    "17721214725c4094b2",
+    "depr_rich_text_cewfrk",
+    "custom_section_rh67Ww",
+    "custom_section_CVPBjc",
+    "advantages_Lw4Ht3"
+  ]
+}

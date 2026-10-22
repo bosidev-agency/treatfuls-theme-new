@@ -136,11 +136,18 @@
             "settings": {
               "klaviyo_form": "WjYcDJ"
             }
+          },
+          "klaviyo_popup_AGC9e6": {
+            "type": "klaviyo_popup",
+            "settings": {
+              "klaviyo_form": "TfqHKY"
+            }
           }
         },
         "block_order": [
           "klaviyo_popup_9MMAiH",
-          "klaviyo_popup_T7UJC9"
+          "klaviyo_popup_T7UJC9",
+          "klaviyo_popup_AGC9e6"
         ],
         "settings": {}
       }

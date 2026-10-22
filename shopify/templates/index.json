@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "👉🏽 Box entdecken",
-            "url": "shopify://products/wochenbettbox",
+            "text": "Jetzt vorbestellen",
+            "url": "shopify://products/adventskalender-2026",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -72,9 +72,9 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_Wochenbett_Desktop_2_1.webp",
+        "desktop_image": "shopify://shop_images/Hero_Adventskalender26_Desktop_3_5.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Hero_Wochenbett_mobil_2.webp",
+        "mobile_image": "shopify://shop_images/Hero_Adventskalender26_Mobil_3.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "content_vertical_position_desktop": 50,
@@ -87,11 +87,11 @@
         "content_text_alignment_mobile": "center",
         "max_width_mobile": "fixed",
         "max_width_mobile_px": 400,
-        "title": "A little love for the big after.",
-        "text": "<p><strong>Alles, was das Wochenbett ein bisschen schöner macht, in einer Box. Zum Verschenken an deine Lieblings-Mama-to-be oder zum Einfach-selbst-Gönnen. Because you deserve it.</strong></p>",
+        "title": "<span>24 days</span> of treating yourself.",
+        "text": "<p>unser treatfuls Adventskalender mit 24 Originalgrößen und jeder Menge Überraschungen.</p>",
         "background_color": "#d04d75",
-        "accent_color": "#d04d75",
-        "hover_color": "#8a7194",
+        "accent_color": "#823547",
+        "hover_color": "#D04D75",
         "show_base_triangular_line": true
       }
     },

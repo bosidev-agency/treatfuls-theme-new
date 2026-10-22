@@ -70,8 +70,8 @@
         "image_hkQqPw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_6.webp",
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "image": "shopify://shop_images/Tuerchen_in_Ube_Pulver.png",
+            "content": "",
             "content_position_y": 55,
             "content_position_x": 25,
             "grid_number": "1",
@@ -89,7 +89,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/treatfuls_adventskalender_7.webp",
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -106,8 +106,8 @@
         "image_6b6Whi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Adventskalender__alle_T_rchen_2024.webp",
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "image": "shopify://shop_images/Slider_Pic.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -124,8 +124,8 @@
         "image_6DCXXk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_5.webp",
-            "content": "<p>🎁 Entdecke den Zauber der treatfuls Mystery Box – gefüllt mit geheimnisvollen Sorten, spannenden Überraschungen und einzigartigen Geschmackserlebnissen, die deinen Alltag versüßen! ✨</p>",
+            "image": "shopify://shop_images/Zimt_AK.png",
+            "content": "",
             "content_position_y": 50,
             "content_position_x": 50,
             "grid_number": "1",
@@ -242,8 +242,9 @@
     },
     "main_product_ingredients": {
       "type": "main-product-ingredients",
+      "disabled": true,
       "settings": {
-        "product": "",
+        "product": "adventskalender-2026",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "{{ product.metafields.custom.accent_color.value }}",
         "accent_color": "{{ product.metafields.custom.background_color.value }}"
@@ -339,8 +340,8 @@
         "faq_item_8wgtnn": {
           "type": "faq_item",
           "settings": {
-            "title": "Sneak peak 👀🤫🤭",
-            "content": "Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver) , Cashew-Matcha-Füllung (15%) [Cashewmus (60%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, Matchapulver (3%)], glutenfreies Hafermehl, Mandeln, Dattelsirup, Tapiokafaser, Mandelmus, Meersalz, Vanilleextrakt.\n Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Macadamia-Cashew-Himbeerfüllung (16%) (Cashewmus (64%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, gefriergetrocknete Himbeeren), glutenfreies Hafermehl, Mandeln (11,2%), Dattelsirup, Tapiokafaser, Mandelmus (3,8%), Meersalz, Vanilleextrakt. \n Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Dattelpaste, weißer kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Haselnuss-Füllung (15%) (Haselnuss (42%), Dattelpulver, Cashewmus, Kakaobutter), glutenfreies Hafermehl, Haselnuss (8,4%), Dattelsirup, Mandelmus, Tapiokafaser, Chai-Gewürzmischung (1,45%) (Zimt, Ingwerpulver, Kardamom, Muskatnuss, Nelkenpulver, Korianderpulver, Piment), Kakaobutter, Meersalz, Vanilleextrakt.",
+            "title": "Wann kann ich den treatfuls Adventskalender kaufen?",
+            "content": "Ab sofort! 🎁 Unser treatfuls Adventskalender ist jetzt erhältlich. Sichere dir deinen Kalender und freu dich auf 24 Türchen voller leckerer Überraschungen! 💖",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -348,8 +349,8 @@
         "faq_item_pPyERt": {
           "type": "faq_item",
           "settings": {
-            "title": "Sind das komplett neue Sorten oder nur bestehende?",
-            "content": "Komplett neu.\nNoch nicht gelauncht, noch nirgends zu kaufen, noch nie gezeigt.\nDu bist ganz offiziell Early Taster 🎉",
+            "title": "Wann wird der Adventskalender versendet?",
+            "content": "Der Versand unserer Adventskalender startet im Oktober! 📦🎄 So kannst du dich schon rechtzeitig auf deinen Dezember voller treatfuls freuen.",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -357,8 +358,8 @@
         "faq_item_6WTzgU": {
           "type": "faq_item",
           "settings": {
-            "title": "Kann ich eine bestimmte Sorte auswählen?",
-            "content": "Nope – it’s called Mystery Box for a reason.\nAber eins ist sicher: Du wirst alle vier lieben.\nTrust the treat. ✨",
+            "title": "Sind alle Produkte im Adventskalender in Originalgröße?",
+            "content": "Oh yes! 😍 Dich erwarten 24 Produkte in Originalgröße, keine Minis, keine Probiergrößen! Und weil wir Überraschungen lieben, haben wir noch ein paar besondere Goodies von ausgewählten Partnermarken für dich dazugepackt. 🎁",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -366,8 +367,8 @@
         "faq_item_dG9GKw": {
           "type": "faq_item",
           "settings": {
-            "title": "Wie viele Produkte sind drin?",
-            "content": "4 brandneue Snacks. 4 Geschmacks-Überraschungen.",
+            "title": "Ist der Adventskalender limitiert?",
+            "content": "Yes! 👀 Unser Adventskalender ist streng limitiert und nur in einer kleinen Stückzahl erhältlich. Wenn weg, dann weg! Schnell sein lohnt sich also. 💖",
             "show_ingredients": false,
             "show_nutrition": false
           }
@@ -375,14 +376,15 @@
         "faq_item_UghL9L": {
           "type": "faq_item",
           "settings": {
-            "title": "Wie lange gibt’s die Mystery Box?",
-            "content": "Nur solange der geheime Vorrat reicht.\nWir sagen’s mal so: treat now or cry later. 😅",
+            "title": "Wo finde ich die Zutaten, Allergene und Nährwerte?",
+            "content": "SPOILER ALERT! 👀🍫\n\nDu möchtest dir die Überraschung nicht verderben? Dann am besten hier stoppen! 🤫\n\nFür alle, die es genauer wissen möchten, haben wir hier die Zutaten, Allergene und Nährwerte der enthaltenen Lebensmittel zusammengestellt.\n\nAchtung: Weiterlesen auf eigene Spoiler-Gefahr! 💖\n\nZUTATEN & ALLERGENE\n\nDE BIO-MANDELMUS MIT ZIMT. ZUTATEN: MANDELMUS* (60%), DATTELPULVER*, KOKOSMILCHPULVER*, ZIMT* (1%), SALZ. Kann Spuren von Erdnüssen, anderen Schalenfrüchten, Sesamsamen und/ oder daraus hergestellten Produkten enthalten.\nBIO-SNACKKUGELN MIT HASELNUSS, KAROTTE UND MANDEL-ZIMT FÜLLUNG (2X17). ZUTATEN: DATTEL*, HAFERMEHL*(GLUTENFREI), HASELNUSSMUS*(9,7%), DATTELSIRUP* (100% DATTELN), CASHEWMUS*, HASELNUSS*, GETROCKNETE KAROTTEN* (4,6%), MANDELMUS*(2,5%), ZIMT (0,9%)*, MUSKATNUSS*, SALZ, NATÜRLICHES AROMA (VANILLE)*, ZITRONENÖL*, NATÜRLICHES AROMA (ORANGEN)*\nBIO-RIEGEL MIT CHAI-GEWÜRZMISCHUNG, MIT HASELNUSS FÜLLUNG UND WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG. MIT SÜßUNGSMITTEL (2X20G). Dattelpaste, weißer kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Haselnuss-Füllung (15%) (Haselnuss (42%), Dattelpulver, Cashewmus, Kakaobutter), glutenfreies Hafermehl, Haselnuss (8,4%), Dattelsirup, Mandelmus, Tapiokafaser, Chai-Gewürzmischung (1,45%) (Zimt, Ingwerpulver, Kardamom, Muskatnuss, Nelkenpulver, Korianderpulver, Piment), Kakaobutter, Meersalz, Vanilleextrakt. ORGANIC BAR WITH CHAI SPICE BLEND, HAZELNUT FILLING, AND A WHITE COCOA BUTTER COATING. WITH SWEETENER (2X20G).\nBIO-ERDNUSS-HAFER-RIEGEL MIT DUNKLER SCHOKOLADEN-KUVERTÜRE (KAKAO: 75% MINDESTENS, IN DER SCHOKOLADEN-KUVERTÜRE), MIT SÜßUNGSMITTEL (2X20G). ZUTATEN: DATTELPASTE*, GERÖSTETE ERDNÜSSE* (31%), DUNKLE SCHOKOLADEN-KUVERTÜRE* (15%) (KAKAOMASSE*, SÜßUNGSMITTEL: ERYTHRIT*, KAKAOBUTTER*), DATTELKONZENTRAT* (10%), DATTELN*, HAFERMEHL* (7%) (GLUTENFREI), MEERSALZ, VANILLE*.\nBIO-RIEGEL MIT BIO-UBE, ZITRONENFÜLLUNG UND WEIßEM KAKAO-BUTTERHALTIGEM ÜBERZUG MIT SÜßUNGSMITTEL (2X20G). ZUTATEN: DATTELPASTE*, WEIßER KAKAOBUTTERHALTIGER ÜBERZUG* (15%) [KAKAOBUTTER* (35%), SÜßUNGSMITTEL: XYLIT* (AUS BIRKE), KOKOSNUSSPULVER*, LECITHINE* (SONNENBLUME), VANILLEPULVER*, UBE-PULVER (0,3%)], ZITRONENFÜLLUNG* (15%) [CASHEWMUS*, KOKOSNUSSMILCHPULVER*, MANDELMUS*, MACADAMIAMUS*, DATTELPULVER*, VANILLEEXTRAKT*, ZITRONEN-ÖL* (0,02%)], GLUTENFREIES HAFERMEHL*, DATTELSIRUP*, CASHEWKERNE*, MANDELMUS*, TAPIOKAFASER*, UBE-PULVER (3,5%), INULIN*, JOHANNISBEER-PULVER*, MEERSALZ, VANILLEEXTRAKT*. KANN SPUREN VON EIERN, ERDNÜSSEN, SOJA, MILCH, ANDEREN SCHALENFRÜCHTEN, SULFITEN, SESAM UND/ODER DARAUS HERGESTELLTEN PRODUKTEN ENTHALTEN. KANN TROTZ GROßER SORGFALT STÜCKE VON DATTELKERNEN UND NUSSSCHALEN ENTHALTEN. *AUS KONTROLLIERT BIOLOGISCHEM ANBAU\nBIO-MANDEL-KOKOSNUSS-RIEGEL MIT WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG. MIT SÜßUNGSMITTEL. (2 X 20G). ZUTATEN: DATTELPASTE*, WEIßER KAKAOBUTTERHALTIGER ÜBERZUG* (15%) [KAKAOBUTTER* (35%), SÜßUNGSMITTEL: XYLIT* (AUS BIRKE), KOKOSNUSSPULVER*, LECITHINE* (SONNENBLUME), VANILLEPULVER*], KOKOSNUSS* (13,8%), MANDELN* (13,6%), DATTELSIRUP* (100% DATTELN), MANDELMUS* (9,4%), HAFERMEHL* (GLUTENFREI), CASHEWKERNE* (5,2%), SALZ, VANILLEPULVER*.\nBIO-HASELNUSS-RIEGEL MIT DUNKLER SCHOKOLADEN-KUVERTÜRE (KAKAO: 75% MINDESTENS, IN DER SCHOKOLADEN-KUVERTÜRE). MIT SÜßUNGSMITTEL (2X20G). Deutsch: Dattelpaste, geröstete Haselnüsse (18%), dunkle Schokoladenkuvertüre (15%) (Kakaomasse*, Kakaobutter*, Süßungsmittel: Erythrit), Hafermehl (glutenfrei), Dattelsirup, Meersalz, Vanille*.\nDE BIO-CASHEWMUS-MACADAMIA MUS MIT HIMBEEREN. ZUTATEN: CASHEWMUS* (60%), KOKOSMILCHPULVER*, MACADAMIAMUS* (10%), DATTELPULVER*, GEFRIERGETROCKNETE HIMBEEREN* (6%). Kann Spuren von Erdnüssen, anderen Schalenfrüchten, Sesamsamen und/ oder daraus hergestellten Produkten enthalten.\nBio-Haselnuss-Bananen-Snackkugeln mit Haselnuss-Kakao Füllung (2x17). Zutaten: Dattel*, Hafermehl* (glutenfrei), Dattelsirup* (100% Dattel), geröstete Haselnuss (9,2%)*, gefriergetrocknete Bananen (6,2%)*, Haselnussmus (5,3%)*, Cashewmus*, Kakao* (gemahlen), Zimt*, Datteln*(gemahlen), Muskatnuss*, Salz, Vanille*. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten.\nBIO-RIEGEL MIT CASHEW-MATCHA FÜLLUNG UND WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG MIT SÜBUNGSMITTEL (2X20G). Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver) , Cashew-Matcha-Füllung (15%) [Cashewmus (60%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, Matchapulver (3%)], glutenfreies Hafermehl, Mandeln, Dattelsirup, Tapiokafaser, Mandelmus, Meersalz, Vanilleextrakt.\nBIO-HASELNUSS-MANDEL-RIEGEL MIT ZITRONENABRIEB UND WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG. MIT SÜßUNGSMITTEL. (2 X 20G). ZUTATEN: DATTELPASTE*, WEIßER KAKAOBUTTERHALTIGER ÜBERZUG* (15%) [KAKAOBUTTER* (35%), SÜßUNGSMITTEL: XYLIT* (AUS BIRKE), KOKOSNUSSPULVER*, LECITHINE* (SONNENBLUME), VANILLEPULVER*], HASELNÜSSE* (13%), MANDELN* (13%), DATTELSIRUP* (100% DATTELN), HAFERMEHL* (GLUTENFREI), VANILLEPULVER*, ZITRONENÖL* (0,04%), SALZ.\nDE BIO-HASELNUSSMUS MIT DATTELN. ZUTATEN: HASELNUSSMUS* (60%), DATTELPULVER* (39,6%), SALZ. Kann Spuren von Erdnüssen, anderen Schalenfrüchten, Sesamsamen und/ oder daraus hergestellten Produkten enthalten.\nBIO-ERDNUSS-HAFER-RIEGEL MIT WEIßEM KAKAOBUTTER­HALTIGEM ÜBERZUG, MIT SÜßUNGSMITTEL. (2 X 20G). ZUTATEN: DATTELPASTE*, WEIßER KAKAOBUTTERHALTIGER ÜBERZUG* (15%) [KAKAOBUTTER* (35%), SÜßUNGSMITTEL: XYLIT* (AUS BIRKE), KOKOSNUSSPULVER*, LECITHINE* (SONNENBLUME), VANILLEPULVER*], ERDNÜSSE* (13,9%), HAFERMEHL* (11,6%) (GLUTENFREI), DATTELSIRUP* (100% DATTELN), ERDNUSSBUTTER* (9,4%), SALZ, VANILLEPULVER*.\nBIO-SNACKKUGELN MIT HASELNUSS UND DATTEL*, HAFERMEHL*(GLUTENFREI), GERÖSTETE HASELNUSS*(14%), CASHEWKERNE* (10%), DATTELSIRUP*(100% DATTELN), HASELNUSSMUS*(5,6%), CASHEWMUS*(3,6%), INGREDIENTS: HAZELNUT-CASHEWNUT FILLING (2X17). ORGANIC SNACK BALLS WITH HAZELNUT AND KAKAO\nBIO-HASELNUSS-CASHEWKERNRIEGEL MIT WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG, MIT SÜßUNGSMITTEL. (2 X 20G). ZUTATEN: DATTELPASTE*, WEIßER KAKAOBUTTERHALTIGER ÜBERZUG* (15%) [KAKAOBUTTER* (35%), SÜßUNGSMITTEL: XYLIT* (AUS BIRKE), KOKOSNUSSPULVER*, LECITHINE* (SONNENBLUME), VANILLEPULVER*], HASELNUSSMUS* (13,2%), HAFERMEHL* (GLUTENFREI), CASHEWKERNE* (7,5%), HASELNÜSSE* (6,8%), MANDELN* (4,7%), DATTELSIRUP* (100% DATTELN), SALZ, VANILLEPULVER*.\nBIO-RIEGEL MIT HASELNUSS FÜLLUNG UND DUNKLER SCHOKOLADENKUVERTURE (KAKAO: 60% MINDESTENS IN DER SCHOKOLADENKUVERTURE). (2X20G). Zutaten: Dattelpaste, dunkle Schokoladenkuvertüre (15%) (Kakaomasse, Haferdrink, Kakaobutter), Haselnuss-Füllung (15%) [Haselnussmus (42%), Dattelpulver, Cashewmus, Kakaobutter], Dattelsirup, glutenfreies Hafermehl, Haselnuss (6,4%), Cashewkerne, Tapiokafaser, Mandeln, Kakaopulver, Meersalz, Vanilleextrakt. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Trocken lagern und vor Wärme schützen. Aus kontrolliert biologischem Anbau. Aus fairem Handel. Verpackung recyclebar.\nDE BIO-CASHEWMUS MIT SALZ. ZUTATEN: CASHEWMUS* (60%), DATTELPULVER*, KOKOSMILCHPULVER*, SALZ (0,7%). Kann Spuren von Erdnüssen, anderen Schalenfrüchten, Sesamsamen und/ oder daraus hergestellten Produkten enthalten.\nBIO-RIEGEL MIT MANDEL, MIT CASHEW-HIMBEER FÜLLUNG UND WEIßEM KAKAOBUTTERHALTIGEM ÜBERZUG. MIT SÜßUNGSMITTEL (2X20G). Deutsch: Dattelpaste, weißer Kakaobutterhaltiger Überzug (15%) (Kakaobutter, Reisdrinkpulver, Kokosnusspulver, Süßungsmittel: Erythrit, Orangenpulver), Macadamia-Cashew-Himbeerfüllung (16%) (Cashewmus (64%), Dattelpulver, Kokosnussmilchpulver, Macadamiamus, gefriergetrocknete Himbeeren), glutenfreies Hafermehl, Mandeln (11,2%), Dattelsirup, Tapiokafaser, Mandelmus (3,8%), Meersalz, Vanilleextrakt. Kann Spuren von Gluten, Eiern, Milch, Schalenfrüchten, Sulfiten, Sesam und/oder daraus hergestellten Produkten enthalten. Trocken lagern und vor Wärme schützen. Aus kontrolliert biologischem Anbau. Aus fairem Handel. Verpackung recyclebar\nDE BIO-CASHEWMUS-MACADAMIAMUS MIT MATCHA & DATTELN. ZUTATEN: CASHEWMUS* (59,9%), KOKOSMILCHPULVER*, MACADAMIAMUS* (10%), REISMILCHPULVER*, DATTELPULVER* (5%), MATCHAPULVER* (2,5%), SALZ (0,1%).\n\nNÄHRWERTE\nNährwerte pro 100 g\nEnergie: 596 (Einheit noch prüfen)\nFett: 42,5 g\ndavon gesättigte Fettsäuren: 11,82 g\nKohlenhydrate: 24,56 g\ndavon Zucker: 21,34 g\nBallaststoffe: 11,118 g\nEiweiß: 13,27 g\nSalz: 0,6 g\nNährwerte pro 100 g\nEnergie: 1.622 kJ / 397 kcal\nFett: 12 g\ndavon gesättigte Fettsäuren: 1,6 g\nKohlenhydrate: 59 g\ndavon Zucker: 39,5 g\nBallaststoffe: 8 g\nEiweiß: 9 g\nSalz: 0,12 g\nNährwerte pro 100 g\nEnergie: 1.897 kJ / 453 kcal\nFett: 23,3 g\ndavon gesättigte Fettsäuren: 7 g\nKohlenhydrate: 46,4 g\ndavon Zucker: 22,1 g\nBallaststoffe: 12,1 g\nEiweiß: 8,5 g\nSalz: 0,20 g\nNährwerte pro 100 g\nEnergie: 1.690 kJ / 404 kcal\nFett: 19,7 g\ndavon gesättigte Fettsäuren: 5,5 g\nKohlenhydrate: 43,1 g\ndavon Zucker: 30,1 g\nBallaststoffe: 7,2 g\nEiweiß: 11,3 g\nSalz: 0,84 g\nNährwerte pro 100 g\nEnergie: 1.960 kJ / 468 kcal\nFett: 23 g\ndavon gesättigte Fettsäuren: 9,3 g\nKohlenhydrate: 50,3 g\ndavon Zucker: 22,5 g\nBallaststoffe: 13 g\nEiweiß: 8,6 g\nSalz: 0,4 g\nNährwerte pro 100 g\nEnergie: 2.051 kJ / 492 kcal\nFett: 32 g\ndavon gesättigte Fettsäuren: 13,9 g\nKohlenhydrate: 41 g\ndavon Zucker: 24,5 g\nBallaststoffe: 7 g\nEiweiß: 10 g\nSalz: 0,30 g\nNährwerte pro 100 g\nEnergie: 1.757 kJ / 421 kcal\nFett: 22,3 g\ndavon gesättigte Fettsäuren: 5,6 g\nKohlenhydrate: 45,1 g\ndavon Zucker: 30,6 g\nBallaststoffe: 6,3 g\nEiweiß: 8,3 g\nSalz: 0,32 g\nNährwerte pro 100 g\nEnergie: 558 (Einheit noch prüfen)\nFett: 38,24 g\ndavon gesättigte Fettsäuren: 14,44 g\nKohlenhydrate: 33,16 g\ndavon Zucker: 15,45 g\nBallaststoffe: 9,19 g\nEiweiß: 14,93 g\nSalz: 0,17 g\nNährwerte pro 100 g\nEnergie: 1.697 kJ / 402 kcal\nFett: 13 g\ndavon gesättigte Fettsäuren: 1,6 g\nKohlenhydrate: 59 g\ndavon Zucker: 36,8 g\nBallaststoffe: 7 g\nEiweiß: 9 g\nSalz: 0,22 g\nNährwerte pro 100 g\nEnergie: 1.871 kJ / 447 kcal\nFett: 21,9 g\ndavon gesättigte Fettsäuren: 7,8 g\nKohlenhydrate: 47,6 g\ndavon Zucker: 22,3 g\nBallaststoffe: 11,5 g\nEiweiß: 9,2 g\nSalz: 0,21 g\nNährwerte pro 100 g\nEnergie: 1.877 kJ / 449 kcal\nFett: 24 g\ndavon gesättigte Fettsäuren: 6,9 g\nKohlenhydrate: 50 g\ndavon Zucker: 34,6 g\nBallaststoffe: 6 g\nEiweiß: 9 g\nSalz: 0,11 g\nNährwerte pro 100 g\nEnergie: 568 (Einheit noch prüfen)\nFett: 40,95 g\ndavon gesättigte Fettsäuren: 3,14 g\nKohlenhydrate: 34,69 g\ndavon Zucker: 32,41 g\nBallaststoffe: 10,58 g\nEiweiß: 10,14 g\nSalz: 0,4 g\nNährwerte pro 100 g\nEnergie: 1.793 kJ / 428 kcal\nFett: 20 g\ndavon gesättigte Fettsäuren: 7,5 g\nKohlenhydrate: 51 g\ndavon Zucker: 34,3 g\nBallaststoffe: 5 g\nEiweiß: 11 g\nSalz: 0,74 g\nNährwerte pro 100 g\nEnergie: 1.863 kJ / 445 kcal\nFett: 21 g\ndavon gesättigte Fettsäuren: 2,9 g\nKohlenhydrate: 51 g\ndavon Zucker: 34,1 g\nBallaststoffe: 6 g\nEiweiß: 10 g\nSalz: 0,21 g\nNährwerte pro 100 g\nEnergie: 1.965 kJ / 470 kcal\nFett: 28 g\ndavon gesättigte Fettsäuren: 7,6 g\nKohlenhydrate: 46 g\ndavon Zucker: 31,4 g\nBallaststoffe: 5 g\nEiweiß: 9 g\nSalz: 0,28 g\nNährwerte pro 100 g\nEnergie: 1.865 kJ / 445 kcal\nFett: 22 g\ndavon gesättigte Fettsäuren: 5,9 g\nKohlenhydrate: 46,5 g\ndavon Zucker: 24,2 g\nBallaststoffe: 11,8 g\nEiweiß: 9,1 g\nSalz: 0,42 g\n\nNährwerte pro 100 g\nEnergie: 535 (Einheit noch prüfen)\nFett: 33,14 g\ndavon gesättigte Fettsäuren: 15,79 g\nKohlenhydrate: 40,7 g\ndavon Zucker: 20,86 g\nBallaststoffe: 8,38 g\nEiweiß: 14,17 g\nSalz: 0,87 g\nNährwerte pro 100 g\nEnergie: 1.884 kJ / 450 kcal\nFett: 22 g\ndavon gesättigte Fettsäuren: 7,7 g\nKohlenhydrate: 47,8 g\ndavon Zucker: 22,1 g\nBallaststoffe: 11,7 g\nEiweiß: 9,3 g\nSalz: 0,21 g\nNährwerte pro 100 g\nEnergie: 517 (Einheit noch prüfen)\nFett: 30,86 g\ndavon gesättigte Fettsäuren: 6,25 g\nKohlenhydrate: 39,45 g\ndavon Zucker: 21,13 g\nBallaststoffe: 8,24 g\nEiweiß: 16,36 g\nSalz: 0,75 g",
             "show_ingredients": false,
             "show_nutrition": false
           }
         },
         "faq_item_cANe4p": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "title": "Ist das eine Pre-Launch Box?",
             "content": "YES – du bekommst die neuen Sorten vor dem offiziellen Launch.\nDu bist Teil unseres geheimen Testpanels… ohne Laborkittel.\nNur mit Geschmacksknospen.",
@@ -399,12 +401,11 @@
         "faq_item_UghL9L",
         "faq_item_cANe4p"
       ],
-      "disabled": true,
       "name": "FAQ",
       "settings": {
         "title": "Häufig gestellte Fragen",
         "subtitle": "Hier haben wir Fragen gesammelt die wir häufig gestellt bekommen.",
-        "background_color": "#dbaaeb",
+        "background_color": "#d04d75",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
       }
