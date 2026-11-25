@@ -20,9 +20,12 @@ if (!customElements.get("collection-slider")) {
       }
 
       init() {
+        const initialSlide = parseInt(this.dataset.initialSlide, 10);
+
         this.slider = new Swiper(this, {
           loop: false,
           centerMode: false,
+          initialSlide: Number.isNaN(initialSlide) ? 0 : initialSlide,
           slidesPerView: "auto",
           spaceBetween: 12,
           breakpoints: {

@@ -113,6 +113,12 @@
       }
     }
   {% endif %}
+  /* Keep a restored slide hidden until Swiper opens on that index */
+  #shopify-section-{{ section.id }} collection-slider.is-pending-position:not(.swiper-initialized),
+  #shopify-section-{{ section.id }} collection-slider.is-pending-position:not(.swiper-initialized) ~ .swiper-button-prev,
+  #shopify-section-{{ section.id }} collection-slider.is-pending-position:not(.swiper-initialized) ~ .swiper-button-next {
+    visibility: hidden;
+  }
   @media screen and (min-width: 992px) {
     #shopify-section-{{ section.id }} {
       {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
@@ -169,8 +175,22 @@
       </h2>
     {%- endif -%}
     {%- if section.blocks.size > 0 -%}
+      {%- assign initial_slide = 0 -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'collection_item' -%}
+          {%- assign block_collection = collections[block.settings.collection] -%}
+          {%- if collection == block_collection -%}
+            {%- assign initial_slide = forloop.index0 -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
       <div class="swiper-container-wrapper">
-        <collection-slider class="swiper" data-slides="{{ section.blocks.size }}">
+        <collection-slider
+          class="swiper{% if initial_slide > 0 %} is-pending-position{% endif %}"
+          data-slides="{{ section.blocks.size }}"
+          data-initial-slide="{{ initial_slide }}"
+        >
           <div class="swiper-wrapper">
             {%- for block in section.blocks -%}
               {% case block.type %}
@@ -256,42 +276,6 @@
     {%- render 'icon-triangular-line' -%}
   </div>
 </section>
-
-<script>
-(function() {
-  // Slider-Position beim Klicken auf einen Collection-Link speichern
-  const slider = document.querySelector('#shopify-section-{{ section.id }} collection-slider');
-  if (slider) {
-    const links = slider.querySelectorAll('a[href*="/collections/"]');
-    links.forEach(link => {
-      link.addEventListener('click', function(e) {
-        const slide = this.closest('.swiper-slide');
-        const slides = Array.from(slider.querySelectorAll('.swiper-slide'));
-        const index = slides.indexOf(slide);
-        if (index >= 0) {
-          sessionStorage.setItem('collectionSliderIndex', index);
-        }
-      });
-    });
-
-    // Gespeicherte Position beim Laden wiederherstellen
-    const savedIndex = sessionStorage.getItem('collectionSliderIndex');
-    if (savedIndex !== null) {
-      // Mehrere Versuche, falls Swiper noch nicht initialisiert
-      const tryRestore = (attempts = 0) => {
-        const swiperInstance = slider.swiper;
-        if (swiperInstance) {
-          swiperInstance.slideTo(parseInt(savedIndex, 10), 0);
-          sessionStorage.removeItem('collectionSliderIndex');
-        } else if (attempts < 20) {
-          setTimeout(() => tryRestore(attempts + 1), 100);
-        }
-      };
-      tryRestore();
-    }
-  }
-})();
-</script>
 
 {% schema %}
 {
