@@ -19,14 +19,15 @@
 
 .review_wrapper .container .review_inner .section_title--underline:before {
   content: "";
+  content: "";
   position: absolute;
   background: #2ac2bd;
-  bottom: -2px;
-  left: -2%;
+  bottom: 7px;
+  left: -1%;
   z-index: -1;
   display: block;
-  width: 104%;
-  height: 65%;
+  width: 102%;
+  height: 55%;
   transition: background-color 0.25s ease-in;
 }
 
@@ -365,7 +366,7 @@ a.jdgm-carousel-item__product.jdgm-ellipsis {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .all_revies.slider_autoplay .customer_review .name_ration p.customer_name {
   text-align: left;
@@ -383,18 +384,18 @@ a.jdgm-carousel-item__product.jdgm-ellipsis {
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: left;
   margin-bottom: 15px;
   margin-top: 6px;
-} 
+}
 .all_revies.slider_autoplay p.review_content {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .all_revies.slider_autoplay .customer_review .name_ration p.ratings_stars img {
   display: block;
