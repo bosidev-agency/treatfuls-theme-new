@@ -1,0 +1,1759 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "subtitle_font_size": 24,
+        "background_color": "",
+        "accent_color": "",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "main_page_xfzKQa": {
+      "type": "main-page",
+      "settings": {
+        "title": "<span>What the hell is Ube?</span>",
+        "subtitle": "<p>Die lila Knolle, die auf den Philippinen seit Generationen Kult ist.</p>",
+        "subtitle_font_size": 17,
+        "background_color": "#c081a9",
+        "accent_color": "#814d81",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_BMAdzF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_ffbV6B": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Ube_Wurzel_Pulver.png",
+            "image_position": "right",
+            "title": "Was ist Ube?",
+            "content": "<p><strong>Ube</strong> (ausgesprochen „U-be“) ist eine lilafarbene Yamswurzel mit dem botanischen Namen <em>Dioscorea alata</em>. Sie stammt aus Südostasien und ist vor allem in der philippinischen Küche verbreitet, wo sie traditionell in Desserts verwendet wird. Charakteristisch sind ihr leuchtend violettes Fruchtfleisch und ihr mild-süßer, nussiger Geschmack mit Vanillenote.<br/><br/>Und was macht man damit? Auf den Philippinen so ziemlich alles.&nbsp;</p>",
+            "button_text": "",
+            "button_url": "",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_WFGK8b": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/wochenbett3.webp",
+            "image_position": "right",
+            "title": "Eine kleine Teepause nur für dich. 🫖💗",
+            "content": "<p>🌼 Pfirsich & Kamille – mild-fruchtig für kleine Wohlfühlmomente<br/><br/>🌿 100 % natürliche Bio-Zutaten<br/><br/>🤝 Fairtrade & plastikfreie Teebeutel<br/><br/>🫖 Für die kleinen Pausen dazwischen – eine warme Tasse zum Durchatmen, wenn der neue Alltag gerade alles andere als ruhig ist.<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_cFf6ft": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frosch_waermflasche.jpg",
+            "image_position": "left",
+            "title": "Wärme, die einfach gut tut. 💗",
+            "content": "<p>🔥 Wohltuende Wärme – für kleine Wärmemomente im Wochenbett<br/><br/>🇩🇪 Made in Germany – hochwertig produziert & sicherheitsgeprüft<br/><br/>🌱 Über 90 % nachwachsende Rohstoffe – nachhaltiger als eine klassische Wärmflasche<br/><br/>♻️ Ressourcenschonend hergestellt – mit 50 % weniger Material und rund 60 % Energieersparnis bei der Produktion<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_ffbV6B",
+        "image_with_text_WFGK8b",
+        "image_with_text_cFf6ft"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#d04d75",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "depr_rich_text_L7eMCV": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_TBJBB8": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Das Wichtigste auf einen Blick",
+            "content": "<p></p><ul><li><strong>Ube ist eine lila Yamswurzel</strong> (<em>Dioscorea alata</em>) aus Südostasien.</li><li><strong>Ube ist keine Süßkartoffel.</strong> Die beiden werden oft verwechselt, gehören aber zu verschiedenen Pflanzenfamilien.</li><li><strong>Ube schmeckt mild-süß und nussig</strong>, mit einer Note von Vanille.</li><li><strong>Die lila Farbe ist natürlich</strong> und kommt aus dem Fruchtfleisch selbst.</li><li><strong>Auf den Philippinen ist Ube ein Klassiker</strong> in Desserts, Eis und Gebäck.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_TBJBB8"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#814d81",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "info_slider_Njmp4J": {
+      "type": "info-slider",
+      "blocks": {
+        "content_item_8c4Xw3": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Ube_Halaya.png",
+            "title": "Ube Halaya",
+            "content": "<p>Das Herzstück: Ube, langsam mit Kokosmilch und Zucker eingekocht. Die Basis für fast alle Ube-Desserts.</p>",
+            "link_text": "",
+            "link_url": "https://hugo-frosch.de/waermflaschen/"
+          }
+        },
+        "content_item_CttPcU": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Ube_Eis.png",
+            "title": "Ube-Eis",
+            "content": "<p>Cremig, knallig lila und mild-nussig im Geschmack: Ube-Eis gehört auf den Philippinen zu den beliebtesten Eissorten.</p>",
+            "link_text": "",
+            "link_url": "https://treatfuls.com/collections/produkte"
+          }
+        },
+        "content_item_NMwiLF": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Ube_Halo_Halo.png",
+            "title": "Halo-Halo",
+            "content": "<p>Crushed Ice, Milch und ganz viele Toppings, gekrönt mit Ube Halaya und Ube-Eis. Der Name bedeutet ‚Mischmasch‘, und genau so wird’s gegessen.</p>",
+            "link_text": "",
+            "link_url": "https://cupper-teas.de/?srsltid=AfmBOorF8UhUnYFpzruJ-qCDZtp9r16Sf7I9ziqx9NwcsQbelXBTbBhQ"
+          }
+        },
+        "content_item_jeKyCV": {
+          "type": "content_item",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Ube_Pandesal.png",
+            "title": "Ube Pandesal",
+            "content": "<p>Pandesal sind kleine, weiche Brötchen. Bei Ube Pandesal kommt Ube in den Teig, oft auch eine Füllung aus Ube Halaya und Käse.&nbsp;</p>",
+            "link_text": "",
+            "link_url": "#shopify-section-template--30061088768264__featured_product_GbQVWw"
+          }
+        }
+      },
+      "block_order": [
+        "content_item_8c4Xw3",
+        "content_item_CttPcU",
+        "content_item_NMwiLF",
+        "content_item_jeKyCV"
+      ],
+      "name": "Info slider",
+      "settings": {
+        "title": "<span>Ube </span> auf den Philippinen",
+        "link_text": "Auf den Philippinen ist Ube kein Trend, sondern Alltag: auf Feiern, beim Bäcker, im Eis. Das hier sind die Klassiker, die du kennen solltest 👆🏽",
+        "link_url": "/",
+        "background_color": "#814d81",
+        "accent_color": "#c081a9",
+        "hover_color": "#c081a9"
+      }
+    },
+    "hero_eNmaQw": {
+      "type": "hero",
+      "disabled": true,
+      "name": "Hero banner",
+      "settings": {
+        "desktop_image_height": "adapt",
+        "mobile_image_height": "adapt",
+        "hide_on_mobile": true,
+        "content_vertical_position_desktop": 50,
+        "content_horizontal_position_desktop": 50,
+        "content_text_alignment_desktop": "center",
+        "max_width": "100%",
+        "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
+        "title": "Hero banner",
+        "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+        "background_color": "rgba(0,0,0,0)",
+        "accent_color": "rgba(0,0,0,0)",
+        "hover_color": "rgba(0,0,0,0)",
+        "show_base_triangular_line": false
+      }
+    },
+    "main_page_Ymr6DH": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "title": "Ube vs. Taro vs. lila Süßkartoffel",
+        "subtitle": "<p>Moment, ist das nicht einfach Taro?<br/>Nope! Ube, Taro und lila Süßkartoffel werden ständig verwechselt, dabei sind sie nicht einmal miteinander verwandt. Ube ist eine Yamswurzel, Taro gehört zu den Aronstabgewächsen und die Süßkartoffel zu den Windengewächsen. Der größte Unterschied für dich: Ube ist innen intensiv lila und schmeckt mild-süß mit einer leicht vanilligen Note.</p>",
+        "subtitle_font_size": 17,
+        "background_color": "#c081a9",
+        "accent_color": "#814d81",
+        "hover_color": "",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "comparison_table_dT7KWy": {
+      "type": "comparison-table",
+      "blocks": {
+        "table_EbWcfp": {
+          "type": "table",
+          "name": "Table",
+          "settings": {},
+          "blocks": {
+            "table_row_3VeDUX": {
+              "type": "table-row",
+              "name": "Table Row",
+              "settings": {},
+              "blocks": {
+                "table_cell_EdLPEn": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_CDQdBf": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "image": "shopify://shop_images/UBE_a669381e-4530-4384-acee-0575ee383913.png",
+                    "text": "Ube",
+                    "liquid": "Violette Yamswurzel"
+                  },
+                  "blocks": {}
+                },
+                "table_cell_bq8KLa": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "image": "shopify://shop_images/LILA_SUessKARTOFFEL_9dc25974-68ee-4575-8716-3fd078acff64.png",
+                    "text": "Lila Süßkartoffel",
+                    "liquid": "Batate"
+                  },
+                  "blocks": {}
+                },
+                "table_cell_dPaGtF": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "image": "shopify://shop_images/TARO_af9c3826-01ac-454d-bbcb-d8baca957d38.png",
+                    "text": "Taro",
+                    "liquid": "Wasserbrotwurzel"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_EdLPEn",
+                "table_cell_CDQdBf",
+                "table_cell_bq8KLa",
+                "table_cell_dPaGtF"
+              ]
+            },
+            "table_row_FdtTwp": {
+              "type": "table-row",
+              "name": "Vegan",
+              "settings": {},
+              "blocks": {
+                "table_cell_aTMDDn": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Pflanzenfamilie",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_JxzWU7": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "Yamswurzelgewächse",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_qWj77V": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Windengewächse",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_BVHMme": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Aronstabgewächse",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_aTMDDn",
+                "table_cell_JxzWU7",
+                "table_cell_qWj77V",
+                "table_cell_BVHMme"
+              ]
+            },
+            "table_row_q9hQGQ": {
+              "type": "table-row",
+              "name": "Ohne Raffinierten Zucker",
+              "settings": {},
+              "blocks": {
+                "table_cell_yKteyA": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Botanischer Name",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_PV6BxK": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "Dioscorea alata",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_DweEEz": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Ipomoea batatas",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_Rh6dGT": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Colocasia esculenta",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_yKteyA",
+                "table_cell_PV6BxK",
+                "table_cell_DweEEz",
+                "table_cell_Rh6dGT"
+              ]
+            },
+            "table_row_GnjCUg": {
+              "type": "table-row",
+              "name": "Vegan",
+              "settings": {},
+              "blocks": {
+                "table_cell_mUaGnr": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Nährstoff-Schwerpunkt",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_N7q9RQ": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "Kalium (Blutdruck) & Mangan",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_VTmNPi": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Vitamin A (aus Beta-Carotin) & Vitamin C",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_TXiKbJ": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Vitamin E (Zellschutz) & Kupfer",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_mUaGnr",
+                "table_cell_N7q9RQ",
+                "table_cell_VTmNPi",
+                "table_cell_TXiKbJ"
+              ]
+            },
+            "table_row_qRweF6": {
+              "type": "table-row",
+              "name": "Bio",
+              "settings": {},
+              "blocks": {
+                "table_cell_AAjPcr": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Schale",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_dpiL8N": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "braun, rau, borkig",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_hxF3jG": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "glatt, lila oder beige",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_nTLj3N": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "braun, faserig, mit Ringen",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_AAjPcr",
+                "table_cell_dpiL8N",
+                "table_cell_hxF3jG",
+                "table_cell_nTLj3N"
+              ]
+            },
+            "table_row_rjxCg9": {
+              "type": "table-row",
+              "name": "Produkttyp",
+              "settings": {},
+              "blocks": {
+                "table_cell_TzTnmn": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Farbe innen",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_yDAyMi": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "tief violett",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_d699NA": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "violett",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_cVqDAD": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "hell mit lila Sprenkeln",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_TzTnmn",
+                "table_cell_yDAyMi",
+                "table_cell_d699NA",
+                "table_cell_cVqDAD"
+              ]
+            },
+            "table_row_egiqnF": {
+              "type": "table-row",
+              "name": "Ohne Gluten",
+              "settings": {},
+              "blocks": {
+                "table_cell_GHLpmM": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Geschmack",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_TUFaPV": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "mild-süß, nussig, leicht vanillig",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_WK3B9x": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "süß, erdig",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_gayeYF": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "nussig, kaum süß",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_GHLpmM",
+                "table_cell_TUFaPV",
+                "table_cell_WK3B9x",
+                "table_cell_gayeYF"
+              ]
+            },
+            "table_row_ndaVMJ": {
+              "type": "table-row",
+              "name": "Ohne Zusatzstoffe",
+              "settings": {},
+              "blocks": {
+                "table_cell_8GHQzx": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Konsistenz",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_BXDkdE": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "cremig",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_KEkDjp": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "fest, eher trocken",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_6RnUHj": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "mehlig bis cremig",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_8GHQzx",
+                "table_cell_BXDkdE",
+                "table_cell_KEkDjp",
+                "table_cell_6RnUHj"
+              ]
+            },
+            "table_row_JkGcKx": {
+              "type": "table-row",
+              "name": "Nachhaltig",
+              "settings": {},
+              "blocks": {
+                "table_cell_P9TewY": {
+                  "type": "table-cell",
+                  "name": "Vegan",
+                  "settings": {
+                    "cell_type": "th",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Typisch in",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_wABQzt": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": true,
+                    "text": "philippinischen Desserts",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_LCrXgC": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Ofengerichten, Japan",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_mY7zCQ": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "Bubble Tea, asiatischen Gerichten",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_P9TewY",
+                "table_cell_wABQzt",
+                "table_cell_LCrXgC",
+                "table_cell_mY7zCQ"
+              ]
+            },
+            "table_row_J8iF9r": {
+              "type": "table-row",
+              "name": "Footer",
+              "disabled": true,
+              "settings": {},
+              "blocks": {
+                "table_cell_wCg8FN": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_6magYA": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_XFtVXG": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "rgba(0,0,0,0)",
+                    "sticky": false,
+                    "text": "",
+                    "liquid": ""
+                  },
+                  "blocks": {}
+                },
+                "table_cell_VxNXVe": {
+                  "type": "table-cell",
+                  "name": "Table Cell",
+                  "settings": {
+                    "cell_type": "td",
+                    "background_color": "#6ad4d1",
+                    "sticky": true,
+                    "text": "",
+                    "liquid": "<atc-button>\n              {% form 'product', closest.product, class: 'product-form' %}\n                <input type=\"hidden\" name=\"id\" value=\"{{ closest.product.selected_or_first_available_variant.id }}\">\n                <input type=\"hidden\" name=\"quantity\" value=\"1\">\n                <button\n          class=\"button product-form__button\"\n          type=\"submit\"\n          name=\"add\"\n          data-submit-button\n        >\n          <span\n            class=\"product-form__button-text product-form__button-text--add-to-card\"\n            data-submit-button-text\n          >\n            {%- if closest.product.variants.first.available == true -%}\n              <span class=\"product-form__button-price\" style=\"margin-right:5px;\">{{ closest.product.price | money}}</span> {% if closest.product.metafields.custom.preorder_date != blank %}{{ \"collections.product_card.preorder\" | t }}{% else %}{{ \"collections.product_card.add_to_cart\" | t }}{% endif %}\n            {%- else -%}\n              {{ \"collections.product_card.sold_out\" | t }}\n            {%- endif -%}\n          </span>\n        </button>\n              {% endform %}\n            </atc-button>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "table_cell_wCg8FN",
+                "table_cell_6magYA",
+                "table_cell_XFtVXG",
+                "table_cell_VxNXVe"
+              ]
+            }
+          },
+          "block_order": [
+            "table_row_3VeDUX",
+            "table_row_FdtTwp",
+            "table_row_q9hQGQ",
+            "table_row_GnjCUg",
+            "table_row_qRweF6",
+            "table_row_rjxCg9",
+            "table_row_egiqnF",
+            "table_row_ndaVMJ",
+            "table_row_JkGcKx",
+            "table_row_J8iF9r"
+          ]
+        }
+      },
+      "block_order": [
+        "table_EbWcfp"
+      ],
+      "name": "Comparison Table",
+      "settings": {
+        "product": "himbeer-riegel",
+        "title": "Ube vs. lila Süßkartoffel vs. Taro",
+        "subtitle": "<p>Moment, ist das nicht einfach eine lila Süßkartoffel?<br/>Nope! Ube, Taro und lila Süßkartoffel werden ständig verwechselt, dabei sind sie nicht einmal miteinander verwandt. Ube ist eine Yamswurzel, Taro gehört zu den Aronstabgewächsen und die Süßkartoffel zu den Windengewächsen. Der größte Unterschied für dich: Ube ist innen intensiv lila und schmeckt mild-süß mit einer leicht vanilligen Note.</p>",
+        "subtitle_font_size": 17,
+        "footer_note": "",
+        "background_color": "#c081a9",
+        "accent_color": "#f3587f",
+        "hover_color": "#dbaaeb",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "depr_rich_text_ANY89p": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_APjbVB": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Wie probiere ich Ube?",
+            "content": "<p>Wie probiere ich Ube? Frische Ube-Knollen sind in Deutschland schwer zu bekommen. Wer Ube einfach mal probieren will, muss aber nicht in den Asia-Markt: Unseren veganen Ube-Riegel mit echtem Ube-Pulver gibt’s jetzt bei dm.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_APjbVB"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#b74f7c",
+        "accent_color": "#814d81",
+        "hover_color": "#f3587f"
+      }
+    },
+    "image_with_text_NHKmKF": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_EUwxUY": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/treatfuls_Bar_auf_Ube_Wurzel.png",
+            "image_position": "left",
+            "title": "",
+            "content": "<p><strong>Wie probiere ich Ube?&nbsp;</strong><br/><br/>Frische Ube-Knollen sind in Deutschland schwer zu bekommen. Wer Ube einfach mal probieren will, muss aber nicht in den Asia-Markt: Unseren veganen Ube-Riegel mit echtem Ube-Pulver gibt’s jetzt bei dm</p>",
+            "button_text": "Jetzt bei dm entdecken",
+            "button_url": "https://www.dm.de/search?query=treatfuls&searchProviderType=dm-products",
+            "badge_image": "shopify://shop_images/Dm_Logo.svg_Mockup.webp",
+            "badge_position": "image",
+            "badge_logo_size": 115,
+            "badge_show_circle": true,
+            "badge_size": 120,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_XgJXRN": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/wochenbett3.webp",
+            "image_position": "right",
+            "title": "Eine kleine Teepause nur für dich. 🫖💗",
+            "content": "<p>🌼 Pfirsich & Kamille: mild-fruchtig für kleine Wohlfühlmomente<br/><br/>🌿 100 % natürliche Bio-Zutaten<br/><br/>🤝 Fairtrade & plastikfreie Teebeutel<br/><br/>🫖 Für die kleinen Pausen dazwischen: eine warme Tasse zum Durchatmen, wenn der neue Alltag gerade alles andere als ruhig ist<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_BjFpid": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frosch_waermflasche.jpg",
+            "image_position": "left",
+            "title": "Wärme, die einfach gut tut. 💗",
+            "content": "<p>🔥 Wohltuende Wärme: für kleine Wärmemomente im Wochenbett<br/><br/>🇩🇪 Made in Germany: hochwertig produziert & sicherheitsgeprüft<br/><br/>🌱 Über 90 % nachwachsende Rohstoffe: nachhaltiger als eine klassische Wärmflasche<br/><br/>♻️ Ressourcenschonend hergestellt: mit 50 % weniger Material und rund 60 % Energieersparnis bei der Produktion<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_EUwxUY",
+        "image_with_text_XgJXRN",
+        "image_with_text_BjFpid"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#814d81",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#823547",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_VqAMph": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_g9fkhA": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Ube_matcha_Latte.png",
+            "image_position": "right",
+            "title": "",
+            "content": "<p><strong>Ube zum Selbermachen: Ube Latte</strong><br/><br/>Unser Lieblings-Trend? Der Matcha Ube Latte. Ube bringt den mild-süßen, vanilligen Geschmack, und der Matcha die cremige grüne Note. Sieht aus wie aus dem hippsten Café der Stadt und ist in wenigen Minuten zu Hause gemacht.<strong><br/><br/></strong>Lust auf mehr Lila? Mit Ube-Pulver und Pflanzendrink machst du dir in 5 Minuten deinen eigenen Ube Latte.</p>",
+            "button_text": "Zum Rezept",
+            "button_url": "https://treatfuls.com/blogs/rezepte/ube-matcha-latte-der-perfekte-bite-%F0%9F%92%9C",
+            "badge_position": "button",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 90,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_gEFKeD": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/wochenbett3.webp",
+            "image_position": "right",
+            "title": "Eine kleine Teepause nur für dich. 🫖💗",
+            "content": "<p>🌼 Pfirsich & Kamille: mild-fruchtig für kleine Wohlfühlmomente<br/><br/>🌿 100 % natürliche Bio-Zutaten<br/><br/>🤝 Fairtrade & plastikfreie Teebeutel<br/><br/>🫖 Für die kleinen Pausen dazwischen: eine warme Tasse zum Durchatmen, wenn der neue Alltag gerade alles andere als ruhig ist<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        },
+        "image_with_text_yMb4cC": {
+          "type": "image_with_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Frosch_waermflasche.jpg",
+            "image_position": "left",
+            "title": "Wärme, die einfach gut tut. 💗",
+            "content": "<p>🔥 Wohltuende Wärme: für kleine Wärmemomente im Wochenbett<br/><br/>🇩🇪 Made in Germany: hochwertig produziert & sicherheitsgeprüft<br/><br/>🌱 Über 90 % nachwachsende Rohstoffe: nachhaltiger als eine klassische Wärmflasche<br/><br/>♻️ Ressourcenschonend hergestellt: mit 50 % weniger Material und rund 60 % Energieersparnis bei der Produktion<br/><br/>🎁 Gratis zur Wochenbettbox dazu</p>",
+            "button_text": "",
+            "button_url": "https://treatfuls.com/products/matcha-riegel?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web",
+            "badge_position": "image",
+            "badge_logo_size": 75,
+            "badge_show_circle": true,
+            "badge_size": 110,
+            "badge_alt": "Erhältlich bei dm",
+            "badge_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_g9fkhA",
+        "image_with_text_gEFKeD",
+        "image_with_text_yMb4cC"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "background_color": "#c081a9",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#823547",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "featured_product_GbQVWw": {
+      "type": "featured-product",
+      "blocks": {
+        "description_TrMApc": {
+          "type": "description",
+          "settings": {}
+        },
+        "text_field_qyXmWW": {
+          "type": "text_field",
+          "settings": {
+            "label": "💌 Deine Love Note Du schickst die Box direkt an deinen Herzensmenschen? Ein paar Worte von dir, handgeschrieben von uns. Hinterlass deine Nachricht hier, den Rest übernehmen wir 💌",
+            "property_key": "Nachricht",
+            "placeholder": "Schreibe deinen Text hier rein …",
+            "required": false,
+            "max_characters": 140,
+            "block_design": false
+          }
+        },
+        "countdown_yp9z36": {
+          "type": "countdown",
+          "settings": {
+            "heading": "",
+            "color": "",
+            "color_time": "",
+            "background_color": ""
+          }
+        },
+        "price_zwAehL": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_button_W846tk": {
+          "type": "buy_button",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "description_TrMApc",
+        "text_field_qyXmWW",
+        "countdown_yp9z36",
+        "price_zwAehL",
+        "buy_button_W846tk"
+      ],
+      "disabled": true,
+      "name": "Featured product",
+      "settings": {
+        "product": "wochenbettbox",
+        "heading": "Ein Geschenk, das nicht rumsteht, sondern gebraucht wird.",
+        "mobile_heading": "Alle Hände voll zu tun",
+        "sticky_button": true,
+        "show_price": true,
+        "reviews_average_rating": "",
+        "reviews_quantity_text": "",
+        "background_color": "#c081a9",
+        "accent_color": "#d04d75",
+        "hover_color": "#dbaaeb"
+      }
+    },
+    "depr_rich_text_E89Bmg": {
+      "type": "depr-rich-text",
+      "blocks": {
+        "richtext_item_ftTb4i": {
+          "type": "richtext_item",
+          "settings": {
+            "heading": "Was ist im Wochenbett wichtig?",
+            "content": "<p>Das<strong> </strong>Wochenbett bezeichnet die ersten Wochen nach der Geburt, eine intensive Zeit, in der der Körper sich erholt und sich gleichzeitig ein komplett neuer Alltag mit Baby einspielt. Ruhe, Unterstützung und möglichst wenig zusätzlicher Stress stehen jetzt ganz oben auf der Liste.</p><p>Auch die Ernährung im Wochenbett spielt eine wichtige Rolle: Regelmäßige Mahlzeiten, ausreichend Flüssigkeit und nährstoffreiche Lebensmittel versorgen den Körper mit Energie. Gerade bei wenig Schlaf und vollen Händen können unkomplizierte Snacks für zwischendurch praktisch sein. Lebensmittel mit Kohlenhydraten, Ballaststoffen und Fetten können dabei Teil einer ausgewogenen Ernährung sein.</p><p><br/>Und mindestens genauso wichtig: Hilfe annehmen. Ob Essen vorbeibringen, Haushalt übernehmen oder einfach da sein, im Wochenbett darf Unterstützung vor allem eines: den neuen Alltag ein kleines bisschen leichter machen. 💗</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_item_ftTb4i"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "section_width": "container--lg",
+        "text_alignment": "center",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "main_product_ingredients_6KHBRk": {
+      "type": "main-product-ingredients",
+      "disabled": true,
+      "name": "Ingredients",
+      "settings": {
+        "product": "wochenbettbox",
+        "title": "Wir verwenden nur beste Zutaten",
+        "background_color": "#e35478",
+        "accent_color": "#2ac2bd"
+      }
+    },
+    "compare_product_reviews_4JnjWz": {
+      "type": "compare-product-reviews",
+      "disabled": true,
+      "name": "Product reviews",
+      "settings": {
+        "title": "Das sagen unsere treatfuls Lover 💗",
+        "underline_word": "",
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click Here"
+      }
+    },
+    "home_products_tJ37jh": {
+      "type": "home-products",
+      "blocks": {
+        "product_item_Cd9Dna": {
+          "type": "product_item",
+          "settings": {
+            "product": "cute-but-nuts-vorratsbox-bio-vegan-glutenfrei"
+          }
+        },
+        "product_item_LfGPRV": {
+          "type": "product_item",
+          "settings": {
+            "product": "white-covered-crunchy-hazelnut-treats-healthier-than-your-last-relationship"
+          }
+        },
+        "product_item_Wmjj6N": {
+          "type": "product_item",
+          "settings": {
+            "product": "20-x-weisse-schoko-erdnuss-dattelkaramell-riegel-bio-vegan"
+          }
+        },
+        "product_item_NULGUA": {
+          "type": "product_item",
+          "settings": {
+            "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls"
+          }
+        },
+        "product_item_kxYYT3": {
+          "type": "product_item",
+          "settings": {
+            "product": "dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have"
+          }
+        },
+        "product_item_Aj9fDq": {
+          "type": "product_item",
+          "settings": {
+            "product": "20-x-dunkle-schoko-haselnuss-riegel-bio-vegan"
+          }
+        },
+        "product_item_BqapNh": {
+          "type": "product_item",
+          "settings": {
+            "product": "himbeer-riegel"
+          }
+        },
+        "product_item_p3QVKh": {
+          "type": "product_item",
+          "settings": {
+            "product": "matcha-riegel"
+          }
+        }
+      },
+      "block_order": [
+        "product_item_Cd9Dna",
+        "product_item_LfGPRV",
+        "product_item_Wmjj6N",
+        "product_item_NULGUA",
+        "product_item_kxYYT3",
+        "product_item_Aj9fDq",
+        "product_item_BqapNh",
+        "product_item_p3QVKh"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "This is what <span>guiltfree</span> looks like",
+        "title-second": "powered by  <span>plants loved</span> by everyone",
+        "title-third": "healthy <span>never tasted</span> this naughty",
+        "link_text": "Jetzt kaufen",
+        "adjust_colors_to_current_slide": false,
+        "background_color": "#ceb0d1",
+        "accent_color": "#c081a9",
+        "hover_color": "#e56a89"
+      }
+    },
+    "faq_d99nWz": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_FPycFJ": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Gibt es Ube in Bio?",
+            "content": "Ja, und das war gar nicht so leicht. Bio-Ube-Pulver ist richtig schwer zu bekommen. Für uns war aber klar: Wenn treatfuls, dann bio, denn alle unsere Produkte sind bio-zertifiziert. Also haben wir lange gesucht, bis wir endlich eine Bio-Quelle gefunden haben, die uns überzeugt. Dafür zahlen wir etwa das Dreifache von dem, was herkömmliches Ube-Pulver kostet. Für uns ist es das wert, und wir finden, das schmeckst du.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_Pzdj66": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wo kann ich den treatfuls Ube Riegel probieren",
+            "content": "Ganz einfach: bei dm! Unseren Ube-Riegel will ube mine findest du in dm-Märkten in ganz Deutschland, ebenso wie seinen grünen Partner, unseren Matcha-Riegel. Und wer noch mehr treatfuls entdecken will: Online bei dm gibt’s zusätzlich best date you’ll ever have (dunkle Erdnuss), healthier than your last relationship (weiße Haselnuss) und berrylicious babe (Himbeere).",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_zHmjGz": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie schmeckt Ube?",
+            "content": "Ube schmeckt mild süß und nussig, mit einer deutlichen Vanillenote. Manche erinnert der Geschmack auch an Pistazie. Im Vergleich zu Taro ist Ube süßer und aromatischer.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_DTJzNR": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Ist Ube das Gleiche wie lila Süßkartoffel?",
+            "content": "Nein, auch wenn beide oft verwechselt werden. Ube ist eine Yamswurzel mit rauer, rindenartiger Schale. Die lila Süßkartoffel gehört zu einer ganz anderen Pflanzenfamilie und hat eine dünne, glatte Schale.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_3Gd8jg": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wo kann man Ube kaufen?",
+            "content": "Frische Ube-Knollen sind in Deutschland selten und meist nur in Asia-Märkten oder online erhältlich. Unseren treatfuls Ube-Riegel findest du bei dm, online und in der Filiale.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_brRBwm": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Warum ist Ube lila?",
+            "content": "Die Farbe kommt von natürlichen Pflanzenfarbstoffen, den Anthocyanen. Das sind dieselben Farbstoffe, die zum Beispiel Heidelbeeren färben.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        },
+        "faq_item_ia6rTe": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie ist treatfuls auf Ube gekommen?",
+            "content": "Ube ist bei uns gleich doppelt angekommen: Magdalena kennt die lila Knolle schon lange von ihren philippinischen Freund, die Ube in Desserts wie Ube Halaya lieben. Tugce ist Ube dann auf Reisen in Singapur begegnet, als lila Trend in Cafés und Bäckereien. Spätestens da war klar: Das wollen wir nach Deutschland holen. So entstand will ube mine, unser veganer Ube-Riegel mit echtem Ube-Pulver, den wir zu dm gebracht haben.",
+            "show_ingredients": false,
+            "show_nutrition": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_FPycFJ",
+        "faq_item_Pzdj66",
+        "faq_item_zHmjGz",
+        "faq_item_DTJzNR",
+        "faq_item_3Gd8jg",
+        "faq_item_brRBwm",
+        "faq_item_ia6rTe"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "title": "Noch Fragen?",
+        "subtitle": "Hier haben wir Fragen gesammelt die wir häufig gestellt bekommen.",
+        "background_color": "#814d81",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "advantages_LBgPHq": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_dLhzwx": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_GVyQYW": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_aL6Umn": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_erKqKN": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_gEArdw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_rKLhCg": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_bgJFWx": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_Uj7Jz4": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_dLhzwx",
+        "advantage_item_GVyQYW",
+        "advantage_item_aL6Umn",
+        "advantage_item_erKqKN",
+        "advantage_item_gEArdw",
+        "advantage_item_rKLhCg",
+        "advantage_item_bgJFWx",
+        "advantage_item_Uj7Jz4"
+      ],
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein Bio-Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Schokolade außen, beste Bio-Zutaten innen und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "custom_section_9AEAFL": {
+      "type": "custom-section",
+      "blocks": {
+        "heading_kWUKzf": {
+          "type": "heading",
+          "name": "Heading",
+          "settings": {
+            "heading_text": "Schon verknallt?",
+            "subtitle_text": "Dann schau mal hier…",
+            "margin_top": 24,
+            "margin_bottom": 24
+          },
+          "blocks": {}
+        },
+        "group_Dc9Gp7": {
+          "type": "group",
+          "name": "Group",
+          "settings": {
+            "display_type": "flex",
+            "direction": "row",
+            "alignment": "center",
+            "gap": 32,
+            "child_width": "100%",
+            "max_width_enabled": false,
+            "max_width": 1200,
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "slider_X7fgak": {
+              "type": "slider",
+              "name": "Slider",
+              "settings": {
+                "hide_desktop": true,
+                "hide_mobile": false,
+                "loop": true,
+                "slides_per_view_desktop": 4,
+                "slides_per_view_mobile": 1,
+                "show_next_slide": true,
+                "gap": 20
+              },
+              "blocks": {
+                "slide_b3rKQL": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_Wdtkzx": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "white-covered-creamy-coco-kisses-sweeter-than-your-ex",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_Wdtkzx"
+                  ]
+                },
+                "slide_UXkYT6": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_BVnnPr": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "himbeer-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_BVnnPr"
+                  ]
+                },
+                "slide_jjKDwy": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_CnqMpU": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "20-x-weisse-zitronenkuchen-riegel-bio-vegan",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_CnqMpU"
+                  ]
+                },
+                "slide_pg6biV": {
+                  "type": "slide",
+                  "name": "Slide",
+                  "settings": {},
+                  "blocks": {
+                    "product_card_wmWiAV": {
+                      "type": "product-card",
+                      "name": "Product Card",
+                      "settings": {
+                        "card_product": "brownie-riegel",
+                        "show_view_product": true,
+                        "show_cart_notification": false,
+                        "background_color": "#ffffff",
+                        "text_color": "#000000"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "product_card_wmWiAV"
+                  ]
+                }
+              },
+              "block_order": [
+                "slide_b3rKQL",
+                "slide_UXkYT6",
+                "slide_jjKDwy",
+                "slide_pg6biV"
+              ]
+            }
+          },
+          "block_order": [
+            "slider_X7fgak"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_kWUKzf",
+        "group_Dc9Gp7"
+      ],
+      "disabled": true,
+      "name": "Custom block section",
+      "settings": {
+        "background_color": "#859972",
+        "accent_color": "#c081a9",
+        "hover_color": "#eba3c9",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "advantages_WMqFa9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_Yx8hhM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
+            "text": "dm"
+          }
+        },
+        "advantage_item_jbiWDf": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Icon_Edeka_Logo.png",
+            "text": "Edeka"
+          }
+        },
+        "advantage_item_L9iH7J": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-05.webp",
+            "text": "Rewe"
+          }
+        },
+        "advantage_item_zKbph3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-02.webp",
+            "text": "Alnatura"
+          }
+        },
+        "advantage_item_6UNBwa": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-04.webp",
+            "text": "Budnikowsky"
+          }
+        },
+        "advantage_item_mKgYE9": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-03.webp",
+            "text": "BILLA"
+          }
+        },
+        "advantage_item_pwNhCi": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Icons_Parnter_OS-06.webp",
+            "text": "SPAR"
+          }
+        },
+        "advantage_item_6qjfnR": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_Yx8hhM",
+        "advantage_item_jbiWDf",
+        "advantage_item_L9iH7J",
+        "advantage_item_zKbph3",
+        "advantage_item_6UNBwa",
+        "advantage_item_mKgYE9",
+        "advantage_item_pwNhCi",
+        "advantage_item_6qjfnR"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "Hier gibt’s treatfuls",
+        "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#ceb0d1",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    },
+    "advantages_BcfMf9": {
+      "type": "advantages",
+      "blocks": {
+        "advantage_item_8gBfw3": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-1-smile.png",
+            "text": "Lecker"
+          }
+        },
+        "advantage_item_G8CBAM": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-2-vegan.png",
+            "text": "Vegan"
+          }
+        },
+        "advantage_item_CARaAK": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/img-3-organic.png",
+            "text": "Bio-zertifiziert"
+          }
+        },
+        "advantage_item_mqdQfY": {
+          "type": "advantage_item",
+          "settings": {
+            "image": "shopify://shop_images/Darm4.webp",
+            "text": "Ballaststoffreich"
+          }
+        },
+        "advantage_item_qxe3cw": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-4-packaging.png",
+            "text": "Recyclebare Verpackung"
+          }
+        },
+        "advantage_item_hy9grG": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-5-soy.png",
+            "text": "Ohne Soja"
+          }
+        },
+        "advantage_item_XE7riB": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-6-gluten-free.png",
+            "text": "Ohne Gluten"
+          }
+        },
+        "advantage_item_WEkgHC": {
+          "type": "advantage_item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/img-7-sugar.png",
+            "text": "Ohne raffinierten Zucker"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_item_8gBfw3",
+        "advantage_item_G8CBAM",
+        "advantage_item_CARaAK",
+        "advantage_item_mqdQfY",
+        "advantage_item_qxe3cw",
+        "advantage_item_hy9grG",
+        "advantage_item_XE7riB",
+        "advantage_item_WEkgHC"
+      ],
+      "disabled": true,
+      "settings": {
+        "hide_on_mobile": false,
+        "title": "nicht noch so ein gesunder Riegel…",
+        "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
+        "background_color": "#c081a9",
+        "accent_color": "#2ac2bd",
+        "hover_color": "#f3587f"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_xfzKQa",
+    "image_with_text_BMAdzF",
+    "depr_rich_text_L7eMCV",
+    "info_slider_Njmp4J",
+    "hero_eNmaQw",
+    "main_page_Ymr6DH",
+    "comparison_table_dT7KWy",
+    "depr_rich_text_ANY89p",
+    "image_with_text_NHKmKF",
+    "image_with_text_VqAMph",
+    "featured_product_GbQVWw",
+    "depr_rich_text_E89Bmg",
+    "main_product_ingredients_6KHBRk",
+    "compare_product_reviews_4JnjWz",
+    "home_products_tJ37jh",
+    "faq_d99nWz",
+    "advantages_LBgPHq",
+    "custom_section_9AEAFL",
+    "advantages_WMqFa9",
+    "advantages_BcfMf9"
+  ]
+}

@@ -33,10 +33,10 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
-        "content_vertical_position_mobile": 50,
-        "content_horizontal_position_mobile": 50,
         "max_width": "100%",
         "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
         "title": "Hero banner",
         "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
         "background_color": "rgba(0,0,0,0)",
@@ -164,7 +164,7 @@
             "title": "Kids & family friendly",
             "content": "",
             "button_text": "Show me the filling",
-            "button_url": "shopify://products/summer-crush-kopie"
+            "button_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls"
           }
         },
         "image_with_text_BjFpid": {
@@ -796,7 +796,7 @@
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "summer-crush-kopie",
+        "product": "gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#04a198",
         "accent_color": "#2ac2bd"

@@ -1,0 +1,146 @@
+<section id="dm-vorteile" class="dm-cashback dm-cashback--white" aria-labelledby="dm-usps-title">
+  <div class="dm-wrap">
+    
+    <!-- Header / Intro -->
+    <div class="dm-usps-header">
+      <span class="dm-kicker">THE SWEET DIFFERENCE</span>
+      <h2 id="dm-usps-title">Volles Riegel-Feeling, null schlechtes Gewissen.</h2>
+      <p class="dm-intro">
+        Wir haben Süßigkeiten neu gedacht: Aus natürlichen Bio-Zutaten, kompromisslos lecker und ganz ohne schlechtes Gewissen.
+      </p>
+    </div>
+
+    <!-- 4 Benefits Grid -->
+    <div class="dm-benefits-grid">
+      <article class="dm-benefit-card">
+        <div class="dm-benefit-icon" aria-hidden="true"><span class="dm-emoji">✨</span></div>
+        <h3>Ohne raffinierten Zucker</h3>
+        <p>Gesüßt mit der natürlichen Kraft aus Datteln und cremigem Dattelkaramell. Voller Genuss ohne künstliche Süßstoffe und ohne Blutzucker-Achterbahn.</p>
+      </article>
+
+      <article class="dm-benefit-card">
+        <div class="dm-benefit-icon" aria-hidden="true"><span class="dm-emoji">🌱</span></div>
+        <h3>100 % Bio &amp; Vegan</h3>
+        <p>Rein pflanzlich, bio-zertifiziert und ehrlich produziert. Keine Milch, keine Laktose, keine tierischen Inhaltsstoffe – gut für dich und den Planeten.</p>
+      </article>
+
+      <article class="dm-benefit-card">
+        <div class="dm-benefit-icon" aria-hidden="true"><span class="dm-emoji">🍫</span></div>
+        <h3>Crunchy, Chewy &amp; Creamy</h3>
+        <p>Knackige Fair-Trade Schokolade trifft auf weichen Kern und cremiges Nussmus. Kein trockener Proteinriegel, sondern pure Schoko-Magie bei jedem Bissen.</p>
+      </article>
+
+      <article class="dm-benefit-card">
+        <div class="dm-benefit-icon" aria-hidden="true"><span class="dm-emoji">💚</span></div>
+        <h3>Clean &amp; Bauchfreundlich</h3>
+        <p>Glutenfrei, sojafrei, reich an wertvollen Ballaststoffen und garantiert ohne Palmöl oder künstliche Aromen. Ehrlicher Genuss, den dein Körper liebt.</p>
+      </article>
+    </div>
+
+    <!-- Flavors Section -->
+    <div class="dm-flavors-head">
+      <span class="dm-kicker">Unsere Sorten</span>
+      <h3>Finde dein Perfect Match</h3>
+      <p>Vier unverwechselbare Sorten – von herb-dunkler Schokolade bis zu weißem Kokos-Traum.</p>
+    </div>
+
+    <div class="dm-flavors-grid" tabindex="0" role="region" aria-label="treatfuls Sorten, horizontal scrollbar">
+      <!-- Sorte 1: best date you'll ever have -->
+      {% assign prod1 = all_products['dark-choc-covered-chewy-peanut-chunks-best-date-youll-ever-have'] %}
+      <article class="dm-flavor-card">
+        <div class="dm-flavor-badge">Der Liebling</div>
+        <div class="dm-flavor-img-wrap">
+          {% if prod1.featured_image != blank %}
+            {{ prod1.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(max-width: 749px) 80vw, 280px', widths: '280,400,600', alt: 'best date you’ll ever have - dunkle Erdnuss' }}
+          {% endif %}
+        </div>
+        <div class="dm-flavor-body">
+          <span class="dm-flavor-slogan">best date you’ll ever have</span>
+          <h4>Dunkle Erdnuss</h4>
+          <p>Herbe dunkle Schokolade, geröstete Erdnüsse und eine Prise Meersalz in weichem Dattelkaramell.</p>
+          <div class="dm-flavor-tags">
+            <span>Bio</span>
+            <span>Vegan</span>
+            <span>Glutenfrei</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sorte 2: love at first bite -->
+      {% assign prod2 = all_products['20-x-weisse-schoko-erdnuss-dattelkaramell-riegel-bio-vegan'] %}
+      <article class="dm-flavor-card">
+        <div class="dm-flavor-badge">Süß &amp; Salzig</div>
+        <div class="dm-flavor-img-wrap">
+          {% if prod2.featured_image != blank %}
+            {{ prod2.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(max-width: 749px) 80vw, 280px', widths: '280,400,600', alt: 'love at first bite - weiße Erdnuss' }}
+          {% endif %}
+        </div>
+        <div class="dm-flavor-body">
+          <span class="dm-flavor-slogan">love at first bite</span>
+          <h4>Weiße Erdnuss</h4>
+          <p>Zartschmelzende weiße Schokolade trifft auf salziges Erdnusskaramell – Liebe beim ersten Bissen.</p>
+          <div class="dm-flavor-tags">
+            <span>Bio</span>
+            <span>Vegan</span>
+            <span>Glutenfrei</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sorte 3: sweeter than your ex -->
+      {% assign prod3 = all_products['white-covered-creamy-coco-kisses-sweeter-than-your-ex'] %}
+      <article class="dm-flavor-card">
+        <div class="dm-flavor-badge">Karibik-Urlaub</div>
+        <div class="dm-flavor-img-wrap">
+          {% if prod3.featured_image != blank %}
+            {{ prod3.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(max-width: 749px) 80vw, 280px', widths: '280,400,600', alt: 'sweeter than your ex - Kokos' }}
+          {% endif %}
+        </div>
+        <div class="dm-flavor-body">
+          <span class="dm-flavor-slogan">sweeter than your ex</span>
+          <h4>Cremige Kokos</h4>
+          <p>Weiße Schokolade mit samtiger Cashewcreme, gerösteten Mandeln und sonnigem Kokos-Crunch.</p>
+          <div class="dm-flavor-tags">
+            <span>Bio</span>
+            <span>Vegan</span>
+            <span>Glutenfrei</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sorte 4: call me nuts -->
+      {% assign prod4 = all_products['20-x-dunkle-schoko-haselnuss-riegel-bio-vegan'] %}
+      <article class="dm-flavor-card">
+        <div class="dm-flavor-badge">Extra Nussig</div>
+        <div class="dm-flavor-img-wrap">
+          {% if prod4.featured_image != blank %}
+            {{ prod4.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(max-width: 749px) 80vw, 280px', widths: '280,400,600', alt: 'call me nuts - dunkle Haselnuss' }}
+          {% endif %}
+        </div>
+        <div class="dm-flavor-body">
+          <span class="dm-flavor-slogan">call me nuts</span>
+          <h4>Dunkle Haselnuss</h4>
+          <p>Intensive dunkle Schokolade, reich an knackig gerösteten Haselnüssen und cremigem Nussmus.</p>
+          <div class="dm-flavor-tags">
+            <span>Bio</span>
+            <span>Vegan</span>
+            <span>Glutenfrei</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- CTA Row -->
+    <div class="dm-usps-actions">
+      <a class="button" href="#dm-filialfinder">dm-Filiale finden</a>
+      <a class="dm-text-link" href="#dm-kassenbon-upload">Kassenbon hier hochladen</a>
+    </div>
+
+  </div>
+</section>
+{% schema %}
+{
+  "name": "dm · USPs & Sorten",
+  "settings": []
+}
+{% endschema %}

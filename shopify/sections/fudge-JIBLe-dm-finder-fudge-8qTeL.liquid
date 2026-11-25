@@ -1,0 +1,20 @@
+<section id="dm-filialfinder" class="dm-cashback dm-cashback--white" aria-labelledby="dm-finder-title">
+  <div class="dm-wrap">
+    <div class="dm-finder-heading">
+      <div>
+        <img src="https://static.fudge.cloud/generated_images/UquxwMn59prdyYTtaAP8q.png" alt="dm" class="dm-finder-logo" width="44" height="28" loading="eager">
+        <h2 id="dm-finder-title" style="font-size: 31px;">Finde treatfuls<br>bei deinem dm Markt <br>um die Ecke.</h2>
+      </div>
+      <p>Gib deine Stadt oder Postleitzahl ein und wähle einen Vorschlag aus der Liste. Die Karte zeigt die im treatfuls-Storefinder hinterlegten Verkaufsstellen.</p>
+    </div>
+    <div class="dm-app">
+      {% for block in section.blocks %}
+        <div {{ block.shopify_attributes }}>{% render block %}</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="dm-divider" aria-hidden="true">{% render 'icon-triangular-line' %}</div>
+</section>
+{% schema %}
+{"name":"dm · Filialfinder","settings":[],"blocks":[{"type":"@app"}]}
+{% endschema %}

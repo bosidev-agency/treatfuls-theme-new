@@ -1,0 +1,47 @@
+{% assign dm_gallery_images = 'fudge-zPcZFo8JK4MAp0u3ER5oH.png,fudge-gJnWOfBp__lWJq7gjw3HR.png,fudge-DVkEdHfX9i3ih9HZ-6bwE.png' | split: ',' %}
+<div class="dm-cashback dm-cashback--white">
+  <div class="dm-wrap dm-gallery" role="region" aria-label="treatfuls Produktbilder" aria-roledescription="Karussell">
+    <h2>Meet your Treat</h2>
+    <p style="margin-bottom: 24px;"><strong>first date bei dm, second date bei uns!</strong><br>
+    Teste unsere treats bei dm, finde dein perfect match und löse deinen Gutschein im Shop zum doppelten Wert ein.</p>
+    <div class="dm-gallery-track" tabindex="0" aria-label="Produktbilder, mit Pfeiltasten blättern">
+      {% for dm_image_name in dm_gallery_images %}
+        {% assign dm_gallery_image = images[dm_image_name] %}
+        {% if dm_gallery_image != blank %}
+          <figure class="dm-gallery-slide" aria-label="treatfuls Produktbild {{ forloop.index }}">
+            {% assign dm_gallery_alt = dm_gallery_image.alt | default: 'treatfuls Produktbild' %}
+            {{ dm_gallery_image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(max-width: 749px) 85vw, 560px', widths: '360,540,750,1000,1200', alt: dm_gallery_alt }}
+          </figure>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="dm-gallery-dots" aria-label="Bild auswählen"></div>
+  </div>
+</div>
+<script>
+  (() => {
+    const gallery = document.currentScript.previousElementSibling.querySelector('.dm-gallery');
+    const track = gallery.querySelector('.dm-gallery-track');
+    const slides = [...track.children];
+    const dots = gallery.querySelector('.dm-gallery-dots');
+    slides.forEach((slide, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-label', 'Bild ' + (index + 1) + ' anzeigen');
+      button.addEventListener('click', () => track.scrollTo({left: slide.offsetLeft - slides[0].offsetLeft, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'}));
+      dots.append(button);
+    });
+    const update = () => {
+      let closest = 0;
+      slides.forEach((slide, index) => {
+        if (Math.abs(slide.offsetLeft - slides[0].offsetLeft - track.scrollLeft) < Math.abs(slides[closest].offsetLeft - slides[0].offsetLeft - track.scrollLeft)) closest = index;
+      });
+      [...dots.children].forEach((button, index) => button.setAttribute('aria-current', String(index === closest)));
+    };
+    track.addEventListener('scroll', update, {passive: true});
+    update();
+  })();
+</script>
+{% schema %}
+{"name":"dm · Produktbilder","settings":[]}
+{% endschema %}

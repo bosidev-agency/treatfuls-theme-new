@@ -16,8 +16,8 @@
           "type": "button",
           "name": "Button",
           "settings": {
-            "text": "Jetzt vorbestellen",
-            "url": "shopify://products/adventskalender-2026",
+            "text": "jetzt doppelten Einkaufswert sichern",
+            "url": "https://treatfuls.com/pages/cashback-dm",
             "signup_button": false,
             "klaviyo_form": ""
           },
@@ -72,13 +72,13 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "desktop_image": "shopify://shop_images/Hero_Adventskalender26_Desktop_3_5.webp",
+        "desktop_image": "shopify://shop_images/treatfuls_singles_day_desktop.webp",
         "desktop_image_height": "adapt",
-        "mobile_image": "shopify://shop_images/Hero_Adventskalender26_Mobil_3.webp",
+        "mobile_image": "shopify://shop_images/treatfuls_singles_day_mobil.webp",
         "mobile_image_height": "adapt",
         "hide_on_mobile": false,
         "content_vertical_position_desktop": 50,
-        "content_horizontal_position_desktop": 9,
+        "content_horizontal_position_desktop": 11,
         "content_text_alignment_desktop": "left",
         "max_width": "fixed",
         "max_width_px": 700,
@@ -87,11 +87,11 @@
         "content_text_alignment_mobile": "center",
         "max_width_mobile": "fixed",
         "max_width_mobile_px": 400,
-        "title": "<span>24 days</span> of treating yourself.",
-        "text": "<p>unser treatfuls Adventskalender mit 24 Originalgrößen und jeder Menge Überraschungen.</p>",
+        "title": "No plus one. Double the fun.",
+        "text": "<p>Dein Singles Day Deal: Shoppe deine Lieblingsriegel bei dm und sichere dir 200 % deines Einkaufswerts als Gutschein für unseren Onlineshop – bis zu 15 €! 💜</p>",
         "background_color": "#d04d75",
-        "accent_color": "#823547",
-        "hover_color": "#D04D75",
+        "accent_color": "#6D2B5F",
+        "hover_color": "#d04d75",
         "show_base_triangular_line": true
       }
     },
@@ -181,7 +181,7 @@
         "product_item_fwnbt4": {
           "type": "product_item",
           "settings": {
-            "product": "singles-box-1-ohne-weisse-haselnuss"
+            "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls"
           }
         },
         "product_item_iM9nAw": {
@@ -343,7 +343,6 @@
       "blocks": {
         "advantage_item_eiRqga": {
           "type": "advantage_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Icons_Parnter_OS-01.webp",
             "text": "dm"
@@ -429,7 +428,7 @@
         "first_text": "Bist du bereit mit uns gemeinsam die Snack-Industrie zu revolutionieren? Wir wollen Snacks die besser sind, als das was <span class=\"tooltip\">der Markt uns gerade bietet</span>. Wir wollen Süßigkeiten die geil schmecken und besser für dich und die Umwelt sind.",
         "img_on_hover": "shopify://shop_images/home-richtext-img-hover.png",
         "second_text": "Wir sind Macher und Träumerinnen zugleich und haben aus diesem Grund treatfuls ins Leben gerufen. Mach mit und probiere und überzeuge dich selbst, wie lecker vegane und natürliche Snacks sein können.",
-        "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss",
+        "link_url": "shopify://products/bio-riegel-probierbox-12-vegane-snacks-treatfuls",
         "link_text": "Jetzt Probierpaket kaufen",
         "background_color": "#c081a9",
         "accent_color": "#dbaaeb",

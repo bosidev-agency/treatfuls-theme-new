@@ -68,7 +68,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "card_product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",
@@ -90,7 +90,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "himbeer-riegel",
+                        "card_product": "20-x-will-ube-mine",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",
@@ -112,7 +112,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "chai-latte-spill-the-tea",
+                        "card_product": "matcha-riegel",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",

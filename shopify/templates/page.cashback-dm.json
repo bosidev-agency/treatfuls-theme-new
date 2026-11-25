@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "dm_hero": {
+      "type": "fudge-JIBLe-dm-hero-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_gallery": {
+      "type": "fudge-JIBLe-dm-gallery-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_finder": {
+      "type": "fudge-JIBLe-dm-finder-fudge-8qTeL",
+      "blocks": {
+        "dm_mapsy": {
+          "type": "shopify://apps/mapsy/blocks/mapsy-store-locator/019b8e98-73cd-7bf6-982e-7b07568cf7df",
+          "settings": {
+            "use_fixed_height": false,
+            "fixed_height": 600,
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "dm_mapsy"
+      ],
+      "settings": {}
+    },
+    "dm_steps": {
+      "type": "fudge-JIBLe-dm-steps-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_upload": {
+      "type": "fudge-bQ0x8-JIBLe-dm-upload",
+      "settings": {}
+    },
+    "dm_reviews": {
+      "type": "fudge-JIBLe-dm-reviews-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_usps": {
+      "type": "fudge-G3lB4-dm-usps",
+      "settings": {}
+    },
+    "dm_terms": {
+      "type": "fudge-JIBLe-dm-terms-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_seals": {
+      "type": "fudge-JIBLe-dm-seals-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_faq": {
+      "type": "fudge-JIBLe-dm-faq-fudge-8qTeL",
+      "settings": {}
+    },
+    "dm_final": {
+      "type": "fudge-JIBLe-dm-final-fudge-8qTeL",
+      "settings": {}
+    }
+  },
+  "order": [
+    "dm_hero",
+    "dm_seals",
+    "dm_gallery",
+    "dm_finder",
+    "dm_steps",
+    "dm_upload",
+    "dm_terms",
+    "dm_reviews",
+    "dm_usps",
+    "dm_faq",
+    "dm_final"
+  ]
+}

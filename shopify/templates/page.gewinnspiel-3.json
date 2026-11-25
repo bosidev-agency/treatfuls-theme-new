@@ -816,7 +816,7 @@
       "disabled": true,
       "name": "Featured product",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
         "heading": "Alle Sorten probieren",
         "mobile_heading": "Alle Sorten probieren",
         "sticky_button": false,
@@ -838,7 +838,7 @@
             "title": "try them all",
             "content": "<p>12 Riegel, jede Sorte einmal, perfekt zum Durchprobieren und Lieblings-treat finden.</p>",
             "link_text": "👉🏽 Probier dich durch",
-            "link_url": "shopify://products/singles-box-1-ohne-weisse-haselnuss"
+            "link_url": "shopify://products/bio-riegel-probierbox-12-vegane-snacks-treatfuls"
           }
         },
         "content_item_Nca7P3": {
@@ -858,7 +858,7 @@
             "title": "filled & obsessed",
             "content": "<p>Alle gefüllten Riegel in einer Box – creamy, crunchy und dangerously good.</p>",
             "link_text": "👉🏽Filled Bars entdecken",
-            "link_url": "shopify://products/summer-crush-kopie"
+            "link_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls"
           }
         },
         "content_item_8XDTqG": {
@@ -1069,7 +1069,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "singles-box-1-ohne-weisse-haselnuss",
+                        "card_product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",
@@ -1091,7 +1091,7 @@
                       "type": "product-card",
                       "name": "Product Card",
                       "settings": {
-                        "card_product": "summer-crush-kopie",
+                        "card_product": "gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
                         "show_view_product": true,
                         "show_cart_notification": false,
                         "background_color": "#ffffff",

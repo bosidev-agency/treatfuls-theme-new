@@ -1,0 +1,23 @@
+<section class="dm-cashback dm-cashback--white dm-product-seals" aria-label="treatfuls Produkteigenschaften">
+  <div class="dm-wrap">
+    {% capture dm_seal_items %}
+      <div class="dm-seal">{{ images['img-1-smile.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Lecker' }}<span>Lecker</span></div>
+      <div class="dm-seal">{{ images['img-2-vegan.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Vegan-Siegel' }}<span>Vegan</span></div>
+      <div class="dm-seal">{{ images['img-3-organic.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'EU-Bio-Siegel' }}<span>Bio-zertifiziert</span></div>
+      <div class="dm-seal">{{ images['Darm4.webp'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Ballaststoffreich' }}<span>Ballaststoffreich</span></div>
+      <div class="dm-seal">{{ images['img-5-soy.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Ohne Soja' }}<span>Ohne Soja</span></div>
+      <div class="dm-seal">{{ images['img-6-gluten-free.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Ohne Gluten' }}<span>Ohne Gluten</span></div>
+      <div class="dm-seal">{{ images['fudge-img-7-sugar-beige.png'] | image_url: width: 140 | image_tag: sizes: '58px', loading: 'lazy', alt: 'Ohne raffinierten Zucker' }}<span>Ohne raffinierten Zucker</span></div>
+    {% endcapture %}
+    <div class="dm-seals">
+      <div class="dm-seals-track">
+        <div class="dm-seals-group">{{ dm_seal_items }}</div>
+        <div class="dm-seals-group" aria-hidden="true">{{ dm_seal_items }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="dm-divider" aria-hidden="true">{% render 'icon-triangular-line' %}</div>
+</section>
+{% schema %}
+{"name":"dm · Product Seals","settings":[],"presets":[{"name":"dm · Product Seals"}]}
+{% endschema %}

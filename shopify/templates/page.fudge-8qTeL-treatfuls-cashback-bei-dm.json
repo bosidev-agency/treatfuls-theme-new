@@ -1,0 +1,23 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    // This section only demonstrates how to create a section.
+    // Create your own section files first, then use file_edit_multi to add them here and remove this one.
+    // Remember to swap update the order as well when you add/remove sections otherwise the edit will fail.
+    "fudge-example": {
+      "type": "fudge-example",
+      "settings": {}
+    }
+  },
+  "order": [
+    "fudge-example"
+  ]
+}

@@ -15,6 +15,8 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+
+  #shopify-section-{{ section.id }} .title-wrapper__subtitle { font-size: {{ section.settings.subtitle_font_size }}px; max-width: none; }
 </style>
 
 <section
@@ -26,6 +28,7 @@
     <div class="container">
       <div class="title-wrapper">
         <h2 class="title-wrapper__title title-bg">{{ section.settings.title }}</h2>
+        {%- if section.settings.subtitle != blank -%}<div class="title-wrapper__subtitle rte">{{ section.settings.subtitle }}</div>{%- endif -%}
       </div>
 
       {% content_for 'blocks', closest.product: section.settings.product %}
@@ -56,6 +59,8 @@
       "id": "title",
       "label": "Title"
     },
+    { "type": "richtext", "id": "subtitle", "label": "Subtitle" },
+    { "type": "range", "id": "subtitle_font_size", "label": "Subtitle Font Size", "default": 24, "min": 16, "max": 48, "step": 1 },
     {
       "type": "text",
       "id": "footer_note",

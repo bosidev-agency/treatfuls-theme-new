@@ -59,104 +59,9 @@
       "settings": {
         "video": "shopify://files/videos/Adventskalender2025_desktop_rot.MOV",
         "video_mobile": "shopify://files/videos/Adventskalender_2025_mobil_rot.MOV",
-        "background_color": "#d04d75",
+        "background_color": "#823547",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
-      }
-    },
-    "image_gallery_CTGC6X": {
-      "type": "image-gallery",
-      "blocks": {
-        "image_hkQqPw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Tuerchen_in_Ube_Pulver.png",
-            "content": "",
-            "content_position_y": 55,
-            "content_position_x": 25,
-            "grid_number": "1",
-            "column_start": "1",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "5",
-            "row_start_mobile": "1",
-            "row_span_mobile": "2"
-          }
-        },
-        "image_LDWGh4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/treatfuls_adventskalender_7.webp",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "1",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "2",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_6b6Whi": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Slider_Pic.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "4",
-            "column_span": "6",
-            "row_start": "2",
-            "row_span": "1",
-            "column_start_mobile": "6",
-            "column_span_mobile": "7",
-            "row_start_mobile": "1",
-            "row_span_mobile": "1"
-          }
-        },
-        "image_6DCXXk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Zimt_AK.png",
-            "content": "",
-            "content_position_y": 50,
-            "content_position_x": 50,
-            "grid_number": "1",
-            "column_start": "10",
-            "column_span": "3",
-            "row_start": "1",
-            "row_span": "2",
-            "column_start_mobile": "1",
-            "column_span_mobile": "12",
-            "row_start_mobile": "3",
-            "row_span_mobile": "2"
-          }
-        }
-      },
-      "block_order": [
-        "image_hkQqPw",
-        "image_LDWGh4",
-        "image_6b6Whi",
-        "image_6DCXXk"
-      ],
-      "name": "Image Gallery Grid (24-cell)",
-      "settings": {
-        "product": "adventskalender-2026",
-        "heading": "December just got a whole lot sweeter! 🍫",
-        "show_atc_button": true,
-        "grid_container_quantity": "1",
-        "background_color": "#d04d75",
-        "accent_color": "#ceb0d1",
-        "hover_color": "#814d81",
-        "popup_background_color": "",
-        "popup_text_color": ""
       }
     },
     "advantages": {
@@ -244,7 +149,7 @@
       "type": "main-product-ingredients",
       "disabled": true,
       "settings": {
-        "product": "adventskalender-2026",
+        "product": "veganer-bio-adventskalender-24x-originalgrosse-treatfuls",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "{{ product.metafields.custom.accent_color.value }}",
         "accent_color": "{{ product.metafields.custom.background_color.value }}"
@@ -414,7 +319,6 @@
   "order": [
     "main",
     "video_DzQqCM",
-    "image_gallery_CTGC6X",
     "advantages",
     "main_product_ingredients",
     "compare_product_reviews",

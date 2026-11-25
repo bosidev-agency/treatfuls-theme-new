@@ -1,0 +1,61 @@
+<section id="dm-kassenbon-upload" class="dm-cashback" aria-labelledby="dm-upload-title">
+  <div class="dm-wrap dm-upload-grid">
+    <div class="dm-upload-card">
+      <h2 id="dm-upload-title" data-dm-upload-entry>Kassenbon hier hochladen</h2>
+      <p data-dm-upload-entry>Lade deinen dm-Kassenbon hoch und sichere dir den doppelten treatfuls-Kaufbetrag als Gutschein für unseren Online-Shop.</p>
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          {% render block %}
+        {% endfor %}
+      {% else %}
+        <form class="dm-upload-preview" aria-label="Kassenbon einreichen" data-dm-drive-form data-endpoint="https://script.google.com/macros/s/AKfycbxGeP0w7Wlny5EEOVGx4kJzpGYEAR8GcDJHIBAJtTQDm9fNS6Fs1h6LaZKnLsisX5L8/exec" method="post">
+          <div class="dm-upload-fields">
+            <label for="dm-upload-name">Vorname<input id="dm-upload-name" type="text" name="first_name" autocomplete="given-name" placeholder="Dein Vorname" maxlength="100" required></label>
+            <label for="dm-upload-email">E-Mail für deinen Code<input id="dm-upload-email" type="email" name="email" autocomplete="email" placeholder="Deine E-Mail-Adresse" maxlength="254" required></label>
+          </div>
+          <div class="dm-upload-file">
+            <label for="dm-receipt-file"><strong>Kassenbon auswählen oder Foto aufnehmen</strong></label>
+            <p id="dm-upload-file-help">JPG, PNG oder PDF, maximal 5 MB. Kaufdatum, dm und deine treatfuls-Produkte mit Preisen müssen gut lesbar sein.</p>
+            <input id="dm-receipt-file" type="file" name="receipt" accept="image/jpeg,image/png,application/pdf" aria-describedby="dm-upload-file-help" required>
+          </div>
+          <label class="dm-upload-check"><input type="checkbox" name="newsletter" checked><span>Ja, ich möchte den treatfuls-Newsletter mit neuen Sorten und Angeboten erhalten. (Optional)</span></label>
+          <label class="dm-upload-check"><input type="checkbox" name="terms" required><span>Ich akzeptiere die <a href="#dm-terms-title">Teilnahmebedingungen</a> und habe die <a href="/pages/data-protection">Datenschutzerklärung</a> gelesen.</span></label>
+          <div hidden aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <button class="button dm-upload-submit" type="submit" disabled>Gutschein sichern</button>
+          <p data-dm-upload-status data-hide-connection-hints role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          <noscript><p>Bitte aktiviere JavaScript, um deinen Kassenbon einzureichen.</p></noscript>
+        </form>
+        <div class="dm-upload-success" data-dm-upload-success hidden aria-labelledby="dm-upload-success-title">
+          <span class="dm-upload-success-icon" aria-hidden="true">{% render 'fudge-icon-v2' svg_id: 'sr_check-circle', size: '80', color: '#278447' %}</span>
+          <p class="dm-upload-success-preview" data-dm-success-preview hidden>Vorschau · keine Daten übertragen</p>
+          <h2 id="dm-upload-success-title" tabindex="-1">Kassenbon erfolgreich eingereicht!</h2>
+          <p>Vielen Dank! Nach der Prüfung erhältst du deinen Gutscheincode per E-Mail.</p>
+        </div>
+      {% endif %}
+    </div>
+    <aside class="dm-upload-benefits" aria-labelledby="dm-upload-benefits-title">
+      <h2 id="dm-upload-benefits-title">Das bekommst du</h2>
+      <ul class="dm-upload-benefit-list">
+        <li><span class="dm-upload-marker" aria-hidden="true">2×</span><div><h3>Doppelter treatfuls-Kaufwert</h3><p>Aus 2 € treatfuls-Einkauf werden 4 € Gutschein für unseren Online-Shop.</p></div></li>
+        <li><span class="dm-upload-marker" aria-hidden="true">15 €</span><div><h3>Bis zu 15 € pro Kassenbon</h3><p>Ab 7,50 € treatfuls-Einkauf erreichst du den maximalen Gutscheinwert.</p></div></li>
+        <li><span class="dm-upload-marker" aria-hidden="true">1×</span><div><h3>Dein Code kommt per E-Mail</h3><p>Nach Prüfung deines Bons erhältst du einen eindeutigen Gutscheincode zur einmaligen Einlösung.</p></div></li>
+      </ul>
+      <div class="dm-upload-tip">💰 <strong>Spar-Tipp:</strong> Code im Bundle-Builder einlösen, alle Sorten einzeln in die Box legen und ab 30 Riegeln noch mal sparen.</div>
+    </aside>
+  </div>
+  <div class="dm-divider" aria-hidden="true">{% render 'icon-triangular-line' %}</div>
+</section>
+<style>
+  #dm-kassenbon-upload [hidden] { display: none !important; }
+  #dm-kassenbon-upload .dm-upload-card[data-upload-confirmed] { display: flex; align-items: center; justify-content: center; }
+  #dm-kassenbon-upload .dm-upload-success { width: 100%; padding: 40px 0; text-align: center; }
+  #dm-kassenbon-upload .dm-upload-success-icon { display: flex; justify-content: center; margin-bottom: 24px; }
+  #dm-kassenbon-upload .dm-upload-success h2 { margin: 0 auto 16px; max-width: 440px; }
+  #dm-kassenbon-upload .dm-upload-success p { max-width: 380px; margin: 0 auto; font-size: 16px; line-height: 1.6; }
+  #dm-kassenbon-upload .dm-upload-success .dm-upload-success-preview { margin-bottom: 16px; font-size: 13px; }
+  #dm-kassenbon-upload .dm-upload-success h2:focus { outline: none; }
+</style>
+<script src="{{ 'fudge-ExIe7-dm-drive-upload.js' | asset_url }}" defer></script>
+{% schema %}
+{"name":"dm · Kassenbon-Upload","settings":[],"blocks":[{"type":"@app"}]}
+{% endschema %}

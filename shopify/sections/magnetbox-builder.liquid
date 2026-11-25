@@ -1,0 +1,533 @@
+{%- comment -%}
+  Magnetbox-Konfigurator
+  - Kund:in wählt 1 Spruch (oder "Ohne Spruch"), X Spreads und Y Riegel (im Editor einstellbar).
+  - "In den Warenkorb" bleibt gesperrt, bis die Box exakt voll ist.
+  - Die Box wird mit properties[_bundleData] hinzugefügt (gleiche Technik wie Wochenbettbox):
+    Die Bundle-Funktion löst die Box im Checkout in die echten 1er-Produkte auf,
+    zieht deren Bestand ab und verteilt den festen Boxpreis.
+{%- endcomment -%}
+
+{%- liquid
+  assign box_variant = product.selected_or_first_available_variant
+  assign bars_required = section.settings.bars_required | default: 8
+  assign spreads_required = section.settings.spreads_required | default: 1
+  assign property_name = section.settings.phrase_property_name | default: 'Spruch'
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --mb-bg: {{ section.settings.background_color | default: '#c081a9' }};
+    --mb-accent: {{ section.settings.accent_color | default: '#e35478' }};
+    --mb-card: {{ section.settings.card_color | default: '#ffffff' }};
+    --mb-text: {{ section.settings.text_color | default: '#000000' }};
+    --mb-text-bg: {{ section.settings.text_on_bg_color | default: '#ffffff' }};
+    background: var(--mb-bg);
+    color: var(--mb-text-bg);
+  }
+  #shopify-section-{{ section.id }} .mb { position: relative; padding: 0; color: var(--mb-text-bg); --section-background-color: var(--mb-bg); }
+  #shopify-section-{{ section.id }} .mb > .content-wrapper { padding: 48px 0 64px; }
+  /* Normaler Kauf-Button bleibt im Code (Theme-Skript braucht ihn fuer die Bildergalerie), wird aber ausgeblendet */
+  .product-page .product-form__buttons { display: none !important; }
+  #shopify-section-{{ section.id }} .mb__steps > h2,
+  #shopify-section-{{ section.id }} .mb__step-head h3,
+  #shopify-section-{{ section.id }} .mb__steps > p { color: var(--mb-text-bg); }
+  #shopify-section-{{ section.id }} .mb__phrase label,
+  #shopify-section-{{ section.id }} .mb__item,
+  #shopify-section-{{ section.id }} .mb__summary,
+  #shopify-section-{{ section.id }} .mb__summary h3 { color: var(--mb-text); }
+  #shopify-section-{{ section.id }} .mb__layout { display: grid; grid-template-columns: 1fr 340px; gap: 32px; align-items: start; }
+  #shopify-section-{{ section.id }} .mb__step { margin-bottom: 40px; }
+  #shopify-section-{{ section.id }} .mb__step-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  #shopify-section-{{ section.id }} .mb__counter { font-weight: 700; padding: 4px 12px; border-radius: 999px; background: var(--mb-card); }
+  #shopify-section-{{ section.id }} .mb__counter.is-complete { background: var(--mb-accent); color: #fff; }
+  #shopify-section-{{ section.id }} .mb__phrases { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+  #shopify-section-{{ section.id }} .mb__phrase input { position: absolute; opacity: 0; pointer-events: none; }
+  #shopify-section-{{ section.id }} .mb__phrase label { display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; text-align: center; min-height: 90px; padding: 12px; border-radius: 16px; background: var(--mb-card); border: 3px solid transparent; cursor: pointer; font-weight: 700; height: 100%; }
+  #shopify-section-{{ section.id }} .mb__phrase img { width: 100%; height: auto; border-radius: 10px; }
+  #shopify-section-{{ section.id }} .mb__phrase input:checked + label { border-color: var(--mb-accent); }
+  #shopify-section-{{ section.id }} .mb__phrase input:focus-visible + label { outline: 2px solid var(--mb-text); outline-offset: 2px; }
+  #shopify-section-{{ section.id }} .mb__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; }
+  #shopify-section-{{ section.id }} .mb__item { background: var(--mb-card); border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 10px; border: 3px solid transparent; transition: border-color .15s; }
+  #shopify-section-{{ section.id }} .mb__item.is-selected { border-color: var(--mb-accent); }
+  #shopify-section-{{ section.id }} .mb__item.is-soldout { opacity: .45; }
+  #shopify-section-{{ section.id }} .mb__item-img { aspect-ratio: 1 / 1; overflow: hidden; border-radius: 10px; }
+  #shopify-section-{{ section.id }} .mb__item-img img { width: 100%; height: 100%; object-fit: cover; }
+  #shopify-section-{{ section.id }} .mb__item-title { font-weight: 700; font-size: 15px; line-height: 1.25; flex: 1; } #shopify-section-{{ section.id }} .mb__item { position: relative; } #shopify-section-{{ section.id }} .mb__item-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; flex: 1; } #shopify-section-{{ section.id }} .mb__info-btn { flex: 0 0 auto; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 50%; background: {{ section.settings.info_circle_color | default: '#e35478' }}; color: {{ section.settings.info_icon_color | default: '#ffffff' }}; font: italic 700 14px/22px Georgia, serif; text-align: center; cursor: pointer; } #shopify-section-{{ section.id }} .mb .mb__info-tip { display: none; position: absolute; top: 12px; left: 12px; right: 12px; z-index: 4; background: var(--mb-card); color: var(--mb-text); font-size: 13px; line-height: 1.4; font-weight: 400; padding: 10px 12px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.18); text-align: left; } #shopify-section-{{ section.id }} .mb__info.is-open .mb__info-tip, #shopify-section-{{ section.id }} .mb__info-btn:focus-visible + .mb__info-tip { display: block; } @media (hover: hover) { #shopify-section-{{ section.id }} .mb__info:hover .mb__info-tip { display: block; } }
+  #shopify-section-{{ section.id }} .mb__qty { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  #shopify-section-{{ section.id }} .mb__qty button { width: 38px; height: 38px; border-radius: 50%; border: 0; background: var(--mb-accent); color: #fff; font-size: 20px; line-height: 1; cursor: pointer; }
+  #shopify-section-{{ section.id }} .mb__qty button:disabled { opacity: .3; cursor: not-allowed; }
+  #shopify-section-{{ section.id }} .mb__qty-value { font-weight: 700; min-width: 24px; text-align: center; }
+  #shopify-section-{{ section.id }} .mb__summary { position: sticky; top: 100px; background: var(--mb-card); border-radius: 20px; padding: 24px; }
+  #shopify-section-{{ section.id }} .mb__summary-list { list-style: none; padding: 0; margin: 12px 0 16px; font-size: 14px; }
+  #shopify-section-{{ section.id }} .mb__summary-list li { display: flex; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(0,0,0,.08); }
+  #shopify-section-{{ section.id }} .mb__summary-empty { opacity: .6; font-size: 14px; }
+  #shopify-section-{{ section.id }} .mb__price { font-size: 24px; font-weight: 700; margin: 8px 0 16px; }
+  #shopify-section-{{ section.id }} .mb__hint { font-size: 14px; margin: 0 0 12px; min-height: 1.4em; }
+  #shopify-section-{{ section.id }} .mb__submit { width: 100%; }
+  #shopify-section-{{ section.id }} .mb__submit[disabled] { opacity: .5; cursor: not-allowed; }
+  #shopify-section-{{ section.id }} .mb__error { color: #b00020; font-size: 14px; margin-top: 10px; }
+  /* Theme setzt span global auf weiß/groß – hier zurücksetzen */
+  #shopify-section-{{ section.id }} .mb span { color: inherit; font-size: inherit; line-height: inherit; }
+  #shopify-section-{{ section.id }} .mb__phrase label { font-size: 16px; line-height: 1.3; color: var(--mb-text); }
+  #shopify-section-{{ section.id }} .mb .mb__counter { font-size: 15px; line-height: 1.2; display: inline-block; color: var(--mb-text); }
+  #shopify-section-{{ section.id }} .mb .mb__counter.is-complete { color: #fff; }
+  #shopify-section-{{ section.id }} .mb__qty-value { font-size: 18px; color: var(--mb-text); }
+  @media screen and (max-width: 991px) {
+    #shopify-section-{{ section.id }} .mb__layout { grid-template-columns: 1fr; }
+    #shopify-section-{{ section.id }} .mb__summary { position: sticky; bottom: 0; top: auto; border-radius: 20px 20px 0 0; box-shadow: 0 -6px 20px rgba(0,0,0,.12); z-index: 5; }
+    #shopify-section-{{ section.id }} .mb__summary-list { display: none; }
+    #shopify-section-{{ section.id }} .mb__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  }
+</style>
+
+<section class="mb" data-section-id="{{ section.id }}">
+  <div class="content-wrapper">
+    <div class="container container--lg">
+      <magnetbox-builder
+        class="mb__layout"
+        data-box-variant-id="{{ box_variant.id }}"
+        data-bars-required="{{ bars_required }}"
+        data-spreads-required="{{ spreads_required }}"
+        data-include-box="{{ section.settings.include_box_component }}"
+        data-property-name="{{ property_name | escape }}"
+        data-redirect="{{ section.settings.after_add }}" data-tl-spread-label="{{ section.settings.tl_spread_label | default: 'Spread' | escape }}"
+      >
+        <div class="mb__steps">
+          {%- if section.settings.heading != blank -%}
+            <h2 class="h2" style="margin-bottom: 24px;">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+
+          {%- comment -%} Schritt 1: Spruch {%- endcomment -%}
+          <div class="mb__step">
+            <div class="mb__step-head">
+              <h3 class="h3">{{ section.settings.phrase_heading }}</h3>
+              <span class="mb__counter" data-counter="phrase">0 / 1</span>
+            </div>
+            <div class="mb__phrases" role="radiogroup">
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'phrase' and block.settings.text != blank -%}
+                  <div class="mb__phrase" {{ block.shopify_attributes }}>
+                    <input
+                      type="radio"
+                      name="mb-phrase-{{ section.id }}"
+                      id="mb-phrase-{{ block.id }}"
+                      value="{{ block.settings.text | escape }}"
+                    >
+                    <label for="mb-phrase-{{ block.id }}">
+                      {%- if block.settings.image != blank -%}
+                        {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', alt: block.settings.text }}
+                      {%- endif -%}
+                      <span>{{ block.settings.text }}</span>
+                    </label>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if section.settings.show_no_phrase -%}
+                <div class="mb__phrase">
+                  <input
+                    type="radio"
+                    name="mb-phrase-{{ section.id }}"
+                    id="mb-phrase-{{ section.id }}-none"
+                    value="{{ section.settings.no_phrase_value | default: 'Ohne Spruch' | escape }}"
+                  >
+                  <label for="mb-phrase-{{ section.id }}-none">
+                    <span>{{ section.settings.no_phrase_label | default: 'Ohne Spruch' }}</span>
+                  </label>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+
+          {%- comment -%} Schritt 2 + 3: Spreads und Riegel {%- endcomment -%}
+          {%- for group in (1..2) -%}
+            {%- liquid
+              if group == 1
+                assign group_key = 'spreads'
+                assign group_products = section.settings.spread_products
+                assign group_required = spreads_required
+                assign group_heading = section.settings.spread_heading
+              else
+                assign group_key = 'bars'
+                assign group_products = section.settings.bar_products
+                assign group_required = bars_required
+                assign group_heading = section.settings.bar_heading
+              endif
+            -%}
+            {%- if group_required > 0 -%}
+              <div class="mb__step" data-group="{{ group_key }}">
+                <div class="mb__step-head">
+                  <h3 class="h3">{{ group_heading | replace: '[anzahl]', group_required }}</h3>
+                  <span class="mb__counter" data-counter="{{ group_key }}">0 / {{ group_required }}</span>
+                </div>
+                <div class="mb__grid">
+                  {%- for p in group_products -%}
+                    {%- assign v = p.selected_or_first_available_variant -%}
+                    {%- liquid
+                      assign item_title = p.metafields.custom.short_title | default: p.title
+                      assign max_qty = group_required
+                      if v.inventory_management == 'shopify' and v.inventory_policy == 'deny' and v.inventory_quantity < max_qty
+                        assign max_qty = v.inventory_quantity
+                      endif
+                      if v.available == false
+                        assign max_qty = 0
+                      endif
+                    -%}
+                    <div
+                      class="mb__item{% if max_qty <= 0 %} is-soldout{% endif %}"
+                      data-item
+                      data-group="{{ group_key }}"
+                      data-variant-id="{{ v.id }}"
+                      data-title="{{ item_title | escape }}"
+                      data-max="{{ max_qty }}"
+                    >
+                      <div class="mb__item-img">
+                        {%- if p.featured_image -%}
+                          {{ p.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200,300,400', sizes: '(max-width: 768px) 50vw, 200px' }}
+                        {%- endif -%}
+                      </div>
+                      <div class="mb__item-head"><div class="mb__item-title">{{ item_title }}</div>{%- assign item_info = p.metafields.custom.box_info.value -%}{%- if item_info != blank -%}<span class="mb__info"><button type="button" class="mb__info-btn" aria-label="Info zu {{ item_title | escape }}" aria-expanded="false">i</button><span class="mb__info-tip" role="tooltip">{{ item_info | escape | newline_to_br }}</span></span>{%- endif -%}</div>
+                      <div class="mb__qty">
+                        <button type="button" data-minus aria-label="{{ item_title | escape }} entfernen" disabled>−</button>
+                        <span class="mb__qty-value" data-value aria-live="polite">0</span>
+                        <button type="button" data-plus aria-label="{{ item_title | escape }} hinzufügen" {% if max_qty <= 0 %}disabled{% endif %}>+</button>
+                      </div>
+                      {%- if max_qty <= 0 -%}<small>Ausverkauft</small>{%- endif -%}{%- assign show_stock = false -%}{%- for sp in section.settings.stock_products -%}{%- if sp.id == p.id -%}{%- assign show_stock = true -%}{%- endif -%}{%- endfor -%}{%- if show_stock and max_qty > 0 and v.inventory_management == 'shopify' -%}<small class="mb__stock">Noch {{ v.inventory_quantity }} verfügbar</small>{%- endif -%}
+                    </div>
+                  {%- else -%}
+                    <p>Bitte im Theme-Editor Produkte für diese Auswahl hinterlegen.</p>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        <aside class="mb__summary">
+          <h3 class="h3">{{ section.settings.summary_heading }}</h3>
+          <div class="mb__summary-empty" data-summary-empty>Noch nichts ausgewählt.</div>
+          <ul class="mb__summary-list" data-summary-list></ul>
+          <div class="mb__price">{{ box_variant.price | money }}</div>
+          <p class="mb__hint" data-hint></p>
+          <button type="button" class="button mb__submit" data-submit disabled {% unless box_variant.available %}data-box-soldout{% endunless %}>
+            {%- if box_variant.available -%}
+              {{ 'products.product.add_to_cart' | t }}
+            {%- else -%}
+              {{ 'products.product.sold_out' | t }}
+            {%- endif -%}
+          </button>
+          <div class="mb__error" data-error hidden></div>
+        </aside>
+      </magnetbox-builder>
+    </div>
+  </div>
+
+  <div class="base-triangular-line">
+    {%- render 'icon-triangular-line' -%}<script>if (!window.__mbInfo) { window.__mbInfo = true; document.addEventListener('click', function (e) { var b = e.target.closest ? e.target.closest('.mb__info-btn') : null; document.querySelectorAll('.mb__info.is-open').forEach(function (x) { if (!b || x !== b.parentNode) { x.classList.remove('is-open'); var bb = x.querySelector('.mb__info-btn'); if (bb) bb.setAttribute('aria-expanded', 'false'); } }); if (b) { var o = b.parentNode.classList.toggle('is-open'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); } }); }</script>
+  </div>
+</section>
+
+<script>
+  if (!customElements.get('magnetbox-builder')) {
+    class MagnetboxBuilder extends HTMLElement {
+      connectedCallback() {
+        this.required = {
+          bars: parseInt(this.dataset.barsRequired, 10) || 0,
+          spreads: parseInt(this.dataset.spreadsRequired, 10) || 0
+        };
+        this.items = Array.from(this.querySelectorAll('[data-item]'));
+        this.qty = new Map();
+        this.submitBtn = this.querySelector('[data-submit]');
+        this.hintEl = this.querySelector('[data-hint]');
+        this.errorEl = this.querySelector('[data-error]');
+
+        this.items.forEach((item) => {
+          this.qty.set(item, 0);
+          item.querySelector('[data-plus]').addEventListener('click', () => this.change(item, 1));
+          item.querySelector('[data-minus]').addEventListener('click', () => this.change(item, -1));
+        });
+        this.querySelectorAll('input[type="radio"]').forEach((r) => r.addEventListener('change', () => this.render()));
+        this.submitBtn.addEventListener('click', () => this.submit());
+        this.render();
+      }
+
+      total(group) {
+        let sum = 0;
+        this.items.forEach((item) => { if (item.dataset.group === group) sum += this.qty.get(item); });
+        return sum;
+      }
+
+      phrase() {
+        const checked = this.querySelector('input[type="radio"]:checked');
+        return checked ? checked.value : '';
+      }
+
+      change(item, delta) {
+        const group = item.dataset.group;
+        const current = this.qty.get(item);
+        const max = parseInt(item.dataset.max, 10) || 0;
+        const next = current + delta;
+        if (next < 0 || next > max) return;
+        if (delta > 0 && this.total(group) >= this.required[group]) return;
+        this.qty.set(item, next);
+        this.render();
+      }
+
+      isComplete() {
+        return this.phrase() !== '' &&
+          this.total('bars') === this.required.bars &&
+          this.total('spreads') === this.required.spreads;
+      }
+
+      render() {
+        ['bars', 'spreads'].forEach((group) => {
+          const counter = this.querySelector(`[data-counter="${group}"]`);
+          if (!counter) return;
+          const t = this.total(group);
+          counter.textContent = `${t} / ${this.required[group]}`;
+          counter.classList.toggle('is-complete', t === this.required[group]);
+        });
+        const phraseCounter = this.querySelector('[data-counter="phrase"]');
+        if (phraseCounter) {
+          phraseCounter.textContent = this.phrase() ? '1 / 1' : '0 / 1';
+          phraseCounter.classList.toggle('is-complete', !!this.phrase());
+        }
+
+        this.items.forEach((item) => {
+          const q = this.qty.get(item);
+          const group = item.dataset.group;
+          const full = this.total(group) >= this.required[group];
+          const max = parseInt(item.dataset.max, 10) || 0;
+          item.querySelector('[data-value]').textContent = q;
+          item.querySelector('[data-minus]').disabled = q <= 0;
+          item.querySelector('[data-plus]').disabled = full || q >= max;
+          item.classList.toggle('is-selected', q > 0);
+        });
+
+        // Zusammenfassung
+        const list = this.querySelector('[data-summary-list]');
+        list.innerHTML = '';
+        const phrase = this.phrase();
+        if (phrase) {
+          const li = document.createElement('li');
+          li.innerHTML = '<span></span><strong></strong>';
+          li.children[0].textContent = this.dataset.propertyName;
+          li.children[1].textContent = phrase;
+          list.appendChild(li);
+        }
+        this.items.forEach((item) => {
+          const q = this.qty.get(item);
+          if (q > 0) {
+            const li = document.createElement('li');
+            li.innerHTML = '<span></span><strong></strong>';
+            li.children[0].textContent = item.dataset.title;
+            li.children[1].textContent = `${q}×`;
+            list.appendChild(li);
+          }
+        });
+        this.querySelector('[data-summary-empty]').hidden = list.children.length > 0;
+
+        // Hinweis, was noch fehlt
+        const missing = [];
+        if (!phrase) missing.push('einen Spruch');
+        const s = this.required.spreads - this.total('spreads');
+        const b = this.required.bars - this.total('bars');
+        if (s > 0) missing.push(`${s} ${s === 1 ? 'Spread' : 'Spreads'}`);
+        if (b > 0) missing.push(`${b} Riegel`);
+        this.hintEl.textContent = missing.length ? `Wähle noch ${missing.join(', ')}.` : 'Deine Box ist komplett!';
+
+        this.submitBtn.disabled = !this.isComplete() || this.submitBtn.hasAttribute('data-box-soldout');
+      }
+
+      async submit() {
+        if (!this.isComplete()) return;
+        this.errorEl.hidden = true;
+        this.submitBtn.disabled = true;
+
+        const bundle = [];
+        if (this.dataset.includeBox === 'true') {
+          bundle.push({ id: `gid://shopify/ProductVariant/${this.dataset.boxVariantId}`, quantity: 1 });
+        }
+        this.items.forEach((item) => {
+          const q = this.qty.get(item);
+          if (q > 0) bundle.push({ id: `gid://shopify/ProductVariant/${item.dataset.variantId}`, quantity: q });
+        });
+
+        const properties = { _bundleData: JSON.stringify(bundle) };
+        properties[this.dataset.propertyName] = this.phrase();
+
+        try {
+          const res = await fetch(`${window.Shopify && Shopify.routes ? Shopify.routes.root : '/'}cart/add.js`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify({ items: [{ id: parseInt(this.dataset.boxVariantId, 10), quantity: 1, properties }] })
+          });
+          if (!res.ok) {
+            const err = await res.json().catch(() => ({}));
+            throw new Error(err.description || 'Die Box konnte nicht in den Warenkorb gelegt werden.');
+          }
+          window.location.href = this.dataset.redirect === 'checkout' ? '/checkout' : '/cart';
+        } catch (e) {
+          this.errorEl.textContent = e.message;
+          this.errorEl.hidden = false;
+          this.render();
+        }
+      }
+    }
+    customElements.define('magnetbox-builder', MagnetboxBuilder);
+  }
+</script>
+
+<style>
+/* Fortschritts-Timeline (Spruch > Spread > Riegel) + schlanker Sticky-CTA */
+.mb .mb-tl { display: flex; align-items: flex-start; margin: 14px 0 16px; color: var(--mb-text); font-size: 12px; }
+.mb .mb-tl__step { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 40px; }
+.mb .mb-tl__dot { width: 22px; height: 22px; border-radius: 50%; background: rgba(0,0,0,.12); display: flex; align-items: center; justify-content: center; transition: background .2s; }
+.mb .mb-tl__step.is-done .mb-tl__dot { background: var(--mb-accent); }
+.mb .mb-tl__step.is-done .mb-tl__dot::after { content: ''; width: 6px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: translateY(-1px) rotate(45deg); }
+.mb .mb-tl__label { font-size: 12px; line-height: 1.2; white-space: nowrap; opacity: .65; }
+.mb .mb-tl__step.is-done .mb-tl__label { opacity: 1; font-weight: 700; }
+.mb .mb-tl__line { flex: 1 1 16px; max-width: 48px; height: 4px; margin-top: 9px; border-radius: 2px; background: rgba(0,0,0,.12); transition: background .2s; }
+.mb .mb-tl__line.is-done { background: var(--mb-accent); }
+.mb .mb-tl__gap { flex: 0 0 14px; }
+.mb .mb-tl__bars { position: relative; flex: 3 1 60px; height: 6px; margin-top: 8px; border-radius: 3px; background: rgba(0,0,0,.12); overflow: hidden; }
+.mb .mb-tl__bars::after { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(to right, transparent 0, transparent calc(var(--mb-seg, 12.5%) - 2px), var(--mb-card) calc(var(--mb-seg, 12.5%) - 2px), var(--mb-card) var(--mb-seg, 12.5%)); }
+.mb .mb-tl__fill { display: block; height: 100%; width: 0; background: var(--mb-accent); transition: width .25s ease; }
+.mb .mb-tl [hidden] { display: none !important; }
+@media screen {
+.mb .mb__summary { display: grid !important; grid-template-columns: auto 1fr; align-items: center; column-gap: 14px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)) !important; }
+.mb .mb__summary > h3, .mb .mb__summary-empty, .mb .mb__hint { display: none !important; }
+.mb .mb-tl { grid-column: 1 / -1; margin: 2px 0 10px; font-size: 11px; }
+.mb .mb-tl__label { font-size: 11px; }
+.mb .mb__price { margin: 0 !important; font-size: 17px !important; }
+.mb .mb__submit { min-height: 44px !important; padding: 10px 16px !important; font-size: 15px !important; line-height: 1.2 !important; }
+.mb .mb__error { grid-column: 1 / -1; }
+.mb .mb__summary-list { display: none !important; }
+}
+@media screen and (min-width: 992px) { .mb .mb__summary { padding: 16px 20px !important; } }
+/* Groessere CTA-Karte (Desktop + Mobile) */
+.mb .mb-tl { font-size: 13px; margin: 4px 0 14px; }
+.mb .mb-tl__dot { width: 26px; height: 26px; }
+.mb .mb-tl__line { margin-top: 11px; }
+.mb .mb-tl__bars { margin-top: 10px; }
+.mb .mb__price { font-size: 20px !important; }
+.mb .mb__submit { min-height: 52px !important; font-size: 16px !important; }
+@media screen and (max-width: 991px) { .mb .mb__summary { padding: 16px 18px calc(64px + env(safe-area-inset-bottom)) !important; } }
+@media screen and (min-width: 992px) { .mb .mb__summary { padding: 22px 24px !important; } .mb .mb__price { font-size: 22px !important; } }
+/* Desktop: Bilder der gewaehlten Produkte in der CTA-Karte */
+.mb .mb-sel { display: none; }
+@media screen and (min-width: 992px) {
+.mb .mb-sel { display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1; margin: 0 0 14px; max-height: 280px; overflow-y: auto; font-size: 13px; line-height: 1.25; color: var(--mb-text); }
+.mb .mb-sel[hidden] { display: none; }
+.mb .mb-sel__row { display: flex; align-items: center; gap: 10px; }
+.mb .mb-sel__img { flex: 0 0 48px; width: 48px; height: 48px; object-fit: cover; border-radius: 10px; }
+.mb .mb-sel__name { flex: 1 1 auto; }
+.mb .mb-sel__qty { display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.mb .mb-sel__qty button { width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: var(--mb-accent); color: #fff; font-size: 16px; line-height: 1; cursor: pointer; }
+}
+</style>
+<script>
+  (function () {
+  function mbTlInit(el) {
+  if (el.__mbTl) return el.__mbTl;
+  var sum = el.querySelector('.mb__summary');
+  if (!sum) return null;
+  var tl = document.createElement('div');
+  tl.className = 'mb-tl';
+  tl.setAttribute('aria-hidden', 'true');
+  tl.innerHTML = '<div class="mb-tl__step" data-tl="phrase"><span class="mb-tl__dot"></span><span class="mb-tl__label">Spruch</span></div><span class="mb-tl__line" data-tl-line></span><div class="mb-tl__step" data-tl="spreads"><span class="mb-tl__dot"></span><span class="mb-tl__label"></span></div><span class="mb-tl__gap" data-tl-gap></span><div class="mb-tl__bars" data-tl-bars><span class="mb-tl__fill"></span></div><div class="mb-tl__step" data-tl="bars"><span class="mb-tl__dot"></span><span class="mb-tl__label"></span></div>';
+  sum.insertBefore(tl, sum.querySelector('.mb__price'));
+el.__mbTl = tl; var sel = document.createElement('div'); sel.className = 'mb-sel'; sel.hidden = true; sum.insertBefore(sel, sum.querySelector('.mb__price')); el.__mbSel = sel; sel.addEventListener('click', function (ev) { var btn = ev.target.closest('[data-sel-delta]'); if (!btn) return; var item = el.items[parseInt(btn.dataset.idx, 10)]; if (item) el.change(item, parseInt(btn.dataset.selDelta, 10)); });
+return tl;
+}
+function mbTlUpdate(el) {
+var tl = mbTlInit(el);
+if (!tl || !el.required) return;
+var req = el.required;
+var phraseDone = el.phrase() !== '';
+var sp = el.total('spreads');
+var b = el.total('bars');
+var spDone = sp >= req.spreads;
+var bDone = b >= req.bars;
+var line = tl.querySelector('[data-tl-line]');
+var spStep = tl.querySelector('[data-tl="spreads"]');
+var barStep = tl.querySelector('[data-tl="bars"]');
+var barTrack = tl.querySelector('[data-tl-bars]');
+tl.querySelector('[data-tl="phrase"]').classList.toggle('is-done', phraseDone);
+line.classList.toggle('is-done', phraseDone);
+line.hidden = spStep.hidden = req.spreads <= 0;
+spStep.classList.toggle('is-done', spDone);
+spStep.querySelector('.mb-tl__label').textContent = req.spreads > 1 ? (sp + '/' + req.spreads + ' Spreads') : (el.dataset.tlSpreadLabel || 'Spread');
+barStep.hidden = barTrack.hidden = tl.querySelector('[data-tl-gap]').hidden = req.bars <= 0;
+barStep.classList.toggle('is-done', bDone);
+barStep.querySelector('.mb-tl__label').textContent = b + '/' + req.bars + ' Riegel';
+if (req.bars > 0) {
+barTrack.style.setProperty('--mb-seg', (100 / req.bars) + '%');
+barTrack.querySelector('.mb-tl__fill').style.width = Math.min(100, (b / req.bars) * 100) + '%';
+}
+tl.classList.toggle('is-complete', phraseDone && spDone && bDone); mbSelRender(el); function mbSelRender(el) { var sel = el.__mbSel; if (!sel) return; var html = ''; el.items.forEach(function (item, i) { var q = el.qty.get(item); if (!q) return; var img = item.querySelector('img'); var t = item.querySelector('.mb__item-title'); var src = img ? (img.currentSrc || img.src) : ''; var name = t ? t.textContent.trim().replace(/</g, '&lt;') : ''; html += '<div class="mb-sel__row"><img class="mb-sel__img" alt="" src="' + src + '"><span class="mb-sel__name">' + name + '</span><span class="mb-sel__qty"><button type="button" data-sel-delta="-1" data-idx="' + i + '" aria-label="weniger">&minus;</button><span>' + q + '</span><button type="button" data-sel-delta="1" data-idx="' + i + '" aria-label="mehr">+</button></span></div>'; }); sel.innerHTML = html; sel.hidden = !html; }
+}
+function mbTlPatch() {
+var C = customElements.get('magnetbox-builder');
+if (!C) return false;
+if (!C.prototype.__mbTlPatched) {
+var orig = C.prototype.render;
+C.prototype.render = function () {
+var r = orig.apply(this, arguments);
+try { mbTlUpdate(this); } catch (e) {}
+return r;
+};
+C.prototype.__mbTlPatched = true;
+}
+document.querySelectorAll('magnetbox-builder').forEach(function (el) {
+try { if (el.qty) mbTlUpdate(el); } catch (e) {}
+});
+return true;
+}
+if (!mbTlPatch()) customElements.whenDefined('magnetbox-builder').then(mbTlPatch);
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Magnetbox Konfigurator",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Box-Inhalt" },
+    { "type": "range", "id": "bars_required", "label": "Anzahl Riegel pro Box", "min": 0, "max": 30, "step": 1, "default": 8 },
+    { "type": "range", "id": "spreads_required", "label": "Anzahl Spreads pro Box", "min": 0, "max": 5, "step": 1, "default": 1 },
+    { "type": "product_list", "id": "bar_products", "label": "Wählbare Riegel (1er-Produkte)", "limit": 30 },
+    { "type": "product_list", "id": "spread_products", "label": "Wählbare Spreads (1er-Produkte)", "limit": 15 }, { "type": "product_list", "id": "stock_products", "label": "Bestandsanzeige (Noch X verfügbar) bei", "info": "Nur für Produkte aus den Listen oben mit verfolgtem Bestand", "limit": 10 },
+    { "type": "checkbox", "id": "include_box_component", "label": "Magnetbox selbst als Bestandteil mitbuchen", "info": "Zieht 1 Hart Cover Magnet Box vom Bestand ab und zeigt sie im Auftrag/Lieferschein.", "default": true },
+    { "type": "header", "content": "Spruch" },
+    { "type": "text", "id": "phrase_property_name", "label": "Bezeichnung im Auftrag", "default": "Spruch" },
+    { "type": "paragraph", "content": "Die Sprüche legst du als Blöcke „Spruch“ an." },
+    { "type": "checkbox", "id": "show_no_phrase", "label": "Option „Ohne Spruch“ anzeigen", "default": true },
+    { "type": "text", "id": "no_phrase_label", "label": "Text der Option im Shop", "default": "Ohne Spruch" },
+    { "type": "text", "id": "no_phrase_value", "label": "So steht es im Auftrag/Lieferschein", "default": "Ohne Spruch" },
+    { "type": "header", "content": "Texte" },
+    { "type": "text", "id": "heading", "label": "Überschrift", "default": "Stell dir deine Magnetbox zusammen" },
+    { "type": "text", "id": "phrase_heading", "label": "Schritt 1", "default": "1. Wähle deinen Spruch" },
+    { "type": "text", "id": "spread_heading", "label": "Schritt 2", "default": "2. Wähle [anzahl] Spread", "info": "[anzahl] wird durch die Anzahl ersetzt" },
+    { "type": "text", "id": "bar_heading", "label": "Schritt 3", "default": "3. Wähle [anzahl] Riegel" }, { "type": "text", "id": "tl_spread_label", "label": "Fortschrittsleiste: Bezeichnung Schritt 2", "default": "Spread/Tasse" },
+    { "type": "text", "id": "summary_heading", "label": "Zusammenfassung", "default": "Deine Magnetbox" },
+    { "type": "select", "id": "after_add", "label": "Nach dem Hinzufügen", "options": [ { "value": "cart", "label": "Zum Warenkorb" }, { "value": "checkout", "label": "Direkt zum Checkout" } ], "default": "cart" },
+    { "type": "header", "content": "Farben" },
+    { "type": "color", "id": "background_color", "label": "Hintergrund", "default": "#c081a9" },
+    { "type": "color", "id": "text_on_bg_color", "label": "Textfarbe auf dem Hintergrund", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Akzent (Plus/Minus, Rahmen, Zähler)", "default": "#e35478" },
+    { "type": "color", "id": "card_color", "label": "Kartenfarbe", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Textfarbe auf Karten", "default": "#000000" }, { "type": "header", "content": "Info-Symbol" }, { "type": "paragraph", "content": "Der Info-Text kommt aus dem Produkt-Metafeld „Magnetbox Info-Text“. Ohne Text kein Symbol." }, { "type": "color", "id": "info_circle_color", "label": "Kreisfarbe", "default": "#e35478" }, { "type": "color", "id": "info_icon_color", "label": "Farbe des i", "default": "#ffffff" }
+  ],
+  "blocks": [
+    {
+      "type": "phrase",
+      "name": "Spruch",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Spruch" },
+        { "type": "image_picker", "id": "image", "label": "Sticker-Bild (optional)" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Magnetbox Konfigurator" } ]
+}
+{% endschema %}

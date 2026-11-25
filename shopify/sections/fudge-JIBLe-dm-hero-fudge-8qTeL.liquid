@@ -1,0 +1,29 @@
+{{ 'fudge-JIBLe-dm-fudge-8qTeL.css' | asset_url | stylesheet_tag }}
+<section class="dm-cashback" aria-labelledby="dm-hero-title">
+  <div class="dm-wrap dm-hero-grid">
+    <div>
+      <h1 id="dm-hero-title" style="background-color: rgba(0, 0, 0, 0);"><span style="font-size: 31px;">Kaufe treatfuls bei dm &amp; wir schenken dir das Doppelte zurück!&nbsp;</span></h1>
+      <ol class="dm-intro dm-intro-list" role="list">
+        <li>Kaufe treatfuls vom 06.11. bis 30.11. bei dm.</li>
+        <li>Lade ein gut lesbares Foto deines Kassenbons hier auf der Seite hoch.</li>
+        <li>Erhalte den doppelten treatfuls-Kaufbetrag als Gutschein für unseren Online-Shop, maximal 15 € Gutscheinwert pro Bon.</li>
+      </ol>
+      <div class="dm-actions"><a class="button" href="#dm-filialfinder">dm-Filiale finden</a><a class="button" href="#dm-kassenbon-upload">Kassenbon hochladen</a></div>
+    </div>
+    <figure class="dm-hero-image">
+      <div class="dm-hero-badge">
+        <p class="dm-kicker" style="font-size: 10px;">DOPPELT treat-back-Aktion</p>
+        <div class="dm-brand-pair" role="img" aria-label="treatfuls × dm">
+          <span class="dm-brand-treatfuls" aria-hidden="true">{% render 'fudge-5wrem-JIBLe-dm-logo-pink-outline' %}</span>
+          <span class="dm-brand-cross" aria-hidden="true">×</span>
+          <img src="https://static.fudge.cloud/generated_images/UquxwMn59prdyYTtaAP8q.png" width="44" height="32" sizes="44px" loading="eager" class="dm-brand-dm" alt="">
+        </div>
+      </div>
+      {{ images['fudge-treatfuls-dm-cashback-hero-ugc-full.png'] | image_url: width: 1400 | image_tag: widths: '360, 560, 800, 1100, 1400', sizes: '(min-width: 750px) 50vw, 100vw', loading: 'eager', fetchpriority: 'high', alt: 'treatfuls treat-back-Aktion bei dm' }}
+    </figure>
+  </div>
+  <div class="dm-divider" aria-hidden="true">{% render 'icon-triangular-line' %}</div>
+</section>
+{% schema %}
+{"name":"dm treat-back · Hero","settings":[]}
+{% endschema %}

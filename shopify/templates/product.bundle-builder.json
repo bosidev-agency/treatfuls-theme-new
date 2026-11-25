@@ -16,7 +16,7 @@
           "type": "richtext_item",
           "settings": {
             "heading": "Deine perfekte Snack Box",
-            "content": "<p></p><ol><li>[1] Wähle zuerst die Größe deiner Box 📦</li><li>[2] Wähle deine Lieblingstreats 😋</li><li>[3] Optional: Geschenkverpackung hinzufügen 🎁</li><li>[4] Ab 65€ bekommst du im Checkout ein kostenloses Goodie 🎁</li></ol>"
+            "content": "<p></p><ol><li>[1] Wähle deine Lieblingstreats 😋</li><li>[2] Optional: Geschenkverpackung hinzufügen 🎁</li><li>[3] Ab 65€ bekommst du im Checkout ein kostenloses Goodie 🎁</li></ol>"
           }
         }
       },
@@ -42,13 +42,13 @@
         "hover_color": "#f3587f",
         "product_background_color": "#ffffff",
         "text_color": "#000000",
-        "progress_bar_remaining_color": "#EE004B",
-        "milestone_reached_color": "#EE004B",
-        "rating_star_color": "#EE004B",
-        "summary_button_accent_color": "#EE004B",
-        "summary_button_hover_color": "#FF0396",
+        "progress_bar_remaining_color": "#ee004b",
+        "milestone_reached_color": "#ee004b",
+        "rating_star_color": "#ee004b",
+        "summary_button_accent_color": "#ee004b",
+        "summary_button_hover_color": "#ff0396",
         "discount_badge_background": "#ff8a00",
-        "discount_badge_text_color": "#FFFFFF"
+        "discount_badge_text_color": "#ffffff"
       }
     },
     "custom_section_8exgVz": {

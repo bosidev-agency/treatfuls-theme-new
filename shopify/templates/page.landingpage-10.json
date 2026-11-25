@@ -33,10 +33,14 @@
         "hide_on_mobile": true,
         "content_vertical_position_desktop": 50,
         "content_horizontal_position_desktop": 50,
-        "content_vertical_position_mobile": 50,
-        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_desktop": "center",
         "max_width": "100%",
         "max_width_px": 1200,
+        "content_vertical_position_mobile": 50,
+        "content_horizontal_position_mobile": 50,
+        "content_text_alignment_mobile": "center",
+        "max_width_mobile": "100%",
+        "max_width_mobile_px": 1200,
         "title": "Hero banner",
         "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
         "background_color": "rgba(0,0,0,0)",
@@ -81,9 +85,9 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
-        "heading": "Alle Sorten. Einmal snacken, alles checken",
-        "mobile_heading": "Eine Box. Alle Sorten👇🏽",
+        "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
+        "heading": "Einmal durchsnacken, bitte! 💘",
+        "mobile_heading": "Einmal durchsnacken, bitte! 💘",
         "sticky_button": true,
         "show_price": true,
         "reviews_average_rating": "",
@@ -713,7 +717,7 @@
             "title": "Kids & family friendly",
             "content": "<p>Unsere Riegel sind nicht nur ein treat für Foodies, sondern auch super geeignet für Kids, Schwangere und alle mit sensiblen Bäuchen. </p><p>Warum? Weil bei uns nur Gutes reinkommt: kein Industriezucker, keine Zusatzstoffe, keine fiesen Überraschungen.</p><p>Mit natürlicher Süße, vielen Ballaststoffen und Zutaten, die deinen Darm lieben.</p>",
             "button_text": "Show me the filling",
-            "button_url": "shopify://products/summer-crush-kopie"
+            "button_url": "shopify://products/gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls"
           }
         },
         "image_with_text_BjFpid": {
@@ -736,8 +740,8 @@
       "name": "Image with text",
       "settings": {
         "background_color": "#859972",
-        "accent_color": "#DBAAEB",
-        "hover_color": "#24A5A1",
+        "accent_color": "#dbaaeb",
+        "hover_color": "#24a5a1",
         "padding_top": 80,
         "padding_bottom": 40
       }
@@ -746,7 +750,7 @@
       "type": "main-product-ingredients",
       "name": "Ingredients",
       "settings": {
-        "product": "summer-crush-kopie",
+        "product": "gefullte-vegane-bio-riegel-mixbox-mit-4-sorten-treatfuls",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd"
@@ -985,6 +989,8 @@
         "hide_on_mobile": false,
         "title": "Hier gibt’s treatfuls",
         "subtitle": "In ausgewählten Märkten deutschlandweit & in Österreich erhältlich",
+        "button_text": "",
+        "button_url": "",
         "background_color": "#ceb0d1",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"
@@ -1068,6 +1074,8 @@
         "hide_on_mobile": false,
         "title": "nicht noch so ein gesunder Riegel…",
         "subtitle": "sondern der Snack, der zeigt, dass bio alles kann, nur nicht langweilig sein. Unsere treats sind reich an Ballaststoffen, ohne Industriezucker und nur mit der natürlichen Süße der Dattel gesüßt. 40% weniger Zucker als herkömmliche Süßigkeiten, aber so gut, dass es sich anfühlt wie eine Sünde. Ist es aber nicht! Fair-Trade-Schokolade außen, beste Bio-Zutaten innen, recycelbare Verpackung drumherum und ganz viel Herz, Leidenschaft und Spaß dazwischen.",
+        "button_text": "",
+        "button_url": "",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd",
         "hover_color": "#f3587f"

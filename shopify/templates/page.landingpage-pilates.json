@@ -779,7 +779,7 @@
       ],
       "name": "Featured product",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
         "heading": "Lust auf mehr?",
         "mobile_heading": "Lust auf mehr?",
         "sticky_button": false,
@@ -875,7 +875,7 @@
       ],
       "name": "Image Gallery Grid (24-cell)",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
         "heading": "",
         "show_atc_button": false,
         "grid_container_quantity": "1",
@@ -974,7 +974,7 @@
       "disabled": true,
       "name": "Ingredients",
       "settings": {
-        "product": "singles-box-1-ohne-weisse-haselnuss",
+        "product": "bio-riegel-probierbox-12-vegane-snacks-treatfuls",
         "title": "Wir verwenden nur beste Zutaten",
         "background_color": "#c081a9",
         "accent_color": "#2ac2bd"

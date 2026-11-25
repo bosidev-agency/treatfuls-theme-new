@@ -23,12 +23,13 @@
           "type": "collection_item",
           "settings": {
             "collection": "produkte",
-            "image": "shopify://shop_images/14Bar_1Beutel_matcha_5spread.webp",
+            "image": "shopify://shop_images/Kategorie_Uebersicht_Alle_Produkte.webp",
             "collection_title": "Alle Produkte"
           }
         },
         "collection_item_AQhgbG": {
           "type": "collection_item",
+          "disabled": true,
           "settings": {
             "collection": "vorrat-auffuellen",
             "image": "shopify://shop_images/OS_Spare.png",
@@ -39,7 +40,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "riegel",
-            "image": "shopify://shop_images/treatfuls-mix_box_mit_allen_riegeln_1008x_5edda097-847a-4641-935a-c89b38e371d3.png",
+            "image": "shopify://shop_images/Kategorie_Uebersicht_Riegel_cd69fe6a-1201-4a76-a734-84c0b5679f94.webp",
             "collection_title": "Riegel"
           }
         },
@@ -47,7 +48,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "nuss-aufstriche",
-            "image": "shopify://shop_images/spreads-treatfuls.webp",
+            "image": "shopify://shop_images/Kategorie_Uebersicht_Aufstriche_029d0e1e-1c1b-4cd7-9921-8465d521af52.webp",
             "collection_title": "Aufstriche"
           }
         },
@@ -55,7 +56,7 @@
           "type": "collection_item",
           "settings": {
             "collection": "balls",
-            "image": "shopify://shop_images/treatfuls_bio_vegan_21_energyballs_baelle.webp",
+            "image": "shopify://shop_images/Kategorie_Uebersicht_Balls.webp",
             "collection_title": "Balls"
           }
         }

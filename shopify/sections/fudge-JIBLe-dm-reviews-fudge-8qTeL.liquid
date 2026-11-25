@@ -1,0 +1,39 @@
+{% assign dm_rating = shop.metafields.judgeme.all_reviews_rating.value | default: shop.metafields.judgeme.all_reviews_rating | plus: 0 %}
+{% assign dm_review_count = shop.metafields.judgeme.all_reviews_count.value | default: shop.metafields.judgeme.all_reviews_count | plus: 0 %}
+<section class="dm-cashback dm-cashback--white" aria-labelledby="dm-reviews-title">
+  <div class="dm-wrap">
+    <div class="dm-reviews-badge">
+      <img src="https://static.fudge.cloud/generated_images/UquxwMn59prdyYTtaAP8q.png" width="30" height="22" alt="dm Logo" loading="lazy">
+      <span>dm Kundenliebling</span>
+    </div>
+    <h2 id="dm-reviews-title">Warum treatfuls bei dm schon von Tausenden gefeiert wird</h2>
+    {% if dm_review_count > 0 %}
+      <div class="dm-rating" aria-label="{{ dm_rating }} von 5 Sternen aus {{ dm_review_count }} Bewertungen" style="margin-top: 14px; margin-bottom: 12px;">
+        <span class="dm-rating-number">{{ dm_rating | round: 2 | replace: '.', ',' }}/5</span>
+        {% render 'fudge-star-rating', height: 18, rating: dm_rating, color: '#FFB347' %}
+        <p>({{ dm_review_count }} Bewertungen)</p>
+      </div>
+    {% endif %}
+    <p class="dm-note">Auszüge aus echten Produktbewertungen bei Judge.me. Die Bewertungen beziehen sich auf treatfuls, nicht auf die treat-back-Aktion.</p>
+    <div class="dm-review-grid">
+      <figure class="dm-review">
+        {% render 'fudge-star-rating', height: 18, rating: 5, color: '#FFB347' %}
+        <blockquote>„Sehr lecker, für alle die Kokos mögen. Ich geniesse sie aus dem Kühlschrank.“</blockquote>
+        <figcaption>Ulrike • 20 x Sweeter than your ex - Kokos</figcaption>
+      </figure>
+      <figure class="dm-review">
+        {% render 'fudge-star-rating', height: 18, rating: 5, color: '#FFB347' %}
+        <blockquote>„Ich mag wie sich die Zutaten geschmacklich hervorragend ergänzen!“</blockquote>
+        <figcaption>Anna • 20 x Love at first bite - weiße Erdnuss</figcaption>
+      </figure>
+      <figure class="dm-review">
+        {% render 'fudge-star-rating', height: 18, rating: 5, color: '#FFB347' %}
+        <blockquote>„Sehr leckere Snacks und man hat kein schlechtes Gewissen beim snacken!“</blockquote>
+        <figcaption>Sofia • treatfuls Probierbox (einmal alle Sorten)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+{% schema %}
+{"name":"dm · Bewertungen","settings":[]}
+{% endschema %}
