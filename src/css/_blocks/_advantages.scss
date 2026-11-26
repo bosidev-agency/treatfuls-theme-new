@@ -3,7 +3,7 @@
 	overflow: hidden;
 
 	@media #{$no-m} {
-		max-width: 939px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
@@ -20,7 +20,7 @@
 		}
 
 		.swiper:not(.swiper-initialized) .advantages__slide {
-			width: 25%;
+			width: calc(100% / var(--advantages-columns, 4));
 			margin: 0;
 			transform: none;
 		}
@@ -28,12 +28,12 @@
 
 	@media #{$no-m} {
 		.advantages__slide {
-			width: 25%;
+			width: calc(100% / var(--advantages-columns, 4));
 		}
 	}
 
 	@media #{$no-fw} {
-		max-width: 45vw;
+		max-width: 55vw;
 	}
 
 	@media #{$m-xl} {

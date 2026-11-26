@@ -8,6 +8,7 @@
   {% endif %}
 
   #shopify-section-{{ section.id }} {
+    --advantages-columns: {{ section.settings.columns_desktop }};
     {%- if section.settings.background_color != 'rgba(0,0,0,0)' and section.settings.background_color != blank -%}
       --section-background-color: {{ section.settings.background_color }};
     {%- endif -%}
@@ -95,6 +96,16 @@
       "id": "hide_on_mobile",
       "label": "Hide on mobile",
       "default": false
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "info": "How many items sit in one row from tablet width up. Mobile stays a slider."
     },
 		{
 			"type": "text",
